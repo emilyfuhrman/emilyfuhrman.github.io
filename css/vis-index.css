@@ -1,0 +1,23 @@
+circle.node {
+	fill:#fff;
+  stroke:#222;
+  stroke-width:1px;
+}
+
+/*circle.node.hov,
+circle.node:hover {
+  fill:#e5005e;
+  stroke:#e5005e;
+}*/
+
+circle.node.joint {
+  fill:#222;
+  stroke:#fff;
+  stroke-width:1.5px;
+}
+
+line.link {
+  stroke:#bbb;
+  stroke-opacity:0.25;
+  pointer-events:none;
+}
