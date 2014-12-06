@@ -12,3 +12,78 @@ body {
     -webkit-text-size-adjust: 100%;
 	cursor:crosshair;
 	}
+
+#wrapper { 
+	width: 100%; 
+	margin: 0 auto; 
+	padding: 0 auto; 
+	overflow-x:hidden;
+	}
+
+header { 
+	position: fixed; 
+	width: 100%; 
+	margin: 0; 
+	z-index:999;
+	}
+
+a { 
+	color: #222; 
+	text-decoration: underline; 
+	cursor:cell;
+	}
+
+a:hover { 
+	text-decoration: underline; 
+	}
+
+a:active { 
+	outline: none; 
+	}
+
+a:focus { 
+	-moz-outline-style: none; 
+	}
+
+a.btn { 
+	text-decoration: none; 
+	background: transparent; 
+	}
+
+a.btn:hover	{ 
+	text-decoration: none; 
+	color:#e5005e;
+	}
+
+.nav { 
+	position:fixed; 
+	z-index:999; 
+	background: transparent; 
+	font-family: sans-serif; 
+	font-size:11px;
+	text-transform:uppercase; 
+	letter-spacing:1px; 
+	line-height:1.8em; 
+	padding-bottom:23px; 
+	border-bottom:36px solid #222;
+	}
+
+.nav.name { 
+	top:30px; 
+	left:36px;  
+	}
+
+.nav.proj { 
+	top: 30px; 
+	right: 36px;  
+	}
+
+.nav.abt { 
+	bottom: 36px; 
+	left: 36px; 
+	}
+
+.nav.title { 
+	top:30px; 
+	left:176px;
+	}
