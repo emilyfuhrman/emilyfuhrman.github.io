@@ -10,4 +10,4 @@ defaults:
     values:
       category: "projects"
       layout: "post"
-      permalink: "/projects/:year:month/:title"
+      permalink: "/:categories/:year:month/:title"
