@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{ site.name }}&nbsp;|&nbsp;{{ page.title }}</title>
+	<meta name='description' content="{{ page.description }}">
+	
+	<link rel='icon' href='../../../../favicon.ico' />
+	<link rel='stylesheet' type='text/css' href='../../../../css/style.css' />
+	<link rel="stylesheet" type="text/css" href="../../../../js/tipsy/tipsy.css">
+
+	<script type='text/javascript' src='../../../../js/libs/jquery-2.0.3.min.js'></script>
+	<script type='text/javascript' src='../../../../js/libs/d3.v2.min.js'></script>
+	<script type='text/javascript' src='../../../../js/tipsy/jquery.tipsy.js'></script>
+</head>
+<body>
+	<header>
+		<nav class='links'>
+			{% include nav.html %}
+			<div class='nav title'>{{ page.title }}</div>
+		</nav>
+	</header>
+	<div id='wrapper'>
+		

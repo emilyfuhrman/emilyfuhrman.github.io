@@ -1,2 +1,13 @@
 # site information
 name: EMILY FUHRMAN
+
+# default settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      category: "projects"
+      layout: "post"
+      permalink: "/projects/:year:month/:title"
