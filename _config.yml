@@ -1,3 +1,13 @@
 # site information
-name: EMILY FUHRMAN
-permalink: none
+name:          EMILY FUHRMAN
+permalink:     none
+
+# default settings
+defaults:
+  -
+    scope:
+      path:     ''
+      type:     posts
+    values:
+      category: projects
+      layout:   post

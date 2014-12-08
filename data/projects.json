@@ -21,7 +21,7 @@
       },
       { "name":"legit", "title":"", "children":
       	[
-      	  	{ "id":5, "title":"Visualizing Joyce's Ulysses: Sensory Deprivation", "link":"projects/201210-joyce-ulysses-text-analysis" },
+      	  	{ "id":5, "title":"Visualizing Joyce's Ulysses: Sensory Deprivation", "category":"projects", "path":"joyce-ulysses-text-analysis" },
       	  	{ "id":7, "title":"Visualizing Joyce's Ulysses: Sirens", "link":"projects/201302-joyce-ulysses-sirens-visualization" },
             { "id":17, "title":"Visualizing Joyce's Ulysses: Sirens as a Graphic Score", "link":"projects/201406-joyce-ulysses-sirens-redux" }
       	]

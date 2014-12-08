@@ -53,8 +53,11 @@ function update()
 	 		.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) { return d.y; })
 	 		.attr("r", function(d) { return d.title === "" ? 2.5 : 4; }) 
-	  		.attr("onclick", function(d) { return "location.href='" + d.link + "';"; })
-	  		.attr("cursor", function(d) {return d.title === "" ? "crosshair" : "cell"; })
+	  		.attr("onclick", function(d) { 
+	  			var end = d.category === "projects" ? ".html" : "";
+	  			return "location.href='" + d.category + "/" + d.path + end + "';"; 
+	  		})
+	  		.attr("cursor", function(d) { return d.title === "" ? "crosshair" : "cell"; })
 	 		.call(force.drag);
 	  	
 	 	
