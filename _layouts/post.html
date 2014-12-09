@@ -1,7 +1,9 @@
 {% include header_post.html %}
     <div id='proj'>
+        {% for p in page.images %}
+        <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+        {% endfor %}
         <div class='descrip-wrap'>
-
             <div class='descrip'>
             {{ content }}
             </div>

@@ -5,22 +5,22 @@
   parent: branch_03
 - id:     5
   cat:    projects
-  title:  Visualizing Joyce's Ulysses&#58; Sensory Deprivation
+  title:  "Visualizing Joyce's Ulysses: Sensory Deprivation"
   path:   joyce-ulysses-text-analysis
   parent: branch_02
 - id:     7
   cat:    projects
-  title:  Visualizing Joyce's Ulysses&#58; Sirens
+  title:  "Visualizing Joyce's Ulysses: Sirens"
   path:   joyce-ulysses-sirens-visualization
   parent: branch_02
 - id:     8
   cat:    projects
-  title:  Dataset Visualization&#58; U.S. Census
+  title:  "Dataset Visualization: U.S. Census"
   path:   census-datawave
   parent: branch_03_sub_01
 - id:     9
   cat:    projects
-  title:  Dataset Visualization&#58; Melting Spreadsheet
+  title:  "Dataset Visualization: Melting Spreadsheet"
   path:   melting-spreadsheet
   parent: branch_03_sub_01
 - id:     10
@@ -30,32 +30,32 @@
   parent: branch_01_sub_01
 - id:     11
   cat:    projects
-  title:  Study&#58; Deconstructed Network Visualization
+  title:  "Study: Deconstructed Network Visualization"
   path:   deconstructed-network-visualization
   parent: branch_03
 - id:     12
   cat:    projects
-  title:  'Study&#58; Ephemeral Data'
+  title:  "Study: Ephemeral Data"
   path:   ephemeral-data
   parent: branch_03
 - id:     13
   cat:    projects
-  title:  Series&#58; Giant Gears
+  title:  "Series: Giant Gears"
   path:   giant-gears
   parent: branch_01_sub_02
 - id:     15
   cat:    projects
-  title:  Study&#58; Window Lights
+  title:  "Study: Window Lights"
   path:   window-lights
   parent: branch_03
 - id:     16
   cat:    projects
-  title:  Study&#58; Self-referential Inkblots
+  title:  "Study: Self-referential Inkblots"
   path:   self-referential-inkblots
   parent: branch_03
 - id:     17
   cat:    projects
-  title:  Visualizing Joyce's Ulysses&#58; Sirens as a Graphic Score
+  title:  "Visualizing Joyce's Ulysses: Sirens as a Graphic Score"
   path:   joyce-ulysses-sirens-redux
   parent: branch_02
 - id:     18
@@ -65,6 +65,6 @@
   parent: branch_01_sub_03
 - id:     19
   cat:    x
-  title:  Study&#58; Boats on the East River
+  title:  "Study: Boats on the East River"
   path:   boats
   parent: branch_03
