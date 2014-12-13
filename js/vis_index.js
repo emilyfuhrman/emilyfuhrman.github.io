@@ -18,7 +18,7 @@ var init = function(){
 					},
 					t_01 = d.tier_01.split("_")[1],
 					t_02 = d.tier_02 !== "null" ? d.tier_02.split("_")[1] : null;
-					i_01 = self.data.children.indexOf(self.data.children.filter(function(d){ return d.name === t_01; })[0]);debugger;
+					i_01 = self.data.children.indexOf(self.data.children.filter(function(d){ return d.name === t_01; })[0]);
 				if(i_01 <0 && !t_02){
 					self.data.children.push({
 						"name":t_01,
@@ -47,7 +47,7 @@ var init = function(){
 							"children":[proj_subset]
 						});
 					}
-				} else{debugger;
+				} else{
 					self.data.children[i_01].children.push(proj);
 				}
 			});
@@ -124,7 +124,7 @@ var init = function(){
 				html: true,
 				fade: true,
 				title: function() 
-				{debugger;
+				{
 					var d = this.__data__, 
 						t = d.title || ""; 
 					return t;
