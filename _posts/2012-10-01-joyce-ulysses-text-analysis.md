@@ -1,5 +1,5 @@
 ---
-num:        005
+num:        "005"
 cat:        projects
 title:      "Visualizing Joyce's Ulysses: Sensory Deprivation"
 path:       joyce-ulysses-text-analysis

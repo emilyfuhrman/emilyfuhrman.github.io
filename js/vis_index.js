@@ -4,6 +4,7 @@ var init = function(){
 
 		data:{ "name":"projects", "children": [] },
 		formatData:function(posts){
+
 			var self = this,
 				branches = [];
 
@@ -17,13 +18,13 @@ var init = function(){
 					},
 					t_01 = d.tier_01.split("_")[1],
 					t_02 = d.tier_02 !== "null" ? d.tier_02.split("_")[1] : null;
-					i_01 = self.data.children.indexOf(self.data.children.filter(function(d){ return d.name === t_01; })[0]);
-				if(!i_01 >-1 && !t_02){
+					i_01 = self.data.children.indexOf(self.data.children.filter(function(d){ return d.name === t_01; })[0]);debugger;
+				if(i_01 <0 && !t_02){
 					self.data.children.push({
 						"name":t_01,
 						"children":[proj]
 					});
-				} else if(!i_01 >-1 && t_02){
+				} else if(i_01 <0 && t_02){
 					var proj_subset = {
 						"name":t_02,
 						"children":[proj]
@@ -32,7 +33,7 @@ var init = function(){
 						"name":t_01,
 						"children":[proj_subset]
 					});
-				} else if(i_01 && t_02){
+				} else if(i_01 >-1 && t_02){
 					var i_02 = self.data.children[i_01].children.indexOf(self.data.children[i_01].children.filter(function(d){ return d.name === t_02; })[0]),
 						proj_subset = {
 							"name":t_02,
@@ -46,7 +47,7 @@ var init = function(){
 							"children":[proj_subset]
 						});
 					}
-				} else{
+				} else{debugger;
 					self.data.children[i_01].children.push(proj);
 				}
 			});
@@ -73,16 +74,11 @@ var init = function(){
 				.attr("width", w)
 				.attr("height", h);
 
-			/*d3.json("../data/projects.json", function(json) {
-				root = json;
-				update();
-			});*/
-
 			root = self.data;
 			update();
 
-			function update()
-			{
+			function update(){
+
 				var nodes = flatten(root),
 					links = d3.layout.tree().links(nodes);
 				
@@ -141,8 +137,8 @@ var init = function(){
 				});
 			}
 
-			function tick()
-			{
+			function tick(){
+
 				link.attr("x1", function(d) { return d.source.x; })
 					.attr("y1", function(d) { return d.source.y; })
 					.attr("x2", function(d) { return d.target.x; })
@@ -152,12 +148,12 @@ var init = function(){
 					.attr("cy", function(d) { return d.y; });
 			}
 
-			function flatten(root)
-			{
+			function flatten(root){
+
 				var nodes = [], i = 0;
 				
-				function recurse(node)
-				{
+				function recurse(node){
+
 					if (node.children) node.children.forEach(recurse);
 					if (!node.id) node.id = ++i;
 					nodes.push(node);

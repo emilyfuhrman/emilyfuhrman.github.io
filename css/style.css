@@ -99,10 +99,10 @@ a.btn:hover	{
 .dekor.index,
 .dekor.about {
 	left:36px; 
-}
+	}
 .dekor.proj {
 	right:36px; 
-}
+	}
 
 #chart { 
 	width: 100%; 
@@ -112,6 +112,82 @@ a.btn:hover	{
 #galaxy	{ 
 	width: 99%; 
 	height: 99%; 
+	}
+
+/* 
+-----------------------
+LIST
+----------------------- */
+
+#proj-list { 
+	display: block;
+	float:left;
+	width:95%;
+	margin: 0; 
+	padding: 157px 0 90px 18px;
+	}
+
+.list-img { 
+	float:left; 
+	width:176px; 
+	height:176px; 
+	margin:24px 18px;
+	}
+
+#proj-list a { 
+	float:left; 
+	text-decoration: none;
+	}
+#proj-list a:active { 
+	outline: none; 
+	}
+#proj-list a:focus	{ 
+	-moz-outline-style:none; 
+	}
+
+#proj-list a div { 
+	position:relative; 
+	background:#fff;
+	width:176px; 
+	height:139px;
+	margin:24px 18px;
+	top:0px;
+	border-top:1px solid #222;
+	transition: top 100ms ease;
+	-webkit-transition: top 100ms ease; 
+	-moz-transition: top 100ms ease; 
+	}
+#proj-list a div p.list-title { 
+	position: absolute; 
+	width: 145px; 
+	color: #222;
+	font-family: sans-serif;
+	font-size: 11px;
+	text-transform: uppercase; 
+	letter-spacing: 1px; 
+	line-height: 1.5em; 
+	margin: 8px 0 0 0;
+	}
+#proj-list a div p.list-date { 
+	position: absolute; 
+	height:11px; 
+	color: #222;
+	font-family: sans-serif;
+	font-size: 11px;
+	letter-spacing:1px; 
+	border-bottom: 9px solid #222;
+	margin: 110px 16px 98px 0;
+	padding-bottom: 9px;
+	}
+
+#proj-list a:hover div { 
+	opacity: 1; 
+	top:17px;
+	text-decoration: none; 
+	}
+#proj-list a:hover div p.list-title,
+#proj-list a:hover div p.list-date {
+	/*left:16px;*/
 	}
 
 /* 
@@ -161,6 +237,18 @@ PROJECTS
 
 .descrip {
 	width:100%;
+	}
+
+.descrip a {
+	border-bottom: 1px dotted #222;
+	font-style: normal;
+	text-decoration: none;
+	padding:2px 0 3px;
+	}
+.descrip a:hover {
+	background:#e5005e;
+	color:#fff;
+	border-bottom:1px dotted #e5005e;
 	}
 	
 #cols								{ float:left; width:100%; padding:12px 0 120px; }
