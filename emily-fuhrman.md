@@ -8,8 +8,8 @@ description: Emily Fuhrman.
 		<p>
 			<span class="biomain">
 			I am a data visualizer and independent researcher living in Brooklyn, New York.<br/><br/>
-			I currently work at <a href='http://www.hugeinc.com/' class='feat'>Huge</a>.<br/><br/>
-			Please <a class="feat" href="mailto:emily.c.fuhrman@gmail.com" target="_blank">email</a> for freelance inquiries.
+			I currently work at <a href='http://www.hugeinc.com/' target='_blank'>Huge</a>.<br/><br/>
+			Please <a href="mailto:emily.c.fuhrman@gmail.com" target="_blank">email</a> for freelance inquiries.
 			</span>
 			<br/><br/><br/>&darr;<br/><br/><br/>
 		</p>
