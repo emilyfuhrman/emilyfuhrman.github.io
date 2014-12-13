@@ -8,8 +8,8 @@ tier_02:    null
 images:
   - src:    post-007_imgs/post-007_img.png
     class:  post-img
-    width:  750
-    height: 5732
+    width:  650
+    height: 4947
 ---
 A portrayal of recurring sounds in the "Sirens" chapter of _Ulysses_. The implied musicality of this chapter, coupled with the mechanistic-if-it-were-not-intentional recurrence of certain words, renders it a legit candidate for graphic representation. The process of visualization is itself equal parts intentional and mechanistic, and when applied to text purportedly written in the style of a fugue, reveals a macro-level depiction of audible patterns otherwise lost in the linearity of the book.
 

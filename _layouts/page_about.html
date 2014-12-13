@@ -1,0 +1,21 @@
+{% include header_page.html %}
+<div id='contain'>
+	<div id='top_content' class='biomain'>
+		{{ content }}
+		<br><p class='arr'>&darr;</p><br>
+	</div>
+	<div id='cols'>
+		<div id='col_01'>
+			{% for d in site.about_data %}
+			{% assign datapath = 'about_' | append: d.id %}
+			<div class='section'>
+				<ul class='items'>
+					<li class='title'>{{ site.data.[datapath].title }}</li>
+				</ul>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class='dekor about'></div>
+</div><!-- contain -->
+{% include footer.html %}
