@@ -1,0 +1,50 @@
+- id:         edu
+  title:      Education
+  simple:     false
+  show:       true
+  list:
+    - name:   "Northwestern University"
+      start:  2012
+      end:    2014
+      spec:   "MS, Predictive Analytics"
+    - name:   "The College of William & Mary"
+      start:  2006
+      end:    2010
+      spec:   "BA, English, Philosophy, summa cum laude"
+- id:         experience
+  title:      Experience
+  simple:     false
+  show:       true
+  list:
+    - name:   "Data Visualization Analyst"
+      start:  2014
+      end:    "present"
+      spec:   "Huge"
+      now:    true
+    - name:   "Data Artist / UX Developer"
+      start:  2012
+      end:    2014
+      spec:   "AdFin"
+    - name:   "Advanced Analytics Consultant"
+      start:  2010
+      end:    2012
+      spec:   "Booz Allen Hamilton"
+- id:         clients
+  title:      Clients I've worked with
+  simple:     true
+  show:       true
+  list:
+    - name:   Chromat
+    - name:   Google
+- 
+  id:         contact
+  title:      Contact
+  simple:     true
+  show:       true
+  list:
+    - name:   Email
+      link:   "mailto:emily.c.fuhrman@gmail.com"
+    - name:   Twitter
+      link:   "http://twitter.com/xxzvx"
+    - name:   Instagram
+      link:   "http://instagram.com/xxzvx"

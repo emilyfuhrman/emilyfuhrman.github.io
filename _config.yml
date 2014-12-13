@@ -15,14 +15,3 @@ defaults:
 # formatting
 kramdown:
   auto_ids: false
-
-# about page datasets
-about_data:
-  - id:         edu
-    show:       true
-  - id:         work
-    show:       true
-  - id:         clients
-    show:       true
-  - id:         contact
-    show:       true

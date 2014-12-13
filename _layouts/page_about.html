@@ -6,13 +6,35 @@
 	</div>
 	<div id='cols'>
 		<div id='col_01'>
-			{% for d in site.about_data %}
-			{% assign datapath = 'about_' | append: d.id %}
+			{% for d in site.data.about %}
+			{% if d.show == true %}
 			<div class='section'>
 				<ul class='items'>
-					<li class='title'>{{ site.data.[datapath].title }}</li>
+					<li class='item title'>{{ d.title }}</li>
+					{% if d.simple == true %}
+						{% for item in d.list %}
+						{% if item.link %}
+						<li class='item link'><a href='{{ item.link }}'>{{ item.name }}</a></li>
+						{% else %}
+						<li class='item'>{{ item.name }}</li>
+						{% endif %}
+						{% endfor %}
+					{% else %}
+						{% for item in d.list %}
+						{% capture current %}{{ 'now_' | append: item.now }}{% endcapture %}
+						{% assign now = current %}
+						<li class='item unsimple _{{ forloop.index }}'>
+							{{ item.name }}
+							<div class='holder'>
+							<span class='time'>{{ item.start }}&nbsp;&ndash;&nbsp;<span class={{ now }}>{{ item.end }}</span></span>
+							<span class='spec'>&emsp;&emsp;&emsp;&emsp;{{ item.spec }}</span>
+							</div>
+						</li>
+						{% endfor %}
+					{% endif %}
 				</ul>
 			</div>
+			{% endif %}
 			{% endfor %}
 		</div>
 	</div>
