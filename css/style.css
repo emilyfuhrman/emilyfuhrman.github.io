@@ -15,6 +15,11 @@ body {
 	cursor:crosshair;
 	}
 
+/* 
+-----------------------
+GENERAL
+----------------------- */
+
 #wrapper { 
 	width: 100%; 
 	margin: 0 auto; 
@@ -33,18 +38,40 @@ a {
 	text-decoration: underline; 
 	cursor:cell;
 	}
-
 a:hover { 
 	text-decoration: underline; 
 	}
-
 a:active { 
 	outline: none; 
 	}
-
 a:focus { 
 	-moz-outline-style: none; 
 	}
+
+h3 {
+	font-size:32px;
+	font-weight:normal;
+	line-height:150%;
+	letter-spacing:1px;
+	padding-top:15px;
+	}
+h3 a {
+	font-style: normal;
+	text-decoration: none;
+	border-bottom: 1px dotted #222;
+	padding:2px 0 3px;
+	}
+h3 a:hover {
+	background:#e5005e;
+	color:#fff;
+	text-decoration: none;
+	border-bottom:1px dotted #e5005e;
+	}
+
+/* 
+-----------------------
+INDEX
+----------------------- */
 
 a.btn { 
 	text-decoration: none; 
@@ -268,29 +295,12 @@ ABOUT PAGE
 	font-family: 'Times',serif;
 	font-weight:normal; 
 	text-transform: none; 
-	padding:0; 
+	padding:0 0 40px 0; 
 	border-bottom:none;
 	}
 
 #top_content p {
 	margin:0;
-	}
-
-#top_content.biomain {
-	font-size:32px;
-	line-height:150%;
-	letter-spacing:1px;
-	}
-#top_content.biomain a {
-	border-bottom: 1px dotted #222;
-	font-style: normal;
-	text-decoration: none;
-	padding:2px 0 3px;
-	}
-#top_content.biomain a:hover {
-	background:#e5005e;
-	color:#fff;
-	border-bottom:1px dotted #e5005e;
 	}
 
 #top_content .arr {
@@ -300,7 +310,7 @@ ABOUT PAGE
 #contain { 
 	width:800px; 
 	margin:0 0 0 248px; 
-	padding:181px 105px 120px 0; 
+	padding:135px 105px 120px 0; 
 	}
 
 #cols { 

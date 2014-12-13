@@ -12,6 +12,10 @@ defaults:
       category: projects
       layout:   post
 
+# formatting
+kramdown:
+  auto_ids: false
+
 # about page datasets
 about_data:
   - id:         edu
