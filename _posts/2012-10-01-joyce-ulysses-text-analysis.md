@@ -1,8 +1,12 @@
 ---
-id:         5
-title:      Visualizing Joyce's <i>Ulysses</i>&#58; Sensory Deprivation
+num:        005
+cat:        projects
+title:      "Visualizing Joyce's Ulysses: Sensory Deprivation"
+path:       joyce-ulysses-text-analysis
+tier_01:    branch_02
+tier_02:    null
 images:
-  - src:    post-05_img.png
+  - src:    post-005_img.png
     class:  post-img
     width:  750
     height: 596
