@@ -1,13 +1,5 @@
-title:    Clients I've worked with
+title:      Clients I've worked with
+simple:     true
 list:
-  - name:   "Northwestern University"
-    start:  2012
-    end:    2014
-    degree: "MS"
-    subj:   "Predictive Analytics"
-  - name:   "The College of William & Mary"
-    start:  2006
-    end:    2010
-    degree: "BA"
-    subj:   "English, Philosophy"
-    honors: "summa cum laude"
+  - name:   Chromat
+  - name:   Google

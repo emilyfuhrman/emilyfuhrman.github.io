@@ -1,13 +1,11 @@
-title:    Education
+title:      Education
+simple:     false
 list:
   - name:   "Northwestern University"
     start:  2012
     end:    2014
-    degree: "MS"
-    subj:   "Predictive Analytics"
+    spec:   "MS, Predictive Analytics"
   - name:   "The College of William & Mary"
     start:  2006
     end:    2010
-    degree: "BA"
-    subj:   "English, Philosophy"
-    honors: "summa cum laude"
+    spec:   "BA, English, Philosophy, summa cum laude"

@@ -10,6 +10,11 @@ images:
     class:  post-img
     width:  650
     height: 4947
+cred:
+  - name:   "Visualizing.org Visualizing Highlights: December 2013"
+    link:   "http://visualizing.org/galleries/visualizing-highlights-december-2013"
+  - name:   "2013 Kantar Information is Beautiful Awards: Longlist"
+    link:   "http://www.informationisbeautifulawards.com/2013-longlist/data-visualization/"
 ---
 A portrayal of recurring sounds in the "Sirens" chapter of _Ulysses_. The implied musicality of this chapter, coupled with the mechanistic-if-it-were-not-intentional recurrence of certain words, renders it a legit candidate for graphic representation. The process of visualization is itself equal parts intentional and mechanistic, and when applied to text purportedly written in the style of a fugue, reveals a macro-level depiction of audible patterns otherwise lost in the linearity of the book.
 
@@ -22,6 +27,3 @@ In order to be included, a root word (or syllable) had to appear five or more ti
 You can view the text from which the data was compiled [here](../images/post-007_imgs/sirens.txt). 
 
 Built using Processing and Adobe Photoshop.
-
-&rarr;&nbsp;[Visualizing.org Visualizing Highlights: December 2013](http://visualizing.org/galleries/visualizing-highlights-december-2013)<br>
-&rarr;&nbsp;[2013 Kantar Information is Beautiful Awards: Longlist](http://www.informationisbeautifulawards.com/2013-longlist/data-visualization/)

@@ -1,13 +1,9 @@
-title:    Contact
+title:      Contact
+simple:     true
 list:
-  - name:   "Northwestern University"
-    start:  2012
-    end:    2014
-    degree: "MS"
-    subj:   "Predictive Analytics"
-  - name:   "The College of William & Mary"
-    start:  2006
-    end:    2010
-    degree: "BA"
-    subj:   "English, Philosophy"
-    honors: "summa cum laude"
+  - name:   Email
+    link:   "mailto:emily.c.fuhrman@gmail.com"
+  - name:   Twitter
+    link:   "http://twitter.com/xxzvx"
+  - name:   Instagram
+    link:   "http://instagram.com/xxzvx"

@@ -6,6 +6,11 @@
         <div class='descrip-wrap'>
             <div class='descrip'>
             {{ content }}
+            {% if page.cred %}
+                {% for c in page.cred %}
+                    &rarr;&nbsp;<a href='{{ c.link }}'>{{ c.name }}</a><br>
+                {% endfor %}
+            {% endif %}
             </div>
         </div>
     </div>
