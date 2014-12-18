@@ -1,7 +1,12 @@
 {% include header_page.html %}
 <div id='proj-list'>
 	{% for post in site.posts %}
-	<a href='../{{ post.category }}/{{ post.path }}.html'>
+	{% if post.cat == 'x' %}
+		{% assign end = '' %}
+	{% else %}
+		{% assign end = '.html' %}
+	{% endif %}
+	<a href='../{{ post.cat }}/{{ post.path }}{{ end }}'>
 		<img class='list-img' src='../images/thumbs/proj-{{ post.num }}_thumb.png'>
 		<div>
 			<p class='list-title'>{{ post.title }}</p>
