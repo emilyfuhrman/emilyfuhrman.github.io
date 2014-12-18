@@ -1,0 +1,6 @@
+html, body		{ width: 100%; height: 100%; margin: 0px; }
+#canvas			{ position: absolute; }
+a				{ opacity: 1; text-decoration: none; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; }
+a:hover			{ opacity: 0.65; }
+#w-logo			{ z-index: 1; position: absolute; margin: 104px 0 0 112px; }
+#emily-fuhrman	{ z-index: 2; position: absolute; margin: 104px 0 0 180px; }
