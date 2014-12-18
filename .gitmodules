@@ -1,3 +1,4 @@
 [submodule "x/youarehere"]
 	path = x/youarehere
 	url = https://github.com/emilyfuhrman/youarehere.git
+	ignore = dirty
