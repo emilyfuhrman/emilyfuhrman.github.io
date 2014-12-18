@@ -2,3 +2,6 @@
 	path = x/youarehere
 	url = https://github.com/emilyfuhrman/youarehere.git
 	ignore = dirty
+[submodule "x/dumboats"]
+	path = x/dumboats
+	url = https://github.com/emilyfuhrman/dumboats.git
