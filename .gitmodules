@@ -5,3 +5,4 @@
 [submodule "x/dumboats"]
 	path = x/dumboats
 	url = https://github.com/emilyfuhrman/dumboats.git
+	ignore = dirty
