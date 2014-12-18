@@ -1,3 +1,3 @@
-[submodule "x/x_youarehere"]
+[submodule "x/youarehere"]
 	path = x/youarehere
-	url = https://github.com/emilyfuhrman/x_youarehere.git
+	url = https://github.com/emilyfuhrman/youarehere.git
