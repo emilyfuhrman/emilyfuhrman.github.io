@@ -1,0 +1,172 @@
+[
+   { 
+      "ext":"001", 
+      "address":"22 N 6th St.", 
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"6",
+      "type":"apt"
+   },
+   { 
+      "ext":"002", 
+      "address":"45 Main St.", 
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"2"
+   },
+   { 
+      "ext":"003", 
+      "address":"10 E 21st St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"4"
+   },
+   { 
+      "ext":"004", 
+      "address":"22 N 6th St.", 
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"B",
+      "type":"apt"
+   },
+   { 
+      "ext":"005", 
+      "address":"34 N 7th St.", 
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"4",
+      "type":"apt"
+   },
+   { 
+      "ext":"006", 
+      "address":"444 W 13th St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"1"
+   },
+   { 
+      "ext":"007", 
+      "address":"JFK International Airport", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2",
+      "type":"airport"
+   },
+   { 
+      "ext":"009", 
+      "address":"San Francisco International Airport", 
+      "city":"San Francisco",
+      "state":"CA",
+      "floor":"1",
+      "type":"airport"
+   },
+   { 
+      "ext":"010", 
+      "address":"Jamaica Center Station", 
+      "city":"Jamaica",
+      "state":"NY",
+      "floor":"1",
+      "type":"station"
+   },
+   { 
+      "ext":"011", 
+      "address":"902 Broadway", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"4"
+   },
+   { 
+      "ext":"012", 
+      "address":"202 E 52nd St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"1",
+      "type":"hotel"
+   },
+   { 
+      "ext":"013", 
+      "address":"40 Rector St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"18"
+   },
+   { 
+      "ext":"014", 
+      "address":"190 Allen St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2",
+      "type":"hotel"
+   },
+   { 
+      "ext":"015", 
+      "address":"105 Norfolk St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"1",
+      "type":"apt"
+   },
+   { 
+      "ext":"016", 
+      "address":"42 W 35th St.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"1",
+      "type":"hotel"
+   },
+   { 
+      "ext":"017", 
+      "address":"Seattle Public Library", 
+      "city":"Seattle",
+      "state":"WA",
+      "type":"library"
+   },
+   { 
+      "ext":"018", 
+      "address":"Museo Soumaya", 
+      "city":"Mexico City",
+      "state":"Mexico",
+      "floor":"6",
+      "type":"museum"
+   },
+   { 
+      "ext":"019", 
+      "address":"Gran Hotel Ciudad de Mexico", 
+      "city":"Mexico City",
+      "state":"Mexico",
+      "floor":"5",
+      "type":"hotel"
+   },
+   { 
+      "ext":"020", 
+      "address":"150 E. Houston St.", 
+      "city":"San Antonio",
+      "state":"TX",
+      "floor":"4",
+      "type":"hotel"
+   },
+   { 
+      "ext":"021", 
+      "address":"653 11th Ave.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"16",
+      "type":"hotel"
+   },
+   { 
+      "ext":"022", 
+      "address":"501 Geary St.", 
+      "city":"San Francisco",
+      "state":"CA",
+      "floor":"6",
+      "type":"hotel"
+   },
+   { 
+      "ext":"023", 
+      "address":"The Ludlow Hotel", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"15",
+      "type":"hotel"
+   }
+]

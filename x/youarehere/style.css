@@ -1,0 +1,161 @@
+html, 
+body {
+	background:url('imgs/bknd.png') repeat;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+.texty {
+	color:#222224;
+	font-family:"Helvetica","Arial",sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-shadow:0 1px 0 #fff;
+}
+
+#header {
+	position:fixed;
+	width:100%;
+	padding:24px 0 0 24px;
+	cursor:default;
+	pointer-events:none;
+	z-index:99;
+}
+
+#header .main {
+	font-size:45px;
+	letter-spacing:6px;
+}
+
+#header .descrip a {
+	position:fixed;
+	color:red;
+	font-size:18px;
+	font-weight:normal;
+	text-decoration:none;
+	letter-spacing:1px;
+	line-height:24px;
+	left:24px;
+	bottom:45px;
+	border-bottom:1px solid red;
+	pointer-events:all;
+}
+#header .descrip a:hover {
+	color:#222244;
+	border-bottom:1px solid #222244;
+}
+
+#nav {
+	position:fixed;
+	left:114px;
+	bottom:45px;
+	z-index:99;
+}
+#nav .cont {
+}
+#nav .cont .pagenum {
+	float:left;
+	color:red;
+	background:transparent;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+	letter-spacing:1px;
+	line-height:24px;
+	margin-left:12px;
+	padding:0 6px 1px;
+	cursor:pointer;
+}
+#nav .cont .pagenum.current {
+	color:#fff;
+	background:red;
+}
+
+#footer {
+	position:fixed;
+	width:192px;
+	height:144px;
+	right:36px;
+	bottom:57px;
+	border:12px solid red;
+	pointer-events:none;
+    -webkit-transition: width 300ms ease, height 300ms ease;
+    -moz-transition: width 300ms ease, height 300ms ease;
+    -o-transition: width 300ms ease, height 300ms ease;
+    transition: width 300ms ease, height 300ms ease;
+}
+
+#footer .marker {
+	position:absolute;
+	width:24px;
+	height:24px;
+	top:0;
+	left:0;
+	margin:9px;
+	border-radius:50%;
+	border:3px solid red;
+    -webkit-transition: left 300ms ease, top 300ms ease;
+    -moz-transition: left 300ms ease, top 300ms ease;
+    -o-transition: left 300ms ease, top 300ms ease;
+    transition: left 300ms ease, top 300ms ease;
+}
+
+.btn {
+	width:30px;
+	height:30px;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.btn:hover {
+	color:red;
+}
+
+.btn.selected {
+	color:red;
+}
+
+#imgs {
+	width:100%;
+	margin:0 auto;
+	padding:0 30px 120px;
+}
+
+.hov {
+	position:absolute;
+	background:#fff;
+	color:red;
+	font-family:"Helvetica","Arial",sans-serif;
+	font-size:11px;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	line-height:120%;
+	opacity:0;
+	top:0;
+	left:0;
+	padding:16px 8px;
+	pointer-events:none;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+.hov.over {
+	opacity:0.95;
+	top:45%;
+}
+
+.insta {
+	/*float:left;*/
+	position:absolute;
+	background:#fff;
+	margin:0;
+	padding:8px;
+	cursor:default;
+}
+
+.indexed {
+	vertical-align:top;
+}
