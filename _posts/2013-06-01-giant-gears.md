@@ -20,4 +20,4 @@ images:
     width:  750
     height: 932
 ---
-A series of large-scale, hand-inked, gear-like images. You may recognize the original from [this](http://y-li.me/projects/201303-gallery-of-cool-mistakes.php) post, which was a screenshot taken from a Processing sketch. Each circle measures about 20 inches across. My original intent was to create an analog rendition of an algorithmic image, which morphed into a few different iterations.
+A series of large-scale, hand-inked, gear-like images. You may recognize the original from [this](/projects/gallery-of-cool-mistakes.html) post, which was a screenshot taken from a Processing sketch. Each circle measures about 20 inches across. My original intent was to create an analog rendition of an algorithmic image, which morphed into a few different iterations.
