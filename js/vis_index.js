@@ -34,17 +34,13 @@ var init = function(){
 						"children":[proj_subset]
 					});
 				} else if(i_01 >-1 && t_02){
-					var i_02 = self.data.children[i_01].children.indexOf(self.data.children[i_01].children.filter(function(d){ return d.name === t_02; })[0]),
-						proj_subset = {
-							"name":t_02,
-							"children":[proj]
-						};
+					var i_02 = self.data.children[i_01].children.indexOf(self.data.children[i_01].children.filter(function(d){ return d.name === t_02; })[0]);
 					if(i_02 >-1){
 						self.data.children[i_01].children[i_02].children.push(proj);
 					} else{
 						self.data.children[i_01].children.push({
 							"name":t_02,
-							"children":[proj_subset]
+							"children":[proj]
 						});
 					}
 				} else{

@@ -267,7 +267,6 @@ PROJECTS
 .descrip {
 	width:100%;
 	}
-
 .descrip a {
 	border-bottom: 1px dotted #222;
 	font-style: normal;
@@ -278,6 +277,14 @@ PROJECTS
 	background:#e5005e;
 	color:#fff;
 	border-bottom:1px dotted #e5005e;
+	}
+
+.clearup { 
+	float: left; 
+	width: 100%; 
+	height: 0; 
+	margin: 0; 
+	padding: 0; 
 	}
 
 /* 
