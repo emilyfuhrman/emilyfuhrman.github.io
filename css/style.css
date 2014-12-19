@@ -125,7 +125,8 @@ a.btn:hover	{
 	background-color:#222; 
 	}
 .dekor.index,
-.dekor.about {
+.dekor.about,
+.dekor.error {
 	left:36px; 
 	}
 .dekor.proj {
