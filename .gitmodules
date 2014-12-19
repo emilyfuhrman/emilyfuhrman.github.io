@@ -5,3 +5,4 @@
 [submodule "x/boats"]
 	path = x/boats
 	url = https://github.com/emilyfuhrman/boats.git
+	ignore = dirty
