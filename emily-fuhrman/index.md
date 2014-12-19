@@ -1,6 +1,6 @@
 ---
 layout: page_about
-title:	"| ABOUT"
+title:	"ABOUT"
 description: Emily Fuhrman.
 ---
 ### I am a data visualizer and independent researcher living in Brooklyn, New York.

@@ -1,5 +1,5 @@
 ---
 layout: page_list
-title:	"| PROJECTS"
+title:	"PROJECTS"
 description: Emily Fuhrman.
 ---

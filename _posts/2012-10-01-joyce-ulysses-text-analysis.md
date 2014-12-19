@@ -1,7 +1,7 @@
 ---
 num:        "005"
 cat:        projects
-title:      " Visualizing Joyce's Ulysses: Sensory Deprivation"
+title:      "Visualizing Joyce's Ulysses: Sensory Deprivation"
 path:       joyce-ulysses-text-analysis
 tier_01:    branch_02
 tier_02:    null

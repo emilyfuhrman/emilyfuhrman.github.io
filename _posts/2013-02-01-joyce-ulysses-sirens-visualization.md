@@ -1,7 +1,7 @@
 ---
 num:        "007"
 cat:        projects
-title:      " Visualizing Joyce's Ulysses: Sirens"
+title:      "Visualizing Joyce's Ulysses: Sirens"
 path:       joyce-ulysses-sirens-visualization
 tier_01:    branch_02
 tier_02:    null
