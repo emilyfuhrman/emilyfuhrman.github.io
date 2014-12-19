@@ -9,7 +9,7 @@ images:
   - src:    post-009_img.png
     class:  post-img
     width:  750
-    height: 1765
+    height: 1741
 cred:
   - name:   "AIGA Design Envy: Digital Decay"
     link:   "http://designenvy.aiga.org/digital-decay-claire-l-evans/"

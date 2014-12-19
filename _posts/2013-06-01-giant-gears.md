@@ -1,0 +1,23 @@
+---
+num:        "013"
+cat:        projects
+title:      "Series: Giant Gears"
+path:       giant-gears
+tier_01:    branch_01
+tier_02:    branch_02
+nonvis:     true
+images:
+  - src:    post-013_imgs/01.jpg
+    class:  post-img
+    width:  750
+    height: 932
+  - src:    post-013_imgs/02.jpg
+    class:  post-img
+    width:  750
+    height: 932
+  - src:    post-013_imgs/03.jpg
+    class:  post-img
+    width:  750
+    height: 932
+---
+A series of large-scale, hand-inked, gear-like images. You may recognize the original from [this](http://y-li.me/projects/201303-gallery-of-cool-mistakes.php) post, which was a screenshot taken from a Processing sketch. Each circle measures about 20 inches across. My original intent was to create an analog rendition of an algorithmic image, which morphed into a few different iterations.

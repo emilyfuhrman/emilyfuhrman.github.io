@@ -1,12 +1,12 @@
 {% include header_post.html %}
     <div id='proj'>
         {% for p in page.images %}
-            <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+            <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
         {% endfor %}
         {% for c in page.cols %}
             <div class='col' style='width:{{ c.images[0].width }}px'>
             {% for p in c.images %}
-                <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+                <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
             {% endfor %}
             </div>
         {% endfor %}

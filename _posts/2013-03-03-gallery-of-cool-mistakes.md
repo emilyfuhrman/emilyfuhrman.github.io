@@ -12,34 +12,34 @@ cols:
     images:
       - src:    post-010_imgs/01.png
         class:  col
-        width:  375
-        height: 698
+        width:  357
+        height: 680
       - src:    post-010_imgs/07.png
         class:  col
-        width:  375
-        height: 545
+        width:  357
+        height: 527
       - src:    post-010_imgs/05.png
         class:  col
-        width:  375
-        height: 375
+        width:  357
+        height: 357
   -
     direction:  right
     images:
       - src:    post-010_imgs/06.png
         class:  col
-        width:  375
-        height: 375
+        width:  357
+        height: 357
       - src:    post-010_imgs/03.png
         class:  col
-        width:  375
-        height: 393
+        width:  357
+        height: 375
       - src:    post-010_imgs/02.png
         class:  col
-        width:  375
-        height: 375
+        width:  357
+        height: 357
       - src:    post-010_imgs/04.png
         class:  col
-        width:  375
-        height: 666
+        width:  357
+        height: 648
 ---
 Some cool things that never got off the ground.
