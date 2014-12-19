@@ -5,6 +5,7 @@ title:      "GALLERY OF COOL MISTAKES"
 path:       gallery-of-cool-mistakes
 tier_01:    branch_01
 tier_02:    branch_01
+nonvis:     true
 cols:
   -
     direction:  left
