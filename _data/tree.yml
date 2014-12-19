@@ -1,0 +1,17 @@
+branch_01:     
+  -
+    category:  personal
+
+    branch_01: aesthetic
+    branch_02: hand-drawn
+    branch_03: analog compendiums
+
+branch_02:
+  -
+    category:  digital humanities
+
+branch_03:
+  -
+    category:  critical arbitrary
+    
+    branch_01: dataset visualizations
