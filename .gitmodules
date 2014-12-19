@@ -6,3 +6,6 @@
 	path = x/boats
 	url = https://github.com/emilyfuhrman/boats.git
 	ignore = dirty
+[submodule "x/weather-machine"]
+	path = x/weather-machine
+	url = https://github.com/emilyfuhrman/weather-machine.git
