@@ -9,3 +9,4 @@
 [submodule "x/weather-machine"]
 	path = x/weather-machine
 	url = https://github.com/emilyfuhrman/weather-machine.git
+	ignore = dirty
