@@ -1,7 +1,7 @@
 ---
 num:        "011"
 cat:        projects
-title:      "Deconstructed Network Visualization"
+title:      "Study: Deconstructed Network Visualization"
 path:       deconstructed-network-visualization
 tier_01:    branch_03
 tier_02:    null
