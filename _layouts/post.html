@@ -4,7 +4,7 @@
             <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
         {% endfor %}
         {% for c in page.cols %}
-            <div class='col' style='width:{{ c.images[0].width }}px'>
+            <div class='col' style='width:{{ c.images[0].width }}px;height:{{ c.height }}px'>
             {% for p in c.images %}
                 <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
             {% endfor %}

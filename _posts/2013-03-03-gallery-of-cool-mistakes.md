@@ -9,6 +9,7 @@ nonvis:     true
 cols:
   -
     direction:  left
+    height:     1642
     images:
       - src:    post-010_imgs/01.png
         class:  col
@@ -24,6 +25,7 @@ cols:
         height: 357
   -
     direction:  right
+    height:     1803
     images:
       - src:    post-010_imgs/06.png
         class:  col
