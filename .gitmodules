@@ -14,3 +14,8 @@
 	path = x/datawave
 	url = https://github.com/emilyfuhrman/datawave.git
 	ignore = dirty
+[submodule "x/sirens"]
+	path = x/sirens
+	url = https://github.com/emilyfuhrman/sirens.git
+	ignore = dirty
+
