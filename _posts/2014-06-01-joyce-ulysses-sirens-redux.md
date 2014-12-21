@@ -20,7 +20,7 @@ cred:
 ---
 [_view here_](/x/sirens)
 
-In reference to schemas for Ulysses, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations," and as including the "eight regular parts of a _fuga per canonem_." While the actual structure of the episode is unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
+In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations," and as including the "eight regular parts of a _fuga per canonem_." While the actual structure of the episode is unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
 
 Joyce uses the first 63 lines of the chapter to introduce 99 words and syllables that reappear in different forms throughout the rest of the text. The sounds ultimately act as [leitmotifs](http://en.wikipedia.org/wiki/Leitmotif), evoking the sensory presence of different characters at different times.
 
