@@ -10,3 +10,6 @@
 	path = x/weather-machine
 	url = https://github.com/emilyfuhrman/weather-machine.git
 	ignore = dirty
+[submodule "x/datawave"]
+	path = x/datawave
+	url = https://github.com/emilyfuhrman/datawave.git
