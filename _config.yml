@@ -15,3 +15,7 @@ defaults:
 # formatting
 kramdown:
   auto_ids: false
+
+# gems
+gems:
+  - jekyll-sitemap
