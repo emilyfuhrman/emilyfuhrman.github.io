@@ -10,6 +10,7 @@ images:
     class:  post-img
     width:  560
     height: 952
+published:  false
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.
 

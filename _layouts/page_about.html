@@ -5,7 +5,7 @@
 		<br><p class='arr'>&darr;</p><br>
 	</div>
 	<div id='cols'>
-		<div id='col_01'>
+		<div class='left'>
 			{% for d in site.data.about %}
 			{% if d.show == true %}
 			<div class='section'>
@@ -14,9 +14,9 @@
 					{% if d.simple == true %}
 						{% for item in d.list %}
 						{% if item.link %}
-						<li class='item link'><a href='{{ item.link }}'>{{ item.name }}</a></li>
+						<li class='item simple link'><a href='{{ item.link }}'>{{ item.name }}</a></li>
 						{% else %}
-						<li class='item'>{{ item.name }}</li>
+						<li class='item simple'>{{ item.name }}</li>
 						{% endif %}
 						{% endfor %}
 					{% else %}

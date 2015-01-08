@@ -322,7 +322,7 @@ ABOUT PAGE
 	padding:12px 0 120px; 
 	}
 
-.col_01	{ 
+#cols .left	{ 
 	float:left; 
 	width:100%; 
 	}
@@ -362,6 +362,10 @@ ul.items li.item div.holder	{
 ul.items li.item span.time,
 ul.items li.item span.spec { 
 	margin:0; 
+	}
+ul.items li.item.simple,
+ul.items li.item.unsimple {
+	/*margin-left:18px;*/
 	}
 ul.items li.item.unsimple {
 	margin-top:23px;
