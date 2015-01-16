@@ -23,11 +23,19 @@
 						{% for item in d.list %}
 						{% capture current %}{{ 'now_' | append: item.now }}{% endcapture %}
 						{% assign now = current %}
+						{% assign spc = '&emsp;&emsp;&emsp;&emsp;' %}
 						<li class='item unsimple _{{ forloop.index }}'>
 							{{ item.name }}
 							<div class='holder'>
+							{% if item.start %}
 							<span class='time'>{{ item.start }}&nbsp;&ndash;&nbsp;<span class={{ now }}>{{ item.end }}</span></span>
-							<span class='spec'>&emsp;&emsp;&emsp;&emsp;{{ item.spec }}</span>
+							<span class='spec'>{{ spc }}{{ item.spec }}</span>
+							{% elsif item.end %}
+							<span class='time'>{{ item.end }}</span>
+							<span class='spec'>{{ spc }}{{ item.spec }}</span>
+							{% else %}
+							<span class='spec'>{{ item.spec }}</span>
+							{% endif %}
 							</div>
 						</li>
 						{% endfor %}
