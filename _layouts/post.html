@@ -3,6 +3,11 @@
         {% for p in page.images %}
             <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
         {% endfor %}
+        {% for p in page.images %}
+            {% if p.cap %}
+                <div class='post-img-cap'>{{ forloop.index }}.&nbsp;{{ p.cap }}</div>
+            {% endif %}
+        {% endfor %}
         {% for c in page.cols %}
             <div class='col' style='width:{{ c.images[0].width }}px;height:{{ c.height }}px'>
             {% for p in c.images %}

@@ -246,6 +246,16 @@ PROJECTS
 	padding-bottom: 24px; 
 	}
 
+.post-img-cap {
+	width:100%;
+	font-family:sans-serif;
+	font-size:11px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	line-height:1.8em;
+	padding-bottom:12px;
+}
+
 .col { 
 	float: left; 
 	height: auto;
