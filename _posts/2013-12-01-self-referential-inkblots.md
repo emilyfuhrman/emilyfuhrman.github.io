@@ -6,11 +6,10 @@ path:       self-referential-inkblots
 tier_01:    branch_03
 tier_02:    null
 images:
-  - src:    post-016_img.jpg
+  - src:    post-016_img.png
     class:  post-img
-    width:  560
-    height: 952
-published:  false
+    width:  600
+    height: 812
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.
 
