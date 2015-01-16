@@ -21,6 +21,7 @@ images:
     width:  600
     height: 782
     cap:    "Home &rarr; 257 Bowery &rarr; 1196 Myrtle Ave. &rarr; Morgan Ave. L &rarr; Home &rarr; 133 Wythe Ave. &rarr; Home"
+published:  false
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 
