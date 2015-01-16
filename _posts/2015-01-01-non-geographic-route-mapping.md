@@ -1,7 +1,7 @@
 ---
 num:        "020"
 cat:        projects
-title:      "Study: Non-geographic Route Mapping"
+title:      "Study: Non-Geographic Route Mapping"
 path:       non-geographic-route-mapping
 tier_01:    branch_03
 tier_02:    null
