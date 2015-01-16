@@ -6,22 +6,21 @@ path:       non-geographic-route-mapping
 tier_01:    branch_03
 tier_02:    null
 images:
-  - src:    post-020_imgs/02_20150108_02.jpg
+  - src:    post-020_imgs/20150108.jpg
     class:  post-img
     width:  600
     height: 776
     cap:    "Home &rarr; 45 Main St. &rarr; 102 3rd Ave. &rarr; 850 Broadway &rarr; Lorimer St. L"
-  - src:    post-020_imgs/02_20150109_02.jpg
+  - src:    post-020_imgs/20150109.jpg
     class:  post-img
     width:  600
     height: 776
     cap:    "Home &rarr; 45 Main St. &rarr; Home &rarr; Columbia University &rarr; Home &rarr; 509 West 24th St. &rarr; 229 9th Ave. &rarr; 505 West 23rd St. &rarr; Home"
-  - src:    post-020_imgs/02_20150110_02.jpg
+  - src:    post-020_imgs/20150110.jpg
     class:  post-img
     width:  600
     height: 782
     cap:    "Home &rarr; 257 Bowery &rarr; 1196 Myrtle Ave. &rarr; Morgan Ave. L &rarr; Home &rarr; 133 Wythe Ave. &rarr; Home"
-published:  false
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 
