@@ -19,6 +19,3 @@
 	url = https://github.com/emilyfuhrman/sirens.git
 	ignore = dirty
 
-[submodule "lab/ITG_lipstick"]
-	path = lab/ITG_lipstick
-	url = https://github.com/emilyfuhrman/ITG_lipstick.git
