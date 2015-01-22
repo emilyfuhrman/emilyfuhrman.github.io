@@ -19,3 +19,11 @@
 	url = https://github.com/emilyfuhrman/sirens.git
 	ignore = dirty
 
+[submodule "lab/CU_borderlands_map-01"]
+	path = lab/CU_borderlands_map-01
+	url = https://github.com/emilyfuhrman/CU_borderlands_map-01.git
+	ignore = dirty
+[submodule "lab/CU_borderlands_map-02"]
+	path = lab/CU_borderlands_map-02
+	url = https://github.com/emilyfuhrman/CU_borderlands_map-02.git
+	ignore = dirty
