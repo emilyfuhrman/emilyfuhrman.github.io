@@ -56,14 +56,15 @@ h2 {
 	letter-spacing:1px;
 	}
 h2 a {
-	color:#e5005e;
 	text-decoration:none;
-	padding:3px 0 1px;
+	border-bottom:1px solid #222;
+	padding:8px 0 4px;
 	}
 h2 a:hover {
 	background:#e5005e;
 	color:#fff;
 	text-decoration:none;
+	border-bottom:1px solid #e5005e;
 	}
 
 h3 {
