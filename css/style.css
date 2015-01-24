@@ -48,6 +48,24 @@ a:focus {
 	-moz-outline-style: none; 
 	}
 
+h2 {
+	font-family:serif;
+	font-size:45px;
+	line-height:55px;
+	font-weight:normal;
+	letter-spacing:1px;
+	}
+h2 a {
+	color:#e5005e;
+	text-decoration:none;
+	padding:3px 0 1px;
+	}
+h2 a:hover {
+	background:#e5005e;
+	color:#fff;
+	text-decoration:none;
+	}
+
 h3 {
 	font-size:32px;
 	font-weight:normal;
