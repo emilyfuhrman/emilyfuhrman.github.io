@@ -74,14 +74,14 @@ h2 {
 	}
 h2 a {
 	text-decoration:none;
-	border-bottom:1px solid $color-black;
+	border-bottom:1px dotted $color-black;
 	padding:10px 0 4px;
 	}
 h2 a:hover {
 	background:$color-accent;
 	color:#fff;
 	text-decoration:none;
-	border-bottom:1px solid $color-accent;
+	border-bottom:1px dotted $color-accent;
 	}
 
 h3 {
