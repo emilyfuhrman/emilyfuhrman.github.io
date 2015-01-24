@@ -8,7 +8,7 @@
 		<div class='left'>
 			{% for d in site.data.about %}
 			{% if d.show == true %}
-			<div class='section'>
+			<div class='section {{ d.id }}'>
 				<ul class='items'>
 					<li class='item title'>{{ d.title }}</li>
 					{% if d.simple == true %}
