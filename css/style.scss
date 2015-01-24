@@ -7,6 +7,7 @@ $color-accent:#e5005e;
 $univ-letter-spacing:1px;
 
 $font-basic:normal normal normal 11px/1.8em sans-serif;
+$font-serif:normal normal normal 21px/160% serif;
 
 @mixin transition($transition) {
   -webkit-transition:$transition;
@@ -66,9 +67,8 @@ a:focus {
 	}
 
 h2 {
-	font-family:serif;
+	font:$font-serif;
 	font-size:42px;
-	font-weight:normal;
 	letter-spacing:$univ-letter-spacing;
 	line-height:56px;
 	}
@@ -313,11 +313,9 @@ PROJECTS
 	float:left;
 	width:750px;
 	color:$color-black;
-	font-family:serif;
-	font-size:21px;
+	font:$font-serif;
 	text-align:left;
 	letter-spacing:$univ-letter-spacing;
-	line-height:160%;
 	padding:32px 0 150px; 
 	}
 
