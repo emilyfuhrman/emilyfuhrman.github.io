@@ -334,7 +334,7 @@ ABOUT PAGE
 
 #contain { 
 	width:636px; 
-	margin:0 0 0 212px; 
+	margin:0 0 0 248px; 
 	padding:178px 105px 120px 0; 
 	}
 
@@ -387,7 +387,7 @@ ul.items li.item span.spec {
 	}
 .experience ul.items li.item span.spec {
 	position:absolute;
-	left:326px;
+	left:362px;
 }
 ul.items li.item.simple,
 ul.items li.item.unsimple {
