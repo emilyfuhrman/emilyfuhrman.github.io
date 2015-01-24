@@ -18,6 +18,9 @@ defaults:
 kramdown:
   auto_ids: false
 
+sass:
+  style: compressed
+
 # gems
 gems:
   - jekyll-sitemap
