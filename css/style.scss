@@ -5,6 +5,7 @@ $color-black:#222;
 $color-accent:#e5005e;
 
 $univ-letter-spacing:1px;
+$univ-underline:1px dotted;
 
 $font-basic:normal normal normal 11px/1.8em sans-serif;
 $font-serif:normal normal normal 21px/160% serif;
@@ -74,14 +75,14 @@ h2 {
 	}
 h2 a {
 	text-decoration:none;
-	border-bottom:1px dotted $color-black;
+	border-bottom:$univ-underline $color-black;
 	padding:10px 0 4px;
 	}
 h2 a:hover {
 	background:$color-accent;
 	color:#fff;
 	text-decoration:none;
-	border-bottom:1px dotted $color-accent;
+	border-bottom:$univ-underline $color-accent;
 	}
 
 h3 {
@@ -94,14 +95,14 @@ h3 {
 h3 a {
 	font-style:normal;
 	text-decoration:none;
-	border-bottom:1px dotted $color-black;
+	border-bottom:$univ-underline $color-black;
 	padding:2px 0 3px;
 	}
 h3 a:hover {
 	background:$color-accent;
 	color:#fff;
 	text-decoration:none;
-	border-bottom:1px dotted $color-accent;
+	border-bottom:$univ-underline $color-accent;
 	}
 
 h4 {
@@ -323,7 +324,7 @@ PROJECTS
 	width:100%;
 	}
 .descrip a {
-	border-bottom:1px dotted $color-black;
+	border-bottom:$univ-underline $color-black;
 	font-style:normal;
 	text-decoration:none;
 	padding:7px 0 4px;
@@ -331,7 +332,7 @@ PROJECTS
 .descrip a:hover {
 	background:$color-accent;
 	color:#fff;
-	border-bottom:1px dotted $color-accent;
+	border-bottom:$univ-underline $color-accent;
 	}
 
 .clearup { 
