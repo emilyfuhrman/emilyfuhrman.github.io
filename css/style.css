@@ -333,7 +333,7 @@ ABOUT PAGE
 	}
 
 #contain { 
-	width:800px; 
+	width:636px; 
 	margin:0 0 0 212px; 
 	padding:178px 105px 120px 0; 
 	}
@@ -364,8 +364,8 @@ ul.items {
 	padding: 5px 0 0; 
 	}
 ul.items li.item.title { 
-	text-decoration:none; 
-	padding:5px 0 23px 0; 
+	text-decoration:none;
+	padding:5px 0 23px 0;
 	}
 ul.items li.item.link a { 
 	text-decoration:none; 
@@ -387,7 +387,7 @@ ul.items li.item span.spec {
 	}
 .experience ul.items li.item span.spec {
 	position:absolute;
-	left:321px;
+	left:326px;
 }
 ul.items li.item.simple,
 ul.items li.item.unsimple {
