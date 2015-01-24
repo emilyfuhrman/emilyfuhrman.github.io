@@ -50,8 +50,8 @@ a:focus {
 
 h2 {
 	font-family:serif;
-	font-size:45px;
-	line-height:59px;
+	font-size:43px;
+	line-height:57px;
 	font-weight:normal;
 	letter-spacing:1px;
 	}
@@ -320,7 +320,7 @@ PROJECTS
 	border-bottom: 1px dotted #222;
 	font-style: normal;
 	text-decoration: none;
-	padding:2px 0 3px;
+	padding:4px 0 4px;
 	}
 .descrip a:hover {
 	background:#e5005e;
@@ -357,7 +357,7 @@ ABOUT PAGE
 	}
 
 #contain { 
-	width:700px; 
+	width:675px; 
 	margin:0 0 0 212px; 
 	padding:135px 105px 120px 0; 
 	}
