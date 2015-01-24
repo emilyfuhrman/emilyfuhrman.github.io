@@ -68,6 +68,28 @@ h3 a:hover {
 	border-bottom:1px dotted #e5005e;
 	}
 
+h4 {
+	font-family:sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	line-height:31px;
+	letter-spacing:1px;
+	text-transform:none;
+	/*padding-top:15px;*/
+	}
+h4 a {
+	color:#e5005e;
+	font-style: normal;
+	text-decoration: none;
+	/*border-bottom: 2px solid #222;*/
+	padding:4px 0 2px;
+	}
+h4 a:hover {
+	background:#e5005e;
+	color:#fff;
+	text-decoration: none;
+	}
+
 /* 
 -----------------------
 INDEX
@@ -304,24 +326,8 @@ ABOUT PAGE
 #top_content { 
 	float:left;
 	width:100%; 
-	font-size:11px;
-	font-family: sans-serif;
-	font-weight:normal; 
-	text-transform:uppercase; 
-	letter-spacing:1px;
-	line-height:1.8em;
 	padding:0 0 20px 0; 
 	border-bottom:none;
-	}
-
-#top_content a {
-	color:#e5005e;
-	text-decoration:none;
-	padding-top:3px;
-	}
-#top_content a:hover {
-	background:#e5005e;
-	color:#fff;
 	}
 
 #top_content p {
@@ -335,7 +341,7 @@ ABOUT PAGE
 #contain { 
 	width:636px; 
 	margin:0 0 0 212px; 
-	padding:178px 105px 120px 0; 
+	padding:145px 105px 120px 0; 
 	}
 
 #cols { 
