@@ -117,14 +117,14 @@ h4 {
 h4 a {
 	font-style:normal;
 	text-decoration:none;
-	border-bottom:1px solid $color-black;
-	padding:6px 0 3px;
+	border-bottom:2px solid $color-black;
+	padding:8px 0 4px;
 	}
 h4 a:hover {
 	background:$color-accent;
 	color:#fff;
 	text-decoration:none;
-	border-bottom:1px solid $color-accent;
+	border-bottom:2px solid $color-accent;
 	}
 
 /* 
@@ -319,7 +319,6 @@ PROJECTS
 	padding:32px 0 150px; 
 	}
 .descrip a {
-	border-bottom:$univ-underline $color-black;
 	}
 .descrip a.cred {
 	}
