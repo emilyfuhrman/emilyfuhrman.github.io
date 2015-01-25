@@ -16,15 +16,15 @@
             </div>
         {% endfor %}
         <div id="clearup"></div>
-        <div class='descrip-wrap'>
-            <div class='descrip'>
+        <div class='descrip'>
+            <h4>
             {{ content }}
             {% if page.cred %}
                 {% for c in page.cred %}
                     &rarr;&nbsp;<a href='{{ c.link }}'>{{ c.name }}</a><br>
                 {% endfor %}
             {% endif %}
-            </div>
+            </h4>
         </div>
     </div>
 {% include footer.html %}

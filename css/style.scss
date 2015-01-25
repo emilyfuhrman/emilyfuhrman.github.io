@@ -115,17 +115,16 @@ h4 {
 	text-transform:none;
 	}
 h4 a {
-	/*color:$color-accent;*/
 	font-style:normal;
 	text-decoration:none;
-	border-bottom:2px solid $color-black;
-	padding:8px 0 3px;
+	border-bottom:1px solid $color-black;
+	padding:6px 0 3px;
 	}
 h4 a:hover {
 	background:$color-accent;
 	color:#fff;
 	text-decoration:none;
-	border-bottom:2px solid $color-accent;
+	border-bottom:1px solid $color-accent;
 	}
 
 /* 
@@ -313,29 +312,14 @@ PROJECTS
 	padding:0 18px 18px 0; 
 	}
 
-.descrip-wrap { 
+.descrip { 
 	float:left;
 	width:750px;
-	color:$color-black;
-	font:$font-serif;
 	text-align:left;
-	letter-spacing:$univ-letter-spacing;
 	padding:32px 0 150px; 
-	}
-
-.descrip {
-	width:100%;
 	}
 .descrip a {
 	border-bottom:$univ-underline $color-black;
-	font-style:normal;
-	text-decoration:none;
-	padding:5px 0 3px;
-	}
-.descrip a:hover {
-	background:$color-accent;
-	color:#fff;
-	border-bottom:$univ-underline $color-accent;
 	}
 
 .clearup { 
@@ -369,7 +353,7 @@ ABOUT PAGE
 #contain { 
 	width:600px; 
 	margin:0 0 0 212px; 
-	padding:132px 105px 120px 0; 
+	padding:149px 105px 120px 0; 
 	}
 
 #cols { 
