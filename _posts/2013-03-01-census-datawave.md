@@ -11,7 +11,7 @@ images:
     width:  750
     height: 643
 ---
-[_view here_](/x/datawave/)
+[view here](/x/datawave/)
 
 Adventures in meaningless datavis, Part I. This is a visualization of a static variable. The height of the striped area is proportionate to the number of lines in a JSON doc retrieved from the 2010 Census. Hover over the edge to produce a wave.
 
