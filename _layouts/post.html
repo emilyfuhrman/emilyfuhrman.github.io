@@ -21,7 +21,7 @@
             {{ content }}
             {% if page.cred %}
                 {% for c in page.cred %}
-                    &rarr;&nbsp;<a href='{{ c.link }}'>{{ c.name }}</a><br>
+                    &rarr;&nbsp;<a href='{{ c.link }}' class='cred'>{{ c.name }}</a><br>
                 {% endfor %}
             {% endif %}
             </h4>
