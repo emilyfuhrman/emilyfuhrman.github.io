@@ -321,6 +321,10 @@ PROJECTS
 .descrip a {
 	}
 .descrip a.cred {
+	border-bottom:none;
+	}
+.descrip a.cred:hover {
+	border-bottom:2px solid $color-accent;
 	}
 
 .clearup { 
