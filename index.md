@@ -3,7 +3,7 @@ layout: default
 description: Emily Fuhrman.
 ---
 <div id='chart'></div>
-<link href='css/vis-index.css' rel='stylesheet' type='text/css' />
+<link href='css/vis_index.css' rel='stylesheet' type='text/css' />
 
 <script>
 var JEKYLL_POSTS = [];

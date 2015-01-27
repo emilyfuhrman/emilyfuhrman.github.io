@@ -106,8 +106,10 @@ var init = function(){
 						.attr("cy", function(d) { return d.y; })
 				 		.attr("r", function(d) { return d.title ? 4 : 2.5; }) 
 				  		.attr("onclick", function(d) { 
-				  			var end = d.category === "projects" ? ".html" : "";
-				  			return "location.href='" + d.category + "/" + d.path + end + "';"; 
+				  			if(!d3.select(this).classed('joint')){
+					  			var end = d.category === "projects" ? ".html" : "";
+					  			return "location.href='" + d.category + "/" + d.path + end + "';"; 
+				  			}
 				  		})
 				  		.attr("cursor", function(d) { return d.title ? "cell" : "crosshair"; })
 				 		.call(force.drag);
