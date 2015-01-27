@@ -238,7 +238,7 @@ LIST
 	height:139px;
 	margin:24px 18px;
 	top:0px;
-	border-top:1px solid $color-black;
+	border-top:1px solid #fff;
 	@include transition(top 100ms ease);
 	}
 #proj-list a div p.list-title { 
@@ -253,13 +253,14 @@ LIST
 	}
 #proj-list a div p.list-date { 
 	position:absolute; 
-	height:15px; 
 	color:$color-black;
 	font:$font-basic;
+	height:30px;
+	font-size:19px;
 	letter-spacing:$univ-letter-spacing;
-	border-bottom:9px solid $color-black;
-	margin:106px 16px 98px 0;
-	padding-bottom:9px;
+	border-bottom:2px solid $color-black;
+	margin:107px 16px 0 0;
+	padding:0;
 	}
 
 #proj-list a:hover div { 

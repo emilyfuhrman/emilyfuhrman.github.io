@@ -22,7 +22,7 @@
             if (title && this.enabled) {
                 var $tip = this.tip();
                 
-                $tip.find('.tipsy-inner')[this.options.html ? 'html' : 'text'](title);
+                $tip.find('.tipsy-inner')[this.options.html ? 'html' : 'text']('<span>' + title + '</span>');
                 $tip[0].className = 'tipsy'; // reset classname in case of dynamic gravity
                 $tip.remove().css({top: 0, left: 0, visibility: 'hidden', display: 'block'}).prependTo(document.body);
                 
@@ -75,7 +75,7 @@
                 }
                 
                 if (this.options.fade) {
-                    $tip.stop().css({opacity: 0, display: 'block', visibility: 'visible'}).animate({opacity: this.options.opacity, duration: 50});
+                    $tip.stop().css({opacity: 0, display: 'block', visibility: 'visible'}).animate({opacity: this.options.opacity, duration: 0});
                 } else {
                     $tip.css({visibility: 'visible', opacity: this.options.opacity});
                 }
@@ -233,7 +233,7 @@
         html: false,
         live: false,
         offset: 0,
-        opacity: 0.8,
+        opacity: 1,
         title: 'title',
         trigger: 'hover',
         hoverlock: false
