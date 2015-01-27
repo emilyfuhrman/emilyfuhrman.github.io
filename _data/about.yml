@@ -14,24 +14,18 @@
   simple:     false
   show:       true
   list:
-    - name:   Huge
+    - name:   Data Visualization Analyst
       start:  "04 2014"
-      end:    now
-      spec:   Data Visualization Analyst
+      spec:   Huge
       now:    true
-    - name:   AdFin
+    - name:   Data Artist / UX Developer
       start:  "04 2012"
       end:    "04 2014"
-      spec:   Data Artist / UX Developer
-    - name:   Freelance
-      start:  "08 2012"
-      end:    now
-      now:    true
-      spec:   
-    - name:   Booz Allen Hamilton
+      spec:   AdFin
+    - name:   Advanced Analytics Consultant
       start:  "07 2010"
       end:    "08 2012"
-      spec:   Advanced Analytics Consultant
+      spec:   Booz Allen Hamilton
 - id:         clients
   title:      Clients I've worked with
   simple:     true

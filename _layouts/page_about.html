@@ -21,14 +21,23 @@
 						{% endfor %}
 					{% else %}
 						{% for item in d.list %}
+
 						{% capture current %}{{ 'now_' | append: item.now }}{% endcapture %}
 						{% assign now = current %}
+
+						{% if item.now == true %}
+							{% capture enddate %}{{ site.time | date: '%m %Y' }}{% endcapture %}
+						{% else %}
+							{% capture enddate %}{{ item.end }}{% endcapture %}
+						{% endif %}
+						{% assign end = enddate %}
+						
 						{% assign spc = '&emsp;&emsp;&emsp;&emsp;' %}
 						<li class='item unsimple _{{ forloop.index }}'>
 							{{ item.name }}
 							<div class='holder'>
 							{% if item.start %}
-							<span class='time'>{{ item.start }}&nbsp;&ndash;&nbsp;<span class={{ now }}>{{ item.end }}</span></span>
+							<span class='time'>{{ item.start }}&nbsp;&ndash;&nbsp;<span class={{ now }}>{{ end }}</span></span>
 							<span class='spec'>{{ spc }}{{ item.spec }}</span>
 							{% elsif item.end %}
 							<span class='time'>{{ item.end }}</span>
