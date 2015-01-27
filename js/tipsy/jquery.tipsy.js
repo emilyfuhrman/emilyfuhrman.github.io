@@ -75,7 +75,7 @@
                 }
                 
                 if (this.options.fade) {
-                    $tip.stop().css({opacity: 0, display: 'block', visibility: 'visible'}).animate({opacity: this.options.opacity, duration: 0});
+                    $tip.stop().css({opacity: 1, display: 'block', visibility: 'visible'}).animate({opacity: this.options.opacity, duration: 0});
                 } else {
                     $tip.css({visibility: 'visible', opacity: this.options.opacity});
                 }

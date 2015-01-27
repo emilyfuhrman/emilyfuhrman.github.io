@@ -61,7 +61,7 @@ var init = function(){
 			var force = d3.layout.force()
 				.on("tick", tick)
 				.charge(-300)
-				.linkDistance(55)
+				.linkDistance(120)
 				.friction(0.8)
 				.size([w, h]);
 
@@ -104,7 +104,7 @@ var init = function(){
 				 		.classed("joint", function(d){ return d.title ? false : true; })
 				 		.attr("cx", function(d) { return d.x; })
 						.attr("cy", function(d) { return d.y; })
-				 		.attr("r", function(d) { return d.title ? 5.5 : 2.5; }) 
+				 		.attr("r", function(d) { return d.title ? 5.5 : 0; }) 
 				  		.attr("onclick", function(d) { 
 				  			if(!d3.select(this).classed('joint')){
 					  			var end = d.category === "projects" ? ".html" : "";
