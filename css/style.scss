@@ -234,41 +234,45 @@ LIST
 #proj-list a div { 
 	position:relative; 
 	background:#fff;
+	color:$color-black;
 	width:176px; 
 	height:140px;
 	margin:24px 18px;
 	top:0px;
-	@include transition(top 100ms ease);
+	}
+#proj-list a div p.list-title,
+#proj-list a div p.list-date {
+	position:absolute; 
+	font:$font-basic;
+	letter-spacing:$univ-letter-spacing; 
+	@include transition(margin 100ms ease);
 	}
 #proj-list a div p.list-title { 
-	position:absolute; 
 	width:145px; 
-	color:$color-black;
-	font:$font-basic;
 	text-transform:uppercase; 
-	letter-spacing:$univ-letter-spacing; 
 	line-height:1.5em; 
-	margin:8px 0 0 0;
+	margin-top:-2px;
 	}
 #proj-list a div p.list-date { 
-	position:absolute; 
-	color:$color-black;
-	font:$font-basic;
-	height:30px;
 	font-size:19px;
-	letter-spacing:$univ-letter-spacing;
-	margin:82px 16px 0 0;
-	padding:0;
+	line-height:31px;
+	border-top:2px solid #fff;
+	margin:80px 16px 0 0;
+	padding:1px 0 0 0;
 	}
 
 #proj-list a:hover div { 
-	opacity:1; 
-	top:18px;
 	text-decoration:none; 
 	}
 #proj-list a:hover div p.list-title,
 #proj-list a:hover div p.list-date {
-	/*left:16px;*/
+	/*left:18px;*/
+	}
+#proj-list a:hover div p.list-title {
+	margin-top:10px;
+	}
+#proj-list a:hover div p.list-date {
+	margin-top:92px;
 	}
 
 /* 
