@@ -13,6 +13,7 @@ defaults:
     values:
       category: projects
       layout:   post
+      is_post:  true
 
 # formatting
 kramdown:

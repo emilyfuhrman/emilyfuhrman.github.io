@@ -1,3 +1,24 @@
 {% include header.html %}
-	{{ content }}
+<div id='proj-list'>
+	{% for post in site.posts %}
+	{% if post.cat == 'x' %}
+		{% assign end = '' %}
+	{% else %}
+		{% assign end = '.html' %}
+	{% endif %}
+	{% if post.nonvis == true %}
+		{% assign marker = '&dagger;&nbsp;' %}
+	{% else %}
+		{% assign marker = '' %}
+	{% endif %}
+	<a href='../{{ post.cat }}/{{ post.path }}{{ end }}'>
+		<img class='list-img' src='/images/thumbs/post-{{ post.num }}_thumb.png'>
+		<div>
+			<p class='list-title'>{{ marker }}{{ post.title }}</p>
+			<p class='list-date'>{{ post.date | date: "%m %Y" }}</p>
+		</div>
+	</a>
+	{% endfor %}
+</div>
+<div class='dekor proj'></div>
 {% include footer.html %}

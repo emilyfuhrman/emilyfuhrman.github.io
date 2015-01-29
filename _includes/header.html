@@ -2,8 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>{{ site.name }}&nbsp;{{ page.title }}</title>
-	<meta name='description' content="{{ page.description }}">
+	<title>
+		{% if page.title %}
+			{{ site.name }}&nbsp;|&nbsp;{{ page.title }}
+		{% else %}
+			{{ site.name }}
+		{% endif %}
+	</title>
+	<meta name='description' content='{{ page.description }}'>
 	
 	<link rel='icon' href='/favicon.ico' />
 	<link rel='stylesheet' type='text/css' href='/css/style.css' />
@@ -17,6 +23,9 @@
 	<header>
 		<nav class='links'>
 			{% include nav.html %}
+			{% if page.is_post == true %}
+				<div class='nav title'>{{ page.title }}</div>
+			{% endif %}
 		</nav>
 	</header>
 	<div id='wrapper'>
