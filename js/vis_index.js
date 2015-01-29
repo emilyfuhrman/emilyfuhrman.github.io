@@ -104,7 +104,7 @@ var init = function(){
 				 		.classed("joint", function(d){ return d.title ? false : true; })
 				 		.attr("cx", function(d) { return d.x; })
 						.attr("cy", function(d) { return d.y; })
-				 		.attr("r", function(d) { return d.title ? 19.5 : 0; }) 
+				 		.attr("r", function(d) { return d.title ? 17.5 : 0; }) 
 				  		.attr("onclick", function(d) { 
 				  			if(!d3.select(this).classed('joint')){
 					  			var end = d.category === "projects" ? ".html" : "";
