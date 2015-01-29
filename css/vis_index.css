@@ -2,6 +2,7 @@ circle.node {
 	fill:#fff;
 	stroke:#222;
 	stroke-width:0.75;
+	stroke-dasharray:1,2;
 	shape-rendering:geometricPrecision;
 }
 
