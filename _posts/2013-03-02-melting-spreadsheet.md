@@ -3,8 +3,6 @@ num:        "009"
 cat:        projects
 title:      "Dataset Visualization: Melting Spreadsheet"
 path:       melting-spreadsheet
-tier_01:    branch_03
-tier_02:    branch_01
 images:
   - src:    post-009_img.png
     class:  post-img

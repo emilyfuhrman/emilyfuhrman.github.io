@@ -3,8 +3,6 @@ num:        "015"
 cat:        projects
 title:      "Study: Window Lights"
 path:       window-lights
-tier_01:    branch_03
-tier_02:    null
 images:
   - src:    post-015_imgs/post-015_img.jpg
     class:  post-img

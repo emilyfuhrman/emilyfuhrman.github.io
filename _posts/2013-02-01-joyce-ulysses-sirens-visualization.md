@@ -3,8 +3,6 @@ num:        "007"
 cat:        projects
 title:      "Visualizing Joyce's Ulysses: Sirens"
 path:       joyce-ulysses-sirens-visualization
-tier_01:    branch_02
-tier_02:    null
 images:
   - src:    post-007_imgs/post-007_img.png
     class:  post-img

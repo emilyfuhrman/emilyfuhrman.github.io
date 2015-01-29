@@ -3,8 +3,6 @@ num:        "020"
 cat:        projects
 title:      "Study: Non-geographic Route Mapping"
 path:       non-geographic-route-mapping
-tier_01:    branch_03
-tier_02:    null
 images:
   - src:    post-020_imgs/20150108.jpg
     class:  post-img

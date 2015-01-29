@@ -3,8 +3,6 @@ num:        "013"
 cat:        projects
 title:      "Series: Giant Gears"
 path:       giant-gears
-tier_01:    branch_01
-tier_02:    branch_02
 nonvis:     true
 images:
   - src:    post-013_imgs/01.jpg

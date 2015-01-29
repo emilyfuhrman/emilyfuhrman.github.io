@@ -3,8 +3,6 @@ num:        "010"
 cat:        projects
 title:      "Gallery of Cool Mistakes"
 path:       gallery-of-cool-mistakes
-tier_01:    branch_01
-tier_02:    branch_01
 nonvis:     true
 cols:
   -

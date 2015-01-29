@@ -3,8 +3,6 @@ num:        "008"
 cat:        projects
 title:      "Dataset Visualization: U.S. Census"
 path:       census-datawave
-tier_01:    branch_03
-tier_02:    branch_01
 images:
   - src:    post-008_img.png
     class:  post-img

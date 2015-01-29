@@ -3,8 +3,6 @@ num:        "012"
 cat:        projects
 title:      "Study: Ephemeral Data"
 path:       ephemeral-data
-tier_01:    branch_03
-tier_02:    null
 images:
   - src:    post-012_img.png
     class:  post-img
