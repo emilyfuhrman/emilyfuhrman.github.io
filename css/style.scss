@@ -230,8 +230,11 @@ LIST
 	color:$color-black;
 	width:176px; 
 	height:140px;
-	margin:24px 18px;
+	margin:22px 16px;
 	top:0px;
+	border-top:2px solid #fff;
+	border-right:2px solid #fff;
+	border-left:2px solid #fff;
 	}
 #proj-list a div p.list-title,
 #proj-list a div p.list-date {
