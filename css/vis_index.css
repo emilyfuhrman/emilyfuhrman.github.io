@@ -1,7 +1,8 @@
 circle.node {
 	fill:#fff;
 	stroke:#222;
-	stroke-width:1;
+	stroke-width:0.75;
+	shape-rendering:geometricPrecision;
 }
 
 circle.node.joint {
