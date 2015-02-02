@@ -22,10 +22,9 @@
       start:  "04 2012"
       end:    "04 2014"
       spec:   AdFin
-    - name:   "-"
+    - name:   Freelance
       start:  "08 2012"
       now:    true
-      spec:   Freelance
     - name:   Advanced Analytics Consultant
       start:  "07 2010"
       end:    "08 2012"
