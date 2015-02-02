@@ -22,7 +22,7 @@
       start:  "04 2012"
       end:    "04 2014"
       spec:   AdFin
-    - name:   -
+    - name:   "-"
       start:  "08 2012"
       now:    true
       spec:   Freelance
