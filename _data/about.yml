@@ -37,8 +37,7 @@
     - name:   Chromat
     - name:   Columbia University
     - name:   Google
-- 
-  id:         contact
+- id:         contact
   title:      Contact
   simple:     true
   show:       true
