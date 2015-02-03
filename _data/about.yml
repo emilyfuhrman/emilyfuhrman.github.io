@@ -46,6 +46,11 @@
       link:   "mailto:emily.c.fuhrman@gmail.com"
     - name:   CV
       link:   "CV.pdf"
+- id:         elsewhere
+  title:      Elsewhere
+  simple:     true
+  show:       true
+  list:
     - name:   Twitter
       link:   "http://twitter.com/xxzvx"
     - name:   Instagram
