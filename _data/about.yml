@@ -12,20 +12,23 @@
 - id:         experience
   title:      Experience
   simple:     false
-  show:       true
+  show:       false
   list:
-    - name:   Huge
+    - name:   Data Visualization Analyst
       start:  "04 2014"
       now:    true
-    - name:   AdFin
+      spec:   Huge
+    - name:   Data Artist / UX Developer
       start:  "04 2012"
       end:    "04 2014"
+      spec:   AdFin
     - name:   Freelance
       start:  "08 2012"
       now:    true
-    - name:   Booz Allen Hamilton
+    - name:   Advanced Analytics COnsultant
       start:  "07 2010"
       end:    "08 2012"
+      spec:   Booz Allen Hamilton
 - id:         clients
   title:      Clients I've worked with
   simple:     true
