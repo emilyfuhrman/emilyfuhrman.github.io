@@ -16,19 +16,16 @@
   list:
     - name:   Huge
       start:  "04 2014"
-      spec:   Data Visualization Analyst
       now:    true
     - name:   AdFin
       start:  "04 2012"
       end:    "04 2014"
-      spec:   Data Artist / UX Developer
     - name:   Freelance
       start:  "08 2012"
       now:    true
     - name:   Booz Allen Hamilton
       start:  "07 2010"
       end:    "08 2012"
-      spec:   Advanced Analytics Consultant
 - id:         clients
   title:      Clients I've worked with
   simple:     true
