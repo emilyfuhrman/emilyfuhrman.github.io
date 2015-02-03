@@ -37,15 +37,6 @@
     - name:   Chromat
     - name:   Columbia University
     - name:   Google
-- id:         contact
-  title:      Contact
-  simple:     true
-  show:       true
-  list:
-    - name:   Email
-      link:   "mailto:emily.c.fuhrman@gmail.com"
-    - name:   CV
-      link:   "CV.pdf"
 - id:         elsewhere
   title:      Elsewhere
   simple:     true
@@ -57,3 +48,12 @@
       link:   "http://instagram.com/xxzvx"
     - name:   Pinterest
       link:   "http://pinterest.com/xxzvx"
+- id:         contact
+  title:      Contact
+  simple:     true
+  show:       true
+  list:
+    - name:   Email
+      link:   "mailto:emily.c.fuhrman@gmail.com"
+    - name:   CV
+      link:   "CV.pdf"
