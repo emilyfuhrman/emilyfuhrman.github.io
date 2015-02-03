@@ -118,7 +118,7 @@ h4 a {
 	font-style:normal;
 	text-decoration:none;
 	border-bottom:2px solid $color-black;
-	padding:6px 0 4px;
+	padding:8px 0 4px;
 	}
 h4 a:hover {
 	background:$color-accent;
@@ -389,7 +389,7 @@ ul.items li.item.title {
 	}
 ul.items li.item.link a { 
 	text-decoration:none; 
-	padding:2px 0 1px; 
+	padding:3px 0 0; 
 	cursor:cell; 
 	}
 ul.items li.item.link a:hover { 
