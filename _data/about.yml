@@ -9,26 +9,26 @@
     - name:   "The College of William &amp; Mary"
       end:    2010
       spec:   "BA, English, Philosophy, summa cum laude"
-- id:         experience
-  title:      Experience
+- id:         employment
+  title:      Employment
   simple:     false
   show:       false
   list:
-    - name:   Data Visualization Analyst
+    - name:   Huge
       start:  "04 2014"
       now:    true
-      spec:   Huge
-    - name:   Data Artist / UX Developer
+      spec:   Data Visualization Analyst
+    - name:   AdFin
       start:  "04 2012"
       end:    "04 2014"
-      spec:   AdFin
+      spec:   Data Artist / UX Developer
     - name:   Freelance
       start:  "08 2012"
       now:    true
-    - name:   Advanced Analytics COnsultant
+    - name:   Booz Allen Hamilton
       start:  "07 2010"
       end:    "08 2012"
-      spec:   Booz Allen Hamilton
+      spec:   Advanced Analytics Consultant
 - id:         clients
   title:      Clients I've worked with
   simple:     true
