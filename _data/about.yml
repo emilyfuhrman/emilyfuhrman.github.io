@@ -12,7 +12,7 @@
 - id:         employment
   title:      Employment
   simple:     false
-  show:       true
+  show:       false
   list:
     - name:   Huge
       start:  "04 2014"
