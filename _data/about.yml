@@ -48,6 +48,8 @@
       link:   "http://instagram.com/xxzvx"
     - name:   Pinterest
       link:   "http://pinterest.com/xxzvx"
+    - name:   Github
+      link:   "https://github.com/emilyfuhrman"
 - id:         contact
   title:      Contact
   simple:     true
