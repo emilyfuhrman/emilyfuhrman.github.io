@@ -3,6 +3,8 @@ layout: page_about
 title:  "ABOUT"
 description: Emily Fuhrman.
 ---
-#### I am a data visualizer and independent researcher living in Brooklyn, New York.
+#### I am a data visualizer living in Brooklyn, New York.
+
+#### I currently work at [Huge](hugeinc.com). I'm also a research fellow at the [Columbia University Group for Experimental Methods in the Humanities](http://xpmethod.plaintext.in/). I am interested in projects related to mapping, digital humanities, and critical approaches to data visualization.
 
 #### Please [email](mailto:emily.c.fuhrman@gmail.com) for freelance inquiries.
