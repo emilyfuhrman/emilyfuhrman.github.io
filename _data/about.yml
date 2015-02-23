@@ -30,7 +30,7 @@
       end:    "08 2012"
       spec:   Advanced Analytics Consultant
 - id:         clients
-  title:      "Selected clients & collaborators"
+  title:      Selected clients
   simple:     true
   show:       true
   list:
