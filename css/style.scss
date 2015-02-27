@@ -152,13 +152,17 @@ a.btn:hover	{
 	padding-bottom:23px; 
 	border-bottom:36px solid $color-black;
 	}
-.nav.name { 
+.nav.home { 
 	top:30px; 
 	left:36px;  
 	}
-.nav.abt { 
+.nav.proj { 
 	top:30px; 
 	right:36px;  
+	}
+.nav.abt { 
+	bottom:30px; 
+	left:36px;  
 	}
 .nav.title { 
 	top:30px; 
