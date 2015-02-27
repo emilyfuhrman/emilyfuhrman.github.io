@@ -1,7 +1,8 @@
 var schema = function(){
 
 	return {
-		transitionTime:215,
+		golden:(1+Math.sqrt(5))/2,
+		transitionTime:200,
 		vertices:{
 			1:{vx:0,vy:0,x:0,y:0},
 			2:{vx:0,vy:0,x:0,y:0},
@@ -16,21 +17,21 @@ var schema = function(){
 				oY = h/2;
 
 			function setPointStart(){
-				var dX = 350,
-					dY = 150;
-				self.vertices[1].vx = oX -dX;
-				self.vertices[1].vy = oY -dY;
-				self.vertices[2].vx = oX -dX;
-				self.vertices[2].vy = oY +dY;
-				self.vertices[3].vx = oX +dX;
-				self.vertices[3].vy = oY -dY;
-				self.vertices[4].vx = oX +dX;
-				self.vertices[4].vy = oY +dY;
+				var dX = (w*1.25)/self.golden,
+					dY = (h*1.25)/self.golden;
+				self.vertices[1].vx = w -dX;
+				self.vertices[1].vy = h -dY;
+				self.vertices[2].vx = w -dX;
+				self.vertices[2].vy = dY;
+				self.vertices[3].vx = dX;
+				self.vertices[3].vy = h -dY;
+				self.vertices[4].vx = dX;
+				self.vertices[4].vy = dY;
 			}
 
 			function setPointEnd(){
 				self.vertices[1].x = oX -100;
-				self.vertices[1].y = oY -100;
+				self.vertices[1].y = oY +200;
 				self.vertices[2].x = oX -500;
 				self.vertices[2].y = oY +100;
 				self.vertices[3].x = oX +300;
