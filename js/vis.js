@@ -1,7 +1,7 @@
 var schema = function(){
 
 	return {
-		transitionTime:350,
+		transitionTime:200,
 		vertices:{
 			1:{x:0,y:0},
 			2:{x:0,y:0},
