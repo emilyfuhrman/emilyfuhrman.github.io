@@ -121,8 +121,7 @@ h4 a {
 	padding:9px 0 4px;
 	}
 h4 a:hover {
-	background:$color-accent;
-	color:#fff;
+	color:$color-accent;
 	text-decoration:none;
 	border-bottom:2px solid $color-accent;
 	}
@@ -276,7 +275,7 @@ LIST
 
 /* 
 -----------------------
-PROJECTS
+POST
 ----------------------- */
 
 #proj-wrapper { 
@@ -323,7 +322,6 @@ PROJECTS
 .descrip a {
 	}
 .descrip a.cred {
-	border-bottom:none;
 	}
 .descrip a.cred:hover {
 	border-bottom:2px solid $color-accent;
@@ -339,7 +337,7 @@ PROJECTS
 
 /* 
 -----------------------
-ABOUT PAGE
+ABOUT
 ----------------------- */
 
 #top_content { 
@@ -381,24 +379,16 @@ ABOUT PAGE
 
 ul.items { 
 	list-style-type:none; 
-	font:$font-basic;
-	text-transform:uppercase; 
-	letter-spacing:$univ-letter-spacing;
-	margin:-5px 0 0; 
-	padding:5px 0 0; 
+	margin:0; 
+	padding:0; 
 	}
 ul.items li.item.title { 
 	text-decoration:none;
 	padding:5px 0 23px 0;
 	}
 ul.items li.item.link a { 
-	text-decoration:none; 
-	padding:3px 0 0; 
-	cursor:cell; 
 	}
 ul.items li.item.link a:hover { 
-	background:$color-accent; 
-	color:#fff; 
 	} 
 ul.items li.item div.holder	{
 	margin:0; 

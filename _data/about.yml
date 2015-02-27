@@ -1,7 +1,7 @@
 - id:         edu
   title:      Education
   simple:     false
-  show:       true
+  show:       false
   list:
     - name:   "Northwestern University"
       end:    2014
