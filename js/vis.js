@@ -31,8 +31,11 @@ var schema = function(){
 			}
 
 			function setPointEnd(){
+				
+				//number of posts?
 				self.vertices[1].x = oX -100;
 				self.vertices[1].y = oY +200;
+
 				self.vertices[2].x = oX -500;
 				self.vertices[2].y = oY +100;
 				self.vertices[3].x = oX +300;
@@ -52,6 +55,7 @@ var schema = function(){
 				vertL,
 				vertR;
 
+			//half the width/height of one vertex
 			var sq = 36;
 
 			setPointStart();
@@ -80,6 +84,16 @@ var schema = function(){
 						string2 = 'translate(' + x  + ',' + y  + ')';
 					return d3.interpolateString(string1,string2);
 				});
+			vertBack = verticesG.selectAll('rect')
+				.data(function(d){ return [d]; });
+			vertBack.enter().append('rect');
+			vertBack
+				.attr('x',-sq)
+				.attr('y',-sq)
+				.attr('width',sq*2)
+				.attr('height',sq*2)
+				;
+			vertBack.exit().remove();
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });
 			vertL.enter().append('path')

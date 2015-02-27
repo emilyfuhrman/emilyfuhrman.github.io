@@ -193,6 +193,12 @@ svg {
 	margin:0;
 	}
 
+.vertex {
+	cursor:cell;
+	}
+.vertex rect {
+	fill:transparent;
+	}
 .vertex path {
 	stroke:$color-black;
 	stroke-width:2;
