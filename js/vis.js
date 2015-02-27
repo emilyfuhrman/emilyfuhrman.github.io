@@ -50,6 +50,8 @@ var schema = function(){
 				vertL,
 				vertR;
 
+			var sq = 36;
+
 			setPointStart();
 			setPointEnd();
 
@@ -58,43 +60,31 @@ var schema = function(){
 			verticesG.enter().append('g')
 				.classed('vertex',true)
 				.attr('transform',function(d,i){
-					var x = d.value.vx,//w/2,
-						y = d.value.vy;//h/2;
+					var x = d.value.vx,
+						y = d.value.vy;
 					return 'translate(' + x + ',' + y + ')';
 				});
 			verticesG
 				.transition()
 				.delay(500)
 				.ease('backs')
-				.duration(function(d,i){
-					/*var baseline = 100,
-						s = self.transitionTime,
-						x = Math.abs(oX -d.value.x),
-						y = Math.abs(oY -d.value.y),
-
-						//triangulate distance to travel (from origin)
-						//scale to baseline distance
-						d = Math.sqrt(Math.pow(x,2) +Math.pow(y,2))/100;*/
-					return self.transitionTime;//d*s;
-				})
+				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var vx = d.value.vx,
 						vy = d.value.vy,
-						x = d.value.x,
-						y = d.value.y,
+						x  = d.value.x,
+						y  = d.value.y,
 						string1 = 'translate(' + vx + ',' + vy + ')',
-						string2 = 'translate(' + x + ',' + y + ')';
+						string2 = 'translate(' + x  + ',' + y  + ')';
 					return d3.interpolateString(string1,string2);
-				})
-				;
+				});
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });
 			vertL.enter().append('path')
 				.classed('L',true);
 			vertL
 				.attr('d',function(d){
-					var sq = 36,
-						pathString = 'M -' +sq + ', -' +sq +' L ' +sq +', ' +sq;
+					var pathString = 'M -' +sq + ', -' +sq +' L ' +sq +', ' +sq;
 					return pathString;
 				});
 			vertR = verticesG.selectAll('path.R')
@@ -103,7 +93,7 @@ var schema = function(){
 				.classed('R',true);
 			vertR
 				.attr('d',function(d){
-					var pathString = 'M -36, 36 L 36, -36';
+					var pathString = 'M -' +sq + ', ' +sq +' L ' +sq +', -' +sq;
 					return pathString;
 				});
 			vertR.exit().remove();
