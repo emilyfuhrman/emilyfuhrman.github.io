@@ -2,5 +2,13 @@
 <div id='vis'></div>
 <!--<div class='dekor index'></div>-->
 
+<script>
+	var JEKYLL_POSTS = [];
+	{% for post in site.posts %}
+		JEKYLL_POSTS.push({
+			title:"{{ post.title }}"
+		});
+	{% endfor %}
+</script>
 <script type='text/javascript' src='/js/vis.js'></script>
 {% include footer.html %}
