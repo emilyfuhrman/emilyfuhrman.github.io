@@ -187,7 +187,8 @@ a.btn:hover	{
 	}
 
 #vis,
-svg {
+#vis svg {
+	position:absolute;
 	width:100%;
 	height:100%;
 	margin:0;
@@ -202,6 +203,9 @@ svg {
 .vertex path {
 	stroke:$color-black;
 	stroke-width:2;
+	}
+.vertex:hover path {
+	stroke:$color-accent;
 	}
 
 /* 

@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:175,
-		delay:525,
-		pause:350,
+		transitionTime:120,
+		delay:480,
+		pause:240,
 		positions:{
 			1:{ 0:{x:0,y:0},
 				1:{x:0,y:0},
@@ -41,9 +41,23 @@ var schema = function(){
 					}
 				});
 
-				var d1 = self.posts.length,		//total # posts
-					d2 = totalImages.length,	//total # images in posts
-					d3 = new Date().getTime();	//current time in milliseconds
+				//set limits as [x,y] pairs
+				var d1_limit = [30,30], //arbitrary ceiling
+					d2_limit = [36,90],	//SET: works well with max [24,60]
+					d3_limit = [60,60],	//nothing here yet
+					d4_limit = [60,60];	//nothing here yet
+
+				//set units in scaled [x,y] px
+				var d1_unit = [(oX/d1_limit[0]),(oY/d1_limit[1])],
+					d2_unit = [(oX/d2_limit[0]),(oY/d2_limit[1])],
+					d3_unit = [(oX/d3_limit[0]),(oY/d3_limit[1])],	//nothing here yet
+					d4_unit = [(oX/d4_limit[0]),(oY/d4_limit[1])];	//nothing here yet
+
+				//get actual values
+				var d1 = [self.posts.length,totalImages.length],			//total # posts, total # images in posts
+					d2 = [new Date().getHours(),new Date().getMinutes()],	//current hours, current minutes
+					d3 = [20,40],											//nothing here yet
+					d4 = [50,50];											//nothing here yet
 
 				//state 0
 				self.positions[1][0].x = w -dX;
@@ -66,14 +80,14 @@ var schema = function(){
 				self.positions[4][1].y = dY;
 
 				//state2
-				self.positions[1][2].x = oX -100;
-				self.positions[1][2].y = oY +200;
-				self.positions[2][2].x = oX -500;
-				self.positions[2][2].y = oY +100;
-				self.positions[3][2].x = oX +300;
-				self.positions[3][2].y = oY -100;
-				self.positions[4][2].x = oX +100;
-				self.positions[4][2].y = oY +100;
+				self.positions[1][2].x = oX -(d1_unit[0]*d1[0]);
+				self.positions[1][2].y = oY -(d1_unit[1]*d1[1]);
+				self.positions[2][2].x = oX -(d2_unit[0]*d2[0]);
+				self.positions[2][2].y = oY +(d2_unit[1]*d2[1]);
+				self.positions[3][2].x = oX +(d3_unit[0]*d3[0]);
+				self.positions[3][2].y = oY -(d3_unit[1]*d3[1]);
+				self.positions[4][2].x = oX +(d4_unit[0]*d4[0]);
+				self.positions[4][2].y = oY +(d4_unit[1]*d4[1]);
 			}
 
 			setPointPos();
@@ -99,6 +113,9 @@ var schema = function(){
 					return 'translate(' + x + ',' + y + ')';
 				});
 			verticesG
+				.attr('class',function(d,i){
+					return 'vertex ' +d.key;
+				})
 				.transition()
 				.delay(self.delay)
 				.ease('sin-out')
