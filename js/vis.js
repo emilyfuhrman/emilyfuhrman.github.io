@@ -25,6 +25,9 @@ var schema = function(){
 				w = window.innerWidth,
 				h = window.innerHeight,
 
+				//length of diagonal from origin to any corner (hypotenuse)
+				hyp = Math.sqrt(Math.pow(w,2) +Math.pow(h,2))/2,
+
 				//half the width/height of one vertex	
 				sq = 36;
 
@@ -32,7 +35,14 @@ var schema = function(){
 				var oX = w/2,
 					oY = h/2,
 					dX = (w*1.25)/self.golden,
-					dY = (h*1.25)/self.golden;
+					dY = (h*1.25)/self.golden,
+
+					//central angle from which to triangulate positions (keep radians)
+					a = Math.atan(h/w),
+
+					//absolute values of sin(a) and cos(a)
+					sinA = Math.abs(Math.sin(a)),
+					cosA = Math.abs(Math.cos(a));
 
 				var totalImages = [];
 				self.posts.forEach(function(d,i){
@@ -41,23 +51,23 @@ var schema = function(){
 					}
 				});
 
-				//set limits as [x,y] pairs
-				var d1_limit = [30,30], //arbitrary ceiling
-					d2_limit = [36,90],	//SET: works well with max [24,60]
-					d3_limit = [60,60],	//nothing here yet
-					d4_limit = [60,60];	//nothing here yet
+				//set limits
+				var d1_limit = 50,	//arbitrary ceiling (posts)
+					d2_limit = 60,	//arbitrary ceiling (images)
+					d3_limit = 90,	//minutes past the hour
+					d4_limit = 100;	//nothing here yet
 
-				//set units in scaled [x,y] px
-				var d1_unit = [(oX/d1_limit[0]),(oY/d1_limit[1])],
-					d2_unit = [(oX/d2_limit[0]),(oY/d2_limit[1])],
-					d3_unit = [(oX/d3_limit[0]),(oY/d3_limit[1])],	//nothing here yet
-					d4_unit = [(oX/d4_limit[0]),(oY/d4_limit[1])];	//nothing here yet
+				//set units in scaled px, using length of hypotenuse
+				var d1_unit = hyp/d1_limit,
+					d2_unit = hyp/d2_limit,
+					d3_unit = hyp/d3_limit,
+					d4_unit = hyp/d4_limit;	//nothing here yet
 
 				//get actual values
-				var d1 = [self.posts.length,totalImages.length],			//total # posts, total # images in posts
-					d2 = [new Date().getHours(),new Date().getMinutes()],	//current hours, current minutes
-					d3 = [20,40],											//nothing here yet
-					d4 = [50,50];											//nothing here yet
+				var d1 = self.posts.length,			//total # posts
+					d2 = totalImages.length,		//total # images in posts
+					d3 = new Date().getMinutes(),	//minutes past hour
+					d4 = 50;						//nothing here yet
 
 				//state 0
 				self.positions[1][0].x = w -dX;
@@ -80,14 +90,14 @@ var schema = function(){
 				self.positions[4][1].y = dY;
 
 				//state2
-				self.positions[1][2].x = oX -(d1_unit[0]*d1[0]);
-				self.positions[1][2].y = oY -(d1_unit[1]*d1[1]);
-				self.positions[2][2].x = oX -(d2_unit[0]*d2[0]);
-				self.positions[2][2].y = oY +(d2_unit[1]*d2[1]);
-				self.positions[3][2].x = oX +(d3_unit[0]*d3[0]);
-				self.positions[3][2].y = oY -(d3_unit[1]*d3[1]);
-				self.positions[4][2].x = oX +(d4_unit[0]*d4[0]);
-				self.positions[4][2].y = oY +(d4_unit[1]*d4[1]);
+				self.positions[1][2].x = oX -(cosA*(d1_unit*d1));
+				self.positions[1][2].y = oY -(sinA*(d1_unit*d1));
+				self.positions[2][2].x = oX -(cosA*(d2_unit*d2));
+				self.positions[2][2].y = oY +(sinA*(d2_unit*d2));
+				self.positions[3][2].x = oX +(cosA*(d3_unit*d3));
+				self.positions[3][2].y = oY -(sinA*(d3_unit*d3));
+				self.positions[4][2].x = oX +(cosA*(d4_unit*d4));
+				self.positions[4][2].y = oY +(sinA*(d4_unit*d4));
 			}
 
 			setPointPos();
