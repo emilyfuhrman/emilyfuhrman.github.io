@@ -5,9 +5,20 @@
 <script>
 	var JEKYLL_POSTS = [];
 	{% for post in site.posts %}
-		JEKYLL_POSTS.push({
-			title:"{{ post.title }}"
-		});
+		{% if post.images %}
+			var imgs = [];
+			{% for img in post.images %}
+				imgs.push("{{ img.src }}");
+			{% endfor %}
+			JEKYLL_POSTS.push({
+				title:"{{ post.title }}",
+				images:imgs
+			});
+		{% else %}
+			JEKYLL_POSTS.push({
+				title:"{{ post.title }}"
+			});
+		{% endif %}
 	{% endfor %}
 </script>
 <script type='text/javascript' src='/js/vis.js'></script>

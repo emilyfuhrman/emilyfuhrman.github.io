@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:275,
+		transitionTime:300,
 		delay:400,
-		pause:200,
+		pause:300,
 		positions:{
 			1:{ 0:{x:0,y:0},
 				1:{x:0,y:0},
@@ -34,6 +34,17 @@ var schema = function(){
 					dX = (w*1.25)/self.golden,
 					dY = (h*1.25)/self.golden;
 
+				var totalImages = [];
+				self.posts.forEach(function(d,i){
+					if(d.images){
+						d.images.forEach(function(_d,_i){ totalImages.push(_d); })
+					}
+				});
+
+				var d1 = self.posts.length,		//total # posts
+					d2 = totalImages.length,	//total # images in posts
+					d3 = new Date().getTime();	//current time in milliseconds
+debugger;
 				//state 0
 				self.positions[1][0].x = w -dX;
 				self.positions[1][0].y = 0 -(sq*2);
