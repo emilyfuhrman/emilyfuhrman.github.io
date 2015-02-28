@@ -52,8 +52,8 @@ var schema = function(){
 				});
 
 				//set limits
-				var d1_limit = 50,	//arbitrary ceiling (posts)
-					d2_limit = 60,	//arbitrary ceiling (images)
+				var d1_limit = 40,	//arbitrary ceiling (posts)
+					d2_limit = 20,	//arbitrary ceiling (images)
 					d3_limit = 90,	//minutes past the hour
 					d4_limit = 100;	//nothing here yet
 
