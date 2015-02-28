@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:310,
-		delay:400,
-		pause:300,
+		transitionTime:175,
+		delay:525,
+		pause:350,
 		positions:{
 			1:{ 0:{x:0,y:0},
 				1:{x:0,y:0},
@@ -101,7 +101,7 @@ var schema = function(){
 			verticesG
 				.transition()
 				.delay(self.delay)
-				.ease('cubic')
+				.ease('sin-out')
 				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][0].x,
