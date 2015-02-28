@@ -3,7 +3,7 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:300,
+		transitionTime:310,
 		delay:400,
 		pause:300,
 		positions:{
@@ -44,7 +44,7 @@ var schema = function(){
 				var d1 = self.posts.length,		//total # posts
 					d2 = totalImages.length,	//total # images in posts
 					d3 = new Date().getTime();	//current time in milliseconds
-debugger;
+
 				//state 0
 				self.positions[1][0].x = w -dX;
 				self.positions[1][0].y = 0 -(sq*2);
