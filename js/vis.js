@@ -3,7 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:220,
+		transitionTime:275,
+		delay:400,
+		pause:200,
 		positions:{
 			1:{ 0:{x:0,y:0},
 				1:{x:0,y:0},
@@ -87,8 +89,8 @@ var schema = function(){
 				});
 			verticesG
 				.transition()
-				.delay(500)
-				.ease('backs')
+				.delay(self.delay)
+				.ease('cubic')
 				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][0].x,
@@ -100,7 +102,8 @@ var schema = function(){
 					return d3.interpolateString(string1,string2);
 				})
 				.transition()
-				.delay(1000)
+				.delay(self.delay +self.transitionTime +self.pause)
+				//.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][1].x,
 						y1 = self.positions[d.key][1].y,
