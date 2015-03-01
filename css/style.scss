@@ -235,7 +235,7 @@ a.btn:hover	{
 	/*stroke-dasharray:6,4;*/
 	pointer-events:none;
 	}
-.vertex .markup.selected {
+.vertex.selected .markup {
 	opacity:1;
 	stroke:$color-accent;
 	}
@@ -246,8 +246,9 @@ a.btn:hover	{
 .vertex path {
 	stroke:$color-black;
 	stroke-width:2;
+	pointer-events:none;
 	}
-.vertex:hover path {
+.vertex.selected path {
 	stroke:$color-accent;
 	}
 

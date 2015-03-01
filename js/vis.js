@@ -66,7 +66,7 @@ var schema = function(){
 				self.vertices.v1.limit = 40;	
 				self.vertices.v2.limit = 90;	
 				self.vertices.v3.limit = 100;
-				self.vertices.v4.limit = 20;	
+				self.vertices.v4.limit = 24;	
 
 				//get actual values
 				self.vertices.v1.value = self.posts.length,			//total # posts
@@ -129,7 +129,18 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});
 				originG
+					.transition()
+					.delay(self.transitionTime)
+					.duration(0)
 					.style('opacity',1);
+				vertArc
+					.transition()
+					.duration(self.transitionTime)
+					.styleTween('stroke-dashoffset',function(){
+						var n1 = d3.select(this).node().getTotalLength(),
+							n2 = 0;
+						return d3.interpolate(n1,n2);
+					});
 				d3.selectAll('._' +d.key).classed('selected',true);
 			}
 			function hoverOut(){
@@ -142,7 +153,18 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});
 				originG
+					.transition()
+					.delay(self.transitionTime/2)
+					.duration(0)
 					.style('opacity',0);
+				vertArc
+					.transition()
+					.duration(self.transitionTime/2)
+					.styleTween('stroke-dashoffset',function(){
+						var n1 = d3.select(this).node().getTotalLength(),
+							n2 = 0;
+						return d3.interpolate(n2,n1);
+					});
 				d3.selectAll('.selected').classed('selected',false);
 			}
 
@@ -189,7 +211,6 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay +self.transitionTime +self.pause)
-				//.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][1].x,
 						y1 = self.positions[d.key][1].y,
@@ -204,7 +225,7 @@ var schema = function(){
 					hoverOver(d);
 				})
 				.on('mousemove',function(d){
-					hoverOver(d);
+					return;
 				})
 				.on('mouseout',function(){
 					hoverOut();
@@ -242,15 +263,15 @@ var schema = function(){
 						c1 = [(sq*2),0];
 						c2 = [(sq*2),(sq*2)];
 					} else if(d.key === 'v3'){
-						m1 = [(sq*-2),(sq*2)];
-						c0 = [0,(sq*2)];
-						c1 = [(sq*2),0];
-						c2 = [(sq*2),(sq*-2)];
-					} else if(d.key === 'v4'){
-						m1 = [(sq*-2),(sq*-2)];
-						c0 = [(sq*-2),0];
+						m1 = [(sq*2),(sq*-2)];
+						c0 = [(sq*2),0];
 						c1 = [0,(sq*2)];
-						c2 = [(sq*2),(sq*2)];
+						c2 = [(sq*-2),(sq*2)];
+					} else if(d.key === 'v4'){
+						m1 = [(sq*2),(sq*2)];
+						c0 = [0,(sq*2)];
+						c1 = [(sq*-2),0];
+						c2 = [(sq*-2),(sq*-2)];
 					}
 					str = 'M ' +m1[0] +',' +m1[1] + ' C ' +c0[0] +',' +c0[1] +' ' +c1[0] +',' +c1[1] +' ' +c2[0] +',' +c2[1];
 					return str;
@@ -270,7 +291,14 @@ var schema = function(){
 					}
 					return 'rotate(' + r +')';
 				})
-				;
+				.style('stroke-dasharray',function(){
+					var totalLength = d3.select(this).node().getTotalLength();
+					return totalLength +' ' +totalLength;
+				})
+				.style('stroke-dashOffset',function(){
+					var totalLength = d3.select(this).node().getTotalLength();
+					return totalLength;
+				});
 
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });
