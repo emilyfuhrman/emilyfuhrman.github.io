@@ -286,19 +286,30 @@ var schema = function(){
 					return str;
 				})
 				.attr('transform',function(d,i){
-					var r, angle = a*(180/Math.PI);
+					var r, tx, ty, 
+						arcar = (3*sq)/4,
+						angle = a*(180/Math.PI);
 
 					//rotate arcs to orient towards origin
+					//translate arcs to intersect X's
 					if(d.key === 'v1'){
-						r = -(45 -angle);
+						tx = arcar;
+						ty = arcar;
+						r  = -(45 -angle);
 					} else if(d.key === 'v2'){
-						r = 45 -angle;
+						tx = -arcar;
+						ty = arcar;
+						r  = 45 -angle;
 					} else if(d.key === 'v3'){
-						r = -(45 -angle);
+						tx = -arcar;
+						ty = -arcar;
+						r  = -(45 -angle);
 					} else if(d.key === 'v4'){
-						r = 45 -angle;
+						tx = arcar;
+						ty = -arcar;
+						r  = 45 -angle;
 					}
-					return 'rotate(' + r +')';
+					return 'rotate(' +r +')translate(' +tx +',' +ty +')';
 				})
 				.style('stroke-dasharray',function(){
 					var totalLength = d3.select(this).node().getTotalLength();
@@ -393,8 +404,8 @@ var schema = function(){
 			vertL.exit().remove();
 			vertR.exit().remove();
 
-			//build invisible origin, set size
-			var osq = 35,
+			//build invisible origin, set size (1px less than desired: stroke)
+			var osq = 12,
 				originG,
 				origin,
 				cross;

@@ -202,6 +202,7 @@ a.btn:hover	{
 	pointer-events:none;
 	}
 #vis .origin rect {
+	stroke:none;
 	}
 #vis .origin path {
 	}
@@ -231,12 +232,11 @@ a.btn:hover	{
 	opacity:0;
 	fill:none;
 	stroke:$color-black;
-	stroke-width:0.75;
+	stroke-width:1;
 	pointer-events:none;
 	}
 .vertex.selected .markup {
 	opacity:1;
-	stroke:$color-accent;
 	}
 
 .vertex rect {
