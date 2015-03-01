@@ -35,6 +35,9 @@ var schema = function(){
 				w = window.innerWidth,
 				h = window.innerHeight,
 
+				//central angle from which to triangulate positions (keep radians)
+				a = Math.atan(h/w),
+
 				//length of diagonal from origin to any corner (hypotenuse)
 				hyp = Math.sqrt(Math.pow(w,2) +Math.pow(h,2))/2,
 
@@ -47,9 +50,6 @@ var schema = function(){
 					oY = h/2,
 					dX = (w*1.25)/self.golden,
 					dY = (h*1.25)/self.golden,
-
-					//central angle from which to triangulate positions (keep radians)
-					a = Math.atan(h/w),
 
 					//absolute values of sin(a) and cos(a)
 					sinA = Math.abs(Math.sin(a)),
@@ -254,7 +254,23 @@ var schema = function(){
 					}
 					str = 'M ' +m1[0] +',' +m1[1] + ' C ' +c0[0] +',' +c0[1] +' ' +c1[0] +',' +c1[1] +' ' +c2[0] +',' +c2[1];
 					return str;
-				});
+				})
+				.attr('transform',function(d,i){
+					var r, angle = a*(180*Math.PI);
+
+					//rotate arcs to orient towards origin
+					if(d.key === 'v1'){
+						r = 270 -angle;
+					} else if(d.key === 'v2'){
+						r = 90 +angle;
+					} else if(d.key === 'v3'){
+						r = -90 -angle;
+					} else if(d.key === 'v4'){
+						r = -270 +angle;
+					}
+					return 'rotate(' + r +')';
+				})
+				;
 
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });
@@ -282,7 +298,7 @@ var schema = function(){
 			vertR.exit().remove();
 
 			//build invisible origin, set size
-			var osq = 17,
+			var osq = 35,
 				originG,
 				origin,
 				cross;
