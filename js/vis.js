@@ -42,6 +42,7 @@ var schema = function(){
 				sq = 36;
 
 			function setPointPos(d3){
+
 				var oX = w/2,
 					oY = h/2,
 					dX = (w*1.25)/self.golden,
@@ -79,6 +80,7 @@ var schema = function(){
 				});
 
 				//set all positions
+				//from offscreen (0), to center square (1), to data-driven (2)
 				d3.entries(self.positions).forEach(function(d,i){
 					var wF, hF, xF, yF;
 
@@ -126,6 +128,8 @@ var schema = function(){
 							s2 = Math.round(self.positions[d.key].u) +'px';
 						return d3.interpolateString(s1,s2);
 					});
+				originG
+					.style('opacity',1);
 				d3.selectAll('._' +d.key).classed('selected',true);
 			}
 			function hoverOut(){
@@ -137,6 +141,8 @@ var schema = function(){
 							s2 = 0 +'px';
 						return d3.interpolateString(s1,s2);
 					});
+				originG
+					.style('opacity',0);
 				d3.selectAll('.selected').classed('selected',false);
 			}
 
@@ -233,6 +239,42 @@ var schema = function(){
 			vertL.exit().remove();
 			vertR.exit().remove();
 
+			//build invisible origin, set size
+			var osq = 17,
+				originG,
+				origin,
+				cross;
+			originG = svg.selectAll('g.origin')
+				.data([[1,2]]);
+			originG.enter().append('g')
+				.classed('origin',true);
+			originG
+				.attr('transform',function(d,i){
+					var x = w/2 -osq/2,
+						y = h/2 -osq/2;
+					return 'translate(' + x + ',' + y + ')';
+				});
+			origin = originG.selectAll('rect')
+				.data(function(d){return [d];});
+			origin.enter().append('rect');
+			origin
+				.attr('width',osq)
+				.attr('height',osq);
+			cross = originG
+				.selectAll('path.cross')
+				.data(function(d){ return d; });
+			cross.enter().append('path')
+				.classed('cross',true);
+			cross
+				.attr('d',function(d,i){
+					var p1 = 'M ' +osq/2  +', -' +osq   +' L' +osq/2   +', ' +(osq*2),
+						p2 = 'M ' +(-osq) +', '  +osq/2 +' L' +(osq*2) +', ' +(osq/2);
+					return i === 0 ? p1 : p2;
+				});
+			originG.exit().remove();
+			origin.exit().remove();
+			cross.exit().remove();
+
 			//build legend
 			var unitBars = d3.select('.vis.legend')
 				.selectAll('div.unitbar')
@@ -245,11 +287,12 @@ var schema = function(){
 				})
 				.style('width','0px')
 				.style('top',function(d,i){
-					var padbot = 45,	//legend with respect to bottom of page
-						pad = 15;		//space between entries
+					//padbot is legend with respect to bottom of page
+					//pad is space between entries
+					var padbot = 45,
+						pad = 15;
 					return (i*pad) +padbot -1 +'px';
-				})
-				;
+				});
 			unitBars.exit().remove();
 		}
 	}
