@@ -156,6 +156,8 @@ var schema = function(){
 
 			//draw vertices
 			var verticesG,
+				vertBack,
+				vertArc,
 				vertL,
 				vertR;
 
@@ -207,6 +209,7 @@ var schema = function(){
 				.on('mouseout',function(){
 					hoverOut();
 				});
+
 			vertBack = verticesG.selectAll('rect')
 				.data(function(d){ return [d]; });
 			vertBack.enter().append('rect');
@@ -216,6 +219,43 @@ var schema = function(){
 				.attr('width',sq*2)
 				.attr('height',sq*2)
 				;
+
+			vertArc = verticesG.selectAll('path.markup')
+				.data(function(d){ return [d]; });
+			vertArc.enter().append('path')
+				.classed('markup',true);
+			vertArc
+				.attr('class',function(d){
+					return 'markup _' +d.key;
+				})
+				.attr('d',function(d){
+					var m1, c0, c1, c2,
+						str;
+					if(d.key === 'v1'){
+						m1 = [(sq*-2),(sq*2)];
+						c0 = [(sq*-2),0];
+						c1 = [0,(sq*-2)];
+						c2 = [(sq*2),(sq*-2)];
+					} else if(d.key === 'v2'){
+						m1 = [(sq*-2),(sq*-2)];
+						c0 = [0,(sq*-2)];
+						c1 = [(sq*2),0];
+						c2 = [(sq*2),(sq*2)];
+					} else if(d.key === 'v3'){
+						m1 = [(sq*-2),(sq*2)];
+						c0 = [0,(sq*2)];
+						c1 = [(sq*2),0];
+						c2 = [(sq*2),(sq*-2)];
+					} else if(d.key === 'v4'){
+						m1 = [(sq*-2),(sq*-2)];
+						c0 = [(sq*-2),0];
+						c1 = [0,(sq*2)];
+						c2 = [(sq*2),(sq*2)];
+					}
+					str = 'M ' +m1[0] +',' +m1[1] + ' C ' +c0[0] +',' +c0[1] +' ' +c1[0] +',' +c1[1] +' ' +c2[0] +',' +c2[1];
+					return str;
+				});
+
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });
 			vertL.enter().append('path')
@@ -225,6 +265,7 @@ var schema = function(){
 					var pathString = 'M -' +sq + ', -' +sq +' L ' +sq +', ' +sq;
 					return pathString;
 				});
+
 			vertR = verticesG.selectAll('path.R')
 				.data(function(d){ return [d]; });
 			vertR.enter().append('path')
@@ -236,6 +277,7 @@ var schema = function(){
 				});
 			verticesG.exit().remove();
 			vertBack.exit().remove();
+			vertArc.exit().remove();
 			vertL.exit().remove();
 			vertR.exit().remove();
 

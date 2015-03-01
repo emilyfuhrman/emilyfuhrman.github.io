@@ -221,6 +221,18 @@ a.btn:hover	{
 .vertex {
 	cursor:cell;
 	}
+
+.vertex .markup {
+	opacity:0;
+	fill:none;
+	stroke:$color-black;
+	stroke-width:0.75;
+	}
+.vertex .markup.selected {
+	opacity:1;
+	stroke:$color-accent;
+	}
+
 .vertex rect {
 	fill:transparent;
 	}
