@@ -141,6 +141,14 @@ var schema = function(){
 							n2 = 0;
 						return d3.interpolate(n1,n2);
 					});
+				vertSeg
+					.transition()
+					.duration(self.transitionTime)
+					.styleTween('stroke-dashoffset',function(){
+						var n1 = d3.select(this).node().getTotalLength(),
+							n2 = 0;
+						return d3.interpolate(n1,n2);
+					});
 				d3.selectAll('._' +d.key).classed('selected',true);
 			}
 			function hoverOut(){
@@ -153,8 +161,17 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});
 				originG
-					.style('opacity',0);
+					.transition()
+					.duration(0)
+					.style('opacity',0)
+					;
 				vertArc
+					.transition()
+					.duration(0)
+					.style('stroke-dashoffset',0);
+				vertSeg
+					.transition()
+					.duration(0)
 					.style('stroke-dashoffset',0);
 				d3.selectAll('.selected').classed('selected',false);
 			}
@@ -171,6 +188,7 @@ var schema = function(){
 			var verticesG,
 				vertBack,
 				vertArc,
+				vertSeg,
 				vertL,
 				vertR;
 
@@ -232,13 +250,13 @@ var schema = function(){
 				.attr('height',sq*2)
 				;
 
-			vertArc = verticesG.selectAll('path.markup')
+			vertArc = verticesG.selectAll('path.arc')
 				.data(function(d){ return [d]; });
 			vertArc.enter().append('path')
-				.classed('markup',true);
+				.classed('arc',true);
 			vertArc
 				.attr('class',function(d){
-					return 'markup _' +d.key;
+					return 'arc markup _' +d.key;
 				})
 				.attr('d',function(d){
 					var m1, c0, c1, c2,
@@ -290,6 +308,65 @@ var schema = function(){
 					var totalLength = d3.select(this).node().getTotalLength();
 					return totalLength;
 				});
+
+			vertSeg = verticesG.selectAll('path.seg')
+				.data(function(d){ return [d]; });
+			vertSeg.enter().append('path')
+				.classed('seg',true);
+			vertSeg
+				.attr('class',function(d,i){
+					return 'seg markup _' +d.key;
+				})
+				.attr('d',function(d){
+					var m1, m2, l1, l2,
+						ext = 72,
+						len = self.positions[d.key].u*self.vertices[d.key].value,
+						str,
+
+						//absolute values of sin(a) and cos(a)
+						sinA = Math.abs(Math.sin(a)),
+						cosA = Math.abs(Math.cos(a)),
+
+						x1 = cosA*ext,
+						y1 = sinA*ext,
+
+						x2 = cosA*(len +ext),
+						y2 = sinA*(len +ext);
+
+					if(d.key === 'v1'){
+						m1 = -x1;
+						m2 = -y1;
+						l1 =  x2;
+						l2 =  y2;
+					} else if(d.key === 'v2'){
+						m1 =  x1;
+						m2 = -y1;
+						l1 = -x2;
+						l2 =  y2;
+					} else if(d.key === 'v3'){
+						m1 =  x1;
+						m2 =  y1;
+						l1 = -x2;
+						l2 = -y2;
+					} else if(d.key === 'v4'){
+						m1 = -x1;
+						m2 =  y1;
+						l1 =  x2;
+						l2 = -y2;
+					}
+
+					str = 'M ' +m1 +',' +m2 +' L ' +l1 +',' +l2;
+					return str;
+				})
+				.style('stroke-dasharray',function(){
+					var totalLength = d3.select(this).node().getTotalLength();
+					return totalLength +' ' +totalLength;
+				})
+				.style('stroke-dashOffset',function(){
+					var totalLength = d3.select(this).node().getTotalLength();
+					return totalLength;
+				});
+			vertSeg.exit().remove();
 
 			vertL = verticesG.selectAll('path.L')
 				.data(function(d){ return [d]; });

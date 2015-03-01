@@ -204,7 +204,6 @@ a.btn:hover	{
 #vis .origin rect {
 	}
 #vis .origin path {
-	stroke:none;
 	}
 
 .vis.legend {
@@ -233,7 +232,6 @@ a.btn:hover	{
 	fill:none;
 	stroke:$color-black;
 	stroke-width:0.75;
-	/*stroke-dasharray:6,4;*/
 	pointer-events:none;
 	}
 .vertex.selected .markup {
