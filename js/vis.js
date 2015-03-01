@@ -405,7 +405,7 @@ var schema = function(){
 			vertR.exit().remove();
 
 			//build invisible origin, set size
-			var osq = 12,
+			var osq = 30,
 				originG,
 				origin,
 				cross;
