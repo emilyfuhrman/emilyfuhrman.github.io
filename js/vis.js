@@ -404,7 +404,7 @@ var schema = function(){
 			vertL.exit().remove();
 			vertR.exit().remove();
 
-			//build invisible origin, set size (1px less than desired: stroke)
+			//build invisible origin, set size
 			var osq = 12,
 				originG,
 				origin,
