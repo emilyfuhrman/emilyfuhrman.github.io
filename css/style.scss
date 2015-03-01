@@ -199,6 +199,7 @@ a.btn:hover	{
 	fill:transparent;
 	stroke-width:1;
 	stroke:$color-accent;
+	pointer-events:none;
 	}
 #vis .origin rect {
 	}

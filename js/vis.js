@@ -153,18 +153,9 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});
 				originG
-					.transition()
-					.delay(self.transitionTime/2)
-					.duration(0)
 					.style('opacity',0);
 				vertArc
-					.transition()
-					.duration(self.transitionTime/2)
-					.styleTween('stroke-dashoffset',function(){
-						var n1 = d3.select(this).node().getTotalLength(),
-							n2 = 0;
-						return d3.interpolate(n2,n1);
-					});
+					.style('stroke-dashoffset',0);
 				d3.selectAll('.selected').classed('selected',false);
 			}
 
