@@ -277,17 +277,17 @@ var schema = function(){
 					return str;
 				})
 				.attr('transform',function(d,i){
-					var r, angle = a*(180*Math.PI);
+					var r, angle = a*(180/Math.PI);
 
 					//rotate arcs to orient towards origin
 					if(d.key === 'v1'){
-						r = 270 -angle;
+						r = -(45 -angle);
 					} else if(d.key === 'v2'){
-						r = 90 +angle;
+						r = 45 -angle;
 					} else if(d.key === 'v3'){
-						r = -90 -angle;
+						r = -(45 -angle);
 					} else if(d.key === 'v4'){
-						r = -270 +angle;
+						r = 45 -angle;
 					}
 					return 'rotate(' + r +')';
 				})
