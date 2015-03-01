@@ -6,19 +6,29 @@ var schema = function(){
 		transitionTime:120,
 		delay:480,
 		pause:240,
+		vertices:{
+			v1:{},
+			v2:{},
+			v3:{},
+			v4:{}
+		},
 		positions:{
-			1:{ 0:{x:0,y:0},
+			v1:{0:{x:0,y:0},
 				1:{x:0,y:0},
-				2:{x:0,y:0} },
-			2:{ 0:{x:0,y:0},
+				2:{x:0,y:0},
+				u:0 },
+			v2:{0:{x:0,y:0},
 				1:{x:0,y:0},
-				2:{x:0,y:0} },
-			3:{ 0:{x:0,y:0},
+				2:{x:0,y:0},
+				u:0 },
+			v3:{0:{x:0,y:0},
 				1:{x:0,y:0},
-				2:{x:0,y:0} },
-			4:{ 0:{x:0,y:0},
+				2:{x:0,y:0},
+				u:0 },
+			v4:{0:{x:0,y:0},
 				1:{x:0,y:0},
-				2:{x:0,y:0} }
+				2:{x:0,y:0},
+				u:0 }
 		},
 		generate:function(){
 			var self = vis,
@@ -31,7 +41,7 @@ var schema = function(){
 				//half the width/height of one vertex	
 				sq = 36;
 
-			function setPointPos(){
+			function setPointPos(d3){
 				var oX = w/2,
 					oY = h/2,
 					dX = (w*1.25)/self.golden,
@@ -51,56 +61,86 @@ var schema = function(){
 					}
 				});
 
-				//set limits
-				var d1_limit = 40,	//arbitrary ceiling (posts)
-					d2_limit = 20,	//arbitrary ceiling (images)
-					d3_limit = 90,	//minutes past the hour
-					d4_limit = 100;	//nothing here yet
-
-				//set units in scaled px, using length of hypotenuse
-				var d1_unit = hyp/d1_limit,
-					d2_unit = hyp/d2_limit,
-					d3_unit = hyp/d3_limit,
-					d4_unit = hyp/d4_limit;	//nothing here yet
+				//set ceilings (mostly arbitrary)
+				self.vertices.v1.limit = 40;	
+				self.vertices.v2.limit = 90;	
+				self.vertices.v3.limit = 100;
+				self.vertices.v4.limit = 20;	
 
 				//get actual values
-				var d1 = self.posts.length,			//total # posts
-					d2 = totalImages.length,		//total # images in posts
-					d3 = new Date().getMinutes(),	//minutes past hour
-					d4 = 50;						//nothing here yet
+				self.vertices.v1.value = self.posts.length,			//total # posts
+				self.vertices.v2.value = new Date().getMinutes(),	//minutes past hour
+				self.vertices.v3.value = 50;						//nothing here yet
+				self.vertices.v4.value = totalImages.length;		//total # images in posts
 
-				//state 0
-				self.positions[1][0].x = w -dX;
-				self.positions[1][0].y = 0 -(sq*2);
-				self.positions[2][0].x = w -dX;
-				self.positions[2][0].y = h +(sq*2);
-				self.positions[3][0].x = dX;
-				self.positions[3][0].y = 0 -(sq*2);
-				self.positions[4][0].x = dX;
-				self.positions[4][0].y = h +(sq*2);
+				//set accordant units
+				d3.entries(self.vertices).forEach(function(d,i){
+					self.positions[d.key].u = hyp/d.value.limit;
+				});
 
-				//state 1
-				self.positions[1][1].x = w -dX;
-				self.positions[1][1].y = h -dY;
-				self.positions[2][1].x = w -dX;
-				self.positions[2][1].y = dY;
-				self.positions[3][1].x = dX;
-				self.positions[3][1].y = h -dY;
-				self.positions[4][1].x = dX;
-				self.positions[4][1].y = dY;
+				//set all positions
+				d3.entries(self.positions).forEach(function(d,i){
+					var wF, hF, xF, yF;
 
-				//state2
-				self.positions[1][2].x = oX -(cosA*(d1_unit*d1));
-				self.positions[1][2].y = oY -(sinA*(d1_unit*d1));
-				self.positions[2][2].x = oX -(cosA*(d2_unit*d2));
-				self.positions[2][2].y = oY +(sinA*(d2_unit*d2));
-				self.positions[3][2].x = oX +(cosA*(d3_unit*d3));
-				self.positions[3][2].y = oY -(sinA*(d3_unit*d3));
-				self.positions[4][2].x = oX +(cosA*(d4_unit*d4));
-				self.positions[4][2].y = oY +(sinA*(d4_unit*d4));
+					if(d.key === 'v1'){
+						wF =  1;
+						hF =  0;
+						xF = -1;
+						yF = -1;
+					} else if(d.key === 'v2'){
+						wF =  0;
+						hF =  0;
+						xF =  1;
+						yF = -1;
+					} else if(d.key === 'v3'){
+						wF =  0;
+						hF =  1;
+						xF =  1;
+						yF =  1;
+					} else if(d.key === 'v4'){
+						wF =  1;
+						hF =  1;
+						xF = -1;
+						yF =  1;
+					}
+
+					//state0
+					self.positions[d.key][0].x = (wF*w) + (xF*dX);
+					self.positions[d.key][0].y = (hF*h) + (yF*(sq*2));
+
+					//state1 (toggle hF to opp. of state0 value)
+					self.positions[d.key][1].x = (wF*w) + (xF*dX);
+					self.positions[d.key][1].y = ((1 -hF)*h) + (yF*dY);
+
+					//state2
+					self.positions[d.key][2].x = oX + ( xF*(cosA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+					self.positions[d.key][2].y = oY + ( yF*(sinA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+				});
+			}
+			function hoverOver(d){
+				unitBars
+					.transition()
+					.duration(self.transitionTime)
+					.styleTween('width',function(d,i){
+						var s1 = d3.select(this).style('width') +'px',
+							s2 = Math.round(self.positions[d.key].u) +'px';
+						return d3.interpolateString(s1,s2);
+					});
+				d3.selectAll('._' +d.key).classed('selected',true);
+			}
+			function hoverOut(){
+				unitBars
+					.transition()
+					.duration(self.transitionTime/2)
+					.styleTween('width',function(d,i){
+						var s1 = d3.select(this).style('width') +'px',
+							s2 = 0 +'px';
+						return d3.interpolateString(s1,s2);
+					});
+				d3.selectAll('.selected').classed('selected',false);
 			}
 
-			setPointPos();
+			setPointPos(d3);
 
 			var svg = d3.select('#vis')
 				.selectAll('svg')
@@ -124,7 +164,7 @@ var schema = function(){
 				});
 			verticesG
 				.attr('class',function(d,i){
-					return 'vertex ' +d.key;
+					return 'vertex _' +d.key;
 				})
 				.transition()
 				.delay(self.delay)
@@ -135,9 +175,9 @@ var schema = function(){
 						y1 = self.positions[d.key][0].y,
 						x2 = self.positions[d.key][1].x,
 						y2 = self.positions[d.key][1].y;
-					var string1 = 'translate(' + x1 + ',' + y1 + ')',
-						string2 = 'translate(' + x2 + ',' + y2 + ')';
-					return d3.interpolateString(string1,string2);
+					var s1 = 'translate(' + x1 + ',' + y1 + ')',
+						s2 = 'translate(' + x2 + ',' + y2 + ')';
+					return d3.interpolateString(s1,s2);
 				})
 				.transition()
 				.delay(self.delay +self.transitionTime +self.pause)
@@ -147,9 +187,19 @@ var schema = function(){
 						y1 = self.positions[d.key][1].y,
 						x2 = self.positions[d.key][2].x,
 						y2 = self.positions[d.key][2].y;
-					var string1 = 'translate(' + x1 + ',' + y1 + ')',
-						string2 = 'translate(' + x2 + ',' + y2 + ')';
-					return d3.interpolateString(string1,string2);
+					var s1 = 'translate(' + x1 + ',' + y1 + ')',
+						s2 = 'translate(' + x2 + ',' + y2 + ')';
+					return d3.interpolateString(s1,s2);
+				});
+			verticesG
+				.on('mouseover',function(d){
+					hoverOver(d);
+				})
+				.on('mousemove',function(d){
+					hoverOver(d);
+				})
+				.on('mouseout',function(){
+					hoverOut();
 				});
 			vertBack = verticesG.selectAll('rect')
 				.data(function(d){ return [d]; });
@@ -182,6 +232,25 @@ var schema = function(){
 			vertBack.exit().remove();
 			vertL.exit().remove();
 			vertR.exit().remove();
+
+			//build legend
+			var unitBars = d3.select('.vis.legend')
+				.selectAll('div.unitbar')
+				.data(d3.entries(self.positions));
+			unitBars.enter().append('div')
+				.classed('unitbar',true);
+			unitBars
+				.attr('class',function(d,i){
+					return 'unitbar _' +d.key;
+				})
+				.style('width','0px')
+				.style('top',function(d,i){
+					var padbot = 45,	//legend with respect to bottom of page
+						pad = 15;		//space between entries
+					return (i*pad) +padbot -1 +'px';
+				})
+				;
+			unitBars.exit().remove();
 		}
 	}
 }

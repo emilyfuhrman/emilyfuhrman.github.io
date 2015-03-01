@@ -197,9 +197,18 @@ a.btn:hover	{
 .vis.legend {
 	position:fixed;
 	width:200px;
-	height:150px;
+	height:90px;
 	bottom:30px;
 	right:36px;
+	}
+.vis.legend .unitbar {
+	position:absolute;
+	height:0px;
+	right:0;
+	border-top:1px solid $color-black;
+	}
+.vis.legend .unitbar.selected {
+	border-top:1px solid $color-accent;
 	}
 
 .vertex {
