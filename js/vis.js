@@ -133,6 +133,14 @@ var schema = function(){
 					.delay(self.transitionTime)
 					.duration(0)
 					.style('opacity',1);
+				d3.select('.legend .legend-title-cover')
+					.transition()
+					.duration(self.transitionTime)
+					.styleTween('right',function(d,i){
+						var s1 = 0 +'px',
+							s2 = 225 +'px';
+						return d3.interpolateString(s1,s2);
+					});
 				vertArc
 					.transition()
 					.duration(self.transitionTime)
@@ -165,6 +173,14 @@ var schema = function(){
 					.duration(0)
 					.style('opacity',0)
 					;
+				d3.select('.legend .legend-title-cover')
+					.transition()
+					.duration(self.transitionTime/2)
+					.styleTween('right',function(d,i){
+						var s1 = 225 +'px',
+							s2 = 0 +'px';
+						return d3.interpolateString(s1,s2);
+					});
 				vertArc
 					.transition()
 					.duration(0)
@@ -452,9 +468,9 @@ var schema = function(){
 				})
 				.style('width','0px')
 				.style('top',function(d,i){
-					//padbot is legend with respect to bottom of page
+					//padbot is vertical offset
 					//pad is space between entries
-					var padbot = 45,
+					var padbot = 43,
 						pad = 15;
 					return (i*pad) +padbot -1 +'px';
 				});
