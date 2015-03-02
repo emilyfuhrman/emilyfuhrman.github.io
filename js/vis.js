@@ -187,6 +187,8 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});*/
 				d3.select('.legend')
+					.transition()
+					.duration(0)
 					.style('opacity',0);
 				vertArc
 					.transition()
