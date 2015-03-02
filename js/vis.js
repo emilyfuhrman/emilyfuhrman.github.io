@@ -142,6 +142,9 @@ var schema = function(){
 						return d3.interpolateString(s1,s2);
 					});*/
 				d3.select('.legend')
+					.transition()
+					.delay(self.transitionTime)
+					.duration(0)
 					.style('opacity',1);
 				vertArc
 					.transition()
