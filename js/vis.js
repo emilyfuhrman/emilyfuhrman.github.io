@@ -120,27 +120,29 @@ var schema = function(){
 				});
 			}
 			function hoverOver(d){
-				unitBars
+				/*unitBars
 					.transition()
 					.duration(self.transitionTime)
 					.styleTween('width',function(d,i){
 						var s1 = d3.select(this).style('width') +'px',
 							s2 = Math.round(self.positions[d.key].u) +'px';
 						return d3.interpolateString(s1,s2);
-					});
+					});*/
 				originG
 					.transition()
 					.delay(self.transitionTime)
 					.duration(0)
 					.style('opacity',1);
-				d3.select('.legend .legend-title-cover')
+				/*d3.select('.legend .legend-title-cover')
 					.transition()
 					.duration(self.transitionTime)
 					.styleTween('right',function(d,i){
 						var s1 = 0 +'px',
 							s2 = 225 +'px';
 						return d3.interpolateString(s1,s2);
-					});
+					});*/
+				d3.select('.legend')
+					.style('opacity',1);
 				vertArc
 					.transition()
 					.duration(self.transitionTime)
@@ -160,27 +162,29 @@ var schema = function(){
 				d3.selectAll('._' +d.key).classed('selected',true);
 			}
 			function hoverOut(){
-				unitBars
+				/*unitBars
 					.transition()
 					.duration(self.transitionTime/2)
 					.styleTween('width',function(d,i){
 						var s1 = d3.select(this).style('width') +'px',
 							s2 = 0 +'px';
 						return d3.interpolateString(s1,s2);
-					});
+					});*/
 				originG
 					.transition()
 					.duration(0)
 					.style('opacity',0)
 					;
-				d3.select('.legend .legend-title-cover')
+				/*d3.select('.legend .legend-title-cover')
 					.transition()
 					.duration(self.transitionTime/2)
 					.styleTween('right',function(d,i){
 						var s1 = 225 +'px',
 							s2 = 0 +'px';
 						return d3.interpolateString(s1,s2);
-					});
+					});*/
+				d3.select('.legend')
+					.style('opacity',0);
 				vertArc
 					.transition()
 					.duration(0)
@@ -466,7 +470,9 @@ var schema = function(){
 				.attr('class',function(d,i){
 					return 'unitbar _' +d.key;
 				})
-				.style('width','0px')
+				.style('width',function(d,i){
+					return Math.round(d.value.u) +'px';
+				})
 				.style('top',function(d,i){
 					//padbot is vertical offset
 					//pad is space between entries

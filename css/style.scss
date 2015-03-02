@@ -208,6 +208,7 @@ a.btn:hover	{
 	}
 
 .vis.legend {
+	opacity:0;
 	position:fixed;
 	width:200px;
 	height:88px;
@@ -216,14 +217,6 @@ a.btn:hover	{
 	letter-spacing:$univ-letter-spacing;
 	bottom:30px;
 	right:36px;
-	}
-.vis.legend .legend-title-cover {
-	position:absolute;
-	background:#fff;
-	right:0;
-	width:264px;
-	height:24px;
-	z-index:99;
 	}
 .vis.legend .legend-title {
 	position:absolute;
