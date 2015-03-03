@@ -30,6 +30,7 @@ var schema = function(){
 				2:{x:0,y:0},
 				u:0 }
 		},
+		date_weekdays:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 		generate:function(){
 			var self = vis,
 				w = window.innerWidth,
@@ -53,7 +54,28 @@ var schema = function(){
 
 					//absolute values of sin(a) and cos(a)
 					sinA = Math.abs(Math.sin(a)),
-					cosA = Math.abs(Math.cos(a));
+					cosA = Math.abs(Math.cos(a)),
+
+					//current date values
+					d = new Date(),
+					thisD = self.date_weekdays[d.getDay()],
+					thisM = d.getMonth() +1,
+					thisY = d.getFullYear(),
+					thisS = getSeason(thisM);
+
+				function getSeason(m){
+					var s;
+					if(m === 11 || m === 1 || m === 2){
+						s = 'winter';
+					} else if(m === 3 || m === 4  || m === 5){
+						s = 'spring';
+					} else if(m === 6 || m === 7  || m === 8){
+						s = 'summer';
+					} else if(m === 9 || m === 10 || m === 11){
+						s = 'fall';
+					}
+					return s;
+				}
 
 				var totalImages = [];
 				self.posts.forEach(function(d,i){
@@ -62,17 +84,32 @@ var schema = function(){
 					}
 				});
 
-				//set ceilings (mostly arbitrary)
-				self.vertices.v1.limit = 40;	
-				self.vertices.v2.limit = 90;	
-				self.vertices.v3.limit = 100;
-				self.vertices.v4.limit = 24;	
+				//set all ceilings to total # posts
+				//artificially shorten this limit for now
+				d3.entries(self.vertices).forEach(function(_d,_i){
+					self.vertices[_d.key].limit = self.posts.length*0.7;
+				});
 
-				//get actual values
-				self.vertices.v1.value = self.posts.length,			//total # posts
-				self.vertices.v2.value = new Date().getMinutes(),	//minutes past hour
-				self.vertices.v3.value = 50;						//nothing here yet
-				self.vertices.v4.value = totalImages.length;		//total # images in posts
+				//get actual values, paired with descriptive labels
+				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
+					return parseInt(_d.month) === thisM;
+				}).length;
+				self.vertices.v1.label = "total projects published with a " +thisM +" post date";
+
+				self.vertices.v2.value = d3.values(self.posts).filter(function(_d,_i){
+					return _d.day === thisD;
+				}).length;
+				self.vertices.v2.label = "total projects published on a " +thisD;
+
+				self.vertices.v3.value = d3.values(self.posts).filter(function(_d,_i){
+					return getSeason(parseInt(_d.month)) === thisS;
+				}).length;
+				self.vertices.v3.label = "total projects published in a " +thisS +" month";
+
+				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
+					return parseInt(_d.year) === thisY;
+				}).length;
+				self.vertices.v4.label = "total projects published in " +thisY;
 
 				//set accordant units
 				d3.entries(self.vertices).forEach(function(d,i){
@@ -120,27 +157,11 @@ var schema = function(){
 				});
 			}
 			function hoverOver(d){
-				/*unitBars
-					.transition()
-					.duration(self.transitionTime)
-					.styleTween('width',function(d,i){
-						var s1 = d3.select(this).style('width') +'px',
-							s2 = Math.round(self.positions[d.key].u) +'px';
-						return d3.interpolateString(s1,s2);
-					});*/
 				originG
 					.transition()
 					.delay(self.transitionTime)
 					.duration(0)
 					.style('opacity',1);
-				/*d3.select('.legend .legend-title-cover')
-					.transition()
-					.duration(self.transitionTime)
-					.styleTween('right',function(d,i){
-						var s1 = 0 +'px',
-							s2 = 225 +'px';
-						return d3.interpolateString(s1,s2);
-					});*/
 				d3.select('.legend')
 					.transition()
 					.delay(self.transitionTime)
@@ -162,30 +183,13 @@ var schema = function(){
 							n2 = 0;
 						return d3.interpolate(n1,n2);
 					});
-				d3.selectAll('._' +d.key).classed('selected',true);
+				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
 			}
 			function hoverOut(){
-				/*unitBars
-					.transition()
-					.duration(self.transitionTime/2)
-					.styleTween('width',function(d,i){
-						var s1 = d3.select(this).style('width') +'px',
-							s2 = 0 +'px';
-						return d3.interpolateString(s1,s2);
-					});*/
 				originG
 					.transition()
 					.duration(0)
-					.style('opacity',0)
-					;
-				/*d3.select('.legend .legend-title-cover')
-					.transition()
-					.duration(self.transitionTime/2)
-					.styleTween('right',function(d,i){
-						var s1 = 225 +'px',
-							s2 = 0 +'px';
-						return d3.interpolateString(s1,s2);
-					});*/
+					.style('opacity',0);
 				d3.select('.legend')
 					.transition()
 					.duration(0)
@@ -468,22 +472,17 @@ var schema = function(){
 			//build legend
 			var unitBars = d3.select('.vis.legend')
 				.selectAll('div.unitbar')
-				.data(d3.entries(self.positions));
+				.data([self]);
 			unitBars.enter().append('div')
 				.classed('unitbar',true);
 			unitBars
-				.attr('class',function(d,i){
-					return 'unitbar _' +d.key;
-				})
 				.style('width',function(d,i){
-					return Math.round(d.value.u) +'px';
+					var units = d3.entries(self.positions.v1).filter(function(_d,_i){ return _d.key === 'u'; })[0].value;
+					return Math.round(units) +'px';
 				})
 				.style('top',function(d,i){
-					//padbot is vertical offset
-					//pad is space between entries
-					var padbot = 43,
-						pad = 15;
-					return (i*pad) +padbot -1 +'px';
+					var offset = 43;
+					return offset -1 +'px';
 				});
 			unitBars.exit().remove();
 		}
