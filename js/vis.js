@@ -477,6 +477,7 @@ var schema = function(){
 				.classed('unitbar',true);
 			unitBars
 				.style('width',function(d,i){
+					//units are all the same now
 					var units = d3.entries(self.positions.v1).filter(function(_d,_i){ return _d.key === 'u'; })[0].value;
 					return Math.round(units) +'px';
 				})
