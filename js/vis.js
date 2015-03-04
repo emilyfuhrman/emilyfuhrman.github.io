@@ -95,7 +95,7 @@ var schema = function(){
 				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
 					return self.date_month[parseInt(_d.month) -1] === thisM;
 				}).length;
-				self.vertices.v1.label = "in the month of " +thisM;
+				self.vertices.v1.label = "in a month of " +thisM;
 
 				self.vertices.v2.value = d3.values(self.posts).filter(function(_d,_i){
 					return _d.day === thisD;
