@@ -210,7 +210,7 @@ a.btn:hover	{
 .vis.legend {
 	opacity:0;
 	position:fixed;
-	width:200px;
+	width:400px;
 	height:43px;
 	font:$font-basic;
 	text-transform:uppercase;
@@ -221,6 +221,13 @@ a.btn:hover	{
 .vis.legend .legend-title {
 	position:absolute;
 	right:-1px;
+	}
+.vis.legend .legend-descrip {
+	position: fixed;
+	left:50%;
+	top:50%;
+	width:250px;
+	text-align:left;
 	}
 .vis.legend .unitbar {
 	position:absolute;
@@ -257,6 +264,14 @@ a.btn:hover	{
 	}
 .vertex.selected path {
 	stroke:$color-accent;
+	}
+.vertex .vertText {
+	opacity:0;
+	fill:$color-accent;
+	font:$font-basic;
+	letter-spacing:$univ-letter-spacing;
+	text-transform:uppercase;
+	pointer-events:none;
 	}
 
 /* 

@@ -49,8 +49,8 @@ var schema = function(){
 
 				var oX = w/2,
 					oY = h/2,
-					dX = (w*1.25)/self.golden,
-					dY = (h*1.25)/self.golden,
+					dX = (w*1.15)/self.golden,
+					dY = (h*1.15)/self.golden,
 
 					//absolute values of sin(a) and cos(a)
 					sinA = Math.abs(Math.sin(a)),
@@ -94,22 +94,22 @@ var schema = function(){
 				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
 					return parseInt(_d.month) === thisM;
 				}).length;
-				self.vertices.v1.label = "total projects published with a " +thisM +" post date";
+				self.vertices.v1.label = "in the calendar month of " +thisM;
 
 				self.vertices.v2.value = d3.values(self.posts).filter(function(_d,_i){
 					return _d.day === thisD;
 				}).length;
-				self.vertices.v2.label = "total projects published on a " +thisD;
+				self.vertices.v2.label = "on a " +thisD;
 
 				self.vertices.v3.value = d3.values(self.posts).filter(function(_d,_i){
 					return getSeason(parseInt(_d.month)) === thisS;
 				}).length;
-				self.vertices.v3.label = "total projects published in a " +thisS +" month";
+				self.vertices.v3.label = "during the calendar season of " +thisS;
 
 				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
 					return parseInt(_d.year) === thisY;
 				}).length;
-				self.vertices.v4.label = "total projects published in " +thisY;
+				self.vertices.v4.label = "in " +thisY;
 
 				//set accordant units
 				d3.entries(self.vertices).forEach(function(d,i){
@@ -157,19 +157,15 @@ var schema = function(){
 				});
 			}
 			function hoverOver(d){
+				var val = d.value;
 				originG
 					.transition()
-					.delay(self.transitionTime)
-					.duration(0)
-					.style('opacity',1);
-				d3.select('.legend')
-					.transition()
-					.delay(self.transitionTime)
+					.delay(self.transitionTime*0.5)
 					.duration(0)
 					.style('opacity',1);
 				vertArc
 					.transition()
-					.duration(self.transitionTime)
+					.duration(self.transitionTime*0.5)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
@@ -177,23 +173,33 @@ var schema = function(){
 					});
 				vertSeg
 					.transition()
-					.duration(self.transitionTime)
+					.duration(self.transitionTime*0.5)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
 						return d3.interpolate(n1,n2);
 					});
+				d3.selectAll('.legend, .vertText._' +d.key)
+					.transition()
+					.delay(self.transitionTime*0.5)
+					.duration(0)
+					.style('opacity',1);
+				d3.select('.legend-descrip')
+					.html(function(){
+						var num = self.vertices[d.key].value,
+							str = self.vertices[d.key].label,
+							copy = num === 1 ? 'work published' : 'works published';
+						return '';//num +' ' +copy +' ' +str;
+					});
 				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
+				setTimeout(function(){
+				},self.transitionTime);
 			}
 			function hoverOut(){
 				originG
 					.transition()
 					.duration(0)
 					.style('opacity',0);
-				d3.select('.legend')
-					.transition()
-					.duration(0)
-					.style('opacity',0);
 				vertArc
 					.transition()
 					.duration(0)
@@ -202,6 +208,12 @@ var schema = function(){
 					.transition()
 					.duration(0)
 					.style('stroke-dashoffset',0);
+				d3.selectAll('.legend, .vertText')
+					.transition()
+					.duration(0)
+					.style('opacity',0);
+				d3.select('.legend-descrip')
+					.html('');
 				d3.selectAll('.selected').classed('selected',false);
 			}
 
@@ -220,6 +232,7 @@ var schema = function(){
 				vertSeg,
 				vertL,
 				vertR;
+				//vertText;
 
 			verticesG = svg.selectAll('g.vertex')
 				.data(d3.entries(self.positions));
@@ -427,11 +440,28 @@ var schema = function(){
 					var pathString = 'M -' +sq + ', ' +sq +' L ' +sq +', -' +sq;
 					return pathString;
 				});
+
+			/*vertText = verticesG.selectAll('text.vertText')
+				.data(function(d){ return [d]; });
+			vertText.enter().append('text')
+				.classed('vertText',true);
+			vertText
+				.attr('class',function(d){
+					return 'vertText _' +d.key;
+				})
+				.attr('y',4)
+				.text(function(d){
+					var num = self.vertices[d.key].value,
+						str = self.vertices[d.key].label,
+						copy = num === 1 ? 'work published' : 'works published';
+					return num +' ' +copy +' ' +str;
+				});*/
 			verticesG.exit().remove();
 			vertBack.exit().remove();
 			vertArc.exit().remove();
 			vertL.exit().remove();
 			vertR.exit().remove();
+			//vertText.exit().remove();
 
 			//build invisible origin, set size
 			var osq = 32,
