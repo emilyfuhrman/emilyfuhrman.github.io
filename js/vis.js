@@ -88,7 +88,7 @@ var schema = function(){
 				//set all ceilings to total # posts
 				//artificially shorten this limit for now
 				d3.entries(self.vertices).forEach(function(_d,_i){
-					self.vertices[_d.key].limit = self.posts.length*0.4;
+					self.vertices[_d.key].limit = self.posts.length*0.45;
 				});
 
 				//get actual values, paired with descriptive labels
