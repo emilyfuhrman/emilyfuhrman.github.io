@@ -226,10 +226,12 @@ a.btn:hover	{
 	}
 .vis.legend .legend-descrip {
 	position: fixed;
-	width:250px;
+	width:225px;
 	text-align:right;
 	right:36px;
 	bottom:92px;
+	}
+.vis.legend .legend-descrip .num {
 	}
 .vis.legend .unitbar {
 	position:absolute;

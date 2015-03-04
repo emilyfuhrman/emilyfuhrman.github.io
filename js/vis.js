@@ -95,7 +95,7 @@ var schema = function(){
 				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
 					return self.date_month[parseInt(_d.month) -1] === thisM;
 				}).length;
-				self.vertices.v1.label = "in the calendar month of " +thisM;
+				self.vertices.v1.label = "in the month of " +thisM;
 
 				self.vertices.v2.value = d3.values(self.posts).filter(function(_d,_i){
 					return _d.day === thisD;
@@ -105,7 +105,7 @@ var schema = function(){
 				self.vertices.v3.value = d3.values(self.posts).filter(function(_d,_i){
 					return getSeason(parseInt(_d.month)) === thisS;
 				}).length;
-				self.vertices.v3.label = "during the calendar season of " +thisS;
+				self.vertices.v3.label = "in the calendar season of " +thisS;
 
 				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
 					return parseInt(_d.year) === thisY;
@@ -165,7 +165,7 @@ var schema = function(){
 				vertArc
 					.transition()
 					.ease('linear')
-					.delay(self.transitionTime*2)
+					.delay(self.transitionTime*4)
 					.duration(self.transitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
@@ -175,6 +175,7 @@ var schema = function(){
 				vertSeg
 					.transition()
 					.ease('linear')
+					.delay(self.transitionTime*2)
 					.duration(self.transitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
@@ -187,8 +188,8 @@ var schema = function(){
 					.html(function(){
 						var num = self.vertices[d.key].value,
 							str = self.vertices[d.key].label,
-							copy = num === 1 ? 'work published' : 'works published';
-						return num +' ' +copy +' ' +str;
+							copy = num === 1 ? 'project published' : 'projects published';
+						return '<span class="num">' +num +'</span> ' +copy +' ' +str;
 					});
 				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
 			}
