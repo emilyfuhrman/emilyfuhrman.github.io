@@ -31,6 +31,7 @@ var schema = function(){
 				u:0 }
 		},
 		date_weekdays:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+		date_month:["January","February","March","April","May","June","July","August","September","October","November","December"],
 		generate:function(){
 			var self = vis,
 				w = window.innerWidth,
@@ -59,9 +60,9 @@ var schema = function(){
 					//current date values
 					d = new Date(),
 					thisD = self.date_weekdays[d.getDay()],
-					thisM = d.getMonth() +1,
+					thisM = self.date_month[d.getMonth()],
 					thisY = d.getFullYear(),
-					thisS = getSeason(thisM);
+					thisS = getSeason(d.getMonth());
 
 				function getSeason(m){
 					var s;
@@ -92,7 +93,7 @@ var schema = function(){
 
 				//get actual values, paired with descriptive labels
 				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
-					return parseInt(_d.month) === thisM;
+					return self.date_month[parseInt(_d.month) -1] === thisM;
 				}).length;
 				self.vertices.v1.label = "in the calendar month of " +thisM;
 
@@ -158,14 +159,14 @@ var schema = function(){
 			}
 			function hoverOver(d){
 				var val = d.value;
+
 				originG
-					.transition()
-					.delay(self.transitionTime*0.5)
-					.duration(0)
 					.style('opacity',1);
 				vertArc
 					.transition()
-					.duration(self.transitionTime*0.5)
+					.ease('linear')
+					.delay(self.transitionTime*2)
+					.duration(self.transitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
@@ -173,44 +174,46 @@ var schema = function(){
 					});
 				vertSeg
 					.transition()
-					.duration(self.transitionTime*0.5)
+					.ease('linear')
+					.duration(self.transitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
 						return d3.interpolate(n1,n2);
 					});
-				d3.selectAll('.legend, .vertText._' +d.key)
-					.transition()
-					.delay(self.transitionTime*0.5)
-					.duration(0)
+				d3.select('.legend')
 					.style('opacity',1);
 				d3.select('.legend-descrip')
 					.html(function(){
 						var num = self.vertices[d.key].value,
 							str = self.vertices[d.key].label,
 							copy = num === 1 ? 'work published' : 'works published';
-						return '';//num +' ' +copy +' ' +str;
+						return num +' ' +copy +' ' +str;
 					});
 				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
-				setTimeout(function(){
-				},self.transitionTime);
 			}
 			function hoverOut(){
 				originG
-					.transition()
-					.duration(0)
 					.style('opacity',0);
 				vertArc
 					.transition()
+					.delay(0)
 					.duration(0)
-					.style('stroke-dashoffset',0);
+					.styleTween('stroke-dashoffset',function(){
+						var n1 = 0,
+							n2 = d3.select(this).node().getTotalLength();
+						return d3.interpolate(n1,n2);
+					});
 				vertSeg
 					.transition()
+					.delay(0)
 					.duration(0)
-					.style('stroke-dashoffset',0);
-				d3.selectAll('.legend, .vertText')
-					.transition()
-					.duration(0)
+					.styleTween('stroke-dashoffset',function(){
+						var n1 = 0,
+							n2 = d3.select(this).node().getTotalLength();
+						return d3.interpolate(n1,n2);
+					});
+				d3.select('.legend')
 					.style('opacity',0);
 				d3.select('.legend-descrip')
 					.html('');
@@ -232,7 +235,6 @@ var schema = function(){
 				vertSeg,
 				vertL,
 				vertR;
-				//vertText;
 
 			verticesG = svg.selectAll('g.vertex')
 				.data(d3.entries(self.positions));
@@ -440,28 +442,11 @@ var schema = function(){
 					var pathString = 'M -' +sq + ', ' +sq +' L ' +sq +', -' +sq;
 					return pathString;
 				});
-
-			/*vertText = verticesG.selectAll('text.vertText')
-				.data(function(d){ return [d]; });
-			vertText.enter().append('text')
-				.classed('vertText',true);
-			vertText
-				.attr('class',function(d){
-					return 'vertText _' +d.key;
-				})
-				.attr('y',4)
-				.text(function(d){
-					var num = self.vertices[d.key].value,
-						str = self.vertices[d.key].label,
-						copy = num === 1 ? 'work published' : 'works published';
-					return num +' ' +copy +' ' +str;
-				});*/
 			verticesG.exit().remove();
 			vertBack.exit().remove();
 			vertArc.exit().remove();
 			vertL.exit().remove();
 			vertR.exit().remove();
-			//vertText.exit().remove();
 
 			//build invisible origin, set size
 			var osq = 32,

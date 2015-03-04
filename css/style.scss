@@ -220,14 +220,16 @@ a.btn:hover	{
 	}
 .vis.legend .legend-title {
 	position:absolute;
+	color:$color-accent;
+	font-style:italic;
 	right:-1px;
 	}
 .vis.legend .legend-descrip {
 	position: fixed;
-	left:50%;
-	top:50%;
 	width:250px;
-	text-align:left;
+	text-align:right;
+	right:36px;
+	bottom:92px;
 	}
 .vis.legend .unitbar {
 	position:absolute;
