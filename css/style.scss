@@ -223,13 +223,14 @@ a.btn:hover	{
 	color:$color-accent;
 	font-style:italic;
 	right:-1px;
+	bottom:9px
 	}
 .vis.legend .legend-descrip {
-	position: fixed;
+	position: absolute;
 	width:225px;
 	text-align:right;
-	right:36px;
-	bottom:92px;
+	right:-1px;
+	bottom:47px;
 	}
 .vis.legend .legend-descrip .num {
 	}
