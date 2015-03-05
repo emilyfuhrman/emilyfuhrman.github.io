@@ -50,8 +50,8 @@ var schema = function(){
 
 				var oX = w/2,
 					oY = h/2,
-					dX = (w*1.25)/self.golden,
-					dY = (h*1.25)/self.golden,
+					dX = (w*1.15)/self.golden,
+					dY = (h*1.15)/self.golden,
 
 					//absolute values of sin(a) and cos(a)
 					sinA = Math.abs(Math.sin(a)),
@@ -88,7 +88,7 @@ var schema = function(){
 				//set all ceilings to total # posts
 				//artificially shorten this limit for now
 				d3.entries(self.vertices).forEach(function(_d,_i){
-					self.vertices[_d.key].limit = self.posts.length*0.35;
+					self.vertices[_d.key].limit = self.posts.length*0.4;
 				});
 
 				//get actual values, paired with descriptive labels
