@@ -16,22 +16,18 @@ var schema = function(){
 			v1:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
-				3:{x:0,y:0},
 				u:0 },
 			v2:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
-				3:{x:0,y:0},
 				u:0 },
 			v3:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
-				3:{x:0,y:0},
 				u:0 },
 			v4:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
-				3:{x:0,y:0},
 				u:0 }
 		},
 		date_weekdays:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -156,13 +152,9 @@ var schema = function(){
 					self.positions[d.key][1].x = (wF*w) + (xF*dX);
 					self.positions[d.key][1].y = (hF*h) + (-1.5*yF*(sq*2));
 
-					//state2 (toggle hF to opp. of state0 value)
-					self.positions[d.key][2].x = (wF*w) + (xF*dX);
-					self.positions[d.key][2].y = ((1 -hF)*h) + (yF*dY);
-
-					//state3
-					self.positions[d.key][3].x = oX + ( xF*(cosA*(self.positions[d.key].u*self.vertices[d.key].value)) );
-					self.positions[d.key][3].y = oY + ( yF*(sinA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+					//state2
+					self.positions[d.key][2].x = oX + ( xF*(cosA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+					self.positions[d.key][2].y = oY + ( yF*(sinA*(self.positions[d.key].u*self.vertices[d.key].value)) );
 				});
 			}
 
@@ -234,12 +226,10 @@ var schema = function(){
 
 			function transition() {
 				var t0_dur = self.transitionTime*2,
-					t1_dur = t0_dur,
-					//t2_dur = t1_dur*0.8,
+					t1_dur = t0_dur;
 
 					t0_del = (self.delay*2), //estimate
 					t1_del = t0_del +t0_dur +self.pause/2;
-					//t2_del = t1_del +t1_dur +self.pause;
 
 				var t0 = verticesG
 					.transition()
@@ -255,15 +245,8 @@ var schema = function(){
 					.delay(t1_del)
 					.duration(t1_dur)
 					.attrTween('transform',function(d){
-						return tweenTransform(self.positions[d.key][1],self.positions[d.key][3]);
+						return tweenTransform(self.positions[d.key][1],self.positions[d.key][2]);
 					});
-				/*var t2 = t1
-					.transition()
-					.delay(t2_del)
-					.duration(t2_dur)
-					.attrTween('transform',function(d){
-						return tweenTransform(self.positions[d.key][2],self.positions[d.key][3]);
-					});*/
 			}
 
 			function tweenTransform(p1,p2){
