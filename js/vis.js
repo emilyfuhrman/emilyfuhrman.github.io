@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:240,
-		delay:480,
-		pause:240,
+		transitionTime:360,
+		delay:0,
+		pause:120,
 		vertices:{
 			v1:{},
 			v2:{},
@@ -88,7 +88,7 @@ var schema = function(){
 				//set all ceilings to total # posts
 				//artificially shorten this limit for now
 				d3.entries(self.vertices).forEach(function(_d,_i){
-					self.vertices[_d.key].limit = self.posts.length*0.5;
+					self.vertices[_d.key].limit = self.posts.length*0.35;
 				});
 
 				//get actual values, paired with descriptive labels
@@ -159,7 +159,7 @@ var schema = function(){
 			}
 			function hoverOver(d){
 				var val = d.value,
-					hovTransitionTime = self.transitionTime/2;
+					hovTransitionTime = self.transitionTime/4;
 
 				originG
 					.style('opacity',1);
@@ -175,7 +175,7 @@ var schema = function(){
 					});
 				vertSeg
 					.transition()
-					.ease('sin-out')
+					.ease('linear')
 					.delay(hovTransitionTime*2)
 					.duration(hovTransitionTime)
 					.styleTween('stroke-dashoffset',function(){
@@ -253,7 +253,6 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay)
-				.ease('backs')
 				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][0].x,
