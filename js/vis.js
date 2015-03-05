@@ -3,7 +3,7 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:120,
+		transitionTime:240,
 		delay:480,
 		pause:240,
 		vertices:{
@@ -158,15 +158,16 @@ var schema = function(){
 				});
 			}
 			function hoverOver(d){
-				var val = d.value;
+				var val = d.value,
+					hovTransitionTime = self.transitionTime/2;
 
 				originG
 					.style('opacity',1);
 				vertArc
 					.transition()
 					.ease('linear')
-					.delay(self.transitionTime*4)
-					.duration(self.transitionTime)
+					.delay(hovTransitionTime*4)
+					.duration(hovTransitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
@@ -174,9 +175,9 @@ var schema = function(){
 					});
 				vertSeg
 					.transition()
-					.ease('linear')
-					.delay(self.transitionTime*2)
-					.duration(self.transitionTime)
+					.ease('sin-out')
+					.delay(hovTransitionTime*2)
+					.duration(hovTransitionTime)
 					.styleTween('stroke-dashoffset',function(){
 						var n1 = d3.select(this).node().getTotalLength(),
 							n2 = 0;
@@ -252,7 +253,7 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay)
-				.ease('sin-out')
+				.ease('backs')
 				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][0].x,
