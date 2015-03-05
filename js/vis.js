@@ -146,7 +146,7 @@ var schema = function(){
 
 					//state0
 					self.positions[d.key][0].x = (wF*w) + (xF*dX);
-					self.positions[d.key][0].y = (hF*h) + (yF*(sq*2));
+					self.positions[d.key][0].y = (hF*h) + (-1.5*yF*(sq*2));
 
 					//state1 (toggle hF to opp. of state0 value)
 					self.positions[d.key][1].x = (wF*w) + (xF*dX);
