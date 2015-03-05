@@ -272,8 +272,7 @@ var schema = function(){
 				vertBack,
 				vertArc,
 				vertSeg,
-				vertL,
-				vertR;
+				vertPoly;
 
 			verticesG = svg.selectAll('g.vertex')
 				.data(d3.entries(self.positions));
@@ -440,30 +439,20 @@ var schema = function(){
 				});
 			vertSeg.exit().remove();
 
-			vertL = verticesG.selectAll('path.L')
+			vertPoly = verticesG.selectAll('polygon')
 				.data(function(d){ return [d]; });
-			vertL.enter().append('path')
-				.classed('L',true);
-			vertL
-				.attr('d',function(d){
-					var pathString = 'M -' +sq + ', -' +sq +' L ' +sq +', ' +sq;
-					return pathString;
+			vertPoly.enter().append('polygon');
+			vertPoly
+				.attr('points',function(){
+					var str = '36.707,-35.293 35.293,-36.707 0,-1.414 -35.293,-36.707 -36.707,-35.293 -1.414,0 -36.707,35.293 -35.293,36.707 0,1.414 35.293,36.707 36.707,35.293 1.414,0';
+					return str;
 				});
+			vertPoly.exit().remove();
 
-			vertR = verticesG.selectAll('path.R')
-				.data(function(d){ return [d]; });
-			vertR.enter().append('path')
-				.classed('R',true);
-			vertR
-				.attr('d',function(d){
-					var pathString = 'M -' +sq + ', ' +sq +' L ' +sq +', -' +sq;
-					return pathString;
-				});
 			verticesG.exit().remove();
 			vertBack.exit().remove();
 			vertArc.exit().remove();
-			vertL.exit().remove();
-			vertR.exit().remove();
+			vertPoly.exit().remove();
 
 			//build invisible origin, set size
 			var osq = 32,

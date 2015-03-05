@@ -267,6 +267,9 @@ a.btn:hover	{
 	stroke-width:2;
 	pointer-events:none;
 	}
+.vertex.selected polygon {
+	fill:$color-accent;
+	}
 .vertex.selected path {
 	stroke:$color-accent;
 	}
