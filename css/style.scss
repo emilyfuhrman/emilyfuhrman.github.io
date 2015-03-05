@@ -267,6 +267,10 @@ a.btn:hover	{
 	stroke-width:2;
 	pointer-events:none;
 	}
+.vertex polygon {
+	fill:$color-black;
+	pointer-events:none;
+	}
 .vertex.selected polygon {
 	fill:$color-accent;
 	}
