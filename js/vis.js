@@ -226,10 +226,10 @@ var schema = function(){
 
 			function transition() {
 				var t0_dur = self.transitionTime*2,
-					t1_dur = t0_dur*0.8;
+					t1_dur = t0_dur;
 
 					t0_del = self.delay*2, //estimate
-					t1_del = t0_del +t0_dur +self.pause/2;
+					t1_del = t0_del +t0_dur +self.pause;
 
 				var t0 = verticesG
 					.transition()
