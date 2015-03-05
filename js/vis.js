@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:240,
+		transitionTime:480,
 		delay:480,
-		pause:120,
+		pause:240,
 		vertices:{
 			v1:{},
 			v2:{},
@@ -95,22 +95,22 @@ var schema = function(){
 				self.vertices.v1.value = d3.values(self.posts).filter(function(_d,_i){
 					return self.date_month[parseInt(_d.month) -1] === thisM;
 				}).length;
-				self.vertices.v1.label = "in the month of " +thisM;
+				self.vertices.v1.label = "in the month of <span class='emph'>" +thisM +'</span>';
 
 				self.vertices.v2.value = d3.values(self.posts).filter(function(_d,_i){
 					return _d.day === thisD;
 				}).length;
-				self.vertices.v2.label = "on a " +thisD;
+				self.vertices.v2.label = "on a <span class='emph'>" +thisD +'</span>';
 
 				self.vertices.v3.value = d3.values(self.posts).filter(function(_d,_i){
 					return getSeason(parseInt(_d.month)) === thisS;
 				}).length;
-				self.vertices.v3.label = "in the calendar season of " +thisS;
+				self.vertices.v3.label = "in the calendar season of <span class='emph'>" +thisS +'</span>';
 
 				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
 					return parseInt(_d.year) === thisY;
 				}).length;
-				self.vertices.v4.label = "in " +thisY;
+				self.vertices.v4.label = "in <span class='emph'>" +thisY +'</span>';
 
 				//set accordant units
 				d3.entries(self.vertices).forEach(function(d,i){
@@ -190,7 +190,7 @@ var schema = function(){
 						var num = self.vertices[d.key].value,
 							str = self.vertices[d.key].label,
 							copy = num === 1 ? 'project published' : 'projects published';
-						return '<span class="num">' +num +'</span> ' +copy +' ' +str;
+						return '<span class="emph">' +num +'</span> ' +copy +' ' +str;
 					});
 				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
 			}
@@ -253,6 +253,7 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay)
+				//.ease('linear')
 				.duration(self.transitionTime)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][0].x,
