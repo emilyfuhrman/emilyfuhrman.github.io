@@ -327,7 +327,7 @@ LIST
 	position:absolute; 
 	font:$font-basic;
 	letter-spacing:$univ-letter-spacing; 
-	@include transition(margin 100ms ease);
+	@include transition(margin 75ms ease);
 	}
 #proj-list a div p.list-title { 
 	width:145px; 
