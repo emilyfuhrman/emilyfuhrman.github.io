@@ -4,7 +4,7 @@ var schema = function(){
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
 		transitionTime:240,
-		delay:240,
+		delay:480,
 		pause:120,
 		vertices:{
 			v1:{},
