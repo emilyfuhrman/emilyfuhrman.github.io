@@ -3,9 +3,9 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:300,
+		transitionTime:240,
 		delay:480,
-		pause:300,
+		pause:240,
 		vertices:{
 			v1:{},
 			v2:{},
@@ -159,7 +159,7 @@ var schema = function(){
 			}
 			function hoverOver(d){
 				var val = d.value,
-					hovTransitionTime = self.transitionTime/4;
+					hovTransitionTime = self.transitionTime/3;
 
 				originG
 					.style('opacity',1);
@@ -266,7 +266,7 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay +self.transitionTime +self.pause)
-				.duration(self.transitionTime*0.6)
+				.duration(self.transitionTime*0.8)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][1].x,
 						y1 = self.positions[d.key][1].y,
