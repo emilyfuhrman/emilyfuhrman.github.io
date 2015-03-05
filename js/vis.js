@@ -266,6 +266,7 @@ var schema = function(){
 				})
 				.transition()
 				.delay(self.delay +self.transitionTime +self.pause)
+				.duration(self.transitionTime*0.8)
 				.attrTween('transform',function(d,i){
 					var x1 = self.positions[d.key][1].x,
 						y1 = self.positions[d.key][1].y,
