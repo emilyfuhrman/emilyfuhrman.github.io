@@ -9,8 +9,7 @@ var schema = function(){
 		vertices:{
 			v1:{},
 			v2:{},
-			v3:{},
-			v4:{}
+			v3:{}
 		},
 		positions:{
 			v1:{0:{x:0,y:0},
@@ -22,10 +21,6 @@ var schema = function(){
 				2:{x:0,y:0},
 				u:0 },
 			v3:{0:{x:0,y:0},
-				1:{x:0,y:0},
-				2:{x:0,y:0},
-				u:0 },
-			v4:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
 				u:0 }
@@ -107,10 +102,10 @@ var schema = function(){
 				}).length;
 				self.vertices.v3.label = "in <span class='emph'>" +thisY +'</span>';
 
-				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
+				/*self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
 					return getSeason(parseInt(_d.month)) === thisS;
 				}).length;
-				self.vertices.v4.label = "in the calendar season of <span class='emph'>" +thisS +'</span>';
+				self.vertices.v4.label = "in the calendar season of <span class='emph'>" +thisS +'</span>';*/
 
 				//set accordant units
 				d3.entries(self.vertices).forEach(function(d,i){
