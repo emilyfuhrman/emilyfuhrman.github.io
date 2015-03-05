@@ -9,8 +9,11 @@
 			{% for d in site.data.about %}
 			{% if d.show == true %}
 			<div class='section {{ d.id }}'>
+				<h4>
 				<ul class='items'>
+					<br>
 					<li class='item title'>{{ d.title }}</li>
+					<br>
 					{% if d.simple == true %}
 						{% for item in d.list %}
 						{% if item.link %}
@@ -50,6 +53,7 @@
 						{% endfor %}
 					{% endif %}
 				</ul>
+				</h4>
 			</div>
 			{% endif %}
 			{% endfor %}
