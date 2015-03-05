@@ -3,7 +3,7 @@ var schema = function(){
 	return {
 		posts:JEKYLL_POSTS,
 		golden:(1+Math.sqrt(5))/2,
-		transitionTime:480,
+		transitionTime:360,
 		delay:120,
 		pause:60,
 		vertices:{
