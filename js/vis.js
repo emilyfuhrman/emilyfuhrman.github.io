@@ -226,7 +226,7 @@ var schema = function(){
 
 			function transition() {
 				var t0_dur = self.transitionTime*2,
-					t1_dur = Math.floor(t0_dur*0.8),
+					t1_dur = Math.floor(t0_dur*0.5),
 
 					t0_del = Math.floor(self.delay*1.5), //estimate
 					t1_del = t0_del +t0_dur +self.pause;
