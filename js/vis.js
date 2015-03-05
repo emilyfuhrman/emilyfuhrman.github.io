@@ -234,12 +234,12 @@ var schema = function(){
 
 			function transition() {
 				var t0_dur = self.transitionTime*2,
-					t1_dur = t0_dur*0.8,
-					t2_dur = t1_dur*0.8,
+					t1_dur = t0_dur,
+					//t2_dur = t1_dur*0.8,
 
 					t0_del = (self.delay*2), //estimate
-					t1_del = t0_del +t0_dur +self.pause,
-					t2_del = t1_del +t1_dur +self.pause;
+					t1_del = t0_del +t0_dur +self.pause/2;
+					//t2_del = t1_del +t1_dur +self.pause;
 
 				var t0 = verticesG
 					.transition()
@@ -255,15 +255,15 @@ var schema = function(){
 					.delay(t1_del)
 					.duration(t1_dur)
 					.attrTween('transform',function(d){
-						return tweenTransform(self.positions[d.key][1],self.positions[d.key][2]);
+						return tweenTransform(self.positions[d.key][1],self.positions[d.key][3]);
 					});
-				var t2 = t1
+				/*var t2 = t1
 					.transition()
 					.delay(t2_del)
 					.duration(t2_dur)
 					.attrTween('transform',function(d){
 						return tweenTransform(self.positions[d.key][2],self.positions[d.key][3]);
-					});
+					});*/
 			}
 
 			function tweenTransform(p1,p2){
