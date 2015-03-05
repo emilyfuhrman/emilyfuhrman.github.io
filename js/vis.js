@@ -159,7 +159,7 @@ var schema = function(){
 			}
 			function hoverOver(d){
 				var val = d.value,
-					hovTransitionTime = self.transitionTime/4;
+					hovTransitionTime = self.transitionTime/2;
 
 				originG
 					.style('opacity',1);
