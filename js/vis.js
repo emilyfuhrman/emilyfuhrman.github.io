@@ -16,18 +16,22 @@ var schema = function(){
 			v1:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
+				3:{x:0,y:0},
 				u:0 },
 			v2:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
+				3:{x:0,y:0},
 				u:0 },
 			v3:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
+				3:{x:0,y:0},
 				u:0 },
 			v4:{0:{x:0,y:0},
 				1:{x:0,y:0},
 				2:{x:0,y:0},
+				3:{x:0,y:0},
 				u:0 }
 		},
 		date_weekdays:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -146,17 +150,22 @@ var schema = function(){
 
 					//state0
 					self.positions[d.key][0].x = (wF*w) + (xF*dX);
-					self.positions[d.key][0].y = (hF*h) + (-1.5*yF*(sq*2));
+					self.positions[d.key][0].y = (hF*h) + (yF*(sq*2));
 
-					//state1 (toggle hF to opp. of state0 value)
+					//state1
 					self.positions[d.key][1].x = (wF*w) + (xF*dX);
-					self.positions[d.key][1].y = ((1 -hF)*h) + (yF*dY);
+					self.positions[d.key][1].y = (hF*h) + (-1.5*yF*(sq*2));
 
-					//state2
-					self.positions[d.key][2].x = oX + ( xF*(cosA*(self.positions[d.key].u*self.vertices[d.key].value)) );
-					self.positions[d.key][2].y = oY + ( yF*(sinA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+					//state2 (toggle hF to opp. of state0 value)
+					self.positions[d.key][2].x = (wF*w) + (xF*dX);
+					self.positions[d.key][2].y = ((1 -hF)*h) + (yF*dY);
+
+					//state3
+					self.positions[d.key][3].x = oX + ( xF*(cosA*(self.positions[d.key].u*self.vertices[d.key].value)) );
+					self.positions[d.key][3].y = oY + ( yF*(sinA*(self.positions[d.key].u*self.vertices[d.key].value)) );
 				});
 			}
+
 			function hoverOver(d){
 				var val = d.value,
 					hovTransitionTime = self.transitionTime/3;
@@ -194,6 +203,7 @@ var schema = function(){
 					});
 				d3.selectAll('._' +d.key +', .unitbar').classed('selected',true);
 			}
+
 			function hoverOut(){
 				originG
 					.style('opacity',0);
@@ -220,6 +230,50 @@ var schema = function(){
 				d3.select('.legend-descrip')
 					.html('');
 				d3.selectAll('.selected').classed('selected',false);
+			}
+
+			function transition() {
+				var t0_dur = self.transitionTime*2,
+					t1_dur = t0_dur*0.5,
+					t2_dur = t1_dur*0.5,
+
+					t0_del = (self.delay*1.8), //estimate
+					t1_del = t0_del +t0_dur,
+					t2_del = t1_del +t1_dur +self.pause;
+
+				var t0 = verticesG
+					.transition()
+					.delay(function(d,i){
+						return self.delay +i*60;
+					})
+					.duration(t0_dur)
+					.attrTween('transform',function(d){
+						return tweenTransform(self.positions[d.key][0],self.positions[d.key][1]);
+					});
+				var t1 = t0
+					.transition()
+					.delay(t1_del)
+					.duration(t1_dur)
+					.attrTween('transform',function(d){
+						return tweenTransform(self.positions[d.key][1],self.positions[d.key][2]);
+					});
+				var t2 = t1
+					.transition()
+					.delay(t2_del)
+					.duration(t2_dur)
+					.attrTween('transform',function(d){
+						return tweenTransform(self.positions[d.key][2],self.positions[d.key][3]);
+					});
+			}
+
+			function tweenTransform(p1,p2){
+				var x1 = p1.x,
+					y1 = p1.y,
+					x2 = p2.x,
+					y2 = p2.y;
+				var s1 = 'translate(' + x1 + ',' + y1 + ')',
+					s2 = 'translate(' + x2 + ',' + y2 + ')';
+				return d3.interpolateString(s1,s2);
 			}
 
 			setPointPos(d3);
@@ -250,31 +304,6 @@ var schema = function(){
 			verticesG
 				.attr('class',function(d,i){
 					return 'vertex _' +d.key;
-				})
-				.transition()
-				.delay(self.delay)
-				//.ease('linear')
-				.duration(self.transitionTime)
-				.attrTween('transform',function(d,i){
-					var x1 = self.positions[d.key][0].x,
-						y1 = self.positions[d.key][0].y,
-						x2 = self.positions[d.key][1].x,
-						y2 = self.positions[d.key][1].y;
-					var s1 = 'translate(' + x1 + ',' + y1 + ')',
-						s2 = 'translate(' + x2 + ',' + y2 + ')';
-					return d3.interpolateString(s1,s2);
-				})
-				.transition()
-				.delay(self.delay +self.transitionTime +self.pause)
-				.duration(self.transitionTime*0.5)
-				.attrTween('transform',function(d,i){
-					var x1 = self.positions[d.key][1].x,
-						y1 = self.positions[d.key][1].y,
-						x2 = self.positions[d.key][2].x,
-						y2 = self.positions[d.key][2].y;
-					var s1 = 'translate(' + x1 + ',' + y1 + ')',
-						s2 = 'translate(' + x2 + ',' + y2 + ')';
-					return d3.interpolateString(s1,s2);
 				});
 			verticesG
 				.on('mouseover',function(d){
@@ -286,6 +315,8 @@ var schema = function(){
 				.on('mouseout',function(){
 					hoverOut();
 				});
+
+			transition();
 
 			vertBack = verticesG.selectAll('rect')
 				.data(function(d){ return [d]; });
