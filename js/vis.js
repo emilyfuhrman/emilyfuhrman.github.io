@@ -88,7 +88,7 @@ var schema = function(){
 				//set all ceilings to total # posts
 				//artificially shorten this limit for now
 				d3.entries(self.vertices).forEach(function(_d,_i){
-					self.vertices[_d.key].limit = self.posts.length*0.4;
+					self.vertices[_d.key].limit = self.posts.length*0.5;
 				});
 
 				//get actual values, paired with descriptive labels
@@ -103,14 +103,14 @@ var schema = function(){
 				self.vertices.v2.label = "on a <span class='emph'>" +thisD +'</span>';
 
 				self.vertices.v3.value = d3.values(self.posts).filter(function(_d,_i){
-					return getSeason(parseInt(_d.month)) === thisS;
-				}).length;
-				self.vertices.v3.label = "in the calendar season of <span class='emph'>" +thisS +'</span>';
-
-				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
 					return parseInt(_d.year) === thisY;
 				}).length;
-				self.vertices.v4.label = "in <span class='emph'>" +thisY +'</span>';
+				self.vertices.v3.label = "in <span class='emph'>" +thisY +'</span>';
+
+				self.vertices.v4.value = d3.values(self.posts).filter(function(_d,_i){
+					return getSeason(parseInt(_d.month)) === thisS;
+				}).length;
+				self.vertices.v4.label = "in the calendar season of <span class='emph'>" +thisS +'</span>';
 
 				//set accordant units
 				d3.entries(self.vertices).forEach(function(d,i){
