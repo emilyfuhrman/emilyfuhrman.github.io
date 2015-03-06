@@ -256,7 +256,7 @@ var schema = function(){
 					y2 = p2.y;
 				var s1 = 'translate(' + x1 + ',' + y1 + ')',
 					s2 = 'translate(' + x2 + ',' + y2 + ')';
-				return d3.interpolateString(s1,s2);
+				return d3.interpolateTransform(s1,s2);
 			}
 
 			setPointPos(d3);
