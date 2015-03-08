@@ -243,7 +243,11 @@ var schema = function(){
 				var t1 = t0
 					.transition()
 					.delay(t1_del)
-					.duration(t1_dur)
+					//.duration(t1_dur)
+					.duration(function(d,i){
+						var scale = 1 -(self.vertices[d.key].value/self.vertices[d.key].limit);
+						return Math.floor(scale*t1_dur*2.5);
+					})
 					.attrTween('transform',function(d){
 						return tweenTransform(self.positions[d.key][1],self.positions[d.key][2]);
 					});
