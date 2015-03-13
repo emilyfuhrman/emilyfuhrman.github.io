@@ -12,3 +12,10 @@
       client:  Columbia University Department of History
       descrip: Borderlands Colloquium
       link:    CU_borderlands_map-03
+- id:          idx
+  files:
+    - name:    MAP 03
+      client:  Columbia University Department of History
+      descrip: Borderlands Colloquium
+      cred:    "Jeremiah Trinidad-Christensen, Manan Ahmed"
+      link:    CU_borderlands_map-03

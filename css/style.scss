@@ -512,6 +512,7 @@ INDEXES
 #index-list {
 	width:100%;
 	margin:198px 0 0 36px;
+	position:absolute;
 	}
 
 #index-list .item {
@@ -535,5 +536,7 @@ INDEXES
 	color:$color-accent !important;
 	}
 #index-list .cred {
-	font-style:italic;
+	font:$font-basic;
+	text-transform:uppercase; 
+	letter-spacing:$univ-letter-spacing;
 	}
