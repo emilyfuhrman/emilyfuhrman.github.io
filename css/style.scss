@@ -503,3 +503,37 @@ ul.items li.item .now_true {
 	color:$color-accent;
 	margin-bottom:0;
 	}
+
+/* 
+-----------------------
+INDEXES
+----------------------- */
+
+#index-list {
+	width:100%;
+	margin:198px 0 0 36px;
+	}
+
+#index-list .item {
+	height:56px;
+	margin-left:0;
+	@include transition(margin 120ms ease);
+	cursor:cell;
+	}
+#index-list .item:hover {
+	margin-left:9px;
+	}
+#index-list .item h4 {
+	margin:0;
+	padding:0;
+	}
+#index-list .item a {
+	color:$color-black;
+	border:none;
+	}
+#index-list .item:hover a {
+	color:$color-accent !important;
+	}
+#index-list .cred {
+	font-style:italic;
+	}

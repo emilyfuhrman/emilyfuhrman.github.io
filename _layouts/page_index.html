@@ -1,0 +1,19 @@
+{% include header.html %}
+<div id='index-list'>
+	{% for s in site.data.subs.{{ page.indexID }} %}
+		{% for p in s.files %}
+			<div class='item'>
+			<h4>
+				<a href='/{{ page.indexID }}/{{ p.link }}'>
+					&rarr;&nbsp;{{ p.client }},&nbsp;{{ p.descrip }},&nbsp;{{ p.name }}
+					{% if p.cred %}
+					<span class='cred'>/&nbsp;{{ p.cred }}</span>
+					{% endif %}
+				</a>
+			</h4>
+			</div>
+		{% endfor %}
+	{% endfor %}
+</div>
+<div class='dekor proj'></div>
+{% include footer.html %}
