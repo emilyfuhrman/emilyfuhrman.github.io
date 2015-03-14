@@ -1,21 +1,34 @@
 {% include header.html %}
-<div id='index-list'>
-	{% for s in site.data.subs %}
-		{% if s.id == page.indexID %}
-		{% for p in s.files %}
-			<div class='item'>
-			<h4>
-				<a href='/{{ page.indexID }}/{{ p.link }}'>
-					&rarr;&nbsp;{{ p.client }},&nbsp;{{ p.descrip }},&nbsp;{{ p.name }}
-					{% if p.cred %}
-					<span class='cred'>/&nbsp;{{ p.cred }}</span>
-					{% endif %}
-				</a>
-			</h4>
-			</div>
-		{% endfor %}
-		{% endif %}
-	{% endfor %}
-</div>
+<div id='index-list'></div>
 <div class='dekor proj'></div>
+<script>
+	var JEKYLL_POSTS = [],
+		INDEX_POSTS = [];
+	{% if page.mixin == true %}
+	{% for post in site.posts %}
+		JEKYLL_POSTS.push({
+			date:  "{{ post.date | date: '%m %Y' }}",
+			title: "{{ post.title }}",
+			path:  "{{ post.path }}",
+			cat:   "{{ post.cat }}"
+		});
+	{% endfor %}
+	{% endif %}
+	{% for s in site.data.subs %}
+	{% if s.id == page.indexID %}
+		{% for p in s.files %}
+		INDEX_POSTS.push({
+			date:    "{{ p.date }}",
+			title:   "{{ p.name }}",
+			path:    "{{ p.path }}",
+			cat:     "{{ page.indexID }}",
+			client:  "{{ p.client }}",
+			descrip: "{{ p.descrip }}",
+			cred:    "{{ p.cred }}"
+		});
+		{% endfor %}
+	{% endif %}
+	{% endfor %}
+</script>
+<script type='text/javascript' src='/js/idx.js'></script>
 {% include footer.html %}

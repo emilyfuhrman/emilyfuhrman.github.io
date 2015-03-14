@@ -1,16 +1,19 @@
 - id:          lab
   files:
     - name:    MAP 01
+      date:    '01 2015'
       client:  Columbia University Department of History
       descrip: Borderlands Colloquium
-      link:    CU_borderlands_map-01
+      path:    /lab/CU_borderlands_map-01
     - name:    MAP 02
+      date:    '02 2015'
       client:  Columbia University Department of History
       descrip: Borderlands Colloquium
-      link:    CU_borderlands_map-02   
+      path:    /lab/CU_borderlands_map-02   
     - name:    MAP 03
+      date:    '03 2015'
       client:  Columbia University Department of History
       descrip: Borderlands Colloquium
       cred:    "Jeremiah Trinidad-Christensen, Manan Ahmed"
-      link:    CU_borderlands_map-03
+      path:    /lab/CU_borderlands_map-03
 - id:          idx
