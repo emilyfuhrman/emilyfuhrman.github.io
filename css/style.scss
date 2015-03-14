@@ -529,6 +529,7 @@ INDEXES
 	text-transform:uppercase; 
 	text-decoration:none;
 	letter-spacing:$univ-letter-spacing;
+	@include transition(color 120ms ease)
 	}
 #index-list .item:hover a {
 	color:$color-accent !important;
