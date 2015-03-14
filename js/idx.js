@@ -92,7 +92,7 @@ var idx_schema = function(){
 						cli = d.client ? d.client +',&nbsp;' : '',
 						des = d.descrip ? d.descrip +',&nbsp;' : '',
 						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;' +d.cred +'</span>' : '';
-					str = '<h4>&rarr;&nbsp;' +d.date +'&nbsp;/&nbsp;' +cli +des +d.title +credspan +'</h4>';
+					str = '<h4>' +d.date +'&nbsp;/&nbsp;' +cli +des +d.title +credspan +'</h4>';
 					return str;
 				});
 			itemsLinks.exit().remove();
