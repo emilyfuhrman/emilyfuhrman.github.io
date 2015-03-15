@@ -82,10 +82,10 @@ var idx_schema = function(){
 				})
 				.html(function(d,i){
 					var str,
-						cli = d.client ? d.client +',&nbsp;' : '',
-						title = d.title ? '"' +d.title +'"&nbsp;' : '',
-						credspan = d.cred ? '&nbsp;/&nbsp;<span class="cred">' +d.cred +'</span>' : '';
-					str = d.date +'&nbsp;/&nbsp;' +cli +title +credspan;
+						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '',
+						title = d.title ? '"' +d.title +'"' : '',
+						credspan = d.cred ? '<span class="cred">/&nbsp;' +d.cred +'</span>' : '';
+					str = d.date +cli +title +credspan;
 					return str;
 				});
 			items.exit().remove();
