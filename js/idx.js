@@ -72,17 +72,11 @@ var idx_schema = function(){
 				itemsLinks;
 				
 			items = d3.select('#index-list')
-				.selectAll('div.item')
+				.selectAll('a.item')
 				.data(self.posts);
-			items.enter().append('div')
+			items.enter().append('a')
 				.classed('item',true);
-			items.exit().remove();
-
-			itemsLinks = items
-				.selectAll('a')
-				.data(function(d){return [d];});
-			itemsLinks.enter().append('a');
-			itemsLinks
+			items
 				.attr('href',function(d){
 					return d.href;
 				})
@@ -94,7 +88,7 @@ var idx_schema = function(){
 					str = d.date +'&nbsp;/&nbsp;' +cli +title +credspan;
 					return str;
 				});
-			itemsLinks.exit().remove();
+			items.exit().remove();
 		}
 	}
 }
