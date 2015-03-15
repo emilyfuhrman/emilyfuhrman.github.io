@@ -84,7 +84,7 @@ var idx_schema = function(){
 					var str,
 						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
 						title = d.title ? '"' +d.title +'"' : '',
-						credspan = d.cred ? '<span class="cred">/&nbsp;' +d.cred +'</span>' : '';
+						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;' +d.cred +'</span>' : '';
 					str = d.date +cli +title +credspan;
 					return str;
 				});
