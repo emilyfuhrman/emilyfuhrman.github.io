@@ -30,7 +30,6 @@ var idx_schema = function(){
 				obj.path = d.path;
 				obj.cat = d.cat;
 				obj.client = d.client;
-				obj.descrip = d.descrip;
 				obj.cred = d.cred || '';
 				self.posts.push(obj);
 			});
@@ -90,9 +89,9 @@ var idx_schema = function(){
 				.html(function(d,i){
 					var str,
 						cli = d.client ? d.client +',&nbsp;' : '',
-						des = d.descrip ? d.descrip +',&nbsp;' : '',
+						title = d.title ? '"' +d.title +'"&nbsp;' : '',
 						credspan = d.cred ? '&nbsp;/&nbsp;<span class="cred">' +d.cred +'</span>' : '';
-					str = d.date +'&nbsp;/&nbsp;' +cli +des +d.title +credspan;
+					str = d.date +'&nbsp;/&nbsp;' +cli +title +credspan;
 					return str;
 				});
 			itemsLinks.exit().remove();
