@@ -86,9 +86,9 @@ var idx_schema = function(){
 					var str,
 						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
 						title = d.title ? '"' +d.title +'"' : '',
-						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
 						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
-					str = d.date +cli +title +credspan +thruspan;
+						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
+					str = d.date +cli +title +thruspan +credspan;
 					return str;
 				});
 			items.exit().remove();
