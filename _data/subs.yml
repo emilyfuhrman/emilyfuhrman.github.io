@@ -15,7 +15,7 @@
       path:    /lab/CU_borderlands_map-03
 - id:          idx
   files:
-    - name:    Think with Google: The Customer Journey to Online Purchase
+    - name:    "Think with Google: The Customer Journey to Online Purchase"
       date:    '12 2014'
       client:  Google
       cred:    "Brandon Schmittling, Adam Lock, Jeff Weinberg, David Furfero"
