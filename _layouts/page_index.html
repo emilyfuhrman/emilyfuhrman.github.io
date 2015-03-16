@@ -20,10 +20,11 @@
 		INDEX_POSTS.push({
 			date:    "{{ p.date }}",
 			title:   "{{ p.name }}",
-			path:    "{{ p.path }}",
 			cat:     "{{ page.indexID }}",
 			client:  "{{ p.client }}",
-			cred:    "{{ p.cred }}"
+			cred:    "{{ p.cred }}",
+			thru:    "{{ p.thru }}",
+			path:    "{{ p.path }}"
 		});
 		{% endfor %}
 	{% endif %}

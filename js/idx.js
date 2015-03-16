@@ -27,10 +27,11 @@ var idx_schema = function(){
 				var obj = {};
 				obj.date = d.date;
 				obj.title = d.title;
-				obj.path = d.path;
 				obj.cat = d.cat;
 				obj.client = d.client;
 				obj.cred = d.cred || '';
+				obj.thru = d.thru || '';
+				obj.path = d.path;
 				self.posts.push(obj);
 			});
 		},
@@ -80,12 +81,14 @@ var idx_schema = function(){
 				.attr('href',function(d){
 					return d.href;
 				})
+				.attr('target','_blank')
 				.html(function(d,i){
 					var str,
 						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
 						title = d.title ? '"' +d.title +'"' : '',
-						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '';
-					str = d.date +cli +title +credspan;
+						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
+						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
+					str = d.date +cli +title +credspan +thruspan;
 					return str;
 				});
 			items.exit().remove();
