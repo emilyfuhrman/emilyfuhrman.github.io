@@ -7,20 +7,22 @@
 		POSTS_INDEX  = [],
 
 		TAGS_MAIN    = [],
-		TAGS_SUBS    = [];
+		TAGS_SUBS    = [],
+
+		TAGS_LIST    = [];
 
 	{% if page.mixin == true %}
 	{% for post in site.posts %}
-		var TAG_LIST = [];
+		TAGS_LIST = [];
 		{% for t in post.tags %}
-			TAG_LIST.push("{{ t }}");
+			TAGS_LIST.push("{{ t }}");
 		{% endfor %}
 		POSTS_JEKYLL.push({
 			date:  "{{ post.date | date: '%m %Y' }}",
 			title: "{{ post.title }}",
 			cat:   "{{ post.cat }}",
 			path:  "{{ post.path }}",
-			tags:  TAG_LIST
+			tags:  TAGS_LIST
 		});
 	{% endfor %}
 	{% endif %}
@@ -28,6 +30,10 @@
 	{% for s in site.data.subs %}
 	{% if s.id == page.indexID %}
 		{% for p in s.files %}
+		TAGS_LIST = [];
+		{% for t in p.tags %}
+			TAGS_LIST.push("{{ t }}");
+		{% endfor %}
 		POSTS_INDEX.push({
 			date:    "{{ p.date }}",
 			title:   "{{ p.name }}",
@@ -36,7 +42,7 @@
 			cred:    "{{ p.cred }}",
 			thru:    "{{ p.thru }}",
 			path:    "{{ p.path }}",
-			tags:    "{{ p.tags }}"
+			tags:    TAGS_LIST
 		});
 		{% endfor %}
 	{% endif %}

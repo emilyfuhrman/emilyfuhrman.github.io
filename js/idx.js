@@ -1,11 +1,13 @@
 var idx_schema = function(){
 
 	return {
+		tree:{},
 		posts:[],
 		posts_jek:POSTS_JEKYLL,
 		posts_idx:POSTS_INDEX,
 		tags_main:TAGS_MAIN,
 		tags_subs:TAGS_SUBS,
+		tags_show:[],
 		generate:function(){
 			var self = list;
 
@@ -60,12 +62,54 @@ var idx_schema = function(){
 			});
 		},
 		buildFilters:function(){
-			debugger;
+			var self = list;
+
+			var marginVal = 36,
+				tags_all  = [],
+				sections,
+				sectionHeaders;
+
+			self.posts.forEach(function(d){
+				if(d.tags.length >0){
+					d.tags.forEach(function(_d){
+						tags_all.push(_d);
+					});	
+				}
+			});
+
+			self.tags_main.forEach(function(d){
+				if(tags_all.indexOf(d) >-1){
+					self.tags_show.push(d);
+				}
+			});
+
+			sections = d3.select('#index-list')
+				.selectAll('div.section')
+				.data(self.tags_show);
+			sections.enter().append('div')
+				.classed('section',true);
+			sections
+				.attr('class',function(d){
+					return d +' section';
+				})
+				.style('width',function(){
+					return window.innerWidth -(marginVal*2) +'px';
+				});
+
+			sectionHeaders = sections
+				.selectAll('h4.headers')
+				.data(function(d){return [d];});
+			sectionHeaders.enter().append('h4')
+				.classed('headers',true);
+			sectionHeaders
+				.html(function(d){
+					var str = d.charAt(0).toUpperCase() + d.slice(1)
+					return str;
+				});
+			sections.exit().remove();
+			sectionHeaders.exit().remove();
 		},
 		filterList:function(param){
-			
-			//possible filter params: all, personal, client
-
 			var self = list,
 				mos, 
 				yrs,
@@ -75,35 +119,67 @@ var idx_schema = function(){
 			self.posts = self.posts.sort(function(a,b){
 				var aDate = new Date( (parseInt(a.date.split(' ')[1])), (parseInt(a.date.split(' ')[0] -1)) ),
 					bDate = new Date( (parseInt(b.date.split(' ')[1])), (parseInt(b.date.split(' ')[0] -1)) );
-
 				return bDate -aDate;
+			});
+
+			//set up buckets for posts in each visible tag
+			self.tags_show.forEach(function(d){
+				if(!self.tree[d]){
+					self.tree[d] = [];
+				}
+			});
+
+			//catch any untagged posts
+			self.tree.uncat = [];
+
+			//sort posts into buckets
+			self.posts.forEach(function(d){
+				d.tags.forEach(function(_d){
+					if(self.tags_show.indexOf(_d) >-1){
+						d.tagged = _d;
+					}
+				});
+				if(d.tagged){
+					self.tree[d.tagged].push(d);
+				} else{
+					self.tree.uncat.push(d);
+				}
 			});
 		},
 		generateList:function(){
 			var self = list,
 				items,
 				itemsLinks;
-				
-			items = d3.select('#index-list')
-				.selectAll('a.item')
-				.data(self.posts);
-			items.enter().append('a')
-				.classed('item',true);
-			items
-				.attr('href',function(d){
-					return d.href;
-				})
-				.attr('target','_blank')
-				.html(function(d,i){
-					var str,
-						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
-						title = d.title ? '"' +d.title +'"' : '',
-						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
-						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
-					str = d.date +cli +title +thruspan +credspan;
-					return str;
-				});
-			items.exit().remove();
+
+			function generateSection(data,handle){
+				var selector = '#index-list .section.' +handle;
+				items = d3.select(selector)
+					.selectAll('a.item')
+					.data(data);
+				items.enter().append('a')
+					.classed('item',true);
+				items
+					.attr('href',function(d){
+						return d.href;
+					})
+					.attr('target','_blank')
+					.html(function(d,i){
+						var str,
+							cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
+							title = d.title ? '"' +d.title +'"' : '',
+							thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
+							credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
+						str = d.date +cli +title +thruspan +credspan;
+						return str;
+					});
+				items.exit().remove();
+			}
+
+			d3.entries(self.tree).forEach(function(d){
+				if(d.value.length >0){
+					generateSection(d.value,d.key);
+				}
+			});
 		}
 	}
 }
