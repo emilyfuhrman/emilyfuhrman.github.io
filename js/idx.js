@@ -8,6 +8,7 @@ var idx_schema = function(){
 		tags_main:TAGS_MAIN,
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
+		selectors_show:[],
 		generate:function(){
 			var self = list;
 
@@ -68,7 +69,7 @@ var idx_schema = function(){
 				marginVal = 36,
 				tags_all  = [],
 				sections,
-				sectionHeaders;
+				section_headers;
 
 			//grab all post tags
 			self.posts.forEach(function(d){
@@ -107,31 +108,89 @@ var idx_schema = function(){
 				});
 
 			//add section headers
-			sectionHeaders = sections
+			section_headers = sections
 				.selectAll('h4.headers')
 				.data(function(d){return [d];});
-			sectionHeaders.enter().append('h4')
+			section_headers.enter().append('h4')
 				.classed('headers',true);
-			sectionHeaders
+			section_headers
 				.html(function(d){
-					var str = d.charAt(0).toUpperCase() + d.slice(1)
+					var str = d.charAt(0).toUpperCase() + d.slice(1);
 					return str;
 				});
 			sections.exit().remove();
-			sectionHeaders.exit().remove();
+			section_headers.exit().remove();
 		},
 		buildNav:function(){
-			
+
+			//TODO
 			//for now, ignore all other non-main tags
-			//create 'personal' and 'client' dropdowns
+			//create 'personal' and 'client' selectors
 
 			//PERSONAL: [toggle] anything without a client
-			//CLIENT:   [toggle] anything with a client (pull list of clients)
+			//CLIENT:   [toggle] anything with a client (pull list of clients) (can't untog if only one)
 
-						//also build dropdown of toggles
+						//also build dropdown of toggles (can't untog last client)
 						//deactivated when CLIENT is untogged
 						//activated when CLIENT is togged
+			
+			var self = list,
 
+				selector_tags = [],
+				selector_tags_clients = [],
+				selector,
+				selector_tog,
+				selector_label;
+
+			//determine which selectors to have
+			self.posts.forEach(function(d,i){
+				var label;
+				if(d.client){
+					label = 'client';
+					if(selector_tags_clients.indexOf(d.client) <0){
+						selector_tags_clients.push(d.client);
+					}
+				} else{
+					label = 'personal';
+				}
+				if(selector_tags.indexOf(label) <0){
+					selector_tags.push(label);
+				}
+			});
+
+			//make sure that if only one dropdown is built, it's the 'client' one
+			if(selector_tags.length >0 && !(selector_tags.length === 1 && selector_tags[0] === 'personal')){
+				selector = d3.select('#index-nav')
+					.selectAll('div.selector')
+					.data(selector_tags);
+				selector.enter().append('div')
+					.classed('selector',true);
+
+				selector_tog = selector
+					.selectAll('div.selector_tog')
+					.data(function(d){return [d];});
+				selector_tog.enter().append('div')
+					.classed('selector_tog',true);
+				selector_tog
+					.attr('class',function(d,i){
+						return 'selector_tog selected';
+					});
+
+				selector_label = selector
+					.selectAll('h4.selector_label')
+					.data(function(d){return [d];});
+				selector_label.enter().append('h4')
+					.classed('selector_label',true);
+				selector_label
+					.html(function(d){
+						var str = d.charAt(0).toUpperCase() + d.slice(1);
+						return str;
+					});
+
+				selector.exit().remove();
+				selector_tog.exit().remove();
+				selector_label.exit().remove();
+			}
 		},
 		filterList:function(param){
 			var self = list,
@@ -171,6 +230,8 @@ var idx_schema = function(){
 			var self = list,
 				items,
 				itemsLinks;
+
+			//TODO: filter transition
 
 			//renders each list in its designated section
 			function generateSection(data,handle){

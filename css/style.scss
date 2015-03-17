@@ -512,16 +512,32 @@ INDEXES
 #index-nav {
 	width:100%;
 	height:36px;
-	margin:144px 0 0 36px;
+	margin:174px 0 0 36px;
 	}
 
-/*#index-nav .section {
+#index-nav .selector {
 	float:left;
 	width:100%;
-	height:32px;
-	width:180px;
+	height:28px;
+	width:120px;
+	margin-right:90px;
+	border:2px solid #fff;
+	cursor:cell;
+	}
+#index-nav .selector_tog {
+	float:left;
+	height:28px;
+	width:28px;
+	margin:-2px;
 	border:2px solid $color-black;
-	}*/
+	}
+#index-nav .selector_tog.selected {
+	}
+#index-nav .selector_tog.unselected {
+	}
+#index-nav .selector_label {
+	margin:0 0 0 54px;
+	}
 
 #index-list .section {
 	float:left;
