@@ -13,7 +13,7 @@ var idx_schema = function(){
 
 			self.mashup();
 			self.setLinks();
-			self.buildFilters();
+			self.buildSections();
 			self.filterList();
 			self.generateList();
 		},
@@ -61,7 +61,7 @@ var idx_schema = function(){
 				d.href = href;
 			});
 		},
-		buildFilters:function(){
+		buildSections:function(){
 			var self = list;
 
 			var marginVal = 36,
@@ -69,14 +69,18 @@ var idx_schema = function(){
 				sections,
 				sectionHeaders;
 
+			//grab all post tags
 			self.posts.forEach(function(d){
 				if(d.tags.length >0){
 					d.tags.forEach(function(_d){
 						tags_all.push(_d);
 					});	
+				} else{
+					tags_all.push('uncategorized');
 				}
 			});
 
+			//determine which 'main' sections to build
 			self.tags_main.forEach(function(d){
 				if(tags_all.indexOf(d) >-1){
 					self.tags_show.push(d);
@@ -94,6 +98,10 @@ var idx_schema = function(){
 				})
 				.style('width',function(){
 					return window.innerWidth -(marginVal*2) +'px';
+				})
+				.style('padding-bottom',function(d,i){
+					var pad = i +1 === self.tags_show.length ? marginVal : 0;
+					return pad +'px';
 				});
 
 			sectionHeaders = sections
@@ -129,9 +137,6 @@ var idx_schema = function(){
 				}
 			});
 
-			//catch any untagged posts
-			self.tree.uncat = [];
-
 			//sort posts into buckets
 			self.posts.forEach(function(d){
 				d.tags.forEach(function(_d){
@@ -142,7 +147,7 @@ var idx_schema = function(){
 				if(d.tagged){
 					self.tree[d.tagged].push(d);
 				} else{
-					self.tree.uncat.push(d);
+					self.tree['uncategorized'].push(d);
 				}
 			});
 		},
