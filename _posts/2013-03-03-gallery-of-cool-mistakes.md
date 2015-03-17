@@ -41,5 +41,7 @@ cols:
         class:  col
         width:  357
         height: 648
+tags:
+  - static
 ---
 Some cool things that never got off the ground.

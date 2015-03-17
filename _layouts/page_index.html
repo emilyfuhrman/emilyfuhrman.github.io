@@ -1,33 +1,52 @@
 {% include header.html %}
+<div id='index-nav'></div>
 <div id='index-list'></div>
 <div class='dekor proj'></div>
 <script>
-	var JEKYLL_POSTS = [],
-		INDEX_POSTS = [];
+	var POSTS_JEKYLL = [],
+		POSTS_INDEX  = [],
+
+		TAGS_MAIN    = [],
+		TAGS_SUBS    = [];
+
 	{% if page.mixin == true %}
 	{% for post in site.posts %}
-		JEKYLL_POSTS.push({
+		var TAG_LIST = [];
+		{% for t in post.tags %}
+			TAG_LIST.push("{{ t }}");
+		{% endfor %}
+		POSTS_JEKYLL.push({
 			date:  "{{ post.date | date: '%m %Y' }}",
 			title: "{{ post.title }}",
+			cat:   "{{ post.cat }}",
 			path:  "{{ post.path }}",
-			cat:   "{{ post.cat }}"
+			tags:  TAG_LIST
 		});
 	{% endfor %}
 	{% endif %}
+
 	{% for s in site.data.subs %}
 	{% if s.id == page.indexID %}
 		{% for p in s.files %}
-		INDEX_POSTS.push({
+		POSTS_INDEX.push({
 			date:    "{{ p.date }}",
 			title:   "{{ p.name }}",
 			cat:     "{{ page.indexID }}",
 			client:  "{{ p.client }}",
 			cred:    "{{ p.cred }}",
 			thru:    "{{ p.thru }}",
-			path:    "{{ p.path }}"
+			path:    "{{ p.path }}",
+			tags:    "{{ p.tags }}"
 		});
 		{% endfor %}
 	{% endif %}
+	{% endfor %}
+
+	{% for t in site.data.tags.main %}
+		TAGS_MAIN.push("{{ t }}");
+	{% endfor %}
+	{% for t in site.data.tags.descriptive %}
+		TAGS_SUBS.push("{{ t }}");
 	{% endfor %}
 </script>
 <script type='text/javascript' src='/js/idx.js'></script>

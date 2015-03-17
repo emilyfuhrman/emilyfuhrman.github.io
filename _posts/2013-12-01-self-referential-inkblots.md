@@ -8,6 +8,8 @@ images:
     class:  post-img
     width:  600
     height: 810
+tags:
+  - static
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.
 

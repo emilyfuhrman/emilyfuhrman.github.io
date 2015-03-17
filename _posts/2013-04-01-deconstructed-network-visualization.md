@@ -8,5 +8,7 @@ images:
     class:  post-img
     width:  750
     height: 805
+tags:
+  - static
 ---
 A network visualization, disassembled.

@@ -11,6 +11,8 @@ images:
 cred:
   - name:   "Visualizing.org Visualizing Highlights: February 2014"
     link:   http://visualizing.org/galleries/visualizing-highlights-february-2014
+tags:
+  - static
 ---
 A representation of building level vs. window brightness in Greenpoint around 7.30PM on a Saturday. Depicts the percentage of light showing through each window across the street from mine.
 

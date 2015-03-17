@@ -21,3 +21,5 @@
       cred:    "Brandon Schmittling, Adam Lock, Jeff Weinberg, David Furfero"
       thru:    Huge
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
+      tags:
+        - dynamic

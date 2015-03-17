@@ -8,6 +8,8 @@ images:
     class:  post-img
     width:  750
     height: 643
+tags:
+  - dynamic
 ---
 [view here](/x/datawave/)
 

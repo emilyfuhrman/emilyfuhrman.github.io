@@ -2,13 +2,16 @@ var idx_schema = function(){
 
 	return {
 		posts:[],
-		posts_jek:JEKYLL_POSTS,
-		posts_idx:INDEX_POSTS,
+		posts_jek:POSTS_JEKYLL,
+		posts_idx:POSTS_INDEX,
+		tags_main:TAGS_MAIN,
+		tags_subs:TAGS_SUBS,
 		generate:function(){
 			var self = list;
 
 			self.mashup();
 			self.setLinks();
+			self.buildFilters();
 			self.filterList();
 			self.generateList();
 		},
@@ -17,14 +20,19 @@ var idx_schema = function(){
 
 			self.posts_jek.forEach(function(d,i){
 				var obj = {};
+
 				obj.date = d.date;
 				obj.title = d.title;
-				obj.path = d.path;
 				obj.cat = d.cat;
+				obj.cred = d.cred || '';
+				obj.thru = d.thru || '';
+				obj.path = d.path;
+				obj.tags = d.tags;
 				self.posts.push(obj);
 			});
 			self.posts_idx.forEach(function(d,i){
 				var obj = {};
+
 				obj.date = d.date;
 				obj.title = d.title;
 				obj.cat = d.cat;
@@ -32,6 +40,7 @@ var idx_schema = function(){
 				obj.cred = d.cred || '';
 				obj.thru = d.thru || '';
 				obj.path = d.path;
+				obj.tags = d.tags;
 				self.posts.push(obj);
 			});
 		},
@@ -49,6 +58,9 @@ var idx_schema = function(){
 				}
 				d.href = href;
 			});
+		},
+		buildFilters:function(){
+			debugger;
 		},
 		filterList:function(param){
 			

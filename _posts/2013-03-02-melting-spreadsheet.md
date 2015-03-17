@@ -11,6 +11,8 @@ images:
 cred:
   - name:   "AIGA Design Envy: Digital Decay"
     link:   "http://designenvy.aiga.org/digital-decay-claire-l-evans/"
+tags:
+  - static
 ---
 A hand-drawn rendering of an Excel spreadsheet, painstakingly converted to pixels. I took a dataset containing measurements of the radial velocity of spiral galaxy NGC7531 and created an analog visualization of its cosmetic attributes. Each vertical bar represents one character in one of six columns.
 

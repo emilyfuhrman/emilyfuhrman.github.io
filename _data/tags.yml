@@ -1,0 +1,7 @@
+main: 
+  - static
+  - dynamic
+  - map
+descriptive:
+  - compendium
+  - text
