@@ -14,6 +14,7 @@ var idx_schema = function(){
 			self.mashup();
 			self.setLinks();
 			self.buildSections();
+			self.buildNav();
 			self.filterList();
 			self.generateList();
 		},
@@ -62,9 +63,9 @@ var idx_schema = function(){
 			});
 		},
 		buildSections:function(){
-			var self = list;
+			var self = list,
 
-			var marginVal = 36,
+				marginVal = 36,
 				tags_all  = [],
 				sections,
 				sectionHeaders;
@@ -87,6 +88,7 @@ var idx_schema = function(){
 				}
 			});
 
+			//build sections
 			sections = d3.select('#index-list')
 				.selectAll('div.section')
 				.data(self.tags_show);
@@ -104,6 +106,7 @@ var idx_schema = function(){
 					return pad +'px';
 				});
 
+			//add section headers
 			sectionHeaders = sections
 				.selectAll('h4.headers')
 				.data(function(d){return [d];});
@@ -116,6 +119,19 @@ var idx_schema = function(){
 				});
 			sections.exit().remove();
 			sectionHeaders.exit().remove();
+		},
+		buildNav:function(){
+			
+			//for now, ignore all other non-main tags
+			//create 'personal' and 'client' dropdowns
+
+			//PERSONAL: [toggle] anything without a client
+			//CLIENT:   [toggle] anything with a client (pull list of clients)
+
+						//also build dropdown of toggles
+						//deactivated when CLIENT is untogged
+						//activated when CLIENT is togged
+
 		},
 		filterList:function(param){
 			var self = list,
@@ -156,6 +172,7 @@ var idx_schema = function(){
 				items,
 				itemsLinks;
 
+			//renders each list in its designated section
 			function generateSection(data,handle){
 				var selector = '#index-list .section.' +handle;
 				items = d3.select(selector)
