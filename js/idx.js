@@ -69,6 +69,79 @@ var idx_schema = function(){
 				d.href = href;
 			});
 		},
+		buildNav:function(){
+
+			//TODO:
+			//CLIENT:   //build dropdown of toggles (pull list of clients)
+						//deactivated when CLIENT is untogged
+						//activated when CLIENT is togged
+			
+			var self = list,
+
+				selector_tags = [],
+				selector_tags_clients = [],
+				selector,
+				selector_tog,
+				selector_label;
+
+			//determine which selectors to have
+			self.posts.forEach(function(d,i){
+				var label;
+				if(d.client){
+					label = 'client';
+					if(selector_tags_clients.indexOf(d.client) <0){
+						selector_tags_clients.push(d.client);
+					}
+				} else{
+					label = 'personal';
+				}
+				if(selector_tags.indexOf(label) <0){
+					selector_tags.push(label);
+				}
+			});
+
+			//make sure that if only one dropdown is built, it's the 'client' one
+			if(selector_tags.length >0 && !(selector_tags.length === 1 && selector_tags[0] === 'personal')){
+				selector = d3.select('#index-nav')
+					.selectAll('div.selector')
+					.data(selector_tags);
+				selector.enter().append('div')
+					.classed('selector',true);
+
+				selector_tog = selector
+					.selectAll('div.selector_tog')
+					.data(function(d){return [d];});
+				selector_tog.enter().append('div')
+					.classed('selector_tog',true);
+				selector_tog
+					.attr('class',function(d,i){
+						return d +' selector_tog selected';
+					});
+				selector_tog
+					.on('click',function(d,i){
+						var tog = d3.select(this),
+							selected = tog.classed('selected');
+						tog.classed('selected',!selected);
+
+						self.refreshList();
+					});
+
+				selector_label = selector
+					.selectAll('h4.selector_label')
+					.data(function(d){return [d];});
+				selector_label.enter().append('h4')
+					.classed('selector_label',true);
+				selector_label
+					.html(function(d){
+						var str = d.charAt(0).toUpperCase() + d.slice(1);
+						return str;
+					});
+
+				selector.exit().remove();
+				selector_tog.exit().remove();
+				selector_label.exit().remove();
+			}
+		},
 		filterList:function(){
 
 			//filters data and sets up holders for each section
@@ -177,87 +250,6 @@ var idx_schema = function(){
 			sections.exit().remove();
 			section_headers.exit().remove();
 		},
-		buildNav:function(){
-
-			//TODO
-			//for now, ignore all other non-main tags
-			//create 'personal' and 'client' selectors
-
-			//PERSONAL: [toggle] anything without a client
-			//CLIENT:   [toggle] anything with a client (pull list of clients)
-
-						//also build dropdown of toggles
-						//deactivated when CLIENT is untogged
-						//activated when CLIENT is togged
-
-			//display "no items to display" if nothing is selected
-			
-			var self = list,
-
-				selector_tags = [],
-				selector_tags_clients = [],
-				selector,
-				selector_tog,
-				selector_label;
-
-			//determine which selectors to have
-			self.posts.forEach(function(d,i){
-				var label;
-				if(d.client){
-					label = 'client';
-					if(selector_tags_clients.indexOf(d.client) <0){
-						selector_tags_clients.push(d.client);
-					}
-				} else{
-					label = 'personal';
-				}
-				if(selector_tags.indexOf(label) <0){
-					selector_tags.push(label);
-				}
-			});
-
-			//make sure that if only one dropdown is built, it's the 'client' one
-			if(selector_tags.length >0 && !(selector_tags.length === 1 && selector_tags[0] === 'personal')){
-				selector = d3.select('#index-nav')
-					.selectAll('div.selector')
-					.data(selector_tags);
-				selector.enter().append('div')
-					.classed('selector',true);
-
-				selector_tog = selector
-					.selectAll('div.selector_tog')
-					.data(function(d){return [d];});
-				selector_tog.enter().append('div')
-					.classed('selector_tog',true);
-				selector_tog
-					.attr('class',function(d,i){
-						return d +' selector_tog selected';
-					});
-				selector_tog
-					.on('click',function(d,i){
-						var tog = d3.select(this),
-							selected = tog.classed('selected');
-						tog.classed('selected',!selected);
-
-						self.refreshList();
-					});
-
-				selector_label = selector
-					.selectAll('h4.selector_label')
-					.data(function(d){return [d];});
-				selector_label.enter().append('h4')
-					.classed('selector_label',true);
-				selector_label
-					.html(function(d){
-						var str = d.charAt(0).toUpperCase() + d.slice(1);
-						return str;
-					});
-
-				selector.exit().remove();
-				selector_tog.exit().remove();
-				selector_label.exit().remove();
-			}
-		},
 		generateList:function(){
 			var self = list,
 				items,
@@ -290,11 +282,19 @@ var idx_schema = function(){
 				items.exit().remove();
 			}
 
-			d3.entries(self.tree).forEach(function(d){
-				if(d.value.length >0){
-					generateSection(d.value,d.key);
-				}
-			});
+			if(d3.entries(self.tree).length === 0){
+				d3.select('#index-list')
+					.append('h4')
+					.attr('class','no-posts')
+					.html('No items to display.');
+			} else{
+				d3.entries(self.tree).forEach(function(d){
+					d3.selectAll('h4.no-posts').remove();
+					if(d.value.length >0){
+						generateSection(d.value,d.key);
+					}
+				});
+			}
 		}
 	}
 }
