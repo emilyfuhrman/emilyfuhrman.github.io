@@ -72,7 +72,7 @@ var idx_schema = function(){
 		buildNav:function(){
 
 			//TODO:
-			//CLIENT:   //build dropdown of toggles (pull list of clients)
+			//CLIENT: 	//build dropdown of toggles (pull list of clients)
 						//deactivated when CLIENT is untogged
 						//activated when CLIENT is togged
 			
@@ -107,6 +107,11 @@ var idx_schema = function(){
 					.data(selector_tags);
 				selector.enter().append('div')
 					.classed('selector',true);
+				selector
+					.attr('class',function(d,i){
+						var str = d === 'client' ? 'super' : '';
+						return 'selector ' +str;
+					});
 
 				selector_tog = selector
 					.selectAll('div.selector_tog')
@@ -256,7 +261,7 @@ var idx_schema = function(){
 				items,
 				itemsLinks;
 
-			//TODO: filter transition
+			//TODO: filter transition? (not super clean b/c these are done in sections..)
 
 			//renders each list in its designated section
 			function generateSection(data,handle){
