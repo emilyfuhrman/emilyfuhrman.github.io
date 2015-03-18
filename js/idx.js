@@ -3,6 +3,7 @@ var idx_schema = function(){
 	return {
 		tree:{},
 		posts:[],
+		posts_show:[],
 		posts_jek:POSTS_JEKYLL,
 		posts_idx:POSTS_INDEX,
 		tags_main:TAGS_MAIN,
@@ -14,8 +15,13 @@ var idx_schema = function(){
 
 			self.mashup();
 			self.setLinks();
-			self.buildSections();
 			self.buildNav();
+			self.filterList();
+			self.generateList();
+		},
+		refreshList:function(){
+			var self = list;
+
 			self.filterList();
 			self.generateList();
 		},
@@ -63,16 +69,45 @@ var idx_schema = function(){
 				d.href = href;
 			});
 		},
-		buildSections:function(){
+		filterList:function(){
+
+			//filters data and sets up holders for each section
 			var self = list,
+
+				clie_on = d3.select('.client.selector_tog').classed('selected'),
+				pers_on = d3.select('.personal.selector_tog').classed('selected'),
 
 				marginVal = 36,
 				tags_all  = [],
 				sections,
 				section_headers;
 
+			//clean
+			self.posts_show = [];
+			self.tags_show  = [];
+			self.tree       = {};
+
+			//determine which posts to show
+			if(pers_on){
+				self.posts.forEach(function(d){
+					if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
+				});
+			}
+			if(clie_on){
+				self.posts.forEach(function(d){
+					if(d.client){ self.posts_show.push(d); }
+				});
+			}
+
+			//hackily filter visible posts by date
+			self.posts_show = self.posts_show.sort(function(a,b){
+				var aDate = new Date( (parseInt(a.date.split(' ')[1])), (parseInt(a.date.split(' ')[0] -1)) ),
+					bDate = new Date( (parseInt(b.date.split(' ')[1])), (parseInt(b.date.split(' ')[0] -1)) );
+				return bDate -aDate;
+			});
+
 			//grab all post tags
-			self.posts.forEach(function(d){
+			self.posts_show.forEach(function(d){
 				if(d.tags.length >0){
 					d.tags.forEach(function(_d){
 						tags_all.push(_d);
@@ -82,10 +117,31 @@ var idx_schema = function(){
 				}
 			});
 
-			//determine which 'main' sections to build
+			//determine which 'main' sections to build (as specified in tags.yml)
 			self.tags_main.forEach(function(d){
 				if(tags_all.indexOf(d) >-1){
 					self.tags_show.push(d);
+				}
+			});
+
+			//set up buckets for posts in each visible tag
+			self.tags_show.forEach(function(d){
+				if(!self.tree[d]){
+					self.tree[d] = [];
+				}
+			});
+
+			//sort posts into buckets
+			self.posts_show.forEach(function(d){
+				d.tags.forEach(function(_d){
+					if(self.tags_show.indexOf(_d) >-1){
+						d.tagged = _d;
+					}
+				});
+				if(d.tagged){
+					self.tree[d.tagged].push(d);
+				} else{
+					self.tree['uncategorized'].push(d);
 				}
 			});
 
@@ -128,11 +184,13 @@ var idx_schema = function(){
 			//create 'personal' and 'client' selectors
 
 			//PERSONAL: [toggle] anything without a client
-			//CLIENT:   [toggle] anything with a client (pull list of clients) (can't untog if only one)
+			//CLIENT:   [toggle] anything with a client (pull list of clients)
 
-						//also build dropdown of toggles (can't untog last client)
+						//also build dropdown of toggles
 						//deactivated when CLIENT is untogged
 						//activated when CLIENT is togged
+
+			//display "no items to display" if nothing is selected
 			
 			var self = list,
 
@@ -173,7 +231,15 @@ var idx_schema = function(){
 					.classed('selector_tog',true);
 				selector_tog
 					.attr('class',function(d,i){
-						return 'selector_tog selected';
+						return d +' selector_tog selected';
+					});
+				selector_tog
+					.on('click',function(d,i){
+						var tog = d3.select(this),
+							selected = tog.classed('selected');
+						tog.classed('selected',!selected);
+
+						self.refreshList();
 					});
 
 				selector_label = selector
@@ -191,40 +257,6 @@ var idx_schema = function(){
 				selector_tog.exit().remove();
 				selector_label.exit().remove();
 			}
-		},
-		filterList:function(param){
-			var self = list,
-				mos, 
-				yrs,
-				p = param || 'all';
-
-			//hackily filter by date
-			self.posts = self.posts.sort(function(a,b){
-				var aDate = new Date( (parseInt(a.date.split(' ')[1])), (parseInt(a.date.split(' ')[0] -1)) ),
-					bDate = new Date( (parseInt(b.date.split(' ')[1])), (parseInt(b.date.split(' ')[0] -1)) );
-				return bDate -aDate;
-			});
-
-			//set up buckets for posts in each visible tag
-			self.tags_show.forEach(function(d){
-				if(!self.tree[d]){
-					self.tree[d] = [];
-				}
-			});
-
-			//sort posts into buckets
-			self.posts.forEach(function(d){
-				d.tags.forEach(function(_d){
-					if(self.tags_show.indexOf(_d) >-1){
-						d.tagged = _d;
-					}
-				});
-				if(d.tagged){
-					self.tree[d.tagged].push(d);
-				} else{
-					self.tree['uncategorized'].push(d);
-				}
-			});
 		},
 		generateList:function(){
 			var self = list,

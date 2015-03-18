@@ -532,8 +532,11 @@ INDEXES
 	border:2px solid $color-black;
 	}
 #index-nav .selector_tog.selected {
+	background:url('/images/assets/ui_tog_x.png') no-repeat 2px 2px;
+	background-size:24px 24px;
 	}
 #index-nav .selector_tog.unselected {
+	background:transparent;
 	}
 #index-nav .selector_label {
 	margin:0 0 0 54px;
