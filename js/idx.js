@@ -72,9 +72,9 @@ var idx_schema = function(){
 		buildNav:function(){
 
 			//TODO:
-			//CLIENT: 	//build dropdown of toggles (pull list of clients)
-						//deactivated when CLIENT is untogged
-						//activated when CLIENT is togged
+				//build dropdown of toggles (pull list of clients)
+				//[deactivated when CLIENT is untogged]
+				//[activated when CLIENT is togged]
 			
 			var self = list,
 
@@ -117,6 +117,15 @@ var idx_schema = function(){
 					.attr('class',function(d,i){
 						var str = d === 'client' ? 'super' : '';
 						return 'selector ' +str;
+					})
+					.on('mouseover',function(d){
+
+					})
+					.on('mousemove',function(d){
+						
+					})
+					.on('mouseout',function(d){
+						
 					});
 
 				selector_tog = selector
@@ -145,6 +154,7 @@ var idx_schema = function(){
 				selector_label
 					.html(function(d){
 						var str = d.charAt(0).toUpperCase() + d.slice(1);
+						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8690;</span>' : str;
 						return str;
 					});
 
@@ -244,7 +254,7 @@ var idx_schema = function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				})
 				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_show.length ? marginVal : 6;
+					var pad = i +1 === self.tags_show.length ? marginVal : 12;
 					return pad +'px';
 				});
 

@@ -1,7 +1,7 @@
 main: 
   - dynamic
   - static
-  - map
+  - maps
   - uncategorized
 descriptive:
   - compendium
