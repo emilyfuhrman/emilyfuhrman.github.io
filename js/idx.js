@@ -78,6 +78,7 @@ var idx_schema = function(){
 			
 			var self = list,
 
+				marginVal = 36,
 				selector_tags = [],
 				selector_tags_clients = [],
 				selector,
@@ -100,9 +101,14 @@ var idx_schema = function(){
 				}
 			});
 
+			var index_nav = d3.select('#index-nav')
+				.style('width',function(){
+					return window.innerWidth -(marginVal*2) +'px';
+				});
+
 			//make sure that if only one dropdown is built, it's the 'client' one
 			if(selector_tags.length >0 && !(selector_tags.length === 1 && selector_tags[0] === 'personal')){
-				selector = d3.select('#index-nav')
+				selector = index_nav
 					.selectAll('div.selector')
 					.data(selector_tags);
 				selector.enter().append('div')
@@ -238,7 +244,7 @@ var idx_schema = function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				})
 				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_show.length ? marginVal : 0;
+					var pad = i +1 === self.tags_show.length ? marginVal : 6;
 					return pad +'px';
 				});
 
