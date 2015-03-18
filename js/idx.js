@@ -147,8 +147,9 @@ var idx_schema = function(){
 			//filters data and sets up holders for each section
 			var self = list,
 
-				clie_on = d3.select('.client.selector_tog').classed('selected'),
-				pers_on = d3.select('.personal.selector_tog').classed('selected'),
+				//check to make sure these filters exist, are selected
+				clie_on = d3.selectAll('.client.selector_tog')[0].length >0 ? d3.select('.client.selector_tog').classed('selected') : false,
+				pers_on = d3.selectAll('.personal.selector_tog')[0].length >0 ? d3.select('.personal.selector_tog').classed('selected') : false,
 
 				marginVal = 36,
 				tags_all  = [],
