@@ -9,7 +9,7 @@ var idx_schema = function(){
 		tags_main:TAGS_MAIN,
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
-		client_list:[],
+		selectors_show:[],
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -34,10 +34,10 @@ var idx_schema = function(){
 			self.filterList();
 			self.generateList();
 		},
-		refreshList:function(item){
+		refreshList:function(){
 			var self = list;
 
-			self.filterList(item);
+			self.filterList();
 			self.generateList();
 		},
 		mashup:function(){
@@ -68,6 +68,12 @@ var idx_schema = function(){
 				obj.tags = d.tags;
 				self.posts.push(obj);
 			});
+
+			self.posts.forEach(function(d,i){
+				if(d.cat === 'projects' || d.cat === 'x'){
+					d.personal = true;
+				}
+			});
 		},
 		setLinks:function(){
 			var self = list;
@@ -85,62 +91,80 @@ var idx_schema = function(){
 			});
 		},
 		buildNav:function(){
-
 			var self = list,
+				marginVal = 36;
 
-				marginVal = 36,
-				selector_tags = [],
-				selector_tags_clients = [],
-				selector,
-				selector_tog,
-				selector_label,
-				selector_dd,
-				selector_dd_items,
-				selector_dd_items_labels;
+			//clean
+			self.selectors_show = [];
 
 			//determine which selectors to have
 			self.posts.forEach(function(d,i){
-				var label;
+				var obj = {}, 
+					sup,
+					lbl;
+
 				if(d.client){
-					label = 'client';
-					if(selector_tags_clients.indexOf(d.client) <0){
-						selector_tags_clients.push(d.client);
-					}
+					lbl = 'client';
+					sup = true;
 				} else{
-					label = 'personal';
+					lbl = 'personal';
+					sup = false;
 				}
-				if(selector_tags.indexOf(label) <0){
-					selector_tags.push(label);
-				}
-			});
 
-			//create full list of clients
-			self.posts.forEach(function(d,i){
-				if(d.client && self.client_list.filter(function(_d){ return _d.name === d.client; }).length === 0){
-					var obj = {};
-					obj.name = d.client;
-					self.client_list.push(obj);
+				obj.name  = lbl;
+				obj.super = sup;
+				obj.selected = true;
+
+				if(self.selectors_show.filter(function(_d){ return obj.name === _d.name; }).length === 0){
+					self.selectors_show.push(obj);
 				}
 			});
 
-			//alphabetize client list
-			self.client_list = self.op_alphabetize(self.client_list,'name');
+			//for super-selectors, create full list of sub-items
+			self.selectors_show.filter(function(d){ return d.super; }).forEach(function(_d){
+				var lbl = _d.name,
+					str = 'list_' +lbl;
+				if(!self[str]){
+					self[str] = [];
+				}
+				self.posts.forEach(function(p){
+					if(p[lbl] && self[str].filter(function(_p){ return _p.name === p[lbl]; }).length === 0){
+						var obj = {};
+						obj.name = p[lbl];
+						self[str].push(obj);
+					}
+				});
+				self[str] = self.op_alphabetize(self[str],'name');
+				return self[str];
+			});
 
+			//resize navigation panel
 			var index_nav = d3.select('#index-nav')
 				.style('width',function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				});
 
 			//make sure that if only one dropdown is built, it's the 'client' one
-			if(selector_tags.length >0 && !(selector_tags.length === 1 && selector_tags[0] === 'personal')){
+			if(self.selectors_show.length >0 && !(self.selectors_show.length === 1 && self.selectors_show[0].name === 'personal')){
+				
+				var selector,
+					selector_tog,
+					selector_label,
+
+					//super-selector variables
+					selector_dd,
+					selector_dd_items,
+					selector_dd_items_labels;
+
+				//all selectors
 				selector = index_nav
 					.selectAll('div.selector')
-					.data(selector_tags);
+					.data(self.selectors_show);
 				selector.enter().append('div')
 					.classed('selector',true);
 				selector
 					.attr('class',function(d,i){
-						var str = d === 'client' ? d +' super' : d;
+						var str = d.name === 'client' ? d.name +' super' : d.name;
 						return 'selector ' +str;
 					})
 					.on('mouseover',function(d){
@@ -170,15 +194,34 @@ var idx_schema = function(){
 					.classed('selector_tog',true);
 				selector_tog
 					.attr('class',function(d,i){
-						return d +' selector_tog selected';
+						return d.name +' selector_tog selected';
 					});
 				selector_tog
 					.on('click',function(d,i){
 						var tog = d3.select(this),
+							ref = d.name,
+							str = 'list_' +ref,
 							selected = tog.classed('selected');
+
+						//[parent] mark in data
+						self.selectors_show.forEach(function(_d){
+							if(_d.name === d.name){
+								d.selected = !selected;
+							}
+						});
+
+						//[children] mark in data
+						self[str].forEach(function(_d){
+							_d.unselected = selected;
+						});
+
+						//UI change
 						tog.classed('selected',!selected);
 
-						self.refreshList(this);
+						//UI change [children]
+						d3.selectAll('.selector.' +ref +' .label').classed('unselected',selected);
+
+						self.refreshList();
 					});
 
 				selector_label = selector
@@ -188,11 +231,15 @@ var idx_schema = function(){
 					.classed('selector_label',true);
 				selector_label
 					.html(function(d){
-						var str = d.charAt(0).toUpperCase() + d.slice(1);
+						var str = d.name.charAt(0).toUpperCase() + d.name.slice(1);
 						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8690;</span>' : str;
 						return str;
 					});
+				selector.exit().remove();
+				selector_tog.exit().remove();
+				selector_label.exit().remove();
 
+				//dropdowns for super-selectors
 				selector_dd = selector
 					.selectAll('div.selector_dd')
 					.data(function(d){ 
@@ -203,22 +250,46 @@ var idx_schema = function(){
 
 				selector_dd_items = selector_dd
 					.selectAll('li.selector_dd_item')
-					.data(self.client_list);
+					.data(function(d){
+						var ref = d3.select(this.parentNode).data()[0].name,
+							str = 'list_' +ref;
+						return self[str];
+					});
 				selector_dd_items.enter().append('li')
 					.classed('selector_dd_item',true);
 				selector_dd_items
 					.on('click',function(d){
-						var li = d3.select(this.childNodes[0]),
+						var li  = d3.select(this.childNodes[0]),
+							ref = d3.select(this.parentNode).data()[0].name,
+							str = 'list_' +ref,
+							selected,
 							unselected = li.classed('unselected');
-						li.classed('unselected',!unselected);
 
-						self.client_list.forEach(function(_d){
-							if(_d === d){
+						//[child] mark in data
+						self[str].forEach(function(_d){
+							if(_d.name === d.name){
 								d.unselected = !unselected;
 							}
 						});
 
-						self.refreshList(this);
+						//[parent] mark in data
+						//to do so, check if all list items are unselected
+						if(self[str].filter(function(_d){ return _d.unselected; }).length <self[str].length){
+							selected = true;
+						} else{
+							selected = false;
+						}
+						self.selectors_show.forEach(function(_d){
+							if(_d.name === ref){ _d.selected = selected; }
+						});
+
+						//UI change
+						li.classed('unselected',!unselected);
+
+						//UI change [parent]
+						d3.select('.selector.' +ref +' .selector_tog').classed('selected',selected);
+
+						self.refreshList();
 					});
 
 				selector_dd_items_labels = selector_dd_items
@@ -230,19 +301,12 @@ var idx_schema = function(){
 					.html(function(d){
 						return d.name;
 					});
-
-				selector.exit().remove();
-				selector_tog.exit().remove();
-				selector_label.exit().remove();
 				selector_dd.exit().remove();
 				selector_dd_items.exit().remove();
 				selector_dd_items_labels.exit().remove();
 			}
 		},
-		filterList:function(item){
-
-			//TODO: programmatically cycle through filters
-			//TODO: make this more data-driven: use array of selectors as objects
+		filterList:function(){
 
 			//filters data and sets up holders for each section
 			var self = list,
@@ -251,74 +315,29 @@ var idx_schema = function(){
 				sections,
 				section_headers;
 
-			//check to make sure these filters exist, are selected
-			var pers_on = d3.selectAll('.personal.selector_tog')[0].length >0 ? d3.select('.personal.selector_tog').classed('selected') : false,
-				clie_on = d3.selectAll('.client.selector_tog')[0].length >0 ? d3.select('.client.selector_tog').classed('selected') : false;
-
 			//clean
 			self.posts_show = [];
 			self.tags_show  = [];
 			self.tree       = {};
 
-			function tog_control(){
-
-				//personal filter
-				if(pers_on){
-					self.posts.forEach(function(d){
-						if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
+			//filter data
+			self.selectors_show.forEach(function(d,i){
+				var lbl = d.name,
+					str = 'list_' +lbl;
+				if(d.selected && !d.super){
+					self.posts.forEach(function(_d){
+						if(_d[lbl]){ self.posts_show.push(_d); }
+					});
+				} else if(d.selected && d.super){
+					self.posts.forEach(function(_d){
+						if(_d[lbl]){
+							self[str].forEach(function(p){
+								if(_d[lbl] === p.name && !p.unselected){ self.posts_show.push(_d); }
+							});
+						}
 					});
 				}
-
-				//client filter
-				if(clie_on){
-					//pushes all client posts into posts_show array
-					self.client_list.forEach(function(d){
-						d.unselected = false;
-					});
-					d3.selectAll('.client.selector .label').classed('unselected',false);
-					self.posts.forEach(function(d){
-						if(d.client){ self.posts_show.push(d); }
-					});
-				} else{
-					//doesn't push any client posts into posts_show array
-					self.client_list.forEach(function(d){
-						d.unselected = true;
-					});
-					d3.selectAll('.client.selector .label').classed('unselected',true);
-				}
-			}
-
-			function line_control(){
-
-				//personal filter
-				if(pers_on){
-					self.posts.forEach(function(d){
-						if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
-					});
-				}
-
-				//pushes only available clients into list
-				var showClients = self.client_list.filter(function(d){ return !d.unselected; });
-				self.posts.forEach(function(d){
-					showClients.forEach(function(_d){
-						if(d.client && d.client === _d.name){ self.posts_show.push(d); }
-					});
-				});
-
-				if(showClients.length >0){
-					d3.select('.client.selector .selector_tog').classed('selected',true);
-				} else{
-					d3.select('.client.selector .selector_tog').classed('selected',false);
-				}
-			}
-
-			if(item && d3.select(item).classed('selector_tog')){
-				tog_control();
-			} else if(item && d3.select(item).classed('selector_dd_item')){
-				line_control();
-			} else{
-				tog_control();
-			}
+			});
 
 			//alphabetize visible posts
 			self.posts_show = self.op_alphabetize(self.posts_show,'title');
