@@ -328,8 +328,7 @@ var idx_schema = function(){
 
 			//filters data and sets up holders for each section
 			var self = list,
-				marginVal = 36,
-				tags_all  = [],
+				tags_all = [],
 				sections,
 				section_headers;
 
@@ -405,70 +404,34 @@ var idx_schema = function(){
 					self.tree['uncategorized'].push(d);
 				}
 			});
-
-			//build sections
-			sections = d3.select('#index-list')
-				.selectAll('div.section')
-				.data(self.tags_show,function(d){ return d; });
-			sections.enter().append('div')
-				.classed('section',true);
-			sections
-				.order()
-				.attr('class',function(d){
-					return d +' section';
-				})
-				.style('width',function(){
-					return window.innerWidth -(marginVal*2) +'px';
-				})
-				.style('margin-left',0)
-				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_show.length ? marginVal : 12;
-					return pad +'px';
-				});
-			sections
-				.exit()
-				//.transition()
-				//.delay(self.transitionTime*2)
-				.remove();
-
-			//add section headers
-			section_headers = sections
-				.selectAll('h4.headers')
-				.data(function(d){return [d];});
-			section_headers.enter().append('h4')
-				.classed('headers',true);
-			section_headers
-				.html(function(d){
-					var str = d.charAt(0).toUpperCase() + d.slice(1);
-					return str;
-				});
-			section_headers
-				.exit()
-				//.transition()
-				//.delay(self.transitionTime*2)
-				.remove();
 		},
 		generateList:function(){
 			var self = list,
 				remove = [],
 				removestr = [],
+
+				marginVal = 36,
+
+				sections,
+				section_headers,
+
 				items,
 				itemsLinks;
 
 			//exit transitions for list items
-			function transitionOut(items){
+			function transitionOut(items,section_headers){
 
 				var t0_dur = self.transitionTime,
-					t1_dur = self.transitionTime*0.5,
+					t1_dur = self.transitionTime*0.25,
 
 					t0_del = 0,
 					t1_del = t0_dur*4,
-					t2_del = t1_del +t1_dur +self.transitionTime*2.5;
+					t2_del = t1_del +t1_dur +self.transitionTime;
 
+				//transition out individual items
 				var t0 = items
 					.exit()
 					.transition()
-					.delay(t0_del)
 					.delay(function(d,i){
 						return t0_del +30*i;
 					})
@@ -484,66 +447,105 @@ var idx_schema = function(){
 					.duration(t1_dur)
 					.styleTween('color',function(){
 						var s1 = d3.select(this).style('color'),
-							s2 = "#fff";
+							s2 = '#fff';
 						return d3.interpolate(s1,s2);
 					});
 				var t2 = t1
 					.transition()
 					.delay(t2_del)
 					.remove();
+
+				//transition out individual section headers
+				var t3 = section_headers
+					.exit()
+					.transition()
+					.delay(t1_del)
+					.duration(t0_dur)
+					.styleTween('color',function(){
+						var s1 = d3.select(this).style('color'),
+							s2 = '#fff';
+						return d3.interpolate(s1,s2);
+					})
+					.remove();
 			}
 
-			//render each list in its designated section
-			function generateSection(data,handle,idx){
-
-				var selector = '#index-list .section.' +handle;
-				items = d3.select(selector)
-					.selectAll('a.item')
-					.data(data,function(d){ return d.key; });
-				items.enter().append('a')
-					.classed('item',true);
-				items
-					.order()
-					.attr('class',function(d){
-						var clss = 'item';
-						self.selectors_show.forEach(function(_d,i){
-							var lbl = _d.name,
-								str = 'list_' +lbl;
-							if(_d.super && d[lbl]){
-								clss = clss +' ' +d[lbl].split(' ').join('_');
-							}
-						});
-						clss = clss.toLowerCase();
-						return clss;
-					})
-					.attr('href',function(d){
-						return d.href;
-					})
-					.attr('target','_blank')
-					.html(function(d,i){
-						var str,
-							cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
-							title = d.title ? '"' +d.title +'"' : '',
-							thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
-							credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
-						str = d.date +cli +title +thruspan +credspan;
-						return str;
-					});
-				transitionOut(items);
-			}
-
-			if(d3.entries(self.tree).length === 0){
-				d3.select('#index-list')
-					.append('h4')
-					.attr('class','no-posts')
-					.html('No items to display.');
-			} else{
-				d3.entries(self.tree).forEach(function(d,i){
-					d3.selectAll('h4.no-posts').remove();
-					if(d.value.length >0){
-						generateSection(d.value,d.key,i);
-					}
+			//build sections (all possible)
+			sections = d3.select('#index-list')
+				.selectAll('div.section')
+				.data(self.tags_main,function(d){ return d; });
+			sections.enter().append('div')
+				.classed('section',true);
+			sections
+				.order()
+				.attr('class',function(d){
+					return d +' section';
+				})
+				.style('width',function(){
+					return window.innerWidth -(marginVal*2) +'px';
+				})
+				.style('margin-left',0)
+				.style('padding-bottom',function(d,i){
+					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
+					return pad +'px';
 				});
+			sections.exit().remove();
+
+			//add section headers (only those with data)
+			section_headers = sections
+				.selectAll('h4.headers')
+				.data(function(d){ return self.tree[d] ? [d] : false; },function(d){ return d; });
+			section_headers.enter().append('h4')
+				.classed('headers',true);
+			section_headers
+				.html(function(d){
+					var str = d.charAt(0).toUpperCase() + d.slice(1);
+					return str;
+				});
+
+			items = sections
+				.selectAll('a.item')
+				.data(function(d){ return self.tree[[d]] ? self.tree[[d]] : false; },function(d){ return d.key; });
+			items.enter().append('a')
+				.classed('item',true);
+			items
+				.order()
+				.attr('class',function(d){
+					var clss = 'item';
+					self.selectors_show.forEach(function(_d,i){
+						var lbl = _d.name,
+							str = 'list_' +lbl;
+						if(_d.super && d[lbl]){
+							clss = clss +' ' +d[lbl].split(' ').join('_');
+						}
+					});
+					clss = clss.toLowerCase();
+					return clss;
+				})
+				.attr('href',function(d){
+					return d.href;
+				})
+				.attr('target','_blank')
+				.html(function(d,i){
+					var str,
+						cli = d.client ? '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
+						title = d.title ? '"' +d.title +'"' : '',
+						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
+						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
+					str = d.date +cli +title +thruspan +credspan;
+					return str;
+				});
+			transitionOut(items,section_headers);
+
+			if(d3.keys(self.tree).length === 0){
+				setTimeout(function(){
+					d3.select('#index-list')
+						.append('h4')
+						.attr('class','no-posts')
+						.html('No items to display.')
+						;
+				},self.transitionTime*8);
+			} else{
+				d3.selectAll('h4.no-posts').remove();
 			}
 		}
 	}
