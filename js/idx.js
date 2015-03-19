@@ -426,11 +426,11 @@ var idx_schema = function(){
 		generateList:function(){
 			var self = list,
 				remove = [],
-				removestr,
+				removestr = [],
 				items,
 				itemsLinks;
 
-			//renders each list in its designated section
+			//render each list in its designated section
 			function generateSection(data,handle,idx){
 				var selector = '#index-list .section.' +handle;
 				items = d3.select(selector)
@@ -438,10 +438,20 @@ var idx_schema = function(){
 					.data(data);
 				items.enter().append('a')
 					.classed('item',true)
-					//.style('opacity',0)
-					//.style('margin-left','15px')
 					;
 				items
+					.attr('class',function(d){
+						var clss = 'item';
+						self.selectors_show.forEach(function(_d,i){
+							var lbl = _d.name,
+								str = 'list_' +lbl;
+							if(_d.super && d[lbl]){
+								clss = clss +' ' +d[lbl].split(' ').join('_');
+							}
+						});
+						clss = clss.toLowerCase();
+						return clss;
+					})
 					.attr('href',function(d){
 						return d.href;
 					})
@@ -454,26 +464,7 @@ var idx_schema = function(){
 							credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
 						str = d.date +cli +title +thruspan +credspan;
 						return str;
-					})
-					/*.transition()
-					.duration(120)
-					.delay(function(d,i){
-						var time = 30,
-							diff = idx >0 ? d3.entries(self.tree)[idx-1].value.length*time : 0;
-						return (diff +30) +i*time;
-					})
-					.style('opacity',1)
-					.delay(function(d,i){
-						var time = 30,
-							diff = idx >0 ? d3.entries(self.tree)[idx-1].value.length*time : 0;
-						return diff +i*time;
-					})
-					.styleTween('margin-left',function(d){
-						var s1 = d3.select(this).style('margin-left'),
-							s2 = '0px';
-						return d3.interpolate(s1,s2);
-					})*/
-					;
+					});
 				items.exit().remove();
 			}
 
