@@ -425,19 +425,22 @@ var idx_schema = function(){
 		},
 		generateList:function(){
 			var self = list,
+				remove = [],
+				removestr,
 				items,
 				itemsLinks;
 
-			//TODO: filter transition? (not super clean b/c these are done in sections..)
-
 			//renders each list in its designated section
-			function generateSection(data,handle){
+			function generateSection(data,handle,idx){
 				var selector = '#index-list .section.' +handle;
 				items = d3.select(selector)
 					.selectAll('a.item')
 					.data(data);
 				items.enter().append('a')
-					.classed('item',true);
+					.classed('item',true)
+					//.style('opacity',0)
+					//.style('margin-left','15px')
+					;
 				items
 					.attr('href',function(d){
 						return d.href;
@@ -451,7 +454,26 @@ var idx_schema = function(){
 							credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
 						str = d.date +cli +title +thruspan +credspan;
 						return str;
-					});
+					})
+					/*.transition()
+					.duration(120)
+					.delay(function(d,i){
+						var time = 30,
+							diff = idx >0 ? d3.entries(self.tree)[idx-1].value.length*time : 0;
+						return (diff +30) +i*time;
+					})
+					.style('opacity',1)
+					.delay(function(d,i){
+						var time = 30,
+							diff = idx >0 ? d3.entries(self.tree)[idx-1].value.length*time : 0;
+						return diff +i*time;
+					})
+					.styleTween('margin-left',function(d){
+						var s1 = d3.select(this).style('margin-left'),
+							s2 = '0px';
+						return d3.interpolate(s1,s2);
+					})*/
+					;
 				items.exit().remove();
 			}
 
@@ -461,10 +483,10 @@ var idx_schema = function(){
 					.attr('class','no-posts')
 					.html('No items to display.');
 			} else{
-				d3.entries(self.tree).forEach(function(d){
+				d3.entries(self.tree).forEach(function(d,i){
 					d3.selectAll('h4.no-posts').remove();
 					if(d.value.length >0){
-						generateSection(d.value,d.key);
+						generateSection(d.value,d.key,i);
 					}
 				});
 			}
