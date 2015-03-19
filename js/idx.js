@@ -10,6 +10,7 @@ var idx_schema = function(){
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
 		selectors_show:[],
+		transitionTime:120,
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -41,7 +42,16 @@ var idx_schema = function(){
 			self.generateList();
 		},
 		mashup:function(){
-			var self = list;
+			var self = list,
+				counter = 0;
+
+			//assign unique keys to posts to enable object constancy
+			function generateKey(d){
+				var str = d.title.split(' ').join('_').toLowerCase();
+				str = counter +'_' +str;
+				counter++;
+				return str;
+			}
 
 			self.posts_jek.forEach(function(d,i){
 				var obj = {};
@@ -53,6 +63,9 @@ var idx_schema = function(){
 				obj.thru = d.thru || '';
 				obj.path = d.path;
 				obj.tags = d.tags;
+
+				obj.key = generateKey(d);
+
 				self.posts.push(obj);
 			});
 			self.posts_idx.forEach(function(d,i){
@@ -66,6 +79,9 @@ var idx_schema = function(){
 				obj.thru = d.thru || '';
 				obj.path = d.path;
 				obj.tags = d.tags;
+
+				obj.key = generateKey(d);
+
 				self.posts.push(obj);
 			});
 
@@ -393,10 +409,11 @@ var idx_schema = function(){
 			//build sections
 			sections = d3.select('#index-list')
 				.selectAll('div.section')
-				.data(self.tags_show);
+				.data(self.tags_show,function(d){ return d; });
 			sections.enter().append('div')
 				.classed('section',true);
 			sections
+				.order()
 				.attr('class',function(d){
 					return d +' section';
 				})
@@ -408,6 +425,11 @@ var idx_schema = function(){
 					var pad = i +1 === self.tags_show.length ? marginVal : 12;
 					return pad +'px';
 				});
+			sections
+				.exit()
+				//.transition()
+				//.delay(self.transitionTime*2)
+				.remove();
 
 			//add section headers
 			section_headers = sections
@@ -420,8 +442,11 @@ var idx_schema = function(){
 					var str = d.charAt(0).toUpperCase() + d.slice(1);
 					return str;
 				});
-			sections.exit().remove();
-			section_headers.exit().remove();
+			section_headers
+				.exit()
+				//.transition()
+				//.delay(self.transitionTime*2)
+				.remove();
 		},
 		generateList:function(){
 			var self = list,
@@ -430,17 +455,55 @@ var idx_schema = function(){
 				items,
 				itemsLinks;
 
+			//exit transitions for list items
+			function transitionOut(items){
+
+				var t0_dur = self.transitionTime,
+					t1_dur = self.transitionTime*0.5,
+
+					t0_del = 0,
+					t1_del = t0_dur*4,
+					t2_del = t1_del +t1_dur +self.transitionTime*2.5;
+
+				var t0 = items
+					.exit()
+					.transition()
+					.delay(t0_del)
+					.delay(function(d,i){
+						return t0_del +30*i;
+					})
+					.duration(t0_dur)
+					.styleTween('padding-left',function(){
+						var s1 = d3.select(this).style('padding-left'),
+							s2 = '9px';
+						return d3.interpolate(s1,s2);
+					});
+				var t1 = t0
+					.transition()
+					.delay(t1_del)
+					.duration(t1_dur)
+					.styleTween('color',function(){
+						var s1 = d3.select(this).style('color'),
+							s2 = "#fff";
+						return d3.interpolate(s1,s2);
+					});
+				var t2 = t1
+					.transition()
+					.delay(t2_del)
+					.remove();
+			}
+
 			//render each list in its designated section
 			function generateSection(data,handle,idx){
+
 				var selector = '#index-list .section.' +handle;
 				items = d3.select(selector)
 					.selectAll('a.item')
-					.data(data);
+					.data(data,function(d){ return d.key; });
 				items.enter().append('a')
-					.classed('item',true)
-					.classed(handle,true)
-					;
+					.classed('item',true);
 				items
+					.order()
 					.attr('class',function(d){
 						var clss = 'item';
 						self.selectors_show.forEach(function(_d,i){
@@ -466,7 +529,7 @@ var idx_schema = function(){
 						str = d.date +cli +title +thruspan +credspan;
 						return str;
 					});
-				items.exit().remove();
+				transitionOut(items);
 			}
 
 			if(d3.entries(self.tree).length === 0){
