@@ -211,9 +211,11 @@ var idx_schema = function(){
 						});
 
 						//[children] mark in data
-						self[str].forEach(function(_d){
-							_d.unselected = selected;
-						});
+						if(self[str]){
+							self[str].forEach(function(_d){
+								_d.unselected = selected;
+							});
+						}
 
 						//UI change
 						tog.classed('selected',!selected);
