@@ -9,7 +9,7 @@ var idx_schema = function(){
 		tags_main:TAGS_MAIN,
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
-		selectors_show:[],
+		client_list:[],
 		generate:function(){
 			var self = list;
 
@@ -19,10 +19,10 @@ var idx_schema = function(){
 			self.filterList();
 			self.generateList();
 		},
-		refreshList:function(){
+		refreshList:function(item){
 			var self = list;
 
-			self.filterList();
+			self.filterList(item);
 			self.generateList();
 		},
 		mashup:function(){
@@ -71,11 +71,6 @@ var idx_schema = function(){
 		},
 		buildNav:function(){
 
-			//TODO:
-				//build dropdown of toggles (pull list of clients)
-				//[deactivated when CLIENT is untogged]
-				//[activated when CLIENT is togged]
-			
 			var self = list,
 
 				marginVal = 36,
@@ -83,7 +78,10 @@ var idx_schema = function(){
 				selector_tags_clients = [],
 				selector,
 				selector_tog,
-				selector_label;
+				selector_label,
+				selector_dd,
+				selector_dd_items,
+				selector_dd_items_labels;
 
 			//determine which selectors to have
 			self.posts.forEach(function(d,i){
@@ -101,6 +99,26 @@ var idx_schema = function(){
 				}
 			});
 
+			//create full list of clients
+			self.posts.forEach(function(d,i){
+				if(d.client && self.client_list.indexOf(d.client) <0){
+					var obj = {};
+					obj.name = d.client;
+					self.client_list.push(obj);
+				}
+			});
+
+			//alphabetize client list
+			self.client_list = self.client_list.sort(function(a,b){
+				if(a.name <b.name){
+					return -1;
+				} else if(a.name >b.name){
+					return 1;
+				} else{
+					return 0;
+				}
+			});
+
 			var index_nav = d3.select('#index-nav')
 				.style('width',function(){
 					return window.innerWidth -(marginVal*2) +'px';
@@ -115,17 +133,27 @@ var idx_schema = function(){
 					.classed('selector',true);
 				selector
 					.attr('class',function(d,i){
-						var str = d === 'client' ? 'super' : '';
+						var str = d === 'client' ? d +' super' : d;
 						return 'selector ' +str;
 					})
 					.on('mouseover',function(d){
-
+						var selector = d3.select(this);
+						if(selector.classed('super')){
+							selector
+								.classed('open',true)
+								.classed('closed',false);
+						}
 					})
 					.on('mousemove',function(d){
-						
+						return;
 					})
 					.on('mouseout',function(d){
-						
+						var selector = d3.select(this);
+						if(selector.classed('super')){
+							selector
+								.classed('closed',true)
+								.classed('open',false);
+						}
 					});
 
 				selector_tog = selector
@@ -143,7 +171,7 @@ var idx_schema = function(){
 							selected = tog.classed('selected');
 						tog.classed('selected',!selected);
 
-						self.refreshList();
+						self.refreshList(this);
 					});
 
 				selector_label = selector
@@ -158,40 +186,131 @@ var idx_schema = function(){
 						return str;
 					});
 
+				selector_dd = selector
+					.selectAll('div.selector_dd')
+					.data(function(d){ 
+						return d3.select(this.parentNode).classed('super') ? [d] : false; 
+					});
+				selector_dd.enter().append('div')
+					.classed('selector_dd',true);
+
+				selector_dd_items = selector_dd
+					.selectAll('li.selector_dd_item')
+					.data(self.client_list);
+				selector_dd_items.enter().append('li')
+					.classed('selector_dd_item',true);
+				selector_dd_items
+					.on('click',function(d){
+						var li = d3.select(this.childNodes[0]),
+							unselected = li.classed('unselected');
+						li.classed('unselected',!unselected);
+
+						self.client_list.forEach(function(_d){
+							if(_d === d){
+								d.unselected = !unselected;
+							}
+						});
+
+						self.refreshList(this);
+					});
+
+				selector_dd_items_labels = selector_dd_items
+					.selectAll('span.label')
+					.data(function(d){return [d];});
+				selector_dd_items_labels.enter().append('span')
+					.classed('label',true);
+				selector_dd_items_labels
+					.html(function(d){
+						return d.name;
+					});
+
 				selector.exit().remove();
 				selector_tog.exit().remove();
 				selector_label.exit().remove();
+				selector_dd.exit().remove();
+				selector_dd_items.exit().remove();
+				selector_dd_items_labels.exit().remove();
 			}
 		},
-		filterList:function(){
+		filterList:function(item){
+
+			//TODO: programmatically cycle through filters
+			//TODO: make this more data-driven: use array of selectors as objects
 
 			//filters data and sets up holders for each section
 			var self = list,
-
-				//check to make sure these filters exist, are selected
-				clie_on = d3.selectAll('.client.selector_tog')[0].length >0 ? d3.select('.client.selector_tog').classed('selected') : false,
-				pers_on = d3.selectAll('.personal.selector_tog')[0].length >0 ? d3.select('.personal.selector_tog').classed('selected') : false,
-
 				marginVal = 36,
 				tags_all  = [],
 				sections,
 				section_headers;
+
+			//check to make sure these filters exist, are selected
+			var pers_on = d3.selectAll('.personal.selector_tog')[0].length >0 ? d3.select('.personal.selector_tog').classed('selected') : false,
+				clie_on = d3.selectAll('.client.selector_tog')[0].length >0 ? d3.select('.client.selector_tog').classed('selected') : false;
 
 			//clean
 			self.posts_show = [];
 			self.tags_show  = [];
 			self.tree       = {};
 
-			//determine which posts to show
-			if(pers_on){
-				self.posts.forEach(function(d){
-					if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
-				});
+			function tog_control(){
+
+				//personal filter
+				if(pers_on){
+					self.posts.forEach(function(d){
+						if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
+					});
+				}
+
+				//client filter
+				if(clie_on){
+					//pushes all client posts into posts_show array
+					self.client_list.forEach(function(d){
+						d.unselected = false;
+					});
+					d3.selectAll('.client.selector .label').classed('unselected',false);
+					self.posts.forEach(function(d){
+						if(d.client){ self.posts_show.push(d); }
+					});
+				} else{
+					//doesn't push any client posts into posts_show array
+					self.client_list.forEach(function(d){
+						d.unselected = true;
+					});
+					d3.selectAll('.client.selector .label').classed('unselected',true);
+				}
 			}
-			if(clie_on){
+
+			function line_control(){
+
+				//personal filter
+				if(pers_on){
+					self.posts.forEach(function(d){
+						if(d.cat && d.cat === 'projects' || d.cat && d.cat === 'x'){ self.posts_show.push(d); }
+					});
+				}
+
+				//pushes only available clients into list
+				var showClients = self.client_list.filter(function(d){ return !d.unselected; });
 				self.posts.forEach(function(d){
-					if(d.client){ self.posts_show.push(d); }
+					showClients.forEach(function(_d){
+						if(d.client && d.client === _d.name){ self.posts_show.push(d); }
+					});
 				});
+
+				if(showClients.length >0){
+					d3.select('.client.selector .selector_tog').classed('selected',true);
+				} else{
+					d3.select('.client.selector .selector_tog').classed('selected',false);
+				}
+			}
+
+			if(item && d3.select(item).classed('selector_tog')){
+				tog_control();
+			} else if(item && d3.select(item).classed('selector_dd_item')){
+				line_control();
+			} else{
+				tog_control();
 			}
 
 			//hackily filter visible posts by date
@@ -253,6 +372,7 @@ var idx_schema = function(){
 				.style('width',function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				})
+				.style('margin-left',0)
 				.style('padding-bottom',function(d,i){
 					var pad = i +1 === self.tags_show.length ? marginVal : 12;
 					return pad +'px';
