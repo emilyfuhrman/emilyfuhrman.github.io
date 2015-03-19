@@ -438,6 +438,7 @@ var idx_schema = function(){
 					.data(data);
 				items.enter().append('a')
 					.classed('item',true)
+					.classed(handle,true)
 					;
 				items
 					.attr('class',function(d){

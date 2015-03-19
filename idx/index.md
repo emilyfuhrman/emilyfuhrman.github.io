@@ -2,6 +2,6 @@
 layout:  page_index
 title:   "IDX"
 indexID: idx
-mixin:   true
+mixin:   false
 description: Emily Fuhrman.
 ---
