@@ -10,6 +10,21 @@ var idx_schema = function(){
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
 		client_list:[],
+		op_alphabetize:function(data,param){
+			data = data.sort(function(a,b){
+				var varA = param ? a[param] : a,
+					varB = param ? b[param] : b;
+
+				if(varA <varB){
+					return -1;
+				} else if(varA >varB){
+					return 1;
+				} else{
+					return 0;
+				}
+			});
+			return data;
+		},
 		generate:function(){
 			var self = list;
 
@@ -101,7 +116,7 @@ var idx_schema = function(){
 
 			//create full list of clients
 			self.posts.forEach(function(d,i){
-				if(d.client && self.client_list.indexOf(d.client) <0){
+				if(d.client && self.client_list.filter(function(_d){ return _d.name === d.client; }).length === 0){
 					var obj = {};
 					obj.name = d.client;
 					self.client_list.push(obj);
@@ -109,15 +124,7 @@ var idx_schema = function(){
 			});
 
 			//alphabetize client list
-			self.client_list = self.client_list.sort(function(a,b){
-				if(a.name <b.name){
-					return -1;
-				} else if(a.name >b.name){
-					return 1;
-				} else{
-					return 0;
-				}
-			});
+			self.client_list = self.op_alphabetize(self.client_list,'name');
 
 			var index_nav = d3.select('#index-nav')
 				.style('width',function(){
@@ -312,6 +319,9 @@ var idx_schema = function(){
 			} else{
 				tog_control();
 			}
+
+			//alphabetize visible posts
+			self.posts_show = self.op_alphabetize(self.posts_show,'title');
 
 			//hackily filter visible posts by date
 			self.posts_show = self.posts_show.sort(function(a,b){
