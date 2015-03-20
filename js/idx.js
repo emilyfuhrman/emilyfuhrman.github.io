@@ -1,6 +1,7 @@
 var idx_schema = function(){
 
 	return {
+		init:true,
 		tree:{},
 		posts:[],
 		posts_show:[],
@@ -10,7 +11,8 @@ var idx_schema = function(){
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
 		selectors_show:[],
-		transitionTime:120,
+		transitionTime:105,
+		delayTimeEnter:600,
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -48,7 +50,11 @@ var idx_schema = function(){
 			//assign unique keys to posts to enable object constancy
 			function generateKey(d){
 				var str = d.title.split(' ').join('_').toLowerCase();
-				str = counter +'_' +str;
+
+				//remove all punctuation
+				str = str.replace(/[^\w\s]|/g, "").replace(/\s+/g, " ");
+				str = '_' +counter +'_' +str;
+
 				counter++;
 				return str;
 			}
@@ -418,63 +424,24 @@ var idx_schema = function(){
 				items,
 				itemsLinks;
 
-			//exit transitions for list items
-			function transitionOut(items,section_headers){
+			//transition variables
+			var t0_dur = self.transitionTime,
+				t1_dur = self.transitionTime,
 
-				var t0_dur = self.transitionTime,
-					t1_dur = self.transitionTime*0.25,
-
-					t0_del = 0,
-					t1_del = t0_dur*4,
-					t2_del = t1_del +t1_dur +self.transitionTime;
-
-				//transition out individual items
-				var t0 = items
-					.exit()
-					.transition()
-					.delay(function(d,i){
-						return t0_del +30*i;
-					})
-					.duration(t0_dur)
-					.styleTween('padding-left',function(){
-						var s1 = d3.select(this).style('padding-left'),
-							s2 = '9px';
-						return d3.interpolate(s1,s2);
-					});
-				var t1 = t0
-					.transition()
-					.delay(t1_del)
-					.duration(t1_dur)
-					.styleTween('color',function(){
-						var s1 = d3.select(this).style('color'),
-							s2 = '#fff';
-						return d3.interpolate(s1,s2);
-					});
-				var t2 = t1
-					.transition()
-					.delay(t2_del)
-					.remove();
-
-				//transition out individual section headers
-				var t3 = section_headers
-					.exit()
-					.transition()
-					.delay(t1_del)
-					.duration(t0_dur)
-					.styleTween('color',function(){
-						var s1 = d3.select(this).style('color'),
-							s2 = '#fff';
-						return d3.interpolate(s1,s2);
-					})
-					.remove();
-			}
+				t0_del = 0,
+				t1_del = t0_dur*4,
+				t2_del = t1_del +t1_dur +self.transitionTime;
 
 			//build sections (all possible)
 			sections = d3.select('#index-list')
 				.selectAll('div.section')
 				.data(self.tags_main,function(d){ return d; });
 			sections.enter().append('div')
-				.classed('section',true);
+				.classed('section',true)
+				.style('height',function(d){
+					var val = self.tree[d] ? (self.tree[d].length)*36 +54 : 0;
+					return val +'px';
+				});
 			sections
 				.order()
 				.attr('class',function(d){
@@ -487,6 +454,21 @@ var idx_schema = function(){
 				.style('padding-bottom',function(d,i){
 					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
 					return pad +'px';
+				})
+				//e0
+				.transition()
+				.delay(function(d){
+					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
+						curH = parseInt(d3.select(this).style('height').split('px')[0]),
+						shorter = newH <curH;
+					return shorter ? self.delayTimeEnter : 0;
+				})
+				.duration(self.transitionTime)
+				.styleTween('height',function(d,i){
+					var newval = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
+						s1 = d3.select(this).style('height'),
+						s2 = newval +'px';
+					return d3.interpolate(s1,s2);
 				});
 			sections.exit().remove();
 
@@ -501,16 +483,30 @@ var idx_schema = function(){
 					var str = d.charAt(0).toUpperCase() + d.slice(1);
 					return str;
 				});
+			section_headers
+				.exit()
+				.transition()
+				.delay(self.transitionTime*4)
+				.duration(self.transitionTime)
+				.style('opacity',0)
+				.remove();
 
 			items = sections
 				.selectAll('a.item')
 				.data(function(d){ return self.tree[[d]] ? self.tree[[d]] : false; },function(d){ return d.key; });
 			items.enter().append('a')
-				.classed('item',true);
+				.classed('item',true)
+				.style('opacity',0)
+				.style('top',function(d,i){
+					return i*36 +'px';
+				});
 			items
 				.order()
+				.attr('id',function(d,i){
+					return d.key;
+				})
 				.attr('class',function(d){
-					var clss = 'item';
+					var clss = 'item ' +d.tagged;
 					self.selectors_show.forEach(function(_d,i){
 						var lbl = _d.name,
 							str = 'list_' +lbl;
@@ -531,10 +527,54 @@ var idx_schema = function(){
 						title = d.title ? '"' +d.title +'"' : '',
 						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
 						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
-					str = d.date +cli +title +thruspan +credspan;
+					str = '<div>' +d.date +cli +title +thruspan +credspan +'</div>';
 					return str;
+				})
+				//e0
+				.transition()
+				.delay(function(d,i){
+					return self.init ? 0 : self.delayTimeEnter*0.75;
+				})
+				.duration(function(d,i){
+					return 0;//self.init ? 0 : self.transitionTime;
+				})
+				.style('opacity',1)
+				//e1
+				.transition()
+				.delay(function(d,i){
+					//if new list is shorter, delay
+					//if new list is longer, no delay
+					var newL = self.tree[d.tagged].length,
+						curL = d3.selectAll('a.item.' +d.tagged)[0].length,
+						shorter = newL <curL;
+					return shorter ? self.delayTimeEnter : 0;
+				})
+				.duration(self.transitionTime)
+				.styleTween('top',function(d,i){
+					var s1 = d3.select(this).style('top'),
+						s2 = i*36 +'px';
+					return d3.interpolate(s1,s2);
 				});
-			transitionOut(items,section_headers);
+			items
+				.exit()
+				//t0
+				.transition()
+				.duration(t0_dur)
+				.styleTween('left',function(){
+					var s1 = d3.select(this).style('left'),
+						s2 = '9px';
+					return d3.interpolate(s1,s2);
+				})
+				//t1
+				.transition()
+				.delay(t1_del)
+				.duration(t1_dur)
+				.style('opacity',0)
+				//t2
+				.transition()
+				.delay(t2_del)
+				.remove();
+			//transitionOut(items,section_headers);
 
 			if(d3.keys(self.tree).length === 0){
 				setTimeout(function(){
@@ -547,6 +587,9 @@ var idx_schema = function(){
 			} else{
 				d3.selectAll('h4.no-posts').remove();
 			}
+
+			//flag for initial load
+			self.init = false;
 		}
 	}
 }
