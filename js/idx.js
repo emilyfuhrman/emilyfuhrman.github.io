@@ -1,5 +1,8 @@
 var idx_schema = function(){
 
+	//this looks best when filtering doesn't add/remove entire sections
+	//template is still built to handle it as smoothly as possible, tho
+
 	return {
 		init:true,
 		tree:{},
