@@ -640,12 +640,13 @@ INDEXES
 #index-list a.item div {
 	position:absolute;
 	height:36px;
+	width:2000px;
 	top:0px;
 	white-space:nowrap;
 	}
 #index-list a.item:hover {
-	color:$color-accent !important;
-	left:9px;
+	color:$color-accent;
+	left:9px !important;
 	}
 
 #index-list .client {

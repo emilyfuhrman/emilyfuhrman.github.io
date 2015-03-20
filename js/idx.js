@@ -11,8 +11,8 @@ var idx_schema = function(){
 		tags_subs:TAGS_SUBS,
 		tags_show:[],
 		selectors_show:[],
-		transitionTime:105,
-		delayTimeEnter:600,
+		transitionTime:120,
+		delayTimeEnter:510,
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -430,7 +430,15 @@ var idx_schema = function(){
 
 				t0_del = 0,
 				t1_del = t0_dur*4,
-				t2_del = t1_del +t1_dur +self.transitionTime;
+				t2_del = t1_del +t1_dur +self.transitionTime
+
+				//enter() transitions
+				e0_dur = self.init ? 0 : t1_dur,
+				e2_dur = t0_dur,
+
+				e0_del = self.init ? 0 : self.delayTimeEnter*0.75,
+				e2_del = t2_del
+				;
 
 			//build sections (all possible)
 			sections = d3.select('#index-list')
@@ -451,24 +459,34 @@ var idx_schema = function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				})
 				.style('margin-left',0)
-				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
-					return pad +'px';
-				})
 				//e0
 				.transition()
 				.delay(function(d){
 					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						curH = parseInt(d3.select(this).style('height').split('px')[0]),
+						curH = d3.select(this)[0][0].clientHeight,
 						shorter = newH <curH;
 					return shorter ? self.delayTimeEnter : 0;
 				})
-				.duration(self.transitionTime)
+				.duration(e0_dur)
 				.styleTween('height',function(d,i){
 					var newval = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						s1 = d3.select(this).style('height'),
+						padbot = 12,
+						s1 = d3.select(this)[0][0].clientHeight -padbot +'px', 
 						s2 = newval +'px';
 					return d3.interpolate(s1,s2);
+				})
+				//e1 - prevents skipping if section is transitioning out
+				.transition()
+				.delay(function(d){
+					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
+						curH = d3.select(this)[0][0].clientHeight,
+						shorter = newH <curH;
+					return shorter ? self.delayTimeEnter : 0;
+				})
+				.duration(0)
+				.style('padding-bottom',function(d,i){
+					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
+					return pad +'px';
 				});
 			sections.exit().remove();
 
@@ -477,17 +495,23 @@ var idx_schema = function(){
 				.selectAll('h4.headers')
 				.data(function(d){ return self.tree[d] ? [d] : false; },function(d){ return d; });
 			section_headers.enter().append('h4')
-				.classed('headers',true);
+				.classed('headers',true)
+				.style('opacity',0);
 			section_headers
 				.html(function(d){
 					var str = d.charAt(0).toUpperCase() + d.slice(1);
 					return str;
-				});
-			section_headers
-				.exit()
+				})
+				//e0
 				.transition()
-				.delay(self.transitionTime*4)
-				.duration(self.transitionTime)
+				.delay(e0_del)
+				.duration(e0_dur)
+				.style('opacity',1);
+			section_headers.exit()
+				//t1
+				.transition()
+				.delay(t1_del)
+				.duration(t1_dur)
 				.style('opacity',0)
 				.remove();
 
@@ -499,6 +523,9 @@ var idx_schema = function(){
 				.style('opacity',0)
 				.style('top',function(d,i){
 					return i*36 +'px';
+				})
+				.style('left',function(d){
+					return self.init ? '0px' : '9px';
 				});
 			items
 				.order()
@@ -532,12 +559,8 @@ var idx_schema = function(){
 				})
 				//e0
 				.transition()
-				.delay(function(d,i){
-					return self.init ? 0 : self.delayTimeEnter*0.75;
-				})
-				.duration(function(d,i){
-					return 0;//self.init ? 0 : self.transitionTime;
-				})
+				.delay(e0_del)
+				.duration(e0_dur)
 				.style('opacity',1)
 				//e1
 				.transition()
@@ -554,14 +577,22 @@ var idx_schema = function(){
 					var s1 = d3.select(this).style('top'),
 						s2 = i*36 +'px';
 					return d3.interpolate(s1,s2);
+				})
+				//e2
+				.transition()
+				.delay(e2_del)
+				.duration(e2_dur)
+				.styleTween('left',function(){
+					var s1 = '9px',
+						s2 = '0px';
+					return d3.interpolate(s1,s2);
 				});
-			items
-				.exit()
+			items.exit()
 				//t0
 				.transition()
 				.duration(t0_dur)
 				.styleTween('left',function(){
-					var s1 = d3.select(this).style('left'),
+					var s1 = '0px',
 						s2 = '9px';
 					return d3.interpolate(s1,s2);
 				})
@@ -574,7 +605,6 @@ var idx_schema = function(){
 				.transition()
 				.delay(t2_del)
 				.remove();
-			//transitionOut(items,section_headers);
 
 			if(d3.keys(self.tree).length === 0){
 				setTimeout(function(){
@@ -583,7 +613,7 @@ var idx_schema = function(){
 						.attr('class','no-posts')
 						.html('No items to display.')
 						;
-				},self.transitionTime*8);
+				},self.transitionTime*7.5);
 			} else{
 				d3.selectAll('h4.no-posts').remove();
 			}
