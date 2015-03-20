@@ -567,8 +567,9 @@ var idx_schema = function(){
 				.delay(function(d,i){
 					//if new list is shorter, delay
 					//if new list is longer, no delay
-					var newL = self.tree[d.tagged].length,
-						curL = d3.selectAll('a.item.' +d.tagged)[0].length,
+					var tagD = d.tagged || 'uncategorized',
+						newL = self.tree[tagD].length,
+						curL = d3.selectAll('a.item.' +tagD)[0].length,
 						shorter = newL <curL;
 					return shorter ? self.delayTimeEnter : 0;
 				})
