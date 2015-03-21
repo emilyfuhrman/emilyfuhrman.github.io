@@ -608,17 +608,14 @@ INDEXES
 #index-list .section {
 	float:left;
 	width:100%;
-	/*height:auto;*/
 	}
 #index-list .section h4 {
 	margin:3px 0 18px;
 	border-bottom:2px solid #fff;
 	}
-
-#index-list .no-posts {
-	position:absolute;
-	margin:0;
-	padding-top:3px;
+#index-list .section.deact h4 {
+	font-style:italic;
+	text-decoration:line-through;
 	}
 
 #index-list {

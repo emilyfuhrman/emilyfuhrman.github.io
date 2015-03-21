@@ -11,7 +11,6 @@ var idx_schema = function(){
 		posts_jek:POSTS_JEKYLL,
 		posts_idx:POSTS_INDEX,
 		tags_main:TAGS_MAIN,
-		tags_subs:TAGS_SUBS,
 		tags_show:[],
 		selectors_show:[],
 		transitionTime:120,
@@ -337,9 +336,7 @@ var idx_schema = function(){
 
 			//filters data and sets up holders for each section
 			var self = list,
-				tags_all = [],
-				sections,
-				section_headers;
+				tags_all = [];
 
 			//clean
 			self.posts_show = [];
@@ -375,8 +372,8 @@ var idx_schema = function(){
 				return bDate -aDate;
 			});
 
-			//grab all post tags
-			self.posts_show.forEach(function(d){
+			//grab all post tags (from full list, not just show list)
+			self.posts.forEach(function(d){
 				if(d.tags.length >0){
 					d.tags.forEach(function(_d){
 						tags_all.push(_d);
@@ -431,7 +428,7 @@ var idx_schema = function(){
 			var t0_dur = self.transitionTime,
 				t1_dur = self.transitionTime,
 
-				t0_del = 0,
+				t0_del = self.transitionTime,
 				t1_del = t0_dur*4,
 				t2_del = t1_del +t1_dur +self.transitionTime
 
@@ -455,9 +452,6 @@ var idx_schema = function(){
 				});
 			sections
 				.order()
-				.attr('class',function(d){
-					return d +' section';
-				})
 				.style('width',function(){
 					return window.innerWidth -(marginVal*2) +'px';
 				})
@@ -490,6 +484,17 @@ var idx_schema = function(){
 				.style('padding-bottom',function(d,i){
 					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
 					return pad +'px';
+				})
+				//e2 - strikethrough/italicize deactivated headers (unavoidably ugly)
+				.transition()
+				.delay(function(d){
+					var deact = self.tree[d] && self.tree[d].length === 0;
+					return deact ? t0_del*2.475 : self.delayTimeEnter*1.75;
+				})
+				.duration(0)
+				.attr('class',function(d){
+					var deact = self.tree[d] && self.tree[d].length === 0 ? ' deact' : '';
+					return d +' section' +deact;
 				});
 			sections.exit().remove();
 
@@ -594,6 +599,7 @@ var idx_schema = function(){
 			items.exit()
 				//t0
 				.transition()
+				.delay(t0_del)
 				.duration(t0_dur)
 				.styleTween('left',function(){
 					var s1 = '0px',
@@ -609,18 +615,6 @@ var idx_schema = function(){
 				.transition()
 				.delay(t2_del)
 				.remove();
-
-			if(d3.keys(self.tree).length === 0){
-				setTimeout(function(){
-					d3.select('#index-list')
-						.append('h4')
-						.attr('class','no-posts')
-						.html('No items to display.')
-						;
-				},self.transitionTime*7.5);
-			} else{
-				d3.selectAll('h4.no-posts').remove();
-			}
 
 			//flag for initial load
 			self.init = false;
