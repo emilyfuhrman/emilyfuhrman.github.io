@@ -13,6 +13,7 @@ var idx_schema = function(){
 		tags_main:TAGS_MAIN,
 		tags_show:[],
 		selectors_show:[],
+		marginVal:36,
 		transitionTime:120,
 		delayTimeEnter:510,
 		op_alphabetize:function(data,param){
@@ -115,8 +116,7 @@ var idx_schema = function(){
 			});
 		},
 		buildNav:function(){
-			var self = list,
-				marginVal = 36;
+			var self = list;
 
 			//clean
 			self.selectors_show = [];
@@ -165,7 +165,7 @@ var idx_schema = function(){
 			//resize navigation panel
 			var index_nav = d3.select('#index-nav')
 				.style('width',function(){
-					return window.innerWidth -(marginVal*2) +'px';
+					return window.innerWidth -(self.marginVal*2) +'px';
 				});
 
 			//make sure that if only one dropdown is built, it's the 'client' one
@@ -413,31 +413,28 @@ var idx_schema = function(){
 		},
 		generateList:function(){
 			var self = list,
-				remove = [],
-				removestr = [],
-
-				marginVal = 36,
 
 				sections,
 				section_headers,
 
-				items,
-				itemsLinks;
+				items;
 
 			//transition variables
-			var t0_dur = self.transitionTime,
-				t1_dur = self.transitionTime,
+			var del_hgts = self.delayTimeEnter,
 
-				t0_del = self.transitionTime,
-				t1_del = t0_dur*4,
-				t2_del = t1_del +t1_dur +self.transitionTime
+				del_fade_wait = del_hgts*0.75,
+				del_clss_wait = del_fade_wait +self.delayTimeEnter,
 
-				//enter() transitions
-				e0_dur = self.init ? 0 : t1_dur,
-				e2_dur = t0_dur,
+				del_init = self.transitionTime,
+				del_half = self.transitionTime*4
+				del_last = self.transitionTime*6,
 
-				e0_del = self.init ? 0 : self.delayTimeEnter*0.75,
-				e2_del = t2_del
+				//rando space of time it takes to start items-out transition
+				del_d3   = self.transitionTime*2.475,
+
+				dur_dent = self.transitionTime,
+				dur_fade = self.transitionTime,
+				dur_hgts = self.init ? 0 : self.transitionTime
 				;
 
 			//build sections (all possible)
@@ -453,18 +450,16 @@ var idx_schema = function(){
 			sections
 				.order()
 				.style('width',function(){
-					return window.innerWidth -(marginVal*2) +'px';
+					return window.innerWidth -(self.marginVal*2) +'px';
 				})
-				.style('margin-left',0)
-				//e0
 				.transition()
 				.delay(function(d){
 					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
 						curH = d3.select(this)[0][0].clientHeight,
 						shorter = newH <curH;
-					return shorter ? self.delayTimeEnter : 0;
+					return shorter ? del_hgts : 0;
 				})
-				.duration(e0_dur)
+				.duration(dur_hgts)
 				.styleTween('height',function(d,i){
 					var newval = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
 						padbot = 12,
@@ -472,24 +467,16 @@ var idx_schema = function(){
 						s2 = newval +'px';
 					return d3.interpolate(s1,s2);
 				})
-				//e1 - prevents skipping if section is transitioning out
 				.transition()
-				.delay(function(d){
-					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						curH = d3.select(this)[0][0].clientHeight,
-						shorter = newH <curH;
-					return shorter ? self.delayTimeEnter : 0;
-				})
 				.duration(0)
 				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_main.length ? marginVal : self.tree[d] ? 12 : 0;
+					var pad = i +1 === self.tags_main.length ? self.marginVal : self.tree[d] ? 12 : 0;
 					return pad +'px';
 				})
-				//e2 - strikethrough/italicize deactivated headers (unavoidably ugly)
 				.transition()
 				.delay(function(d){
 					var deact = self.tree[d] && self.tree[d].length === 0;
-					return deact ? t0_del*2.475 : self.delayTimeEnter*1.75;
+					return deact ? del_d3 : del_clss_wait;
 				})
 				.duration(0)
 				.attr('class',function(d){
@@ -503,25 +490,13 @@ var idx_schema = function(){
 				.selectAll('h4.headers')
 				.data(function(d){ return self.tree[d] ? [d] : false; },function(d){ return d; });
 			section_headers.enter().append('h4')
-				.classed('headers',true)
-				.style('opacity',0);
+				.classed('headers',true);
 			section_headers
 				.html(function(d){
 					var str = d.charAt(0).toUpperCase() + d.slice(1);
 					return str;
-				})
-				//e0
-				.transition()
-				.delay(e0_del)
-				.duration(e0_dur)
-				.style('opacity',1);
-			section_headers.exit()
-				//t1
-				.transition()
-				.delay(t1_del)
-				.duration(t1_dur)
-				.style('opacity',0)
-				.remove();
+				});
+			section_headers.exit().remove();
 
 			items = sections
 				.selectAll('a.item')
@@ -565,12 +540,6 @@ var idx_schema = function(){
 					str = '<div>' +d.date +cli +title +thruspan +credspan +'</div>';
 					return str;
 				})
-				//e0
-				.transition()
-				.delay(e0_del)
-				.duration(e0_dur)
-				.style('opacity',1)
-				//e1
 				.transition()
 				.delay(function(d,i){
 					//if new list is shorter, delay
@@ -579,41 +548,47 @@ var idx_schema = function(){
 						newL = self.tree[tagD].length,
 						curL = d3.selectAll('a.item.' +tagD)[0].length,
 						shorter = newL <curL;
-					return shorter ? self.delayTimeEnter : 0;
+					return shorter ? del_hgts : 0;
 				})
-				.duration(self.transitionTime)
+				.duration(dur_hgts)
 				.styleTween('top',function(d,i){
 					var s1 = d3.select(this).style('top'),
 						s2 = i*36 +'px';
 					return d3.interpolate(s1,s2);
 				})
-				//e2
 				.transition()
-				.delay(e2_del)
-				.duration(e2_dur)
+				.delay(function(){
+					return self.init ? 0 : del_fade_wait;
+				})
+				.duration(function(){
+					return self.init ? 0 : dur_fade;
+				})
+				.style('opacity',1)
+				.transition()
+				.delay(del_last)
+				.duration(function(){
+					return self.init ? 0 : dur_dent;
+				})
 				.styleTween('left',function(){
 					var s1 = '9px',
 						s2 = '0px';
 					return d3.interpolate(s1,s2);
 				});
 			items.exit()
-				//t0
 				.transition()
-				.delay(t0_del)
-				.duration(t0_dur)
+				.delay(del_init)
+				.duration(dur_dent)
 				.styleTween('left',function(){
 					var s1 = '0px',
 						s2 = '9px';
 					return d3.interpolate(s1,s2);
 				})
-				//t1
 				.transition()
-				.delay(t1_del)
-				.duration(t1_dur)
+				.delay(del_half)
+				.duration(dur_fade)
 				.style('opacity',0)
-				//t2
 				.transition()
-				.delay(t2_del)
+				.delay(del_last)
 				.remove();
 
 			//flag for initial load
