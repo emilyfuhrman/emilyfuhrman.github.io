@@ -539,7 +539,7 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +120);
+					return self.init ? 0 : (t_del +30);
 				})
 				.duration(function(){
 					return self.init ? 0 : t_dur_fade;
@@ -551,13 +551,13 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +210);
+					return self.init ? 0 : (t_del +120);
 				})
 				.style('opacity',1)
 				;
 			items.exit()
 				.transition()
-				.delay(60)
+				.delay(90)
 				.duration(t_dur_fade)
 				.styleTween('left',function(){
 					var s1 = '0px',
@@ -565,7 +565,7 @@ var idx_schema = function(){
 					return d3.interpolate(s1,s2);
 				})
 				.transition()
-				.delay(t_dur_fade +60)
+				.delay(t_dur_fade +90)
 				.style('opacity',0)
 				.remove();
 
