@@ -630,7 +630,6 @@ INDEXES
 	text-transform:uppercase; 
 	text-decoration:none;
 	letter-spacing:$univ-letter-spacing;
-	left:0px;
 	@include transition(left 120ms ease, color 120ms ease);
 	cursor:cell;
 	}

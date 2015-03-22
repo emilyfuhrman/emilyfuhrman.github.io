@@ -374,33 +374,36 @@ var idx_schema = function(){
 
 			//grab all post tags (from full list, not just show list)
 			self.posts.forEach(function(d){
+				var obj = {};
 				if(d.tags.length >0){
 					d.tags.forEach(function(_d){
-						tags_all.push(_d);
+						obj.name = _d;
+						tags_all.push(obj);
 					});	
 				} else{
-					tags_all.push('uncategorized');
+					obj.name = 'uncategorized';
+					tags_all.push(obj);
 				}
 			});
 
 			//determine which 'main' sections to build (as specified in tags.yml)
 			self.tags_main.forEach(function(d){
-				if(tags_all.indexOf(d) >-1){
+				if(tags_all.filter(function(_d){ return _d.name === d.name; }).length >0){
 					self.tags_show.push(d);
 				}
 			});
 
 			//set up buckets for posts in each visible tag
 			self.tags_show.forEach(function(d){
-				if(!self.tree[d]){
-					self.tree[d] = [];
+				if(!self.tree[d.name]){
+					self.tree[d.name] = [];
 				}
 			});
 
 			//sort posts into buckets
 			self.posts_show.forEach(function(d){
 				d.tags.forEach(function(_d){
-					if(self.tags_show.indexOf(_d) >-1){
+					if(self.tags_show.filter(function(t){ return t.name === _d; }).length >0){
 						d.tagged = _d;
 					}
 				});
@@ -422,73 +425,73 @@ var idx_schema = function(){
 			//transition variables
 			var t_del = self.delayTimeEnter,
 
-				t_dur = self.init ? 0 : self.transitionTime,
-				t_dur_fade = 30
+				t_dur = self.init ? 0 : self.transitionTime*2,
+				t_dur_fade = 120
 				;
 
 			//build sections (all possible)
 			sections = d3.select('#index-list')
 				.selectAll('div.section')
-				.data(self.tags_main,function(d){ return d; });
+				.data(self.tags_main,function(d){ return d.name; });
 			sections.enter().append('div')
 				.classed('section',true)
 				.style('height',function(d){
-					var val = self.tree[d] ? (self.tree[d].length)*36 +54 : 0;
-					return val +'px';
+					var h = self.tree[d.name] ? (self.tree[d.name].length)*36 +54 : 0;
+					return h +'px';
 				});
 			sections
 				.order()
-				.attr('class',function(d){
-					var deact = self.tree[d] && self.tree[d].length === 0 ? ' deact' : '';
-					return d +' section' +deact;
-				})
 				.style('width',function(){
 					return window.innerWidth -(self.marginVal*2) +'px';
 				})
 				.transition()
 				.delay(function(d){
-					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						curH = d3.select(this)[0][0].clientHeight,
-						shorter = newH <curH;
-					return shorter ? t_del : 0;
+					d.newH = self.tree[d.name] ? (self.tree[d.name].length)*36 +54 : 0,
+					d.curH = d3.select(this)[0][0].clientHeight;
+					return d.newH <d.curH ? t_del : 0;
 				})
 				.duration(function(d){
-					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						curH = d3.select(this)[0][0].clientHeight,
-						shorter = newH <curH;
-					return shorter ? t_dur : t_dur*0.3;
+					return d.newH <d.curH ? t_dur : t_dur*0.3;
 				})
 				.styleTween('height',function(d,i){
-					var newval = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
-						padbot = 12,
-						s1 = d3.select(this)[0][0].clientHeight -padbot +'px', 
-						s2 = newval +'px';
+					var padbot = 12,
+						s1 = d.curH -padbot +'px', 
+						s2 = d.newH +'px';
 					return d3.interpolate(s1,s2);
 				})
 				.transition()
 				.duration(0)
 				.style('padding-bottom',function(d,i){
-					var pad = i +1 === self.tags_main.length ? self.marginVal : self.tree[d] ? 12 : 0;
+					var pad = i +1 === self.tags_main.length ? self.marginVal : self.tree[d.name] ? 12 : 0;
 					return pad +'px';
+				})
+				.transition()
+				.delay(function(d){
+					var diff = t_dur_fade*1.65;
+					return d.newH <d.curH ? diff : t_del +diff;
+				})
+				.attr('class',function(d){
+					var deact = self.tree[d.name] && self.tree[d.name].length === 0 ? ' deact' : '';
+					return d.name +' section' +deact;
 				});
 			sections.exit().remove();
 
 			//add section headers (only those with data)
 			section_headers = sections
 				.selectAll('h4.headers')
-				.data(function(d){ return self.tree[d] ? [d] : false; },function(d){ return d; });
+				.data(function(d){ return self.tree[d.name] ? [d] : false; },function(d){ return d.name; });
 			section_headers.enter().append('h4')
 				.classed('headers',true);
 			section_headers
 				.html(function(d){
-					var str = d.charAt(0).toUpperCase() + d.slice(1);
+					var str = d.name.charAt(0).toUpperCase() + d.name.slice(1);
 					return str;
 				});
 			section_headers.exit().remove();
 
 			items = sections
 				.selectAll('a.item')
-				.data(function(d){ return self.tree[[d]] ? self.tree[[d]] : false; },function(d){ return d.key; });
+				.data(function(d){ return self.tree[[d.name]] ? self.tree[[d.name]] : false; },function(d){ return d.key; });
 			items.enter().append('a')
 				.classed('item',true)
 				.style('opacity',0)
@@ -531,16 +534,12 @@ var idx_schema = function(){
 					//if new list is longer, no delay
 					var tagD = d.tagged || 'uncategorized',
 						newL = self.tree[tagD].length,
-						curL = d3.selectAll('a.item.' +tagD)[0].length,
-						shorter = newL <curL;
-					return shorter ? t_del : 0;
+						curL = d3.selectAll('a.item.' +tagD)[0].length;
+					d.shorter = newL <curL;
+					return d.shorter ? t_del : 0;
 				})
-				.duration(function(d,i){
-					var tagD = d.tagged || 'uncategorized',
-						newL = self.tree[tagD].length,
-						curL = d3.selectAll('a.item.' +tagD)[0].length,
-						shorter = newL <curL;
-					return shorter ? t_dur : t_dur*0.3;
+				.duration(function(d){
+					return d.shorter ? t_dur : t_dur*0.3;
 				})
 				.styleTween('top',function(d,i){
 					var s1 = d3.select(this).style('top'),
@@ -551,11 +550,30 @@ var idx_schema = function(){
 				.delay(function(){
 					return self.init ? 0 : (t_del +120);
 				})
-				.duration(t_dur_fade)
-				.style('opacity',1);
+				.duration(function(){
+					return self.init ? 0 : t_dur_fade;
+				})
+				.styleTween('left',function(){
+					var s1 = '9px',
+						s2 = '0px';
+					return d3.interpolate(s1,s2);
+				})
+				.transition()
+				.delay(function(){
+					return self.init ? 0 : (t_del +180);
+				})
+				.style('opacity',1)
+				;
 			items.exit()
 				.transition()
 				.duration(t_dur_fade)
+				.styleTween('left',function(){
+					var s1 = '0px',
+						s2 = '9px';
+					return d3.interpolate(s1,s2);
+				})
+				.transition()
+				.delay(t_dur_fade)
 				.style('opacity',0)
 				.remove();
 

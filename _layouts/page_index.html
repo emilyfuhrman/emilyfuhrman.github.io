@@ -48,7 +48,9 @@
 	{% endfor %}
 
 	{% for t in site.data.tags.main %}
-		TAGS_MAIN.push("{{ t }}");
+		TAGS_MAIN.push({
+			name:	"{{ t }}"
+		});
 	{% endfor %}
 	{% for t in site.data.tags.descriptive %}
 		TAGS_SUBS.push("{{ t }}");
