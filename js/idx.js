@@ -15,7 +15,7 @@ var idx_schema = function(){
 		selectors_show:[],
 		marginVal:36,
 		transitionTime:120,
-		delayTimeEnter:510,
+		delayTimeEnter:480,
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -420,21 +420,10 @@ var idx_schema = function(){
 				items;
 
 			//transition variables
-			var del_hgts = self.delayTimeEnter,
+			var t_del = self.delayTimeEnter,
 
-				del_fade_wait = del_hgts*0.75,
-				del_clss_wait = del_fade_wait +self.delayTimeEnter,
-
-				del_init = self.transitionTime,
-				del_half = self.transitionTime*4
-				del_last = self.transitionTime*6,
-
-				//rando space of time it takes to start items-out transition
-				del_d3   = self.transitionTime*2.475,
-
-				dur_dent = self.transitionTime,
-				dur_fade = self.transitionTime,
-				dur_hgts = self.init ? 0 : self.transitionTime
+				t_dur = self.init ? 0 : self.transitionTime,
+				t_dur_fade = 30
 				;
 
 			//build sections (all possible)
@@ -449,6 +438,10 @@ var idx_schema = function(){
 				});
 			sections
 				.order()
+				.attr('class',function(d){
+					var deact = self.tree[d] && self.tree[d].length === 0 ? ' deact' : '';
+					return d +' section' +deact;
+				})
 				.style('width',function(){
 					return window.innerWidth -(self.marginVal*2) +'px';
 				})
@@ -457,9 +450,14 @@ var idx_schema = function(){
 					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
 						curH = d3.select(this)[0][0].clientHeight,
 						shorter = newH <curH;
-					return shorter ? del_hgts : 0;
+					return shorter ? t_del : 0;
 				})
-				.duration(dur_hgts)
+				.duration(function(d){
+					var newH = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
+						curH = d3.select(this)[0][0].clientHeight,
+						shorter = newH <curH;
+					return shorter ? t_dur : t_dur*0.3;
+				})
 				.styleTween('height',function(d,i){
 					var newval = self.tree[d] ? (self.tree[d].length)*36 +54 : 0,
 						padbot = 12,
@@ -472,16 +470,6 @@ var idx_schema = function(){
 				.style('padding-bottom',function(d,i){
 					var pad = i +1 === self.tags_main.length ? self.marginVal : self.tree[d] ? 12 : 0;
 					return pad +'px';
-				})
-				.transition()
-				.delay(function(d){
-					var deact = self.tree[d] && self.tree[d].length === 0;
-					return deact ? del_d3 : del_clss_wait;
-				})
-				.duration(0)
-				.attr('class',function(d){
-					var deact = self.tree[d] && self.tree[d].length === 0 ? ' deact' : '';
-					return d +' section' +deact;
 				});
 			sections.exit().remove();
 
@@ -506,9 +494,6 @@ var idx_schema = function(){
 				.style('opacity',0)
 				.style('top',function(d,i){
 					return i*36 +'px';
-				})
-				.style('left',function(d){
-					return self.init ? '0px' : '9px';
 				});
 			items
 				.order()
@@ -548,9 +533,15 @@ var idx_schema = function(){
 						newL = self.tree[tagD].length,
 						curL = d3.selectAll('a.item.' +tagD)[0].length,
 						shorter = newL <curL;
-					return shorter ? del_hgts : 0;
+					return shorter ? t_del : 0;
 				})
-				.duration(dur_hgts)
+				.duration(function(d,i){
+					var tagD = d.tagged || 'uncategorized',
+						newL = self.tree[tagD].length,
+						curL = d3.selectAll('a.item.' +tagD)[0].length,
+						shorter = newL <curL;
+					return shorter ? t_dur : t_dur*0.3;
+				})
 				.styleTween('top',function(d,i){
 					var s1 = d3.select(this).style('top'),
 						s2 = i*36 +'px';
@@ -558,37 +549,14 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : del_fade_wait;
+					return self.init ? 0 : (t_del +120);
 				})
-				.duration(function(){
-					return self.init ? 0 : dur_fade;
-				})
-				.style('opacity',1)
-				.transition()
-				.delay(del_last)
-				.duration(function(){
-					return self.init ? 0 : dur_dent;
-				})
-				.styleTween('left',function(){
-					var s1 = '9px',
-						s2 = '0px';
-					return d3.interpolate(s1,s2);
-				});
+				.duration(t_dur_fade)
+				.style('opacity',1);
 			items.exit()
 				.transition()
-				.delay(del_init)
-				.duration(dur_dent)
-				.styleTween('left',function(){
-					var s1 = '0px',
-						s2 = '9px';
-					return d3.interpolate(s1,s2);
-				})
-				.transition()
-				.delay(del_half)
-				.duration(dur_fade)
+				.duration(t_dur_fade)
 				.style('opacity',0)
-				.transition()
-				.delay(del_last)
 				.remove();
 
 			//flag for initial load
