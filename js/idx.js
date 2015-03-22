@@ -15,7 +15,7 @@ var idx_schema = function(){
 		selectors_show:[],
 		marginVal:36,
 		transitionTime:120,
-		delayTimeEnter:480,
+		delayTimeEnter:600,
 		op_alphabetize:function(data,param){
 			data = data.sort(function(a,b){
 				var varA = param ? a[param] : a,
@@ -448,7 +448,7 @@ var idx_schema = function(){
 				.delay(function(d){
 					d.newH = self.tree[d.name] ? (self.tree[d.name].length)*36 +54 : 0,
 					d.curH = d3.select(this)[0][0].clientHeight;
-					return d.newH <d.curH ? t_del : 0;
+					return self.init ? 0 : d.newH <d.curH ? t_del : t_dur;
 				})
 				.duration(function(d){
 					return d.newH <d.curH ? t_dur : t_dur*0.3;
@@ -464,15 +464,6 @@ var idx_schema = function(){
 				.style('padding-bottom',function(d,i){
 					var pad = i +1 === self.tags_main.length ? self.marginVal : self.tree[d.name] ? 12 : 0;
 					return pad +'px';
-				})
-				.transition()
-				.delay(function(d){
-					var diff = t_dur_fade*1.65;
-					return d.newH <d.curH ? diff : t_del +diff +30;
-				})
-				.attr('class',function(d){
-					var deact = self.tree[d.name] && self.tree[d.name].length === 0 ? ' deact' : '';
-					return d.name +' section' +deact;
 				});
 			sections.exit().remove();
 
@@ -536,7 +527,7 @@ var idx_schema = function(){
 						newL = self.tree[tagD].length,
 						curL = d3.selectAll('a.item.' +tagD)[0].length;
 					d.shorter = newL <curL;
-					return d.shorter ? t_del : 0;
+					return self.init ? 0 : d.shorter ? t_del : t_dur;
 				})
 				.duration(function(d){
 					return d.shorter ? t_dur : t_dur*0.3;
@@ -560,12 +551,13 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +180);
+					return self.init ? 0 : (t_del +210);
 				})
 				.style('opacity',1)
 				;
 			items.exit()
 				.transition()
+				.delay(60)
 				.duration(t_dur_fade)
 				.styleTween('left',function(){
 					var s1 = '0px',
@@ -573,7 +565,7 @@ var idx_schema = function(){
 					return d3.interpolate(s1,s2);
 				})
 				.transition()
-				.delay(t_dur_fade)
+				.delay(t_dur_fade +60)
 				.style('opacity',0)
 				.remove();
 
