@@ -468,7 +468,7 @@ var idx_schema = function(){
 				.transition()
 				.delay(function(d){
 					var diff = t_dur_fade*1.65;
-					return d.newH <d.curH ? diff : t_del +diff;
+					return d.newH <d.curH ? diff : t_del +diff +30;
 				})
 				.attr('class',function(d){
 					var deact = self.tree[d.name] && self.tree[d.name].length === 0 ? ' deact' : '';
