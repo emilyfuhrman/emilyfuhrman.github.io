@@ -551,7 +551,7 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +120);
+					return self.init ? 0 : (t_del +30 +t_dur_fade);
 				})
 				.style('opacity',1)
 				;
