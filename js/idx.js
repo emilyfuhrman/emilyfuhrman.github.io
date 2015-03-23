@@ -539,7 +539,7 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +30);
+					return self.init ? 0 : (t_del);
 				})
 				.duration(function(){
 					return self.init ? 0 : t_dur_fade;
@@ -551,7 +551,7 @@ var idx_schema = function(){
 				})
 				.transition()
 				.delay(function(){
-					return self.init ? 0 : (t_del +30 +t_dur_fade);
+					return self.init ? 0 : (t_del +t_dur_fade);
 				})
 				.style('opacity',1)
 				;
