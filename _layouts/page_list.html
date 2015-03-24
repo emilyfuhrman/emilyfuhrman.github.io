@@ -1,10 +1,15 @@
 {% include header.html %}
 <div id='proj-list'>
 	{% for post in site.posts %}
-	{% if post.cat == 'x' %}
-		{% assign end = '' %}
-	{% else %}
+	{% if post.cat == 'projects' %}
 		{% assign end = '.html' %}
+	{% else %}
+		{% assign end = '' %}
+	{% endif %}
+	{% if post.cat == 'idx' %}
+		{% capture date %}{{ post.date | date: "00 0000" }}{% endcapture %}
+	{% else %}
+		{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
 	{% endif %}
 	{% if post.nonvis == true %}
 		{% assign marker = '&dagger;&nbsp;' %}
@@ -15,7 +20,7 @@
 		<img class='list-img' src='/images/thumbs/post-{{ post.num }}_thumb.png'>
 		<div>
 			<p class='list-title'>{{ marker }}{{ post.title }}</p>
-			<p class='list-date'>{{ post.date | date: "%m %Y" }}</p>
+			<p class='list-date'>{{ date }}</p>
 		</div>
 	</a>
 	{% endfor %}

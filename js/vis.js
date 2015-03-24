@@ -46,6 +46,11 @@ var schema = function(){
 				//half the width/height of one vertex	
 				sq = 36;
 
+			//filter out the idx post
+			self.posts = self.posts.filter(function(d){
+				return parseInt(d.year) >2000;
+			});
+
 			function setPointPos(d3){
 
 				var oX = w/2,
