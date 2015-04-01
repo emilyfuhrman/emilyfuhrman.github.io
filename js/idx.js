@@ -130,7 +130,7 @@ var idx_schema = function(){
 					lbl;
 
 				if(d.client){
-					lbl = 'Client work';
+					lbl = 'Organization';
 					dat = 'client';
 					sup = true;
 				} else{
