@@ -509,10 +509,19 @@ ul.items li.item .now_true {
 INDEXES
 ----------------------- */
 
+#index-descrip {
+	position:relative;
+	}
+#index-descrip h4 {
+	position:absolute;
+	left:36px;
+	top:150px;
+	}
+
 #index-nav {
 	width:100%;
 	height:36px;
-	margin:174px 0 0 36px;
+	margin:234px 0 0 36px;
 	padding-bottom:18px;
 	border-bottom:2px solid #222;
 	}
@@ -595,7 +604,7 @@ INDEXES
 	}
 
 #index-nav .selector_label {
-	margin:0 0 0 48px;
+	margin:-1px 0 0 48px;
 	}
 #index-nav .selector.super.open .selector_label {
 	color:$color-accent;

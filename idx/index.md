@@ -5,3 +5,5 @@ indexID: idx
 mixin:   false
 description: Emily Fuhrman.
 ---
+
+#### An index of client projects & collaborative work. 

@@ -122,39 +122,44 @@ var idx_schema = function(){
 			self.selectors_show = [];
 
 			//determine which selectors to have
+			//right now, only checks for client: if more needed, refactor to predefine at outset
 			self.posts.forEach(function(d,i){
 				var obj = {}, 
 					sup,
+					dat,
 					lbl;
 
 				if(d.client){
-					lbl = 'client';
+					lbl = 'Client work';
+					dat = 'client';
 					sup = true;
 				} else{
-					lbl = 'personal';
+					lbl = 'Personal';
+					dat = 'personal';
 					sup = false;
 				}
 
-				obj.name  = lbl;
+				obj.datum = dat;
+				obj.label = lbl;
 				obj.super = sup;
 				obj.selected = true;
 
-				if(self.selectors_show.filter(function(_d){ return obj.name === _d.name; }).length === 0){
+				if(self.selectors_show.filter(function(_d){ return obj.datum === _d.datum; }).length === 0){
 					self.selectors_show.push(obj);
 				}
 			});
 
 			//for super-selectors, create full list of sub-items
 			self.selectors_show.filter(function(d){ return d.super; }).forEach(function(_d){
-				var lbl = _d.name,
-					str = 'list_' +lbl;
+				var dat = _d.datum,
+					str = 'list_' +dat;
 				if(!self[str]){
 					self[str] = [];
 				}
 				self.posts.forEach(function(p){
-					if(p[lbl] && self[str].filter(function(_p){ return _p.name === p[lbl]; }).length === 0){
+					if(p[dat] && self[str].filter(function(_p){ return _p.name === p[dat]; }).length === 0){
 						var obj = {};
-						obj.name = p[lbl];
+						obj.name = p[dat];
 						self[str].push(obj);
 					}
 				});
@@ -169,7 +174,7 @@ var idx_schema = function(){
 				});
 
 			//make sure that if only one dropdown is built, it's the 'client' one
-			if(self.selectors_show.length >0 && !(self.selectors_show.length === 1 && self.selectors_show[0].name === 'personal')){
+			if(self.selectors_show.length >0 && !(self.selectors_show.length === 1 && self.selectors_show[0].datum === 'personal')){
 				
 				var selector,
 					selector_tog,
@@ -188,7 +193,7 @@ var idx_schema = function(){
 					.classed('selector',true);
 				selector
 					.attr('class',function(d,i){
-						var str = d.name === 'client' ? d.name +' super' : d.name;
+						var str = d.datum === 'client' ? d.datum +' super' : d.datum;
 						return 'selector ' +str;
 					})
 					.on('mouseover',function(d){
@@ -218,18 +223,18 @@ var idx_schema = function(){
 					.classed('selector_tog',true);
 				selector_tog
 					.attr('class',function(d,i){
-						return d.name +' selector_tog selected';
+						return d.datum +' selector_tog selected';
 					});
 				selector_tog
 					.on('click',function(d,i){
 						var tog = d3.select(this),
-							ref = d.name,
+							ref = d.datum,
 							str = 'list_' +ref,
 							selected = tog.classed('selected');
 
 						//[parent] mark in data
 						self.selectors_show.forEach(function(_d){
-							if(_d.name === d.name){
+							if(_d.datum === d.datum){
 								d.selected = !selected;
 							}
 						});
@@ -257,7 +262,7 @@ var idx_schema = function(){
 					.classed('selector_label',true);
 				selector_label
 					.html(function(d){
-						var str = d.name.charAt(0).toUpperCase() + d.name.slice(1);
+						var str = d.label;
 						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8690;</span>' : str;
 						return str;
 					});
@@ -277,7 +282,7 @@ var idx_schema = function(){
 				selector_dd_items = selector_dd
 					.selectAll('li.selector_dd_item')
 					.data(function(d){
-						var ref = d3.select(this.parentNode).data()[0].name,
+						var ref = d3.select(this.parentNode).data()[0].datum,
 							str = 'list_' +ref;
 						return self[str];
 					});
@@ -286,7 +291,7 @@ var idx_schema = function(){
 				selector_dd_items
 					.on('click',function(d){
 						var li  = d3.select(this.childNodes[0]),
-							ref = d3.select(this.parentNode).data()[0].name,
+							ref = d3.select(this.parentNode).data()[0].datum,
 							str = 'list_' +ref,
 							selected,
 							unselected = li.classed('unselected');
@@ -306,7 +311,7 @@ var idx_schema = function(){
 							selected = false;
 						}
 						self.selectors_show.forEach(function(_d){
-							if(_d.name === ref){ _d.selected = selected; }
+							if(_d.datum === ref){ _d.selected = selected; }
 						});
 
 						//UI change
@@ -345,17 +350,17 @@ var idx_schema = function(){
 
 			//filter data
 			self.selectors_show.forEach(function(d,i){
-				var lbl = d.name,
-					str = 'list_' +lbl;
+				var dat = d.datum,
+					str = 'list_' +dat;
 				if(d.selected && !d.super){
 					self.posts.forEach(function(_d){
-						if(_d[lbl]){ self.posts_show.push(_d); }
+						if(_d[dat]){ self.posts_show.push(_d); }
 					});
 				} else if(d.selected && d.super){
 					self.posts.forEach(function(_d){
-						if(_d[lbl]){
+						if(_d[dat]){
 							self[str].forEach(function(p){
-								if(_d[lbl] === p.name && !p.unselected){ self.posts_show.push(_d); }
+								if(_d[dat] === p.name && !p.unselected){ self.posts_show.push(_d); }
 							});
 						}
 					});
@@ -406,10 +411,13 @@ var idx_schema = function(){
 					if(self.tags_show.filter(function(t){ return t.name === _d; }).length >0){
 						d.tagged = _d;
 					}
-				});
+				});debugger;
 				if(d.tagged){
 					self.tree[d.tagged].push(d);
 				} else{
+					if(!self.tree['uncategorized']){
+						self.tree['uncategorized'] = [];
+					}
 					self.tree['uncategorized'].push(d);
 				}
 			});
