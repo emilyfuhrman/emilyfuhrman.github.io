@@ -4,6 +4,8 @@ title:   "D3 WORKSHOP 20150410"
 description: Emily Fuhrman.
 ---
 
+#### [Deck](http://y-li.me/lab/d3-workshop/deck_20150410.pdf)
+
 #### [Template](http://y-li.me/lab/d3-workshop/template.zip)
 
 #### [Example 0](http://y-li.me/lab/d3-workshop/example_00.zip) &rarr;&nbsp; Circles with data-driven radii
