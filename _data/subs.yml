@@ -15,6 +15,13 @@
       path:    /lab/CU_borderlands_map-03
       tags:
         - maps
+    - name:    MAP 04
+      date:    '04 2015'
+      client:  Columbia University Department of History
+      cred:    "J.C. Trinidad-Christensen, Manan Ahmed"
+      path:    /lab/F2015002_00
+      tags:
+        - maps
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
