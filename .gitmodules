@@ -31,3 +31,6 @@
 	path = lab/CU_borderlands_map-03
 	url = https://github.com/emilyfuhrman/CU_borderlands_map-03.git
 	ignore = dirty
+[submodule "lab/F2015002_00"]
+	path = lab/F2015002_00
+	url = https://github.com/emilyfuhrman/F2015002_00.git
