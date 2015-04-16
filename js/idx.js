@@ -263,7 +263,7 @@ var idx_schema = function(){
 				selector_label
 					.html(function(d){
 						var str = d.label;
-						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8690;</span>' : str;
+						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8600;</span>' : str;
 						return str;
 					});
 				selector.exit().remove();
