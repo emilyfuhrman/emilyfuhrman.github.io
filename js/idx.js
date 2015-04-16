@@ -411,7 +411,7 @@ var idx_schema = function(){
 					if(self.tags_show.filter(function(t){ return t.name === _d; }).length >0){
 						d.tagged = _d;
 					}
-				});debugger;
+				});
 				if(d.tagged){
 					self.tree[d.tagged].push(d);
 				} else{
