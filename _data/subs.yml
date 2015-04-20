@@ -2,24 +2,24 @@
   files:
     - name:    MAP 01
       date:    '01 2015'
-      client:  Columbia University Department of History
+      client:  Columbia University
       path:    /lab/CU_borderlands_map-01
       tags:
         - maps
     - name:    MAP 02
       date:    '02 2015'
-      client:  Columbia University Department of History
+      client:  Columbia University
       path:    /lab/CU_borderlands_map-02   
     - name:    "Texas, 1952: County Name Origins"
       date:    '03 2015'
-      client:  Columbia University Department of History
+      client:  Columbia University
       cred:    "J.C. Trinidad-Christensen, Manan Ahmed"
       path:    /lab/CU_borderlands_map-03
       tags:
         - maps
     - name:    MAP 04
       date:    '04 2015'
-      client:  Columbia University Department of History
+      client:  Columbia University
       cred:    "J.C. Trinidad-Christensen, Manan Ahmed"
       path:    /lab/F2015002_00
       tags:
