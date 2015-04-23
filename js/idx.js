@@ -521,7 +521,7 @@ var idx_schema = function(){
 				.attr('target','_blank')
 				.html(function(d,i){
 					var str,
-						cli = d.client ? d.cli_sub ? '<span class="client">' +d.client +'</span>,&nbsp;' +d.cli_sub +'</span>,&nbsp;' : '<span class="client">' +d.client +'</span>,&nbsp;' : '<span class="client"></span>',
+						cli = d.client ? d.cli_sub ? '<span class="client">' +d.client +'</span>,&nbsp;' +d.cli_sub +'</span>&nbsp;/&nbsp;' : '<span class="client">' +d.client +'</span>&nbsp;/&nbsp;' : '<span class="client"></span>',
 						title = d.title ? '"' +d.title +'"' : '',
 						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
 						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
