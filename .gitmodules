@@ -34,3 +34,8 @@
 [submodule "lab/F2015002_00"]
 	path = lab/F2015002_00
 	url = https://github.com/emilyfuhrman/F2015002_00.git
+	ignore = dirty
+[submodule "lab/F2015006_SF_QUANTA_TREE-OF-LIFE"]
+	path = lab/F2015006_SF_QUANTA_TREE-OF-LIFE
+	url = https://github.com/emilyfuhrman/F2015006_SF_QUANTA_TREE-OF-LIFE.git
+	ignore = dirty
