@@ -28,6 +28,11 @@
       path:    /lab/F2015002_00
       tags:
         - maps
+    - name:    Tree of Life
+      date:    '04 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      path:    /lab/F2015006_SF_QUANTA_TREE-OF-LIFE
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
