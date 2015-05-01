@@ -521,11 +521,12 @@ var idx_schema = function(){
 				.attr('target','_blank')
 				.html(function(d,i){
 					var str,
-						cli = d.client ? d.cli_sub ? '<span class="client">' +d.client +'</span>,&nbsp;' +d.cli_sub +'</span>&nbsp;/&nbsp;' : '<span class="client">' +d.client +'</span>&nbsp;/&nbsp;' : '<span class="client"></span>',
+						cli = d.client ? '<span class="client">' +d.client +'</span>' : '<span class="client"></span>',
+						cli_sub = d.cli_sub ? '<span class="cli_sub">&nbsp;/&nbsp;' +d.cli_sub +'</span>' : '<span class="cli_sub"></span>';
 						title = d.title ? '"' +d.title +'"' : '',
 						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
 						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
-					str = '<div>' +d.date +cli +title +thruspan +credspan +'</div>';
+					str = '<div>' +d.date +cli +cli_sub +'<span class="details">' +title +thruspan +credspan +'</span></div>';
 					return str;
 				})
 				.transition()
