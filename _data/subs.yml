@@ -33,6 +33,8 @@
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    /lab/F2015006_SF_QUANTA_TREE-OF-LIFE
+      tags:
+        - charts
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
