@@ -1,14 +1,14 @@
 - id:          lab
   files:
-    - name:    MAP 04
+    - name:    Arabic Classical Accounts of India and China
       date:    '04 2015'
       client:  Columbia University
       cli_sub: Department of History
       cred:    "J.C. Trinidad-Christensen, Manan Ahmed"
-      path:    /lab/F2015002_00
+      path:    /lab/F2015002_CU_BORDERLANDS_ARABIC-CLASSICAL-ACCOUNTS-OF-INDIA-AND-CHINA
       tags:
         - maps
-    - name:    Tree of Life
+    - name:    The Species Clock
       date:    '04 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
