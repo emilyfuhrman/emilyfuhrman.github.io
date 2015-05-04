@@ -18,19 +18,6 @@
 	path = x/sirens
 	url = https://github.com/emilyfuhrman/sirens.git
 	ignore = dirty
-
-[submodule "lab/CU_borderlands_map-01"]
-	path = lab/CU_borderlands_map-01
-	url = https://github.com/emilyfuhrman/CU_borderlands_map-01.git
-	ignore = dirty
-[submodule "lab/CU_borderlands_map-02"]
-	path = lab/CU_borderlands_map-02
-	url = https://github.com/emilyfuhrman/CU_borderlands_map-02.git
-	ignore = dirty
-[submodule "lab/CU_borderlands_map-03"]
-	path = lab/CU_borderlands_map-03
-	url = https://github.com/emilyfuhrman/CU_borderlands_map-03.git
-	ignore = dirty
 [submodule "lab/F2015002_00"]
 	path = lab/F2015002_00
 	url = https://github.com/emilyfuhrman/F2015002_00.git
