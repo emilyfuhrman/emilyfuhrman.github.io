@@ -12,6 +12,7 @@
       date:    '04 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
+      cred:    "Olena Shmahalo"
       path:    /lab/F2015006_SF_QUANTA_TREE-OF-LIFE
       tags:
         - charts
@@ -24,4 +25,4 @@
       thru:    Huge
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
       tags:
-        - dynamic
+        - visualizations

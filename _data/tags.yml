@@ -1,9 +1,10 @@
 main: 
-  - dynamic
-  - static
   - maps
   - charts
+  - visualizations
   - uncategorized
 descriptive:
+  - dynamic
+  - static
   - compendium
   - text
