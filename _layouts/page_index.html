@@ -33,8 +33,12 @@
 	{% if s.id == page.indexID %}
 		{% for p in s.files %}
 		TAGS_LIST = [];
+		CRED_LIST = [];
 		{% for t in p.tags %}
 			TAGS_LIST.push("{{ t }}");
+		{% endfor %}
+		{% for c in p.cred %}
+			CRED_LIST.push("{{ c }}");
 		{% endfor %}
 		POSTS_INDEX.push({
 			date:    "{{ p.date }}",
@@ -42,7 +46,7 @@
 			cat:     "{{ page.indexID }}",
 			client:  "{{ p.client }}",
 			cli_sub: "{{ p.cli_sub }}",
-			cred:    "{{ p.cred }}",
+			cred:    CRED_LIST,
 			thru:    "{{ p.thru }}",
 			path:    "{{ p.path }}",
 			tags:    TAGS_LIST

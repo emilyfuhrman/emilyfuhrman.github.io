@@ -4,7 +4,9 @@
       date:    '04 2015'
       client:  Columbia University
       cli_sub: Department of History
-      cred:    "J.C. Trinidad-Christensen, Manan Ahmed"
+      cred:    
+        - J.C. Trinidad-Christensen
+        - Manan Ahmed
       path:    /lab/F2015002_CU_BORDERLANDS_ARABIC-CLASSICAL-ACCOUNTS-OF-INDIA-AND-CHINA
       tags:
         - maps
@@ -13,7 +15,11 @@
     - name:    The Customer Journey to Online Purchase
       date:    '12 2014'
       client:  Google
-      cred:    "Brandon Schmittling, Adam Lock, Jeff Weinberg, David Furfero"
+      cred:      
+        - Brandon Schmittling
+        - Adam Lock    
+        - Jeff Weinberg
+        - David Furfero
       thru:    Huge
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
       tags:
@@ -22,7 +28,8 @@
       date:    '05 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
-      cred:    "Olena Shmahalo"
+      cred:
+        -  Olena Shmahalo
       path:    https://www.quantamagazine.org/20150505-a-surprise-for-evolution-in-giant-tree-of-life/
       tags:
         - charts
