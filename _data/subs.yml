@@ -8,14 +8,6 @@
       path:    /lab/F2015002_CU_BORDERLANDS_ARABIC-CLASSICAL-ACCOUNTS-OF-INDIA-AND-CHINA
       tags:
         - maps
-    - name:    The Species Clock
-      date:    '04 2015'
-      client:  Simons Foundation
-      cli_sub: Quanta Magazine
-      cred:    "Olena Shmahalo"
-      path:    /lab/F2015006_SF_QUANTA_TREE-OF-LIFE
-      tags:
-        - charts
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
@@ -26,3 +18,11 @@
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
       tags:
         - visualization
+    - name:    A Surprise for Evolution in Giant Tree of Life
+      date:    '05 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      cred:    "Olena Shmahalo"
+      path:    https://www.quantamagazine.org/20150505-a-surprise-for-evolution-in-giant-tree-of-life/
+      tags:
+        - charts
