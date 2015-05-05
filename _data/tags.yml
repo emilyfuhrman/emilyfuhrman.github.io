@@ -1,7 +1,7 @@
 main: 
   - maps
   - charts
-  - visualizations
+  - visualization
   - uncategorized
 descriptive:
   - dynamic
