@@ -32,13 +32,13 @@
 	{% for s in site.data.subs %}
 	{% if s.id == page.indexID %}
 		{% for p in s.files %}
-		TAGS_LIST = [];
 		CRED_LIST = [];
-		{% for t in p.tags %}
-			TAGS_LIST.push("{{ t }}");
-		{% endfor %}
+		TAGS_LIST = [];
 		{% for c in p.cred %}
 			CRED_LIST.push("{{ c }}");
+		{% endfor %}
+		{% for t in p.tags %}
+			TAGS_LIST.push("{{ t }}");
 		{% endfor %}
 		POSTS_INDEX.push({
 			date:    "{{ p.date }}",
