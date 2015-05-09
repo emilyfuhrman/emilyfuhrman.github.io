@@ -1,13 +1,13 @@
 - id:          lab
   files:
-    - name:    Arabic Classical Accounts of India and China
-      date:    '04 2015'
+    - name:    Delivering Post by Foot in Medieval North India
+      date:    '05 2015'
       client:  Columbia University
       cli_sub: Department of History
-      path:    /lab/F2015002_CU_BORDERLANDS_ARABIC-CLASSICAL-ACCOUNTS-OF-INDIA-AND-CHINA
+      path:    /lab/F2015002_CU_BORDERLANDS_MEDIEVAL-NORTH-INDIA
       cred:    
-        - J.C. Trinidad-Christensen
         - Manan Ahmed
+        - J.C. Trinidad-Christensen
       tags:
         - maps
 - id:          idx
