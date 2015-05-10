@@ -37,8 +37,8 @@
     - name:   Chromat
     - name:   Columbia University
     - name:   Google
-    - name:   Simons Foundation / Quanta Magazine
-    - name:   WITCHES / The Coven Magazine
+    - name:   Simons Foundation
+    - name:   WITCHES
 - id:         elsewhere
   title:      Elsewhere
   simple:     true
