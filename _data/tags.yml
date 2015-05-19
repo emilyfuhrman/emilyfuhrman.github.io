@@ -1,8 +1,8 @@
 main: 
   - maps
   - charts
-  - diagrams
-  - visualization
+  - concept visualization
+  - data visualization
   - uncategorized
 descriptive:
   - dynamic
