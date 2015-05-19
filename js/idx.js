@@ -263,7 +263,7 @@ var idx_schema = function(){
 					.classed('selector_label',true);
 				selector_label
 					.html(function(d){
-						var str = d.label;
+						var str = 'Filter';//d.label;
 						str = d3.select(this.parentNode).classed('super') ? str + '<span class="arr">&#8600;</span>' : str;
 						return str;
 					});
