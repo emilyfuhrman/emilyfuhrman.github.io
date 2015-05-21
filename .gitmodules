@@ -18,13 +18,11 @@
 	path = x/sirens
 	url = https://github.com/emilyfuhrman/sirens.git
 	ignore = dirty
-[submodule "lab/F2015002_CU_BORDERLANDS_MEDIEVAL-NORTH-INDIA"]
-	path = lab/F2015002_CU_BORDERLANDS_MEDIEVAL-NORTH-INDIA
-	url = https://github.com/emilyfuhrman/F2015002_CU_BORDERLANDS_MEDIEVAL-NORTH-INDIA.git
-	ignore = dirty
 [submodule "lab/F2015006_SF_QUANTA_PHYSICS-MAP"]
 	path = lab/F2015006_SF_QUANTA_PHYSICS-MAP
 	url = https://github.com/emilyfuhrman/F2015006_SF_QUANTA_PHYSICS-MAP.git
+	ignore = dirty
 [submodule "lab/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING"]
 	path = lab/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
 	url = https://github.com/emilyfuhrman/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING.git
+	ignore = dirty
