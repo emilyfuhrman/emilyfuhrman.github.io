@@ -4,12 +4,20 @@
       date:    '05 2015'
       client:  Columbia University
       cli_sub: Department of History
-      path:    /lab/F2015002_CU_BORDERLANDS_MEDIEVAL-NORTH-INDIA
+      path:    /lab/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
       cred:    
         - Manan Ahmed
         - J.C. Trinidad-Christensen
       tags:
         - maps
+  files:
+    - name:    Physics Map
+      date:    '05 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      path:    /lab/F2015006_SF_QUANTA_PHYSICS-MAP
+      tags:
+        - data visualization
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
