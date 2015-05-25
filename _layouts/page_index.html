@@ -32,6 +32,7 @@
 	{% for s in site.data.subs %}
 	{% if s.id == page.indexID %}
 		{% for p in s.files %}
+		{% if p.show != false %}
 		CRED_LIST = [];
 		TAGS_LIST = [];
 		{% for c in p.cred %}
@@ -51,6 +52,7 @@
 			cred:    CRED_LIST,
 			tags:    TAGS_LIST
 		});
+		{% endif %}
 		{% endfor %}
 	{% endif %}
 	{% endfor %}

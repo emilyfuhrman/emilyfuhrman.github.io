@@ -47,6 +47,7 @@
       path:    https://www.quantamagazine.org/20150514-the-particle-that-broke-a-cosmic-speed-limit/
       tags:
         - concept visualization
+      show:    false
     - name:    Will Computers Redefine the Roots of Math?
       date:    '05 2015'
       client:  Simons Foundation
