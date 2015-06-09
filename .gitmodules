@@ -26,7 +26,3 @@
 	path = lab/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
 	url = https://github.com/emilyfuhrman/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING.git
 	ignore = dirty
-[submodule "lab/F2015006_SF_QUANTA_KIRKMAN-SCHOOLGIRLS"]
-	path = lab/F2015006_SF_QUANTA_KIRKMAN-SCHOOLGIRLS
-	url = https://github.com/emilyfuhrman/F2015006_SF_QUANTA_KIRKMAN-SCHOOLGIRLS.git
-	ignore = dirty
