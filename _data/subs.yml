@@ -17,13 +17,6 @@
       path:    /lab/F2015006_SF_QUANTA_PHYSICS-MAP
       tags:
         - data visualization
-    - name:    Nine Schoolgirls
-      date:    '06 2015'
-      client:  Simons Foundation
-      cli_sub: Quanta Magazine
-      path:    /lab/F2015006_SF_QUANTA_KIRKMAN-SCHOOLGIRLS
-      tags:
-        - concept visualization
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
