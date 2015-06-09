@@ -59,7 +59,7 @@
       date:    '06 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
-      path:    http://www.quantamagazine.org/?p=17055
+      path:    https://www.quantamagazine.org/?p=17055
       cred:
         -  Olena Shmahalo
       tags:
