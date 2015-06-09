@@ -48,10 +48,12 @@
       tags:
         - concept visualization
       show:    false
-    - name:    Will Computers Redefine the Roots of Math?
-      date:    '05 2015'
+    - name:    The Nine Schoolgirls Challenge
+      date:    '06 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
-      path:    https://www.quantamagazine.org/20150519-will-computers-redefine-the-roots-of-math/
+      path:    http://www.quantamagazine.org/?p=17055
+      cred:
+        -  Olena Shmahalo
       tags:
         - concept visualization
