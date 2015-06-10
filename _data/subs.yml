@@ -1,15 +1,5 @@
 - id:          lab
   files:
-    - name:    Delivering Post by Foot in Medieval North India
-      date:    '05 2015'
-      client:  Columbia University
-      cli_sub: Department of History
-      path:    /lab/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
-      cred:    
-        - Manan Ahmed
-        - J.C. Trinidad-Christensen
-      tags:
-        - maps
     - name:    Physics Map
       date:    '05 2015'
       client:  Simons Foundation
@@ -64,3 +54,13 @@
         -  Olena Shmahalo
       tags:
         - concept visualization
+    - name:    Delivering Post by Foot in Medieval North India
+      date:    '06 2015'
+      client:  Columbia University
+      cli_sub: Department of History
+      path:    /x/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
+      cred:    
+        - Manan Ahmed
+        - J.C. Trinidad-Christensen
+      tags:
+        - maps

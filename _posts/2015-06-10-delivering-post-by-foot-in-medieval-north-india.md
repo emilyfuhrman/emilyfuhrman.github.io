@@ -6,5 +6,4 @@ path:       F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
 tags:
   - dynamic
   - collaboration
-published:  false
 ---
