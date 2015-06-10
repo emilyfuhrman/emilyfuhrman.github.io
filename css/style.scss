@@ -549,6 +549,7 @@ INDEXES
 	padding:0 0 18px 0;
 	}
 #index-nav .selector.super .selector_dd {
+	z-index:9999;
 	position:relative;
 	visibility:hidden;
 	background:#fff;
