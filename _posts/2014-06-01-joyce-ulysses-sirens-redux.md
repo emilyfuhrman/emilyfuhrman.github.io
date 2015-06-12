@@ -13,6 +13,8 @@ images:
     width:  750
     height: 407
 cred:
+  - name:   "Columbia University Group for Experimental Methods in the Humanities"
+    link:   "http://xpmethod.plaintext.in/theory-method/visualizing-joyce.html"
   - name:   "2014 Kantar Information is Beautiful Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
 tags:

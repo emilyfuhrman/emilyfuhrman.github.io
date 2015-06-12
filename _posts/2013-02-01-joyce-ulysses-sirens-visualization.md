@@ -9,10 +9,10 @@ images:
     width:  650
     height: 4947
 cred:
-  - name:   "Visualizing.org Visualizing Highlights: December 2013"
-    link:   "http://visualizing.org/galleries/visualizing-highlights-december-2013"
   - name:   "2013 Kantar Information is Beautiful Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/2013-longlist/data-visualization/"
+  - name:   "Visualizing.org Visualizing Highlights: December 2013"
+    link:   "http://visualizing.org/galleries/visualizing-highlights-december-2013"
 tags:
   - static
   - text
