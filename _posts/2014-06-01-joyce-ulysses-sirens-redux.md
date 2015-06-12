@@ -27,7 +27,7 @@ In reference to schemas for _Ulysses_, Joyce describes the compositional techniq
 
 Joyce uses the first 63 lines of the chapter to introduce 99 words and syllables that reappear in different forms throughout the rest of the text. The sounds ultimately act as [leitmotifs](http://en.wikipedia.org/wiki/Leitmotif), evoking the sensory presence of different characters at different times.
 
-This visualization is constructed as a line-by-line annotation of each sound that recurs at least four times following its initial introduction. Within each line, each sound is grouped into repetitions, linked to its associated character(s), and sorted into one of three possible tiers based on its distance from the root sound. The pages are represented as columns.
+This visualization is constructed as a line-by-line annotation of each sound that recurs at least four times following its initial introduction. Within each line, each sound is grouped into repetitions, linked to its associated character(s), and sorted into one of three possible tiers based on its distance from the root sound. The lines are represented as columns.
 
 The final project is [here](/x/sirens).
 
