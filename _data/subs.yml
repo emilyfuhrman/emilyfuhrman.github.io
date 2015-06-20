@@ -7,6 +7,15 @@
       path:    /lab/F2015006_SF_QUANTA_PHYSICS-MAP
       tags:
         - data visualization
+- id:          y
+  files:
+    - name:    'Projection / Launch Party'
+      date:    '07 2015'
+      client:  WITCHES
+      cli_sub: The Coven Magazine ✕ PAOM
+      path:    /y/F2015004_COVEN-MAG_PAOM_PROJECTION
+      tags:
+        - data art
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
