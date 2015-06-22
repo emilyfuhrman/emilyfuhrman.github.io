@@ -77,5 +77,7 @@
       date:    '06 2015'
       client:  Heat Seek NYC
       path:    http://heatseeknyc.tumblr.com/post/122185700625/the-numbers-are-in-and-theyre-not-pretty
+      cred:    
+        - Jesse Fish
       tags:
         - charts
