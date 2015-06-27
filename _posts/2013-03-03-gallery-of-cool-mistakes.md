@@ -5,8 +5,7 @@ title:      "Gallery of Cool Mistakes"
 path:       gallery-of-cool-mistakes
 nonvis:     true
 cols:
-  -
-    direction:  left
+  - direction:  left
     height:     1642
     images:
       - src:    post-010_imgs/01.png
@@ -21,8 +20,7 @@ cols:
         class:  col
         width:  357
         height: 357
-  -
-    direction:  right
+  - direction:  right
     height:     1803
     images:
       - src:    post-010_imgs/06.png
