@@ -45,7 +45,7 @@ tags:
   - collaboration
 published:  true
 ---
-A collaboration with [WITCHES / The Coven Magazine](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each one is generated using text and image data scraped from the first three issues of The Coven Magazine. View the full collection [here](https://paom.com/collections/witches/). 
+A collaboration with [WITCHES / The Coven Magazine](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each one is generated using text and image data scraped from the first three issues of The Coven Magazine: white on black indicates a pattern driven by data from Issue 1, white on blue indicates a pattern driven by data from Issue 2, and black on white indicates a pattern driven by data from Issue 3. View the full collection [here](https://paom.com/collections/witches/). 
 
 Patterns RGB-1, RGB-2, and RGB-3 map the normalized red, green, and blue pixel values of every image in each issue along a vertical continuum. Each column of cells encodes the percentage of pixels of a given channel as distributed across the 0-255 range.
 
