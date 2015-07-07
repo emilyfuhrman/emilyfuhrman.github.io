@@ -12,7 +12,7 @@
     - name:    'Projection / Launch Party'
       date:    '07 2015'
       client:  WITCHES
-      cli_sub: The Coven Magazine ✕ PAOM
+      cli_sub: PAOM ✕ Witches of Bushwick
       path:    /y/F2015004_COVEN-MAG_PAOM_PROJECTION
       tags:
         - data art
@@ -89,10 +89,10 @@
         - Jesse Fish
       tags:
         - charts
-    - name:    "Collab: Witches of Bushwick"
+    - name:    'Collab: PAOM ✕ Witches of Bushwick'
       date:    '07 2015'
       client:  WITCHES
-      cli_sub: The Coven Magazine ✕ PAOM
+      cli_sub: PAOM ✕ Witches of Bushwick
       path:    https://paom.com/collections/witches/
       tags:
         - data art
