@@ -31,9 +31,18 @@ var idx_schema = function(){
 			});
 			return data;
 		},
+		size:function(){
+			var self = list;
+
+			$('#index-list')
+				.css('margin-top',function(){
+					return $('#index-head').height() +36;
+				});
+		},
 		generate:function(){
 			var self = list;
 
+			self.size();
 			self.mashup();
 			self.setLinks();
 			self.buildNav();

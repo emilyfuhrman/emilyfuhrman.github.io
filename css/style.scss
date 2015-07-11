@@ -520,14 +520,20 @@ ul.items li.item .now_true {
 INDEXES
 ----------------------- */
 
-#index-descrip {
+#index-head {
+	z-index:99;
+	position:fixed;
+	background:#fff;
+	}
+
+#index-head #index-descrip {
 	margin:175px 0 0 36px;
 	padding:0;
 	}
-#index-descrip h4 {
+#index-head #index-descrip h4 {
 	}
 
-#index-nav {
+#index-head #index-nav {
 	width:100%;
 	height:36px;
 	margin:28px 0 0 36px;
@@ -535,7 +541,7 @@ INDEXES
 	border-bottom:1px solid #222;
 	}
 
-#index-nav .selector {
+#index-head #index-nav .selector {
 	float:left;
 	width:100%;
 	height:28px;
@@ -545,12 +551,12 @@ INDEXES
 	cursor:cell;
 	}
 
-#index-nav .selector.super {
+#index-head #index-nav .selector.super {
 	width:auto;
 	padding:0 0 18px 0;
 	}
-#index-nav .selector.super .selector_dd {
-	z-index:9999;
+#index-head #index-nav .selector.super .selector_dd {
+	z-index:999;
 	position:relative;
 	visibility:hidden;
 	background:#fff;
@@ -559,7 +565,7 @@ INDEXES
 	margin:6px 0 0 -2px;
 	border:1px solid $color-black;
 	}
-#index-nav .selector.super .selector_dd .label {
+#index-head #index-nav .selector.super .selector_dd .label {
 	font:$font-basic;
 	font-size:11px;
 	text-transform:uppercase;
@@ -567,60 +573,60 @@ INDEXES
 	margin:0;
 	padding:0;
 	}
-#index-nav .selector.super .selector_dd .selector_tog {
+#index-head #index-nav .selector.super .selector_dd .selector_tog {
 	margin:12px 21px 12px 12px;
 	}
-#index-nav .selector.super .selector_dd .selector_dd_item {
+#index-head #index-nav .selector.super .selector_dd .selector_dd_item {
 	opacity:0;
 	padding:15px 15px 0;
 	}
-#index-nav .selector.super .selector_dd .selector_dd_item:last-child {
+#index-head #index-nav .selector.super .selector_dd .selector_dd_item:last-child {
 	padding-bottom:12px;
 	}
-#index-nav .selector.super .selector_dd .selector_dd_item:hover {
+#index-head #index-nav .selector.super .selector_dd .selector_dd_item:hover {
 	color:$color-accent;
 	}
-#index-nav .selector.super .selector_dd .selector_dd_item .label.unselected {
+#index-head #index-nav .selector.super .selector_dd .selector_dd_item .label.unselected {
 	color:$color-black;
 	font-style:italic;
 	text-decoration:line-through;
 	}
-#index-nav .selector.super.closed .selector_dd {
+#index-head #index-nav .selector.super.closed .selector_dd {
 	visibility:hidden;
 	}
-#index-nav .selector.super.closed .selector_dd .selector_dd_item {
+#index-head #index-nav .selector.super.closed .selector_dd .selector_dd_item {
 	opacity:0;
 	}
-#index-nav .selector.super.open .selector_dd {
+#index-head #index-nav .selector.super.open .selector_dd {
 	visibility:visible;
 	}
-#index-nav .selector.super.open .selector_dd .selector_dd_item {
+#index-head #index-nav .selector.super.open .selector_dd .selector_dd_item {
 	opacity:1;
 	}
 
-#index-nav .selector_tog {
+#index-head #index-nav .selector_tog {
 	float:left;
 	height:26px;
 	width:26px;
 	margin:-2px;
 	border:2px solid $color-black;
 	}
-#index-nav .selector_tog.selected {
+#index-head #index-nav .selector_tog.selected {
 	background:url('/images/assets/ui_tog_x.png') no-repeat 2px 2px;
 	background-size:22px 22px;
 	}
-#index-nav .selector_tog.unselected {
+#index-head #index-nav .selector_tog.unselected {
 	background:transparent;
 	}
 
-#index-nav .selector_label {
+#index-head #index-nav .selector_label {
 	margin:-1px 0 0 48px;
 	}
-#index-nav .selector.super.open .selector_label {
+#index-head #index-nav .selector.super.open .selector_label {
 	color:$color-accent;
 	}
 
-#index-nav .selector .arr {
+#index-head #index-nav .selector .arr {
 	padding-left:12px;
 	}
 
@@ -629,7 +635,7 @@ INDEXES
 	width:100%;
 	}
 #index-list .section h4 {
-	margin:3px 0 18px;
+	margin:0 0 18px;
 	border-bottom:2px solid #fff;
 	}
 #index-list .section.deact h4 {
