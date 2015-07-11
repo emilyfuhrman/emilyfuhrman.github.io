@@ -6,6 +6,9 @@ var schema = function(){
 		transitionTime:240,
 		delay:720,
 		pause:240,
+
+		loaded:false,
+
 		vertices:{
 			v1:{},
 			v2:{},
@@ -164,11 +167,14 @@ var schema = function(){
 			}
 
 			function hoverOver(d){
+
 				var val = d.value,
 					hovTransitionTime = self.transitionTime/4;
 
 				originG
 					.style('opacity',1);
+				verticesG
+					.style('cursor','cell');
 				vertArc
 					.transition()
 					.ease('linear')
@@ -229,12 +235,15 @@ var schema = function(){
 				d3.selectAll('.selected').classed('selected',false);
 			}
 
-			function transition() {
+			function transitionIn() {
+
 				var t0_dur = self.transitionTime*2,
 					t1_dur = self.transitionTime,
 
 					t0_del = Math.floor(self.delay*1.5), //estimate
-					t1_del = t0_del +t0_dur +self.pause;
+					t1_del = t0_del +t0_dur +self.pause
+
+					loaded = [];
 
 				var t0 = verticesG
 					.transition()
@@ -255,6 +264,10 @@ var schema = function(){
 					})
 					.attrTween('transform',function(d){
 						return tweenTransform(self.positions[d.key][1],self.positions[d.key][2]);
+					})
+					.each('end',function(d,i){
+						loaded.push(d);
+						self.loaded = loaded.length === 4;
 					});
 			}
 
@@ -298,7 +311,9 @@ var schema = function(){
 				});
 			verticesG
 				.on('mouseover',function(d){
-					hoverOver(d);
+					if(self.loaded){
+						hoverOver(d);
+					}
 				})
 				.on('mousemove',function(d){
 					return;
@@ -307,7 +322,7 @@ var schema = function(){
 					hoverOut();
 				});
 
-			transition();
+			transitionIn();
 
 			vertBack = verticesG.selectAll('rect')
 				.data(function(d){ return [d]; });
