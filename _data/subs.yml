@@ -7,6 +7,12 @@
       path:    /lab/F2015006_SF_QUANTA_PHYSICS-MAP
       tags:
         - data visualization
+    - name:    'American Deaths Caused by Firearms, June 17–July 23, 2015'
+      date:    '07 2015'
+      client:  The Trace
+      path:    /lab/F2015014_GUN-DEATHS
+      tags:
+        - data visualization
 - id:          y
   files:
     - name:    'Projection / Launch Party'
