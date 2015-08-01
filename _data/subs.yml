@@ -12,7 +12,7 @@
       client:  The Trace
       path:    /lab/F2015014_GUN-DEATHS
       tags:
-        - data visualization
+        - charts
 - id:          y
   files:
     - name:    'Projection / Launch Party'
