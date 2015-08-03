@@ -1,12 +1,5 @@
 - id:          lab
   files:
-    - name:    Physics Map
-      date:    '05 2015'
-      client:  Simons Foundation
-      cli_sub: Quanta Magazine
-      path:    /lab/F2015006_SF_QUANTA_PHYSICS-MAP
-      tags:
-        - data visualization
     - name:    'American Deaths Caused by Firearms, June 17–July 23, 2015'
       date:    '07 2015'
       client:  The Trace
@@ -110,3 +103,13 @@
         - Jesse Fish
       tags:
         - charts
+    - name:    'Theories of Everything, Mapped'
+      date:    '07 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      path:    http://www.quantamagazine.org/?p=17950
+      cred:    
+        - Natalie Wolchover
+        - Olena Shmahalo
+      tags:
+        - data visualization
