@@ -1,11 +1,5 @@
 - id:          lab
   files:
-    - name:    'American Deaths Caused by Firearms, June 17–July 23, 2015'
-      date:    '07 2015'
-      client:  The Trace
-      path:    /lab/F2015014_GUN-DEATHS
-      tags:
-        - charts
 - id:          y
   files:
     - name:    'Projection / Launch Party'
@@ -113,3 +107,11 @@
         - Olena Shmahalo
       tags:
         - data visualization
+    - name:    'American Deaths Caused by Firearms, June 17–July 23, 2015'
+      date:    '07 2015'
+      client:  The Trace
+      path:    http://www.thetrace.org/2015/08/gun-deaths-charleston-chattanooga-lafayette/
+      cred:
+        - Jennifer Mascia
+      tags:
+        - charts
