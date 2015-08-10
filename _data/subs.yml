@@ -1,5 +1,11 @@
 - id:          lab
   files:
+    - name:    NPS+ Recommendations
+      date:    '08 2015'
+      client:  Works Design
+      path:    /lab/F2015012_PSL
+      tags:
+        - charts
 - id:          y
   files:
     - name:    'Projection / Launch Party'

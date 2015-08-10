@@ -26,3 +26,6 @@
 	path = y/F2015004_COVEN-MAG_PAOM_PROJECTION
 	url = https://github.com/emilyfuhrman/F2015004_COVEN-MAG_PAOM_PROJECTION.git
 	ignore = dirty
+[submodule "lab/F2015012_PSL"]
+	path = lab/F2015012_PSL
+	url = https://github.com/emilyfuhrman/F2015012_PSL.git
