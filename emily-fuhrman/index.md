@@ -7,4 +7,4 @@ description: Emily Fuhrman.
 
 #### I run an experimental, multidisciplinary practice focused on research, collaboration, and data-driven visual systems. 
 
-#### For near-term work inquiries, please [email](mailto:emily.c.fuhrman@gmail.com). 
+#### For freelance or work inquiries, please [email](mailto:emily.c.fuhrman@gmail.com). 
