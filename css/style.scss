@@ -143,15 +143,19 @@ a.btn:hover	{
 	color:$color-accent;
 	}
 
+a.btn:hover .nav {
+	border-bottom:2px solid $color-accent;
+	}
+
 .nav { 
 	position:fixed; 
 	z-index:999; 
 	background:transparent; 
 	font:$font-basic;
-	text-transform:uppercase; 
+	font-size:19px;
 	letter-spacing:$univ-letter-spacing;
-	padding-bottom:23px; 
-	border-bottom:36px solid $color-black;
+	padding-bottom:24px; 
+	border-bottom:2px solid $color-black;
 	}
 .nav.home { 
 	top:30px; 
@@ -163,17 +167,17 @@ a.btn:hover	{
 	}
 .nav.abt { 
 	top:30px; 
-	right:139px;  
+	right:149px;  
 	}
 .nav.title { 
 	top:30px; 
-	left:176px;
+	left:213px;
 	}
 
 .dekor { 
 	position:fixed; 
 	z-index:999; 
-	width:1px; 
+	width:2px; 
 	height:30px; 
 	bottom:216px; 
 	background-color:$color-black; 
@@ -384,7 +388,7 @@ POST
 #proj { 
 	float:left; 
 	width:950px; 
-	margin-left:176px;
+	margin-left:213px;
 	padding-top:176px; 
 	}
 
@@ -459,7 +463,7 @@ ABOUT
 
 #contain { 
 	width:600px; 
-	margin:0 0 0 212px; 
+	margin:0 0 0 213px; 
 	padding:149px 105px 120px 0; 
 	}
 
@@ -541,7 +545,7 @@ INDEXES
 	height:36px;
 	margin:168px 0 0 36px;
 	padding-bottom:18px;
-	border-bottom:1px solid #222;
+	border-bottom:2px solid #222;
 	}
 
 #index-head #index-nav .selector {

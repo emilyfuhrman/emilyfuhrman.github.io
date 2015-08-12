@@ -47,7 +47,7 @@ var schema = function(){
 				hyp = Math.sqrt(Math.pow(w,2) +Math.pow(h,2))/2,
 
 				//half the width/height of one vertex	
-				sq = 36;
+				sq = 41.5;
 
 			//filter out the idx post
 			self.posts = self.posts.filter(function(d){
