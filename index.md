@@ -1,4 +1,4 @@
 ---
 layout: default
-description: Emily Fuhrman.
+description: Emily Fuhrman
 ---
