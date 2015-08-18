@@ -3,7 +3,7 @@ layout:  page_index
 title:   "IDX"
 indexID: idx
 mixin:   false
-description: emilyfuhrman.co
+description: Emily Fuhrman
 ---
 
 #### An index of client projects & collaborative work. 

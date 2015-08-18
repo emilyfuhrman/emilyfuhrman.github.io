@@ -1,4 +1,4 @@
 ---
 layout: default
-description: emilyfuhrman.co
+description: Emily Fuhrman
 ---
