@@ -1,7 +1,7 @@
 ---
 layout: page_about
 title:  "About"
-description: Emily Fuhrman
+description: emilyfuhrman.co
 ---
 #### My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York.
 

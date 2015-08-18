@@ -2,7 +2,7 @@
 layout:  page_index
 title:   "Lab"
 indexID: lab
-description: Emily Fuhrman
+description: emilyfuhrman.co
 ---
 
 #### An index of works-in-progress.
