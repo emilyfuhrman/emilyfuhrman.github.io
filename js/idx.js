@@ -13,7 +13,7 @@ var idx_schema = function(){
 		tags_main:TAGS_MAIN,
 		tags_show:[],
 		selectors_show:[],
-		marginVal:36,
+		marginVal:37,
 		transitionTime:120,
 		delayTimeEnter:600,
 		op_alphabetize:function(data,param){
@@ -596,3 +596,10 @@ var idx_schema = function(){
 
 var list = idx_schema();
 list.generate();
+
+window.onresize = function(){
+	d3.select('#index-nav')
+		.style('width',function(){
+			return window.innerWidth -(list.marginVal*2) +'px';
+		});
+}
