@@ -74,13 +74,13 @@ var schema = function(){
 
 				function getSeason(m){
 					var s;
-					if(m === 11 || m === 1 || m === 2){
+					if(m === 11 || m === 0 || m === 1){
 						s = 'winter';
-					} else if(m === 3 || m === 4  || m === 5){
+					} else if(m === 2 || m === 3  || m === 4){
 						s = 'spring';
-					} else if(m === 6 || m === 7  || m === 8){
+					} else if(m === 5 || m === 6  || m === 7){
 						s = 'summer';
-					} else if(m === 9 || m === 10 || m === 11){
+					} else if(m === 8 || m === 9 || m === 10){
 						s = 'fall';
 					}
 					return s;
