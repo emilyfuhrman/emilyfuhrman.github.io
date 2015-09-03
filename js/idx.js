@@ -1,9 +1,6 @@
 var idx_schema = function(){
 
-	//this looks best when filtering doesn't add/remove entire sections
-	//template is still built to handle it as smoothly as possible, tho
-
-	//** REMOVED FILTER (CSS -- display:none) BECAUSE CROSS-BROWSER TRANSITIONS WERE GETTING CHOPPY **
+	//filtering functionality now hidden in CSS
 
 	return {
 		init:true,
