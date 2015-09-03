@@ -3,6 +3,8 @@ var idx_schema = function(){
 	//this looks best when filtering doesn't add/remove entire sections
 	//template is still built to handle it as smoothly as possible, tho
 
+	//** REMOVED FILTER (CSS -- display:none) BECAUSE CROSS-BROWSER TRANSITIONS WERE GETTING CHOPPY **
+
 	return {
 		init:true,
 		tree:{},
@@ -36,7 +38,7 @@ var idx_schema = function(){
 
 			$('#index-list')
 				.css('margin-top',function(){
-					return $('#index-head').height() +36;
+					return $('#index-head').height() +18;
 				});
 		},
 		generate:function(){
@@ -459,9 +461,6 @@ var idx_schema = function(){
 				});
 			sections
 				.order()
-				.style('width',function(){
-					return window.innerWidth -(self.marginVal*2) +'px';
-				})
 				.transition()
 				.delay(function(d){
 					d.newH = self.tree[d.name] ? (self.tree[d.name].length)*36 +54 : 0,
@@ -499,13 +498,13 @@ var idx_schema = function(){
 			section_headers.exit().remove();
 
 			items = sections
-				.selectAll('a.item')
+				.selectAll('div.item')
 				.data(function(d){ return self.tree[[d.name]] ? self.tree[[d.name]] : false; },function(d){ return d.key; });
-			items.enter().append('a')
+			items.enter().append('div')
 				.classed('item',true)
 				.style('opacity',0)
 				.style('top',function(d,i){
-					return i*36 +'px';
+					return i*0 +'px';
 				});
 			items
 				.order()
@@ -524,10 +523,6 @@ var idx_schema = function(){
 					clss = clss.toLowerCase();
 					return clss;
 				})
-				.attr('href',function(d){
-					return d.href;
-				})
-				.attr('target','_blank')
 				.html(function(d,i){
 					var str,
 						cli = d.client ? '<span class="client">' +d.client +'</span>' : '<span class="client"></span>',
@@ -535,7 +530,7 @@ var idx_schema = function(){
 						title = d.title ? '"' +d.title +'"' : '',
 						thruspan = d.thru ? '<span class="thru">&nbsp;/&nbsp;' +d.thru +'</span>' : '';
 						credspan = d.cred ? '<span class="cred">&nbsp;/&nbsp;w.&nbsp;' +d.cred +'</span>' : '',
-					str = '<div>' +d.date +cli +cli_sub +'<span class="details">' +title +thruspan +credspan +'</span></div>';
+					str = d.date +cli +cli_sub +'<span class="details">' +title +thruspan +credspan +'</span>';
 					return str;
 				})
 				.transition()
@@ -544,7 +539,7 @@ var idx_schema = function(){
 					//if new list is longer, no delay
 					var tagD = d.tagged || 'uncategorized',
 						newL = self.tree[tagD].length,
-						curL = d3.selectAll('a.item.' +tagD)[0].length;
+						curL = d3.selectAll('div.item.' +tagD)[0].length;
 					d.shorter = newL <curL;
 					return self.init ? 0 : d.shorter ? t_del : t_dur;
 				})
@@ -553,7 +548,7 @@ var idx_schema = function(){
 				})
 				.styleTween('top',function(d,i){
 					var s1 = d3.select(this).style('top'),
-						s2 = i*36 +'px';
+						s2 = i*0 +'px';
 					return d3.interpolate(s1,s2);
 				})
 				.transition()
@@ -574,6 +569,11 @@ var idx_schema = function(){
 				})
 				.style('opacity',1)
 				;
+			items
+				.on('click',function(d){
+					var win = window.open(d.href, '_blank');
+  					win.focus();
+				});
 			items.exit()
 				.transition()
 				.delay(90)
@@ -598,7 +598,7 @@ var list = idx_schema();
 list.generate();
 
 window.onresize = function(){
-	d3.select('#index-nav')
+	d3.selectAll('#index-nav')
 		.style('width',function(){
 			return window.innerWidth -(list.marginVal*2) +'px';
 		});
