@@ -541,7 +541,10 @@ INDEXES
 	}
 
 #index-head #index-nav {
-	width:100%;
+	/*width:100%;*/
+	width: -moz-calc(100% - 30px);
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
 	height:36px;
 	/*margin:131px 36px 0 37px;*/
 	margin:60px 0 0 37px;
