@@ -54,12 +54,16 @@ header {
 	}
 
 a { 
-	color:$color-black; 
-	text-decoration:underline; 
+	color:$color-black;
+	font-style:normal;
+	text-decoration:none;
 	cursor:cell;
+	border-bottom:2px solid $color-black;
 	}
-a:hover { 
-	text-decoration:underline; 
+a:hover {
+	background:$color-accent;
+	color:white;
+	border-bottom:2px solid $color-accent;
 	}
 a:active { 
 	outline:none; 
@@ -68,64 +72,24 @@ a:focus {
 	-moz-outline-style:none; 
 	}
 
-h2 {
-	font:$font-serif;
-	font-size:41px;
-	letter-spacing:1.75px;
-	line-height:57px;
-	padding-top:3px;
-	text-rendering:geometricPrecision;
-	}
-h2 a {
-	text-decoration:none;
-	border-bottom:$univ-underline $color-black;
-	padding:9px 0 3px;
-	}
-h2 a:hover {
-	background:$color-accent;
-	color:#fff;
-	text-decoration:none;
-	border-bottom:$univ-underline $color-accent;
-	}
-
-h3 {
-	font-size:32px;
-	font-weight:normal;
-	letter-spacing:$univ-letter-spacing;
-	line-height:160%;
-	padding-top:15px;
-	}
-h3 a {
-	font-style:normal;
-	text-decoration:none;
-	border-bottom:$univ-underline $color-black;
-	padding:2px 0 3px;
-	}
-h3 a:hover {
-	background:$color-accent;
-	color:#fff;
-	text-decoration:none;
-	border-bottom:$univ-underline $color-accent;
+li a {
+	border-bottom:none;
 	}
 
 h4 {
 	font:$font-basic;
 	font-size:19px;
 	letter-spacing:$univ-letter-spacing;
-	line-height:30px;
+	line-height:30px !important;
 	text-transform:none;
 	}
 h4 a,
 h4 em {
-	font-style:normal;
 	text-decoration:none;
-	border-bottom:2px solid $color-black;
-	padding:3px 0 3px;
+	padding:4px 0 2px;
 	}
-h4 a:hover {
-	color:$color-accent;
-	text-decoration:none;
-	border-bottom:2px solid $color-accent;
+h4 em {
+	font-style:italic;
 	}
 
 /* 
@@ -133,18 +97,16 @@ h4 a:hover {
 INDEX
 ----------------------- */
 
-a.btn { 
-	text-decoration:none; 
+a.btn {
 	background:transparent; 
 	}
 
-a.btn:hover	{ 
-	text-decoration:none; 
-	color:$color-accent;
+a.btn:hover	{
 	}
 
 a.btn:hover .nav {
-	/*border-bottom:2px solid $color-accent;*/
+	background:$color-accent;
+	color:white;
 	}
 
 .nav { 
@@ -154,7 +116,7 @@ a.btn:hover .nav {
 	font:$font-basic;
 	font-size:19px;
 	letter-spacing:$univ-letter-spacing;
-	padding-bottom:24px; 
+	padding-bottom:0; 
 	/*border-bottom:2px solid $color-black;*/
 	}
 .nav.home { 
@@ -313,8 +275,10 @@ LIST
 	}
 
 #proj-list a { 
+	background:none;
 	float:left; 
 	text-decoration:none;
+	border:none;
 	}
 #proj-list a:active { 
 	outline:none; 
@@ -325,15 +289,15 @@ LIST
 
 #proj-list a div { 
 	position:relative; 
-	background:#fff;
+	background:white;
 	color:$color-black;
 	width:176px; 
 	height:140px;
 	margin:22px 16px;
 	top:0px;
-	border-top:2px solid #fff;
-	border-right:2px solid #fff;
-	border-left:2px solid #fff;
+	border-top:2px solid white;
+	border-right:2px solid white;
+	border-left:2px solid white;
 	}
 #proj-list a div p.list-title,
 #proj-list a div p.list-date {
@@ -404,12 +368,9 @@ POST
 	}
 .post-img-cap a {
 	text-decoration:none;
-	border-bottom:2px solid $color-black;
-	padding-bottom:1px;
+	padding:4px 0 1px;
 	}
 .post-img-cap a:hover {
-	color:$color-accent;
-	border-bottom:2px solid $color-accent;
 	}
 
 .col { 
@@ -427,6 +388,7 @@ POST
 .descrip a {
 	}
 .descrip a.cred {
+	border-bottom:none;
 	}
 .descrip a.cred:hover {
 	border-bottom:2px solid $color-accent;
@@ -527,7 +489,7 @@ INDEXES
 #index-head {
 	z-index:99;
 	position:fixed;
-	background:#fff;
+	background:white;
 	width:100%;
 	}
 
@@ -572,7 +534,7 @@ INDEXES
 	z-index:999;
 	position:relative;
 	visibility:hidden;
-	background:#fff;
+	background:white;
 	width:auto;
 	max-height:300px;
 	overflow-y:scroll;
@@ -651,7 +613,7 @@ INDEXES
 	}
 #index-list .section h4 {
 	margin:0 0 18px;
-	border-bottom:2px solid #fff;
+	border-bottom:2px solid white;
 	}
 #index-list .section.deact h4 {
 	font-style:italic;
