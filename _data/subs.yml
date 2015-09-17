@@ -1,5 +1,12 @@
 - id:          lab
   files:
+    - name:    'Interactive timeline'
+      date:    '09 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      path:    /lab/F2015015_SF_QUANTA_TIMELINE
+      tags:
+        - data art
 - id:          y
   files:
     - name:    'Projection / Launch Party'
