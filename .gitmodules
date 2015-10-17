@@ -22,10 +22,6 @@
 	path = x/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING
 	url = https://github.com/emilyfuhrman/F2015002_CU_BORDERLANDS_MEDIEVAL-MAPPING.git
 	ignore = dirty
-[submodule "y/F2015004_COVEN-MAG_PAOM_PROJECTION"]
-	path = y/F2015004_COVEN-MAG_PAOM_PROJECTION
-	url = https://github.com/emilyfuhrman/F2015004_COVEN-MAG_PAOM_PROJECTION.git
-	ignore = dirty
 [submodule "lab/F2015015_SF_QUANTA_TIMELINE"]
 	path = lab/F2015015_SF_QUANTA_TIMELINE
 	url = https://github.com/emilyfuhrman/F2015015_SF_QUANTA_TIMELINE.git
