@@ -26,3 +26,6 @@
 	path = lab/F2015015_SF_QUANTA_TIMELINE
 	url = https://github.com/emilyfuhrman/F2015015_SF_QUANTA_TIMELINE.git
 	ignore = dirty
+[submodule "x/F2015002"]
+	path = x/F2015002
+	url = https://github.com/emilyfuhrman/F2015002.git
