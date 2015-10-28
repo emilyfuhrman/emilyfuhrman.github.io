@@ -11,6 +11,12 @@
       date:    '10 2015'
       client:  Arc Lab
       path:    /lab/A2015001
+    - name:    'F2015018'
+      date:    '10 2015'
+      client:  The Trace
+      path:    /lab/F2015018
+      tags:
+        - maps
 - id:          y
   files:
     - name:    'Projection / Launch Party'

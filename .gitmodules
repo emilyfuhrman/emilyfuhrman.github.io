@@ -30,3 +30,7 @@
 	path = lab/A2015001
 	url = https://github.com/emilyfuhrman/A2015001.git
 	ignore = dirty
+[submodule "lab/F2015018"]
+	path = lab/F2015018
+	url = https://github.com/emilyfuhrman/F2015018.git
+	ignore = dirty
