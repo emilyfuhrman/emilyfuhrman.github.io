@@ -1,12 +1,5 @@
 - id:          lab
   files:
-    - name:    'Interactive timeline'
-      date:    '09 2015'
-      client:  Simons Foundation
-      cli_sub: Quanta Magazine
-      path:    /lab/F2015015_SF_QUANTA_TIMELINE
-      tags:
-        - data visualization
     - name:    'A2015001'
       date:    '10 2015'
       client:  Arc Lab
@@ -33,11 +26,11 @@
       client:  Google
       thru:    Huge
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
-      cred:      
-        - Brandon Schmittling
-        - Adam Lock    
-        - Jeff Weinberg
+      cred:
         - David Furfero
+        - Adam Lock
+        - Brandon Schmittling
+        - Jeff Weinberg
       tags:
         - data visualization
     - name:    A Surprise for Evolution in Giant Tree of Life
@@ -118,10 +111,11 @@
       date:    '07 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
-      path:    http://www.quantamagazine.org/?p=17950
+      path:    https://www.quantamagazine.org/?p=17950
       cred:    
-        - Natalie Wolchover
+        - Thomas Lin
         - Olena Shmahalo
+        - Natalie Wolchover
       tags:
         - data visualization
     - name:    'At Least 1,433 People Were Killed With a Gun in the U.S. Between the Charleston and Lafayette Shootings'
@@ -147,5 +141,16 @@
       path:    http://heatseeknyc.tumblr.com/post/127651132195/a-tale-of-two-cities
       cred:    
         - Jesse Fish
+      tags:
+        - charts
+    - name:    'Life’s Big Leaps: Critical Moments in Evolution'
+      date:    '10 2015'
+      client:  Simons Foundation
+      cli_sub: Quanta Magazine
+      path:    https://www.quantamagazine.org/20151029-lokiarchaeota-origin-complex-life/
+      cred:    
+        - Michael Moyer
+        - Olena Shmahalo
+        - Emily Singer
       tags:
         - charts
