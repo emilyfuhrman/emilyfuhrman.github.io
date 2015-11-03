@@ -4,12 +4,6 @@
       date:    '10 2015'
       client:  Arc Lab
       path:    /lab/A2015001
-    - name:    'F2015018'
-      date:    '10 2015'
-      client:  The Trace
-      path:    /lab/F2015018
-      tags:
-        - maps
 - id:          y
   files:
     - name:    'Projection / Launch Party'
@@ -154,3 +148,12 @@
         - Emily Singer
       tags:
         - charts
+    - name:    'Watch How Chicago Gets Flooded with Thousands of Crime Guns'
+      date:    '10 2015'
+      client:  The Trace
+      path:    http://www.thetrace.org/2015/11/chicago-gun-laws-shootings-trafficking/
+      cred:
+        - Miles Kohrman
+        - Mike Spies
+      tags:
+        - maps
