@@ -35,7 +35,7 @@ var idx_schema = function(){
 
 			$('#index-list')
 				.css('margin-top',function(){
-					return $('#index-head').height() +21;
+					return $('#index-head').height() +36;
 				});
 		},
 		generate:function(){
