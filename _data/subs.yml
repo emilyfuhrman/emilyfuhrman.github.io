@@ -1,14 +1,5 @@
 - id:          lab
   files:
-- id:          y
-  files:
-    - name:    'Projection / Launch Party'
-      date:    '07 2015'
-      client:  WITCHES
-      cli_sub: PAOM ✕ Witches of Bushwick
-      path:    /y/F2015004_COVEN-MAG_PAOM_PROJECTION
-      tags:
-        - data art
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
