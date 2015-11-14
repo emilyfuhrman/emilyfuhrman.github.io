@@ -1,9 +1,5 @@
 - id:          lab
   files:
-    - name:    'A2015001'
-      date:    '10 2015'
-      client:  Arc Lab
-      path:    /lab/A2015001
 - id:          y
   files:
     - name:    'Projection / Launch Party'
