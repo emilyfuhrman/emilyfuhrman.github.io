@@ -22,7 +22,3 @@
 	path = x/F2015002
 	url = https://github.com/emilyfuhrman/F2015002.git
 	ignore = dirty
-[submodule "lab/F2015021_004A"]
-	path = lab/F2015021_004A
-	url = https://github.com/emilyfuhrman/F2015021_004A.git
-	ignore = dirty
