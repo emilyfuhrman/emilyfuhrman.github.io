@@ -1,11 +1,5 @@
 - id:          lab
   files:
-    - name:    F2015021_004A
-      date:    '12 2015'
-      client:  EO1
-      path:    /lab/F2015021_004A
-      tags:
-        - data art
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
