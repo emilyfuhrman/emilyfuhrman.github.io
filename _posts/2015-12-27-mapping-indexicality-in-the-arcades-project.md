@@ -1,7 +1,7 @@
 ---
 num:        "023"
 cat:        projects
-title:      "Mapping Indexicality in &quot;The Arcades Project&quot;"
+title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
 path:       mapping-indexicality-in-the-arcades-project
 cols:
   - direction:  left
