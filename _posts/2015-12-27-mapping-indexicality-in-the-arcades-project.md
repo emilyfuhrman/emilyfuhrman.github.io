@@ -172,7 +172,7 @@ This project interprets the text of _The Arcades Project_ as a collection of ind
 
 Given the context-dependent meaning of deixis and the subjecthood implicit to its operation, this project endeavors to track every instance of the word "this" in _The Arcades Project_, classify the context of each instance along distinct spatial and temporal axes, and use this data to visually represent each convolute as a meandering path through time and space. The spatial movement evoked by the deictic instance, along with the temporal movement represented in linguistic modality and tense, forms the basis of each trajectory.
 
-The resultant paths capture the wandering, associative nature of _The Arcades Project_ in a seemingly sporadic blueprint of its textual volition. The graphics trace deliberate meanderings that perhaps capture the ineffable progression of Benjamin’s prose&mdash;and, in a resonant manner, evoke a boundlessness and solitude.
+The resultant paths capture the wandering, associative nature of _The Arcades Project_ in a seemingly sporadic blueprint of its textual volition. Each one traces a deliberate meandering that perhaps captures the ineffable progression of Benjamin’s prose&mdash;and, in a resonant manner, evokes a boundlessness and solitude.
 
 For further documentation, source code, and data, see the [full paper](../images/post-023_imgs/Y2015004_PAPER.pdf) and [GitHub repository]("https://github.com/emilyfuhrman/Y2015004").
 
