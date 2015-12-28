@@ -1,7 +1,7 @@
 ---
 num:        "017"
 cat:        projects
-title:      "Visualizing Joyce's Ulysses: Sirens as a Graphic Score"
+title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot; as a Graphic Score"
 path:       joyce-ulysses-sirens-redux
 images:
   - src:    post-017_imgs/01.png

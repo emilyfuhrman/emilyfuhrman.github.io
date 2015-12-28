@@ -362,6 +362,7 @@ POST
 	}
 
 .post-img-cap {
+	float:left;
 	width:100%;
 	font:$font-basic;
 	text-transform:uppercase;
@@ -372,6 +373,13 @@ POST
 	padding:4px 0 1px;
 	}
 .post-img-cap a:hover {
+	}
+.post-img-cap.col.case {
+	text-transform:none;
+	padding:0;
+	}
+
+.holder {
 	}
 
 .col { 

@@ -1,7 +1,7 @@
 ---
 num:        "007"
 cat:        projects
-title:      "Visualizing Joyce's Ulysses: Sirens"
+title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot;"
 path:       joyce-ulysses-sirens-visualization
 images:
   - src:    post-007_imgs/post-007_img.png
