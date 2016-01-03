@@ -9,4 +9,4 @@ description: Emily Fuhrman
 
 #### My work has been acknowledged by WIRED, Scientific American, and the Columbia University Group for Experimental Methods in the Humanities.
 
-#### For freelance inquiries, please [email](mailto:emily.c.fuhrman@gmail.com). 
+#### For inquiries, please [email](mailto:emily.c.fuhrman@gmail.com). 
