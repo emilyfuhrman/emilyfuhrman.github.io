@@ -19,7 +19,7 @@
         {% endfor %}
         {% for c in page.cols %}
             {% if forloop.last %}
-                {% assign buffer = (page.cols[0] | size) %}
+                {% assign buffer = page.cols[0].images.size %}
             {% else %}
                 {% assign buffer = 0 %}
             {% endif %}
