@@ -35,6 +35,6 @@ tags:
   - commission
 published:  false
 ---
-A series of [four data-driven pieces](https://www.electricobjects.com/LINK) commissioned by [Electric Objects](https://www.electricobjects.com/). The collection is entitled _Merula_, because each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The pieces were composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
+A series of [four data-driven pieces](https://www.electricobjects.com/LINK) commissioned by [Electric Objects](https://www.electricobjects.com/). The collection is entitled _Merula_, because each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The pieces are specially composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
 
 View (and display!) the full collection [here](https://www.electricobjects.com/LINK). Read an accompanying interview about my process [here](https://www.electricobjects.com/).
