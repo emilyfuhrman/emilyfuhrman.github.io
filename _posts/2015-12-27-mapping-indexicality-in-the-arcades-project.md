@@ -173,6 +173,6 @@ Given the context-dependent meaning of deixis and the subjecthood implicit to it
 
 The resultant paths capture the wandering, associative nature of _The Arcades Project_ in a seemingly sporadic blueprint of its textual volition. Each traces a deliberate meandering that perhaps captures the ineffable progression of Benjamin’s prose&mdash;and, in a resonant manner, evokes a boundlessness and solitude.
 
-For further documentation, source code, and data, see the [full paper](../images/post-023_imgs/Y2015004_PAPER.pdf) and [GitHub repository]("https://github.com/emilyfuhrman/Y2015004").
+For further documentation, source code, and data, see the [full paper](../images/post-023_imgs/Y2015004_PAPER.pdf) and [GitHub repository](https://github.com/emilyfuhrman/Y2015004).
 
 Built using Python and Processing. 
