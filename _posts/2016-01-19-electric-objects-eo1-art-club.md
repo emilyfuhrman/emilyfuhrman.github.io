@@ -16,7 +16,7 @@ cols:
         class:  col
         width:  357
         height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/xM4Q'>001</a>"
+        cap:    "<a href='https://www.electricobjects.com/objects/xM4Q'>002</a>"
   - direction:  right
     height:     1306
     images:
@@ -24,7 +24,7 @@ cols:
         class:  col
         width:  357
         height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/3WkG'>002</a>"
+        cap:    "<a href='https://www.electricobjects.com/objects/3WkG'>001</a>"
       - src:    post-024_imgs/003.png
         class:  col
         width:  357
@@ -33,8 +33,8 @@ cols:
 tags:
   - dynamic
   - commission
-published:  false
+published:  true
 ---
-A series of [four data-driven animations](https://www.electricobjects.com/LINK) commissioned by [Electric Objects](https://www.electricobjects.com/). The collection is entitled _Merula_, because each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The pieces are specially composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
+A series of [four data-driven animations](https://www.electricobjects.com/collections/67) commissioned by [Electric Objects](https://www.electricobjects.com/). The collection is entitled _Merula_, because each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The pieces are specially composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
 
-View (and display!) the full collection [here](https://www.electricobjects.com/LINK). Read an accompanying interview about my process [here](https://www.electricobjects.com/).
+View (and display) the full collection [here](https://www.electricobjects.com/collections/67). 
