@@ -160,6 +160,9 @@ cols:
         class:  col
         width:  357
         height: 357
+cred:
+  - name:   "Columbia University Group for Experimental Methods in the Humanities"
+    link:   "http://xpmethod.plaintext.in/theory-method/literary-visualization-lab.html"
 tags:
   - static
   - text
