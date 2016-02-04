@@ -11,4 +11,4 @@ images:
 tags:
   - static
 ---
-Car horns in Greenpoint from 6.44PM - 7.29PM on Sunday, April 14th, 2013. Experimenting with notation and vertical time.
+Car horns in Greenpoint from 6:44PM &ndash; 7:29PM on Sunday, April 14th, 2013. Experimenting with notation and vertical time.
