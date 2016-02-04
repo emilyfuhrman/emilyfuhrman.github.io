@@ -42,6 +42,13 @@
     - name:   Print All Over Me
     - name:   Simons Foundation
     - name:   WITCHES
+- id:         press
+  title:      "Press"
+  simple:     true
+  show:       false
+  list:
+    - name:   Electric Objects
+      link:   http://zine.electricobjects.com/interviews/emily-fuhrman
 - id:         elsewhere
   title:      Elsewhere
   simple:     true
