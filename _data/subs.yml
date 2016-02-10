@@ -1,5 +1,11 @@
 - id:          lab
   files:
+    - name:    Sensor dashboard
+      date:    '02 2016'
+      client:  Heat Seek
+      path:    /lab/F2016003
+      tags:
+        - data visualization
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
