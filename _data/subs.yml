@@ -6,6 +6,12 @@
       path:    /lab/F2016003
       tags:
         - data visualization
+    - name:    In the Same Boats
+      date:    '02 2016'
+      client:  'Small Axe, Inc.'
+      path:    /lab/F2016020
+      tags:
+        - data visualization
 - id:          idx
   files:
     - name:    The Customer Journey to Online Purchase
