@@ -54,11 +54,11 @@ header {
 	}
 
 a { 
-	color:$color-accent;
+	color:$color-black;
 	font-style:normal;
 	text-decoration:none;
 	cursor:cell;
-	border-bottom:0px solid $color-black;
+	border-bottom:2px solid $color-black;
 	}
 a:hover {
 	background:$color-accent;
