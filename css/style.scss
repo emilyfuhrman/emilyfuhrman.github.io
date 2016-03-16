@@ -54,11 +54,11 @@ header {
 	}
 
 a { 
-	color:$color-black;
+	color:$color-accent;
 	font-style:normal;
 	text-decoration:none;
 	cursor:cell;
-	border-bottom:2px solid $color-black;
+	border-bottom:0px solid $color-black;
 	}
 a:hover {
 	background:$color-accent;
@@ -115,6 +115,7 @@ a.btn:hover .nav {
 	background:transparent; 
 	font:$font-basic;
 	font-size:19px;
+	color:$color-black;
 	letter-spacing:$univ-letter-spacing;
 	padding-bottom:0; 
 	/*border-bottom:2px solid $color-black;*/
