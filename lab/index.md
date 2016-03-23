@@ -5,4 +5,4 @@ indexID: lab
 description: Emily Fuhrman
 ---
 
-#### An index of works-in-progress.
+An index of works-in-progress.
