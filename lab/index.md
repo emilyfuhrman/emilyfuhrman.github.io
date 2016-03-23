@@ -1,6 +1,6 @@
 ---
-layout:  page_index
-title:   "Lab"
+layout: page_index
+title: "Lab"
 indexID: lab
 description: Emily Fuhrman
 ---

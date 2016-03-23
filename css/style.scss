@@ -17,6 +17,7 @@ body {
 	background-color:#fff;
 	font-size:20px;
 	font-family:sans-serif;
+	font-weight:normal;
 	line-height:1.5em;
 	letter-spacing:1px;
 	margin:0;
@@ -26,6 +27,11 @@ body {
 a {
 	color:black;
 	cursor:cell !important;
+	}
+
+p {
+	font-size:1em;
+	font-weight:normal;
 	}
 
 /* 	------------------------------------
@@ -51,7 +57,7 @@ a {
 	}
 
 .container#main {
-	padding-top:7.1rem;
+	padding-top:6.7rem;
 	}
 
 /* 	------------------------------------
@@ -62,14 +68,14 @@ a {
 	position:absolute;
 	width:100%;
 	background:#fff;
-	padding:2.6rem 0 3rem;
+	padding:2.6rem 0;
 	z-index:1000;
 	/*@include transition(padding 120ms ease, color 120ms ease);*/
 	}
 #nav.fixed {
 	position:fixed;
 	display:block;
-	padding:1.2rem 0 1.2rem;
+	padding:1.2rem 0;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.02);
     -moz-box-shadow:0 1px 3px rgba(0,0,0,0.02);
     box-shadow:0 1px 3px rgba(0,0,0,0.02);
@@ -116,6 +122,7 @@ a {
 
 	.container,
 	.container.fluid {
+		background:#fff;
 		width:1218px;
 		margin:0 auto;
 		padding:0;
