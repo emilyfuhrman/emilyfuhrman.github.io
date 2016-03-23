@@ -1,5 +1,5 @@
 var cutoff_width = 1281,
-	cutoff_scroll = 24;
+	cutoff_scroll = 26;
 
 var setFluid = function(){
 	setFixedHeader();

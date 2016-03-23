@@ -27,7 +27,7 @@ a {
 	}
 
 /* 	------------------------------------
-	FLUIDITY
+	GENERAL
    	------------------------------------ */
 
 .container {
@@ -40,28 +40,39 @@ a {
     box-sizing: border-box;
 	}
 
-.container.fluid {
+.container.fluid:after {
 	background:blue;
 	width:100%;
 	margin:0 auto;
 	padding:0 1.6rem;
+	clear:both;
 	}
 
+.container#main {
+	padding-top:7.1rem;
+	}
+
+/* 	------------------------------------
+	NAVIGATION
+   	------------------------------------ */
+
 #nav {
-	position:relative;
+	position:absolute;
 	width:100%;
 	background:#fff;
-	padding:2.4rem 0 4rem;
+	padding:2.6rem 0 3rem;
 	z-index:1000;
+	/*@include transition(padding 120ms ease, color 120ms ease);*/
 	}
 #nav.fixed {
 	position:fixed;
-	padding:1.2rem 0;
+	display:block;
+	padding:1.2rem 0 1.2rem;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.02);
     -moz-box-shadow:0 1px 3px rgba(0,0,0,0.02);
     box-shadow:0 1px 3px rgba(0,0,0,0.02);
 	}
-#nav .nav {
+#nav .container {
 	}
 #nav .nav.home {
 	float:left;
@@ -73,6 +84,10 @@ a {
 #nav .nav.proj {
 	float:right;
 	}
+
+/* 	------------------------------------
+	FLUIDITY
+   	------------------------------------ */
 
 @media (min-width:320px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */
