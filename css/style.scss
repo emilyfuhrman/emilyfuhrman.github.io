@@ -18,6 +18,7 @@ body {
 	font-size:20px;
 	font-family:sans-serif;
 	line-height:1.5em;
+	letter-spacing:1px;
 	margin:0;
 	}
 
@@ -30,7 +31,7 @@ a {
    	------------------------------------ */
 
 .container {
-	background:gray;
+	background:#fff;
 	width:1218px;
 	margin:0 auto;
 	padding:0;
@@ -43,16 +44,34 @@ a {
 	background:blue;
 	width:100%;
 	margin:0 auto;
-	padding:0 2rem;
+	padding:0 1.6rem;
 	}
 
 #nav {
+	position:relative;
 	width:100%;
-	background:red;
+	background:#fff;
 	padding:2.4rem 0 4rem;
+	z-index:1000;
 	}
-#nav .btn {
-	position:absolute;
+#nav.fixed {
+	position:fixed;
+	padding:1.2rem 0;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.02);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,0.02);
+    box-shadow:0 1px 3px rgba(0,0,0,0.02);
+	}
+#nav .nav {
+	}
+#nav .nav.home {
+	float:left;
+	}
+#nav .nav.abt {
+	float:right;
+	margin-right:1.5rem;
+	}
+#nav .nav.proj {
+	float:right;
 	}
 
 @media (min-width:320px) { 
@@ -80,7 +99,6 @@ a {
 
 	.container,
 	.container.fluid {
-		background:gray;
 		width:1218px;
 		margin:0 auto;
 		padding:0;
