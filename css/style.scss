@@ -96,7 +96,7 @@ p {
 	}
 
 /* 	------------------------------------
-	PROJECT PAGE
+	PROJECT LIST PAGE
    	------------------------------------ */
 
 #proj-list {
@@ -113,10 +113,7 @@ p {
 	height:270px;
 	padding:0 46px 0 0;
 	}
-#proj-list a.list-img-link.left .list-img,
-#proj-list a.list-img-link.center .list-img {
-	}
-#proj-list a.list-img-link.right .list-img {
+#proj-list a.list-img-link._04 .list-img {
 	padding:0;
 	}
 
@@ -196,6 +193,23 @@ p {
 #proj #descrip p:first-child {
 	font-size:0;
 	line-height:0;
+	}
+
+#proj #post-nav {
+	display:block;
+	width:100%;
+	padding-top:1.2em;
+	clear:both;
+	}
+#proj #post-nav .arrow#previous {
+	float:left;
+	}
+#proj #post-nav .arrow#next {
+	float:right;
+	}
+#proj #post-nav .arrow a {
+	text-decoration:none;
+	border:none;
 	}
 
 /* 	------------------------------------

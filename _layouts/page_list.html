@@ -16,7 +16,7 @@
 	{% else %}
 		{% assign marker = '' %}
 	{% endif %}
-	<a href='/{{ post.category }}/{{ post.path }}{{ end }}' class='{% cycle 'left', 'center', 'right' %} list-img-link'>
+	<a href='/{{ post.category }}/{{ post.path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} list-img-link'>
 		<img class='list-img' src='/media/thumbs/{{ post.id }}_thumb.jpg'>
 		<div class='metadata'>
 			<p class='list-title'>{{ marker }}{{ post.title }}</p>

@@ -20,45 +20,17 @@
             {{ content }}
         </p>
     </div>
-    <!--<div class='holder'>
-    {% for p in page.images %}
-        <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
-    {% endfor %}
-    {% for c in page.cols %}
-        <div class='col' style='width:{{ c.images[0].width }}px;height:{{ c.height }}px'>
-        {% for p in c.images %}
-            <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
-        {% endfor %}
-        </div>
-    {% endfor %}
-    </div>
-    {% for p in page.images %}
-        {% if p.cap %}
-            <div class='post-img-cap'>{{ forloop.index }}.&nbsp;{{ p.cap }}</div>
-        {% endif %}
-    {% endfor %}
-    {% for c in page.cols %}
-        {% if forloop.last %}
-            {% assign buffer = page.cols[0].images.size %}
-        {% else %}
-            {% assign buffer = 0 %}
-        {% endif %}
-        {% for p in c.images %}
-            {% if p.cap %}
-                <div class='post-img-cap {{ p.class }}'>{{ buffer | plus: forloop.index }}.&nbsp;{{ p.cap }}</div>
+    <div id='post-nav'>
+        <div id='previous' class='arrow'>
+            {% if page.previous.id %}
+            <a href='{{ page.previous.url }}'>&larr;&nbsp;Previous</a>
             {% endif %}
-        {% endfor %}
-    {% endfor %}
-    <div id="clearup"></div>
-    <div class='descrip'>
-        <h4>
-        {{ content }}
-        {% if page.cred %}
-            {% for c in page.cred %}
-                &rarr;&nbsp;<a href='{{ c.link }}' class='cred'>{{ c.name }}</a><br>
-            {% endfor %}
-        {% endif %}
-        </h4>
-    </div>-->
+        </div>
+        <div id='next' class='arrow'>
+            {% if page.next.id %}
+            <a href='{{ page.next.url }}'>Next&nbsp;&rarr;</a>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% include footer.html %}
