@@ -108,9 +108,9 @@ p {
 	}
 #proj-list a.list-img-link .list-img {
 	float:left;
-	width:400px;
-	height:400px;
-	padding-right:3rem;
+	width:300px;
+	height:300px;
+	padding:0 3rem 0 0;
 	}
 #proj-list a.list-img-link.left .list-img,
 #proj-list a.list-img-link.center .list-img {
@@ -120,10 +120,16 @@ p {
 
 #proj-list a.list-img-link .metadata {
 	position:absolute;
-	background:rgba(255,255,255,0.6);
-	width:400px;
-	height:300px;
-	margin-top:0;
+	background:rgba(255,255,255,0.95);
+	width:300px;
+	height:236px;
+	}
+#proj-list a.list-img-link .metadata p {
+	margin-top:-6px;
+	@include transition(margin-top 120ms ease);
+	}
+#proj-list a.list-img-link:hover .metadata p {
+	margin-top:18px;
 	}
 
 /* 	------------------------------------
