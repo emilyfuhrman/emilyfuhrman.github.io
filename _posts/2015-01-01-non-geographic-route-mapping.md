@@ -1,22 +1,22 @@
 ---
-num:        "020"
+num:        Y2015002
 cat:        projects
 title:      "Study: Non-geographic Route Mapping"
 path:       non-geographic-route-mapping
 images:
-  - src:    020/02.jpg
+  - ext:    02.jpg
     class:  post-img
     width:  2400
     height: 1842
     cap:    "Home &rarr; 45 Main St. &rarr; Home &rarr; Columbia University &rarr; Home &rarr; 509 West 24th St. &rarr; 229 9th Ave. &rarr; 505 West 23rd St. &rarr; Home"
-  - src:    020/01.jpg
+  - ext:    01.jpg
     class:  post-img
     half:   true
     dir:    left
     width:  2400
     height: 3106
     cap:    "Home &rarr; 45 Main St. &rarr; 102 3rd Ave. &rarr; 850 Broadway &rarr; Lorimer St. L"
-  - src:    020/03.jpg
+  - ext:    03.jpg
     class:  post-img
     half:   true
     dir:    right

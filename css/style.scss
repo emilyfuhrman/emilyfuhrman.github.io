@@ -96,18 +96,21 @@ p {
 	POST
    	------------------------------------ */
 
-#proj #images {
+#proj #media {
 	clear:both;
 	}
 
-#proj #images .media {
+#proj #media .media {
 	display:block;
 	width:100%;
 	height:auto;
 	margin:0;
-	padding:0 0 4.5rem 0;
+	padding:0 0 4rem 0;
 	}
-#proj #images .media.half {
+#proj #media .media.center {
+	clear:both;
+	}
+#proj #media .media.half {
 	float:left;
 	width:50%;
 	height:auto;
@@ -115,18 +118,40 @@ p {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 	}
-#proj #images .media.half.left {
+#proj #media .media.half.left {
 	padding-right:1.5rem;
 	}
-#proj #images .media.half.right {
+#proj #media .media.half.right {
 	padding-left:1.5rem;
 	}
-#proj #images .media img {
+#proj #media .media img {
 	display:block;
 	width:100%;
 	height:auto;
 	margin:0;
 	padding:0;
+	}
+#proj #media .media .caption {
+	margin-top:1.2em;
+	}
+
+#proj #descrip {
+	display:block;
+	clear:both;
+	}
+
+/* 	------------------------------------
+	FOOT
+   	------------------------------------ */
+
+#base {
+	width:100%;
+	background:#fff;
+	margin-top:4rem;
+	padding:1.2rem 0 2.6rem;
+	border-top:1px solid rgba(0,0,0,0.02);
+	}
+#base #footer {
 	}
 
 /* 	------------------------------------
@@ -136,8 +161,8 @@ p {
 @media (min-width:320px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
 		padding:0 0 1.5rem 0;
 		}
@@ -146,8 +171,8 @@ p {
 @media (min-width:481px) { 
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
 		padding:0 0 1.5rem 0;
 		}
@@ -156,8 +181,8 @@ p {
 @media (min-width:641px) { 
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
 		padding:0 0 1.5rem 0;
 		}
@@ -166,21 +191,21 @@ p {
 @media (min-width:961px) { 
 	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
 		padding:0 0 3rem 0;
 		}
-	.container #proj #images .media.half,
-	.container.fluid #proj #images .media.half {
+	.container #proj #media .media.half,
+	.container.fluid #proj #media .media.half {
 		width:50%;
 		}
-	.container #proj #images .media.half.left,
-	.container.fluid #proj #images .media.half.left {
+	.container #proj #media .media.half.left,
+	.container.fluid #proj #media .media.half.left {
 		padding-right:0.75rem;
 		}
-	.container #proj #images .media.half.right,
-	.container.fluid #proj #images .media.half.right {
+	.container #proj #media .media.half.right,
+	.container.fluid #proj #media .media.half.right {
 		padding-left:0.75rem;
 		}
 	}
@@ -188,21 +213,21 @@ p {
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */ 
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
 		padding:0 0 2.25rem 0;
 		}
-	.container #proj #images .media.half,
-	.container.fluid #proj #images .media.half {
+	.container #proj #media .media.half,
+	.container.fluid #proj #media .media.half {
 		width:50%;
 		}
-	.container #proj #images .media.half.left,
-	.container.fluid #proj #images .media.half.left {
+	.container #proj #media .media.half.left,
+	.container.fluid #proj #media .media.half.left {
 		padding-right:0.75rem;
 		}
-	.container #proj #images .media.half.right,
-	.container.fluid #proj #images .media.half.right {
+	.container #proj #media .media.half.right,
+	.container.fluid #proj #media .media.half.right {
 		padding-left:0.75rem;
 		}
 	}
@@ -218,21 +243,21 @@ p {
 		padding:0;
 		}
 
-	.container #proj #images .media,
-	.container.fluid #proj #images .media {
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
 		width:100%;
-		padding:0 0 4.5rem 0;
+		padding:0 0 4rem 0;
 		}
-	.container #proj #images .media.half,
-	.container.fluid #proj #images .media.half {
+	.container #proj #media .media.half,
+	.container.fluid #proj #media .media.half {
 		width:50%;
 		}
-	.container #proj #images .media.half.left,
-	.container.fluid #proj #images .media.half.left {
+	.container #proj #media .media.half.left,
+	.container.fluid #proj #media .media.half.left {
 		padding-right:1.5rem;
 		}
-	.container #proj #images .media.half.right,
-	.container.fluid #proj #images .media.half.right {
+	.container #proj #media .media.half.right,
+	.container.fluid #proj #media .media.half.right {
 		padding-left:1.5rem;
 		}
 }
