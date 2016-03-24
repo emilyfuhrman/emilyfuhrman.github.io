@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 id: "024"
 title: "Electric Objects EO1 Art Club"
 path: electric-objects-eo1-art-club

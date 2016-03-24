@@ -98,18 +98,31 @@ p {
 	PROJECT PAGE
    	------------------------------------ */
 
-#proj-list .list-img {
+#proj-list {
+	clear:both;
+	}
+
+#proj-list a.list-img-link {
 	display:block;
+	float:left;
+	text-decoration:none;
+	border:none;
+	}
+#proj-list a.list-img-link .list-img {
 	float:left;
 	width:400px;
 	height:400px;
 	}
-#proj-list .left .list-img,
-#proj-list .center .list-img {
-	
+#proj-list a.list-img-link.left .list-img,
+#proj-list a.list-img-link.center .list-img {
 	}
-#proj-list .right .list-img {
-	
+#proj-list a.list-img-link.right .list-img {
+	}
+
+#proj-list a.list-img-link .metadata {
+	position:absolute;
+	width:400px;
+	height:400px;
 	}
 
 /* 	------------------------------------
@@ -119,7 +132,6 @@ p {
 #proj #media {
 	clear:both;
 	}
-
 #proj #media .media {
 	display:block;
 	float:left;
