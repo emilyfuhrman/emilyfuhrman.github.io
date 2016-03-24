@@ -1,5 +1,5 @@
 ---
-num:        Y2013011
+id:         Y2013011
 cat:        projects
 title:      "Series: Giant Gears"
 path:       giant-gears

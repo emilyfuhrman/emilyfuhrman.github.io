@@ -10,7 +10,7 @@
                 {% assign class_dir = '' %}
             {% endif %}
             <div class='{{ class_size }} {{ class_dir }} media'>
-                <img class='{{ p.class }}' src='/media/{{ page.num }}/{{ p.ext }}' width='{{ p.width }}' height= '{{ p.height }}' />
+                <img class='{{ p.class }}' src='/media/{{ page.id }}/{{ p.ext }}' width='{{ p.width }}' height= '{{ p.height }}' />
                 <p class='caption'>{{ p.cap }}</p>
             </div>
             {% endfor %}
