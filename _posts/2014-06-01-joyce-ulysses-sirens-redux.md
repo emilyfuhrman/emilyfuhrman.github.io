@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "017"
 cat:        projects
 title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot; as a Graphic Score"

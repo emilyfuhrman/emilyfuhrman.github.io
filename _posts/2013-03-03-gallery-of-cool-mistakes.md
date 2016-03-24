@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "010"
 cat:        projects
 title:      "Gallery of Cool Mistakes"

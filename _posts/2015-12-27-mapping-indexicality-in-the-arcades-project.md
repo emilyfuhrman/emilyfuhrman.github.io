@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "023"
 cat:        projects
 title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
@@ -166,7 +167,6 @@ cred:
 tags:
   - static
   - text
-published:  true
 ---
 "Flânerie," Walter Benjamin observes, "can transform Paris into one great interior." Impelled by association, the flâneur embraces a form of acquiescence: to the tactile landscape impressing upon the attention, to the constellation of fragments flourishing in the consciousness, to the "far-off times and places [interpenetrating] the landscape and the present moment." The nature of this process is inexorably indexical, through which an arrangement of signs impels the liberation in the present of a series of recollections. From its trace emerges the subject, a combination of associations linked by memory, interiority, and spatiality.
 

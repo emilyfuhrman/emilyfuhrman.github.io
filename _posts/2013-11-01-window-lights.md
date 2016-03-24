@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "015"
 cat:        projects
 title:      "Study: Window Lights"

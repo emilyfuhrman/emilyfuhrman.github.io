@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "007"
 cat:        projects
 title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot;"

@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "016"
 cat:        projects
 title:      "Study: Self-referential Inkblots"

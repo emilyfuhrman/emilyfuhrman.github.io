@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "022"
 cat:        projects
 title:      "Collab: WITCHES / The Coven Magazine ✕ Print All Over Me"
@@ -44,7 +45,6 @@ tags:
   - text
   - collaboration
   - commission
-published:  true
 ---
 This month, I collaborated with [WITCHES](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each one is generated using text and image data scraped from the first three issues of The Coven Magazine: white on black indicates a pattern driven by data from Issue 1, white on blue indicates a pattern driven by data from Issue 2, and black on white indicates a pattern driven by data from Issue 3. View the full collection [here](https://paom.com/collections/witches/). 
 

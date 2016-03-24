@@ -1,4 +1,5 @@
 ---
+published:  false
 num:        "012"
 cat:        projects
 title:      "Study: Ephemeral Data"

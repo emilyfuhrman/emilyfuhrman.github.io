@@ -1,4 +1,5 @@
 ---
+published:  false
 num: "024"
 cat: project
 title: "Electric Objects EO1 Art Club"
@@ -33,7 +34,6 @@ cols:
 tags:
   - dynamic
   - commission
-published:  true
 ---
 A series of [four data-driven animations](https://www.electricobjects.com/collections/67) commissioned by [Electric Objects](https://www.electricobjects.com/). The collection is entitled _Merula_, because each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The pieces are specially composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
 
