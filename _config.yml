@@ -8,10 +8,10 @@ permalink:     none
 defaults:
   -
     scope:
-      path:     "projects"
+      path:     ''
       type:     posts
     values:
-      category: projects
+      category: project
       layout:   post
       is_post:  true
 

@@ -1,6 +1,6 @@
 ---
 id:         Y2015002
-cat:        projects
+cat:        project
 title:      "Study: Non-geographic Route Mapping"
 path:       non-geographic-route-mapping
 images:

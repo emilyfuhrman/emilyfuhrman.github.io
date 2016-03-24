@@ -1,6 +1,6 @@
 ---
 id:         Y2013011
-cat:        projects
+cat:        project
 title:      "Series: Giant Gears"
 path:       giant-gears
 nonvis:     true
