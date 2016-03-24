@@ -99,11 +99,9 @@ p {
    	------------------------------------ */
 
 #proj-list {
-	clear:both;
 	}
 
 #proj-list a.list-img-link {
-	display:block;
 	float:left;
 	text-decoration:none;
 	border:none;
@@ -112,6 +110,7 @@ p {
 	float:left;
 	width:400px;
 	height:400px;
+	padding-right:3rem;
 	}
 #proj-list a.list-img-link.left .list-img,
 #proj-list a.list-img-link.center .list-img {
@@ -121,8 +120,10 @@ p {
 
 #proj-list a.list-img-link .metadata {
 	position:absolute;
+	background:rgba(255,255,255,0.6);
 	width:400px;
-	height:400px;
+	height:300px;
+	margin-top:0;
 	}
 
 /* 	------------------------------------
@@ -182,11 +183,13 @@ p {
    	------------------------------------ */
 
 #base {
+	float:left;
 	width:100%;
 	background:#fff;
 	margin-top:2.6rem;
 	padding:2.6rem 0;
 	border-top:1px solid rgba(0,0,0,0.02);
+	clear:both;
 	}
 #base #footer {
 	}
