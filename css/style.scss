@@ -26,6 +26,8 @@ body {
 
 a {
 	color:black;
+	text-decoration:none;
+	border-bottom:2px solid $color-black;
 	cursor:cell !important;
 	}
 
@@ -102,21 +104,22 @@ p {
 
 #proj #media .media {
 	display:block;
+	float:left;
 	width:100%;
 	height:auto;
 	margin:0;
-	padding:0 0 4rem 0;
+	padding:0 0 2rem 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 	}
 #proj #media .media.center {
 	clear:both;
 	}
 #proj #media .media.half {
-	float:left;
+	display:block;
 	width:50%;
 	height:auto;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 	}
 #proj #media .media.half.left {
 	padding-right:1.5rem;
@@ -139,6 +142,10 @@ p {
 	display:block;
 	clear:both;
 	}
+#proj #descrip p:first-child {
+	font-size:0;
+	line-height:0;
+	}
 
 /* 	------------------------------------
 	FOOT
@@ -147,7 +154,7 @@ p {
 #base {
 	width:100%;
 	background:#fff;
-	margin-top:4rem;
+	margin-top:2.6rem;
 	padding:2.6rem 0;
 	border-top:1px solid rgba(0,0,0,0.02);
 	}
@@ -246,7 +253,7 @@ p {
 	.container #proj #media .media,
 	.container.fluid #proj #media .media {
 		width:100%;
-		padding:0 0 4rem 0;
+		padding:0 0 2rem 0;
 		}
 	.container #proj #media .media.half,
 	.container.fluid #proj #media .media.half {
