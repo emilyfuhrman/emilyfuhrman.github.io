@@ -8,7 +8,7 @@ permalink:     none
 defaults:
   -
     scope:
-      path:     ''
+      path:     "projects"
       type:     posts
     values:
       category: projects
