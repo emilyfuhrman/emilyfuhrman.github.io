@@ -1,6 +1,12 @@
 {% include header.html %}
     <div id='proj'>
-        <div class='holder'>
+        {% for p in page.images %}
+            <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
+        {% endfor %}
+        <p>
+            {{ content }}
+        </p>
+        <!--<div class='holder'>
         {% for p in page.images %}
             <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
         {% endfor %}
@@ -39,6 +45,6 @@
                 {% endfor %}
             {% endif %}
             </h4>
-        </div>
+        </div>-->
     </div>
 {% include footer.html %}
