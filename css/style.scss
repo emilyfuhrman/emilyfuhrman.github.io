@@ -98,7 +98,19 @@ p {
 	PROJECT PAGE
    	------------------------------------ */
 
-
+#proj-list .list-img {
+	display:block;
+	float:left;
+	width:400px;
+	height:400px;
+	}
+#proj-list .left .list-img,
+#proj-list .center .list-img {
+	
+	}
+#proj-list .right .list-img {
+	
+	}
 
 /* 	------------------------------------
 	POST

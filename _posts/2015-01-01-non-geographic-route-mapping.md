@@ -1,23 +1,19 @@
 ---
 id:         Y2015002
-cat:        project
 title:      "Study: Non-geographic Route Mapping"
 path:       non-geographic-route-mapping
 images:
   - ext:    02.jpg
-    class:  post-img
     width:  2400
     height: 1842
   - ext:    01.jpg
-    class:  post-img
     half:   true
-    dir:    left
+    side:   left
     width:  2400
     height: 3106
   - ext:    03.jpg
-    class:  post-img
     half:   true
-    dir:    right
+    side:   right
     width:  2400
     height: 3106
 tags:

@@ -1,20 +1,16 @@
 ---
 id:         Y2013011
-cat:        project
 title:      "Series: Giant Gears"
 path:       giant-gears
 nonvis:     true
 images:
   - ext:    01.jpg
-    class:  post-img
     width:  2400
     height: 1932
   - ext:    02.jpg
-    class:  post-img
     width:  2400
     height: 1932
   - ext:    03.jpg
-    class:  post-img
     width:  2400
     height: 1932
 tags:
