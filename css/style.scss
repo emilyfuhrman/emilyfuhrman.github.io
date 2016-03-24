@@ -58,7 +58,8 @@ p {
 	}
 
 .container#main {
-	padding-top:6.7rem;
+	/*padding-top:6.7rem;*/
+	padding-top:8.7rem;
 	}
 
 /* 	------------------------------------
@@ -108,28 +109,41 @@ p {
 	}
 #proj-list a.list-img-link .list-img {
 	float:left;
-	width:300px;
-	height:300px;
-	padding:0 3rem 0 0;
+	width:270px;
+	height:270px;
+	padding:0 46px 0 0;
 	}
 #proj-list a.list-img-link.left .list-img,
 #proj-list a.list-img-link.center .list-img {
 	}
 #proj-list a.list-img-link.right .list-img {
+	padding:0;
 	}
 
 #proj-list a.list-img-link .metadata {
 	position:absolute;
-	background:rgba(255,255,255,0.95);
-	width:300px;
-	height:236px;
+	background:rgba(255,255,255,1);
+	width:270px;
+	height:224px;
 	}
 #proj-list a.list-img-link .metadata p {
-	margin-top:-6px;
+	position:absolute;
 	@include transition(margin-top 120ms ease);
 	}
-#proj-list a.list-img-link:hover .metadata p {
-	margin-top:18px;
+#proj-list a.list-img-link .metadata p.list-title {
+	font-size:0.625rem;
+	text-transform:uppercase;
+	line-height:1rem;
+	margin-top:0;
+	}
+#proj-list a.list-img-link .metadata p.list-date {
+	margin-top:160px;
+	}
+#proj-list a.list-img-link:hover .metadata p.list-title {
+	margin-top:15px;
+	}
+#proj-list a.list-img-link:hover .metadata p.list-date {
+	margin-top:175px;
 	}
 
 /* 	------------------------------------
