@@ -1,8 +1,8 @@
 ---
-num:        "024"
-category:   project
-title:      "Electric Objects EO1 Art Club"
-path:       electric-objects-eo1-art-club
+num: "024"
+cat: project
+title: "Electric Objects EO1 Art Club"
+path: electric-objects-eo1-art-club
 cols:
   - direction:  left
     height:     1306

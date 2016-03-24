@@ -1,8 +1,19 @@
 {% include header.html %}
     <div id='proj'>
-        {% for p in page.images %}
-            <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
-        {% endfor %}
+        <div id='images'>
+            {% for p in page.images %}
+            {% if p.half == true %}
+                {% assign class_size = 'half' %}
+                {% assign class_dir = p.dir %}
+            {% else %}
+                {% assign class_size = 'full' %}
+                {% assign class_dir = '' %}
+            {% endif %}
+                <div class='{{ class_size }} {{ class_dir }} media'>
+                    <img class='{{ p.class }}' src='/images/{{ p.src }}' width='{{ p.width }}' height= '{{ p.height }}' />
+                </div>
+            {% endfor %}
+        <div id='images'>
         <p>
             {{ content }}
         </p>
