@@ -1,14 +1,11 @@
 ---
-published:  false
-num:        "016"
-cat:        projects
+id:         Y2013009
 title:      "Study: Self-referential Inkblots"
 path:       self-referential-inkblots
 images:
-  - src:    post-016_img.png
-    class:  post-img
-    width:  600
-    height: 810
+  - ext:    01.jpg
+    width:  2400
+    height: 1779
 tags:
   - static
 ---
