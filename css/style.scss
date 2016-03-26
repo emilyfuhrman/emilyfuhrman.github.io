@@ -14,6 +14,7 @@ $color-accent:#0055FF;
 html,
 body {
 	width:100%;
+	height:100%;
 	background-color:#fff;
 	font-size:20px;
 	font-family:sans-serif;
@@ -105,14 +106,13 @@ p {
 #proj-list {
 	background:#fff;
 	width:100%;
-	height:auto;
 	overflow:hidden;
 	}
 
 #proj-list a.list-img-link {
 	float:left;
 	width:25%;
-	height:25%;
+	height:auto;
 	text-decoration:none;
 	margin:1.5rem 0 0 0;
 	padding:0 1rem 1rem;
@@ -145,9 +145,9 @@ p {
 
 #proj-list a.list-img-link .metadata {
 	position:relative;
-	background:red;
+	background:#fff;
 	width:100%;
-	height:224px;
+	height:216px;
 	left:0;
 	}
 #proj-list a.list-img-link .metadata p {
@@ -161,13 +161,13 @@ p {
 	margin-top:0;
 	}
 #proj-list a.list-img-link .metadata p.list-date {
-	margin-top:160px;
+	margin-top:150px;
 	}
 #proj-list a.list-img-link:hover .metadata p.list-title {
-	margin-top:15px;
+	margin-top:12px;
 	}
 #proj-list a.list-img-link:hover .metadata p.list-date {
-	margin-top:175px;
+	margin-top:162px;
 	}
 
 /* 	------------------------------------
@@ -269,6 +269,14 @@ p {
 @media (min-width:320px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */
 
+	.container,
+	.container.fluid {
+		width:100%;
+		margin:0 auto;
+		padding:0 1.6rem;
+		clear:both;
+		}
+
 	.container #proj,
 	.container.fluid #proj {
 		padding:0;
@@ -285,7 +293,7 @@ p {
 
 	#proj-list a.list-img-link {
 		width:100%;
-		height:100%;
+		height:auto;
 		margin:1.5rem 0 0 0;
 		padding:0;
 		}
@@ -311,6 +319,14 @@ p {
 @media (min-width:481px) { 
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
+	.container,
+	.container.fluid {
+		width:100%;
+		margin:0 auto;
+		padding:0 1.6rem;
+		clear:both;
+		}
+
 	.container #proj,
 	.container.fluid #proj {
 		padding:0;
@@ -327,7 +343,7 @@ p {
 
 	#proj-list a.list-img-link {
 		width:50%;
-		height:50%;
+		height:auto;
 		margin:1.5rem 0 0 0;
 		padding:0;
 		}
@@ -355,6 +371,14 @@ p {
 @media (min-width:641px) { 
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
+	.container,
+	.container.fluid {
+		width:100%;
+		margin:0 auto;
+		padding:0 1.6rem;
+		clear:both;
+		}
+
 	.container #proj,
 	.container.fluid #proj {
 		padding:0;
@@ -371,7 +395,7 @@ p {
 
 	#proj-list a.list-img-link {
 		width:50%;
-		height:50%;
+		height:auto;
 		margin:1.5rem 0 0 0;
 		padding:0;
 		}
@@ -399,6 +423,14 @@ p {
 @media (min-width:961px) { 
 	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
+	.container,
+	.container.fluid {
+		width:100%;
+		margin:0 auto;
+		padding:0 1.6rem;
+		clear:both;
+		}
+
 	.container #proj,
 	.container.fluid #proj {
 		padding:0;
@@ -416,8 +448,7 @@ p {
 	#proj-list a.list-img-link {
 		width:31%;
 		width:calc(33.33% - 1rem);
-		height:31%;
-		height:calc(33.33% - 1rem);
+		height:auto;
 		margin:1.5rem 0 0 0;
 		padding:0;
 		}
@@ -461,6 +492,14 @@ p {
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */ 
 
+	.container,
+	.container.fluid {
+		width:100%;
+		margin:0 auto;
+		padding:0 1.6rem;
+		clear:both;
+		}
+
 	.container #proj,
 	.container.fluid #proj {
 		padding:0;
@@ -478,8 +517,7 @@ p {
 	#proj-list a.list-img-link {
 		width:22%;
 		width:calc(25% - 1.125rem);
-		height:22%;
-		height:calc(25% - 1.125rem);
+		height:auto;
 		margin:1.5rem 0 0 0;
 		padding:0;
 		}
@@ -500,6 +538,11 @@ p {
 		margin-left:calc(0.75rem - 0rem);
 		margin-right:4%;
 		margin-right:calc(1.5rem - 0rem);
+		}
+
+
+	#proj-list a.list-img-link .metadata {
+		height:224px;
 		}
 
 	.container #proj #media .media,
@@ -554,7 +597,7 @@ p {
 	#proj-list a.list-img-link {
 		float:left;
 		width:25%;
-		height:25%;
+		height:auto;
 		text-decoration:none;
 		margin:1.5rem 0 0 0;
 		padding:0 1rem 1rem;

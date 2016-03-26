@@ -1,10 +1,16 @@
-var cutoff_width = 1281,
+var cutoff_tier1 = 1281,
+	cutoff_tier2 = 1025,
+	cutoff_tier3 = 961,
+	cutoff_tier4 = 641,
+	cutoff_tier5 = 481,
+	cutoff_tier6 = 320,
+
 	cutoff_scroll = 26;
 
 var setFluid = function(){
 	setFixedHeader();
 	$('.container').addClass(function(){
-		return window.innerWidth <cutoff_width ? 'fluid' : '';
+		return window.innerWidth <cutoff_tier1 ? 'fluid' : '';
 	});
 }
 var setFixedHeader = function(){
