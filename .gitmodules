@@ -15,3 +15,6 @@
 [submodule "interactive/Y2014001"]
 	path = interactive/Y2014001
 	url = https://github.com/emilyfuhrman/Y2014001.git
+[submodule "interactive/Y2014003"]
+	path = interactive/Y2014003
+	url = https://github.com/emilyfuhrman/Y2014003.git

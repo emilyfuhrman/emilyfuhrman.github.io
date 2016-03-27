@@ -2,7 +2,7 @@
 id:         Y2014001
 title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot; as a Graphic Score"
 path:       joyce-ulysses-sirens-redux
-perm:       true
+perm:       /interactive/Y2014001
 images:
   - ext:    01.jpg
     width:  2400
