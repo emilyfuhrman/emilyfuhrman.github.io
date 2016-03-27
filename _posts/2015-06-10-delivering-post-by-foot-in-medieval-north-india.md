@@ -13,5 +13,7 @@ images:
 tags:
   - interactive
   - collaboration
+  - text
+  - dh
 ---
 An interactive map representing a medieval postal route extrapolated from the text of _Arabic Classical Accounts of India and China_. Built in collaboration with the Columbia University Department of History. 
