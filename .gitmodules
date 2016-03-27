@@ -16,3 +16,6 @@
 [submodule "lab/F2015020"]
 	path = lab/F2015020
 	url = https://github.com/emilyfuhrman/F2015020.git
+[submodule "interactive/Y2014001"]
+	path = interactive/Y2014001
+	url = https://github.com/emilyfuhrman/Y2014001.git
