@@ -80,6 +80,7 @@ p {
 	position:absolute;
 	width:100%;
 	background:#fff;
+	font-size:1rem;
 	padding:2.5rem 0;
 	z-index:1000;
 	/*@include transition(padding 120ms ease, color 120ms ease);*/
@@ -155,23 +156,25 @@ p {
 	background:#fff;
 	width:100%;
 	padding:81.66% 0 0;
+	padding-top:calc(100% - 2.5rem);
 	}
 #proj-list a.list-img-link .metadata p {
 	position:absolute;
 	@include transition(top 120ms ease, bottom 120ms ease);
 	}
 #proj-list a.list-img-link .metadata p.list-title {
-	font-size:0.625rem;
+	font-size:0.65rem;
 	text-transform:uppercase;
 	line-height:1rem;
-	top:0;
+	top:-0.75rem;
 	}
 #proj-list a.list-img-link .metadata p.list-date {
+	font-size:1rem;
 	bottom:0.75rem;
 	}
 #proj-list a.list-img-link:hover .metadata p.list-title,
 #proj-list a.list-img-link.hover .metadata p.list-title {
-	top:0.5rem;
+	top:-0.25rem;
 	}
 #proj-list a.list-img-link:hover .metadata p.list-date,
 #proj-list a.list-img-link.hover .metadata p.list-date {
@@ -293,7 +296,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:1.5rem;
 		padding:0;
+		}
+
+	#nav {
+		font-size:1.5rem;
+		line-height:2rem;
 		}
 
 	#nav .container .nav,
@@ -311,6 +320,7 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:1.5rem;
 		padding:0;
 		}
 
@@ -327,9 +337,13 @@ p {
 		padding:0;
 		}
 
-	/*#proj-list a.list-img-link .metadata {
-		padding:75% 0 0;
-		}*/
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:1rem;
+		line-height:1.5rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1.5rem;
+		}
 
 	.container #proj #media .media,
 	.container.fluid #proj #media .media {
@@ -343,6 +357,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1.5rem;
+		line-height:2rem;
 		padding-left:0;
 		}
 	}
@@ -360,7 +376,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:0;
 		padding:0;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
 		}
 
 	#nav .container .nav,
@@ -389,6 +411,7 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:0;
 		padding:0;
 		}
 
@@ -416,9 +439,13 @@ p {
 		margin-left:calc(0.75rem - 0rem);
 		}
 
-	/*#proj-list a.list-img-link .metadata {
-		padding:75% 0 0;
-		}*/
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.65rem;
+		line-height:1rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1rem;
+		}
 
 	.container #proj #media .media,
 	.container.fluid #proj #media .media {
@@ -432,6 +459,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1rem;
+		line-height:1.5rem;
 		padding-left:0;
 		}
 	}
@@ -449,7 +478,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:0;
 		padding:0;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
 		}
 
 	#nav .container .nav,
@@ -478,12 +513,13 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:0;
 		padding:0;
 		}
 
 	#proj-list a.list-img-link {
-		width:48%;
-		width:calc(50% - 0.75rem);
+		width:31%;
+		width:calc(33.33% - 1rem);
 		height:auto;
 		margin:0 0 1.5rem 0;
 		padding:0;
@@ -495,19 +531,25 @@ p {
 		padding:0;
 		}
 	#proj-list a.list-img-link._01,
-	#proj-list a.list-img-link._03 {
-		margin-right:2%;
-		margin-right:calc(0.75rem - 0rem);
-		}
-	#proj-list a.list-img-link._02,
 	#proj-list a.list-img-link._04 {
-		margin-left:2%;
-		margin-left:calc(0.75rem - 0rem);
+		margin:0 0 1.5rem 0;
+		}
+	#proj-list a.list-img-link._02 {
+		margin:0 3.5% 1.5rem 3.5%;
+		margin-left:calc(1.5rem - 0rem);
+		margin-right:calc(1.5rem - 0rem);
+		}
+	#proj-list a.list-img-link._03 {
+		margin:0 0 1.5rem 0;
 		}
 
-	/*#proj-list a.list-img-link .metadata {
-		padding:75% 0 0;
-		}*/
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.65rem;
+		line-height:1rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1rem;
+		}
 
 	.container #proj #media .media,
 	.container.fluid #proj #media .media {
@@ -521,6 +563,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1rem;
+		line-height:1.5rem;
 		padding-left:0;
 		}
 	}
@@ -538,7 +582,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:0;
 		padding:0;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
 		}
 
 	#nav .container .nav,
@@ -567,6 +617,7 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:0;
 		padding:0;
 		}
 
@@ -598,8 +649,12 @@ p {
 		margin-right:calc(1.5rem - 0rem);
 		}
 
-	#proj-list a.list-img-link .metadata {
-		padding:81.66% 0 0;
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.65rem;
+		line-height:1rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1rem;
 		}
 
 	.container #proj #media .media,
@@ -626,6 +681,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1rem;
+		line-height:1.5rem;
 		padding-left:0;
 		}
 	}
@@ -643,7 +700,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:0;
 		padding:0;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
 		}
 
 	#nav .container .nav,
@@ -672,6 +735,7 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:0;
 		padding:0;
 		}
 
@@ -703,8 +767,12 @@ p {
 		margin-right:calc(1.5rem - 0rem);
 		}
 
-	#proj-list a.list-img-link .metadata {
-		padding:81.66% 0 0;
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.65rem;
+		line-height:1rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1rem;
 		}
 
 	.container #proj #media .media,
@@ -731,6 +799,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1rem;
+		line-height:1.5rem;
 		padding-left:0;
 		}
 	}
@@ -748,7 +818,13 @@ p {
 
 	.container #proj,
 	.container.fluid #proj {
+		margin-top:0;
 		padding:0 1rem;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
 		}
 
 	#nav .container .nav,
@@ -779,6 +855,7 @@ p {
 
 	.container #proj-list,
 	.container.fluid #proj-list {
+		margin-top:0;
 		padding:0 1rem;
 		}
 
@@ -810,8 +887,12 @@ p {
 		margin-right:calc(1.5rem - 0rem);
 		}
 
-	#proj-list a.list-img-link .metadata {
-		padding:81.66% 0 0;
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.65rem;
+		line-height:1rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1rem;
 		}
 
 	.container #proj #media .media,
@@ -838,6 +919,8 @@ p {
 
 	#base #footer.container span,
 	#base #footer.container.fluid span {
+		font-size:1rem;
+		line-height:1.5rem;
 		padding-left:1rem;
 		}
 	}
