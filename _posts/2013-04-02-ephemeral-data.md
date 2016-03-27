@@ -1,14 +1,12 @@
 ---
-published:  false
-num:        "012"
+id:         Y2013005
 cat:        projects
 title:      "Study: Ephemeral Data"
 path:       ephemeral-data
 images:
-  - src:    post-012_img.png
-    class:  post-img
-    width:  750
-    height: 1023
+  - ext:    01.jpg
+    width:  2400
+    height: 3271
 tags:
   - static
 ---

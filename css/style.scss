@@ -119,8 +119,8 @@ p {
 .container.fluid #proj-list {
 	background:#fff;
 	width:100%;
+	overflow:auto;
 	padding:0 1rem;
-	overflow:hidden;
 	@include box-sizing(border-box);
 	}
 
