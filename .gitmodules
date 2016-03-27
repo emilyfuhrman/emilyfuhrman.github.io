@@ -6,10 +6,6 @@
 	path = x/boats
 	url = https://github.com/emilyfuhrman/boats.git
 	ignore = dirty
-[submodule "x/sirens"]
-	path = x/sirens
-	url = https://github.com/emilyfuhrman/sirens.git
-	ignore = dirty
 [submodule "x/F2015002"]
 	path = x/F2015002
 	url = https://github.com/emilyfuhrman/F2015002.git

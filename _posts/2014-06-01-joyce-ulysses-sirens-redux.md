@@ -2,6 +2,7 @@
 id:         Y2014001
 title:      "Visualizing Joyce's Ulysses: &quot;Sirens&quot; as a Graphic Score"
 path:       joyce-ulysses-sirens-redux
+int:        true
 images:
   - ext:    01.jpg
     width:  2400
@@ -19,8 +20,6 @@ tags:
   - text
   - dh
 ---
-[Permalink](/x/sirens)
-
 In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations," and as including the "eight regular parts of a _fuga per canonem_." While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
 
 The first 63 lines of the chapter introduce 99 words and syllables that reappear in different forms throughout the rest of the text. The sounds ultimately act as [leitmotifs](http://en.wikipedia.org/wiki/Leitmotif), evoking the sensory presence of different characters at different times.
