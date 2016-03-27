@@ -1,6 +1,9 @@
 {% include header.html %}
 <div id='proj'>
     <!-- check here for page.int == true, to get interactive permalink /interactive/page.id/ -->
+    <div id='info'>
+        <div class='title'>{{ page.title }}</div>
+    </div>
     <div id='media'>
         {% for p in page.images %}
         {% if p.half == true %}
