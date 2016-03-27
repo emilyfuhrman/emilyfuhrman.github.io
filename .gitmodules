@@ -16,3 +16,6 @@
 	path = interactive/Y2014003
 	url = https://github.com/emilyfuhrman/Y2014003.git
 	ignore = dirty
+[submodule "interactive/F2015002"]
+	path = interactive/F2015002
+	url = https://github.com/emilyfuhrman/F2015002.git
