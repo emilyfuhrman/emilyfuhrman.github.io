@@ -18,7 +18,7 @@ cred:
 tags:
   - interactive
   - text
-  - dh
+  - digital humanities
 ---
 In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations," and as including the "eight regular parts of a _fuga per canonem_." While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
 
