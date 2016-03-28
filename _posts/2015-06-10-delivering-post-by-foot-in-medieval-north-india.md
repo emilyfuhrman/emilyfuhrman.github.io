@@ -11,6 +11,9 @@ images:
   - ext:    02.jpg
     width:  2400
     height: 1529
+team:
+  - Prof. Manan Ahmed
+  - Jeremiah Trinidad-Christensen
 tags:
   - interactive
   - collaboration

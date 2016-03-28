@@ -288,6 +288,7 @@ span.i {
 	width:100%;
 	padding:0.325rem 0 0 0;
 	}
+#proj .sub .info,
 #proj .sub .link {
 	padding:0.125rem 0;
 	@include box-sizing(border-box);
@@ -344,6 +345,9 @@ span.i {
 	}
 #proj .sub #post-paper .label {
 	background:url(/media/assets/icon_black_paper.svg) no-repeat 0 0;
+	}
+#proj .sub #post-team .label {
+	background:url(/media/assets/icon_black_team.svg) no-repeat 0 0;
 	}
 #proj .sub #post-tags .label {
 	background:url(/media/assets/icon_black_tag.svg) no-repeat 0 0;

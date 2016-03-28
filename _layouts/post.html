@@ -44,6 +44,21 @@
             <div class='link'><a href='/papers/{{ page.id }}.pdf' target='_blank'>Paper</a></div>
         </div>
         {% endif %}
+        {% if page.team %}
+        <div id='post-team' class='sub-section'>
+            <div class='label'></div>
+            <div class='info'>
+            <span>Team:&nbsp;</span>
+            {% for t in page.team %}
+            {% if forloop.last %}
+            <span>{{ t }}</span>
+            {% else %}
+            <span>{{ t }}&#44;&nbsp;</span>
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+        {% endif %}
         <div id='post-tags' class='sub-section'>
             <div class='label'></div>
             {% for t in page.tags %}
