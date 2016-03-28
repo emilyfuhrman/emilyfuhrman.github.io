@@ -1,7 +1,6 @@
 {% include header.html %}
 <div id='proj'>
     <!-- check here for page.perm to get interactive permalink /interactive/page.id/ -->
-    <!-- check for github "https://github.com/emilyfuhrman/[ID]" -->
     <!-- check for paper "/papers/[ID]" -->
     <div id='info'>
         <div class='title'>{{ page.title }}</div>
@@ -25,6 +24,32 @@
         <p>
             {{ content }}
         </p>
+    </div>
+    <div class='sub'>
+        {% if page.perm %}
+        <div id='post-permalink' class='sub-section'>
+            <div class='label'></div>
+            <div class='link'><a href='{{ page.perm }}' target='_blank'>Permalink</a></div>
+        </div>
+        {% endif %}
+        {% if page.github %}
+        <div id='post-github' class='sub-section'>
+            <div class='label'></div>
+            <div class='link'><a href='https://github.com/emilyfuhrman/{{ page.id }}' target='_blank'>GitHub</a></div>
+        </div>
+        {% endif %}
+        {% if page.paper %}
+        <div id='post-paper' class='sub-section'>
+            <div class='label'></div>
+            <div class='link'><a href='/papers/{{ page.id }}' target='_blank'>Paper</a></div>
+        </div>
+        {% endif %}
+        <div id='post-tags' class='sub-section'>
+            <div class='label'></div>
+            {% for t in page.tags %}
+            <div class='tag'><span>{{ t }}</span></div>
+            {% endfor %}
+        </div>
     </div>
     <div id='post-nav'>
         <div id='previous' class='arrow'>

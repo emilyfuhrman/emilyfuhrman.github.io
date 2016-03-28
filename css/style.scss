@@ -49,6 +49,10 @@ p {
 	font-weight:normal;
 	}
 
+span.i {
+	font-style:italic;
+	}
+
 /* 	------------------------------------
 	GENERAL
    	------------------------------------ */
@@ -199,6 +203,7 @@ p {
 	}
 #proj #info .title {
 	float:left;
+	padding-bottom:1.5rem;
 	}
 
 #proj #media {
@@ -262,6 +267,82 @@ p {
 #proj #post-nav .arrow a {
 	text-decoration:none;
 	border:none;
+	}
+
+#proj .sub {
+	display:block;
+	float:left;
+	width:100%;
+	color:#d4d4d4;
+	font-size:0.5rem;
+	text-transform:uppercase;
+	line-height:1;
+	vertical-align:baseline;
+	padding:1.2rem 0 0.6rem;
+	clear:both;
+	}
+#proj .sub .sub-section {
+	display:block;
+	float:left;
+	width:100%;
+	padding:0.325rem 0 0 0;
+	}
+#proj .sub .link {
+	padding:0.125rem 0;
+	@include box-sizing(border-box);
+	}
+#proj .sub .link a {
+	display:block;
+	float:left;
+	color:#d4d4d4;
+	padding-bottom:0.0625rem;
+	border-bottom:none;
+	}
+#proj .sub .link a:hover {
+	color:$color-black;
+	border-bottom:1px solid $color-black;
+	}
+
+#proj .sub span {
+	display:block;
+	float:left;
+	line-height:1;
+	}
+
+#proj .sub #post-tags {
+	}
+#proj .sub #post-tags .tag {
+	display:inline-block;
+	float:left;
+	background:white;
+	text-align:center;
+	line-height:1;
+	white-space:nowrap;
+	margin:-0.125rem 0.25rem 0.4rem 0;
+	padding:0.25rem;
+	border:1px solid #efefef;
+	@include box-sizing(border-box);
+	}
+#proj .sub #post-tags .tag::before,
+#proj .sub #post-tags .tag::after {
+	@include box-sizing(border-box);
+	}
+
+#proj .sub .label {
+	float:left;
+	width:0.75rem;
+	height:0.75rem;
+	margin-top:0;
+	padding-right:0.5rem;
+	}
+#proj .sub #post-permalink .label {
+	background:url(/media/assets/icon_link.svg) no-repeat 0 0;
+	}
+#proj .sub #post-github .label {
+	background:url(/media/assets/icon_github.svg) no-repeat 0 0;
+	}
+#proj .sub #post-tags .label {
+	background:url(/media/assets/icon_tag.svg) no-repeat 0 0;
 	}
 
 /* 	------------------------------------
@@ -1026,3 +1107,13 @@ p {
 		margin-left:1.5rem;
 		}
 	}
+
+/* 	------------------------------------
+	FIREFOX HACKS
+   	------------------------------------ */
+
+@-moz-document url-prefix() { 
+  #proj .sub #post-tags .tag {
+     padding:0.3rem 0.25rem 0.2rem;
+  }
+}

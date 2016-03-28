@@ -3,6 +3,7 @@ id:         F2015002
 title:      "Delivering Post by Foot in Medieval North India"
 path:       delivering-post-by-foot-in-medieval-north-india
 perm:       /interactive/F2015002
+github:     true
 images:
   - ext:    01.jpg
     width:  2400
@@ -13,7 +14,7 @@ images:
 tags:
   - interactive
   - collaboration
-  - text
+  - map
   - digital humanities
 ---
 An interactive map representing a medieval postal route extrapolated from the text of _Arabic Classical Accounts of India and China_. Built in collaboration with the Columbia University Department of History. 
