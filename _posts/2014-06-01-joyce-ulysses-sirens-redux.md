@@ -12,7 +12,7 @@ images:
     width:  2400
     height: 1529
 cred:
-  - name:   "2014 Kantar Information is Beautiful Awards: Longlist"
+  - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
   - name:   "Columbia University Group for Experimental Methods in the Humanities"
     link:   "http://xpmethod.plaintext.in/theory-method/visualizing-joyce.html"

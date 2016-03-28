@@ -26,6 +26,29 @@
         </p>
     </div>
     <div class='sub'>
+        {% if page.cred %}
+        <div id='post-cred' class='sub-section'>
+            <div class='label'></div>
+            <div class='info'>
+            <span>Featured:&nbsp;</span>
+            {% for c in page.cred %}
+            {% if forloop.last %}
+                {% if c.link %}
+                <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
+                {% else %}
+                <span>{{ c }}</span>
+                {% endif %}
+            {% else %}
+                {% if c.link %}
+                <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a>&#44;&nbsp;</span>
+                {% else %}
+                <span>{{ c }}&#44;&nbsp;</span>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+        {% endif %}
         {% if page.perm %}
         <div id='post-permalink' class='sub-section'>
             <div class='label'></div>
