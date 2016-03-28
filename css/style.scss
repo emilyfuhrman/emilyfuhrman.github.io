@@ -274,7 +274,7 @@ span.i {
 	display:block;
 	float:left;
 	width:100%;
-	color:#d4d4d4;
+	color:$color-black;
 	font-size:0.5rem;
 	text-transform:uppercase;
 	line-height:1;
@@ -295,7 +295,7 @@ span.i {
 #proj .sub .link a {
 	display:block;
 	float:left;
-	color:#d4d4d4;
+	color:$color-black;
 	padding-bottom:0.0625rem;
 	border-bottom:none;
 	}
@@ -321,7 +321,7 @@ span.i {
 	white-space:nowrap;
 	margin:-0.125rem 0.25rem 0.4rem 0;
 	padding:0.25rem;
-	border:1px dotted #f2f2f2;
+	border:1px dotted #ddd;
 	@include box-sizing(border-box);
 	}
 #proj .sub #post-tags .tag::before,
@@ -337,16 +337,16 @@ span.i {
 	padding-right:0.5rem;
 	}
 #proj .sub #post-permalink .label {
-	background:url(/media/assets/icon_link.svg) no-repeat 0 0;
+	background:url(/media/assets/icon_black_link.svg) no-repeat 0 0;
 	}
 #proj .sub #post-github .label {
-	background:url(/media/assets/icon_github.svg) no-repeat 0 0;
+	background:url(/media/assets/icon_black_github.svg) no-repeat 0 0;
 	}
 #proj .sub #post-paper .label {
-	background:url(/media/assets/icon_paper.svg) no-repeat 0 0;
+	background:url(/media/assets/icon_black_paper.svg) no-repeat 0 0;
 	}
 #proj .sub #post-tags .label {
-	background:url(/media/assets/icon_tag.svg) no-repeat 0 0;
+	background:url(/media/assets/icon_black_tag.svg) no-repeat 0 0;
 	}
 
 /* 	------------------------------------
