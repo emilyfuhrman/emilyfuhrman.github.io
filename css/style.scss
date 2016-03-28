@@ -41,6 +41,7 @@ a {
 	color:black;
 	text-decoration:none;
 	border-bottom:2px solid $color-black;
+	outline:0;
 	cursor:cell !important;
 	}
 
@@ -320,7 +321,7 @@ span.i {
 	white-space:nowrap;
 	margin:-0.125rem 0.25rem 0.4rem 0;
 	padding:0.25rem;
-	border:1px solid #efefef;
+	border:1px dotted #f2f2f2;
 	@include box-sizing(border-box);
 	}
 #proj .sub #post-tags .tag::before,
@@ -340,6 +341,9 @@ span.i {
 	}
 #proj .sub #post-github .label {
 	background:url(/media/assets/icon_github.svg) no-repeat 0 0;
+	}
+#proj .sub #post-paper .label {
+	background:url(/media/assets/icon_paper.svg) no-repeat 0 0;
 	}
 #proj .sub #post-tags .label {
 	background:url(/media/assets/icon_tag.svg) no-repeat 0 0;
