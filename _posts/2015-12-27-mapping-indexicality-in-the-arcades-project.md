@@ -2,12 +2,12 @@
 id:         Y2015004
 title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
 path:       mapping-indexicality-in-the-arcades-project
+github:     true
+paper:      true
 images:     
   - ext:    01.jpg
     width:  2400
     height: 2400
-github:     true
-paper:      true
 cred:
   - name:   "Columbia University Group for Experimental Methods in the Humanities"
     link:   "http://xpmethod.plaintext.in/theory-method/literary-visualization-lab.html"
