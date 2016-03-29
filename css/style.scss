@@ -388,8 +388,11 @@ span.i {
 #base #footer .link a {
 	border:none;
 	}
-#base #footer .link.social.twitter {
+#base #footer .link.social.email {
 	padding-left:1rem;
+	}
+#base #footer .link.social.twitter {
+	margin-left:0.5rem;
 	}
 #base #footer .link.social.instagram,
 #base #footer .link.cv {
@@ -485,9 +488,10 @@ span.i {
 		font-size:1.5rem;
 		line-height:2rem;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:0;
 		}
+	#base #footer .link.social.twitter,
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:0;
@@ -601,9 +605,10 @@ span.i {
 		font-size:1rem;
 		line-height:1.5rem;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:0;
 		}
+	#base #footer .link.social.twitter,
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
@@ -714,7 +719,7 @@ span.i {
 		font-size:1rem;
 		line-height:1.5rem;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:0;
 		}
 	}
@@ -842,9 +847,10 @@ span.i {
 		font-size:1rem;
 		line-height:1.5rem;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:0;
 		}
+	#base #footer .link.social.twitter,
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
@@ -974,9 +980,10 @@ span.i {
 		font-size:1rem;
 		line-height:1.5rem;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:0;
 		}
+	#base #footer .link.social.twitter,
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
@@ -1110,9 +1117,10 @@ span.i {
 		float:left;
 		width:auto;
 		}
-	#base #footer .link.social.twitter {
+	#base #footer .link.social.email {
 		padding-left:1rem;
 		}
+	#base #footer .link.social.twitter,
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
