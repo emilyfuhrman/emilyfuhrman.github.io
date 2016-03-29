@@ -4,6 +4,8 @@
 $color-black:#000;
 $color-accent:#0055FF;
 
+$ttime:120ms;
+
 @mixin transition($transition...) {
   -webkit-transition:$transition;
      -moz-transition:$transition;
@@ -273,7 +275,7 @@ span.i {
 	}
 #proj-list a.list-img-link .metadata p {
 	position:absolute;
-	@include transition(top 120ms ease, bottom 120ms ease);
+	@include transition(top $ttime ease, bottom $ttime ease);
 	}
 #proj-list a.list-img-link .metadata p.list-title {
 	font-size:0.65rem;
@@ -340,12 +342,37 @@ span.i {
 	}
 #proj #media .media img,
 #proj #media .media video {
+	position:relative;
 	display:block;
 	width:100%;
 	height:auto;
 	margin:0;
 	padding:0;
 	outline:0;
+	}
+#proj #media .media video {
+	border:none;
+	}
+#proj #media .media .video-container {
+	position:relative;
+	cursor:cell;
+	}
+#proj #media .media .video-container .video-cover {
+	opacity:0.4;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:url(/media/assets/icon_video_play.svg) no-repeat 50% 50%;
+	background-size:30%;
+	z-index:999;
+	pointer-events:none;
+	@include transition(opacity 240ms ease);
+	}
+#proj #media .media .video-container:hover .video-cover {
+	opacity:1;
+	}
+#proj #media .media .video-container.active .video-cover {
+	opacity:0;
 	}
 #proj #media .media .caption {
 	margin-top:1.2em;
