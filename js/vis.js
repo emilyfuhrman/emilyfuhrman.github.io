@@ -527,8 +527,9 @@ var schema = function(){
 					return Math.round(units) +'px';
 				})
 				.style('top',function(d,i){
-					var offset = 43;
-					return offset -1 +'px';
+					//var offset = 43;
+					//return offset -1 +'px';
+					return '1rem';
 				});
 			unitBars.exit().remove();
 		}
