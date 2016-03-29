@@ -338,12 +338,14 @@ span.i {
 #proj #media .media.half.right {
 	padding-left:1.5rem;
 	}
-#proj #media .media img {
+#proj #media .media img,
+#proj #media .media video {
 	display:block;
 	width:100%;
 	height:auto;
 	margin:0;
 	padding:0;
+	outline:0;
 	}
 #proj #media .media .caption {
 	margin-top:1.2em;

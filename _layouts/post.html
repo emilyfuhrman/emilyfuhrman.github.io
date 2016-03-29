@@ -13,8 +13,15 @@
             {% assign class_side = '' %}
         {% endif %}
         <div class='{{ class_size }} {{ class_side }} media'>
+        {% if p.video == true %}
+            <video class='post-video' width='{{ p.width }}' height= '{{ p.height }}' controls {% if p.loop == true %}loop{% endif %}>
+                <source src='/media/{{ page.id }}/{{ p.ext }}' type='video/mp4'>
+            </video>
+            <p class='caption'>{{ p.cap }}</p>
+        {% else %}
             <img class='post-img' src='/media/{{ page.id }}/{{ p.ext }}' width='{{ p.width }}' height= '{{ p.height }}' />
             <p class='caption'>{{ p.cap }}</p>
+        {% endif %}
         </div>
         {% endfor %}
     </div>

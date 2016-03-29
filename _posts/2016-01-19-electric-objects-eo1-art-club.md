@@ -1,35 +1,37 @@
 ---
-published: false
-id: "024"
-title: "Electric Objects EO1 Art Club"
-path: electric-objects-eo1-art-club
-cols:
-  - direction:  left
-    height:     1306
-    images:
-      - src:    post-024_imgs/004.png
-        class:  col
-        width:  357
-        height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/xM6K'>004</a>"
-      - src:    post-024_imgs/001.png
-        class:  col
-        width:  357
-        height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/xM4Q'>002</a>"
-  - direction:  right
-    height:     1306
-    images:
-      - src:    post-024_imgs/002.png
-        class:  col
-        width:  357
-        height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/3WkG'>001</a>"
-      - src:    post-024_imgs/003.png
-        class:  col
-        width:  357
-        height: 635
-        cap:    "<a href='https://www.electricobjects.com/objects/rMa1'>003</a>"
+id:         F2015021
+title:      "Electric Objects EO1 Art Club"
+path:       electric-objects-eo1-art-club
+perm:       "https://www.electricobjects.com/collections/67"
+images:
+  - ext:    04.mp4
+    video:  true
+    loop:   true
+    half:   true
+    side:   left
+    width:  1080
+    height: 1920
+  - ext:    02.mp4
+    video:  true
+    loop:   true
+    half:   true
+    side:   right
+    width:  1080
+    height: 1920
+  - ext:    01.mp4
+    video:  true
+    loop:   true
+    half:   true
+    side:   left
+    width:  1080
+    height: 1920
+  - ext:    03.mp4
+    video:  true
+    loop:   true
+    half:   true
+    side:   right
+    width:  1080
+    height: 1920
 tags:
   - dynamic
   - commission
