@@ -36,7 +36,7 @@ var schema = function(){
 		date_weekdays:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 		date_month:["January","February","March","April","May","June","July","August","September","October","November","December"],
 		generate:function(){
-			var self = vis,
+			var self = this,
 				w = window.innerWidth,
 				h = window.innerHeight,
 
@@ -299,15 +299,15 @@ var schema = function(){
 			verticesG = svg.selectAll('g.vertex')
 				.data(d3.entries(self.positions));
 			verticesG.enter().append('g')
-				.classed('vertex',true)
+				.classed('vertex',true);
+			verticesG
+				.attr('class',function(d,i){
+					return 'vertex _' +d.key;
+				})
 				.attr('transform',function(d,i){
 					var x = self.positions[d.key][0].x,
 						y = self.positions[d.key][0].y;
 					return 'translate(' + x + ',' + y + ')';
-				});
-			verticesG
-				.attr('class',function(d,i){
-					return 'vertex _' +d.key;
 				});
 			verticesG
 				.on('mouseover',function(d){
@@ -533,7 +533,4 @@ var schema = function(){
 			unitBars.exit().remove();
 		}
 	}
-}
-
-var vis = schema();
-vis.generate();
+};

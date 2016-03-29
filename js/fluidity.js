@@ -21,7 +21,3 @@ var setFixedHeader = function(){
 		$('#nav').removeClass('fixed');
 	}
 }
-
-window.onload = setFluid;
-window.onresize = setFluid;
-window.onscroll = setFixedHeader;
