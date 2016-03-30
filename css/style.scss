@@ -570,25 +570,23 @@ span.i {
 #contain #content_mid .section ul.fancy li:first-child {
 	padding-top:0;
 	}
-#contain #content_mid .section ul li .t_info {
+
+#contain #content_mid .section ul li .t_container {
+	float:left;
+	width:100%;
 	max-width:75%;
 	max-width:calc(100% - 6rem);
+	}
+#contain #content_mid .section ul li .t_info {
+	width:100%;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	text-decoration:none;
-	border:none;
-	}
-#contain #content_mid .section ul li .t_info a {
 	}
 #contain #content_mid .section ul li .t_right {
-	display:block;
 	float:right;
-	background:white;
-	font-size:0.8rem;
-	text-decoration:none;
-	z-index:1;
 	}
 #contain #content_mid .section ul li .t_below {
+	width:100%;
 	}
 
 .clear {
