@@ -26,34 +26,6 @@
       t_below:  "Boston, MA"
       link:     http://www.odsc.com/boston/
 - show:         false
-  id:           teaching
-  title:        "Teaching"
-  fancy:        true
-  list:
-    - name:     "Mapping for Architecture, Urbanism, &amp; the Humanities"
-      t_right:  S 2016
-      t_below:  "Columbia University, Teaching Assistant"
-    - name:     "Borderlands Seminar"
-      t_right:  S 2015
-      t_below:  "Columbia University, Teaching Assistant"
-- show:         false
-  id:           education
-  title:        "Education"
-  fancy:        true
-  list:
-    - name:     "Columbia University"
-      t_right:  <i>(in progress)</i>
-      t_below:  "MA, English &amp; Comparative Literature"
-      link:     http://www.columbia.edu/
-    - name:     "Northwestern University"
-      t_right:  2014
-      t_below:  "MS, Predictive Analytics"
-      link:     http://www.northwestern.edu/
-    - name:     "The College of William &amp; Mary"
-      t_right:  2010
-      t_below:  "BA, English, Philosophy, <i>summa cum laude</i>"
-      link:     http://www.wm.edu/
-- show:         false
   id:           press
   title:        "Press"
   list:
