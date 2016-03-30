@@ -285,8 +285,11 @@ span.i {
 	position:absolute;
 	background:#fff;
 	width:100%;
+	margin-left:-1px;
 	padding:81.66% 0 0;
 	padding-top:calc(100% - 2.5rem);
+	border-left:1px solid white;
+	border-right:1px solid white;
 	}
 #proj-list a.list-img-link .metadata p {
 	position:absolute;
@@ -574,6 +577,8 @@ span.i {
 	}
 #contain #content_mid .section ul li .t_right {
 	float:right;
+	text-decoration:none;
+	border:none;
 	}
 #contain #content_mid .section ul li .t_below {
 	}
