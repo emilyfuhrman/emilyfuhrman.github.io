@@ -1,10 +1,8 @@
 ---
-published:  false
-num:        "018"
-cat:        x
+id:         Y2014002
 title:      "✕ Y O U A R E H E R E : A Compendium of Floorplans"
 path:       youarehere
 tags:
-  - static
+  - interactive
   - compendium
 ---
