@@ -555,12 +555,14 @@ span.i {
 	list-style-type:none;
 	margin:0;
 	padding:1.5rem 0 0;
+	border:none;
 	}
 #contain #content_mid .section ul.fancy {
 	}
 #contain #content_mid .section ul li {
-	padding-top:0;
 	white-space:nowrap;
+	padding-top:0;
+	border:none;
 	}
 #contain #content_mid .section ul.fancy li {
 	padding-top:0.6rem;
@@ -581,7 +583,7 @@ span.i {
 #contain #content_mid .section ul li .t_right {
 	float:right;
 	text-decoration:none;
-	border:none;
+	border:none !important;
 	}
 #contain #content_mid .section ul li .t_below {
 	}
