@@ -1,5 +1,11 @@
 {% include header.html %}
-{% for s in site.data.subs[page.index_ID].items %}
-	<div>{{ s.name }}</div>
+{% for c in site.data.subs[page.index_ID].cats %}
+	<div id='{{ c }}' class='index-block'>
+	<div class='label'>{{ c }}</div>
+	{% assign item_array = site.data.subs[page.index_ID].items | where: "cat", c %}
+	{% for i in item_array %}
+	<div>{{ i.name }}</div>
+	{% endfor %}
+	</div>
 {% endfor %}
 {% include footer.html %}

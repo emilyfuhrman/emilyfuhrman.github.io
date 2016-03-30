@@ -1,164 +1,159 @@
 lab:
+  cats:
+    - maps
+    - data visualization
   items:
     - name:    Sensor dashboard
       date:    '02 2016'
       client:  Heat Seek
       path:    /lab/F2016003
-      tags:
-        - data visualization
+      cat:     data visualization
     - name:    In the Same Boats
       date:    '02 2016'
       client:  'Small Axe, Inc.'
       path:    /lab/F2015020
-      tags:
-        - maps
+      cat:     maps
+      cred:
+        - Alex Gil
+        - Kaiama Glover
+        - Buck Wanner
+        - Tola Ojulari
 idx:
+  cats:
+    - maps
+    - charts
+    - concept visualization
+    - data visualization
+    - data art
   items:
     - name:    The Customer Journey to Online Purchase
       date:    '12 2014'
       client:  Google
       thru:    Huge
       path:    https://www.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
+      cat:     data visualization
       cred:
         - David Furfero
         - Adam Lock
         - Brandon Schmittling
         - Jeff Weinberg
-      tags:
-        - data visualization
     - name:    A Surprise for Evolution in Giant Tree of Life
       date:    '05 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    https://www.quantamagazine.org/20150505-a-surprise-for-evolution-in-giant-tree-of-life/
+      cat:     charts
       cred:
         -  Olena Shmahalo
-      tags:
-        - charts
     - name:    The Particle That Broke a Cosmic Speed Limit
       date:    '05 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    https://www.quantamagazine.org/20150514-the-particle-that-broke-a-cosmic-speed-limit/
-      tags:
-        - concept visualization
+      cat:     concept visualization
       show:    false
     - name:    Will Computers Redefine the Roots of Math?
       date:    '05 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
+      cat:     concept visualization
       path:    https://www.quantamagazine.org/20150519-will-computers-redefine-the-roots-of-math/
-      tags:
-        - concept visualization
     - name:    The Nine Schoolgirls Challenge
       date:    '06 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    https://www.quantamagazine.org/?p=17055
+      cat:     concept visualization
       cred:
         -  Olena Shmahalo
-      tags:
-        - concept visualization
     - name:    Delivering Post by Foot in Medieval North India
       date:    '06 2015'
       client:  Columbia University
       cli_sub: Department of History
       path:    /x/F2015002
+      cat:     maps
       cred:    
         - Manan Ahmed
         - J.C. Trinidad-Christensen
-      tags:
-        - maps
     - name:    The numbers are in (and they're not pretty)
       date:    '06 2015'
       client:  Heat Seek NYC
       path:    http://heatseeknyc.tumblr.com/post/122185700625/the-numbers-are-in-and-theyre-not-pretty
+      cat:     charts
       cred:    
         - Jesse Fish
-      tags:
-        - charts
     - name:    A persistent and predictable problem
       date:    '06 2015'
       client:  Heat Seek NYC
       path:    http://heatseeknyc.tumblr.com/post/122874427185/a-persistent-and-predictable-problem
+      cat:     charts
       cred:    
         - Jesse Fish
-      tags:
-        - charts
     - name:    'Collab: PAOM ✕ Witches of Bushwick'
       date:    '07 2015'
       client:  WITCHES
       cli_sub: PAOM ✕ Witches of Bushwick
       path:    https://paom.com/collections/witches/
-      tags:
-        - data art
+      cat:     data art
     - name:    The heat's out... again
       date:    '07 2015'
       client:  Heat Seek NYC
       path:    http://heatseeknyc.tumblr.com/post/123667390710/the-heats-out-again
+      cat:     charts
       cred:    
         - Jesse Fish
-      tags:
-        - charts
     - name:    'Theories of Everything, Mapped'
       date:    '07 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    https://www.quantamagazine.org/?p=17950
+      cat:     data visualization
       cred:    
         - Thomas Lin
         - Olena Shmahalo
         - Natalie Wolchover
-      tags:
-        - data visualization
     - name:    'At Least 1,433 People Were Killed With a Gun in the U.S. Between the Charleston and Lafayette Shootings'
       date:    '07 2015'
       client:  The Trace
       path:    http://www.thetrace.org/2015/08/gun-deaths-charleston-chattanooga-lafayette/
+      cat:     charts
       cred:
         - Jennifer Mascia
-      tags:
-        - charts
     - name:    'The Gun Doesn’t Have to Go Off for It to Be a Hate Crime'
       date:    '08 2015'
       client:  The Trace
       path:    http://www.thetrace.org/2015/08/hate-crimes-race-assault-data-guns/
+      cat:     charts
       cred:
         - James Burnett
         - Mike Spies
-      tags:
-        - charts
     - name:    A tale of two cities
       date:    '08 2015'
       client:  Heat Seek NYC
       path:    http://heatseeknyc.tumblr.com/post/127651132195/a-tale-of-two-cities
+      cat:     charts
       cred:    
         - Jesse Fish
-      tags:
-        - charts
     - name:    'Life’s Big Leaps: Critical Moments in Evolution'
       date:    '10 2015'
       client:  Simons Foundation
       cli_sub: Quanta Magazine
       path:    https://www.quantamagazine.org/20151029-lokiarchaeota-origin-complex-life/
+      cat:     charts
       cred:    
         - Michael Moyer
         - Olena Shmahalo
         - Emily Singer
-      tags:
-        - charts
     - name:    'Watch How Chicago Gets Flooded with Thousands of Crime Guns'
       date:    '10 2015'
       client:  The Trace
       path:    http://www.thetrace.org/2015/11/chicago-gun-laws-shootings-trafficking/
+      cat:     maps
       cred:
         - Miles Kohrman
         - Mike Spies
-      tags:
-        - maps
     - name:    'Electric Objects EO1 Art Club'
       date:    '01 2016'
       client:  Electric Objects
       path:    /projects/electric-objects-eo1-art-club.html
-      tags:
-        - data art
+      cat:     data art
