@@ -550,7 +550,7 @@ span.i {
 	}
 #contain #content_mid .section ul {
 	background:transparent;
-	font-size:0.8rem !important;
+	font-size:0.8rem;
 	line-height:1.2rem;
 	list-style-type:none;
 	margin:0;
@@ -584,6 +584,7 @@ span.i {
 	display:block;
 	float:right;
 	background:white;
+	font-size:0.8rem;
 	text-decoration:none;
 	z-index:1;
 	}
