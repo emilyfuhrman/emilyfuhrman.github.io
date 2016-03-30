@@ -13,8 +13,8 @@
 		{% else %}
 		{% capture client %}{{ i.client }}{% endcapture %}
 		{% endif %}
-		<div class='info'>
-			<div class='client'>{{ client }}&mdash;</div><a href='{{ i.path }}' target='_blank'>{{ i.name }}</a>
+		<div class='info collapse'>
+			<span class='client'>{{ client }}&mdash;</span><a href='{{ i.path }}' target='_blank'>{{ i.name }}</a>
 		</div>
 		<div class='date'>{{ i.date }}</div>
 	</li>
