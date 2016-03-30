@@ -40,11 +40,16 @@ body {
 	}
 
 a {
-	color:black;
+	color:$color-black;
 	text-decoration:none;
+	padding-bottom:0.0625rem;
 	border-bottom:2px solid $color-black;
 	outline:0;
 	cursor:cell !important;
+	}
+a:hover {
+	color:$color-black;
+	border-bottom-color:$color-black;
 	}
 
 p {
@@ -105,7 +110,7 @@ span.i {
 #nav .container .nav.home,
 #nav .container.fluid .nav.home {
 	float:left;
-	padding-left:1rem;
+	margin-left:1rem;
 	}
 #nav .container .nav.abt {
 	float:right;
@@ -114,7 +119,15 @@ span.i {
 #nav .container .nav.proj,
 #nav .container.fluid .nav.proj {
 	float:right;
-	padding-right:1rem;
+	margin-right:1rem;
+	}
+
+#nav .container a.btn:hover {
+	color:$color-black;
+	}
+#nav .container a.btn:hover .nav {
+	border-bottom:none;
+	/*border-bottom:2px solid $color-black;*/
 	}
 
 /* 	------------------------------------
@@ -235,6 +248,9 @@ span.i {
 	@include box-sizing(border-box);
 	}
 
+#proj-list a:hover {
+	color:$color-black;
+	}
 #proj-list a.list-img-link {
 	position:relative;
 	display:inline-block;
@@ -402,6 +418,9 @@ span.i {
 	text-decoration:none;
 	border:none;
 	}
+#proj #post-nav .arrow a:hover {
+	color:$color-black;
+	}
 
 #proj .sub {
 	display:block;
@@ -432,6 +451,7 @@ span.i {
 	display:block;
 	float:left;
 	color:$color-black;
+	padding-bottom:0;
 	border-bottom:none;
 	}
 #proj .sub .link a:hover {
@@ -589,6 +609,10 @@ span.i {
 #base #footer .link a {
 	border:none;
 	}
+#base #footer .link a:hover {
+	color:$color-black;
+	border-bottom:2px solid $color-black;
+	}
 #base #footer .link.social.email {
 	padding-left:1rem;
 	}
@@ -636,7 +660,7 @@ span.i {
 	#nav .container.fluid .nav.abt {
 		float:left;
 		width:100%;
-		padding:0;
+		margin:0;
 		}
 
 	.container #proj-list,
@@ -698,15 +722,17 @@ span.i {
 		margin-top:0;
 		border-top:none;
 		}
-	
-	#base #footer .link {
-		float:left;
-		width:100%;
-		}
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1.5rem;
 		line-height:2rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:100%;
+		}
+	#base #footer .link a:hover {
+		border-bottom:none;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -749,7 +775,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		width:auto;
-		padding:0;
+		margin:0;
 		}
 	#nav .container .nav.home,
 	#nav .container.fluid .nav.home {
@@ -758,6 +784,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		float:right;
+		margin-right:1.5rem;
 		}
 	#nav .container .nav.proj,
 	#nav .container.fluid .nav.proj {
@@ -835,14 +862,17 @@ span.i {
 		border-top:none;
 		}
 
-	#base #footer .link {
-		float:left;
-		width:auto;
-		}
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1rem;
 		line-height:1.5rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -885,7 +915,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		width:auto;
-		padding:0;
+		margin:0;
 		}
 	#nav .container .nav.home,
 	#nav .container.fluid .nav.home {
@@ -894,6 +924,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		float:right;
+		margin-right:1.5rem;
 		}
 	#nav .container .nav.proj,
 	#nav .container.fluid .nav.proj {
@@ -967,15 +998,18 @@ span.i {
 		margin-top:0;
 		border-top:none;
 		}
-	
-	#base #footer .link {
-		float:left;
-		width:auto;
-		}
+
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1rem;
 		line-height:1.5rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1013,7 +1047,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		width:auto;
-		padding:0;
+		margin:0;
 		}
 	#nav .container .nav.home,
 	#nav .container.fluid .nav.home {
@@ -1022,6 +1056,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		float:right;
+		margin-right:1.5rem;
 		}
 	#nav .container .nav.proj,
 	#nav .container.fluid .nav.proj {
@@ -1115,14 +1150,17 @@ span.i {
 		border-top:none;
 		}
 	
-	#base #footer .link {
-		float:left;
-		width:auto;
-		}
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1rem;
 		line-height:1.5rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1165,7 +1203,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		width:auto;
-		padding:0;
+		margin:0;
 		}
 	#nav .container .nav.home,
 	#nav .container.fluid .nav.home {
@@ -1174,6 +1212,7 @@ span.i {
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
 		float:right;
+		margin-right:1.5rem;
 		}
 	#nav .container .nav.proj,
 	#nav .container.fluid .nav.proj {
@@ -1267,14 +1306,17 @@ span.i {
 		border-top:none;
 		}
 	
-	#base #footer .link {
-		float:left;
-		width:auto;
-		}
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1rem;
 		line-height:1.5rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1322,7 +1364,7 @@ span.i {
 	#nav .container .nav.home,
 	#nav .container.fluid .nav.home {
 		float:left;
-		padding-left:1rem;
+		margin-left:1rem;
 		}
 	#nav .container .nav.abt,
 	#nav .container.fluid .nav.abt {
@@ -1331,7 +1373,7 @@ span.i {
 	#nav .container .nav.proj,
 	#nav .container.fluid .nav.proj {
 		float:right;
-		padding-right:1rem;
+		margin-right:1rem;
 		}
 
 	.container #proj-list,
@@ -1431,10 +1473,12 @@ span.i {
 		font-size:1rem;
 		line-height:1.5rem;
 		}
-	
 	#base #footer .link {
 		float:left;
 		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
 		}
 	#base #footer .link.social.email {
 		padding-left:1rem;
