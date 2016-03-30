@@ -10,6 +10,7 @@ $(document).ready(function(){
 		schema().generate();
 	}
 });
+window.onunload = function(){}; 
 window.onresize = function(){
 	setFluid();
 	if(window.location.pathname.length === 0 || window.location.pathname === '/'){
