@@ -574,6 +574,8 @@ span.i {
 	max-width:calc(100% - 6rem);
 	overflow:hidden;
 	text-overflow:ellipsis;
+	text-decoration:none;
+	border:none;
 	}
 #contain #content_mid .section ul li .t_right {
 	float:right;
