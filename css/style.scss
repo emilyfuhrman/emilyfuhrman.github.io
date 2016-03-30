@@ -580,8 +580,7 @@ span.i {
 #contain #content_mid .section ul li .t_right {
 	background:white;
 	float:right;
-	border-bottom:none;
-	z-index:1;
+	border-bottom:none !important;
 	}
 #contain #content_mid .section ul li .t_below {
 	float:left;
