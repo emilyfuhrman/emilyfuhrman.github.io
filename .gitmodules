@@ -1,7 +1,3 @@
-[submodule "x/youarehere"]
-	path = x/youarehere
-	url = https://github.com/emilyfuhrman/youarehere.git
-	ignore = dirty
 [submodule "lab/F2016003"]
 	path = lab/F2016003
 	url = https://github.com/emilyfuhrman/F2016003.git
