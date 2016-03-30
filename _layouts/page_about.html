@@ -15,19 +15,19 @@
 		{% if d.fancy == true %}
 		<ul class='fancy'>
 			{% for item in d.list %}
-			{% if item.link %}
 			<li>
-				<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
-				{% if item.t_right %}
-				<span class='t_right'>{{ item.t_right }}</span>
-				{% endif %}
-				{% if item.t_below %}
-				<div class='t_below'>{{ item.t_below }}</div>
-				{% endif %}
-			</li>
+			{% if item.link %}
+			<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
 			{% else %}
-			<li>{{ item.name }}</li>
+			{{ item.name }}
 			{% endif %}
+			{% if item.t_right %}
+			<div class='t_right'>{{ item.t_right }}</div>
+			{% endif %}
+			{% if item.t_below %}
+			<div class='t_below'>{{ item.t_below }}</div>
+			{% endif %}
+			</li>
 			{% endfor %}
 		</ul>
 		{% else %}
