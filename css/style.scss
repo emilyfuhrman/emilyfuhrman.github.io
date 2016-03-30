@@ -549,6 +549,7 @@ span.i {
 	border-top:none;
 	}
 #contain #content_mid .section ul {
+	background:transparent;
 	font-size:0.8rem;
 	line-height:1.2rem;
 	list-style-type:none;
@@ -567,8 +568,6 @@ span.i {
 #contain #content_mid .section ul.fancy li:first-child {
 	padding-top:0;
 	}
-#contain #content_mid .section ul li a {
-	}
 #contain #content_mid .section ul li .t_info {
 	max-width:75%;
 	max-width:calc(100% - 6rem);
@@ -576,6 +575,9 @@ span.i {
 	text-overflow:ellipsis;
 	text-decoration:none;
 	border:none;
+	}
+#contain #content_mid .section ul li .t_info a {
+	float:left;
 	}
 #contain #content_mid .section ul li .t_right {
 	float:right;
