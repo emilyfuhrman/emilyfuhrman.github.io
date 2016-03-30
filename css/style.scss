@@ -585,6 +585,57 @@ span.i {
 	}
 
 /* 	------------------------------------
+	IDX
+   	------------------------------------ */
+
+#contain.idx {
+	}
+
+#contain.idx .descrip {
+	padding-bottom:1rem;
+	border-bottom:1px solid rgba(0,0,0,0.02);
+	}
+
+#contain.idx .idx-block {
+	display:block;
+	float:left;
+	width:100%;
+    padding:2rem 0 0;
+	}
+
+#contain.idx .idx-block .label {
+	padding:0;
+	}
+
+#contain.idx .idx-block ul {
+    font-size:0.8rem;
+    line-height:1.2rem;
+	list-style-type:none;
+	margin:0;
+	padding:1.5rem 0 0;
+	}
+#contain.idx .idx-block ul li {
+	float:left;
+	width:100%;
+	white-space:nowrap;
+	}
+#contain.idx .idx-block ul li .info {
+	float:left;
+	max-width:75%;
+	max-width:calc(100% - 5rem);
+	overflow:hidden;
+	text-overflow:ellipsis;
+	}
+#contain.idx .idx-block ul li .info a {
+	}
+#contain.idx .idx-block ul li .info .client {
+	float:left;
+	}
+#contain.idx .idx-block ul li .date {
+	float:right;
+	}
+
+/* 	------------------------------------
 	FOOT
    	------------------------------------ */
 
@@ -722,6 +773,7 @@ span.i {
 		margin-top:0;
 		border-top:none;
 		}
+
 	#base #footer.container,
 	#base #footer.container.fluid {
 		font-size:1.5rem;
