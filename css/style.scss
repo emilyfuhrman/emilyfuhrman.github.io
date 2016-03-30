@@ -581,8 +581,9 @@ span.i {
 #contain #content_mid .section ul li .t_info a {
 	}
 #contain #content_mid .section ul li .t_right {
-	background:white;
+	display:block;
 	float:right;
+	background:white;
 	text-decoration:none;
 	z-index:1;
 	}
