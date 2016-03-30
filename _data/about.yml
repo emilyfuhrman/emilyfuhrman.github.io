@@ -14,15 +14,15 @@
   fancy:        true
   list:
     - name:     The Art of Data Visualization
-      t_right:  "2016 04 06"
+      t_right:  2016 04 06
       t_below:  Columbia University
       link:     http://library.columbia.edu/news/events/data-visualization.html
     - name:     The Art of Data Visualization
-      t_right:  "2016 04 07"
+      t_right:  2016 04 07
       t_below:  Columbia University
       link:     http://library.columbia.edu/news/events/data-visualization.html
     - name:     ODSC East
-      t_right:  "2016 05"
+      t_right:  2016 05
       t_below:  "Boston, MA"
       link:     http://www.odsc.com/boston/
 - show:         false
