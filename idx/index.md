@@ -1,9 +1,7 @@
 ---
-layout: page_index
-title: "IDX"
-indexID: idx
-mixin: false
+layout:      page_index
+title:       "IDX"
+index_ID:    idx
 description: Emily Fuhrman
 ---
-
 An index of client projects & collaborative work. 

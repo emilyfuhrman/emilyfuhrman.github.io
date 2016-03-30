@@ -1,5 +1,5 @@
-- id:          lab
-  files:
+lab:
+  items:
     - name:    Sensor dashboard
       date:    '02 2016'
       client:  Heat Seek
@@ -12,8 +12,8 @@
       path:    /lab/F2015020
       tags:
         - maps
-- id:          idx
-  files:
+idx:
+  items:
     - name:    The Customer Journey to Online Purchase
       date:    '12 2014'
       client:  Google
