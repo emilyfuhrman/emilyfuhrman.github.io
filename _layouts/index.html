@@ -1,0 +1,18 @@
+{% include header.html %}
+<div id='vis'></div>
+<div class='vis legend resize container'>
+	<div class='legend-title'>1 unit distance from origin</div>
+	<div class='legend-descrip'><span></span></div>
+</div>
+<script>
+	var JEKYLL_POSTS = [];
+	{% for post in site.posts %}
+		JEKYLL_POSTS.push({
+			day:  "{{ post.date | date: "%A" }}",
+			month:"{{ post.date | date: "%m" }}",
+			year: "{{ post.date | date: "%Y" }}"
+		});
+	{% endfor %}
+</script>
+<script type='text/javascript' src='/js/vis.js'></script>
+{% include footer.html %}

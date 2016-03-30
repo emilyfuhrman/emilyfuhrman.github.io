@@ -1,71 +1,33 @@
-- id:         edu
-  title:      Education
-  simple:     false
-  show:       false
+- id:           clients
+  title:        "Select clients &amp; collaborators"
   list:
-    - name:   "Northwestern University"
-      end:    2014
-      spec:   "MS, Predictive Analytics"
-    - name:   "The College of William &amp; Mary"
-      end:    2010
-      spec:   "BA, English, Philosophy, summa cum laude"
-- id:         employment
-  title:      Employment
-  simple:     false
-  show:       false
+    - name:     Chromat
+    - name:     Columbia University
+    - name:     Columbia University Center for Spatial Research
+    - name:     Electric Objects
+    - name:     Google
+    - name:     Print All Over Me
+    - name:     Simons Foundation
+    - name:     WITCHES
+- id:           talks
+  title:        "Public speaking"
+  fancy:        true
   list:
-    - name:   Huge
-      start:  "04 2014"
-      now:    true
-      spec:   Data Visualization Analyst
-    - name:   AdFin
-      start:  "04 2012"
-      end:    "04 2014"
-      spec:   Data Artist / UX Developer
-    - name:   Freelance
-      start:  "08 2012"
-      now:    true
-    - name:   Booz Allen Hamilton
-      start:  "07 2010"
-      end:    "08 2012"
-      spec:   Advanced Analytics Consultant
-- id:         clients
-  title:      "Select clients &amp; collaborators"
-  simple:     true
-  show:       true
+    - name:     The Art of Data Visualization
+      t_right:  2016 04 06
+      t_below:  Columbia University
+      link:     http://library.columbia.edu/news/events/data-visualization.html
+    - name:     The Art of Data Visualization
+      t_right:  2016 04 07
+      t_below:  Columbia University
+      link:     http://library.columbia.edu/news/events/data-visualization.html
+    - name:     ODSC East
+      t_right:  2016 05
+      t_below:  "Boston, MA"
+      link:     http://www.odsc.com/boston/
+- show:         false
+  id:           press
+  title:        "Press"
   list:
-    - name:   Chromat
-    - name:   Columbia University
-    - name:   Columbia University GSAPP Center for Spatial Research
-    - name:   Electric Objects
-    - name:   Google
-    - name:   Print All Over Me
-    - name:   Simons Foundation
-    - name:   WITCHES
-- id:         press
-  title:      "Press"
-  simple:     true
-  show:       false
-  list:
-    - name:   Electric Objects
-      link:   http://zine.electricobjects.com/interviews/emily-fuhrman
-- id:         elsewhere
-  title:      Elsewhere
-  simple:     true
-  show:       true
-  list:
-    - name:   Twitter
-      link:   "http://twitter.com/xxzvx"
-    - name:   Instagram
-      link:   "http://instagram.com/xxzvx"
-    - name:   Github
-      link:   "https://github.com/emilyfuhrman"
-- id:         contact
-  title:      Contact
-  simple:     true
-  show:       true
-  list:
-    - name:   Email
-      link:   "mailto:emily.c.fuhrman@gmail.com"
-    - name:   CV
-      link:   "CV.pdf"
+    - name:     Electric Objects
+      link:     http://zine.electricobjects.com/interviews/emily-fuhrman

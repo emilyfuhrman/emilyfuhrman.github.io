@@ -2,29 +2,27 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>
-		{% if page.title %}
-			{{ site.name }}&nbsp;/&nbsp;{{ page.title }}
-		{% else %}
-			{{ site.name }}
-		{% endif %}
-	</title>
+	<title>{{ site.name }}</title>
 	<meta name='description' content='{{ page.description }}'>
 	
 	<link rel='icon' href='/favicon.ico' />
 	<link rel='stylesheet' type='text/css' href='/css/style.css' />
 
-	<script type='text/javascript' src='/js/libs/jquery-2.0.3.min.js'></script>
+	<script type='text/javascript' src='/js/libs/jquery-2.2.1.min.js'></script>
 	<script type='text/javascript' src='/js/libs/d3.v2.min.js'></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-75775853-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
-	<header>
-		<nav class='links'>
-			{% include nav.html %}
-			{% if page.is_post == true %}
-				<div class='nav title'>{{ page.title }}</div>
-			{% endif %}
-		</nav>
-	</header>
-	<div id='wrapper'>
+	{% include nav.html %}
+	<div id='main' class='resize container {{ page.category }}'>
 		

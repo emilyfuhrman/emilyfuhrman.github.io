@@ -1,29 +1,20 @@
 {% include header.html %}
 <div id='proj-list'>
 	{% for post in site.posts %}
-	{% if post.cat == 'projects' %}
-		{% assign end = '.html' %}
-	{% else %}
-		{% assign end = '' %}
-	{% endif %}
-	{% if post.cat == 'idx' %}
-		{% capture date %}{{ post.date | date: "00 0000" }}{% endcapture %}
-	{% else %}
-		{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
-	{% endif %}
+	{% assign end = '.html' %}
+	{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
 	{% if post.nonvis == true %}
 		{% assign marker = '&dagger;&nbsp;' %}
 	{% else %}
 		{% assign marker = '' %}
 	{% endif %}
-	<a href='/{{ post.cat }}/{{ post.path }}{{ end }}'>
-		<img class='list-img' src='/images/thumbs/post-{{ post.num }}_thumb.png'>
-		<div>
+	<a href='/{{ post.category }}/{{ post.path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} {% cycle 'col_odd_01', 'col_odd_02', 'col_odd_03' %} list-img-link'>
+		<img class='list-img' src='/media/thumbs/{{ post.id }}_thumb.jpg'>
+		<div class='metadata'>
 			<p class='list-title'>{{ marker }}{{ post.title }}</p>
 			<p class='list-date'>{{ date }}</p>
 		</div>
 	</a>
 	{% endfor %}
 </div>
-<div class='dekor proj'></div>
 {% include footer.html %}

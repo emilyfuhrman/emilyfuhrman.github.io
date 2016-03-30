@@ -1,30 +1,22 @@
-[submodule "x/youarehere"]
-	path = x/youarehere
-	url = https://github.com/emilyfuhrman/youarehere.git
-	ignore = dirty
-[submodule "x/boats"]
-	path = x/boats
-	url = https://github.com/emilyfuhrman/boats.git
-	ignore = dirty
-[submodule "x/weather-machine"]
-	path = x/weather-machine
-	url = https://github.com/emilyfuhrman/weather-machine.git
-	ignore = dirty
-[submodule "x/datawave"]
-	path = x/datawave
-	url = https://github.com/emilyfuhrman/datawave.git
-	ignore = dirty
-[submodule "x/sirens"]
-	path = x/sirens
-	url = https://github.com/emilyfuhrman/sirens.git
-	ignore = dirty
-[submodule "x/F2015002"]
-	path = x/F2015002
-	url = https://github.com/emilyfuhrman/F2015002.git
-	ignore = dirty
 [submodule "lab/F2016003"]
 	path = lab/F2016003
 	url = https://github.com/emilyfuhrman/F2016003.git
 [submodule "lab/F2015020"]
 	path = lab/F2015020
 	url = https://github.com/emilyfuhrman/F2015020.git
+[submodule "interactive/Y2014001"]
+	path = interactive/Y2014001
+	url = https://github.com/emilyfuhrman/Y2014001.git
+	ignore = dirty
+[submodule "interactive/Y2014003"]
+	path = interactive/Y2014003
+	url = https://github.com/emilyfuhrman/Y2014003.git
+	ignore = dirty
+[submodule "interactive/F2015002"]
+	path = interactive/F2015002
+	url = https://github.com/emilyfuhrman/F2015002.git
+	ignore = dirty
+[submodule "interactive/Y2014002"]
+	path = interactive/Y2014002
+	url = https://github.com/emilyfuhrman/Y2014002.git
+	ignore = dirty

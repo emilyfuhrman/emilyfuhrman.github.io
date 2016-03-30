@@ -1,72 +1,26 @@
 {% include header.html %}
-<div id='index-head'>
-	<span id='index-descrip'>
-		{{ content }}
-	</span>
-	<div id='index-nav'></div>
-</div>
-<div id='index-list'></div>
-<script>
-	var POSTS_JEKYLL = [],
-		POSTS_INDEX  = [],
-
-		TAGS_MAIN    = [],
-		TAGS_SUBS    = [],
-
-		TAGS_LIST    = [];
-
-	{% if page.mixin == true %}
-	{% for post in site.posts %}
-		TAGS_LIST = [];
-		{% for t in post.tags %}
-			TAGS_LIST.push("{{ t }}");
-		{% endfor %}
-		POSTS_JEKYLL.push({
-			date:  "{{ post.date | date: '%m %Y' }}",
-			title: "{{ post.title }}",
-			cat:   "{{ post.cat }}",
-			path:  "{{ post.path }}",
-			tags:  TAGS_LIST
-		});
-	{% endfor %}
-	{% endif %}
-
-	{% for s in site.data.subs %}
-	{% if s.id == page.indexID %}
-		{% for p in s.files %}
-		{% if p.show != false %}
-		CRED_LIST = [];
-		TAGS_LIST = [];
-		{% for c in p.cred %}
-			CRED_LIST.push("{{ c }}");
-		{% endfor %}
-		{% for t in p.tags %}
-			TAGS_LIST.push("{{ t }}");
-		{% endfor %}
-		POSTS_INDEX.push({
-			date:    "{{ p.date }}",
-			title:   "{{ p.name }}",
-			cat:     "{{ page.indexID }}",
-			client:  "{{ p.client }}",
-			cli_sub: "{{ p.cli_sub }}",
-			thru:    "{{ p.thru }}",
-			path:    "{{ p.path }}",
-			cred:    CRED_LIST,
-			tags:    TAGS_LIST
-		});
+<div id='contain' class='idx'>
+<div class='descrip'>{{ content }}</div>
+{% for c in site.data.subs[page.index_ID].cats %}
+	<div id='{{ c }}' class='idx-block'>
+	<div class='label'>{{ c | capitalize }}</div>
+	<ul>
+	{% assign item_array = site.data.subs[page.index_ID].items | where: "cat", c %}
+	{% for i in item_array reversed %}
+	<li>
+		{% if i.cli_sub %}
+		{% capture client %}{{ i.client }}&comma;&nbsp;{{i.cli_sub}}{% endcapture %}
+		{% else %}
+		{% capture client %}{{ i.client }}{% endcapture %}
 		{% endif %}
-		{% endfor %}
-	{% endif %}
+		<div class='info'>
+			<div class='client'>{{ client }}&mdash;</div><a href='{{ i.path }}' target='_blank'>{{ i.name }}</a>
+		</div>
+		<div class='date'>{{ i.date }}</div>
+	</li>
 	{% endfor %}
-
-	{% for t in site.data.tags.main %}
-		TAGS_MAIN.push({
-			name:	"{{ t }}"
-		});
-	{% endfor %}
-	{% for t in site.data.tags.descriptive %}
-		TAGS_SUBS.push("{{ t }}");
-	{% endfor %}
-</script>
-<script type='text/javascript' src='/js/idx.js'></script>
+	</ul>
+	</div>
+{% endfor %}
+</div>
 {% include footer.html %}

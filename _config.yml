@@ -11,7 +11,7 @@ defaults:
       path:     ''
       type:     posts
     values:
-      category: projects
+      category: project
       layout:   post
       is_post:  true
 

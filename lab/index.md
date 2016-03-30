@@ -1,8 +1,7 @@
 ---
-layout:  page_index
-title:   "Lab"
-indexID: lab
+layout:      page_index
+title:       "Lab"
+index_ID:    lab
 description: Emily Fuhrman
 ---
-
-#### An index of works-in-progress.
+An index of works-in-progress.

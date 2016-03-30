@@ -1,64 +1,55 @@
 {% include header.html %}
 <div id='contain'>
-	<div id='top_content'>
-		{{ content }}
-		<p class='arr'></p>
+	<div id='content_top'>
+	{{ content }}
 	</div>
-	<div id='cols'>
-		<div class='left'>
-			{% for d in site.data.about %}
-			{% if d.show == true %}
-			<div class='section {{ d.id }}'>
-				<h4>
-				<ul class='items'>
-					<br>
-					<li class='item title'>{{ d.title }}</li>
-					<br>
-					{% if d.simple == true %}
-						{% for item in d.list %}
-						{% if item.link %}
-						<li class='item simple link'><a href='{{ item.link }}'>{{ item.name }}</a></li>
-						{% else %}
-						<li class='item simple'>{{ item.name }}</li>
-						{% endif %}
-						{% endfor %}
-					{% else %}
-						{% for item in d.list %}
-
-						{% capture current %}{{ 'now_' | append: item.now }}{% endcapture %}
-						{% assign now = current %}
-
-						{% if item.now == true %}
-							{% capture enddate %}{{ site.time | date: '%m %Y' }}{% endcapture %}
-						{% else %}
-							{% capture enddate %}{{ item.end }}{% endcapture %}
-						{% endif %}
-						{% assign end = enddate %}
-						
-						{% assign spc = '&emsp;&emsp;&emsp;&emsp;' %}
-						<li class='item unsimple _{{ forloop.index }}'>
-							{{ item.name }}
-							<div class='holder'>
-							{% if item.start %}
-							<span class='time'>{{ item.start }}&nbsp;&ndash;&nbsp;<span class={{ now }}>{{ end }}</span></span>
-							<span class='spec'>{{ spc }}{{ item.spec }}</span>
-							{% elsif item.end %}
-							<span class='time'>{{ item.end }}</span>
-							<span class='spec'>{{ spc }}{{ item.spec }}</span>
-							{% else %}
-							<span class='spec'>{{ item.spec }}</span>
-							{% endif %}
-							</div>
-						</li>
-						{% endfor %}
-					{% endif %}
-				</ul>
-				</h4>
-			</div>
+	<div id='content_mid'>
+	{% for d in site.data.about %}
+	{% if d.show != false %}
+	{% capture i %}{% cycle 'left', 'right' %}{% endcapture %}
+	{% if i == 'left' %}
+	<div class='clear'></div>
+	{% endif %}
+	<div id='{{ d.id }}' class='section half {{ i }}'>
+		<div class='label'>{{ d.title }}</div>
+		{% if d.fancy == true %}
+		<ul class='fancy'>
+			{% for item in d.list %}
+			<li>
+			{% if item.t_right %}
+			<div class='t_right'>{{ item.t_right }}</div>
 			{% endif %}
+			<div class='t_info'>
+			{% if item.link %}
+			<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+			{% else %}
+			{{ item.name }}
+			{% endif %}
+			</div>
+			{% if item.t_below %}
+			<div class='t_below'>{{ item.t_below }}</div>
+			{% endif %}
+			</li>
 			{% endfor %}
-		</div>
+		</ul>
+		{% else %}
+		<ul>
+			{% for item in d.list %}
+			<li>
+			<div class='t_info'>
+			{% if item.link %}
+			<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+			{% else %}
+			{{ item.name }}
+			{% endif %}
+			</div>
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
 	</div>
-	<div class='dekor about'></div>
-</div><!-- contain -->
+	{% endif %}
+	{% endfor %}
+	</div>
+</div>
 {% include footer.html %}
