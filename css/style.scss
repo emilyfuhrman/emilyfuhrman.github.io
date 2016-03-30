@@ -581,11 +581,15 @@ span.i {
 #contain #content_mid .section ul li .t_right {
 	background:white;
 	float:right;
+	width:6rem;
+	text-align:right;
 	border-bottom:none !important;
 	}
 #contain #content_mid .section ul li .t_below {
 	float:left;
 	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
 	}
 
 .clear {
