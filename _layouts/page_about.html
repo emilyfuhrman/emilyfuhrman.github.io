@@ -17,26 +17,17 @@
 			{% for item in d.list %}
 			<li>
 			<div class='t_info collapse'>
-				<span>
+				{% if item.t_left %}
+				<span>{{ item.t_left }}&mdash;</span>
+				{% endif %}
 				{% if item.link %}
 				<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
 				{% else %}
 				{{ item.name }}
 				{% endif %}
-				</span>
 			</div>
 			{% if item.t_right %}
-			<div class='t_right'>
-				<span>
-					{{ item.t_right }}
-				</span>
-			</div>
-			{% endif %}
-			{% if item.t_below %}
-			<div class='t_below collapse'>
-				<span>
-				{{ item.t_below }}
-				</span>
+			<div class='t_right'>{{ item.t_right }}</span>
 			</div>
 			{% endif %}
 			</li>
@@ -47,13 +38,11 @@
 			{% for item in d.list %}
 			<li>
 			<div class='t_info'>
-				<span>
 				{% if item.link %}
 				<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
 				{% else %}
 				{{ item.name }}
 				{% endif %}
-				</span>
 			</div>
 			</li>
 			{% endfor %}
