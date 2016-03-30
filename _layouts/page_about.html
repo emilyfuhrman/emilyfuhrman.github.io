@@ -16,23 +16,21 @@
 		<ul class='fancy'>
 			{% for item in d.list %}
 			<li>
-			<div class='t_holder'>
 			<div class='t_container'>
-			<div class='t_info'>
+			<div class='t_info collapse'>
 			{% if item.link %}
 			<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
 			{% else %}
 			{{ item.name }}
 			{% endif %}
 			</div>
-			{% if item.t_below %}
-			<div class='t_below'>{{ item.t_below }}</div>
-			{% endif %}
-			</div>
 			{% if item.t_right %}
 			<div class='t_right'>{{ item.t_right }}</div>
 			{% endif %}
 			</div>
+			{% if item.t_below %}
+			<div class='t_below collapse'>{{ item.t_below }}</div>
+			{% endif %}
 			</li>
 			{% endfor %}
 		</ul>
@@ -40,14 +38,12 @@
 		<ul>
 			{% for item in d.list %}
 			<li>
-			<div class='t_holder'>
-			<div class='t_info'>
+			<div class='t_info collapse'>
 			{% if item.link %}
 			<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
 			{% else %}
 			{{ item.name }}
 			{% endif %}
-			</div>
 			</div>
 			</li>
 			{% endfor %}
