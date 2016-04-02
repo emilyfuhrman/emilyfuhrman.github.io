@@ -1,41 +1,29 @@
 ---
-id:         -F2015004
+id:         F2015004
 title:      "Collab: WITCHES / The Coven Magazine ✕ Print All Over Me"
 path:       witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
 images:
-  - ext:    T02_01.png
-    width:  750
-    height: 250
-    cap:    "Issue 01 / Text"
-  - ext:    T02_02.png
-    width:  750
-    height: 250
-    cap:    "Issue 02 / Text"
-  - ext:    T02_03.png
-    width:  750
-    height: 250
-    cap:    "Issue 03 / Text"
-  - ext:    I01_03.png
-    width:  750
-    height: 250
-    cap:    "Issue 03 / Image"
-  - ext:    I01_02.png
-    width:  750
-    height: 250
-    cap:    "Issue 02 / Image"
-  - ext:    I01_01.png
-    width:  750
-    height: 250
-    cap:    "Issue 01 / Image"
-  - ext:    garments_01.png
-    width:  750
-    height: 250
-    cap:    "<a href='https://paom.com/products/0000000p-rgb-1-t-shirt/'>RGB-1 T-shirt</a>, <a href='https://paom.com/products/0000000p-rgb-3-block-top/'>RGB-3 Block top</a>"
+  - ext:    01_02.jpg
+    width:  2400
+    height: 1350
+    cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block top</a>"
+  - ext:    02.jpg
+    half:   true
+    side:   left
+    width:  1596
+    height: 2400
+    cap:    "<a href='https://paom.com/products/0000000p-txt-1-backpack/' target='_blank'>TXT-1 Backpack</a>"
+  - ext:    03_02.jpg
+    half:   true
+    side:   right
+    width:  1596
+    height: 2400
+    cap:    "<a href='https://paom.com/products/0000000p-txt-3-raincoat/' target='_blank'>TXT-3 Raincoat</a>"
 tags:
   - static
   - text
   - collaboration
   - commission
 ---
-A collaboration with [WITCHES](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each pattern is generated using text and image data scraped from the first three issues of The Coven Magazine: white on black indicates a pattern driven by data from Issue 1, white on blue indicates a pattern driven by data from Issue 2, and black on white indicates a pattern driven by data from Issue 3. The full collection is available for purchase [here](https://paom.com/collections/witches/).
+A collaboration with [WITCHES](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each pattern is generated using text and image data scraped from the first three issues of The Coven Magazine. The full collection is available for purchase [here](https://paom.com/collections/witches/).
