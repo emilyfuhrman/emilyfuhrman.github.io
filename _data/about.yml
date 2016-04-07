@@ -13,14 +13,6 @@
   title:        "Public speaking"
   fancy:        true
   list:
-    - name:     The Art of Data Visualization
-      t_left:   Columbia University
-      t_right:  2016 04 06
-      link:     http://library.columbia.edu/news/events/data-visualization.html
-    - name:     The Art of Data Visualization
-      t_left:   Columbia University
-      t_right:  2016 04 07
-      link:     http://library.columbia.edu/news/events/data-visualization.html
     - name:     ODSC East
       t_left:  "Boston, MA"
       t_right:  2016 05
