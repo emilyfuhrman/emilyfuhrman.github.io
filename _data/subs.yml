@@ -1,7 +1,7 @@
 lab:
   cats:
-    - maps
     - data visualization
+    - maps
   items:
     - name:    Sensor dashboard
       date:    '02 2016'
