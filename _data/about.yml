@@ -15,7 +15,7 @@
   list:
     - name:     ODSC East
       t_left:  "Boston, MA"
-      t_right:  2016 05
+      t_right:  2016 05 21
       link:     http://www.odsc.com/boston/
 - show:         false
   id:           press
