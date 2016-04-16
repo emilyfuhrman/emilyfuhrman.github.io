@@ -157,3 +157,33 @@ idx:
       client:  Electric Objects
       path:    https://www.electricobjects.com/collections/67/merula-by-emily-fuhrman
       cat:     data art
+interactive:
+  cats:
+    - data visualization
+    - maps
+    - compendiums
+  items:
+    - name:    Delivering Post by Foot in Medieval North India
+      date:    '06 2015'
+      client:  Columbia University
+      cli_sub: Department of History
+      path:    /interactive/F2015002
+      cat:     maps
+      cred:    
+        - Manan Ahmed
+        - J.C. Trinidad-Christensen
+    - name:    "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
+      date:    '06 2014'
+      client:  EF
+      path:    /interactive/Y2014001
+      cat:     data visualization
+    - name:    "✕ Y O U A R E H E R E"
+      date:    '07 2014'
+      client:  EF
+      path:    /interactive/Y2014002
+      cat:     compendiums
+    - name:    "Study: Boats on the East River"
+      date:    '08 2014'
+      client:  EF
+      path:    /interactive/Y2014003
+      cat:     data visualization
