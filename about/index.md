@@ -1,6 +1,7 @@
 ---
 layout: page_about
 title: "About"
+description: Emily Fuhrman is a data visualization specialist whose practice lies at the intersection of experimental information design and aesthetic minimalism.
 sitemap:
   priority: 0.9
 ---
