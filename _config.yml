@@ -21,7 +21,3 @@ kramdown:
 
 sass:
   style: compressed
-
-# gems
-gems:
-  - jekyll-sitemap
