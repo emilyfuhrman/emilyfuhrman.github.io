@@ -1,7 +1,6 @@
 ---
 layout: page_about
 title: "About"
-description: Emily Fuhrman is a data visualization designer and developer based in Brooklyn, New York.
 sitemap:
   priority: 0.9
 ---
