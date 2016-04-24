@@ -1,11 +1,11 @@
 ---
 layout: page_about
 title: "About"
-description: Emily Fuhrman is a data visualization specialist whose practice lies at the intersection of experimental information design and aesthetic minimalism.
+description: Emily Fuhrman is a data visualization designer and developer based in Brooklyn, New York.
 sitemap:
   priority: 0.9
 ---
-My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. 
+My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. I focus on critical approaches to visualization, mapping, and information design. 
 
 My work has been acknowledged by WIRED, Scientific American, and the Columbia University Group for Experimental Methods in the Humanities.
 

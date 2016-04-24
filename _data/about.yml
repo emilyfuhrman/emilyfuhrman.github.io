@@ -14,9 +14,19 @@
   fancy:        true
   list:
     - name:     ODSC East
-      t_left:  "Boston, MA"
+      t_left:   "Boston, MA"
       t_right:  2016 05 21
       link:     http://www.odsc.com/boston/
+- id:           teaching
+  title:        "Teaching"
+  fancy:        true
+  list:
+    - name:     Columbia University
+      t_left:   "Teaching Assistant, Borderlands Seminar"
+      t_right:  S2015
+    - name:     Columbia University
+      t_left:   "Teaching Assistant, Mapping for Architecture, Urbanism, and the Humanities"
+      t_right:  S2016
 - show:         false
   id:           interviews
   title:        "Interviews"
