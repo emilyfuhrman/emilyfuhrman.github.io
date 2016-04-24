@@ -18,8 +18,8 @@
       t_right:  2016 05 21
       link:     http://www.odsc.com/boston/
 - show:         false
-  id:           press
-  title:        "Press"
+  id:           interviews
+  title:        "Interviews"
   list:
     - name:     Electric Objects
       link:     http://zine.electricobjects.com/interviews/emily-fuhrman
