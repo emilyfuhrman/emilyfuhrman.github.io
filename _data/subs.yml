@@ -18,11 +18,6 @@ lab:
         - Kaiama Glover
         - Buck Wanner
         - Tola Ojulari
-    - name:    HS Ecosystem
-      date:    '04 2016'
-      client:  'Digitas Health'
-      path:    /lab/F2016009
-      cat:     data visualization
 idx:
   cats:
     - data visualization
