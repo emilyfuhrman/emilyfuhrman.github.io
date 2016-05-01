@@ -16,6 +16,11 @@ cred:
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
   - name:   "Columbia University Group for Experimental Methods in the Humanities"
     link:   "http://xpmethod.plaintext.in/theory-method/visualizing-joyce.html"
+cred_tweets:
+  - name:   Lev Manovich
+    link:   "https://twitter.com/manovich/status/484048446182424577"
+  - name:   Georgia Lupi
+    link:   "https://twitter.com/giorgialupi/status/484325744961536000"
 tags:
   - interactive
   - text

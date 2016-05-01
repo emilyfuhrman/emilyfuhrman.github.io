@@ -456,12 +456,12 @@ span.i {
 #proj .sub .link a {
 	display:block;
 	float:left;
-	color:$color-black;
+	color:$color-accent;
 	padding-bottom:0;
 	border-bottom:none;
 	}
 #proj .sub .link a:hover {
-	color:$color-accent;
+	color:$color-black;
 	border-bottom:none;
 	}
 
@@ -498,6 +498,9 @@ span.i {
 	}
 #proj .sub #post-cred .label {
 	background:url(/media/assets/icon_black_cred.svg) no-repeat 0 0;
+	}
+#proj .sub #post-cred-tweets .label {
+	background:url(/media/assets/icon_black_cred_tweets.svg) no-repeat 0 0;
 	}
 #proj .sub #post-permalink .label {
 	background:url(/media/assets/icon_black_link.svg) no-repeat 0 0;
