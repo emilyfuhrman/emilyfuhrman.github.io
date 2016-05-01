@@ -4,7 +4,7 @@ title: "About"
 sitemap:
   priority: 0.9
 ---
-My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. I explore critical approaches to visualization, mapping, and data-driven design. 
+My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. I explore critical approaches to creating beauty and meaning through data.
 
 My work has been acknowledged by WIRED, Scientific American, and the Columbia University Group for Experimental Methods in the Humanities.
 
