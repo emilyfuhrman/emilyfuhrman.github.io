@@ -18,6 +18,11 @@ lab:
         - Kaiama Glover
         - Buck Wanner
         - Tola Ojulari
+    - name:    Visualizing Eisenstein's theory of montage
+      date:    '05 2016'
+      client:  'Columbia University&mdash;ENGLW4611'
+      path:    /lab/Y2016002
+      cat:     data visualization
 idx:
   cats:
     - data visualization
