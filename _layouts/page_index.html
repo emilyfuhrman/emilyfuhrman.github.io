@@ -7,6 +7,7 @@
 	<ul>
 	{% assign item_array = site.data.subs[page.index_ID].items | where: "cat", c %}
 	{% for i in item_array reversed %}
+	{% if i.show != false %}
 	<li>
 		{% if i.cli_sub %}
 		{% capture client %}{{ i.client }}&comma;&nbsp;{{i.cli_sub}}{% endcapture %}
@@ -18,6 +19,7 @@
 		</div>
 		<div class='date'>{{ i.date }}</div>
 	</li>
+	{% endif %}
 	{% endfor %}
 	</ul>
 	</div>
