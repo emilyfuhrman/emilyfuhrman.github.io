@@ -154,6 +154,7 @@ idx:
       client:  The Trace
       path:    http://www.thetrace.org/2015/11/chicago-gun-laws-shootings-trafficking/
       cat:     maps
+      show:    false
       cred:
         - Miles Kohrman
         - Mike Spies
