@@ -23,6 +23,12 @@
 [submodule "lab/F2016009"]
 	path = lab/F2016009
 	url = https://github.com/emilyfuhrman/F2016009.git
+	ignore = dirty
 [submodule "lab/Y2016002"]
 	path = lab/Y2016002
 	url = https://github.com/emilyfuhrman/Y2016002.git
+	ignore = dirty
+[submodule "lab/F2016004"]
+	path = lab/F2016004
+	url = https://github.com/emilyfuhrman/F2016004.git
+	ignore = dirty
