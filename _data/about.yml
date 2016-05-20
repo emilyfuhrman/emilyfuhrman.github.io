@@ -10,13 +10,17 @@
     - name:     Simons Foundation
     - name:     WITCHES
 - id:           talks
-  title:        "Public speaking"
+  title:        "Events &amp; public speaking"
   fancy:        true
   list:
     - name:     ODSC East
       t_left:   "Boston, MA"
       t_right:  2016 05 21
       link:     http://www.odsc.com/boston/
+    - name:     Unflattening and Enacting Visualization
+      t_left:   "GC CUNY"
+      t_right:  2016 06 09
+      link:     http://patriksv.net/2016/04/critical-visualization-event-at-gc-cuny-on-june-9-2016/
 - show:         false
   id:           interviews
   title:        "Interviews"
