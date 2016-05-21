@@ -23,7 +23,7 @@ lab:
       client:  'Columbia University&mdash;ENGLW4611'
       path:    /lab/Y2016002
       cat:     data visualization
-    - name:    'Shell Companies Visualization'
+    - name:    'Building ownership visualization'
       date:    '05 2016'
       client:  'ODSC'
       path:    /lab/F2016004
