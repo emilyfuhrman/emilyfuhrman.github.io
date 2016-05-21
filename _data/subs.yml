@@ -25,7 +25,7 @@ lab:
       cat:     data visualization
     - name:    'Building ownership visualization'
       date:    '05 2016'
-      client:  'Heat Seek / ODSC'
+      client:  'Heat Seek&mdash;ODSC'
       path:    /lab/F2016004
       cat:     data visualization
 idx:
