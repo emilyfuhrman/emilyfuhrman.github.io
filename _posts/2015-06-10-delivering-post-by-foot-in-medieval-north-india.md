@@ -1,7 +1,7 @@
 ---
-id:         F2015002
+post_id:    F2015002
 title:      "Delivering Post by Foot in Medieval North India"
-path:       delivering-post-by-foot-in-medieval-north-india
+post_path:  delivering-post-by-foot-in-medieval-north-india
 perm:       /interactive/F2015002
 github:     true
 images:

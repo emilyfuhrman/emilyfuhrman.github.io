@@ -1,7 +1,7 @@
 ---
-id:         F2015004
+post_id:    F2015004
 title:      "Collab: WITCHES / The Coven Magazine ✕ Print All Over Me"
-path:       witches-coven-magazine-print-all-over-me
+post_path:  witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
 images:
   - ext:    01_02.jpg

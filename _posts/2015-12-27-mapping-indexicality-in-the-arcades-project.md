@@ -1,7 +1,7 @@
 ---
-id:         Y2015003
+post_id:    Y2015003
 title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
-path:       mapping-indexicality-in-the-arcades-project
+post_path:  mapping-indexicality-in-the-arcades-project
 github:     true
 paper:      true
 images:     

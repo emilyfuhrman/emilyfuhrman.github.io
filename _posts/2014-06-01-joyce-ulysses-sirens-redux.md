@@ -1,7 +1,7 @@
 ---
-id:         Y2014001
+post_id:    Y2014001
 title:      "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
-path:       joyce-ulysses-sirens-redux
+post_path:  joyce-ulysses-sirens-redux
 perm:       /interactive/Y2014001
 github:     true
 images:

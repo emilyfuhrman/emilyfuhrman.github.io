@@ -1,7 +1,7 @@
 ---
-id:         Y2013011
+post_id:    Y2013011
 title:      "Series: Giant Gears"
-path:       giant-gears
+post_path:  giant-gears
 nonvis:     true
 images:
   - ext:    01.jpg

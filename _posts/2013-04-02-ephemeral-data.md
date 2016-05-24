@@ -1,8 +1,8 @@
 ---
-id:         Y2013005
+post_id:    Y2013005
 cat:        projects
 title:      "Study: Ephemeral Data"
-path:       ephemeral-data
+post_path:  ephemeral-data
 images:
   - ext:    01.jpg
     width:  2400

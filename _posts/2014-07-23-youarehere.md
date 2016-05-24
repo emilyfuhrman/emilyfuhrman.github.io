@@ -1,7 +1,7 @@
 ---
-id:         Y2014002
+post_id:    Y2014002
 title:      "✕ Y O U A R E H E R E"
-path:       youarehere
+post_path:  youarehere
 perm:       /interactive/Y2014002
 github:     true
 images:     

@@ -17,13 +17,13 @@
             <div class='video-container'>
                 <div class='video-cover'></div>
                 <video class='post-video' width='{{ p.width }}px' height= '{{ p.height }}px' {% if p.loop == true %}loop{% endif %}>
-                    <source src='/media/{{ page.id }}/{{ p.ext }}' type='video/mp4'>
+                    <source src='/media/{{ page.post_id }}/{{ p.ext }}' type='video/mp4'>
                     <p>Alas, your browser does not support the video tag.</p>
                 </video>
             </div>
             <p class='caption'>{{ p.cap }}</p>
         {% else %}
-            <img class='post-img' src='/media/{{ page.id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+            <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
             <p class='caption'>{{ p.cap }}</p>
         {% endif %}
         </div>
@@ -90,13 +90,13 @@
         {% if page.github %}
         <div id='post-github' class='sub-section'>
             <div class='label'></div>
-            <div class='link'><a href='https://github.com/emilyfuhrman/{{ page.id }}' target='_blank'>GitHub</a></div>
+            <div class='link'><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></div>
         </div>
         {% endif %}
         {% if page.paper %}
         <div id='post-paper' class='sub-section'>
             <div class='label'></div>
-            <div class='link'><a href='/papers/{{ page.id }}.pdf' target='_blank'>Paper</a></div>
+            <div class='link'><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></div>
         </div>
         {% endif %}
         {% if page.team %}

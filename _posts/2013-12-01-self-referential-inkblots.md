@@ -1,7 +1,7 @@
 ---
-id:         Y2013009
+post_id:    Y2013009
 title:      "Study: Self-referential Inkblots"
-path:       self-referential-inkblots
+post_path:  self-referential-inkblots
 images:
   - ext:    01.jpg
     width:  2400

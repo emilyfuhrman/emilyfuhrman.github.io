@@ -1,7 +1,7 @@
 ---
-id:         Y2015001
+post_id:    Y2015001
 title:      "Study: Non-geographic Route Mapping"
-path:       non-geographic-route-mapping
+post_path:  non-geographic-route-mapping
 images:
   - ext:    02.jpg
     width:  2400
