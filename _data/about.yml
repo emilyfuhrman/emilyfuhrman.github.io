@@ -10,7 +10,7 @@
     - name:     Simons Foundation
     - name:     WITCHES
 - id:           talks
-  title:        "Events &amp; public speaking"
+  title:        "Public speaking"
   fancy:        true
   list:
     - name:     Unflattening and Enacting Visualization
