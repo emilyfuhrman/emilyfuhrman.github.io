@@ -44,10 +44,12 @@ var schema = function(){
 				a = Math.atan(h/w),
 
 				//length of diagonal from origin to any corner (hypotenuse)
-				hyp = Math.sqrt(Math.pow(w,2) +Math.pow(h,2))/2,
+				hyp = (Math.sqrt(Math.pow(w,2) +Math.pow(h,2))/2),
 
 				//half the width/height of one vertex	
 				sq = 54;
+
+			hyp *=0.75; //solely to prevent summer season from spilling off screen
 
 			//filter out the idx post
 			self.posts = self.posts.filter(function(d){
