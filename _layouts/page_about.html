@@ -17,13 +17,13 @@
 			{% for item in d.list %}
 			<li>
 			<div class='t_info collapse'>
-				{% if item.t_left %}
-				<span>{{ item.t_left }}&mdash;</span>
-				{% endif %}
+				{% if item.t_left %}<span>{{ item.t_left }}</span>{% endif %}
 				{% if item.link %}
-				<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+				<span><a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+					{% if item.type %}({{ item.type }}){% endif %}
+				</span>
 				{% else %}
-				{{ item.name }}
+				<span>{{ item.name }}</span>
 				{% endif %}
 			</div>
 			{% if item.t_right %}

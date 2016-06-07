@@ -573,6 +573,13 @@ span.i {
 	overflow:auto;
 	}
 
+#contain #content_mid .section ul.fancy li:first-child {
+	padding-top:0;
+	}
+#contain #content_mid .section ul.fancy li {
+	padding-top:1.2rem;
+	}
+
 #contain #content_mid .section ul li .collapse {
 	width:100%;
 	max-width:75%;
@@ -584,6 +591,13 @@ span.i {
 	overflow:hidden;
 	text-overflow:ellipsis;
 	}
+#contain #content_mid .section ul li .t_info span {
+	float:left;
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	}
+
 #contain #content_mid .section ul li .t_right {
 	background:white;
 	float:right;
