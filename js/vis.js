@@ -243,23 +243,21 @@ var schema = function(){
 					t1_dur = self.transitionTime,
 
 					t0_del = Math.floor(self.delay*1.5), //estimate
-					t1_del = t0_del +t0_dur +self.pause
+					t1_del = t0_del +t0_dur +self.pause,
 
 					loaded = [];
 
-				var t0 = verticesG
-					.transition()
+				verticesG
+					.transition('ease')
 					.delay(function(d,i){
 						return self.delay +i*60;
 					})
 					.duration(t0_dur)
 					.attrTween('transform',function(d){
 						return tweenTransform(self.positions[d.key][0],self.positions[d.key][1]);
-					});
-				var t1 = t0
-					.transition()
+					})
+					.transition('ease')
 					.delay(t1_del)
-					//.duration(t1_dur)
 					.duration(function(d,i){
 						var scale = 1 -(self.vertices[d.key].value/self.vertices[d.key].limit);
 						return Math.floor(scale*t1_dur*2.5);
