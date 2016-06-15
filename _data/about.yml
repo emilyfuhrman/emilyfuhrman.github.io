@@ -13,11 +13,6 @@
   title:        "Events &amp; public speaking"
   fancy:        true
   list:
-    - name:     "&quot;Visualization and Information Design&quot;"
-      t_left:   "Columbia University ITSI"
-      t_right:  2016 06 15
-      link:     http://ctl.columbia.edu/graduate-instructors/itsi/
-      type:     Workshop
     - name:     ''
       t_left:   "Columbia University Lede Program"
       t_right:  2016 06 17
