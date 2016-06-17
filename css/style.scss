@@ -573,11 +573,12 @@ span.i {
 	overflow:auto;
 	}
 
-#contain #content_mid .section ul.fancy li:first-child {
+#contain #content_mid .section ul.fancy li,
+#contain #content_mid .section ul.fancy li.t_left:first-child {
 	padding-top:0;
 	}
-#contain #content_mid .section ul.fancy li {
-	padding-top:1.2rem;
+#contain #content_mid .section ul.fancy li.t_left {
+	/*padding-bottom:1.2rem;*/
 	}
 
 #contain #content_mid .section ul li .collapse {

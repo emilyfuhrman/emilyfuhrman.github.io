@@ -13,9 +13,21 @@
   title:        "Events &amp; public speaking"
   fancy:        true
   list:
-    - name:     ''
-      t_left:   "Columbia University Lede Program"
-      t_right:  2016 06 17
+    - name:     "Columbia University &mdash; Map Club, Session 01"
+      t_left:   ""
+      t_right:  2016 07 12
+    - name:     "Columbia University &mdash; Map Club, Session 02"
+      t_left:   ""
+      t_right:  2016 07 19
+    - name:     "Columbia University &mdash; Map Club, Session 03"
+      t_left:   ""
+      t_right:  2016 07 26
+    - name:     "Columbia University &mdash; Map Club, Session 04"
+      t_left:   ""
+      t_right:  2016 08 02
+    - name:     "Columbia University &mdash; Map Club, Session 05"
+      t_left:   ""
+      t_right:  2016 08 09
 - show:         false
   id:           interviews
   title:        "Interviews"

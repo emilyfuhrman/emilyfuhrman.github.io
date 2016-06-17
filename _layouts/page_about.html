@@ -15,7 +15,8 @@
 		{% if d.fancy == true %}
 		<ul class='fancy'>
 			{% for item in d.list %}
-			<li>
+			{% if item.t_left %}{% capture c %}t_left{% endcapture %}{% endif %}
+			<li class='{{ c }}'>
 			<div class='t_info collapse'>
 				{% if item.t_left %}<span>{{ item.t_left }}</span>{% endif %}
 				{% if item.link %}
