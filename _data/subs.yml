@@ -28,6 +28,11 @@ lab:
       client:  'Heat Seek&mdash;ODSC'
       path:    /lab/F2016004
       cat:     data visualization
+    - name:    'Education interactive'
+      date:    '06 2016'
+      client:  'Quanta Magazine'
+      path:    /lab/F2016006
+      cat:     data visualization
 idx:
   cats:
     - data visualization
