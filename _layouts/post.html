@@ -12,7 +12,12 @@
             {% assign class_size = 'full' %}
             {% assign class_side = '' %}
         {% endif %}
-        <div class='{{ class_size }} {{ class_side }} media'>
+        {% if p.border == true %}
+            {% assign class_border = 'border' %}
+        {% else %}
+            {% assign class_border = '' %}
+        {% endif %}
+        <div class='{{ class_size }} {{ class_side }} {{ class_border }} media'>
         {% if p.video == true %}
             <div class='video-container'>
                 <div class='video-cover'></div>

@@ -370,9 +370,14 @@ span.i {
 	margin:0;
 	padding:0;
 	outline:0;
+	@include box-sizing(border-box);
 	}
 #proj #media .media video {
 	border:none;
+	}
+#proj #media .media.border img,
+#proj #media .media.border video {
+	border:1px solid rgba(0,0,0,0.02);
 	}
 #proj #media .media .video-container {
 	position:relative;
