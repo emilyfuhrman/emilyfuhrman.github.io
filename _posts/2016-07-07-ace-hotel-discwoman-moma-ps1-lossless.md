@@ -9,36 +9,42 @@ images:
     width:  1200
     height: 1788
     border: true
+    cap:    BEARCAT
   - ext:    05_Queen.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
+    cap:    TT
   - ext:    04_Maluca.png
     half:   true
     side:   left
     width:  1200
     height: 1788
     border: true
+    cap:    Maluca
   - ext:    03_Lionsong.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
+    cap:    Juliana
   - ext:    06_SADAF.png
     half:   true
     side:   left
     width:  1200
     height: 1788
     border: true
+    cap:    SADAF
   - ext:    02_Eartheater.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
+    cap:    Eartheater
 tags:
   - static
   - collaboration
