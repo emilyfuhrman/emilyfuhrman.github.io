@@ -1,6 +1,7 @@
 - id:           clients
   title:        "Select clients &amp; collaborators"
   list:
+    - name:     Ace Hotel
     - name:     Chromat
     - name:     Columbia University
     - name:     Columbia University GSAPP Center for Spatial Research
