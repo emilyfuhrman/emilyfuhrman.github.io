@@ -50,6 +50,6 @@ tags:
   - collaboration
   - solo exhibition
 ---
-A collection of six data-driven pieces prepared for my first solo exhibition at the Ace Hotel Gallery in New York. Each one renders audio data extracted from a different track by an artist featured this summer in MoMA PS1's Warm Up series: “Queen” by TT The Artist; “Lionsong” by Björk (Juliana Huxtable remix); BEARCAT’s score for Body Electric, the CHROMAT documentary; “Stillness” by SADAF, and “Homonyms” by Eartheater.
+A collection of six data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York. Each piece renders audio data extracted from a different track by an artist featured this summer in MoMA PS1's Warm Up series: “Queen” by TT The Artist; “Lionsong” by Björk (Juliana Huxtable remix); BEARCAT’s score for Body Electric, the CHROMAT documentary; “Stillness” by SADAF, and “Homonyms” by Eartheater.
 
 Presented by Ace Hotel New York and Discwoman in conjunction with Warm Up at MoMA PS1.
