@@ -377,7 +377,8 @@ span.i {
 	}
 #proj #media .media.border img,
 #proj #media .media.border video {
-	border:2px solid rgba(0,0,0,1);
+	/*border:2px solid rgba(0,0,0,1);*/
+	border:1px solid rgba(0,0,0,0.025);
 	}
 #proj #media .media .video-container {
 	position:relative;
