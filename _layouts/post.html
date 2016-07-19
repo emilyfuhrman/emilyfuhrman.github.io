@@ -40,6 +40,28 @@
         </p>
     </div>
     <div class='sub'>
+        {% if page.exhibits %}
+        <div id='post-exhibits' class='sub-section'>
+            <div class='label'></div>
+            <div class='info'>
+            <span>Exhibited:&nbsp;</span>
+            {% for e in page.exhibits %}
+            {% if forloop.last %}
+                {% if e.link %}
+                <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
+                {% else %}
+                <span>{{ e }}</span>
+                {% endif %}
+            {% else %}
+                {% if e.link %}
+                <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a>&#44;&nbsp;</span>
+                {% else %}
+                <span>{{ e }}&#44;&nbsp;</span>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
         {% if page.cred %}
         <div id='post-cred' class='sub-section'>
             <div class='label'></div>

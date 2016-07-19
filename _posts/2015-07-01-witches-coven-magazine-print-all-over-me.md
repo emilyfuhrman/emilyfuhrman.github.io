@@ -20,6 +20,9 @@ images:
     width:  1596
     height: 2400
     cap:    "<a href='https://paom.com/products/0000000p-txt-3-raincoat/' target='_blank'>TXT-3 Raincoat</a>"
+exhibits:
+  - name:   Signal Gallery
+    link:   http://ssiiggnnaall.com/
 tags:
   - static
   - text

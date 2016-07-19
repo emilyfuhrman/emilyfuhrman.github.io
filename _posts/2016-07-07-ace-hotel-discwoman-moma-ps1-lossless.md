@@ -45,6 +45,9 @@ images:
     height: 1788
     border: true
     cap:    Eartheater
+exhibits:
+  - name:   The Gallery at Ace Hotel New York
+    link:   http://www.acehotel.com/newyork/gallery
 tags:
   - static
   - collaboration
