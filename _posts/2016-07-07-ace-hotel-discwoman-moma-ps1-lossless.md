@@ -50,7 +50,6 @@ exhibits:
     link:   http://www.acehotel.com/newyork/gallery
 tags:
   - static
-  - collaboration
   - solo exhibition
 ---
 A collection of six data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York. Each renders audio data extracted from a different track by an artist featured this summer in MoMA PS1's Warm Up series: “Queen” by TT The Artist; “Lionsong” by Björk (Juliana Huxtable remix); BEARCAT’s score for Body Electric, the CHROMAT documentary; “Stillness” by SADAF; and “Homonyms” by Eartheater.
