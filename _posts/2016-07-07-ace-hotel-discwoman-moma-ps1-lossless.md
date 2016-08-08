@@ -9,42 +9,42 @@ images:
     width:  1200
     height: 1788
     border: true
-    cap:    BEARCAT
+    cap:    <a href='https://soundcloud.com/bearcats_mixtapes/chromat-documentary-score-teaser' target='_blank'>BEARCAT</a>
   - ext:    05_Queen.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
-    cap:    TT
+    cap:    <a href='https://soundcloud.com/tttheartist/queen-ft-mu' target='_blank'>TT</a>
   - ext:    04_Maluca.png
     half:   true
     side:   left
     width:  1200
     height: 1788
     border: true
-    cap:    Maluca
+    cap:    <a href='https://www.youtube.com/watch?v=j5cQLrPxupo' target='_blank'>Maluca</a>
   - ext:    03_Lionsong.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
-    cap:    Juliana
+    cap:    <a href='https://soundcloud.com/bjork/lionsong-juliana-huxtable-remix-1?in=bjork/sets/vulnicura-remix-project-part-3' target='_blank'>Juliana</a>
   - ext:    06_SADAF.png
     half:   true
     side:   left
     width:  1200
     height: 1788
     border: true
-    cap:    SADAF
+    cap:    <a href='https://soundcloud.com/hoss-records/sadaf-stillness' target='_blank'>SADAF</a>
   - ext:    02_Eartheater.png
     half:   true
     side:   right
     width:  1200
     height: 1788
     border: true
-    cap:    Eartheater
+    cap:    <a href='https://www.youtube.com/watch?v=Wimrg1l57nc' target='_blank'>Eartheater</a>
 exhibits:
   - name:   The Gallery at Ace Hotel New York
     link:   http://www.acehotel.com/newyork/gallery

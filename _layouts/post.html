@@ -28,7 +28,13 @@
             </div>
             <p class='caption'>{{ p.cap }}</p>
         {% else %}
+            {% if page.perm %}
+            <a href='{{ page.perm }}' target='_blank'>
             <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+            </a>
+            {% else %}
+            <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+            {% endif %}
             <p class='caption'>{{ p.cap }}</p>
         {% endif %}
         </div>
