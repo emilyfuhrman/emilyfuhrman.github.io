@@ -8,12 +8,10 @@
     - name:     Google
     - name:     Print All Over Me
     - name:     Simons Foundation
-- id:           talks
+- show:         false
+  id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
-  list:
-    - name:     "Columbia University&mdash;Map Club, Session 05"
-      t_right:  2016 08 09
 - show:         false
   id:           interviews
   title:        "Interviews"
