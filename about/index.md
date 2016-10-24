@@ -4,8 +4,8 @@ title: "About"
 sitemap:
   priority: 0.9
 ---
-My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. I explore critical approaches to creating beauty and meaning through data.
+My name is Emily Fuhrman. I am a data visualization designer and developer based in Brooklyn, New York. I explore critical approaches to creating beauty and meaning through data. I currently work at [Two Sigma](https://www.twosigma.com/).
 
 My work has been acknowledged by WIRED, Scientific American, and the Columbia University Group for Experimental Methods in the Humanities.
 
-For freelance inquiries, please [email](mailto:emily.c.fuhrman@gmail.com). 
+For freelance inquiries, please [email](mailto:ef2512@columbia.edu).
