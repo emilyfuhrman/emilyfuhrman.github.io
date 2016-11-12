@@ -1,9 +1,7 @@
-[submodule "lab/F2016003"]
-	path = lab/F2016003
-	url = https://github.com/emilyfuhrman/F2016003.git
 [submodule "lab/F2015020"]
 	path = lab/F2015020
 	url = https://github.com/emilyfuhrman/F2015020.git
+	ignore = dirty
 [submodule "interactive/Y2014001"]
 	path = interactive/Y2014001
 	url = https://github.com/emilyfuhrman/Y2014001.git
