@@ -3,11 +3,6 @@ lab:
     - data visualization
     - maps
   items:
-    - name:    Sensor dashboard
-      date:    '02 2016'
-      client:  Heat Seek
-      path:    /lab/F2016003
-      cat:     data visualization
     - name:    In the Same Boats
       date:    '02 2016'
       client:  'Small Axe, Inc.'
@@ -18,18 +13,3 @@ lab:
         - Kaiama Glover
         - Buck Wanner
         - Tola Ojulari
-    - name:    Visualizing Eisenstein's theory of montage
-      date:    '05 2016'
-      client:  'Columbia University&mdash;ENGLW4611'
-      path:    /lab/Y2016002
-      cat:     data visualization
-    - name:    'Building ownership visualization'
-      date:    '05 2016'
-      client:  'Heat Seek&mdash;ODSC'
-      path:    /lab/F2016004
-      cat:     data visualization
-    - name:    'Education interactive'
-      date:    '06 2016'
-      client:  'Quanta Magazine'
-      path:    /lab/F2016006
-      cat:     data visualization
