@@ -1584,6 +1584,167 @@ span.i {
 		}
 	}
 
+
+@media (min-width:1920px) { 
+	/* large monitors */
+
+	.container,
+	.container.fluid {
+		background:#fff;
+		width:1800px;
+		margin:0 auto;
+		padding:0;
+		}
+
+	.container #proj,
+	.container.fluid #proj {
+		margin-top:0;
+		padding:0 1rem;
+		}
+
+	#nav {
+		font-size:1rem;
+		line-height:1.5rem;
+		}
+
+	#nav .container .nav,
+	#nav .container.fluid .nav,
+	#nav .container .nav.home,
+	#nav .container.fluid .nav.home,
+	#nav .container .nav.proj,
+	#nav .container.fluid .nav.proj,
+	#nav .container .nav.abt,
+	#nav .container.fluid .nav.abt {
+		width:auto;
+		padding:0;
+		}
+	#nav .container .nav.home,
+	#nav .container.fluid .nav.home {
+		float:left;
+		margin-left:1rem;
+		}
+	#nav .container .nav.abt,
+	#nav .container.fluid .nav.abt {
+		float:right;
+		}
+	#nav .container .nav.proj,
+	#nav .container.fluid .nav.proj {
+		float:right;
+		margin-right:1rem;
+		}
+
+	.container #proj-list,
+	.container.fluid #proj-list {
+		margin-top:0;
+		padding:0 1rem;
+		}
+
+	#proj-list a.list-img-link {
+		width:22%;
+		width:calc(25% - 1.125rem);
+		height:auto;
+		margin:0 0 3rem 0;
+		padding:0;
+		}
+	#proj-list a.list-img-link._01,
+	#proj-list a.list-img-link._02,
+	#proj-list a.list-img-link._03,
+	#proj-list a.list-img-link._04,
+	#proj-list a.list-img-link.col_odd_01,
+	#proj-list a.list-img-link.col_odd_02,
+	#proj-list a.list-img-link.col_odd_03,
+	#proj-list a.list-img-link.col_odd_04 {
+		margin:0 0 3rem 0;
+		margin-left:0;
+		margin-right:0;
+		padding:0;
+		}
+	#proj-list a.list-img-link._02 {
+		margin-left:4%;
+		margin-left:calc(1.5rem - 0rem);
+		margin-right:2%;
+		margin-right:calc(0.75rem - 0rem);
+		}
+	#proj-list a.list-img-link._03{
+		margin-left:2%;
+		margin-left:calc(0.75rem - 0rem);
+		margin-right:4%;
+		margin-right:calc(1.5rem - 0rem);
+		}
+
+	#proj-list a.list-img-link .metadata p.list-title {
+		font-size:0.75rem;
+		line-height:1.25rem;
+		}
+	#proj-list a.list-img-link .metadata p.list-date {
+		font-size:1.5rem;
+		}
+
+	.container #proj #media .media,
+	.container.fluid #proj #media .media {
+		width:100%;
+		padding:0 0 2rem 0;
+		}
+	.container #proj #media .media.half,
+	.container.fluid #proj #media .media.half {
+		width:50%;
+		}
+	.container #proj #media .media.half.left,
+	.container.fluid #proj #media .media.half.left {
+		padding-right:1.5rem;
+		}
+	.container #proj #media .media.half.right,
+	.container.fluid #proj #media .media.half.right {
+		padding-left:1.5rem;
+		}
+
+	#contain {
+		margin-top:0;
+		padding:0 1rem;
+		}
+	#contain #content_mid .section.half,
+	#contain #content_mid .section.half.left,
+	#contain #content_mid .section.half.right {
+		padding:0;
+		}
+	#contain #content_mid .section.half.left {
+		width:50%;
+		padding-right:1.5rem;
+		}
+	#contain #content_mid .section.half.right {
+		width:50%;
+		padding-left:1.5rem;
+		}
+	#contain #content_mid .section .label {
+		border-top:none;
+		}
+	.clear {
+		margin-top:2rem;
+		border-top:1px solid rgba(0,0,0,0.02);
+		}
+
+	#base #footer.container,
+	#base #footer.container.fluid {
+		font-size:1rem;
+		line-height:1.5rem;
+		}
+	#base #footer .link {
+		float:left;
+		width:auto;
+		}
+	#base #footer .link a:hover {
+		border-bottom:2px solid $color-black;
+		}
+	#base #footer .link.social.email {
+		padding-left:1rem;
+		}
+	#base #footer .link.social.twitter,
+	#base #footer .link.social.instagram,
+	#base #footer .link.cv {
+		margin-left:1.5rem;
+		}
+	}
+
 /* 	------------------------------------
 	FIREFOX HACKS
    	------------------------------------ */
