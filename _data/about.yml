@@ -7,10 +7,14 @@
     - name:     Electric Objects
     - name:     Google
     - name:     Viacom
-- show:         false
-  id:           talks
+- id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
+  list:
+    - name:     The Art of Data Visualization
+      link:     http://columbia.edu
+      t_left:   Columbia University
+      t_right:  April 2017
 - show:         false
   id:           interviews
   title:        "Interviews"
