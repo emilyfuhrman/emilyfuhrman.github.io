@@ -17,8 +17,11 @@
       t_right:  April 2017
 - id:           interviews
   title:        "Interviews"
+  fancy:        true
   list:
     - name:     Columbia University
       link:     https://blog.gsas.columbia.edu/student-spotlight-emily-furhman/
+      t_right:  2017
     - name:     Electric Objects
       link:     http://zine.electricobjects.com/interviews/emily-fuhrman
+      t_right:  2016
