@@ -11,6 +11,10 @@
   title:        "Events &amp; public speaking"
   fancy:        true
   list:
+    - name:     "Digital Humanities for Caribbean History: A History Design Studio Workshop"
+      link:     http://harvard.edu
+      t_left:   Harvard University
+      t_right:  March 2017
     - name:     The Art of Data Visualization
       link:     http://columbia.edu
       t_left:   Columbia University
