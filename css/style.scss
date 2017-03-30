@@ -216,23 +216,28 @@ span.i {
 	}
 #main.home .vis.legend .legend-descrip {
 	position:absolute;
-    width:12rem;
-    right:0;
-    bottom:3rem;
+  width:12rem;
+  right:0;
+  bottom:3rem;
 	}
 #main.home .vis.legend .legend-title {
 	position:absolute;
-    color:$color-accent;
-    font-style:italic;
-    right:0;
-    bottom:0;
+  color:$color-accent;
+  font-style:italic;
+  right:0;
+  bottom:0;
 	}
 #main.home .vis.legend .unitbar {
 	position:absolute;
-    height:0;
-    right:0;
-    border-top:1px solid $color-accent;
+  right:0;
+  border-top:1px solid $color-accent;
 	}
+#main.home .vis.legend .unitbar_end {
+	display:none;
+	background:$color-accent;
+	position:absolute;
+	border:none;
+}
 
 #base.home {
 	display:none;

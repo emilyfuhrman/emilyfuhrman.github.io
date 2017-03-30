@@ -517,19 +517,27 @@ var schema = function(){
 			//build legend
 			var unitBars = d3.select('.vis.legend')
 				.selectAll('div.unitbar')
-				.data([self]);
+				.data(d3.range(3));
 			unitBars.enter().append('div')
-				.classed('unitbar',true);
+				.classed('unitbar',true)
+				.classed('unitbar_end',function(d,i){
+					return i !==1;
+				});
 			unitBars
 				.style('width',function(d,i){
 					//units are all the same now
 					var units = d3.entries(self.positions.v1).filter(function(_d,_i){ return _d.key === 'u'; })[0].value;
-					return Math.round(units) +'px';
+					return (i === 1 ? Math.round(units) : 1) +'px';
+				})
+				.style('height',function(d,i){
+					return (i === 1 ? 0 : 12) +'px';
 				})
 				.style('top',function(d,i){
-					//var offset = 43;
-					//return offset -1 +'px';
-					return '1rem';
+					return i === 1 ? '1rem' : 'calc(1rem - 6px)';
+				})
+				.style('margin-right',function(d,i){
+					var units = d3.entries(self.positions.v1).filter(function(_d,_i){ return _d.key === 'u'; })[0].value;
+					return i === 0 ? Math.round(units) +'px' : false;
 				});
 			unitBars.exit().remove();
 		}
