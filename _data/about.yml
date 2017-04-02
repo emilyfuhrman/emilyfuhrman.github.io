@@ -10,6 +10,7 @@
 - id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
+  show:         false
   list:
     - name:     The Art of Data Visualization
       t_left:   Columbia University
