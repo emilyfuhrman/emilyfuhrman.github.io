@@ -11,10 +11,6 @@
   title:        "Events &amp; public speaking"
   fancy:        true
   show:         false
-  list:
-    - name:     The Art of Data Visualization
-      t_left:   Columbia University
-      t_right:  April 2017
 - id:           interviews
   title:        "Interviews"
   fancy:        true
