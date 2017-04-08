@@ -83,6 +83,7 @@ span.i {
 	}
 
 .container#main {
+	min-height:calc(100vh - 9.3rem - 1px);
 	padding-top:9rem;
 	}
 
@@ -162,21 +163,21 @@ span.i {
 #main.home #vis svg .origin {
 	opacity:0;
 	fill:transparent;
-    stroke-width:1;
-    stroke:$color-accent;
-    pointer-events:none;
+  stroke-width:1;
+  stroke:$color-accent;
+  pointer-events:none;
 	}
 #main.home #vis svg .origin rect {
 	stroke:none;
 	}
 
 #main.home #vis svg .vertex path {
-    stroke:$color-black;
-    stroke-width:2;
-    pointer-events:none;
+  stroke:$color-black;
+  stroke-width:2;
+  pointer-events:none;
 	}
 #main.home #vis svg .vertex.selected path {
-    stroke:$color-accent;
+  stroke:$color-accent;
 	}
 
 #main.home #vis svg .vertex rect {
@@ -193,10 +194,10 @@ span.i {
 
 #main.home #vis svg .vertex .markup {
 	opacity:0;
-    fill:none;
-    stroke:$color-black;
-    stroke-width:1;
-    pointer-events:none;
+  fill:none;
+  stroke:$color-black;
+  stroke-width:1;
+  pointer-events:none;
 	}
 #main.home #vis svg .vertex.selected .markup {
 	opacity:1;
