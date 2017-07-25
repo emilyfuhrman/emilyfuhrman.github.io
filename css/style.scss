@@ -35,7 +35,7 @@ body {
 	font-size:20px;
 	font-family:sans-serif;
 	font-weight:normal;
-	line-height:1.5em;
+	line-height:1.6em;
 	letter-spacing:1px;
 	margin:0;
 	cursor:crosshair !important;
@@ -45,7 +45,7 @@ body {
 a {
 	color:$color-black;
 	text-decoration:none;
-	padding-bottom:0.0625rem;
+	padding-bottom:0.05rem;
 	border-bottom:2px solid $color-black;
 	outline:0;
 	cursor:cell !important;
@@ -62,6 +62,9 @@ p {
 
 span.i {
 	font-style:italic;
+	}
+span.sub {
+	font-size:0.75rem;
 	}
 
 /* 	------------------------------------
