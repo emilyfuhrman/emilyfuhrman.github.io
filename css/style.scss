@@ -619,7 +619,8 @@ span.sub {
 	}
 #contain #content_mid .section ul li .t_info span {
 	float:left;
-	width:100%;
+	/*width:100%;*/
+	width:auto;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	}

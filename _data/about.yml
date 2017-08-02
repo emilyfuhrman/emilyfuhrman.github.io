@@ -10,7 +10,16 @@
 - id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
-  show:         false
+  show:         true
+  list:
+    - name:     Data Visualization Summit
+      link:     https://theinnovationenterprise.com/summits/data-visualization-summit-boston-2017
+      t_left:   Boston
+      t_right:  "Sept. 2017"
+    - name:     Joyce in the Digital Age
+      link:     http://heymancenter.org/events/joyce-in-the-digital-age/
+      t_left:   Columbia University
+      t_right:  "Oct. 2017"
 - id:           interviews
   title:        "Interviews"
   fancy:        true
