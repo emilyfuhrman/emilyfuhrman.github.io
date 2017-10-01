@@ -10,12 +10,7 @@
 - id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
-  show:         true
-  list:
-    - name:     Joyce in the Digital Age
-      link:     http://heymancenter.org/events/joyce-in-the-digital-age/
-      t_left:   Columbia University
-      t_right:  "Oct. 2017"
+  show:         false
 - id:           interviews
   title:        "Interviews"
   fancy:        true
