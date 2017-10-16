@@ -33,8 +33,8 @@ images:
     width:  1080
     height: 1920
 exhibits:
-  - name:   Minneapolis Center for Digital Art
-    link:   http://www.mplsart.com/
+  - name:   The Mini Microcinema
+    link:   http://www.mini-cinema.org/
 tags:
   - dynamic
   - commission
