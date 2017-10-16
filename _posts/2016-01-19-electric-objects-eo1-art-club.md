@@ -32,6 +32,9 @@ images:
     side:   right
     width:  1080
     height: 1920
+exhibits:
+  - name:   Minneapolis Center for Digital Art
+    link:   http://www.mplsart.com/
 tags:
   - dynamic
   - commission
