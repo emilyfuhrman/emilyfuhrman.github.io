@@ -34,7 +34,7 @@ images:
     height: 1920
 exhibits:
   - name:   The Mini Microcinema
-    link:   http://www.mini-cinema.org/
+    link:   http://www.mini-cinema.org/screenings/object
 tags:
   - dynamic
   - commission
