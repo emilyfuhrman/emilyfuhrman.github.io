@@ -1,0 +1,12 @@
+{% include header_flaneuserie.html %}
+<div id='albums'>
+	{% for post in site.flaneuserie %}
+	<a href='{{ post.url }}'>
+		<div class='album_cover'>
+			<div class='album_title'>{{ post.title }}</div>
+			<img src='../photos/{{ post.post_path }}/cover.jpg'></img>
+		</div>
+	</a>
+	{% endfor %}
+</div>
+{% include footer_flaneuserie.html %}

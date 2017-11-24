@@ -1,6 +1,5 @@
 ---
 post_id:    Y2013005
-cat:        projects
 title:      "Study: Ephemeral Data"
 post_path:  ephemeral-data
 images:

@@ -1,24 +1,35 @@
 # site information
-name:          "EF"
-description:   "Emily Fuhrman is a data artist based in Brooklyn, New York."
-keywords:      "Data Visualization, Columbia, Two Sigma"
-url:           http://emilyfuhrman.co
-permalink:     none
+name:             "EF"
+description:      "Emily Fuhrman is a data artist based in Brooklyn, New York."
+keywords:         "Data Visualization, Columbia, Two Sigma"
+url:              http://emilyfuhrman.co
+permalink:        none
 
-# default settings
+# post settings
 defaults:
-  -
-    scope:
-      path:     ''
-      type:     posts
+  - scope:
+      path:        ''
+      type:        posts
     values:
-      category: projects
-      layout:   post
-      is_post:  true
+      category:    projects
+      layout:      post
+      is_post:     true
+  - scope:
+      path:        ''
+      type:        flaneuserie
+    values:
+      category:    flaneuserie
+      layout:      post_flaneuserie
 
 # formatting
 kramdown:
-  auto_ids: false
+  auto_ids:        false
 
 sass:
-  style: compressed
+  style:           compressed
+
+# collections
+collections:
+  flaneuserie:
+    output:        true
+    permalink:     /:collection/:year/:month/:title.html

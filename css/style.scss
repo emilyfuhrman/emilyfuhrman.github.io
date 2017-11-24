@@ -68,7 +68,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	GENERAL
+		GENERAL
    	------------------------------------ */
 
 .container {
@@ -88,10 +88,11 @@ span.sub {
 .container#main {
 	min-height:calc(100vh - 9.3rem - 1px);
 	padding-top:9rem;
+	overflow:hidden;
 	}
 
 /* 	------------------------------------
-	NAVIGATION
+		NAVIGATION
    	------------------------------------ */
 
 #nav {
@@ -138,7 +139,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	HOME
+		HOME
    	------------------------------------ */
 
 #nav.home {
@@ -248,7 +249,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	PROJECT LIST PAGE
+		PROJECT LIST PAGE
    	------------------------------------ */
 
 .container #proj-list,
@@ -327,7 +328,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	POST
+		POST
    	------------------------------------ */
 
 .container #proj,
@@ -545,7 +546,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	ABOUT PAGE
+		ABOUT PAGE
    	------------------------------------ */
 
 #contain {
@@ -646,7 +647,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	IDX
+		IDX
    	------------------------------------ */
 
 #contain.idx {
@@ -701,7 +702,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	FOOT
+		FOOTER
    	------------------------------------ */
 
 #base {
@@ -740,7 +741,34 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	FLUIDITY
+		FLANEUSERIE
+   	------------------------------------ */
+
+#albums {
+	float:left;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+#albums .album_cover {
+	float:left;
+	width:50%;
+	height:auto;
+	box-sizing:border-box;
+}
+#albums .album_cover .album_title {
+	position:absolute;
+}
+#albums .album_cover img {
+	float:left;
+	width:100%;
+	height:auto;
+}
+
+/* 	------------------------------------
+		FLUIDITY
    	------------------------------------ */
 
 @media (min-width:320px) { 
@@ -1808,7 +1836,7 @@ span.sub {
 	}
 
 /* 	------------------------------------
-	FIREFOX HACKS
+		FIREFOX HACKS
    	------------------------------------ */
 
 @-moz-document url-prefix() { 
