@@ -3,8 +3,11 @@ sitemap:
   exclude: 'yes'
 ---
 
-$color-black:#000;
-$color-accent:#0055FF;
+@import url('https://fonts.googleapis.com/css?family=Trochut:700');
+
+$color_black:#000;
+$color_accent:#0055FF;
+$color_red:#F44336;
 
 $ttime:120ms;
 
@@ -26,13 +29,18 @@ $ttime:120ms;
       -ms-box-shadow:$box-shadow;
           box-shadow:$box-shadow;
 }
+@mixin transform($transform...) {
+  	-webkit-transform:$transform;
+				-ms-transform:$transform;
+						transform:$transform;
+}
 
 html,
 body {
 	width:100%;
 	height:100%;
 	background-color:#fff;
-	color:$color-black;
+	color:$color_black;
 	font-size:20px;
 	font-family:sans-serif;
 	font-weight:normal;
@@ -44,16 +52,16 @@ body {
 	}
 
 a {
-	color:$color-black;
+	color:$color_black;
 	text-decoration:none;
 	padding-bottom:0.05rem;
-	border-bottom:2px solid $color-black;
+	border-bottom:2px solid $color_black;
 	outline:0;
 	cursor:cell !important;
 	}
 a:hover {
-	color:$color-black;
-	border-bottom-color:$color-black;
+	color:$color_black;
+	border-bottom-color:$color_black;
 	}
 
 p {
@@ -103,7 +111,6 @@ span.sub {
 	font-size:1rem;
 	padding:2.5rem 0;
 	z-index:1000;
-	/*@include transition(padding 120ms ease, color 120ms ease);*/
 	}
 #nav.fixed {
 	position:fixed;
@@ -132,11 +139,11 @@ span.sub {
 	}
 
 #nav .container a.btn:hover {
-	color:$color-black;
+	color:$color_black;
 	}
 #nav .container a.btn:hover .nav {
 	border-bottom:none;
-	/*border-bottom:2px solid $color-black;*/
+	/*border-bottom:2px solid $color_black;*/
 	}
 
 /* 	------------------------------------
@@ -169,7 +176,7 @@ span.sub {
 	opacity:0;
 	fill:transparent;
   stroke-width:1;
-  stroke:$color-accent;
+  stroke:$color_accent;
   pointer-events:none;
 	}
 #main.home #vis svg .origin rect {
@@ -177,12 +184,12 @@ span.sub {
 	}
 
 #main.home #vis svg .vertex path {
-  stroke:$color-black;
+  stroke:$color_black;
   stroke-width:2;
   pointer-events:none;
 	}
 #main.home #vis svg .vertex.selected path {
-  stroke:$color-accent;
+  stroke:$color_accent;
 	}
 
 #main.home #vis svg .vertex rect {
@@ -190,23 +197,23 @@ span.sub {
 	}
 
 #main.home #vis svg .vertex polygon {
-	fill:$color-black;
+	fill:$color_black;
 	pointer-events:none;
 	}
 #main.home #vis svg .vertex.selected polygon {
-	fill:$color-accent;
+	fill:$color_accent;
 	}
 
 #main.home #vis svg .vertex .markup {
 	opacity:0;
   fill:none;
-  stroke:$color-black;
+  stroke:$color_black;
   stroke-width:1;
   pointer-events:none;
 	}
 #main.home #vis svg .vertex.selected .markup {
 	opacity:1;
-	stroke:$color-accent;
+	stroke:$color_accent;
 	}
 
 #main.home .vis.legend {
@@ -228,7 +235,7 @@ span.sub {
 	}
 #main.home .vis.legend .legend-title {
 	position:absolute;
-  color:$color-accent;
+  color:$color_accent;
   font-style:italic;
   right:0;
   bottom:0;
@@ -236,11 +243,11 @@ span.sub {
 #main.home .vis.legend .unitbar {
 	position:absolute;
   right:0;
-  border-top:1px solid $color-accent;
+  border-top:1px solid $color_accent;
 	}
 #main.home .vis.legend .unitbar_end {
 	display:none;
-	background:$color-accent;
+	background:$color_accent;
 	position:absolute;
 	border:none;
 }
@@ -263,7 +270,7 @@ span.sub {
 	}
 
 #proj-list a:hover {
-	color:$color-black;
+	color:$color_black;
 	}
 #proj-list a.list-img-link {
 	position:relative;
@@ -420,7 +427,7 @@ span.sub {
 	margin-top:1.2em;
 	}
 #proj #media .media .caption a {
-	border-bottom:2px solid $color-black;
+	border-bottom:2px solid $color_black;
 	}
 
 #proj #descrip {
@@ -449,14 +456,14 @@ span.sub {
 	border:none;
 	}
 #proj #post-nav .arrow a:hover {
-	color:$color-black;
+	color:$color_black;
 	}
 
 #proj .sub {
 	display:block;
 	float:left;
 	width:100%;
-	color:$color-black;
+	color:$color_black;
 	font-size:0.5rem;
 	text-transform:uppercase;
 	line-height:0.75rem;
@@ -480,12 +487,12 @@ span.sub {
 #proj .sub .link a {
 	display:block;
 	float:left;
-	color:$color-accent;
+	color:$color_accent;
 	padding-bottom:0;
 	border-bottom:none;
 	}
 #proj .sub .link a:hover {
-	color:$color-accent;
+	color:$color_accent;
 	text-decoration:none;
 	border-bottom:none;
 	}
@@ -727,8 +734,8 @@ span.sub {
 	border:none;
 	}
 #base #footer .link a:hover {
-	color:$color-black;
-	border-bottom:2px solid $color-black;
+	color:$color_black;
+	border-bottom:2px solid $color_black;
 	}
 #base #footer .link.social.email {
 	padding-left:1rem;
@@ -745,6 +752,19 @@ span.sub {
 		FLANEUSERIE
    	------------------------------------ */
 
+#section_title {
+	position:fixed;
+	font-family:'Trochut',sans-serif;
+	font-size:3.6rem;
+	left:0px;
+	top:200px;
+	@include transform(rotate(5deg));
+}
+#section_title a {
+	color:$color_red;
+	border-color:$color_red;
+}
+
 #albums {
 	float:left;
 	width:100%;
@@ -757,7 +777,7 @@ span.sub {
 	float:left;
 	width:50%;
 	height:auto;
-	box-sizing:border-box;
+	@include box-sizing(border-box);
 }
 #albums .album_cover .album_title {
 	position:absolute;
@@ -773,7 +793,7 @@ span.sub {
 .album_page_image {
 	width:100%;
 	height:auto;
-	box-sizing:border-box;
+	@include box-sizing(border-box);
 }
 
 /* 	------------------------------------
@@ -1031,7 +1051,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1174,7 +1194,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1328,7 +1348,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1487,7 +1507,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
@@ -1652,7 +1672,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:1rem;
@@ -1832,7 +1852,7 @@ span.sub {
 		width:auto;
 		}
 	#base #footer .link a:hover {
-		border-bottom:2px solid $color-black;
+		border-bottom:2px solid $color_black;
 		}
 	#base #footer .link.social.email {
 		padding-left:1rem;

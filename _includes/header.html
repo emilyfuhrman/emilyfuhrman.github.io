@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	
-	<title>{{ site.name }}</title>
+	<title>Flâneuserie</title>
 	
 	<link rel='icon' href='/favicon.ico' />
 	<link rel='stylesheet' type='text/css' href='/css/style.css' />
@@ -28,6 +28,10 @@
 	</script>
 </head>
 <body>
-	{% include nav.html %}
+	{% if page.category == 'flaneuserie' %}
+		{% include nav_gallery.html %}
+	{% else %}
+		{% include nav.html %}
+	{% endif %}
 	<div id='main' class='resize container {{ page.category }}'>
 		

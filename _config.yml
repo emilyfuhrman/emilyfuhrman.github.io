@@ -19,7 +19,7 @@ defaults:
       type:        flaneuserie
     values:
       category:    flaneuserie
-      layout:      post_flaneuserie
+      layout:      post_gallery
 
 # formatting
 kramdown:
