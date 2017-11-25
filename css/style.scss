@@ -751,13 +751,16 @@ span.sub {
 /* 	------------------------------------
 		FLANEUSERIE
    	------------------------------------ */
+.flaneuserie.container#main {
+	padding-top:0;
+}
 
 #section_title {
 	position:fixed;
 	font-family:'Trochut',serif;
-	font-size:3.4rem;
-	letter-spacing:-0.125rem;
-	left:0px;
+	font-size:1.8rem;
+	letter-spacing:-0.075rem;
+	left:20px;
 	top:60px;
 	@include transform(rotate(5deg));
 	-webkit-font-smoothing:antialiased;
@@ -779,8 +782,9 @@ span.sub {
 
 #albums .album_cover {
 	float:left;
-	width:50%;
+	width:100%;
 	height:auto;
+	padding:0.5rem;
 	@include box-sizing(border-box);
 }
 #albums .album_cover .album_title {
@@ -795,8 +799,10 @@ span.sub {
 .album_page_title {
 }
 .album_page_image {
+	float:left;
 	width:100%;
 	height:auto;
+	padding:0.375rem 0;
 	@include box-sizing(border-box);
 }
 

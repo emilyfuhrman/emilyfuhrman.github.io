@@ -1,8 +1,6 @@
 {% include header.html %}
-<div class='resize container'>
-    <div class='album_page_title'>{{ page.title }}</div>
-    {% for photo in page.photos %}
-        <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
-    {% endfor %}
-</div>
+  <div class='album_page_title'>{{ page.title }}</div>
+  {% for photo in page.photos %}
+      <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
+  {% endfor %}
 {% include footer.html %}
