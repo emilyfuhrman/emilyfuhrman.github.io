@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Trochut:700');
+@import url('https://fonts.googleapis.com/css?family=Trochut:700|Raleway:100,200|Arvo:700');
 
 $color_black:#000;
 $color_accent:#0055FF;
@@ -749,10 +749,12 @@ span.sub {
 	}
 
 /* 	------------------------------------
-		FLANEUSERIE
+		GALLERY
    	------------------------------------ */
+
 .flaneuserie.container#main {
 	padding-top:0;
+	max-width:960px;
 }
 
 #section_title {
@@ -760,9 +762,9 @@ span.sub {
 	font-family:'Trochut',serif;
 	font-size:1.8rem;
 	letter-spacing:-0.075rem;
-	left:20px;
-	top:60px;
-	@include transform(rotate(5deg));
+	left:10px;
+	top:30px;
+	@include transform(rotate(-5deg));
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
@@ -782,13 +784,40 @@ span.sub {
 
 #albums .album_cover {
 	float:left;
-	width:100%;
+	width:50%;
 	height:auto;
+	line-height:normal;
 	padding:0.5rem;
 	@include box-sizing(border-box);
 }
+
+#albums .album_cover .album_title,
+.album_page_title {
+	float:left;
+	width:100%;
+	font-family:'Raleway',sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+}
+#albums .album_cover .album_date,
+.album_page_date {
+	float:left;
+	width:100%;
+	font-family:'Arvo',serif;
+	text-align:center;
+  letter-spacing:0.05rem;
+}
+
 #albums .album_cover .album_title {
-	position:absolute;
+	font-size:0.75rem;
+	font-weight:200;
+	letter-spacing:0.125rem;
+	padding:1.0rem 0 0;
+}
+#albums .album_cover .album_date {
+  font-size:0.5rem;
+  font-weight:bold;
+	padding:0.25rem 0;
 }
 #albums .album_cover img {
 	float:left;
@@ -797,12 +826,21 @@ span.sub {
 }
 
 .album_page_title {
+	font-size:2.0rem;
+	font-weight:100;
+	letter-spacing:0.275rem;
+	padding:1.5rem 0 0;
+}
+.album_page_date {
+  font-size:0.65rem;
+  font-weight:bold;
+  padding:0.25rem 0 1.5rem;
 }
 .album_page_image {
 	float:left;
 	width:100%;
 	height:auto;
-	padding:0.375rem 0;
+	padding:0;
 	@include box-sizing(border-box);
 }
 

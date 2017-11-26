@@ -3,8 +3,9 @@
 	{% for post in site.flaneuserie %}
 	<a href='{{ post.url }}'>
 		<div class='album_cover'>
-			<div class='album_title'>{{ post.title }}</div>
 			<img src='../photos/{{ post.post_path }}/cover.jpg'/>
+			<div class='album_title'>{{ post.title }}</div>
+  		<div class='album_date'>{{ post.date_start }}&nbsp;&ndash;&nbsp;{{ post.date_end }}</div>
 		</div>
 	</a>
 	{% endfor %}

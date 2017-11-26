@@ -1,6 +1,7 @@
 {% include header.html %}
   <div class='album_page_title'>{{ page.title }}</div>
+  <div class='album_page_date'>{{ page.date_start }}&nbsp;&ndash;&nbsp;{{ page.date_end }}</div>
   {% for photo in page.photos %}
-      <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
+      <img class='album_page_image {{ photo.class }}' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
   {% endfor %}
 {% include footer.html %}
