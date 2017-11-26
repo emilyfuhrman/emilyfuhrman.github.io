@@ -1,6 +1,7 @@
 {% include header.html %}
 <div id='albums'>
-	{% for post in site.flaneuserie %}
+	{% for post in site.flaneuserie reversed %}
+	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 	<a href='{{ post.url }}'>
 		<div class='album_cover'>
 			<img src='../photos/{{ post.post_path }}/cover.jpg'/>
