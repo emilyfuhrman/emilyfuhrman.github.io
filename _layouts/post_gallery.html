@@ -2,6 +2,11 @@
   <div class='album_page_title'>{{ page.title }}</div>
   <div class='album_page_date'>{{ page.date_start }}&nbsp;&ndash;&nbsp;{{ page.date_end }}</div>
   {% for photo in page.photos %}
-      <img class='album_page_image {{ photo.class }}' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
+  	<div class='photo_frame {{ photo.class }}'>
+      <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
+      {% if photo.text %}
+      <div class='photo_caption'>{{ photo.text }}</div>
+      {% endif %}
+  	</div>
   {% endfor %}
 {% include footer.html %}

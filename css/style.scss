@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Trochut:700|Raleway:100,200|Arvo:700');
+@import url('https://fonts.googleapis.com/css?family=Trochut:700|Raleway:100,200|Arvo:400,700');
 
 $color_black:#000;
 $color_accent:#0055FF;
@@ -804,6 +804,7 @@ span.sub {
 	float:left;
 	width:100%;
 	font-family:'Arvo',serif;
+	font-weight:700;
 	text-align:center;
   letter-spacing:0.05rem;
 }
@@ -834,14 +835,33 @@ span.sub {
 .album_page_date {
   font-size:0.65rem;
   font-weight:bold;
-  padding:0.25rem 0 1.5rem;
+  padding:0.25rem 0 2.0rem;
 }
-.album_page_image {
+
+.photo_frame {
 	float:left;
 	width:100%;
 	height:auto;
-	padding:0;
+	padding:0.5rem;
 	@include box-sizing(border-box);
+}
+.photo_frame.vertical.left,
+.photo_frame.vertical.right {
+	width:50%;
+}
+.photo_frame .album_page_image {
+	float:left;
+	width:100%;
+	height:auto;
+}
+.photo_frame .photo_caption {
+	float:left;
+	width:100%;
+	font-family:'Arvo',serif;
+  font-size:0.65rem;
+	font-weight:400;
+	letter-spacing:0;
+	padding:0.5rem 0;
 }
 
 /* 	------------------------------------
