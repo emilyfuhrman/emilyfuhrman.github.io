@@ -1,6 +1,6 @@
 {% include header.html %}
   <div class='album_page_title'>{{ page.title }}</div>
-  <div class='album_page_date'>{{ page.date_start }}&nbsp;&ndash;&nbsp;{{ page.date_end }}</div>
+  <div class='album_page_date'>{{ page.date_start }}{% if page.date_end %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}</div>
   {% for photo in page.photos %}
   	<div class='photo_frame {{ photo.class }}'>
       <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
