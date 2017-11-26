@@ -1007,6 +1007,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:0;
 		}
+
+	#albums .grid-item {
+		width:100%;
+		}
 	}
 
 @media (min-width:481px) { 
@@ -1150,6 +1154,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
+
+	#albums .grid-item {
+		width:100%;
+		}
 	}
 
 @media (min-width:641px) { 
@@ -1287,6 +1295,10 @@ span.sub {
 		}
 	#base #footer .link.social.email {
 		padding-left:0;
+		}
+
+	#albums .grid-item {
+		width:50%;
 		}
 	}
 
@@ -1447,6 +1459,11 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
+
+	#albums .grid-item {
+		width:33%;
+		width:calc(100% / 3);
+		}
 	}
 
 @media (min-width:1025px) { 
@@ -1605,6 +1622,11 @@ span.sub {
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
+		}
+
+	#albums .grid-item {
+		width:33%;
+		width:calc(100% / 3);
 		}
 	}
 
@@ -1770,6 +1792,11 @@ span.sub {
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
+		}
+
+	#albums .grid-item {
+		width:33%;
+		width:calc(100% / 3);
 		}
 	}
 
@@ -1950,6 +1977,11 @@ span.sub {
 	#base #footer .link.social.instagram,
 	#base #footer .link.cv {
 		margin-left:1.5rem;
+		}
+
+	#albums .grid-item {
+		width:33%;
+		width:calc(100% / 3);
 		}
 	}
 

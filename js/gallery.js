@@ -1,6 +1,7 @@
 //initialize masonry
 var $grid = $('.grid').masonry({
-	itemSelector: '.grid-item'
+	itemSelector: '.grid-item',
+	transitionDuration: 0
 });
 
 //only layout Masonry after images are loaded
