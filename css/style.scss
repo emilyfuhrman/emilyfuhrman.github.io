@@ -767,10 +767,10 @@ span.sub {
 	z-index:1;
 	position:fixed;
 	font-family:'Trochut',serif;
-	font-size:3.0rem;
+	font-size:1.5rem;
 	letter-spacing:-0.05rem;
 	left:1.5rem;
-	top:6.0rem;
+	top:4.5rem;
 	@include transform(rotate(-10deg));
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
