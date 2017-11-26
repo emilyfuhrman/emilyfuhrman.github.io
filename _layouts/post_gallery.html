@@ -9,4 +9,16 @@
       {% endif %}
   	</div>
   {% endfor %}
+  {% if page.metadata %}
+  <div class='album_page_metadata'>
+	  {% for d in page.metadata %}
+	  <div class='list_section_title'>{{ d.title }}</div>
+	  <ul class='list_items'>
+	  	{% for _d in d.list %}
+	  	<li>&mdash;&nbsp;{{ _d }}</li>
+	  	{% endfor %}
+	  </ul>
+	  {% endfor %}
+	</div>
+  {% endif %}
 {% include footer.html %}
