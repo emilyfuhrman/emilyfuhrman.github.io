@@ -863,6 +863,11 @@ span.sub {
 	width:calc(100% - 2.0rem);
 	margin-left:1.0rem;
 	margin-top:1.0rem;
+	border-top:1px solid $color_black;
+}
+.album_page_metadata .list_section {
+	width:100%;
+	padding:0.5rem 0;
 }
 .album_page_metadata .list_section_title {
 	width:100%;
@@ -870,9 +875,9 @@ span.sub {
   letter-spacing:0.05rem;
 	text-transform:uppercase;
 	padding:0.25rem 0;
-	border-top:1px solid $color_black;
 }
 .album_page_metadata ul {
+	width:100%;
 	list-style-type:none;
 	line-height:normal;
 	margin:0 0 0 40px;
