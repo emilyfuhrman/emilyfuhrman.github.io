@@ -1,9 +1,3 @@
-/*window.onload = function(){
-	setFluid();
-	if(window.location.pathname.length === 0 || window.location.pathname === '/'){
-		schema().generate();
-	}
-};*/
 $(document).ready(function(){
 	setFluid();
 	if(window.location.pathname.length === 0 || window.location.pathname === '/'){
