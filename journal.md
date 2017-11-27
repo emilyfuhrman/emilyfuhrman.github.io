@@ -1,9 +1,9 @@
 ---
 layout: page_list_gallery
-title: "Flâneuserie"
-category: flaneuserie
+title: "EF Journal"
+category: journal
 description: A travel diary. 
-permalink: /flaneuserie/
+permalink: /journal/
 sitemap:
   priority: 0.9
 ---

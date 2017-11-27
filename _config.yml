@@ -16,9 +16,9 @@ defaults:
       is_post:     true
   - scope:
       path:        ''
-      type:        flaneuserie
+      type:        journal
     values:
-      category:    flaneuserie
+      category:    journal
       layout:      post_gallery
 
 # formatting
@@ -30,6 +30,6 @@ sass:
 
 # collections
 collections:
-  flaneuserie:
+  journal:
     output:        true
     permalink:     /:collection/:year/:month/:title.html

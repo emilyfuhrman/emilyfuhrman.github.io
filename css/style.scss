@@ -749,16 +749,15 @@ span.sub {
 	}
 
 /* 	------------------------------------
-		GALLERY
+		JOURNAL
    	------------------------------------ */
 
-.flaneuserie.container#main {
+.journal.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
 	padding:1.5rem 0.5rem 3.0rem;
-	/*max-width:960px;*/
 }
-.flaneuserie.container#main div {
+.journal.container#main div {
 	float:left;
 	@include box-sizing(border-box);
 }
