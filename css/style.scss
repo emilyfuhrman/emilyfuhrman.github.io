@@ -777,6 +777,9 @@ span.sub {
 	color:$color_black;
 	border-bottom:none;
 }
+#section_title a:hover {
+	color:$color_red;
+}
 
 #albums {
 	width:100%;
