@@ -755,7 +755,7 @@ span.sub {
 .journal.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
-	padding:1.5rem 0.5rem 3.0rem;
+	padding:4.5rem 0.5rem;
 }
 .journal.container#main div {
 	float:left;
@@ -768,16 +768,14 @@ span.sub {
 	font-family:'Trochut',serif;
 	font-size:1.5rem;
 	letter-spacing:-0.05rem;
-	left:1.5rem;
-	top:4.5rem;
-	@include transform(rotate(-10deg));
+	margin:2.0rem 1.0rem;
+	@include transform(rotate(-4deg));
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
 #section_title a {
-	color:$color_red;
-	border-color:$color_red;
-	border-width:1px;
+	color:$color_black;
+	border-bottom:none;
 }
 
 #albums {
@@ -841,7 +839,7 @@ span.sub {
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:1.0rem;
+	padding:0.5rem;
 }
 .photo_frame.vertical.left,
 .photo_frame.vertical.right {
@@ -1008,6 +1006,9 @@ span.sub {
 		margin-left:0;
 		}
 
+	#section_title {
+		margin-left:-0.5rem;
+		}
 	#albums .grid-item {
 		width:100%;
 		}
@@ -1154,7 +1155,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
-
+	
+	#section_title {
+		margin-left:-0.5rem;
+		}
 	#albums .grid-item {
 		width:100%;
 		}
@@ -1296,7 +1300,10 @@ span.sub {
 	#base #footer .link.social.email {
 		padding-left:0;
 		}
-
+	
+	#section_title {
+		margin-left:-0.5rem;
+		}
 	#albums .grid-item {
 		width:50%;
 		}
@@ -1459,7 +1466,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
-
+	
+	#section_title {
+		margin-left:-0.5rem;
+		}
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
@@ -1623,7 +1633,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
-
+	
+	#section_title {
+		margin-left:-0.5rem;
+		}
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
@@ -1793,7 +1806,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
-
+	
+	#section_title {
+		margin-left:1.0rem;
+		}
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
@@ -1978,7 +1994,10 @@ span.sub {
 	#base #footer .link.cv {
 		margin-left:1.5rem;
 		}
-
+	
+	#section_title {
+		margin-left:1.0rem;
+		}
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
