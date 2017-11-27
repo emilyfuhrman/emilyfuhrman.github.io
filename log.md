@@ -1,9 +1,9 @@
 ---
 layout: page_list_gallery
-title: "EF Journal"
-category: journal
+title: "EF Log"
+category: log
 description: A travel diary. 
-permalink: /journal/
+permalink: /log/
 sitemap:
   priority: 0.9
 ---

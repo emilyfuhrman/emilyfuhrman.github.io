@@ -16,9 +16,9 @@ defaults:
       is_post:     true
   - scope:
       path:        ''
-      type:        journal
+      type:        log
     values:
-      category:    journal
+      category:    log
       layout:      post_gallery
 
 # formatting
@@ -30,6 +30,6 @@ sass:
 
 # collections
 collections:
-  journal:
+  log:
     output:        true
     permalink:     /:collection/:year/:month/:title.html

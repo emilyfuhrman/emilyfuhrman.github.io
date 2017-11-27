@@ -8,7 +8,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<title>
-		{% if page.category == 'journal' %}
+		{% if page.category == 'log' %}
 			{{ page.title }}
 		{% else %}
 			{{ site.name }}
@@ -36,7 +36,7 @@
 	</script>
 </head>
 <body>
-	{% if page.category == 'journal' %}
+	{% if page.category == 'log' %}
 		{% include nav_gallery.html %}
 	{% else %}
 		{% include nav.html %}

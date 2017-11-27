@@ -1,6 +1,6 @@
 {% include header.html %}
 <div id='albums' class='grid'>
-	{% for post in site.journal reversed %}
+	{% for post in site.log reversed %}
 	<a href='{{ post.url }}'>
 		<div class='album_cover grid-item'>
 			<img src='../photos/{{ post.post_path }}/cover.jpg'/>

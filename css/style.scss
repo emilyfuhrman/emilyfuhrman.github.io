@@ -749,15 +749,15 @@ span.sub {
 	}
 
 /* 	------------------------------------
-		JOURNAL
+		LOG
    	------------------------------------ */
 
-.journal.container#main {
+.log.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
 	padding:4.5rem 0.5rem;
 }
-.journal.container#main div {
+.log.container#main div {
 	float:left;
 	@include box-sizing(border-box);
 }
