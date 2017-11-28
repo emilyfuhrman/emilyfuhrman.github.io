@@ -767,6 +767,7 @@ span.sub {
 	position:fixed;
 	font-family:'Trochut',serif;
 	font-size:1.75rem;
+	font-kerning:normal;
 	letter-spacing:-0.05rem;
 	margin:1.25rem 1.0rem;
 	/*@include transform(rotate(-4deg));*/
@@ -774,10 +775,12 @@ span.sub {
 	-moz-osx-font-smoothing:grayscale;
 }
 #section_title a {
+	opacity:0.9;
 	color:$color_black;
 	border-bottom:none;
 }
 #section_title a:hover {
+	opacity:1;
 	color:$color_red;
 }
 
