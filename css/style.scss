@@ -769,7 +769,7 @@ span.sub {
 	font-size:1.75rem;
 	letter-spacing:-0.05rem;
 	margin:1.25rem 1.0rem;
-	@include transform(rotate(-4deg));
+	/*@include transform(rotate(-4deg));*/
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
