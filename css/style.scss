@@ -752,10 +752,32 @@ span.sub {
 		LOG
    	------------------------------------ */
 
+@mixin caps_sans_serif {
+	font-family:'Raleway',sans-serif;
+	text-transform:uppercase;
+}
+@mixin caps_sans_serif_small {
+	@include caps_sans_serif;
+	font-size:0.75rem;
+	font-weight:200;
+	letter-spacing:0.125rem;
+}
+@mixin caps_sans_serif_large {
+	@include caps_sans_serif;
+	font-size:2.0rem;
+	font-weight:100;
+	letter-spacing:0.275rem;
+}
+@mixin tiny_serif {
+	font-family:'Arvo',serif;
+  font-size:0.5rem;
+  font-weight:bold;
+}
+
 .log.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
-	padding:6.0rem 0.5rem 6.0rem;
+	padding:7.5rem 0.5rem;
 }
 .log.container#main div {
 	float:left;
@@ -769,7 +791,7 @@ span.sub {
 	font-size:1.75rem;
 	font-kerning:normal;
 	letter-spacing:-0.05rem;
-	margin:1.25rem 1.0rem;
+	margin:1.25rem 1rem;
 	/*@include transform(rotate(-4deg));*/
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
@@ -787,7 +809,7 @@ span.sub {
 #albums {
 	width:100%;
 	height:100%;
-	margin:0;
+	margin:0 0 4.0rem 0;
 	padding:0;
 }
 
@@ -799,13 +821,6 @@ span.sub {
 	padding:1.5rem 0.5rem 0.5rem;
 }
 
-#albums .album_cover .album_title,
-.album_page_title {
-	width:100%;
-	font-family:'Raleway',sans-serif;
-	text-transform:uppercase;
-	text-align:center;
-}
 #albums .album_cover .album_date,
 .album_page_date {
 	width:100%;
@@ -815,14 +830,13 @@ span.sub {
 }
 
 #albums .album_cover .album_title {
-	font-size:0.75rem;
-	font-weight:200;
-	letter-spacing:0.125rem;
-	padding:1.0rem 0 0;
+	@include caps_sans_serif_small;
+	width:100%;
+	text-align:center;
+	padding:1rem 0 0;
 }
 #albums .album_cover .album_date {
-  font-size:0.5rem;
-  font-weight:bold;
+	@include tiny_serif;
 	padding:0.25rem 0;
 }
 #albums .album_cover img {
@@ -831,10 +845,57 @@ span.sub {
 	height:auto;
 }
 
+.panel {
+	width:100%;
+	padding:0 0 7.5rem 0;
+}
+.panel .panel_label {
+	@include caps_sans_serif_small;
+	position:relative;
+	width:100%;
+	width:calc(100% - 1rem);
+	margin-left:0.5rem;
+	padding:0.5rem 0 2rem;
+	border-top:1px solid #eee;
+}
+.panel .panel_images {
+	width:100%;
+}
+.panel .panel_images .panel_item {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:20%;
+	width:calc((100% / 5) - 1rem);
+	margin:0.5rem;
+	padding:0;
+}
+.panel .panel_images .panel_item:before {
+	content:"";
+	display:block;
+	padding-top:100%;
+}
+.panel .panel_images .panel_item .panel_item_detail {
+	position:absolute;
+	text-align:center;
+	margin-top:0.75rem;
+}
+.panel .panel_images .panel_item .panel_item_label {
+	@include caps_sans_serif_small;
+	position:relative;
+	width:100%;
+}
+.panel .panel_images .panel_item .panel_item_date {
+	@include tiny_serif;
+	position:relative;
+	width:100%;
+	margin-top:-0.5rem;
+}
+
 .album_page_title {
-	font-size:2.0rem;
-	font-weight:100;
-	letter-spacing:0.275rem;
+	@include caps_sans_serif_large;
+	width:100%;
+	text-align:center;
 	padding:1.5rem 0.5rem 0;
 }
 .album_page_date {
@@ -845,7 +906,7 @@ span.sub {
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:1.0rem 0.5rem;
+	padding:1rem 0.5rem;
 }
 .photo_frame.vertical.left,
 .photo_frame.vertical.right {
@@ -866,8 +927,8 @@ span.sub {
 /*.album_page_metadata {
 	width:100%;
 	width:calc(100% - 2.0rem);
-	margin-left:1.0rem;
-	margin-top:1.0rem;
+	margin-left:1rem;
+	margin-top:1rem;
 	border-top:1px solid $color_black;
 }
 .album_page_metadata .list_section {
@@ -1814,7 +1875,7 @@ span.sub {
 		}
 	
 	#section_title {
-		margin-left:1.0rem;
+		margin-left:1rem;
 		}
 	#albums .grid-item {
 		width:33%;
@@ -2002,7 +2063,7 @@ span.sub {
 		}
 	
 	#section_title {
-		margin-left:1.0rem;
+		margin-left:1rem;
 		}
 	#albums .grid-item {
 		width:33%;
