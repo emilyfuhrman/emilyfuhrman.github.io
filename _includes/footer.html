@@ -1,13 +1,5 @@
 	</div>
 	{% if page.category == 'log' %}
-	<div id='loading_animation'>
-		<div class="sk-folding-cube">
-		  <div class="sk-cube1 sk-cube"></div>
-		  <div class="sk-cube2 sk-cube"></div>
-		  <div class="sk-cube4 sk-cube"></div>
-		  <div class="sk-cube3 sk-cube"></div>
-		</div>
-	</div>
 	<script src='/js/gallery.js'></script>
 	{% else %}
 	<div id='base' class='{{ page.category }}'>
@@ -22,5 +14,7 @@
 	<script type='text/javascript' src='/js/fluidity.js'></script>
 	<script type='text/javascript' src='/js/master.js'></script>
 	{% endif %}
+	{% include loading_animation.html %}
+	<script src='/js/loading.js'></script>
 </body>
 </html>
