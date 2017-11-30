@@ -867,6 +867,7 @@ span.sub {
 	width:100%;
 }
 .panel .panel_images .panel_item {
+	position:relative;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -882,6 +883,7 @@ span.sub {
 }
 .panel .panel_images .panel_item .panel_item_detail {
 	position:absolute;
+	width:100%;
 	text-align:center;
 	margin-top:0.75rem;
 }
