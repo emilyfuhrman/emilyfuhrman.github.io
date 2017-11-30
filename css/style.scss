@@ -851,6 +851,7 @@ span.sub {
 }
 
 .panel {
+	display:block;
 	width:100%;
 	padding:0 0 7.5rem 0;
 }
@@ -1086,6 +1087,10 @@ span.sub {
 	#albums .grid-item {
 		width:100%;
 		}
+
+	.panel {
+		display:none;
+		}
 	}
 
 @media (min-width:481px) { 
@@ -1236,6 +1241,10 @@ span.sub {
 	#albums .grid-item {
 		width:100%;
 		}
+
+	.panel {
+		display:none;
+		}
 	}
 
 @media (min-width:641px) { 
@@ -1380,6 +1389,10 @@ span.sub {
 		}
 	#albums .grid-item {
 		width:50%;
+		}
+
+	.panel {
+		display:none;
 		}
 	}
 
@@ -1548,6 +1561,10 @@ span.sub {
 		width:33%;
 		width:calc(100% / 3);
 		}
+
+	.panel {
+		display:block;
+		}
 	}
 
 @media (min-width:1025px) { 
@@ -1714,6 +1731,10 @@ span.sub {
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
+		}
+
+	.panel {
+		display:block;
 		}
 	}
 
@@ -1887,6 +1908,10 @@ span.sub {
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
+		}
+
+	.panel {
+		display:block;
 		}
 	}
 
@@ -2075,6 +2100,10 @@ span.sub {
 	#albums .grid-item {
 		width:33%;
 		width:calc(100% / 3);
+		}
+
+	.panel {
+		display:block;
 		}
 	}
 
