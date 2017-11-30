@@ -311,11 +311,8 @@ span.sub {
 	position:absolute;
 	background:#fff;
 	width:100%;
-	/*margin-left:-1px;*/
 	padding:81.66% 0 0;
 	padding-top:calc(100% - 2.5rem);
-	/*border-left:1px solid white;
-	border-right:1px solid white;*/
 	}
 #proj-list a.list-img-link .metadata p {
 	position:absolute;
@@ -403,7 +400,6 @@ span.sub {
 	}
 #proj #media .media.border img,
 #proj #media .media.border video {
-	/*border:2px solid rgba(0,0,0,1);*/
 	border:1px solid rgba(0,0,0,0.02);
 	}
 #proj #media .media .video-container {
@@ -617,7 +613,6 @@ span.sub {
 	padding-top:0;
 	}
 #contain #content_mid .section ul.fancy li.t_left {
-	/*padding-bottom:1.2rem;*/
 	}
 
 #contain #content_mid .section ul li .collapse {
@@ -633,7 +628,6 @@ span.sub {
 	}
 #contain #content_mid .section ul li .t_info span {
 	float:left;
-	/*width:100%;*/
 	width:auto;
 	overflow:hidden;
 	text-overflow:ellipsis;
