@@ -1,5 +1,7 @@
 	</div>
-	{% if page.category != 'log' %}
+	{% if page.category == 'log' %}
+	<script src='/js/gallery.js'></script>
+	{% else %}
 	<div id='base' class='{{ page.category }}'>
 		<div id='footer' class='resize container'>
 			<div class='social link email'><a href='mailto:ef2512@columbia.edu'>Email</a></div>

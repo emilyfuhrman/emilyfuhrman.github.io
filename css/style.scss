@@ -775,9 +775,14 @@ span.sub {
 }
 
 .log.container#main {
+	opacity:0;
 	font-family:'Arvo',serif;
   font-size:0.65rem;
 	padding:7.5rem 0.5rem;
+	@include transition(opacity 240ms ease);
+}
+.log.container#main.show {
+	opacity:1;
 }
 .log.container#main div {
 	float:left;

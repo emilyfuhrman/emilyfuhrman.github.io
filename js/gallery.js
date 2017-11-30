@@ -8,3 +8,8 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress(function(){
 	$grid.masonry('layout');
 });
+
+//fade in once all images are done
+$grid.imagesLoaded().always(function(){
+	$('.log.container#main').addClass('show');
+});
