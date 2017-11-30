@@ -99,6 +99,7 @@ span.sub {
 	min-height:calc(100vh - 9.3rem - 1px);
 	padding-top:9rem;
 	overflow:hidden;
+	@include transition(opacity 240ms ease);
 	}
 .container.show#main {
 	opacity:1;
@@ -782,7 +783,6 @@ span.sub {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
 	padding:7.5rem 0.5rem;
-	@include transition(opacity 240ms ease);
 }
 .log.container#main div {
 	float:left;
