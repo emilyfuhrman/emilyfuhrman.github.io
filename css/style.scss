@@ -783,9 +783,24 @@ span.sub {
 	@include box-sizing(border-box);
 }
 
-#section_title {
-	z-index:1;
+#nav_gallery {
+	z-index:100;
 	position:fixed;
+	width:100%;
+	padding:0;
+}
+#nav_gallery a {
+	opacity:0.95;
+	color:$color_black;
+	border-bottom:none;
+}
+#nav_gallery a:hover {
+	opacity:1;
+	color:$color_red;
+}
+
+#nav_gallery #section_title {
+	float:left;
 	font-family:'Trochut',serif;
 	font-size:1.75rem;
 	font-kerning:normal;
@@ -795,14 +810,11 @@ span.sub {
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
-#section_title a {
-	opacity:0.95;
-	color:$color_black;
-	border-bottom:none;
-}
-#section_title a:hover {
-	opacity:1;
-	color:$color_red;
+
+#nav_gallery .btn#contact {
+	@include caps_sans_serif_small;
+	float:right;
+	margin:1.35rem 1rem;
 }
 
 #albums {
