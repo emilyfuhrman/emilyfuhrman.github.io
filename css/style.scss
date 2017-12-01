@@ -776,7 +776,7 @@ span.sub {
 .log.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
-	padding:4.5rem 0.5rem;
+	padding:4.5rem 0.5rem 0.75rem;
 }
 .log.container#main div {
 	float:left;
@@ -909,7 +909,7 @@ span.sub {
 	@include caps_sans_serif_large;
 	width:100%;
 	text-align:center;
-	padding:0 0.5rem 0;
+	padding:0 0.5rem;
 }
 .album_page_date {
   font-weight:700;
