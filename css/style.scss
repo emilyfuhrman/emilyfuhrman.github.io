@@ -784,8 +784,6 @@ span.sub {
 }
 
 #nav_gallery {
-	z-index:100;
-	position:fixed;
 	width:100%;
 	padding:0;
 }
@@ -800,7 +798,8 @@ span.sub {
 }
 
 #nav_gallery #section_title {
-	float:left;
+	z-index:100;
+	position:fixed;
 	font-family:'Trochut',serif;
 	font-size:1.75rem;
 	font-kerning:normal;
