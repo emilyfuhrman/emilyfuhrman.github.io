@@ -736,15 +736,26 @@ span.sub {
 	color:$color_black;
 	border-bottom:2px solid $color_black;
 	}
-#base #footer .link.social.email {
+#base #footer .link.social#email {
 	padding-left:1rem;
 	}
-#base #footer .link.social.twitter {
+#base #footer .link.social#twitter {
 	margin-left:0.5rem;
 	}
-#base #footer .link.social.instagram,
-#base #footer .link.cv {
+#base #footer .link.social#instagram,
+#base #footer .link#cv {
 	margin-left:1.5rem;
+	}
+#base #footer a .link#log {
+	background:url(../media/assets/icon_log.svg) no-repeat 0 0;
+	background-size:100% 100%;
+	float:right;
+	width:40px;
+	height:40px;
+	margin:-10px 0.8rem 0 0;
+	}
+#base #footer a:hover .link#log {
+	background-image:url(../media/assets/icon_log_hover.svg);
 	}
 
 /* 	------------------------------------
@@ -754,57 +765,57 @@ span.sub {
 @mixin caps_sans_serif {
 	font-family:'Raleway',sans-serif;
 	text-transform:uppercase;
-}
+	}
 @mixin caps_sans_serif_small {
 	@include caps_sans_serif;
 	font-size:0.75rem;
 	font-weight:200;
 	letter-spacing:0.125rem;
-}
+	}
 @mixin caps_sans_serif_large {
 	@include caps_sans_serif;
 	font-size:2.0rem;
 	font-weight:100;
 	letter-spacing:0.275rem;
-}
+	}
 @mixin tiny_serif {
 	font-family:'Arvo',serif;
   font-size:0.5rem;
   font-weight:bold;
-}
+	}
 
 .log.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
 	padding:4.5rem 0.5rem 6.5rem;
-}
+	}
 .log.container#main div {
 	float:left;
 	@include box-sizing(border-box);
-}
+	}
 
 .log.container#main p {
 	@include caps_sans_serif_small;
 	padding:0.5rem;
-}
+	}
 .log.container#main a:hover {
 	color:$color_red;
 	border-color:$color_red;
-}
+	}
 
 #nav_gallery {
 	width:100%;
 	padding:0;
-}
+	}
 #nav_gallery a {
 	opacity:0.95;
 	color:$color_black;
 	border-bottom:none;
-}
+	}
 #nav_gallery a:hover {
 	opacity:1;
 	color:$color_red;
-}
+	}
 
 #nav_gallery #section_title {
 	z-index:100;
@@ -817,23 +828,23 @@ span.sub {
 	/*@include transform(rotate(-4deg));*/
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
-}
+	}
 
 #nav_gallery .btn {
 	@include caps_sans_serif_small;
 	float:right;
 	margin:1.4rem 1rem;
-}
+	}
 #nav_gallery .btn#about {
 	margin-right:0;
-}
+	}
 
 #albums {
 	width:100%;
 	height:100%;
 	margin:0 0 4.0rem 0;
 	padding:0;
-}
+	}
 
 #albums .grid-item {
 	width:33%;
@@ -841,7 +852,7 @@ span.sub {
 	height:auto;
 	line-height:normal;
 	padding:1.5rem 0.5rem 0.5rem;
-}
+	}
 
 #albums .album_cover .album_date,
 .album_page_date {
@@ -849,29 +860,29 @@ span.sub {
 	font-weight:700;
 	text-align:center;
   letter-spacing:0.05rem;
-}
+	}
 
 #albums .album_cover .album_title {
 	@include caps_sans_serif_small;
 	width:100%;
 	text-align:center;
 	padding:1rem 0 0;
-}
+	}
 #albums .album_cover .album_date {
 	@include tiny_serif;
 	padding:0.25rem 0;
-}
+	}
 #albums .album_cover img {
 	float:left;
 	width:100%;
 	height:auto;
-}
+	}
 
 .panel {
 	display:block;
 	width:100%;
 	padding:0 0 7.5rem 0;
-}
+	}
 .panel .panel_label {
 	@include caps_sans_serif_small;
 	position:relative;
@@ -880,10 +891,10 @@ span.sub {
 	margin-left:0.5rem;
 	padding:0.5rem 0 2rem;
 	border-top:1px solid #eee;
-}
+	}
 .panel .panel_images {
 	width:100%;
-}
+	}
 .panel .panel_images .panel_item {
 	position:relative;
 	background-size:cover;
@@ -893,87 +904,61 @@ span.sub {
 	width:calc((100% / 5) - 1rem);
 	margin:0.5rem;
 	padding:0;
-}
+	}
 .panel .panel_images .panel_item:before {
 	content:"";
 	display:block;
 	padding-top:100%;
-}
+	}
 .panel .panel_images .panel_item .panel_item_detail {
 	position:absolute;
 	width:100%;
 	text-align:center;
 	margin-top:0.75rem;
-}
+	}
 .panel .panel_images .panel_item .panel_item_label {
 	@include caps_sans_serif_small;
 	position:relative;
 	width:100%;
-}
+	}
 .panel .panel_images .panel_item .panel_item_date {
 	@include tiny_serif;
 	position:relative;
 	width:100%;
 	margin-top:-0.5rem;
-}
+	}
 
 .album_page_title {
 	@include caps_sans_serif_large;
 	width:100%;
 	text-align:center;
 	padding:0 0.5rem;
-}
+	}
 .album_page_date {
   font-weight:700;
   padding:0.25rem 0 1.5rem;
-}
+	}
 
 .photo_frame {
 	width:100%;
 	height:auto;
 	padding:1rem 0.5rem;
-}
+	}
 .photo_frame.vertical.left,
 .photo_frame.vertical.right {
 	width:50%;
-}
+	}
 .photo_frame .album_page_image {
 	width:100%;
 	display:block;
 	height:auto;
-}
+	}
 .photo_frame .photo_caption {
 	width:100%;
 	font-weight:400;
 	letter-spacing:0;
 	padding:0.5rem 0;
-}
-
-/*.album_page_metadata {
-	width:100%;
-	width:calc(100% - 2.0rem);
-	margin-left:1rem;
-	margin-top:1rem;
-	border-top:1px solid $color_black;
-}
-.album_page_metadata .list_section {
-	width:100%;
-	padding:0.5rem 0;
-}
-.album_page_metadata .list_section_title {
-	width:100%;
-	font-weight:700;
-  letter-spacing:0.05rem;
-	text-transform:uppercase;
-	padding:0.25rem 0;
-}
-.album_page_metadata ul {
-	width:100%;
-	list-style-type:none;
-	line-height:normal;
-	margin:0 0 0 40px;
-	padding:0;
-}*/
+	}
 
 /* 	------------------------------------
 		LOADING ANIMATION
@@ -1196,13 +1181,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:none;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:0;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:0;
+		}
+
+	#base #footer a .link#log {
+		float:left;
+		margin:0.125rem 0;
 		}
 
 	#nav_gallery #section_title {
@@ -1358,13 +1348,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:0;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:1.5rem;
+		}
+
+	#base #footer a .link#log {
+		float:right;
+		margin:-10px -0.2rem 0 0;
 		}
 
 	#nav_gallery #section_title {
@@ -1520,7 +1515,7 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:0;
 		}
 
@@ -1693,13 +1688,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:0;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:1.5rem;
+		}
+
+	#base #footer a .link#log {
+		float:right;
+		margin:-10px -0.2rem 0 0;
 		}
 
 	#nav_gallery #section_title {
@@ -1872,13 +1872,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:0;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:1.5rem;
+		}
+
+	#base #footer a .link#log {
+		float:right;
+		margin:-10px -0.2rem 0 0;
 		}
 
 	#nav_gallery #section_title {
@@ -2057,13 +2062,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:1rem;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:1.5rem;
+		}
+
+	#base #footer a .link#log {
+		float:right;
+		margin:-10px 0.8rem 0 0;
 		}
 
 	#nav_gallery #section_title {
@@ -2257,13 +2267,18 @@ span.sub {
 	#base #footer .link a:hover {
 		border-bottom:2px solid $color_black;
 		}
-	#base #footer .link.social.email {
+	#base #footer .link.social#email {
 		padding-left:1rem;
 		}
-	#base #footer .link.social.twitter,
-	#base #footer .link.social.instagram,
-	#base #footer .link.cv {
+	#base #footer .link.social#twitter,
+	#base #footer .link.social#instagram,
+	#base #footer .link#cv {
 		margin-left:1.5rem;
+		}
+
+	#base #footer a .link#log {
+		float:right;
+		margin:-10px 0.8rem 0 0;
 		}
 
 	#nav_gallery #section_title {
