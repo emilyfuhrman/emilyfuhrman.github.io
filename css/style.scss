@@ -783,6 +783,15 @@ span.sub {
 	@include box-sizing(border-box);
 }
 
+.log.container#main p {
+	@include caps_sans_serif_small;
+	padding:0.5rem;
+}
+.log.container#main a:hover {
+	color:$color_red;
+	border-color:$color_red;
+}
+
 #nav_gallery {
 	width:100%;
 	padding:0;
@@ -810,10 +819,13 @@ span.sub {
 	-moz-osx-font-smoothing:grayscale;
 }
 
-#nav_gallery .btn#contact {
+#nav_gallery .btn {
 	@include caps_sans_serif_small;
 	float:right;
-	margin:1.35rem 1rem;
+	margin:1.4rem 1rem;
+}
+#nav_gallery .btn#about {
+	margin-right:0;
 }
 
 #albums {
