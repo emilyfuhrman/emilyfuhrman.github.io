@@ -14,7 +14,8 @@
 	{% assign maxPosts = 5 %}
 	{% assign counter = 0 %}
 	<div class='panel'>
-		<div class='panel_label'>{{ continent }}</div>
+		{% capture archive_link %}{{ continent | downcase | replace: ' ', '-' }}{% endcapture %}
+		<div class='panel_label'><a href='/log/archive/{{ archive_link }}'>{{ continent }}</a></div>
 		<div class='panel_images'>
 		{% for post in site.log reversed %}
 			{% for item in post.metadata %}

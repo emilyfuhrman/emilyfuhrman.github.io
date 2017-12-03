@@ -1,0 +1,22 @@
+{% include header.html %}
+{% assign continent = page.continent %}
+<div class='panel archive'>
+	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ continent }}</div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% for item in post.metadata %}
+			{% if item.continents contains continent %}
+				<a href='{{ post.url }}'>
+					<div class='panel_item' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
+						<div class='panel_item_detail'>
+							<div class='panel_item_label'>{{ post.title }}</div>
+							<div class='panel_item_date'>{{ post.date_start }}&nbsp;&ndash;&nbsp;{{ post.date_end }}</div>
+						</div>
+					</div>
+				</a>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</div>
+</div>
+{% include footer.html %}

@@ -9,18 +9,13 @@
       {% endif %}
   	</div>
   {% endfor %}
-  <!-- {% if page.metadata %}
-  <div class='album_page_metadata'>
-	  {% for d in page.metadata %}
-	  <div class='list_section'>
-		  <div class='list_section_title'>{{ d.title }}</div>
-		  <ul class='list_items'>
-		  	{% for _d in d.list %}
-		  	<li>&mdash;&mdash;&nbsp;{{ _d }}</li>
-		  	{% endfor %}
-		  </ul>
-		</div>
-		{% endfor %}
-	</div>
-  {% endif %} -->
+  <div class='album_page_tags'>
+    <span class='i'>Tagged:</span>
+    {% for data_object in page.metadata %}
+      {% for continent in data_object.continents %}
+        {% capture archive_link %}{{ continent | downcase | replace: ' ', '-' }}{% endcapture %}
+        <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ continent }}</a></span>
+      {% endfor %}
+    {% endfor %}
+  </div>
 {% include footer.html %}
