@@ -2,3 +2,22 @@ continents:
   - North America
   - South America
   - Europe
+coordinates:
+  - Bermuda:
+    - lon: -64.7505
+    - lat: 32.3078
+  - Curaçao:
+    - lon: -68.9900
+    - lat: 12.1696
+  - Norway:
+    - lon: 8.4689
+    - lat: 60.4720
+  - London:
+    - lon: 0.1278
+    - lat: 51.5074
+  - Paris: 
+    - lon: 2.3522
+    - lat: 48.8566
+  - Virginia:
+    - lon: -77.3254
+    - lat: 38.8015
