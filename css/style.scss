@@ -747,16 +747,34 @@ span.sub {
 	margin-left:1.5rem;
 	}
 #base #footer a .link#log {
-	background:url(../media/assets/icon_log.svg) no-repeat 0 0;
-	background-size:100% 100%;
 	float:right;
-	width:40px;
-	height:40px;
 	margin:-10px 0.8rem 0 0;
 	}
 #base #footer a:hover .link#log {
-	background-image:url(../media/assets/icon_log_hover.svg);
 	}
+#base #footer a .link#log .bknd {
+	position:relative;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:40px;
+	height:40px;
+}
+#base #footer a .link#log .bknd.bknd_default {
+	opacity:1;
+	background-image:url(../media/assets/icon_log.svg);
+}
+#base #footer a .link#log .bknd.bknd_hover {
+	opacity:0;
+	background-image:url(../media/assets/icon_log_hover.svg);
+	margin-top:-40px;
+}
+#base #footer a:hover .link#log .bknd.bknd_default {
+	opacity:0;
+}
+#base #footer a:hover .link#log .bknd.bknd_hover {
+	opacity:1;
+}
 
 /* 	------------------------------------
 		LOG
