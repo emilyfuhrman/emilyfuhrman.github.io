@@ -993,6 +993,9 @@ span.sub {
 .album_page_tags .album_page_tag a {
 	border-bottom:none;
 }
+.album_page_tags .album_page_tag a:hover {
+	color:$color_black !important;
+}
 
 .photo_frame {
 	width:100%;
