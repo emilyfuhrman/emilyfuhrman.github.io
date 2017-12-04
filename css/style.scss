@@ -830,10 +830,6 @@ span.sub {
 	color:$color_black;
 	border-bottom:none;
 	}
-#nav_gallery a:hover {
-	opacity:1;
-	color:$color_red;
-	}
 
 #nav_gallery #section_title {
 	z-index:100;
@@ -845,6 +841,10 @@ span.sub {
 	margin:1.25rem 1rem;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
+	}
+#nav_gallery #section_title a:hover {
+	opacity:1;
+	color:$color_red;
 	}
 
 #nav_gallery .btn {
