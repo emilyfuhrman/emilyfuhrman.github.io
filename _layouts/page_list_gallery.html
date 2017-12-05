@@ -21,14 +21,7 @@
 		{% for item in post.metadata %}
 			{% if item.continents contains continent and counter < maxPosts %}
 				{% assign counter=counter | plus:1 %}
-				<a href='{{ post.url }}'>
-					<div class='panel_item' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
-						<div class='panel_item_detail'>
-							<div class='panel_item_label'>{{ post.title }}</div>
-							<div class='panel_item_date'>{{ post.date_start }}&nbsp;&ndash;&nbsp;{{ post.date_end }}</div>
-						</div>
-					</div>
-				</a>
+				{% include post_gallery_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
