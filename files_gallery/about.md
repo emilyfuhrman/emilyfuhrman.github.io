@@ -8,4 +8,4 @@ loading_animation: true
 sitemap:
   priority: 0.9
 ---
-Flâneuserie is the personal log of data artist <a href='/' target='_blank'>Emily Fuhrman</a>.
+Flâneuserie is the visual log of data artist <a href='/' target='_blank'>Emily Fuhrman</a>.
