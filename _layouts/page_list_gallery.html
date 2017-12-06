@@ -10,22 +10,15 @@
 	</a>
 	{% endfor %}
 </div>
-{% for continent in site.data.log.continents %}
-{% assign maxPosts = 5 %}
-{% assign counter = 0 %}
-<div class='panel'>
-	{% capture archive_link %}{{ continent | downcase | replace: ' ', '-' }}{% endcapture %}
-	<div class='panel_label'><a href='/log/archive/{{ archive_link }}'>{{ continent }}</a></div>
-	<div class='panel_images'>
-	{% for post in site.log reversed %}
-		{% for item in post.metadata %}
-			{% if item.continents contains continent and counter < maxPosts %}
-				{% assign counter=counter | plus:1 %}
-				{% include post_gallery_swatch.html %}
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-	</div>
-</div>
+
+<!-- New York panel -->
+<!-- {% assign tag_string = "New York" %}
+{% assign parameter = "states" %}
+{% include generator_panel.html %} -->
+
+<!-- Continent panels -->
+{% for tag_string in site.data.log.continents %}
+	{% assign parameter = "continents" %}
+	{% include generator_panel.html %}
 {% endfor %}
 {% include footer.html %}

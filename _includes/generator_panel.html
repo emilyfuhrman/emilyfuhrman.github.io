@@ -1,0 +1,16 @@
+{% assign maxPosts = 5 %}
+{% assign counter = 0 %}
+<div class='panel'>
+	{% capture archive_link %}{{ tag_string | downcase | replace: ' ', '-' }}{% endcapture %}
+	<div class='panel_label'><a href='/log/archive/{{ archive_link }}'>{{ tag_string }}</a></div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% for item in post.metadata %}
+			{% if item[parameter] contains tag_string and counter < maxPosts %}
+				{% assign counter=counter | plus:1 %}
+				{% include post_gallery_swatch.html %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</div>
+</div>
