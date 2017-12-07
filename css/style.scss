@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Trochut:700|Raleway:100,200|Arvo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Trochut:700|Raleway:100,200|Arvo:400,700|Rajdhani:400');
 
 $color_black:#000;
 $color_accent:#0055FF;
@@ -834,11 +834,12 @@ span.sub {
 #nav_gallery #section_title {
 	z-index:100;
 	position:fixed;
-	font-family:'Trochut',serif;
+	font-family:'Rajdhani',sans-serif;
 	font-size:1.75rem;
 	font-kerning:normal;
+	text-transform:uppercase;
 	letter-spacing:-0.05rem;
-	margin:1.25rem 1rem;
+	margin:1.8rem 1rem;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 	}
@@ -850,7 +851,7 @@ span.sub {
 #nav_gallery .btn {
 	@include caps_sans_serif_small;
 	float:right;
-	margin:1.4rem 1rem;
+	margin:1.5rem 1rem;
 	}
 #nav_gallery .btn#archive {
 	margin-right:0;
@@ -1256,6 +1257,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.5rem;
 		margin-left:-0.5rem;
+		margin-top:1.7rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -1431,6 +1433,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:-0.5rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -1596,6 +1599,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:-0.5rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -1787,6 +1791,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:-0.5rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -1979,6 +1984,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:-0.5rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -2177,6 +2183,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:1rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -2390,6 +2397,7 @@ span.sub {
 	#nav_gallery #section_title {
 		font-size:1.75rem;
 		margin-left:-0.5rem;
+		margin-top:1.8rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
