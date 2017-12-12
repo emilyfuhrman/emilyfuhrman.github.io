@@ -15,6 +15,9 @@ coordinates:
   - London:
     - lon: 0.1278
     - lat: 51.5074
+  - Panama City: 
+    - lon: -79.5166
+    - lat: 8.9833
   - Paris: 
     - lon: 2.3522
     - lat: 48.8566
