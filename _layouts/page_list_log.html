@@ -5,16 +5,16 @@
 		<div class='album_cover grid-item'>
 			<img src='../photos/{{ post.post_path }}/01.jpg'/>
 			<div class='album_title'>{{ post.title }}</div>
-  		<div class='album_date'>{{ post.date_start }}&nbsp;&ndash;&nbsp;{{ post.date_end }}</div>
+  		<div class='album_date'>{{ post.date_start }}{% if post.date_end %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}</div>
 		</div>
 	</a>
 	{% endfor %}
 </div>
 
 <!-- New York panel -->
-<!-- {% assign tag_string = "New York" %}
+{% assign tag_string = "New York" %}
 {% assign parameter = "states" %}
-{% include generator_panel.html %} -->
+{% include generator_panel.html %}
 
 <!-- Continent panels -->
 {% for tag_string in site.data.log.continents %}

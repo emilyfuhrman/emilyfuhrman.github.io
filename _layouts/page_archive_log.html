@@ -7,7 +7,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.continents contains tag_string %}
-				{% include post_gallery_swatch.html %}
+				{% include post_log_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -19,7 +19,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.states contains tag_string %}
-				{% include post_gallery_swatch.html %}
+				{% include post_log_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -30,7 +30,7 @@
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[0]["year"] == tag_string %}
-			{% include post_gallery_swatch.html %}
+			{% include post_log_swatch.html %}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -38,7 +38,7 @@
 	<div class='panel_label'><span class='i'>All posts</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% include post_gallery_swatch.html %}
+		{% include post_log_swatch.html %}
 	{% endfor %}
 	</div>
 {% endif %}

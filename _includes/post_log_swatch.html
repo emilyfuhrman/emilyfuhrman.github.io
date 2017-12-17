@@ -1,0 +1,8 @@
+<a href='{{ post.url }}'>
+	<div class='panel_item' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
+		<div class='panel_item_detail'>
+			<div class='panel_item_label'>{{ post.title }}</div>
+			<div class='panel_item_date'>{{ post.date_start }}{% if post.date_end %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}</div>
+		</div>
+	</div>
+</a>

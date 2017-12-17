@@ -8,7 +8,7 @@
 		{% for item in post.metadata %}
 			{% if item[parameter] contains tag_string and counter < maxPosts %}
 				{% assign counter=counter | plus:1 %}
-				{% include post_gallery_swatch.html %}
+				{% include post_log_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
