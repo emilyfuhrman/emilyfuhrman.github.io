@@ -6,6 +6,9 @@ coordinates:
   - Bermuda:
     - lon: -64.7505
     - lat: 32.3078
+  - Burlington:
+    - lon: -73.2967
+    - lat: 44.4926
   - Curaçao:
     - lon: -68.9900
     - lat: 12.1696
@@ -15,12 +18,15 @@ coordinates:
   - London:
     - lon: 0.1278
     - lat: 51.5074
+  - New York: 
+    - lon: -74.2599
+    - lat: 40.6971
   - Panama City: 
     - lon: -79.5166
     - lat: 8.9833
   - Paris: 
     - lon: 2.3522
     - lat: 48.8566
-  - Virginia:
-    - lon: -77.3254
-    - lat: 38.8015
+  - Fairfax Station:
+    - lon: -77.3707
+    - lat: 38.7925
