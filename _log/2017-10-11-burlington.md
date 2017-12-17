@@ -1,6 +1,6 @@
 ---
-title:			"Vermont"
-post_path:	2017-10-11-vermont
+title:			"Burlington"
+post_path:	2017-10-11-burlington
 date_start:	2017_10_11
 date_end:		2017_10_15
 metadata:

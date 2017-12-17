@@ -1,6 +1,6 @@
 ---
-title:			"Virginia"
-post_path:	2017-11-22-virginia
+title:			"Fairfax Station"
+post_path:	2017-11-22-fairfax-station
 date_start:	2017_11_22
 date_end:		2017_11_26
 metadata:
