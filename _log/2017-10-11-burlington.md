@@ -18,5 +18,7 @@ metadata:
       - North America
 photos:
   - ext:		01.jpg
-    class:	vertical
+    class:	horizontal
+  - ext:    02.jpg
+    class:  vertical
 ---
