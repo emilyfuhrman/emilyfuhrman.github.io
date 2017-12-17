@@ -1,10 +1,10 @@
 ---
-layout: page_archive_gallery
+layout: page_archive_log
 title: "EF Log"
 category: log
 description: A location-specific personal log.
-permalink: /log/archive/north-america
-continent: North America
+permalink: /log/archive/2016
+year: 2016
 loading_animation: true
 sitemap:
   priority: 0.9

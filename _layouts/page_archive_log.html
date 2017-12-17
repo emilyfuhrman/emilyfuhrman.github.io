@@ -24,6 +24,16 @@
 		{% endfor %}
 	{% endfor %}
 	</div>
+{% elsif page.year %}
+	{% assign tag_string = page.year %}
+	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% if post.metadata[0]["year"] == tag_string %}
+			{% include post_gallery_swatch.html %}
+		{% endif %}
+	{% endfor %}
+	</div>
 {% else %}
 	<div class='panel_label'><span class='i'>All posts</div>
 	<div class='panel_images'>

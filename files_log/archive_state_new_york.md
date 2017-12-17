@@ -1,5 +1,5 @@
 ---
-layout: page_archive_gallery
+layout: page_archive_log
 title: "EF Log"
 category: log
 description: A location-specific personal log.

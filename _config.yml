@@ -19,7 +19,7 @@ defaults:
       type:        log
     values:
       category:    log
-      layout:      post_gallery
+      layout:      post_log
 
 # formatting
 kramdown:

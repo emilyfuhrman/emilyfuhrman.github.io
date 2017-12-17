@@ -991,10 +991,11 @@ span.sub {
 	border-top:1px solid #eee;
 }
 .album_page_tags .album_page_tag a {
-	border-bottom:none;
+	border-bottom:2px solid black;
 }
 .album_page_tags .album_page_tag a:hover {
 	color:$color_black !important;
+	border-color:$color_black !important;
 }
 
 .photo_frame {

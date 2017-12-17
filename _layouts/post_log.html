@@ -17,5 +17,6 @@
         <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ continent }}</a></span>
       {% endfor %}
     {% endfor %}
+    <span class='album_page_tag'><a href='/log/archive/{{ page.metadata[0]["year"] }}'>{{ page.metadata[0]["year"] }}</a></span>
   </div>
 {% include footer.html %}
