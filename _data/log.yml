@@ -3,6 +3,12 @@ continents:
   - South America
   - Europe
 coordinates:
+  - Aurland:
+    - lon: 7.1905
+    - lat: 60.9068
+  - Bergen:
+    - lon: 5.3244
+    - lat: 60.3971
   - Bermuda:
     - lon: -64.7505
     - lat: 32.3078
@@ -12,9 +18,9 @@ coordinates:
   - Curaçao:
     - lon: -68.9900
     - lat: 12.1696
-  - Norway:
-    - lon: 8.4689
-    - lat: 60.4720
+  - Oslo:
+    - lon: 10.7522
+    - lat: 59.9139
   - London:
     - lon: 0.1278
     - lat: 51.5074
