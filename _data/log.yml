@@ -18,9 +18,6 @@ coordinates:
   - Curaçao:
     - lon: -68.9900
     - lat: 12.1696
-  - Oslo:
-    - lon: 10.7522
-    - lat: 59.9139
   - London:
     - lon: 0.1278
     - lat: 51.5074
