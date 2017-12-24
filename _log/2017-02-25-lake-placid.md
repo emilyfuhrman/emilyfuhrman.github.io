@@ -1,8 +1,8 @@
 ---
 title:			"Lake Placid"
 post_path:	2017-02-25-lake-placid
-date_start:	2017_02_25
-date_end:		2017_02_27
+date_start:	2017/02/25
+date_end:		2017/02/27
 metadata:
   - year: 2017
   - cities:

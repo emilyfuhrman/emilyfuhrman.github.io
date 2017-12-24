@@ -1,8 +1,8 @@
 ---
 title:			"Fairfax Station"
 post_path:	2016-03-04-fairfax-station
-date_start:	2016_03_04
-date_end:		2016_03_07
+date_start:	2016/03/04
+date_end:		2016/03/07
 metadata:
   - year: 2016
   - cities:

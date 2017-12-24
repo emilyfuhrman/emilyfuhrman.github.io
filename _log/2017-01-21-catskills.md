@@ -1,8 +1,8 @@
 ---
 title:			"Catskills"
 post_path:	2017-01-21-catskills
-date_start:	2017_01_21
-date_end:		2017_01_22
+date_start:	2017/01/21
+date_end:		2017/01/22
 metadata:
   - year: 2017
   - cities:
