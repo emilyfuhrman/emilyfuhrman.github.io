@@ -853,7 +853,7 @@ span.sub {
 #nav_gallery .btn {
 	@include caps_sans_serif_tiny;
 	float:right;
-	margin:1.5rem 1.5rem;
+	margin:1.5rem;
 	padding-bottom:1.5rem;
 	cursor:cell;
 	}
@@ -1306,6 +1306,10 @@ span.sub {
 		margin-left:-0.5rem;
 		margin-top:1.8rem;
 		}
+
+	#nav_gallery .btn {
+		margin:1.5rem 1.25rem;
+		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
 		margin-right:-0.5rem;
@@ -1482,6 +1486,10 @@ span.sub {
 		margin-left:-0.5rem;
 		margin-top:2.0rem;
 		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
+		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
 		margin-right:-0.5rem;
@@ -1647,6 +1655,10 @@ span.sub {
 		font-size:2.0rem;
 		margin-left:-0.5rem;
 		margin-top:2.0rem;
+		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -1840,6 +1852,10 @@ span.sub {
 		margin-left:-0.5rem;
 		margin-top:2.0rem;
 		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
+		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
 		margin-right:-0.5rem;
@@ -2032,6 +2048,10 @@ span.sub {
 		font-size:2.0rem;
 		margin-left:-0.5rem;
 		margin-top:2.0rem;
+		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -2231,6 +2251,10 @@ span.sub {
 		font-size:2.0rem;
 		margin-left:1rem;
 		margin-top:2.0rem;
+		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -2444,6 +2468,10 @@ span.sub {
 		font-size:2.0rem;
 		margin-left:-0.5rem;
 		margin-top:2.0rem;
+		}
+		
+	#nav_gallery .btn {
+		margin:1.5rem;
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
