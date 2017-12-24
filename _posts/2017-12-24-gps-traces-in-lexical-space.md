@@ -7,10 +7,20 @@ images:
   - ext:    02_20171223_00.png
     width:  1200
     height: 750
-  - ext:    01_20171223_01_B.png
+    cap:    7.04 mi.
+  - ext:    03_20171224_04.png
     width:  1200
     height: 750
+    cap:    21.38 mi.
+  - ext:    04_20171224_00.png
+    width:  1200
+    height: 750
+    cap:    11.51 mi.
+  - ext:    01_20171223_01.png
+    width:  1200
+    height: 750
+    cap:    26.29 mi.
 tags:
   - static
 ---
-GPS traces translated into [what3words](https://what3words.com/) addresses, rendered using the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between each trigram.
+GPS traces translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between the three indices of each w3w trigram.
