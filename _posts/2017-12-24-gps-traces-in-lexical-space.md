@@ -1,4 +1,5 @@
 ---
+published:  false
 post_id:    Y2017005
 title:      "GPS Traces in Lexical Space"
 post_path:  gps-traces-in-lexical-space
@@ -12,4 +13,4 @@ images:
 tags:
   - static
 ---
-GPS traces translated into what3words coordinates, transformed again based on the Levenshtein distance between each trigram.
+GPS traces translated into [what3words](https://what3words.com/) addresses, rendered using the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between each trigram.
