@@ -1,5 +1,4 @@
 ---
-published:  false
 post_id:    Y2017005
 title:      "GPS Traces in Lexical Space"
 post_path:  gps-traces-in-lexical-space
