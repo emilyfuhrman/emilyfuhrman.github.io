@@ -22,4 +22,4 @@ images:
 tags:
   - static
 ---
-GPS traces translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between the three indices of each w3w trigram.
+GPS traces translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) between the three units of each w3w trigram.
