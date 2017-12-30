@@ -10,7 +10,7 @@ metadata:
   - states:
       - Virginia
   - countries:
-      - The United States
+      - United States
   - continents:
       - North America
 photos:

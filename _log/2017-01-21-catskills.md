@@ -10,7 +10,7 @@ metadata:
   - states:
       - New York
   - countries:
-      - The United States
+      - United States
   - continents:
       - North America
   - hotels:

@@ -13,7 +13,7 @@ metadata:
   - cities:
       - Burlington
   - countries:
-      - The United States
+      - United States
   - continents:
       - North America
 photos:
