@@ -1,11 +1,11 @@
 ---
-title:			"New York"
-post_path:	2016-12-01-new-york
-date_start:	December 2016
+title:			"New York City"
+post_path:	2016-10-01-new-york
+date_start:	October 2016
 metadata:
   - year: 2016
   - cities:
-      - Queens
+      - NYC
   - states:
       - New York
   - countries:

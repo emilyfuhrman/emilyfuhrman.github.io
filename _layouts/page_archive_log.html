@@ -12,13 +12,13 @@
 		{% endfor %}
 	{% endfor %}
 	</div>
-{% elsif page.state %}
-	{% assign tag_string = page.state %}
+{% elsif page.city %}
+	{% assign tag_string = page.city %}
 	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
-			{% if item.states contains tag_string %}
+			{% if item.cities contains tag_string %}
 				{% include post_log_swatch.html %}
 			{% endif %}
 		{% endfor %}

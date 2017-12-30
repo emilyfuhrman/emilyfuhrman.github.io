@@ -1,12 +1,11 @@
 ---
-title:			"New York"
-post_path:	2016-10-01-new-york
-date_start:	October 2016
+title:			"New York City"
+post_path:	2017-04-01-new-york
+date_start:	April 2017
 metadata:
-  - year: 2016
+  - year: 2017
   - cities:
-      - New York
-      - Brooklyn
+      - NYC
   - states:
       - New York
   - countries:
@@ -15,5 +14,5 @@ metadata:
       - North America
 photos:
   - ext:    01.jpg
-    class:  vertical
+    class:  horizontal
 ---
