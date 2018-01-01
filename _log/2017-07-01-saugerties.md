@@ -1,6 +1,6 @@
 ---
-title:			"Phoenicia"
-post_path:	2017-07-01-phoenicia
+title:			"Saugerties"
+post_path:	2017-07-01-saugerties
 date_start:	2017/07/01
 date_end:   2017/07/02
 metadata:
