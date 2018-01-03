@@ -1,35 +1,23 @@
-continents:
-  - North America
-  - South America
-  - Europe
-coordinates:
-  - Aurland:
-    - lon: 7.1905
-    - lat: 60.9068
-  - Bergen:
-    - lon: 5.3244
-    - lat: 60.3971
-  - Bermuda:
-    - lon: -64.7505
-    - lat: 32.3078
-  - Burlington:
-    - lon: -73.2967
-    - lat: 44.4926
-  - Curaçao:
-    - lon: -68.9900
-    - lat: 12.1696
-  - London:
-    - lon: 0.1278
-    - lat: 51.5074
-  - New York: 
-    - lon: -74.2599
-    - lat: 40.6971
-  - Panama City: 
-    - lon: -79.5166
-    - lat: 8.9833
-  - Paris: 
-    - lon: 2.3522
-    - lat: 48.8566
-  - Fairfax Station:
-    - lon: -77.3707
-    - lat: 38.7925
+regions:
+  - name: Africa
+    display: false
+  - name: United States
+    display: true
+  - name: Greater North America
+    display: false
+  - name: Central America
+    display: true
+  - name: South America
+    display: false
+  - name: Caribbean
+    display: true
+  - name: Antarctica
+    display: false
+  - name: Asia
+    display: false
+  - name: Europe
+    display: true
+  - name: Middle East
+    display: false
+  - name: South Pacific
+    display: false

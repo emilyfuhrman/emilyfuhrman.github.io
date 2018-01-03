@@ -17,8 +17,11 @@
 {% include generator_panel.html %}
 
 <!-- Continent panels -->
-{% for tag_string in site.data.log.continents %}
-	{% assign parameter = "continents" %}
-	{% include generator_panel.html %}
+{% for region in site.data.log.regions %}
+	{% if region.display == true %}
+		{% assign tag_string = region.name %}
+		{% assign parameter = "regions" %}
+		{% include generator_panel.html %}
+	{% endif %}
 {% endfor %}
 {% include footer.html %}

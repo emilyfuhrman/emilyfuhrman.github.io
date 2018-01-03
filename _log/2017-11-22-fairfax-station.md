@@ -13,6 +13,8 @@ metadata:
       - United States
   - continents:
       - North America
+  - regions:
+      - United States
 photos:
   - ext:		01.jpg
     class:	horizontal

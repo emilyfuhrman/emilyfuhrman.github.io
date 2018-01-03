@@ -16,6 +16,8 @@ metadata:
       - Panama
   - continents:
       - North America
+  - regions:
+      - Central America
 photos:
   - ext:		01.jpg
     class:	vertical
