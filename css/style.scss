@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200|Arvo:400,700|Rajdhani:500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200|Arvo:400,700|Nova+Mono:400');
 
 $color_black:#000;
 $color_accent:#0055FF;
@@ -837,10 +837,11 @@ span.sub {
 #nav_gallery #section_title {
 	z-index:100;
 	position:fixed;
-	font-family:'Rajdhani',sans-serif;
+	/*font-family:'Rajdhani', sans-serif;*/
+	font-family:'Nova Mono',sans-serif;
 	font-size:2.0rem;
 	font-kerning:normal;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	margin:2.0rem 1rem;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
