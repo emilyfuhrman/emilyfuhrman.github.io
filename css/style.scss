@@ -80,6 +80,8 @@ span.sub {
 		GENERAL
    	------------------------------------ */
 
+$log_padding_default:0.8rem;
+
 .container {
 	background:#fff;
 	width:1218px;
@@ -90,7 +92,7 @@ span.sub {
 .container.fluid {
 	width:100%;
 	margin:0 auto;
-	padding:0 1.5rem;
+	padding:0 calc(#{$log_padding_default} * 2);
 	clear:both;
 	}
 
@@ -812,7 +814,7 @@ span.sub {
 .log.container#main {
 	font-family:'Arvo',serif;
   font-size:0.65rem;
-	padding:4.5rem 0.5rem 6.5rem;
+	padding:calc(#{$log_padding_default} * 6) $log_padding_default calc(#{$log_padding_default} * 8);
 	}
 .log.container#main div {
 	float:left;
@@ -821,7 +823,7 @@ span.sub {
 
 .log.container#main p {
 	@include caps_sans_serif_small;
-	padding:0.5rem;
+	padding:$log_padding_default;
 	}
 
 #nav_gallery {
@@ -840,7 +842,7 @@ span.sub {
 	font-family:'Nova Mono',sans-serif;
 	font-size:2.0rem;
 	font-kerning:normal;
-	margin:2.0rem 1rem;
+	margin:2rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 	}
@@ -852,8 +854,8 @@ span.sub {
 #nav_gallery .btn {
 	@include caps_sans_serif_tiny;
 	float:right;
-	margin:1.5rem;
-	padding-bottom:1.5rem;
+	margin:calc(#{$log_padding_default} * 2);
+	padding-bottom:calc(#{$log_padding_default} * 2);
 	cursor:cell;
 	}
 #nav_gallery .btn#archive {
@@ -867,7 +869,7 @@ span.sub {
 	position:absolute;
 	width:120px;
 	margin-top:10px;
-	margin-left:calc(((120px / 2) * -1) + 1.5rem);
+	margin-left:calc(((120px / 2) * -1) + calc(#{$log_padding_default} * 2));
 	border:1px solid #eee;
 	@include transition(opacity 240ms ease);
 }
@@ -913,7 +915,7 @@ span.sub {
 	width:calc(100% / 3);
 	height:auto;
 	line-height:normal;
-	padding:1.5rem 0.5rem 0.5rem;
+	padding:calc(#{$log_padding_default} * 3) $log_padding_default $log_padding_default;
 	}
 
 #albums .album_cover .album_date,
@@ -950,14 +952,14 @@ span.sub {
 .panel {
 	display:block;
 	width:100%;
-	padding:0 0 7.5rem 0;
+	padding:0 0 calc(#{$log_padding_default} * 10) 0;
 	}
 .panel .panel_label {
 	@include caps_sans_serif_small;
 	position:relative;
 	width:100%;
-	width:calc(100% - 1rem);
-	margin-left:0.5rem;
+	width:calc(100% - calc(#{$log_padding_default} * 2));
+	margin-left:$log_padding_default;
 	padding:0.5rem 0 2rem;
 	border-top:1px solid #eee;
 	}
@@ -976,8 +978,8 @@ span.sub {
 	background-repeat:no-repeat;
 	background-position:center center;
 	width:20%;
-	width:calc((100% / 5) - 1rem);
-	margin:0.5rem;
+	width:calc((100% / 5) - (#{$log_padding_default} * 2));
+	margin:$log_padding_default;
 	padding:0;
 	}
 .panel .panel_images .panel_item:before {
@@ -989,7 +991,7 @@ span.sub {
 	position:absolute;
 	width:100%;
 	text-align:center;
-	margin-top:0.75rem;
+	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
 	@include caps_sans_serif_small;
@@ -1014,8 +1016,8 @@ span.sub {
 	}
 .panel.archive .panel_images .panel_item {
 	width:20%;
-	width:calc((100% / 5) - 1rem);
-	margin:0.5rem 0.5rem 4.5rem 0.5rem;
+	width:calc((100% / 5) - (#{$log_padding_default} * 2));
+	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 	}
 
 .album_page_title {
@@ -1026,7 +1028,7 @@ span.sub {
 	}
 .album_page_date {
   font-weight:700;
-  padding:0.25rem 0 1.5rem;
+  padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
 	}
 .album_page_tags {
 	@include caps_sans_serif_small;
@@ -1047,7 +1049,7 @@ span.sub {
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:1rem 0.5rem;
+	padding:calc(#{$log_padding_default} * 2) $log_padding_default;
 	}
 .photo_frame.vertical.left,
 .photo_frame.vertical.right {
@@ -1062,7 +1064,7 @@ span.sub {
 	width:100%;
 	font-weight:400;
 	letter-spacing:0;
-	padding:0.5rem 0;
+	padding:$log_padding_default 0;
 	}
 
 /* 	------------------------------------
@@ -1183,7 +1185,7 @@ span.sub {
 	.container.fluid {
 		width:100%;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		clear:both;
 		}
 
@@ -1302,16 +1304,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:1.8rem;
-		margin-left:-0.5rem;
-		margin-top:3.6rem;
+		margin-left:0;
+		margin-top:4.2rem;
 		}
 
 	#nav_gallery .btn {
-		margin:1.5rem 1.0rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:-0.5rem;
+		margin-right:0;
 		}
 
 	#albums .grid-item {
@@ -1324,8 +1326,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:100%;
-		width:calc(100% - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc(100% - (#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -1340,7 +1342,7 @@ span.sub {
 	.container.fluid {
 		width:100%;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		clear:both;
 		}
 
@@ -1482,16 +1484,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:-0.5rem;
+		margin-left:0;
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:-0.5rem;
+		margin-right:0;
 		}
 
 	#albums .grid-item {
@@ -1504,8 +1506,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:50%;
-		width:calc((100% / 2) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 2) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -1520,7 +1522,7 @@ span.sub {
 	.container.fluid {
 		width:100%;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		clear:both;
 		}
 
@@ -1652,16 +1654,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:-0.5rem;
+		margin-left:0;
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:-0.5rem;
+		margin-right:0;
 		}
 
 	#albums .grid-item {
@@ -1674,8 +1676,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 3) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -1690,7 +1692,7 @@ span.sub {
 	.container.fluid {
 		width:100%;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		clear:both;
 		}
 
@@ -1848,16 +1850,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:-0.5rem;
+		margin-left:0;
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:-0.5rem;
+		margin-right:0;
 		}
 
 	#albums .grid-item {
@@ -1871,8 +1873,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
-		width:calc((100% / 5) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -1887,7 +1889,7 @@ span.sub {
 	.container.fluid {
 		width:100%;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		clear:both;
 		}
 
@@ -2045,16 +2047,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:-0.5rem;
+		margin-left:0;
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:-0.5rem;
+		margin-right:0;
 		}
 
 	#albums .grid-item {
@@ -2068,8 +2070,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
-		width:calc((100% / 5) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -2248,16 +2250,16 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:1rem;
+		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
-		margin-right:1rem;
+		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
 	#albums .grid-item {
@@ -2271,8 +2273,8 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
-		width:calc((100% / 5) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
 	#loading_animation {
@@ -2288,7 +2290,7 @@ span.sub {
 		background:#fff;
 		width:1800px;
 		margin:0 auto;
-		padding:0 1.5rem;
+		padding:0 calc(#{$log_padding_default} * 2);
 		}
 
 	.container #proj,
@@ -2465,12 +2467,12 @@ span.sub {
 
 	#nav_gallery #section_title {
 		font-size:2.0rem;
-		margin-left:-0.5rem;
+		margin-left:calc(#{$log_padding_default} * -1);
 		margin-top:2.0rem;
 		}
 		
 	#nav_gallery .btn {
-		margin:1.5rem;
+		margin:calc(#{$log_padding_default} * 2);
 		}
 	#nav_gallery .btn#contact,
 	#nav_gallery .btn#about {
@@ -2488,8 +2490,7 @@ span.sub {
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
-		width:calc((100% / 5) - 1rem);
-		margin:0.5rem 0.5rem 4.5rem 0.5rem;
+		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
 		}
 
 	#loading_animation {
