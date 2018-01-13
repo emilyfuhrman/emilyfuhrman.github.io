@@ -6,7 +6,6 @@ date_end:   2017/07/02
 metadata:
   - year: 2017
   - cities:
-      - Phoenicia
       - Saugerties
   - states:
       - New York

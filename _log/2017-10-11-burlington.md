@@ -6,11 +6,6 @@ date_start:	2017/10/11
 date_end:		2017/10/15
 metadata:
   - year: 2017
-  - airports:
-      - JFK
-      - BTV
-  - airlines:
-      - JetBlue
   - cities:
       - Burlington
   - countries:
