@@ -5,11 +5,13 @@
 	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% for item in post.metadata %}
-			{% if item.regions contains tag_string %}
-				{% include post_log_swatch.html %}
-			{% endif %}
-		{% endfor %}
+		{% if post.metadata[1]["type"] == null %}
+			{% for item in post.metadata %}
+				{% if item.regions contains tag_string %}
+					{% include post_log_swatch.html %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
 	{% endfor %}
 	</div>
 {% elsif page.continent %}
@@ -17,11 +19,13 @@
 	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% for item in post.metadata %}
-			{% if item.continents contains tag_string %}
-				{% include post_log_swatch.html %}
-			{% endif %}
-		{% endfor %}
+		{% if post.metadata[1]["type"] == null %}
+			{% for item in post.metadata %}
+				{% if item.continents contains tag_string %}
+					{% include post_log_swatch.html %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
 	{% endfor %}
 	</div>
 {% elsif page.city %}
@@ -29,11 +33,13 @@
 	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% for item in post.metadata %}
-			{% if item.cities contains tag_string %}
-				{% include post_log_swatch.html %}
-			{% endif %}
-		{% endfor %}
+		{% if post.metadata[1]["type"] == null %}
+			{% for item in post.metadata %}
+				{% if item.cities contains tag_string %}
+					{% include post_log_swatch.html %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
 	{% endfor %}
 	</div>
 {% elsif page.year %}
@@ -46,11 +52,23 @@
 		{% endif %}
 	{% endfor %}
 	</div>
+{% elsif page.type %}
+	{% assign tag_string = page.type %}
+	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% if post.metadata[1]["type"] == tag_string %}
+			{% include post_log_swatch.html %}
+		{% endif %}
+	{% endfor %}
+	</div>
 {% else %}
 	<div class='panel_label'><span class='i'>All posts</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% include post_log_swatch.html %}
+		{% if post.metadata[1]["type"] == null %}
+			{% include post_log_swatch.html %}
+		{% endif %}
 	{% endfor %}
 	</div>
 {% endif %}

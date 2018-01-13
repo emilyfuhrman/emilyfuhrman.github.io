@@ -5,12 +5,14 @@
 	<div class='panel_label'><a href='/log/archive/{{ archive_link }}'>{{ tag_string }}</a></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
+	{% if post.metadata[1].type == null %}
 		{% for item in post.metadata %}
 			{% if item[parameter] contains tag_string and counter < maxPosts %}
 				{% assign counter=counter | plus:1 %}
 				{% include post_log_swatch.html %}
 			{% endif %}
 		{% endfor %}
+	{% endif %}
 	{% endfor %}
 	</div>
 </div>
