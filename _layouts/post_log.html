@@ -23,9 +23,15 @@
         <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ region }}</a></span>
       {% endfor %}
     {% endfor %}
+    {% if page.metadata[1].type != null %}
+      {% assign type = page.metadata[1].type %}
+      <span class='album_page_tag'>
+        <a href='/log/{{ type }}s'>{{ type }}</a>
+      </span>
+    {% endif %}
     <span class='album_page_tag'>
-      {% assign year = page.metadata[0]["year"] %}
-      <a href='/log/archive/{{ page.metadata[0]["year"] }}' class='{% if year < 2016 %}ignore{% endif %}'>{{ year }}</a>
+      {% assign year = page.metadata[0].year %}
+      <a href='/log/archive/{{ year }}' class='{% if year < 2016 %}ignore{% endif %}'>{{ year }}</a>
     </span>
   </div>
 {% include footer.html %}
