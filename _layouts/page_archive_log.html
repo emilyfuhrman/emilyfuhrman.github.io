@@ -48,7 +48,9 @@
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[0]["year"] == tag_string %}
-			{% include post_log_swatch.html %}
+			{% if post.metadata[1]["type"] == null %}
+				{% include post_log_swatch.html %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
 	</div>

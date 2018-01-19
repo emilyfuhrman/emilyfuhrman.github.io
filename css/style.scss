@@ -1052,6 +1052,9 @@ $log_padding_default:0.8rem;
 	background:$color_black;
 	color:white;
 }
+.album_page_tags .album_page_tag a.ignore {
+	pointer-events:none;
+}
 
 .photo_frame {
 	width:100%;
