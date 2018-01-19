@@ -2478,7 +2478,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		font-size:2.0rem;
-		margin-left:calc(#{$log_padding_default} * -1);
+		margin-left:0;
 		margin-top:2.0rem;
 		}
 		
