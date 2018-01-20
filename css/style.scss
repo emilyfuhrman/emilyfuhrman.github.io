@@ -2120,9 +2120,14 @@ $log_padding_default:0.8rem;
 	.container,
 	.container.fluid {
 		background:#fff;
-		width:1100px;
 		margin:0 auto;
 		padding:0;
+		}
+	.container {
+		width:1218px;
+		}
+	.container.fluid {
+		width:1100px;
 		}
 
 	.container #proj,
@@ -2323,9 +2328,14 @@ $log_padding_default:0.8rem;
 	.container,
 	.container.fluid {
 		background:#fff;
-		width:1800px;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
+		}
+	.container {
+		width:1800px;
+		}
+	.container.fluid {
+		width:1600px;
 		}
 
 	.container #proj,
