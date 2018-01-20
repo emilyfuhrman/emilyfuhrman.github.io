@@ -1097,6 +1097,11 @@ $log_padding_default:0.8rem;
 	@include tiny_serif;
 	}
 
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+	display:none;
+	}
+
 /* 	------------------------------------
 		LOADING ANIMATION
    	------------------------------------ */
