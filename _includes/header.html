@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content={% if page.description %}"{{ page.description }}"{% else %}"{{ site.description }}"{% endif %}>
 	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta name="format-detection" content="telephone=no">
 	
 	<title>
@@ -17,12 +17,14 @@
 	
 	<link rel='icon' href='/favicon.ico' />
 	<link rel='stylesheet' type='text/css' href='/css/style.css' />
+	<link rel='stylesheet' type='text/css' href='/css/libs/mapbox-gl.css' />
 
 	<script type='text/javascript' src='/js/libs/jquery-2.2.1.min.js'></script>
 	<script type='text/javascript' src='/js/libs/modernizr-2.0.6.min.js'></script>
 	<script type='text/javascript' src='/js/libs/masonry.min.js'></script>
 	<script type='text/javascript' src='/js/libs/imagesloaded.min.js'></script>
 	<script type='text/javascript' src='/js/libs/d3.min.js'></script>
+	<script type='text/javascript' src='/js/libs/mapbox-gl.js'></script>
 
 	<!-- Google Analytics -->
 	<script>

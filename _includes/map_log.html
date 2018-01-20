@@ -1,0 +1,25 @@
+<div class='map_title'>Latest coordinates</div>
+{% assign counter = 0 %}
+{% assign lon = 0 %}
+{% assign lat = 0 %}
+{% for post in site.log reversed %}
+    {% if counter < 1 and post.metadata[1].type != "hotel" %}
+        {% assign counter = counter | plus:1 %}
+        {% assign lon = post.lon %}
+        {% assign lat = post.lat %}
+        <div class='coordinates'>{{ lon }}, {{ lat }}</div>
+    {% endif %}
+{% endfor %}
+<div id='map_container'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoieHh6dngiLCJhIjoiVGZyNjdqUSJ9.o9lzL_jn5fXdOhiP5HnokA';
+    var map = new mapboxgl.Map({
+        container: 'map_container', // container id
+        style: 'mapbox://styles/xxzvx/cjclh9g1a0fms2roa0001795a', // stylesheet location
+        center: ["{{ lon }}", "{{ lat }}"], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+
+    // disable map zoom when using scroll
+    map.scrollZoom.disable();
+</script>

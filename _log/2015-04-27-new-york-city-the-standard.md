@@ -3,6 +3,8 @@ title:			"The Standard"
 post_path:	2015-04-27-new-york-city-the-standard
 date_start:	2015/04/27
 date_end:		2015/04/28
+lat:        40.7128
+lon:        -74.0060
 metadata:
   - year: 2015
   - type: hotel
