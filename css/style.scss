@@ -855,7 +855,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	position:relative;
 	float:right;
-	margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+	margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	padding-bottom:calc(#{$log_padding_default} * 2);
 	cursor:cell;
 	}
@@ -1344,7 +1344,7 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1524,7 +1524,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1694,7 +1694,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1890,7 +1890,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2087,7 +2087,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2295,7 +2295,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2518,7 +2518,7 @@ $log_padding_default:0.8rem;
 		}
 		
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
+		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
