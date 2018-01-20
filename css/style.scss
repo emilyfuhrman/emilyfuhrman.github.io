@@ -813,7 +813,7 @@ $log_padding_default:0.8rem;
 
 .log.container#main {
 	font-family:'Arvo',serif;
-  font-size:0.65rem;
+  font-size:0.5rem;
 	padding:calc(#{$log_padding_default} * 8) $log_padding_default calc(#{$log_padding_default} * 10);
 	}
 .log.container#main div {
