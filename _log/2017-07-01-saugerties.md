@@ -3,6 +3,8 @@ title:			"Saugerties"
 post_path:	2017-07-01-saugerties
 date_start:	2017/07/01
 date_end:   2017/07/02
+lat:        42.07617
+lon:        -73.9663
 metadata:
   - year: 2017
   - cities:

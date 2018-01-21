@@ -3,6 +3,8 @@ title:			"Lake Placid"
 post_path:	2017-02-25-lake-placid
 date_start:	2017/02/25
 date_end:		2017/02/27
+lat:        44.2844
+lon:        -74.0037
 metadata:
   - year: 2017
   - cities:
