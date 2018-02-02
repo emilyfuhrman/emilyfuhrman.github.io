@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"New York City"
 post_path:	2016-12-01-new-york
 date_start:	December 2016

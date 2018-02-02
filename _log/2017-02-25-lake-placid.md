@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"Lake Placid"
 post_path:	2017-02-25-lake-placid
 date_start:	2017/02/25
