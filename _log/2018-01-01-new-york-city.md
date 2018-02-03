@@ -1,5 +1,4 @@
 ---
-published:  false
 title:			"New York City"
 post_path:	2018-01-01-new-york
 date_start:	January 2018
@@ -19,7 +18,5 @@ metadata:
       - United States
 photos:
   - ext:    01.jpg
-    class:  horizontal
-  - ext:    03.jpg
     class:  horizontal
 ---
