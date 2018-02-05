@@ -19,4 +19,5 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  horizontal
+    text:   "Yoni, Bushwick"
 ---
