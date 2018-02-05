@@ -14,4 +14,4 @@ images:
 tags:
   - compendium
 ---
-A compendium of data graphics in Star Trek. Submissions [welcome](http://startrekvis.tumblr.com/submit).
+A compendium of Star Trek data graphics. Submissions [welcome](http://startrekvis.tumblr.com/submit).
