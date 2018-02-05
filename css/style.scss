@@ -840,7 +840,7 @@ $log_padding_default:0.8rem;
 	z-index:100;
 	position:fixed;
 	font-family:'Nova Mono',sans-serif;
-	font-size:2.0rem;
+	font-size:1.6rem;
 	font-kerning:normal;
 	margin:1.0rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
@@ -855,7 +855,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	position:relative;
 	float:right;
-	margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+	margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	padding-bottom:calc(#{$log_padding_default} * 2);
 	cursor:cell;
 	}
@@ -1344,7 +1344,7 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1518,13 +1518,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:4.2rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1688,13 +1688,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.6rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.0rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -1884,13 +1884,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.6rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.0rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2081,13 +2081,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.6rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.0rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2289,13 +2289,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.6rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		margin-top:1.0rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
@@ -2512,13 +2512,13 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:2.0rem;
+		font-size:1.6rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		margin-top:1.0rem;
 		}
 		
 	#nav_log .btn {
-		margin:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
+		margin:$log_padding_default calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
