@@ -2,7 +2,7 @@
 <div class='panel archive'>
 {% if page.region %}
 	{% assign tag_string = page.region %}
-	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == null %}
@@ -16,7 +16,7 @@
 	</div>
 {% elsif page.continent %}
 	{% assign tag_string = page.continent %}
-	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == null %}
@@ -30,7 +30,7 @@
 	</div>
 {% elsif page.city %}
 	{% assign tag_string = page.city %}
-	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == null %}
@@ -44,7 +44,7 @@
 	</div>
 {% elsif page.year %}
 	{% assign tag_string = page.year %}
-	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[0]["year"] == tag_string %}
@@ -56,7 +56,7 @@
 	</div>
 {% elsif page.type %}
 	{% assign tag_string = page.type %}
-	<div class='panel_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Posts tagged:</span> {{ tag_string }}</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == tag_string %}
@@ -65,7 +65,7 @@
 	{% endfor %}
 	</div>
 {% else %}
-	<div class='panel_label'><span class='i'>All posts</div>
+	<div class='page_label'><span class='i'>All posts</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == null %}
