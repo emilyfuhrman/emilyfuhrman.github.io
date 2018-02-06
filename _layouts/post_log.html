@@ -1,6 +1,5 @@
 {% include header.html %}
-  <div class='album_page_title'>{{ page.title }}</div>
-  <div class='album_page_date'>{{ page.date_start }}{% if page.date_end %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}</div>
+  <div class='panel_label'>{{ page.title }}</div>
   {% for photo in page.photos %}
   	<div class='photo_frame {{ photo.class }}'>
       <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
@@ -33,5 +32,6 @@
       {% assign year = page.metadata[0].year %}
       <a href='/log/archive/{{ year }}' class='{% if year < 2016 %}ignore{% endif %}'>{{ year }}</a>
     </span>
+    <!-- <span class='album_page_date'>{{ page.date_start }}{% if page.date_end %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}</span> -->
   </div>
 {% include footer.html %}
