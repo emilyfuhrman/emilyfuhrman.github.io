@@ -1071,7 +1071,9 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	text-transform:uppercase;
   letter-spacing:0.05rem;
-	padding:$log_padding_default 0;
+	margin-top:$log_padding_default ;
+  margin-bottom:calc(#{$log_padding_default} * -1);
+	padding:0;
 	}
 
 /* 	------------------------------------
