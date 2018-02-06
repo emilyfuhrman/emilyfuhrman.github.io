@@ -955,21 +955,23 @@ $log_padding_default:0.8rem;
 	}
 
 .panel .panel_label,
-.panel_label {
+.page_label {
 	@include caps_sans_serif_small;
 	position:relative;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	margin-left:$log_padding_default;
-	padding:calc(#{$log_padding_default} * 3) 0 0;
 	border-top:1px solid #eee;
 	}
+.panel .panel_label {
+	padding:calc(#{$log_padding_default} * 3) 0 0;
+	}
 .panel .panel_label a,
-.panel_label a {
+.page_label a {
 	border-bottom:none;
 	}
 .panel .panel_label:hover a,
-.panel_label:hover a {
+.page_label:hover a {
 	color:$color_black !important;
 	}
 
@@ -1026,22 +1028,15 @@ $log_padding_default:0.8rem;
 	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 	}
 
-.album_page_title {
-	@include caps_sans_serif_large;
-	width:100%;
-	text-align:center;
-	padding:calc(#{$log_padding_default} * 2) 0 0;
-	}
-.album_page_date {
-	float:right;
-	text-align:right;
+.page_label {
+	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	}
 .album_page_tags {
 	@include caps_sans_serif_tiny;
 	width:100%;
 	width:calc(100% - 1.5rem);
 	margin:2.5rem 0.75rem;
-	padding:0.5rem 0 2rem;
+	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	border-top:1px solid #eee;
 	}
 .album_page_tags .album_page_tag a {

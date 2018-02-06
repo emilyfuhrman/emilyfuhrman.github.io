@@ -1,5 +1,5 @@
 {% include header.html %}
-<div class='panel_label'>Latest entries</div>
+<div class='page_label'>Latest entries</div>
 <div id='albums' class='grid'>
 	{% for post in site.log reversed %}
 	{% if post.metadata[1].type != "hotel" %}
