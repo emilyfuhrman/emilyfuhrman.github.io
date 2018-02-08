@@ -1,6 +1,6 @@
 ---
 title:			"The Standard"
-post_path:	2015-04-27-new-york-city-the-standard
+post_path:	2015-04-27-new-york-city-the-standard-hotel
 date_start:	2015/04/27
 date_end:		2015/04/28
 lat:        40.7128

@@ -1,5 +1,5 @@
 ---
-title:			"The Milestone Hotel"
+title:			"The Milestone"
 post_path:	2017-11-12-london-the-milestone-hotel
 date_start:	2017/11/12
 date_end:		2017/11/19
