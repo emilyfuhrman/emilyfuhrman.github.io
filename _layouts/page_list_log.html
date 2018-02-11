@@ -2,7 +2,6 @@
 <div class='page_label'>Latest entries</div>
 <div id='albums' class='grid'>
 	{% for post in site.log reversed %}
-	{% if post.metadata[1].type != "hotel" %}
 	<a href='{{ post.url }}'>
 		<div class='album_cover grid-item'>
 			<img src='../photos/{{ post.post_path }}/01.jpg'/>
@@ -10,7 +9,6 @@
   		<div class='album_date'>{{ post.date_start }}{% if post.date_end %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}</div>
 		</div>
 	</a>
-	{% endif %}
 	{% endfor %}
 </div>
 

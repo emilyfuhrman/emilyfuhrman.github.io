@@ -3,7 +3,7 @@
 {% assign lon = 0 %}
 {% assign lat = 0 %}
 {% for post in site.log reversed %}
-    {% if counter < 1 and post.metadata[1].type != "hotel" %}
+    {% if counter < 1 %}
         {% assign counter = counter | plus:1 %}
         {% assign lon = post.lon %}
         {% assign lat = post.lat %}
