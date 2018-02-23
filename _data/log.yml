@@ -6,7 +6,7 @@ regions:
   - name: Greater North America
     display: false
   - name: Central America
-    display: true
+    display: false
   - name: South America
     display: false
   - name: Caribbean

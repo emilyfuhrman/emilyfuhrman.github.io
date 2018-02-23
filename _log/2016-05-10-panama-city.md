@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"Panama City"
 post_path:	2016-05-10-panama-city
 date_start:	2016/05/10
