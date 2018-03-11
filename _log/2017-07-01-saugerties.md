@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"Saugerties"
 post_path:	2017-07-01-saugerties
 date_start:	2017/07/01

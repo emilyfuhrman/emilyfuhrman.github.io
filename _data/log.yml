@@ -18,6 +18,6 @@ regions:
   - name: Europe
     display: true
   - name: Middle East
-    display: false
+    display: true
   - name: South Pacific
     display: false
