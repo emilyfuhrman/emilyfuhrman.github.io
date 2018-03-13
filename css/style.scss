@@ -782,6 +782,10 @@ $log_padding_default:0.8rem;
 		LOG
    	------------------------------------ */
 
+@mixin font_display {
+	font-family:'Nova Mono',sans-serif;
+	text-transform:lowercase;
+}
 @mixin font_sans_serif {
 	font-family:'Work Sans',sans-serif;
 }
@@ -802,7 +806,7 @@ $log_padding_default:0.8rem;
 @mixin caps_sans_serif_small {
 	@include caps_sans_serif;
 	font-size:12px;
-	font-weight:500;
+	font-weight:600;
 	}
 @mixin sans_serif_tiny {
 	@include caps_sans_serif;
@@ -838,9 +842,9 @@ $log_padding_default:0.8rem;
 	}
 
 #nav_log #section_title {
+	@include font_display;
 	z-index:100;
 	position:fixed;
-	font-family:'Nova Mono',sans-serif;
 	font-size:1.6rem;
 	font-kerning:normal;
 	margin:1.0rem calc(#{$log_padding_default} * 2);
@@ -935,12 +939,13 @@ $log_padding_default:0.8rem;
 	text-align:center;
 }
 .feature #feature_image #feature_title {
-	@include caps_sans_serif_small;
-	margin-top:calc(#{$log_padding_default} * -6);
+	@include font_display;
+	font-size:2.4rem;
+	margin-top:calc(#{$log_padding_default} * -9);
 }
 .feature #feature_image #feature_date {
 	@include sans_serif_tiny;
-	margin-top:calc(#{$log_padding_default} * -4.8);
+	margin-top:calc(#{$log_padding_default} * -6);
 }
 
 .panel {
