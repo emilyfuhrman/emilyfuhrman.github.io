@@ -782,8 +782,15 @@ $log_padding_default:0.8rem;
 		LOG
    	------------------------------------ */
 
-@mixin caps_sans_serif {
+@mixin font_sans_serif {
 	font-family:'Work Sans',sans-serif;
+}
+@mixin sans_serif {
+	@include font_sans_serif;
+	font-weight:400;
+	}
+@mixin caps_sans_serif {
+	@include font_sans_serif;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
 	}
@@ -797,16 +804,16 @@ $log_padding_default:0.8rem;
 	font-size:12px;
 	font-weight:500;
 	}
-@mixin tiny_serif {
-	font-family:'Arvo',serif;
-  font-size:10px;
-  font-weight:400;
-  text-transform:uppercase;
-	}
+@mixin sans_serif_tiny {
+	@include caps_sans_serif;
+	font-size:11px;
+	font-weight:300;
+	text-transform:none;
+	letter-spacing:0.75px;
+}
 
 .log.container#main {
-	font-family:'Arvo',serif;
-  font-size:0.5rem;
+	@include caps_sans_serif_tiny;
 	padding:calc(#{$log_padding_default} * 8) $log_padding_default calc(#{$log_padding_default} * 10);
 	}
 .log.container#main div {
@@ -858,6 +865,7 @@ $log_padding_default:0.8rem;
 	}
 
 #nav_log .btn .btn_menu {
+	@include sans_serif;
 	visibility:hidden;
 	opacity:0;
 	z-index:999;
@@ -901,7 +909,7 @@ $log_padding_default:0.8rem;
 
 .feature {
 	width:100%;
-	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 8);
+	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
 }
 .feature #feature_image {
 	position:relative;
@@ -918,13 +926,20 @@ $log_padding_default:0.8rem;
 	display:block;
 	padding-top:56.25%;
 }
-.feature #feature_image #feature_title {
+.feature #feature_image #feature_title,
+.feature #feature_image #feature_date {
 	position:absolute;
 	color:white;
 	width:100%;
-	height:120px;
 	text-align:center;
-	margin-top:-120px;
+}
+.feature #feature_image #feature_title {
+	@include caps_sans_serif_small;
+	margin-top:calc(#{$log_padding_default} * -6);
+}
+.feature #feature_image #feature_date {
+	@include sans_serif_tiny;
+	margin-top:calc(#{$log_padding_default} * -4.8);
 }
 
 .panel {
@@ -941,7 +956,7 @@ $log_padding_default:0.8rem;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	text-align:center;
 	margin-left:$log_padding_default;
-	border-top:1px solid $color_black;
+	border-top:1px solid #eee;
 	}
 .panel .panel_label {
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
@@ -987,16 +1002,15 @@ $log_padding_default:0.8rem;
 	padding:0.25rem 0 0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
-	@include tiny_serif;
+	@include sans_serif_tiny;
 	position:relative;
 	width:100%;
-	font-style:italic;
+	color:#aaa;
 	margin-top:-0.5rem;
 	}
 
 .panel .panel_images:hover .panel_item .panel_item_label,
 .panel .panel_images:hover .panel_item .panel_item_date {
-	color:$color_black;
 	}
 
 .panel.archive {
@@ -1010,13 +1024,16 @@ $log_padding_default:0.8rem;
 	}
 
 .page_label {
-	font-weight:600;
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	}
+.page_label .i {
+	font-weight:400;
+}
 .album_page_tags {
 	@include caps_sans_serif_tiny;
 	width:100%;
 	width:calc(100% - 1.5rem);
+	font-weight:400;
 	margin:2.5rem 0.75rem;
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	border-top:1px solid #eee;
