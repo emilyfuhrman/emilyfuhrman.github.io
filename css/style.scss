@@ -3,11 +3,11 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200|Arvo:400,700|Nova+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Arvo:400,700|Nova+Mono:400');
 
-$color_black:#000;
+$color_black:#111;
 $color_accent:#0055FF;
-$color_red:#FF3D00;
+$color_log_accent:#FF3D00;
 
 $ttime:120ms;
 
@@ -783,31 +783,24 @@ $log_padding_default:0.8rem;
    	------------------------------------ */
 
 @mixin caps_sans_serif {
-	font-family:'Raleway',sans-serif;
+	font-family:'Work Sans',sans-serif;
+	letter-spacing:1.5px;
 	text-transform:uppercase;
 	}
 @mixin caps_sans_serif_tiny {
 	@include caps_sans_serif;
-	font-size:0.5rem;
-	font-weight:200;
-	letter-spacing:0.125rem;
+	font-size:11px;
+	font-weight:500;
 	}
 @mixin caps_sans_serif_small {
 	@include caps_sans_serif;
-	font-size:0.75rem;
-	font-weight:200;
-	letter-spacing:0.125rem;
-	}
-@mixin caps_sans_serif_large {
-	@include caps_sans_serif;
-	font-size:0.95rem;
-	font-weight:100;
-	letter-spacing:0.15rem;
+	font-size:12px;
+	font-weight:500;
 	}
 @mixin tiny_serif {
 	font-family:'Arvo',serif;
-  font-size:0.5rem;
-  font-weight:700;
+  font-size:10px;
+  font-weight:400;
   text-transform:uppercase;
 	}
 
@@ -822,7 +815,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main p {
-	@include caps_sans_serif_small;
+	@include caps_sans_serif_tiny;
 	padding:$log_padding_default;
 	}
 
@@ -848,7 +841,7 @@ $log_padding_default:0.8rem;
 	}
 #nav_log #section_title a:hover {
 	opacity:1;
-	color:$color_red;
+	color:$color_log_accent;
 	}
 
 #nav_log .btn {
@@ -906,52 +899,38 @@ $log_padding_default:0.8rem;
 	opacity:0.5;
 	}
 
-#albums {
+.feature {
 	width:100%;
-	height:100%;
-	margin:calc((#{$log_padding_default} * -3) + #{$log_padding_default}) 0 4.0rem 0;
-	}
-
-#albums .grid-item {
-	width:33%;
-	width:calc(100% / 3);
-	height:auto;
-	line-height:normal;
-	padding:calc(#{$log_padding_default} * 3) $log_padding_default $log_padding_default;
-	}
-
-#albums .album_cover .album_date {
-	@include tiny_serif;
+	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 8);
+}
+.feature #feature_image {
+	position:relative;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
 	width:100%;
+	width:calc(100% - (#{$log_padding_default} * 2));
+	margin:0;
+	padding:0;
+}
+.feature #feature_image:before {
+	content:"";
+	display:block;
+	padding-top:56.25%;
+}
+.feature #feature_image #feature_title {
+	position:absolute;
+	color:white;
+	width:100%;
+	height:120px;
 	text-align:center;
-	}
-
-#albums .album_cover .album_title {
-	@include caps_sans_serif_small;
-	width:100%;
-	text-align:center;
-	padding:1rem 0 0;
-	}
-#albums .album_cover .album_date {
-  letter-spacing:0.05rem;
-	padding:0.25rem 0;
-	}
-
-#albums a:hover .album_title,
-#albums a:hover .album_date {
-	color:$color_black;
-	}
-
-#albums .album_cover img {
-	float:left;
-	width:100%;
-	height:auto;
-	}
+	margin-top:-120px;
+}
 
 .panel {
 	display:block;
 	width:100%;
-	padding:0 0 calc(#{$log_padding_default} * 10) 0;
+	padding:0 0 calc(#{$log_padding_default} * 8) 0;
 	}
 
 .panel .panel_label,
@@ -960,11 +939,12 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
+	text-align:center;
 	margin-left:$log_padding_default;
-	border-top:1px solid #eee;
+	border-top:1px solid $color_black;
 	}
 .panel .panel_label {
-	padding:calc(#{$log_padding_default} * 3) 0 0;
+	padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
 	}
 .panel .panel_label a,
 .page_label a {
@@ -1000,7 +980,7 @@ $log_padding_default:0.8rem;
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif_small;
+	@include caps_sans_serif_tiny;
 	position:relative;
 	line-height:1.15rem;
 	width:100%;
@@ -1010,7 +990,8 @@ $log_padding_default:0.8rem;
 	@include tiny_serif;
 	position:relative;
 	width:100%;
-	margin-top:-0.25rem;
+	font-style:italic;
+	margin-top:-0.5rem;
 	}
 
 .panel .panel_images:hover .panel_item .panel_item_label,
@@ -1029,6 +1010,7 @@ $log_padding_default:0.8rem;
 	}
 
 .page_label {
+	font-weight:600;
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	}
 .album_page_tags {
@@ -1325,10 +1307,6 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
-	#albums .grid-item {
-		width:100%;
-		}
-
 	.panel {
 		display:none;
 		}
@@ -1505,10 +1483,6 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
-	#albums .grid-item {
-		width:100%;
-		}
-
 	.panel {
 		display:none;
 		}
@@ -1673,10 +1647,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
-		}
-
-	#albums .grid-item {
-		width:50%;
 		}
 
 	.panel {
@@ -1871,11 +1841,6 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
-	#albums .grid-item {
-		width:33%;
-		width:calc(100% / 3);
-		}
-
 	.panel {
 		display:block;
 		}
@@ -2066,11 +2031,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
-		}
-
-	#albums .grid-item {
-		width:33%;
-		width:calc(100% / 3);
 		}
 
 	.panel {
@@ -2274,11 +2234,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
-		}
-
-	#albums .grid-item {
-		width:33%;
-		width:calc(100% / 3);
 		}
 
 	.panel {
@@ -2497,11 +2452,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
-		}
-
-	#albums .grid-item {
-		width:33%;
-		width:calc(100% / 3);
 		}
 
 	.panel {

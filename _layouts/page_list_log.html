@@ -1,16 +1,22 @@
 {% include header.html %}
-<div class='page_label'>Latest entries</div>
-<div id='albums' class='grid'>
-	{% for post in site.log reversed %}
-	<a href='{{ post.url }}'>
-		<div class='album_cover grid-item'>
-			<img src='../photos/{{ post.post_path }}/01.jpg'/>
-			<div class='album_title'>{{ post.title }}</div>
-  		<div class='album_date'>{{ post.date_start }}{% if post.date_end %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}</div>
+
+<!-- Feature image -->
+{% for post in site.log reversed %}
+	{% if forloop.first %}
+		<div class='feature'>
+			<a href='{{ post.url }}'>
+				<div id='feature_image' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
+					<div id='feature_title'>{{ post.title }}</div>
+				</div>
+			</a>
 		</div>
-	</a>
-	{% endfor %}
-</div>
+		{% break %}
+	{% endif %}
+{% endfor %}
+
+<!-- Latest entries -->
+{% assign tag_string = "Latest entries" %}
+{% include generator_panel.html %}
 
 <!-- NYC panel -->
 {% assign tag_string = "NYC" %}
