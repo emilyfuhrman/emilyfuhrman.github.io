@@ -822,7 +822,8 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main p {
-	@include sans_serif_tiny;
+	@include caps_sans_serif_small;
+	font-weight:300;
 	padding:$log_padding_default;
 	}
 
