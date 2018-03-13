@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Arvo:400,700|Nova+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400');
 
 $color_black:#111;
 $color_accent:#0055FF;
@@ -997,7 +997,7 @@ $log_padding_default:0.8rem;
 .panel .panel_images .panel_item .panel_item_label {
 	@include caps_sans_serif_tiny;
 	position:relative;
-	line-height:1.15rem;
+	line-height:0.8rem;
 	width:100%;
 	padding:0.25rem 0 0;
 	}
@@ -1006,7 +1006,7 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:100%;
 	color:#aaa;
-	margin-top:-0.5rem;
+	margin-top:-0.3rem;
 	}
 
 .panel .panel_images:hover .panel_item .panel_item_label,
