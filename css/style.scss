@@ -961,7 +961,8 @@ $log_padding_default:0.8rem;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	text-align:center;
-	margin-left:$log_padding_default;
+  width:480px;
+	margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 	border-top:1px solid #eee;
 	}
 .panel .panel_label {
