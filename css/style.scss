@@ -958,10 +958,8 @@ $log_padding_default:0.8rem;
 .page_label {
 	@include caps_sans_serif_small;
 	position:relative;
-	width:100%;
-	width:calc(100% - calc(#{$log_padding_default} * 2));
+	width:480px;
 	text-align:center;
-  width:480px;
 	margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 	border-top:1px solid #eee;
 	}
@@ -1004,7 +1002,6 @@ $log_padding_default:0.8rem;
 .panel .panel_images .panel_item .panel_item_label {
 	@include caps_sans_serif_tiny;
 	position:relative;
-	line-height:0.8rem;
 	width:100%;
 	padding:0.25rem 0 0;
 	}
@@ -1013,11 +1010,12 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:100%;
 	color:#aaa;
-	margin-top:-0.3rem;
+	margin-top:0.2rem;
 	}
 
-.panel .panel_images:hover .panel_item .panel_item_label,
-.panel .panel_images:hover .panel_item .panel_item_date {
+.panel .panel_images .panel_item .panel_item_label,
+.panel .panel_images .panel_item .panel_item_date {
+	line-height:0.8rem;
 	}
 
 .panel.archive {
@@ -1674,13 +1672,23 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel {
-		display:none;
+		display:block;
+		}
+	.panel .panel_label,
+	.page_label {
+		width:100%;
+		width:calc(100% - calc(#{$log_padding_default} * 2));
+		margin-left:$log_padding_default;
 		}
 	
 	.panel.archive .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature #feature_image #feature_title {
+		font-size:2.0rem;
 		}
 
 	#loading_animation {
@@ -1868,11 +1876,20 @@ $log_padding_default:0.8rem;
 	.panel {
 		display:block;
 		}
+	.panel .panel_label,
+	.page_label {
+  	width:480px;
+		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
+		}
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature #feature_image #feature_title {
+		font-size:2.4rem;
 		}
 
 	#loading_animation {
@@ -2060,11 +2077,20 @@ $log_padding_default:0.8rem;
 	.panel {
 		display:block;
 		}
+	.panel .panel_label,
+	.page_label {
+  	width:480px;
+		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
+		}
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature #feature_image #feature_title {
+		font-size:2.4rem;
 		}
 
 	#loading_animation {
@@ -2263,11 +2289,20 @@ $log_padding_default:0.8rem;
 	.panel {
 		display:block;
 		}
+	.panel .panel_label,
+	.page_label {
+  	width:480px;
+		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
+		}
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature #feature_image #feature_title {
+		font-size:2.4rem;
 		}
 
 	#loading_animation {
@@ -2481,10 +2516,19 @@ $log_padding_default:0.8rem;
 	.panel {
 		display:block;
 		}
+	.panel .panel_label,
+	.page_label {
+  	width:480px;
+		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
+		}
 	
 	.panel.archive .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
+		}
+
+	.feature #feature_image #feature_title {
+		font-size:2.4rem;
 		}
 
 	#loading_animation {
