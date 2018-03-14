@@ -21,5 +21,7 @@ metadata:
 photos:
   - ext:		01.jpg
     class:	horizontal
+  - ext:    02.jpg
+    class:  vertical
     text:   "The Chatwal · 130 W 44th St. · New York, NY 10014"
 ---
