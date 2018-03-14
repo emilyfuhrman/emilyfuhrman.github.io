@@ -913,6 +913,7 @@ $log_padding_default:0.8rem;
 	}
 
 .feature {
+	display:block;
 	width:100%;
 	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
 }
@@ -1023,8 +1024,6 @@ $log_padding_default:0.8rem;
 	padding:0 0 calc(#{$log_padding_default} * 2);
 	}
 .panel.archive .panel_images .panel_item {
-	width:20%;
-	width:calc((100% / 5) - (#{$log_padding_default} * 2));
 	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 	}
 
@@ -1330,13 +1329,22 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel {
-		display:none;
+		display:block;
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_label,
+	.page_label {
+		width:100%;
+		width:calc(100% - calc(#{$log_padding_default} * 2));
+		margin-left:$log_padding_default;
+		}
+	.panel .panel_images .panel_item {
 		width:100%;
 		width:calc(100% - (#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature {
+		display:none;
 		}
 
 	#loading_animation {
@@ -1506,13 +1514,22 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel {
-		display:none;
+		display:block;
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_label,
+	.page_label {
+		width:100%;
+		width:calc(100% - calc(#{$log_padding_default} * 2));
+		margin-left:$log_padding_default;
+		}
+	.panel .panel_images .panel_item {
 		width:50%;
 		width:calc((100% / 2) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		}
+
+	.feature {
+		display:none;
 		}
 
 	#loading_animation {
@@ -1680,13 +1697,15 @@ $log_padding_default:0.8rem;
 		width:calc(100% - calc(#{$log_padding_default} * 2));
 		margin-left:$log_padding_default;
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - calc(#{$log_padding_default} * 2));
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 
+	.feature {
+		display:block;
+		}
 	.feature #feature_image #feature_title {
 		font-size:2.0rem;
 		}
@@ -1881,13 +1900,15 @@ $log_padding_default:0.8rem;
   	width:480px;
 		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:$log_padding_default;
 		}
 
+	.feature {
+		display:block;
+		}
 	.feature #feature_image #feature_title {
 		font-size:2.4rem;
 		}
@@ -2082,13 +2103,15 @@ $log_padding_default:0.8rem;
   	width:480px;
 		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:$log_padding_default;
 		}
 
+	.feature {
+		display:block;
+		}
 	.feature #feature_image #feature_title {
 		font-size:2.4rem;
 		}
@@ -2294,13 +2317,15 @@ $log_padding_default:0.8rem;
   	width:480px;
 		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:$log_padding_default;
 		}
 
+	.feature {
+		display:block;
+		}
 	.feature #feature_image #feature_title {
 		font-size:2.4rem;
 		}
@@ -2521,12 +2546,15 @@ $log_padding_default:0.8rem;
   	width:480px;
 		margin-left:calc(50% - 240px - calc(#{$log_padding_default} / 2));
 		}
-	
-	.panel.archive .panel_images .panel_item {
+	.panel .panel_images .panel_item {
 		width:20%;
 		width:calc((100% / 5) - calc(#{$log_padding_default} * 2));
+		margin:$log_padding_default;
 		}
 
+	.feature {
+		display:block;
+		}
 	.feature #feature_image #feature_title {
 		font-size:2.4rem;
 		}
