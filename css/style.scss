@@ -860,6 +860,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	position:relative;
 	float:right;
+	font-weight:400;
 	margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	padding-bottom:calc(#{$log_padding_default} * 2);
 	cursor:cell;
