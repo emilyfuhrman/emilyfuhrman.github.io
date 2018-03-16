@@ -953,6 +953,7 @@ $log_padding_default:0.8rem;
 }
 .feature #feature_image #feature_date {
 	@include serif_tiny;
+	font-style:italic;
 	margin-top:calc(#{$log_padding_default} * -6);
 }
 
