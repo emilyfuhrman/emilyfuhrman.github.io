@@ -4,7 +4,7 @@
 	{% capture archive_link %}
 		{% if parameter %}{{ tag_string | downcase | replace: ' ', '-' }}{% else %}''{% endif %}
 	{% endcapture %}
-	<div class='panel_label'><a href='/log/archive/{{ archive_link }}'>{{ tag_string }}</a></div>
+	<div class='panel_label {% if parameter == nil or parameter == '' %}leader{% endif %}'><a href='/log/archive/{{ archive_link }}'>{{ tag_string }}</a></div>
 	<div class='panel_images'>
 	{% if parameter %}
 		{% for post in site.log reversed %}

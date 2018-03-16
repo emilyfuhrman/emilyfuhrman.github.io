@@ -976,6 +976,12 @@ $log_padding_default:0.8rem;
 .panel .panel_label {
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
 	}
+.panel .panel_label.leader {
+	width:100% !important;
+	width:calc(100% - calc(#{$log_padding_default} * 2)) !important;
+	margin-left:$log_padding_default !important;
+	/*border-top:1px solid $color_black;*/
+	}
 .panel .panel_label a,
 .page_label a {
 	color:$color_black;
