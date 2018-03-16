@@ -3,11 +3,12 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400|Old+Standard+TT:400,400i,700');
 
 $color_black:#111;
 $color_accent:#0055FF;
 $color_log_accent:#FF3D00;
+$color_log_gold:#867A30;
 
 $ttime:120ms;
 
@@ -790,7 +791,7 @@ $log_padding_default:0.8rem;
 	font-family:'Work Sans',sans-serif;
 }
 @mixin font_serif {
-	/*font-family:'Times',serif;*/ /*to update*/
+	/*font-family:'Georgia',serif;*/ /*to update*/
 	font-family:'Work Sans',sans-serif;
 }
 @mixin sans_serif {
@@ -802,16 +803,6 @@ $log_padding_default:0.8rem;
 	letter-spacing:1.5px;
 	text-transform:uppercase;
 	}
-@mixin caps_sans_serif_tiny {
-	@include caps_sans_serif;
-	font-size:11px;
-	font-weight:500;
-	}
-@mixin caps_sans_serif_small {
-	@include caps_sans_serif;
-	font-size:12px;
-	font-weight:600;
-	}
 @mixin sans_serif_tiny {
 	@include font_sans_serif;
 	font-size:11px;
@@ -819,12 +810,16 @@ $log_padding_default:0.8rem;
 	text-transform:none;
 	letter-spacing:0.75px;
 	}
+@mixin caps_sans_serif_tiny {
+	@include caps_sans_serif;
+	font-size:11px;
+	font-weight:500;
+	}
 @mixin serif_tiny {
 	@include font_serif;
 	font-size:11px;
 	font-weight:300;
 	text-transform:none;
-	letter-spacing:0.75px;
 	}
 
 .log.container#main {
@@ -837,7 +832,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main p {
-	@include caps_sans_serif_small;
+	@include caps_sans_serif_tiny;
 	font-weight:300;
 	padding:$log_padding_default;
 	}
@@ -969,7 +964,7 @@ $log_padding_default:0.8rem;
 
 .panel .panel_label,
 .page_label {
-	@include caps_sans_serif_small;
+	@include caps_sans_serif_tiny;
 	position:relative;
 	width:480px;
 	text-align:center;
@@ -981,6 +976,7 @@ $log_padding_default:0.8rem;
 	}
 .panel .panel_label a,
 .page_label a {
+	color:$color_black;
 	border-bottom:none;
 	}
 .panel .panel_label:hover a,
@@ -1016,13 +1012,16 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	position:relative;
 	width:100%;
+	color:$color_log_gold;
+	/*font-weight:400;*/
 	padding:0.25rem 0 0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
 	@include serif_tiny;
 	position:relative;
 	width:100%;
-	color:#aaa;
+	/*color:#aaa;*/
+	font-style:italic;
 	margin-top:0.1rem;
 	}
 
