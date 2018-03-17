@@ -924,7 +924,7 @@ $log_padding_default:0.8rem;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	margin-left:$log_padding_default;
 	padding-bottom:$log_padding_default;
-	border-top:1px solid $color_black;
+	border-top:1px solid #eee;
 	}
 
 .feature {
@@ -980,7 +980,7 @@ $log_padding_default:0.8rem;
 	font-weight:400;
 	text-align:center;
 	margin-left:$log_padding_default;
-	border-top:1px solid $color_black;
+	border-top:1px solid #eee;
 	}
 .panel .panel_label {
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
