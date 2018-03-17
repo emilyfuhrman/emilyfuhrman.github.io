@@ -1,7 +1,7 @@
 {% include header.html %}
 
 <!-- Feature image -->
-<div class='divider top'></div>
+<div class='divider'></div>
 {% for post in site.log reversed %}
 	{% if forloop.first %}
 		<div class='feature'>
@@ -34,5 +34,4 @@
 	{% endif %}
 {% endfor %}
 
-<div class='divider bottom'></div>
 {% include footer.html %}
