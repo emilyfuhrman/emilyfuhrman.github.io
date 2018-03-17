@@ -883,9 +883,9 @@ $log_padding_default:0.8rem;
 	z-index:999;
 	position:absolute;
 	background:white;
-	width:120px;
+	width:150px;
 	margin-top:10px;
-	margin-left:calc(((120px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
+	margin-left:calc(((150px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
 	border:1px solid #eee;
 	@include transition(opacity 240ms ease);
 	}
