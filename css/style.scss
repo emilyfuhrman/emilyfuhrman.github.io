@@ -1063,7 +1063,7 @@ $log_padding_default:0.8rem;
 	font-weight:400;
 	margin:2.5rem 0.75rem;
 	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
-	border-top:1px solid $color_black;
+	border-top:1px solid #eee;
 	}
 .album_page_tags .album_page_tag a {
 	background:#eee;
