@@ -1,6 +1,7 @@
 {% include header.html %}
 
 <!-- Feature image -->
+<div class='divider'></div>
 {% for post in site.log reversed %}
 	{% if forloop.first %}
 		<div class='feature'>
@@ -16,7 +17,7 @@
 {% endfor %}
 
 <!-- Latest entries -->
-{% assign tag_string = "Latest entries" %}
+{% assign tag_string = "Recent entries" %}
 {% include generator_panel.html %}
 
 <!-- NYC panel -->
