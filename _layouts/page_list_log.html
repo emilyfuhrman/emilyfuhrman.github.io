@@ -7,7 +7,7 @@
 			<a href='{{ post.url }}'>
 				<div id='feature_image' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
 					<div id='feature_title'>{{ post.title }}</div>
-					<div id='feature_date'>{{ post.date_start }}{% if post.date_end %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}</div>
+					<div id='feature_date'>{{ post.date_start }}{% if post.date_end %}{% if post.date_end != post.date_start %}&nbsp;&ndash;&nbsp;{{ post.date_end }}{% endif %}{% endif %}</div> 
 				</div>
 			</a>
 		</div>
