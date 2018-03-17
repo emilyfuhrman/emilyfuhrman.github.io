@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400|Old+Standard+TT:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400');
 
 $color_black:#111;
 $color_accent:#0055FF;
@@ -968,7 +968,7 @@ $log_padding_default:0.8rem;
 .panel {
 	display:block;
 	width:100%;
-	padding:0 0 calc(#{$log_padding_default} * 6) 0;
+	padding:0 0 calc(#{$log_padding_default} * 5.5) 0;
 	}
 
 .panel .panel_label,
@@ -977,13 +977,13 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
-	font-weight:400;
+	font-weight:900;
 	text-align:center;
 	margin-left:$log_padding_default;
 	border-top:1px solid #eee;
 	}
 .panel .panel_label {
-	padding:$log_padding_default 0;
+	padding:calc(#{$log_padding_default} *0.5) 0 $log_padding_default;
 	}
 .panel .panel_label.leader {
 	}
@@ -1031,7 +1031,6 @@ $log_padding_default:0.8rem;
 	@include serif_tiny;
 	position:relative;
 	width:100%;
-	color:#ccc;
 	font-style:italic;
 	}
 
