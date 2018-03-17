@@ -923,6 +923,7 @@ $log_padding_default:0.8rem;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	margin-left:$log_padding_default;
+	padding-bottom:$log_padding_default;
 	border-top:1px solid $color_black;
 	}
 
