@@ -824,7 +824,7 @@ $log_padding_default:0.8rem;
 
 .log.container#main {
 	@include caps_sans_serif_tiny;
-	padding:calc(#{$log_padding_default} * 8) $log_padding_default calc(#{$log_padding_default} * 10);
+	padding:calc(#{$log_padding_default} * 8) $log_padding_default;
 	}
 .log.container#main div {
 	float:left;
@@ -923,8 +923,13 @@ $log_padding_default:0.8rem;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	margin-left:$log_padding_default;
+	}
+.divider.top {
 	padding-bottom:$log_padding_default;
 	border-top:1px solid $color_black;
+	}
+.divider.bottom {
+	border-bottom:1px solid $color_black;
 	}
 
 .feature {
