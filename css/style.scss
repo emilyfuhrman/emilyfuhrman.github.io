@@ -968,7 +968,7 @@ $log_padding_default:0.8rem;
 .panel {
 	display:block;
 	width:100%;
-	padding:0 0 calc(#{$log_padding_default} * 8) 0;
+	padding:0 0 calc(#{$log_padding_default} * 6) 0;
 	}
 
 .panel .panel_label,
@@ -983,7 +983,7 @@ $log_padding_default:0.8rem;
 	border-top:1px solid #eee;
 	}
 .panel .panel_label {
-	padding:$log_padding_default 0 calc(#{$log_padding_default} * 3);
+	padding:$log_padding_default 0;
 	}
 .panel .panel_label.leader {
 	}
@@ -1025,16 +1025,14 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	position:relative;
 	width:100%;
-	/*color:$color_log_gold;*/
 	padding:0.25rem 0 0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
 	@include serif_tiny;
 	position:relative;
 	width:100%;
-	/*color:#aaa;*/
+	color:#ccc;
 	font-style:italic;
-	margin-top:0.1rem;
 	}
 
 .panel .panel_images .panel_item .panel_item_label,
