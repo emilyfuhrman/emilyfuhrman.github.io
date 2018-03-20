@@ -913,10 +913,10 @@ $log_padding_default:0.8rem;
 #nav_log .btn .btn_menu ul li {
 	padding:0.25rem 0;
 	border-top:1px solid #eee;
-	@include transition(opacity 240ms ease);
+	@include transition(color 240ms ease);
 	}
 #nav_log .btn .btn_menu ul li:hover {
-	opacity:0.5;
+	color:rgba(17,17,17,0.5);
 	}
 
 .divider {
