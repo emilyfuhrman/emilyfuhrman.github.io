@@ -4,7 +4,7 @@
 {% for post in site.log reversed %}
 	{% if forloop.first %}
 		<div class='feature'>
-			<div class='divider'></div>
+			<div class='divider'>╳</div>
 			<a href='{{ post.url }}'>
 				<div id='feature_image' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
 					<div id='feature_title'>{{ post.title }}</div>
