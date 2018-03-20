@@ -919,18 +919,10 @@ $log_padding_default:0.8rem;
 	color:rgba(17,17,17,0.5);
 	}
 
-.divider {
-	color:#eee;
-	width:100%;
-	width:calc(100% - calc(#{$log_padding_default} * 2));
-	text-align:center;
-	padding:0 0 $log_padding_default;
-	}
-
 .feature {
 	display:block;
 	width:100%;
-	margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
+	margin:calc(#{$log_padding_default} * 3) $log_padding_default $log_padding_default;
 	}
 .feature #feature_image {
 	position:relative;
@@ -981,7 +973,7 @@ $log_padding_default:0.8rem;
 	font-weight:900;
 	text-align:center;
 	margin-left:$log_padding_default;
-	border-top:1px solid #eee;
+	border-top:1px solid $color_black;
 	}
 .panel .panel_label {
 	padding:calc(#{$log_padding_default} *0.5) 0 $log_padding_default;
