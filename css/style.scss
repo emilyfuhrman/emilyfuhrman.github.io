@@ -973,7 +973,7 @@ $log_padding_default:0.8rem;
 	font-weight:900;
 	text-align:center;
 	margin-left:$log_padding_default;
-	border-top:1px solid $color_black;
+	border-top:1px solid #eee;
 	}
 .panel .panel_label {
 	padding:calc(#{$log_padding_default} *0.5) 0 $log_padding_default;
