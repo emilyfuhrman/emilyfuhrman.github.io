@@ -1176,7 +1176,7 @@ $log_padding_default:0.8rem;
 
 	.container,
 	.container.fluid,
-	.log.container {
+	.log.container#main {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1333,7 +1333,7 @@ $log_padding_default:0.8rem;
 
 	.container,
 	.container.fluid,
-	.log.container {
+	.log.container#main {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1515,7 +1515,7 @@ $log_padding_default:0.8rem;
 
 	.container,
 	.container.fluid,
-	.log.container {
+	.log.container#main {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1685,7 +1685,7 @@ $log_padding_default:0.8rem;
 
 	.container,
 	.container.fluid,
-	.log.container {
+	.log.container#main {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1881,7 +1881,7 @@ $log_padding_default:0.8rem;
 
 	.container,
 	.container.fluid,
-	.log.container {
+	.log.container#main {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -2087,7 +2087,7 @@ $log_padding_default:0.8rem;
 	.container.fluid {
 		width:1100px;
 		}
-	.log.container {
+	.log.container#main {
 		width:80.9%;
 		}
 
@@ -2296,7 +2296,7 @@ $log_padding_default:0.8rem;
 	.container.fluid {
 		width:1600px;
 		}
-	.log.container {
+	.log.container#main {
 		width:80.9%;
 		}
 
