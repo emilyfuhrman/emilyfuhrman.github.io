@@ -801,6 +801,7 @@ $log_padding_default:0.8rem;
 @mixin sans_serif_display {
 	@include font_sans_serif;
 	font-size:14px;
+	font-size:$log_padding_default;
 	font-weight:500;
 	text-transform:none;
 	letter-spacing:0;
@@ -812,7 +813,8 @@ $log_padding_default:0.8rem;
 	}
 @mixin caps_sans_serif_tiny {
 	@include caps_sans_serif;
-	font-size:12px;
+	font-size:11px;
+	font-size:calc(#{$log_padding_default} / 1.5);
 	font-weight:500;
 	}
 @mixin caps_sans_serif_display {
