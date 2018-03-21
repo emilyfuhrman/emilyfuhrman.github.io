@@ -1175,7 +1175,8 @@ $log_padding_default:0.8rem;
 	/* smartphones, iPhone, portrait 480x320 phones */
 
 	.container,
-	.container.fluid {
+	.container.fluid,
+	.log.container {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1331,7 +1332,8 @@ $log_padding_default:0.8rem;
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
 	.container,
-	.container.fluid {
+	.container.fluid,
+	.log.container {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1512,7 +1514,8 @@ $log_padding_default:0.8rem;
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
 	.container,
-	.container.fluid {
+	.container.fluid,
+	.log.container {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1681,7 +1684,8 @@ $log_padding_default:0.8rem;
 	/* tablet, landscape iPad, lo-res laptops and desktops */ 
 
 	.container,
-	.container.fluid {
+	.container.fluid,
+	.log.container {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -1876,7 +1880,8 @@ $log_padding_default:0.8rem;
 	/* big landscape tablets, laptops, and desktops */ 
 
 	.container,
-	.container.fluid {
+	.container.fluid,
+	.log.container {
 		width:100%;
 		margin:0 auto;
 		padding:0 calc(#{$log_padding_default} * 2);
@@ -2081,6 +2086,9 @@ $log_padding_default:0.8rem;
 		}
 	.container.fluid {
 		width:1100px;
+		}
+	.log.container {
+		width:80.9%;
 		}
 
 	.container #proj,
@@ -2287,6 +2295,9 @@ $log_padding_default:0.8rem;
 		}
 	.container.fluid {
 		width:1600px;
+		}
+	.log.container {
+		width:80.9%;
 		}
 
 	.container #proj,
