@@ -815,10 +815,15 @@ $log_padding_default:0.8rem;
 	font-size:11px;
 	font-weight:500;
 	}
+@mixin caps_sans_serif_small {
+	@include caps_sans_serif;
+	font-size:12px;
+	font-weight:500;
+	}
 @mixin caps_sans_serif_display {
 	@include caps_sans_serif;
-	font-size:20px;
-	font-weight:300;
+	font-size:12px;
+	font-weight:400;
 	}
 
 .log.container#main {
@@ -976,13 +981,13 @@ $log_padding_default:0.8rem;
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif_tiny;
+	@include caps_sans_serif_small;
 	position:relative;
 	width:100%;
 	padding:0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
-	@include caps_sans_serif_tiny;
+	@include caps_sans_serif_small;
 	position:relative;
 	color:#ccc;
 	width:100%;
