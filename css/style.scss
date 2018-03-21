@@ -937,12 +937,8 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	margin-left:$log_padding_default;
 	margin-top:$log_padding_default;
+	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	border-top:1px solid #eee;
-	}
-.panel .panel_label {
-	padding:calc(#{$log_padding_default} * 0.5) 0 calc(#{$log_padding_default} * 2);
-	}
-.panel .panel_label.leader {
 	}
 .panel .panel_label a,
 .page_label a {
@@ -1007,12 +1003,10 @@ $log_padding_default:0.8rem;
 	margin-bottom:calc(#{$log_padding_default} * 6);
 	}
 
-.page_label {
-	padding:calc(#{$log_padding_default} * 0.5) 0 calc(#{$log_padding_default} * 2);
-	}
 .page_label .i {
-	font-weight:400;
-}
+	font-weight:300;
+	}
+	
 .album_page_tags {
 	@include caps_sans_serif_tiny;
 	width:100%;
