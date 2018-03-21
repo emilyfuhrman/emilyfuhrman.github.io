@@ -851,7 +851,7 @@ $log_padding_default:0.8rem;
 	@include font_display;
 	z-index:100;
 	position:fixed;
-	font-size:1.8rem;
+	font-size:1.6rem;
 	font-kerning:normal;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
