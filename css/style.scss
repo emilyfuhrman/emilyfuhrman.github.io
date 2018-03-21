@@ -798,11 +798,6 @@ $log_padding_default:0.8rem;
 	@include font_sans_serif;
 	font-weight:400;
 	}
-@mixin caps_sans_serif {
-	@include font_sans_serif;
-	letter-spacing:1.5px;
-	text-transform:uppercase;
-	}
 @mixin sans_serif_tiny {
 	@include font_sans_serif;
 	font-size:11px;
@@ -810,21 +805,25 @@ $log_padding_default:0.8rem;
 	text-transform:none;
 	letter-spacing:0.75px;
 	}
+@mixin caps_sans_serif {
+	@include font_sans_serif;
+	letter-spacing:1.5px;
+	text-transform:uppercase;
+	}
 @mixin caps_sans_serif_tiny {
 	@include caps_sans_serif;
 	font-size:11px;
+	font-weight:500;
+	}
+@mixin caps_sans_serif_small {
+	@include caps_sans_serif;
+	font-size:12px;
 	font-weight:500;
 	}
 @mixin caps_sans_serif_display {
 	@include caps_sans_serif;
 	font-size:18px;
 	font-weight:400;
-	}
-@mixin serif_tiny {
-	@include font_serif;
-	font-size:11px;
-	font-weight:300;
-	text-transform:none;
 	}
 
 .log.container#main {
@@ -980,20 +979,20 @@ $log_padding_default:0.8rem;
 .panel .panel_images .panel_item .panel_item_detail {
 	position:absolute;
 	width:100%;
-	/*text-align:center;*/
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif_tiny;
+	@include caps_sans_serif_small;
 	position:relative;
 	width:100%;
 	padding:0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
-	@include serif_tiny;
+	@include caps_sans_serif_small;
 	position:relative;
 	color:#ccc;
 	width:100%;
+	font-weight:300;
 	font-style:italic;
 	}
 
