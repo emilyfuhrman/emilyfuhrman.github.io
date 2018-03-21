@@ -823,7 +823,6 @@ $log_padding_default:0.8rem;
 
 .log.container#main {
 	@include caps_sans_serif_tiny;
-	/*width:80.9%;*/
 	width:100%;
 	padding:calc(#{$log_padding_default} * 8) calc(#{$log_padding_default} * 3);
 	}
@@ -852,7 +851,7 @@ $log_padding_default:0.8rem;
 	@include font_display;
 	z-index:100;
 	position:fixed;
-	font-size:1.4rem;
+	font-size:1.8rem;
 	font-kerning:normal;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
@@ -1298,7 +1297,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:4.2rem;
 		}
@@ -1482,7 +1480,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:4.2rem;
 		}
@@ -1658,7 +1655,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.4rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.2rem;
 		}
@@ -1858,7 +1854,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.4rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.2rem;
 		}
@@ -2058,7 +2053,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.4rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		margin-top:1.2rem;
 		}
@@ -2269,7 +2263,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.4rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		margin-top:1.2rem;
 		}
@@ -2495,7 +2488,6 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log #section_title {
-		font-size:1.4rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		margin-top:1.2rem;
 		}
