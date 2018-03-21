@@ -822,7 +822,7 @@ $log_padding_default:0.8rem;
 	}
 @mixin caps_sans_serif_display {
 	@include caps_sans_serif;
-	font-size:13px;
+	font-size:$log_padding_default;
 	font-weight:400;
 	}
 
@@ -856,7 +856,7 @@ $log_padding_default:0.8rem;
 	@include font_display;
 	z-index:100;
 	position:fixed;
-	font-size:1.4rem;
+	font-size:1.6rem;
 	font-kerning:normal;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
