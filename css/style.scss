@@ -798,12 +798,12 @@ $log_padding_default:0.8rem;
 	@include font_sans_serif;
 	font-weight:400;
 	}
-@mixin sans_serif_tiny {
+@mixin sans_serif_small {
 	@include font_sans_serif;
-	font-size:11px;
-	font-weight:300;
+	font-size:14px;
+	font-weight:500;
 	text-transform:none;
-	letter-spacing:0.75px;
+	letter-spacing:0;
 	}
 @mixin caps_sans_serif {
 	@include font_sans_serif;
@@ -822,8 +822,8 @@ $log_padding_default:0.8rem;
 	}
 @mixin caps_sans_serif_display {
 	@include caps_sans_serif;
-	font-size:12px;
-	font-weight:400;
+	font-size:13px;
+	font-weight:500;
 	}
 
 .log.container#main {
@@ -856,7 +856,7 @@ $log_padding_default:0.8rem;
 	@include font_display;
 	z-index:100;
 	position:fixed;
-	font-size:1.8rem;
+	font-size:1.4rem;
 	font-kerning:normal;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	-webkit-font-smoothing:antialiased;
@@ -942,7 +942,7 @@ $log_padding_default:0.8rem;
 	border-top:1px solid $color_black;
 	}
 .panel .panel_label {
-	padding:$log_padding_default 0 calc(#{$log_padding_default} *2);
+	padding:calc(#{$log_padding_default} * 0.5) 0 calc(#{$log_padding_default} * 2.5);
 	}
 .panel .panel_label.leader {
 	}
@@ -981,7 +981,7 @@ $log_padding_default:0.8rem;
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif_small;
+	@include sans_serif_small;
 	position:relative;
 	width:100%;
 	padding:0;
@@ -997,7 +997,7 @@ $log_padding_default:0.8rem;
 
 .panel .panel_images .panel_item .panel_item_label,
 .panel .panel_images .panel_item .panel_item_date {
-	line-height:0.8rem;
+	line-height:1rem;
 	}
 
 .panel.archive {
