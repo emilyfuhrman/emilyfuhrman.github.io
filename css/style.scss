@@ -1006,7 +1006,7 @@ $log_padding_default:0.8rem;
 .page_label .i {
 	font-weight:300;
 	}
-	
+
 .album_page_tags {
 	@include caps_sans_serif_tiny;
 	width:100%;
@@ -1176,8 +1176,8 @@ $log_padding_default:0.8rem;
 		}
 	.log.container#main {
 		width:100%;
-		padding-left:calc(#{$log_padding_default} * 1.5);
-		padding-right:calc(#{$log_padding_default} * 1.5);
+		padding-left:$log_padding_default;
+		padding-right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1336,8 +1336,8 @@ $log_padding_default:0.8rem;
 		}
 	.log.container#main {
 		width:100%;
-		padding-left:calc(#{$log_padding_default} * 1.5);
-		padding-right:calc(#{$log_padding_default} * 1.5);
+		padding-left:$log_padding_default;
+		padding-right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1521,8 +1521,8 @@ $log_padding_default:0.8rem;
 		}
 	.log.container#main {
 		width:100%;
-		padding-left:calc(#{$log_padding_default} * 1.5);
-		padding-right:calc(#{$log_padding_default} * 1.5);
+		padding-left:$log_padding_default;
+		padding-right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1694,8 +1694,8 @@ $log_padding_default:0.8rem;
 		}
 	.log.container#main {
 		width:100%;
-		padding-left:calc(#{$log_padding_default} * 1.5);
-		padding-right:calc(#{$log_padding_default} * 1.5);
+		padding-left:$log_padding_default;
+		padding-right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1893,8 +1893,8 @@ $log_padding_default:0.8rem;
 		}
 	.log.container#main {
 		width:100%;
-		padding-left:calc(#{$log_padding_default} * 1.5);
-		padding-right:calc(#{$log_padding_default} * 1.5);
+		padding-left:$log_padding_default;
+		padding-right:$log_padding_default;
 		}
 
 	.container #proj,
