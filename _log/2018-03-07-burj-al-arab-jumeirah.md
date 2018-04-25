@@ -5,6 +5,7 @@ date_start:	2015/03/07
 date_end:		2015/03/07
 lat:        25.1413
 lon:        55.1853
+published:  false
 metadata:
   - year: 2018
   - type: hotel
