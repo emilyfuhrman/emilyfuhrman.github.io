@@ -1,8 +1,8 @@
 ---
 title:			"The Chatwal"
 post_path:	2018-02-06-new-york-city-the-chatwal-hotel
-date_start:	2015/02/06
-date_end:		2015/02/07
+date_start:	2018/02/06
+date_end:		2018/02/07
 lat:        40.7128
 lon:        -74.0060
 metadata:
