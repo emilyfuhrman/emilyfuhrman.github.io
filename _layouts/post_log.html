@@ -30,7 +30,7 @@
     {% endif %}
     <span class='album_page_tag'>
       {% assign year = page.metadata[0].year %}
-      <a href='/log/archive/{{ year }}' class='{% if year < 2016 %}ignore{% endif %}'>{{ year }}</a>
+      <a href='/log/archive/{{ year }}' class='{% if year < 2015 %}ignore{% endif %}'>{{ year }}</a>
     </span>
   </div>
 {% include footer.html %}
