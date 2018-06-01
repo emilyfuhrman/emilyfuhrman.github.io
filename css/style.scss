@@ -3,7 +3,7 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900|Nova+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 
 $color_black:#111;
 $color_accent:#0055FF;
@@ -783,10 +783,6 @@ $log_padding_default:0.8rem;
 		LOG
    	------------------------------------ */
 
-@mixin font_display {
-	font-family:'Nova Mono',sans-serif;
-	text-transform:lowercase;
-}
 @mixin font_sans_serif {
 	font-family:'Work Sans',sans-serif;
 }
@@ -852,14 +848,10 @@ $log_padding_default:0.8rem;
 	}
 
 #nav_log #section_title {
-	@include font_display;
+	@include caps_sans_serif_tiny;
 	z-index:100;
 	position:fixed;
-	font-size:1.6rem;
-	font-kerning:normal;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
 	}
 #nav_log #section_title a:hover {
 	opacity:1;
@@ -935,12 +927,15 @@ $log_padding_default:0.8rem;
 	width:100%;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	text-align:center;
-	margin:$log_padding_default;
+	margin-left:$log_padding_default;
 	margin-top:$log_padding_default;
 	margin-bottom: calc((#{$log_padding_default} * 0.75) - 4px);
 	padding:calc(#{$log_padding_default} / 2) 0;
 	border-top:1px solid #eee;
 	border-bottom:4px solid $color_black;
+	}
+.page_label {
+	margin-bottom:0;
 	}
 .panel .panel_label a,
 .page_label a {
