@@ -1043,7 +1043,7 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	text-transform:uppercase;
   letter-spacing:0.05rem;
-	margin-top:$log_padding_default ;
+	margin-top:calc(#{$log_padding_default} / 2);
   margin-bottom:calc(#{$log_padding_default} * -1);
 	padding:0;
 	}
