@@ -934,6 +934,9 @@ $log_padding_default:0.8rem;
 	border-top:1px solid #eee;
 	border-bottom:4px solid $color_black;
 	}
+.archive .page_label {
+	margin-bottom:0;
+	}
 .panel .panel_label a,
 .page_label a {
 	color:$color_black;
