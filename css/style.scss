@@ -934,9 +934,6 @@ $log_padding_default:0.8rem;
 	border-top:1px solid #eee;
 	border-bottom:4px solid $color_black;
 	}
-.page_label {
-	margin-bottom:0;
-	}
 .panel .panel_label a,
 .page_label a {
 	color:$color_black;
@@ -1027,7 +1024,7 @@ $log_padding_default:0.8rem;
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:$log_padding_default;
+	padding:calc(#{$log_padding_default} / 2) $log_padding_default;
 	}
 .photo_frame.half {
 	width:50%;

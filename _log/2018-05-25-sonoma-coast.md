@@ -19,5 +19,10 @@ metadata:
       - United States
 photos:
   - ext:		01.jpg
-    class:	vertical
+    class:	vertical half
+  - ext:    02.jpg
+    class:  vertical half
+  - ext:    03.jpg
+    class:  vertical
+    text:   "Pomo Canyon Trail · Sonoma Coast State Park"
 ---
