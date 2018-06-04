@@ -7,6 +7,7 @@ lat:        38.4053
 lon:        -123.0968
 metadata:
   - year: 2018
+  - type: hike
   - cities:
       - Oakland
   - states:

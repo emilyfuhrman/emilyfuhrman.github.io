@@ -1307,7 +1307,7 @@ $log_padding_default:0.8rem;
 	.panel .panel_images .panel_item {
 		width:100%;
 		width:calc(100% - (#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:calc(#{$log_padding_default} / 2) $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 	.panel .panel_images .panel_item._4,
 	.panel .panel_images .panel_item._5 {
@@ -1490,7 +1490,7 @@ $log_padding_default:0.8rem;
 	.panel .panel_images .panel_item {
 		width:50%;
 		width:calc((100% / 2) - calc(#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:calc(#{$log_padding_default} / 2) $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 	.panel .panel_images .panel_item._4 {
 		display:block;
@@ -1665,7 +1665,7 @@ $log_padding_default:0.8rem;
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - calc(#{$log_padding_default} * 2));
-		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
+		margin:calc(#{$log_padding_default} / 2) $log_padding_default calc(#{$log_padding_default} * 6) $log_padding_default;
 		}
 	.panel .panel_images .panel_item._4,
 	.panel .panel_images .panel_item._5 {
