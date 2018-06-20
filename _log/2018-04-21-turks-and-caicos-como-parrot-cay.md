@@ -8,7 +8,10 @@ lon:        -72.9114
 metadata:
   - year: 2018
   - type: hotel
-  - countries:
+  - islands:
+      - Providenciales
+      - Parrot Cay
+  - territories:
       - Turks and Caicos
   - continents:
       - North America
