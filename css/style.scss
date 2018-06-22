@@ -1302,6 +1302,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
+	.panel {
+		padding:0 0 $log_padding_default 0;
+		}
 	.panel .panel_images {
 		padding:0;
 		}
@@ -1485,6 +1488,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
+	.panel {
+		padding:0 0 $log_padding_default 0;
+		}
 	.panel .panel_images {
 		padding:0;
 		}
@@ -1660,6 +1666,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
+	.panel {
+		padding:0 0 $log_padding_default 0;
+		}
 	.panel .panel_images {
 		padding:0;
 		}
@@ -1859,6 +1868,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
+	.panel {
+		padding:0 0 calc(#{$log_padding_default} * 6) 0;
+		}
 	.panel .panel_images {
 		padding:0 calc(#{$log_padding_default} / 2);
 		}
@@ -2058,6 +2070,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
 
+	.panel {
+		padding:0 0 calc(#{$log_padding_default} * 6) 0;
+		}
 	.panel .panel_images {
 		padding:0 calc(#{$log_padding_default} / 2);
 		}
@@ -2268,6 +2283,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
 
+	.panel {
+		padding:0 0 calc(#{$log_padding_default} * 6) 0;
+		}
 	.panel .panel_images {
 		padding:0 calc(#{$log_padding_default} / 2);
 		}
@@ -2493,6 +2511,9 @@ $log_padding_default:0.8rem;
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
 
+	.panel {
+		padding:0 0 calc(#{$log_padding_default} * 6) 0;
+		}
 	.panel .panel_images {
 		padding:0 calc(#{$log_padding_default} / 2);
 		}
