@@ -851,6 +851,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	z-index:100;
 	position:fixed;
+	font-weight:900;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	}
 #nav_log #section_title a:hover {
