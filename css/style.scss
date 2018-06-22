@@ -824,7 +824,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	width:100%;
 	max-width:1920px;
-	padding:0 calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 3);
+	padding:0 calc(#{$log_padding_default} * 3) $log_padding_default;
 	}
 .log.container#main div {
 	float:left;
@@ -929,7 +929,7 @@ $log_padding_default:0.8rem;
 	width:calc(100% - calc(#{$log_padding_default} * 2));
 	text-align:center;
 	margin-left:$log_padding_default;
-	margin-top:$log_padding_default;
+	margin-top:0;
 	margin-bottom: calc((#{$log_padding_default} * 0.75) - 4px);
 	padding:calc(#{$log_padding_default} / 2) 0;
 	border-top:1px solid #eee;
@@ -1009,7 +1009,7 @@ $log_padding_default:0.8rem;
 	width:calc(100% - 1.5rem);
 	font-weight:400;
 	margin:2.5rem 0.75rem;
-	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
+	padding:$log_padding_default 0;
 	border-top:1px solid #eee;
 	}
 .album_page_tags .album_page_tag a {
