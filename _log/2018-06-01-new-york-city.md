@@ -1,11 +1,13 @@
 ---
-title:			"New York City"
+published:  false
+title:			"144 Milton St."
 post_path:	2018-06-01-new-york-city
 date_start:	"June 2018"
-lat:        40.7128
-lon:        -74.0060
+lat:        40.7292
+lon:        -73.9569
 metadata:
   - year: 2018
+  - type: home
   - cities:
       - NYC
   - states:
