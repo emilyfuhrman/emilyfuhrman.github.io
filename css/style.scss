@@ -798,13 +798,13 @@ $log_padding_default:0.8rem;
 	@include font_sans_serif;
 	font-size:14px;
 	font-size:$log_padding_default;
-	font-weight:500;
+	font-weight:400;
 	text-transform:none;
 	letter-spacing:0;
 	}
 @mixin caps_sans_serif {
 	@include font_sans_serif;
-	letter-spacing:1.5px;
+	letter-spacing:0.025rem;
 	text-transform:uppercase;
 	}
 @mixin caps_sans_serif_tiny {
@@ -831,6 +831,21 @@ $log_padding_default:0.8rem;
 	@include box-sizing(border-box);
 	}
 
+.log.container#main .border {
+	z-index:100;
+	position:fixed;
+	background:$color_black;
+	width:1px;
+	height:100%;
+	top:0;
+	}
+.log.container#main .border.left {
+	left:calc(#{$log_padding_default} * 3);
+	}
+.log.container#main .border.right {
+	right:calc(#{$log_padding_default} * 3);
+	}
+
 .log.container#main p {
 	@include caps_sans_serif_tiny;
 	font-weight:300;
@@ -851,7 +866,6 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	z-index:100;
 	position:fixed;
-	font-weight:900;
 	margin:1.2rem calc(#{$log_padding_default} * 2);
 	}
 #nav_log #section_title a:hover {
@@ -923,20 +937,17 @@ $log_padding_default:0.8rem;
 
 .panel .panel_label,
 .page_label {
-	@include caps_sans_serif_display;
+	@include sans_serif_display;
 	position:relative;
 	width:100%;
-	width:calc(100% - calc(#{$log_padding_default} * 2));
 	text-align:center;
-	margin-left:$log_padding_default;
 	margin-top:0;
-	margin-bottom: calc((#{$log_padding_default} * 0.75) - 4px);
-	padding:calc(#{$log_padding_default} / 2) 0;
-	border-top:1px solid #eee;
-	border-bottom:1px solid $color_black;
+	margin-bottom:calc(#{$log_padding_default} * -0.5);
+	padding:calc(#{$log_padding_default} * 2) 0;
+	border-top:1px solid $color_black;
 	}
 .archive .page_label {
-	margin-bottom:0;
+	margin-bottom:calc(#{$log_padding_default} * -1);
 	}
 .panel .panel_label a,
 .page_label a {
@@ -973,21 +984,21 @@ $log_padding_default:0.8rem;
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include sans_serif_display;
+	@include caps_sans_serif;
 	position:relative;
 	width:100%;
 	padding:0;
 	}
 .panel .panel_images .panel_item .panel_item_date {
-	@include sans_serif;
+	display:none;
+	@include caps_sans_serif;
 	position:relative;
-	color:#ccc;
 	width:100%;
 	}
 
 .panel .panel_images .panel_item .panel_item_label,
 .panel .panel_images .panel_item .panel_item_date {
-	line-height:1rem;
+	line-height:$log_padding_default;
 	}
 
 .panel.archive {
@@ -1175,6 +1186,13 @@ $log_padding_default:0.8rem;
 		padding-left:$log_padding_default;
 		padding-right:$log_padding_default;
 		}
+	
+	.log.container#main .border.left {
+		left:$log_padding_default;
+		}
+	.log.container#main .border.right {
+		right:$log_padding_default;
+		}
 
 	.container #proj,
 	.container.fluid #proj {
@@ -1337,6 +1355,13 @@ $log_padding_default:0.8rem;
 		width:100%;
 		padding-left:$log_padding_default;
 		padding-right:$log_padding_default;
+		}
+	
+	.log.container#main .border.left {
+		left:$log_padding_default;
+		}
+	.log.container#main .border.right {
+		right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1526,6 +1551,13 @@ $log_padding_default:0.8rem;
 		padding-left:$log_padding_default;
 		padding-right:$log_padding_default;
 		}
+	
+	.log.container#main .border.left {
+		left:$log_padding_default;
+		}
+	.log.container#main .border.right {
+		right:$log_padding_default;
+		}
 
 	.container #proj,
 	.container.fluid #proj {
@@ -1701,6 +1733,13 @@ $log_padding_default:0.8rem;
 		width:100%;
 		padding-left:$log_padding_default;
 		padding-right:$log_padding_default;
+		}
+	
+	.log.container#main .border.left {
+		left:$log_padding_default;
+		}
+	.log.container#main .border.right {
+		right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -1903,6 +1942,13 @@ $log_padding_default:0.8rem;
 		width:100%;
 		padding-left:$log_padding_default;
 		padding-right:$log_padding_default;
+		}
+	
+	.log.container#main .border.left {
+		left:$log_padding_default;
+		}
+	.log.container#main .border.right {
+		right:$log_padding_default;
 		}
 
 	.container #proj,
@@ -2110,6 +2156,13 @@ $log_padding_default:0.8rem;
 		width:100%;
 		padding-left:calc(#{$log_padding_default} * 3);
 		padding-right:calc(#{$log_padding_default} * 3);
+		}
+	
+	.log.container#main .border.left {
+		left:calc(#{$log_padding_default} * 3);
+		}
+	.log.container#main .border.right {
+		right:calc(#{$log_padding_default} * 3);
 		}
 
 	.container #proj,
@@ -2323,6 +2376,13 @@ $log_padding_default:0.8rem;
 		width:100%;
 		padding-left:calc(#{$log_padding_default} * 3);
 		padding-right:calc(#{$log_padding_default} * 3);
+		}
+	
+	.log.container#main .border.left {
+		left:calc(#{$log_padding_default} * 3);
+		}
+	.log.container#main .border.right {
+		right:calc(#{$log_padding_default} * 3);
 		}
 
 	.container #proj,

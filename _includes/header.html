@@ -38,6 +38,8 @@
 	{% if page.category == 'log' %}
 		{% include nav_log.html %}
 		<div id='main' class='container {{ page.category }} fluid'>
+			<div class='border left'></div>
+			<div class='border right'></div>
 	{% else %}
 		{% include nav.html %}
 		<div id='main' class='container {{ page.category }}'>
