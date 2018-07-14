@@ -1017,7 +1017,7 @@ $log_padding_default:0.8rem;
 .page_date {
 	position:absolute;
 	margin-left:$log_padding_default;
-	margin-top:calc(#{$log_padding_default} * 2);
+	margin-top:calc(#{$log_padding_default} / 2);
 	}
 
 .album_page_tags {
