@@ -1,5 +1,6 @@
 {% include header.html %}
   <div class='page_label'>{{ page.title }}</div>
+  <div class='page_date'>{{ page.date_start }}{% if page.date_end %}{% if page.date_end != page.date_start %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}{% endif %}</div>
   {% for photo in page.photos %}
   	<div class='photo_frame {{ photo.class }}'>
       <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>

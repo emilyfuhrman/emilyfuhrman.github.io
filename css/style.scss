@@ -989,15 +989,16 @@ $log_padding_default:0.8rem;
 	width:100%;
 	padding:0;
 	}
-.panel .panel_images .panel_item .panel_item_date {
+/*.panel .panel_images .panel_item .panel_item_date {
 	display:none;
 	@include caps_sans_serif;
 	position:relative;
 	width:100%;
-	}
+	}*/
 
-.panel .panel_images .panel_item .panel_item_label,
-.panel .panel_images .panel_item .panel_item_date {
+.panel .panel_images .panel_item .panel_item_label
+/*.panel .panel_images .panel_item .panel_item_date */
+	{
 	line-height:$log_padding_default;
 	}
 
@@ -1012,6 +1013,11 @@ $log_padding_default:0.8rem;
 
 .page_label .i {
 	font-weight:300;
+	}
+.page_date {
+	position:absolute;
+	margin-left:$log_padding_default;
+	margin-top:calc(#{$log_padding_default} * 2);
 	}
 
 .album_page_tags {
