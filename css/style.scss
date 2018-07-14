@@ -933,7 +933,7 @@ $log_padding_default:0.8rem;
 	margin-bottom: calc((#{$log_padding_default} * 0.75) - 4px);
 	padding:calc(#{$log_padding_default} / 2) 0;
 	border-top:1px solid #eee;
-	border-bottom:4px solid $color_black;
+	border-bottom:1px solid $color_black;
 	}
 .archive .page_label {
 	margin-bottom:0;
