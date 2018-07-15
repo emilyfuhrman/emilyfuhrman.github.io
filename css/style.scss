@@ -822,8 +822,8 @@ $log_padding_default:0.8rem;
 
 .log.container#main {
 	@include caps_sans_serif_tiny;
+	opacity:1 !important;
 	width:100%;
-	/*max-width:1920px;*/
 	padding:0 calc(#{$log_padding_default} * 3) $log_padding_default;
 	}
 .log.container#main div {
@@ -852,6 +852,15 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	font-weight:300;
 	padding:$log_padding_default;
+	}
+
+.log.container#main .panel,
+.log.container#main .post_body {
+	opacity:0;
+	}
+.log.container.show#main .panel,
+.log.container.show#main .post_body {
+	opacity:1;
 	}
 
 #nav_log {
@@ -931,10 +940,15 @@ $log_padding_default:0.8rem;
 	color:rgba(17,17,17,0.5);
 	}
 
+.post_body {
+	@include transition(opacity 240ms ease);
+	}
+
 .panel {
 	display:block;
 	width:100%;
 	padding:0 0 calc(#{$log_padding_default} * 6) 0;
+	@include transition(opacity 240ms ease);
 	}
 
 .panel .panel_label,
