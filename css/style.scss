@@ -832,6 +832,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main .border {
+	display:none;
 	z-index:100;
 	position:fixed;
 	background:$color_black;
