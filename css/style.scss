@@ -786,10 +786,6 @@ $log_padding_default:0.8rem;
 @mixin font_sans_serif {
 	font-family:'Work Sans',sans-serif;
 }
-@mixin font_serif {
-	/*font-family:'Georgia',serif;*/ /*to update*/
-	font-family:'Work Sans',sans-serif;
-}
 @mixin sans_serif {
 	@include font_sans_serif;
 	font-weight:400;
@@ -797,7 +793,7 @@ $log_padding_default:0.8rem;
 @mixin sans_serif_display {
 	@include font_sans_serif;
 	font-size:14px;
-	font-size:$log_padding_default;
+	font-size:calc(#{$log_padding_default} * 1.25);
 	font-weight:400;
 	text-transform:none;
 	letter-spacing:0;
@@ -812,12 +808,6 @@ $log_padding_default:0.8rem;
 	font-size:11px;
 	font-size:calc(#{$log_padding_default} / 1.5);
 	font-weight:500;
-	}
-@mixin caps_sans_serif_display {
-	@include caps_sans_serif;
-	font-size:14px;
-	font-size:$log_padding_default;
-	font-weight:900;
 	}
 
 .log.container#main {
@@ -991,21 +981,13 @@ $log_padding_default:0.8rem;
 	margin-top:$log_padding_default;
 	}
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif;
+	@include caps_sans_serif_tiny;
 	position:relative;
 	width:100%;
 	padding:0;
 	}
-/*.panel .panel_images .panel_item .panel_item_date {
-	display:none;
-	@include caps_sans_serif;
-	position:relative;
-	width:100%;
-	}*/
 
-.panel .panel_images .panel_item .panel_item_label
-/*.panel .panel_images .panel_item .panel_item_date */
-	{
+.panel .panel_images .panel_item .panel_item_label {
 	line-height:$log_padding_default;
 	}
 
