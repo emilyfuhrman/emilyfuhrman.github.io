@@ -9,7 +9,12 @@
       {% endif %}
   	</div>
   {% endfor %}
-  <div class='page_date'>{{ page.date_start }}{% if page.date_end %}{% if page.date_end != page.date_start %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}{% endif %}</div>
+  <span class='page_date'>{{ page.date_start }}{% if page.date_end %}{% if page.date_end != page.date_start %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}{% endif %}</span>
+  <span class='page_lat_lon'>
+    {% assign lat = page.lat %}
+    {% assign lon = page.lon %}
+    {% include calc_coordinates.html %}
+  </span>
   <div class='album_page_tags'>
     <span class='i'>Tagged:</span>
     {% for data_object in page.metadata %}

@@ -839,8 +839,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main p {
-	@include caps_sans_serif_tiny;
-	font-weight:300;
+	@include sans_serif_display;
 	padding:$log_padding_default;
 	}
 
@@ -1007,6 +1006,11 @@ $log_padding_default:0.8rem;
 	float:left;
 	font-weight:400;
 	margin:calc(#{$log_padding_default} * 2) 0 0 $log_padding_default;
+	}
+.page_lat_lon {
+	float:right;
+	font-weight:400;
+	margin:calc(#{$log_padding_default} * 2) $log_padding_default 0 0;
 	}
 
 .album_page_tags {
