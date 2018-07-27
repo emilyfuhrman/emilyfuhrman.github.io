@@ -857,7 +857,7 @@ $log_padding_default:0.8rem;
 	@include caps_sans_serif_tiny;
 	z-index:100;
 	position:fixed;
-	margin:1.2rem calc(#{$log_padding_default} * 2);
+	margin:$log_padding_default calc(#{$log_padding_default} * 2);
 	}
 #nav_log #section_title a:hover {
 	opacity:1;
@@ -1685,7 +1685,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:1.2rem;
+		margin-top:$log_padding_default;
 		}
 		
 	#nav_log .btn {
@@ -1894,7 +1894,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:1.2rem;
+		margin-top:$log_padding_default;
 		}
 		
 	#nav_log .btn {
@@ -2103,7 +2103,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:1.2rem;
+		margin-top:$log_padding_default;
 		}
 		
 	#nav_log .btn {
@@ -2323,7 +2323,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		margin-left:calc(#{$log_padding_default} * 4);
-		margin-top:1.2rem;
+		margin-top:$log_padding_default;
 		}
 		
 	#nav_log .btn {
@@ -2558,7 +2558,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log #section_title {
 		margin-left:calc(#{$log_padding_default} * 4);
-		margin-top:1.2rem;
+		margin-top:$log_padding_default;
 		}
 		
 	#nav_log .btn {
