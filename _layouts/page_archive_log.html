@@ -2,7 +2,7 @@
 <div class='panel archive'>
 {% if page.region %}
 	{% assign tag_string = page.region %}
-	<div class='page_label'><span class='i'>Entries tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
@@ -14,7 +14,7 @@
 	</div>
 {% elsif page.continent %}
 	{% assign tag_string = page.continent %}
-	<div class='page_label'><span class='i'>Entries tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
@@ -26,7 +26,7 @@
 	</div>
 {% elsif page.city %}
 	{% assign tag_string = page.city %}
-	<div class='page_label'><span class='i'>Entries tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
@@ -38,7 +38,7 @@
 	</div>
 {% elsif page.year %}
 	{% assign tag_string = page.year %}
-	<div class='page_label'><span class='i'>Entries tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[0]["year"] == tag_string %}
@@ -48,7 +48,7 @@
 	</div>
 {% elsif page.type %}
 	{% assign tag_string = page.type %}
-	<div class='page_label'><span class='i'>Entries tagged:</span> {{ tag_string }}</div>
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == tag_string %}

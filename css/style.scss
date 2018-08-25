@@ -945,6 +945,9 @@ $log_padding_default:0.8rem;
 .archive .page_label {
 	margin-bottom:calc(#{$log_padding_default} * -1);
 	}
+.archive .page_label .tag_string {
+	text-transform:capitalize;
+	}
 .panel .panel_label a,
 .page_label a {
 	color:$color_black;

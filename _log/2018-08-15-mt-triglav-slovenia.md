@@ -6,8 +6,8 @@ date_end:		2018/08/17
 lat:        46.3792
 lon:        13.8164
 metadata:
-  - type: hike
   - year: 2018
+  - type: hike
   - countries:
       - Slovenia
   - continents:
