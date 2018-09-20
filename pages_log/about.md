@@ -8,4 +8,4 @@ loading_animation: true
 sitemap:
   priority: 0.9
 ---
-EF Log is the geocoded visual log of data artist <a href='/' target='_blank'>Emily Fuhrman</a>.
+EF Log is the geocoded visual journal of data artist <a href='/' target='_blank'>Emily Fuhrman</a>.
