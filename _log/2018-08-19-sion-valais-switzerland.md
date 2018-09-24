@@ -22,5 +22,5 @@ photos:
     class:  vertical half
   - ext:    03.jpg
     class:  horizontal
-    text:   Domaine de Mythopia
 ---
+Visiting Domaine de Mythopia in Valais.
