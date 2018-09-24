@@ -56,6 +56,16 @@
 		{% endif %}
 	{% endfor %}
 	</div>
+{% elsif page.arts %}
+	{% assign tag_string = page.arts %}
+	<div class='page_label'><span class='i'>Entries tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% if post.metadata[1]["arts"] == tag_string %}
+			{% include post_log_swatch.html %}
+		{% endif %}
+	{% endfor %}
+	</div>
 {% else %}
 	<div class='page_label'>All entries</div>
 	<div class='panel_images'>

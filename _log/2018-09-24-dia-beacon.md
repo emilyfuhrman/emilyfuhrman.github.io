@@ -1,14 +1,14 @@
 ---
-title:			"Chromat SS19 Runway"
-post_path:	2018-09-07-chromat-ss19
-date_start:	2018/09/07
-lat:        40.7213
-lon:        -74.0084
+title:			"Dia:Beacon"
+post_path:	2018-09-24-dia-beacon
+date_start:	2018/09/24
+lat:        41.5001
+lon:        -73.9826
 metadata:
   - year: 2018
-  - arts: fashion
+  - arts: art
   - cities:
-      - NYC
+      - Beacon
   - states:
       - New York
   - countries:
@@ -19,7 +19,7 @@ metadata:
       - United States
 photos:
   - ext:    01.jpg
-    class:  vertical half
+    class:  horizontal half
   - ext:    02.jpg
-    class:  vertical half
+    class:  horizontal half
 ---

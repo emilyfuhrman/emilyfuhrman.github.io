@@ -922,6 +922,12 @@ $log_padding_default:0.8rem;
 .post_body {
 	@include transition(opacity 240ms ease);
 	}
+.post_body p {
+	width:100%;
+	float:left;
+	margin:0;
+	padding:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2) !important;
+	}
 
 .panel {
 	display:block;
@@ -1345,7 +1351,7 @@ $log_padding_default:0.8rem;
 		}
 
 	#nav_log .btn {
-		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#contact,
 	#nav_log .btn#about {

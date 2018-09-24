@@ -17,6 +17,12 @@
       <a href='/log/{{ type }}s'>{{ type }}</a>
     </span>
   {% endif %}
+  {% if page.metadata[1].arts != null %}
+    {% assign arts = page.metadata[1].arts %}
+    <span class='album_page_tag'>
+      <a href='/log/{{ arts }}'>{{ arts }}</a>
+    </span>
+  {% endif %}
   <span class='album_page_tag'>
     {% assign year = page.metadata[0].year %}
     <a href='/log/archive/{{ year }}' class='{% if year < 2015 %}ignore{% endif %}'>{{ year }}</a>
