@@ -16,29 +16,8 @@
     {% include calc_coordinates.html %}
   </span>
   <div class='album_page_tags'>
-    <span class='i'>Tagged:</span>
-    {% for data_object in page.metadata %}
-      {% for city in data_object.cities %}
-        {% if city == "NYC" %}
-          {% capture archive_link %}{{ city | downcase | replace: ' ', '-' }}{% endcapture %}
-          <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ city }}</a></span>
-        {% endif %}
-      {% endfor %}
-      {% for region in data_object.regions %}
-        {% capture archive_link %}{{ region | downcase | replace: ' ', '-' }}{% endcapture %}
-        <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ region }}</a></span>
-      {% endfor %}
-    {% endfor %}
-    {% if page.metadata[1].type != null %}
-      {% assign type = page.metadata[1].type %}
-      <span class='album_page_tag'>
-        <a href='/log/{{ type }}s'>{{ type }}</a>
-      </span>
-    {% endif %}
-    <span class='album_page_tag'>
-      {% assign year = page.metadata[0].year %}
-      <a href='/log/archive/{{ year }}' class='{% if year < 2015 %}ignore{% endif %}'>{{ year }}</a>
-    </span>
+    <span class='i'>Tagged:&nbsp;</span>
+    {% include generator_tags.html %}
   </div>
 </div>
 {% include footer.html %}

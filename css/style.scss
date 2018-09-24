@@ -8,7 +8,6 @@ sitemap:
 $color_black:#111;
 $color_accent:#0055FF;
 $color_log_accent:#FF3D00;
-$color_log_gold:#867A30;
 
 $ttime:120ms;
 
@@ -980,17 +979,15 @@ $log_padding_default:0.8rem;
 .panel .panel_images .panel_item .panel_item_detail {
 	position:absolute;
 	width:100%;
-	margin-top:$log_padding_default;
+	padding-top:$log_padding_default;
 	}
+
 .panel .panel_images .panel_item .panel_item_label {
 	@include caps_sans_serif_tiny;
 	position:relative;
 	width:100%;
-	padding:0;
-	}
-
-.panel .panel_images .panel_item .panel_item_label {
 	line-height:$log_padding_default;
+	padding:0;
 	}
 
 .panel.archive {
@@ -1000,6 +997,52 @@ $log_padding_default:0.8rem;
 .panel.archive .panel_images .panel_item {
 	margin-top:$log_padding_default;
 	margin-bottom:calc(#{$log_padding_default} * 6);
+	}
+
+.tagblock {
+	@include caps_sans_serif_tiny;
+	font-weight:400;
+	}
+.panel_images .tagblock {
+	float:left;
+	line-height:1.2rem;
+	margin-top:4px;
+	}
+
+.tagblock span {
+	float:left;
+	}
+.album_page_tags span {
+	float:left;
+	}
+
+.tagblock .album_page_tag {
+	margin-right:4px;
+	}
+
+.tagblock .album_page_tag a {
+	padding:2px 4px;
+	border-bottom:none;
+	}
+.album_page_tags .album_page_tag a {
+	background:#eee;
+	}
+.panel_images .album_page_tag a {
+	background:transparent;
+  color:#ddd;
+  border:1px solid #ddd;
+	}
+
+.tagblock .album_page_tag a:hover {
+	background:$color_black;
+	color:white;
+	}
+.panel_images .album_page_tag a:hover {
+	border:1px solid $color_black;
+	}
+
+.tagblock .album_page_tag a.ignore {
+	pointer-events:none;
 	}
 
 .page_label .i {
@@ -1023,18 +1066,6 @@ $log_padding_default:0.8rem;
 	margin:$log_padding_default 0;
 	padding:$log_padding_default;
 	border-top:1px solid $color_black;
-	}
-.album_page_tags .album_page_tag a {
-	background:#eee;
-	padding:2px 4px;
-	border-bottom:none;
-	}
-.album_page_tags .album_page_tag a:hover {
-	background:$color_black;
-	color:white;
-	}
-.album_page_tags .album_page_tag a.ignore {
-	pointer-events:none;
 	}
 
 .photo_frame {

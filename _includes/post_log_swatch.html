@@ -1,7 +1,7 @@
-<a href='{{ post.url }}'>
-	<div class='panel_item _{{ counter }}' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'>
-		<div class='panel_item_detail'>
-			<div class='panel_item_label'>{{ post.title }}</div>
-		</div>
+<div class='panel_item _{{ counter }}'  onclick="location.href='{{ post.url }}';" style='background-image:url(/photos/{{ post.post_path }}/01.jpg);cursor:cell;'>
+	<div class='panel_item_detail'>
+		<div class='panel_item_label'>{{ post.title }}</div>
+		{% assign page = post %}
+	  {% include generator_tags.html %}
 	</div>
-</a>
+</div>
