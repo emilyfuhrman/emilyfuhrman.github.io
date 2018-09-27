@@ -11,7 +11,10 @@
 - id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
-  show:         false
+  list:
+    - name:     The Poetics of Information (Symposium)
+      t_left:   NYU Gallatin
+      t_right:  "2016/11/16"
 - id:           interviews
   title:        "Interviews"
   fancy:        true
