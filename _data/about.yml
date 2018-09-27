@@ -12,9 +12,13 @@
   title:        "Events &amp; public speaking"
   fancy:        true
   list:
+    - name:     VisGuides Workshop
+      link:     "http://ieeevis.org/year/2018/info/workshops#visguides"
+      t_left:   IEEE VIS
+      t_right:  "2018/10/22"
     - name:     The Poetics of Information (Symposium)
       t_left:   NYU Gallatin
-      t_right:  "2016/11/16"
+      t_right:  "2018/11/16"
 - id:           interviews
   title:        "Interviews"
   fancy:        true
