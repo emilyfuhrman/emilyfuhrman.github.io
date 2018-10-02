@@ -23,3 +23,4 @@ photos:
   - ext:    03.jpg
     class:  horizontal
 ---
+Visiting Domaine de Mythopia in Valais.

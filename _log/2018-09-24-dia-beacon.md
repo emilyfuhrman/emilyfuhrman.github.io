@@ -23,3 +23,4 @@ photos:
   - ext:    02.jpg
     class:  horizontal half
 ---
+Nic, turtlenecked in a torqued ellipse.
