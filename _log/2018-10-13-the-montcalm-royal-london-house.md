@@ -21,3 +21,4 @@ photos:
     class:  vertical
     text:   "The Montcalm Royal London House · 22-25 Finsbury Square · London EC2A 1DX"
 ---
+Home for a week.
