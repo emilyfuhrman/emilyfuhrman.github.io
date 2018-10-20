@@ -871,6 +871,19 @@ $log_padding_default:0.8rem;
 	color:$color_log_accent;
 	}
 
+#nav_log #imprint {
+	position:absolute;
+	/*background:url(/media/assets/imprint.png) no-repeat 0 0;*/
+	background-size:100% 100%;
+	width:60px;
+	width:calc(#{$log_padding_default} * 5);
+	height:60px;
+	height:calc(#{$log_padding_default} * 5);
+	margin-left:50%;
+	margin-left:calc(50% - (#{$log_padding_default} * 2.5));
+	margin-top:$log_padding_default;
+	}
+
 #nav_log .btn {
 	@include caps_sans_serif_tiny;
 	position:relative;
