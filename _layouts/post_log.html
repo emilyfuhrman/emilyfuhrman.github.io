@@ -9,7 +9,7 @@
       {% endif %}
   	</div>
   {% endfor %}
-  {{ content }}
+  <div class='post_content'>{{ content }}</div>
   <span class='page_date'>{{ page.date_start }}{% if page.date_end %}{% if page.date_end != page.date_start %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}{% endif %}</span>
   <span class='page_lat_lon'>
     {% assign lat = page.lat %}
