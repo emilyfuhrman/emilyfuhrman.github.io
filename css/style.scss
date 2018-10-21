@@ -946,7 +946,7 @@ $log_padding_default:0.8rem;
 .log.container#main .post_body p {
 	@include sans_serif_p;
 	margin:0;
-	padding:calc(#{$log_padding_default} * 1.75) $log_padding_default $log_padding_default !important;
+	padding:calc(#{$log_padding_default} * 2) $log_padding_default $log_padding_default !important; 
 	}
 .log.container#main .post_body .post_content {
 	width:100%;
