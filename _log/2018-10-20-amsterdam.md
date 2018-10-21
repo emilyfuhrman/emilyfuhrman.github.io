@@ -18,9 +18,6 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  horizontal half
-    text:   "Rijksmuseum Bicycle Passage"
   - ext:    02.jpg
     class:  horizontal half
-    text:   "Snacks at The Pulitzer Hotel"
 ---
-Stayed for 24 hours to see Jan Asselijn's The Threatened Swan, eat stroopwafels, and sleep in a connected network of 17th and 18th century canal houses.
