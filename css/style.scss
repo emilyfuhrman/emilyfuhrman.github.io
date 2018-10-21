@@ -945,7 +945,7 @@ $log_padding_default:0.8rem;
 	}
 .log.container#main .post_body p {
 	@include sans_serif_p;
-	width:100%;
+	/*width:100%;*/
 	float:left;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 1.75) $log_padding_default $log_padding_default !important;
@@ -1115,9 +1115,12 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	text-transform:uppercase;
   letter-spacing:0.05rem;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 	margin-top:$log_padding_default;
   margin-bottom:calc(#{$log_padding_default} * -1);
 	padding:0;
+	overflow:hidden;
 	}
 
 /* 	------------------------------------
