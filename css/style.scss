@@ -945,15 +945,10 @@ $log_padding_default:0.8rem;
 	}
 .log.container#main .post_body p {
 	@include sans_serif_p;
+	/*width:100%;*/
+	float:left;
 	margin:0;
-	padding:calc(#{$log_padding_default} * 2) $log_padding_default $log_padding_default !important; 
-	}
-.log.container#main .post_body .post_content {
-	width:100%;
-	}
-.log.container#main .post_body .post_content p {
-	width:62.5%;
-	@include box-sizing(border-box);
+	padding:calc(#{$log_padding_default} * 1.75) $log_padding_default $log_padding_default !important;
 	}
 
 .panel {
@@ -1387,10 +1382,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	.log.container#main .post_body .post_content p {
-		width:100%;
-		}
 
 	.panel {
 		padding:0 0 $log_padding_default 0;
@@ -1584,10 +1575,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	.log.container#main .post_body .post_content p {
-		width:100%;
-		}
 
 	.panel {
 		padding:0 0 $log_padding_default 0;
@@ -1772,10 +1759,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
-		}
-	
-	.log.container#main .post_body .post_content p {
-		width:100%;
 		}
 
 	.panel {
@@ -1986,10 +1969,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	.log.container#main .post_body .post_content p {
-		width:62.5%;
-		}
 
 	.panel {
 		padding:0 0 calc(#{$log_padding_default} * 6) 0;
@@ -2198,10 +2177,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
-		}
-	
-	.log.container#main .post_body .post_content p {
-		width:62.5%;
 		}
 
 	.panel {
@@ -2422,10 +2397,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
-		}
-	
-	.log.container#main .post_body .post_content p {
-		width:62.5%;
 		}
 
 	.panel {
@@ -2661,10 +2632,6 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#contact,
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
-		}
-	
-	.log.container#main .post_body .post_content p {
-		width:62.5%;
 		}
 
 	.panel {
