@@ -1,14 +1,16 @@
 {% include header.html %}
 <div class='post_body'>
   <div class='page_label'>{{ page.title }}</div>
-  {% for photo in page.photos %}
-  	<div class='photo_frame {{ photo.class }}'>
-      <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
-      {% if photo.text %}
-      <div class='photo_caption'>{{ photo.text }}</div>
-      {% endif %}
-  	</div>
-  {% endfor %}
+  <div id='post_body_photos'>
+    {% for photo in page.photos %}
+    	<div class='photo_frame {{ photo.class }}'>
+        <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
+        {% if photo.text %}
+        <div class='photo_caption'>{{ photo.text }}</div>
+        {% endif %}
+    	</div>
+    {% endfor %}
+  </div>
   {{ content }}
   <span class='page_date'>{{ page.date_start }}{% if page.date_end %}{% if page.date_end != page.date_start %}&nbsp;&ndash;&nbsp;{{ page.date_end }}{% endif %}{% endif %}</span>
   <span class='page_lat_lon'>

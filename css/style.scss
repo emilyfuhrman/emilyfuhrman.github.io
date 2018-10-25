@@ -950,7 +950,11 @@ $log_padding_default:0.8rem;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 2) $log_padding_default $log_padding_default !important; 
 	@include box-sizing(border-box); 
-	} 
+	}
+
+.log.container#main #post_body_photos {
+	width:100%;
+	}
 
 .panel {
 	display:block;
