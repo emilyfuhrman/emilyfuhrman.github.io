@@ -1,5 +1,4 @@
 ---
-published:  false
 title:			"IEEE VIS 2018 in Berlin"
 post_path:	2018-10-21-berlin-ieee-vis
 date_start:	2018/10/21
@@ -18,7 +17,10 @@ metadata:
       - Europe
 photos:
   - ext:    01.jpg
-    class:  vertical half
+    class:  vertical
+  - ext:    03.jpg
+    class:  horizontal half
   - ext:    02.jpg
     class:  horizontal half
 ---
+Not pictured: the wide runways of Flughafen Tempelhof, dotted with cyclists and kites. 
