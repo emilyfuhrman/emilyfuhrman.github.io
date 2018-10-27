@@ -19,8 +19,8 @@ metadata:
       - United States
 photos:
   - ext:    01.jpg
-    class:  horizontal half
+    class:  horizontal
   - ext:    02.jpg
-    class:  horizontal half
+    class:  horizontal
 ---
 Nic, turtlenecked in a torqued ellipse.

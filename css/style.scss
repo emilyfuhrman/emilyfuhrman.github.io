@@ -941,6 +941,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main .post_body {
+	width:100%;
 	@include transition(opacity 240ms ease);
 	}
 .log.container#main .post_body p {
@@ -953,7 +954,20 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main #post_body_photos {
+	float:none;
 	width:100%;
+	max-width:1080px;
+	margin:0 auto;
+	}
+
+.log.container#main #post_body_text {
+	width:100%;
+	}
+.log.container#main #post_body_text .text_block {
+	float:none;
+	width:100%;
+	max-width:1080px;
+	margin:0 auto;
 	}
 
 .panel {
