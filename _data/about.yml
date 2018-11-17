@@ -8,14 +8,10 @@
     - name:     Electric Objects
     - name:     Google
     - name:     Viacom
-- id:           talks
+- show:         false
+  id:           talks
   title:        "Events &amp; public speaking"
   fancy:        true
-  list:
-    - name:     The Poetics of Information (Symposium)
-      link:     https://gallatin.nyu.edu/utilities/events/2018/11/ThePoeticsOfInformation.html
-      t_left:   NYU Gallatin
-      t_right:  "2018/11/16"
 - id:           interviews
   title:        "Interviews"
   fancy:        true
