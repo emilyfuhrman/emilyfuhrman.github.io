@@ -792,7 +792,7 @@ $log_padding_default:0.8rem;
 @mixin sans_serif_display {
 	@include font_sans_serif;
 	font-size:24px;
-	font-size:calc(#{$log_padding_default} * 1.75);
+	font-size:calc(#{$log_padding_default} * 1.5);
 	font-weight:400;
 	text-transform:none;
 	letter-spacing:0;
@@ -1034,7 +1034,7 @@ $log_padding_default:0.8rem;
 	}
 
 .panel .panel_images .panel_item .panel_item_label {
-	@include caps_sans_serif_tiny;
+	@include sans_serif_p;
 	position:relative;
 	width:100%;
 	line-height:$log_padding_default;
