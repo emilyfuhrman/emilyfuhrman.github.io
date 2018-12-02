@@ -892,8 +892,12 @@ $log_padding_default:0.8rem;
 	margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	}
 #nav_log .btn#archive,
-#nav_log .btn#filter {
+#nav_log .btn.filter {
 	margin-right:0;
+	}
+#nav_log .btn#contact {
+	margin-left:0;
+	padding-right:calc(#{$log_padding_default} * 4);
 	}
 
 #nav_log .btn .btn_menu {
@@ -1390,6 +1394,13 @@ $log_padding_default:0.8rem;
 		float:left;
 		margin:0.125rem 0;
 		}
+
+	/*#nav_log #imprint {
+		width:calc(#{$log_padding_default} * 2.5);
+		height:calc(#{$log_padding_default} * 2.5);
+		margin-left:calc(50% - (#{$log_padding_default} * 1.25));
+		margin-top:calc(#{$log_padding_default} * 3.75);
+		}*/
 
 	#nav_log .btn {
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
