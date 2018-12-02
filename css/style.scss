@@ -861,28 +861,22 @@ $log_padding_default:0.8rem;
 	border-bottom:none;
 	}
 
-#nav_log #section_title {
-	@include caps_sans_serif_tiny;
-	z-index:100;
-	position:fixed;
-	margin:$log_padding_default calc(#{$log_padding_default} * 2);
-	}
-#nav_log #section_title a:hover {
-	opacity:1;
-	color:$color_log_accent;
-	}
-
 #nav_log #imprint {
+	cursor:cell;
 	position:absolute;
-	/*background:url(/media/assets/imprint.png) no-repeat 0 0;*/
+	background:url(../media/assets/icon_log.svg) no-repeat 0 0;
 	background-size:100% 100%;
 	width:60px;
-	width:calc(#{$log_padding_default} * 5);
+	width:calc(#{$log_padding_default} * 4);
 	height:60px;
-	height:calc(#{$log_padding_default} * 5);
+	height:calc(#{$log_padding_default} * 4);
 	margin-left:50%;
-	margin-left:calc(50% - (#{$log_padding_default} * 2.5));
-	margin-top:$log_padding_default;
+	margin-left:calc(50% - (#{$log_padding_default} * 2));
+	margin-top:calc(#{$log_padding_default} * 2);
+	}
+#nav_log #imprint:hover {
+	background:url(../media/assets/icon_log_hover.svg) no-repeat 0 0;
+	background-size:100% 100%;
 	}
 
 #nav_log .btn {
@@ -892,6 +886,10 @@ $log_padding_default:0.8rem;
 	margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	padding-bottom:calc(#{$log_padding_default} * 2);
 	cursor:cell;
+	}
+#nav_log .btn.left {
+	float:left;
+	margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	}
 #nav_log .btn#archive,
 #nav_log .btn#filter {
@@ -1393,22 +1391,18 @@ $log_padding_default:0.8rem;
 		margin:0.125rem 0;
 		}
 
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:3.2rem;
-		}
-
 	#nav_log .btn {
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) $log_padding_default;
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	/*.log.container#main .post_body .post_content p {
-		width:100%;
-		}*/
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 2);
+		}
 
 	.panel {
 		padding:0 0 $log_padding_default 0;
@@ -1589,23 +1583,19 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px -0.2rem 0 0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:3.2rem;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	/*.log.container#main .post_body .post_content p {
-		width:100%;
-		}*/
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 2);
+		}
 
 	.panel {
 		padding:0 0 $log_padding_default 0;
@@ -1778,23 +1768,19 @@ $log_padding_default:0.8rem;
 	#base #footer .link.social#email {
 		padding-left:0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:$log_padding_default;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	
-	/*.log.container#main .post_body .post_content p {
-		width:100%;
-		}*/
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 2);
+		}
 
 	.panel {
 		padding:0 0 $log_padding_default 0;
@@ -1991,18 +1977,18 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px -0.2rem 0 0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:$log_padding_default;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
+		}
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
 	.panel {
@@ -2200,18 +2186,18 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px -0.2rem 0 0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 2);
-		margin-top:$log_padding_default;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 2);
+		}
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
 	.panel {
@@ -2420,18 +2406,18 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px 0.8rem 0 0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 4);
-		margin-top:$log_padding_default;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
+		}
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
 	.panel {
@@ -2655,18 +2641,18 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px 0.8rem 0 0;
 		}
-
-	#nav_log #section_title {
-		margin-left:calc(#{$log_padding_default} * 4);
-		margin-top:$log_padding_default;
-		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn#contact,
+	#nav_log .btn.left {
+		margin:$log_padding_default 0 calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
+		}
 	#nav_log .btn#about {
 		margin-right:calc(#{$log_padding_default} * 4);
+		}
+	#nav_log .btn#contact {
+		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
 	.panel {
