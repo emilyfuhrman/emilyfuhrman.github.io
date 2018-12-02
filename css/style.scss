@@ -1404,6 +1404,7 @@ $log_padding_default:0.8rem;
 
 	#nav_log .btn {
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
+		padding-bottom:0;
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) $log_padding_default;
@@ -1597,6 +1598,7 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		padding-bottom:0;
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -1782,8 +1784,9 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn {
+	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn#about {
@@ -1991,6 +1994,7 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -2200,6 +2204,7 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -2420,6 +2425,7 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
+		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -2655,6 +2661,7 @@ $log_padding_default:0.8rem;
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
+		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
