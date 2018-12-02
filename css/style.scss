@@ -897,7 +897,7 @@ $log_padding_default:0.8rem;
 	}
 #nav_log .btn#contact {
 	margin-left:0;
-	padding-right:calc(#{$log_padding_default} * 4);
+	padding-right:calc(#{$log_padding_default} * 8);
 	}
 
 #nav_log .btn .btn_menu {
@@ -1395,12 +1395,9 @@ $log_padding_default:0.8rem;
 		margin:0.125rem 0;
 		}
 
-	/*#nav_log #imprint {
-		width:calc(#{$log_padding_default} * 2.5);
-		height:calc(#{$log_padding_default} * 2.5);
-		margin-left:calc(50% - (#{$log_padding_default} * 1.25));
-		margin-top:calc(#{$log_padding_default} * 3.75);
-		}*/
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 4);
+		}
 
 	#nav_log .btn {
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
@@ -1595,6 +1592,10 @@ $log_padding_default:0.8rem;
 		float:right;
 		margin:-10px -0.2rem 0 0;
 		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 4);
+		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -1781,10 +1782,14 @@ $log_padding_default:0.8rem;
 	#base #footer .link.social#email {
 		padding-left:0;
 		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 4);
+		}
 		
 	#nav_log .btn {
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		padding-bottom:calc(#{$log_padding_default} * 2);
+		padding-bottom:calc(#{$log_padding_default} * 4);
 		}
 	#nav_log .btn.left {
 		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -1990,6 +1995,10 @@ $log_padding_default:0.8rem;
 	#base #footer a .link#log {
 		float:right;
 		margin:-10px -0.2rem 0 0;
+		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 2);
 		}
 		
 	#nav_log .btn {
@@ -2200,6 +2209,10 @@ $log_padding_default:0.8rem;
 	#base #footer a .link#log {
 		float:right;
 		margin:-10px -0.2rem 0 0;
+		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 2);
 		}
 		
 	#nav_log .btn {
@@ -2421,6 +2434,10 @@ $log_padding_default:0.8rem;
 	#base #footer a .link#log {
 		float:right;
 		margin:-10px 0.8rem 0 0;
+		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 2);
 		}
 		
 	#nav_log .btn {
@@ -2657,6 +2674,10 @@ $log_padding_default:0.8rem;
 	#base #footer a .link#log {
 		float:right;
 		margin:-10px 0.8rem 0 0;
+		}
+
+	#nav_log #imprint {
+		margin-top:calc(#{$log_padding_default} * 2);
 		}
 		
 	#nav_log .btn {
