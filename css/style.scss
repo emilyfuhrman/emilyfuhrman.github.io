@@ -879,6 +879,12 @@ $log_padding_default:0.8rem;
 	background-size:100% 100%;
 	}
 
+#nav_log .nav_left {
+	float:left;
+	}
+#nav_log .nav_right {
+	float:right;
+	}
 #nav_log .btn {
 	@include caps_sans_serif_tiny;
 	position:relative;
@@ -889,7 +895,6 @@ $log_padding_default:0.8rem;
 	}
 #nav_log .btn.left {
 	float:left;
-	margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 	}
 #nav_log .btn#archive,
 #nav_log .btn.filter {
@@ -897,7 +902,7 @@ $log_padding_default:0.8rem;
 	}
 #nav_log .btn#contact {
 	margin-left:0;
-	padding-right:calc(#{$log_padding_default} * 8);
+	padding-right:calc(#{$log_padding_default} * 6);
 	}
 
 #nav_log .btn .btn_menu {
@@ -1403,13 +1408,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default $log_padding_default calc(#{$log_padding_default} * 2);
 		padding-bottom:0;
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) $log_padding_default;
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -1601,13 +1603,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		padding-bottom:0;
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -1791,13 +1790,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		padding-bottom:calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2005,13 +2001,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2219,13 +2212,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2444,13 +2434,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
 		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
@@ -2684,13 +2671,10 @@ $log_padding_default:0.8rem;
 		margin:$log_padding_default calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
 		padding-bottom:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn.left {
-		margin:$log_padding_default 0 calc(#{$log_padding_default} * 4) calc(#{$log_padding_default} * 4);
-		}
-	#nav_log .btn#about {
+	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn#contact {
+	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
