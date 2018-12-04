@@ -907,6 +907,7 @@ $log_padding_default:0.8rem;
 
 #nav_log .btn .btn_menu {
 	@include sans_serif;
+	display:none;
 	visibility:hidden;
 	opacity:0;
 	z-index:999;
@@ -929,8 +930,10 @@ $log_padding_default:0.8rem;
 	transform:rotate(180deg);
 	}
 #nav_log .btn:hover .btn_menu {
+	display:block;
 	visibility:visible;
 	opacity:1;
+	width:150px;
 	border-top:none;
 	}
 #nav_log .btn .btn_menu ul {
