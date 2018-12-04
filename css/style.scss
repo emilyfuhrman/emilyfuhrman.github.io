@@ -874,6 +874,10 @@ $log_padding_default:0.8rem;
 	margin-left:calc(50% - (#{$log_padding_default} * 2));
 	margin-top:calc(#{$log_padding_default} * 2);
 	}
+#nav_log #imprint:after {
+	display:none;
+	content:url(../media/assets/icon_log_hover.svg);
+	}
 #nav_log #imprint:hover {
 	background:url(../media/assets/icon_log_hover.svg) no-repeat 0 0;
 	background-size:100% 100%;
@@ -917,7 +921,7 @@ $log_padding_default:0.8rem;
 	margin-top:10px;
 	margin-left:calc(((150px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
 	border:1px solid #eee;
-	@include transition(opacity 240ms ease);
+	/*@include transition(opacity 240ms ease);*/
 	}
 #nav_log .btn .btn_menu:after {
 	content:" ";
