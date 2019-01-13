@@ -3,8 +3,6 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
-
 $color_black:#111;
 $color_accent:#0055FF;
 $color_log_accent:#FF3D00;
@@ -783,7 +781,7 @@ $log_padding_default:0.8rem;
    	------------------------------------ */
 
 @mixin font_sans_serif {
-	font-family:'Work Sans',sans-serif;
+	font-family:'Helvetica','Arial',sans-serif;
 }
 @mixin sans_serif {
 	@include font_sans_serif;
@@ -795,7 +793,7 @@ $log_padding_default:0.8rem;
 	font-size:calc(#{$log_padding_default} * 1.5);
 	font-weight:400;
 	text-transform:none;
-	letter-spacing:0;
+	letter-spacing:0.05rem;
 	}
 @mixin sans_serif_p {
 	@include font_sans_serif;
@@ -803,11 +801,11 @@ $log_padding_default:0.8rem;
 	font-size:$log_padding_default;
 	font-weight:400;
 	text-transform:none;
-	letter-spacing:0;
+	letter-spacing:0.05rem;
 	}
 @mixin caps_sans_serif {
 	@include font_sans_serif;
-	letter-spacing:0.025rem;
+	letter-spacing:0.05rem;
 	text-transform:uppercase;
 	}
 @mixin caps_sans_serif_tiny {
