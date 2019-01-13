@@ -797,22 +797,24 @@ $log_padding_default:0.8rem;
 	}
 @mixin sans_serif_p {
 	@include font_sans_serif;
-	font-size:16px;
-	font-size:$log_padding_default;
+	font-size:14px;
+	font-size:calc(#{$log_padding_default} / 1.15);
 	font-weight:400;
 	text-transform:none;
 	letter-spacing:0.05rem;
 	}
 @mixin caps_sans_serif {
 	@include font_sans_serif;
-	letter-spacing:0.05rem;
-	text-transform:uppercase;
+	letter-spacing:0.025rem;
+	font-size:14px;
+	font-size:calc(#{$log_padding_default} / 1.15);
 	}
 @mixin caps_sans_serif_tiny {
 	@include caps_sans_serif;
 	font-size:11px;
 	font-size:calc(#{$log_padding_default} / 1.5);
 	font-weight:500;
+	text-transform:uppercase;
 	}
 
 .log.container#main {
@@ -888,7 +890,7 @@ $log_padding_default:0.8rem;
 	float:right;
 	}
 #nav_log .btn {
-	@include caps_sans_serif_tiny;
+	@include caps_sans_serif;
 	position:relative;
 	float:right;
 	margin:$log_padding_default calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 2);
@@ -1084,16 +1086,10 @@ $log_padding_default:0.8rem;
 	}
 
 .tagblock .album_page_tag a {
+	background:transparent;
 	padding:4px 2px;
 	border-bottom:none;
-	}
-.album_page_tags .album_page_tag a {
-	background:#eee;
-	}
-.panel_images .album_page_tag a {
-	background:transparent;
-  color:#ddd;
-  border:1px solid #eee;
+  border:1px solid $color_black;
 	}
 
 .tagblock .album_page_tag a:hover {
