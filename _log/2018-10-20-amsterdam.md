@@ -16,9 +16,9 @@ metadata:
   - regions:
       - Europe
 photos:
-  - ext:    01.jpg
-    class:  horizontal
   - ext:    02.jpg
+    class:  horizontal
+  - ext:    01.jpg
     class:  horizontal
 ---
 Stayed for 24 hours to see Jan Asselijn's _The Threatened Swan_, eat stroopwafels, and sleep in a connected network of 17th- and 18th- century canal houses.
