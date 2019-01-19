@@ -18,5 +18,5 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  horizontal
-    text:   Fiume Tagliamento
 ---
+An icy plunge into Fiume Tagliamento.
