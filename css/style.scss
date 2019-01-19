@@ -914,7 +914,10 @@ $log_padding_default:0.8rem;
 	margin-top:10px;
 	margin-left:calc(((150px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
 	border:1px solid #eee;
-	/*@include transition(opacity 240ms ease);*/
+	}
+#nav_log .btn#regions .btn_menu {
+	width:200px;
+	margin-left:calc(((200px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
 	}
 #nav_log .btn .btn_menu:after {
 	content:" ";
