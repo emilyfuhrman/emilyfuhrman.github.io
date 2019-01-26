@@ -960,7 +960,7 @@ $log_padding_default:0.8rem;
 	float:left;
 	width:100%;
 	margin:0;
-	padding:calc(#{$log_padding_default} * 2) $log_padding_default $log_padding_default !important; 
+	padding:$log_padding_default calc(#{$log_padding_default} / 2) $log_padding_default !important; 
 	@include box-sizing(border-box); 
 	}
 
@@ -1126,7 +1126,7 @@ $log_padding_default:0.8rem;
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:calc(#{$log_padding_default} / 2) $log_padding_default;
+	padding:0 calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 2);
 	}
 .photo_frame.half {
 	width:50%;
@@ -1142,7 +1142,7 @@ $log_padding_default:0.8rem;
 	text-align:center;
   text-overflow:ellipsis;
   white-space:nowrap;
-	margin-top:$log_padding_default;
+	margin-top:calc(#{$log_padding_default} / 2);
   margin-bottom:calc(#{$log_padding_default} * -1);
 	padding:0;
 	overflow:hidden;
