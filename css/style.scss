@@ -1142,7 +1142,7 @@ $log_padding_default:0.8rem;
 	text-align:center;
   text-overflow:ellipsis;
   white-space:nowrap;
-	margin-top:calc(#{$log_padding_default} / 2);
+	margin-top:$log_padding_default;
   margin-bottom:calc(#{$log_padding_default} * -1);
 	padding:0;
 	overflow:hidden;
