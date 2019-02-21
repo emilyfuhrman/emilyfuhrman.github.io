@@ -960,7 +960,7 @@ $log_padding_default:0.8rem;
 	float:left;
 	width:100%;
 	margin:0;
-	padding:$log_padding_default calc(#{$log_padding_default} / 2) $log_padding_default !important; 
+	padding:$log_padding_default !important; 
 	@include box-sizing(border-box); 
 	}
 
@@ -1146,8 +1146,8 @@ $log_padding_default:0.8rem;
 	text-align:center;
   text-overflow:ellipsis;
   white-space:nowrap;
-	margin-top:$log_padding_default;
-  margin-bottom:calc(#{$log_padding_default} * -1);
+	margin-top:calc(#{$log_padding_default} / 2);
+  margin-bottom:0;
 	padding:0;
 	overflow:hidden;
 	}
