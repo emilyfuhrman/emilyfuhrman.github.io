@@ -997,15 +997,17 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:100%;
 	text-align:center;
-	margin-top:0;
-	margin-bottom:calc(#{$log_padding_default} * -0.5);
-	padding:calc(#{$log_padding_default} * 2) 0;
+	margin:0;
+	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 3);
 	border-top:1px solid $color_black;
 	border-left:1px solid $color_black;
 	border-right:1px solid $color_black;
 	}
+.post_body .page_label {
+	margin-bottom:calc(#{$log_padding_default} * 3);
+	}
 .archive .page_label {
-	margin-bottom:calc(#{$log_padding_default} * -1);
+	padding-bottom:calc(#{$log_padding_default} * 2.5);
 	}
 .archive .page_label .tag_string {
 	text-transform:capitalize;
@@ -1130,7 +1132,7 @@ $log_padding_default:0.8rem;
 .photo_frame {
 	width:100%;
 	height:auto;
-	padding:0 $log_padding_default calc(#{$log_padding_default} * 2);
+	padding:0 $log_padding_default calc(#{$log_padding_default} * 4);
 	}
 .photo_frame.half {
 	width:50%;
