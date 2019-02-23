@@ -998,16 +998,16 @@ $log_padding_default:0.8rem;
 	width:100%;
 	text-align:center;
 	margin:0;
-	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 3);
+	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
 	border-top:1px solid $color_black;
 	border-left:1px solid $color_black;
 	border-right:1px solid $color_black;
 	}
 .post_body .page_label {
-	margin-bottom:calc(#{$log_padding_default} * 3);
+	margin-bottom:calc(#{$log_padding_default} * 4);
 	}
 .archive .page_label {
-	padding-bottom:calc(#{$log_padding_default} * 2.5);
+	padding-bottom:calc(#{$log_padding_default} * 3.5);
 	}
 .archive .page_label .tag_string {
 	text-transform:capitalize;
