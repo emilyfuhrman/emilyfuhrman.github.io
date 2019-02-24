@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"Hotel Alfonso XIII"
 post_path:	2019-02-20-hotel-alfonso-xiii-seville-spain
 date_start:	2019/02/20
