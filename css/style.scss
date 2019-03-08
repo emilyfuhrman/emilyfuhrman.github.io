@@ -1004,9 +1004,13 @@ $log_padding_default:0.8rem;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
 	border-top:1px solid $color_black;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	}
 .post_body .page_label {
 	margin-bottom:calc(#{$log_padding_default} * 4);
+	border-left:none;
+	border-right:none;
 	}
 .archive .page_label {
 	padding-bottom:calc(#{$log_padding_default} * 3);
