@@ -813,7 +813,10 @@ $log_padding_default:0.8rem;
 .log.container#main {
 	@include caps_sans_serif_tiny;
 	width:100%;
-	padding:0 calc(#{$log_padding_default} * 4) $log_padding_default;
+	padding-top:0;
+	padding-left:calc(#{$log_padding_default} * 4);
+	padding-right:calc(#{$log_padding_default} * 4);
+	padding-bottom:$log_padding_default;
 	}
 .log.container#main div {
 	float:left;
@@ -987,8 +990,11 @@ $log_padding_default:0.8rem;
 .panel {
 	display:block;
 	width:100%;
-	padding:0 0 calc(#{$log_padding_default} * 4) 0;
+	padding:0;
 	@include transition(opacity 240ms ease);
+	}
+.panel:last-child {
+	border-bottom:1px solid $color_black;
 	}
 
 .panel .panel_label,
@@ -1007,7 +1013,7 @@ $log_padding_default:0.8rem;
 	margin-bottom:calc(#{$log_padding_default} * 4);
 	}
 .archive .page_label {
-	padding-bottom:calc(#{$log_padding_default} * 3.5);
+	padding-bottom:calc(#{$log_padding_default} * 3);
 	}
 .archive .page_label .tag_string {
 	text-transform:capitalize;
@@ -1024,7 +1030,7 @@ $log_padding_default:0.8rem;
 
 .panel .panel_images {
 	width:100%;
-	padding:0 calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+	padding:0 calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 8);
 	border-left:1px solid $color_black;
 	border-right:1px solid $color_black;
 	}
@@ -1059,7 +1065,8 @@ $log_padding_default:0.8rem;
 
 .panel.archive {
 	display:block;
-	padding:0 0 calc(#{$log_padding_default} * 2);
+	padding:0;
+	border-bottom:1px solid $color_black;
 	}
 .panel.archive .panel_images .panel_item {
 	margin-top:$log_padding_default;
@@ -1422,9 +1429,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel {
-		padding:0 0 $log_padding_default 0;
-		}
 	.panel .panel_images {
 		padding:0 $log_padding_default;
 		}
@@ -1617,9 +1621,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel {
-		padding:0 0 $log_padding_default 0;
-		}
 	.panel .panel_images {
 		padding:0 $log_padding_default;
 		}
@@ -1804,9 +1805,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel {
-		padding:0 0 $log_padding_default 0;
-		}
 	.panel .panel_images {
 		padding:0 $log_padding_default;
 		}
@@ -2015,11 +2013,8 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel {
-		padding:0 0 calc(#{$log_padding_default} * 4) 0;
-		}
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 8);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
@@ -2226,11 +2221,8 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel {
-		padding:0 0 calc(#{$log_padding_default} * 4) 0;
-		}
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 8);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
@@ -2448,11 +2440,8 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
-	.panel {
-		padding:0 0 calc(#{$log_padding_default} * 4) 0;
-		}
 	.panel .panel_images {
-		padding:$log_padding_default calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 8);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
@@ -2685,11 +2674,8 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
-	.panel {
-		padding:0 0 calc(#{$log_padding_default} * 4) 0;
-		}
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} * 1.5) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 8);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
