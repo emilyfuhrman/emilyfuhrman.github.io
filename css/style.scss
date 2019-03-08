@@ -813,10 +813,9 @@ $log_padding_default:0.8rem;
 .log.container#main {
 	@include caps_sans_serif_tiny;
 	width:100%;
-	padding-top:0;
-	padding-left:calc(#{$log_padding_default} * 4);
-	padding-right:calc(#{$log_padding_default} * 4);
-	padding-bottom:$log_padding_default;
+	margin-bottom:calc(#{$log_padding_default} * 2);
+	padding:0 calc(#{$log_padding_default} * 4);
+	border-bottom:1px solid $color_black;
 	}
 .log.container#main div {
 	float:left;
@@ -956,6 +955,8 @@ $log_padding_default:0.8rem;
 
 .log.container#main .post_body {
 	width:100%;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	@include transition(opacity 240ms ease);
 	}
 .log.container#main .post_body p {
@@ -993,9 +994,6 @@ $log_padding_default:0.8rem;
 	padding:0;
 	@include transition(opacity 240ms ease);
 	}
-.panel:last-child {
-	border-bottom:1px solid $color_black;
-	}
 
 .panel .panel_label,
 .page_label {
@@ -1006,8 +1004,6 @@ $log_padding_default:0.8rem;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
 	border-top:1px solid $color_black;
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
 	}
 .post_body .page_label {
 	margin-bottom:calc(#{$log_padding_default} * 4);
@@ -1066,7 +1062,6 @@ $log_padding_default:0.8rem;
 .panel.archive {
 	display:block;
 	padding:0;
-	border-bottom:1px solid $color_black;
 	}
 .panel.archive .panel_images .panel_item {
 	margin-top:$log_padding_default;
