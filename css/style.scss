@@ -1067,6 +1067,9 @@ $log_padding_default:0.8rem;
 	display:block;
 	padding:0;
 	}
+.panel.archive .panel_images {
+	padding-bottom:calc(#{$log_padding_default} * 6) !important;
+	}
 .panel.archive .panel_images .panel_item {
 	margin-top:$log_padding_default;
 	margin-bottom:calc(#{$log_padding_default} * 6);
