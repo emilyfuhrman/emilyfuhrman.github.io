@@ -788,11 +788,11 @@ $log_padding_default:0.8rem;
 	}
 @mixin sans_serif_display {
 	@include font_sans_serif;
-	font-size:14px;
-	font-size:calc(#{$log_padding_default} / 1.15);
+	font-size:15px;
+	font-size:calc(#{$log_padding_default} / 1.065);
 	font-weight:400;
 	text-transform:uppercase;
-	letter-spacing:0.025rem;
+	letter-spacing:0.015rem;
 	}
 @mixin sans_serif_body {
 	@include font_sans_serif;
@@ -800,7 +800,7 @@ $log_padding_default:0.8rem;
 	font-size:calc(#{$log_padding_default} / 1.15);
 	font-weight:400;
 	text-transform:none;
-	letter-spacing:0.025rem;
+	letter-spacing:0.015rem;
 	}
 @mixin sans_serif_small {
 	font-size:12px;
@@ -849,7 +849,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main p {
-	@include sans_serif_display;
+	@include sans_serif_body;
 	text-align:center;
 	padding:$log_padding_default;
 	}
