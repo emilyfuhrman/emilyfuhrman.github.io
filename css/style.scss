@@ -802,7 +802,7 @@ $log_padding_default:0.8rem;
 	text-transform:none;
 	letter-spacing:0.025rem;
 	}
-@mixin caps_sans_serif_tiny {
+@mixin sans_serif_small {
 	font-size:12px;
 	font-size:calc(#{$log_padding_default} / (4/3));
 	font-weight:500;
@@ -810,7 +810,7 @@ $log_padding_default:0.8rem;
 	letter-spacing:0;
 	}
 
-@mixin caps_sans_serif_micro {
+@mixin sans_serif_micro {
 	font-size:11px;
 	font-size:calc(#{$log_padding_default} / 1.5);
 	font-weight:500;
@@ -819,7 +819,7 @@ $log_padding_default:0.8rem;
 	}
 
 .log.container#main {
-	@include caps_sans_serif_tiny;
+	@include sans_serif_small;
 	width:100%;
 	margin-bottom:calc(#{$log_padding_default} * 2);
 	padding:0 calc(#{$log_padding_default} * 4);
@@ -913,7 +913,7 @@ $log_padding_default:0.8rem;
 	}
 
 #nav_log .btn .btn_menu {
-	@include sans_serif;
+	@include sans_serif_small;
 	display:none;
 	visibility:hidden;
 	opacity:0;
@@ -922,12 +922,12 @@ $log_padding_default:0.8rem;
 	background:white;
 	width:150px;
 	margin-top:10px;
-	margin-left:calc(((150px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
+	margin-left:calc(((150px / 2) * -1) + calc(#{$log_padding_default} * 1.5));
 	border:1px solid #eee;
 	}
 #nav_log .btn#regions .btn_menu {
-	width:200px;
-	margin-left:calc(((200px / 2) * -1) + calc(#{$log_padding_default} * 1.55));
+	width:180px;
+	margin-left:calc(((180px / 2) * -1) + calc(#{$log_padding_default} * 1.5));
 	}
 #nav_log .btn .btn_menu:after {
 	content:" ";
@@ -1085,7 +1085,7 @@ $log_padding_default:0.8rem;
 	}
 
 .tagblock {
-	@include caps_sans_serif_micro;
+	@include sans_serif_micro;
 	font-weight:400;
 	margin-top:-2px;
 	}
@@ -1142,7 +1142,7 @@ $log_padding_default:0.8rem;
 	}
 
 .album_page_tags {
-	@include caps_sans_serif_tiny;
+	@include sans_serif_small;
 	width:100%;
 	font-weight:400;
 	margin:$log_padding_default 0;
@@ -1161,7 +1161,7 @@ $log_padding_default:0.8rem;
 	height:auto;
 	}
 .photo_frame .photo_caption {
-	@include caps_sans_serif_tiny;
+	@include sans_serif_small;
 	width:100%;
 	text-align:center;
   text-overflow:ellipsis;
