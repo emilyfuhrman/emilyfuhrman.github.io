@@ -23,7 +23,7 @@ photos:
   - ext:    01.jpg
     class:  horizontal
   - ext:    02.jpg
-    class:  horizontal _60
+    class:  horizontal
   - ext:    03.jpg
     class:  horizontal
 ---

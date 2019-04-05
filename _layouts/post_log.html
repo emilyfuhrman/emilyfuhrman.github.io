@@ -5,7 +5,9 @@
     {% for photo in page.photos %}
     	<div class='photo_frame {{ photo.class }}'>
         <img class='album_page_image' src='/photos/{{ page.post_path }}/{{ photo.ext }}'/>
-        <div class='photo_caption'>{% if photo.text %}{{ photo.text }}{% else %}&nbsp;{% endif %}</div>
+        {% if photo.text %}
+          <div class='photo_caption'>{{ photo.text }}</div>
+        {% endif %}
     	</div>
     {% endfor %}
   </div>

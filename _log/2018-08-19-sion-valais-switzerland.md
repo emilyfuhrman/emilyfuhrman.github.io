@@ -17,9 +17,9 @@ metadata:
       - Europe
 photos:
   - ext:    01.jpg
-    class:  vertical half
+    class:  vertical
   - ext:    02.jpg
-    class:  vertical half
+    class:  vertical
   - ext:    03.jpg
     class:  horizontal
 ---

@@ -16,15 +16,15 @@ metadata:
       - Europe
 photos:
   - ext:    01.jpg
-    class:  vertical half
+    class:  vertical
   - ext:    02.jpg
-    class:  vertical half
+    class:  vertical
   - ext:    04.jpg
     class:  horizontal
   - ext:    07.jpg
-    class:  horizontal half
+    class:  horizontal
   - ext:    08.jpg
-    class:  horizontal half
+    class:  horizontal
   - ext:    03.jpg
     class:  horizontal
     text:   "Seven Lakes Trail · Triglav National Park"

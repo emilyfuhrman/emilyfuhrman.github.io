@@ -17,8 +17,8 @@ metadata:
       - Europe
 photos:
   - ext:    01.jpg
-    class:  vertical half
+    class:  vertical
   - ext:    02.jpg
-    class:  vertical half
+    class:  vertical
 ---
 Not pictured: the wide runways of Flughafen Tempelhof, dotted with cyclists and kites. 
