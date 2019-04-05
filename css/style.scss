@@ -4,8 +4,8 @@ sitemap:
 ---
 
 $color_black:#111;
+$color_lg:#f2f2f2;
 $color_accent:#0055FF;
-$color_log_accent:#FF3D00;
 
 $ttime:120ms;
 
@@ -823,7 +823,7 @@ $log_padding_default:0.8rem;
 	width:100%;
 	margin-bottom:calc(#{$log_padding_default} * 2);
 	padding:0 calc(#{$log_padding_default} * 4);
-	border-bottom:1px solid $color_black;
+	border-bottom:1px solid $color_lg;
 	}
 .log.container#main div {
 	float:left;
@@ -841,11 +841,11 @@ $log_padding_default:0.8rem;
 	}
 .log.container#main .border.left {
 	left:calc(#{$log_padding_default} * 3);
-	border-left:1px solid $color_black;
+	border-left:1px solid $color_lg;
 	}
 .log.container#main .border.right {
 	right:calc(#{$log_padding_default} * 3);
-	border-right:1px solid $color_black;
+	border-right:1px solid $color_lg;
 	}
 
 .log.container#main p {
@@ -963,8 +963,8 @@ $log_padding_default:0.8rem;
 
 .log.container#main .post_body {
 	width:100%;
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
+	border-left:1px solid $color_lg;
+	border-right:1px solid $color_lg;
 	@include transition(opacity 240ms ease);
 	}
 .log.container#main .post_body p {
@@ -1012,9 +1012,9 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
-	border-top:1px solid $color_black;
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
+	border-top:1px solid $color_lg;
+	border-left:1px solid $color_lg;
+	border-right:1px solid $color_lg;
 	}
 .post_body .page_label {
 	margin-bottom:calc(#{$log_padding_default} * 2);
@@ -1040,8 +1040,8 @@ $log_padding_default:0.8rem;
 .panel .panel_images {
 	width:100%;
 	padding:0 calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 10);
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
+	border-left:1px solid $color_lg;
+	border-right:1px solid $color_lg;
 	}
 .panel .panel_images .panel_item {
 	position:relative;
@@ -1111,7 +1111,7 @@ $log_padding_default:0.8rem;
 	background:transparent;
 	padding:4px 2px;
 	border-bottom:none;
-  border:1px solid $color_black;
+  border:1px solid $color_lg;
 	}
 
 .tagblock .album_page_tag a:hover {
@@ -1147,7 +1147,7 @@ $log_padding_default:0.8rem;
 	font-weight:400;
 	margin:$log_padding_default 0;
 	padding:$log_padding_default;
-	border-top:1px solid $color_black;
+	border-top:1px solid $color_lg;
 	}
 
 .photo_frame {
