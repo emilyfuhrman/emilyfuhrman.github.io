@@ -22,9 +22,9 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  horizontal
-  - ext:    02.jpg
-    class:  horizontal _60
   - ext:    03.jpg
     class:  horizontal _40
+  - ext:    02.jpg
+    class:  horizontal _60
 ---
 A long weekend in Old San Juan and Vieques.
