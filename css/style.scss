@@ -807,7 +807,7 @@ $log_padding_default:0.8rem;
 	font-size:calc(#{$log_padding_default} / (4/3));
 	font-weight:500;
 	text-transform:none;
-	letter-spacing:0;
+	letter-spacing:0.015rem;
 	}
 
 @mixin sans_serif_micro {
@@ -815,7 +815,7 @@ $log_padding_default:0.8rem;
 	font-size:calc(#{$log_padding_default} / 1.5);
 	font-weight:500;
 	text-transform:none;
-	letter-spacing:0;
+	letter-spacing:0.015rem;
 	}
 
 .log.container#main {
