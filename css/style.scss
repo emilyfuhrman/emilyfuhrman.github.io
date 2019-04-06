@@ -790,7 +790,7 @@ $log_padding_default:0.8rem;
 	@include font_sans_serif;
 	font-size:15px;
 	font-size:calc(#{$log_padding_default} / 1.065);
-	font-weight:400;
+	font-weight:700;
 	text-transform:uppercase;
 	letter-spacing:0.025rem;
 	}
