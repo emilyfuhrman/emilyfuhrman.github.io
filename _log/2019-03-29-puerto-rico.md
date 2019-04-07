@@ -24,7 +24,5 @@ photos:
     class:  horizontal
   - ext:    02.jpg
     class:  horizontal
-  - ext:    04.jpg
-    class:  vertical
 ---
 A long weekend in Vieques and Old San Juan.
