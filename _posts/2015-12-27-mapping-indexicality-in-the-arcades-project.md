@@ -20,4 +20,4 @@ This project interprets the text of Walter Benjamin's _The Arcades Project_[1] a
 
 Built using Python and Processing. 
 
-1. Walter Benjamin, _The Arcades Project_.
+1. Walter Benjamin, _The Arcades Project_, trans. Howard Eiland and Kevin McLaughlin (Belknap Press, 2002), Third Printing edition.
