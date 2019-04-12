@@ -16,6 +16,8 @@ tags:
   - text
   - digital humanities
 ---
-This project interprets the text of Walter Benjamin's _The Arcades Project_ as a collection of gestures, reading instances of linguistic deixis as concretized moments of textual interiority. Each path represents the mutable indexicality of a given convolute by tracking the spatial and temporal context of the word "this." The resultant traces capture the wandering, associative nature of work in a seemingly sporadic blueprint of its textual volition. 
+This project interprets the text of Walter Benjamin's _The Arcades Project_[1] as a collection of gestures, reading instances of linguistic deixis as concretized moments of textual interiority. Each path represents the mutable indexicality of a given convolute by tracking the spatial and temporal context of the word "this." The resultant traces capture the wandering, associative nature of work in a seemingly sporadic blueprint of its textual volition. 
 
 Built using Python and Processing. 
+
+1. Walter Benjamin, _The Arcades Project_.
