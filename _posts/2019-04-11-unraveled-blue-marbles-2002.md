@@ -18,7 +18,7 @@ tags:
 ---
 Revisiting NASA's _The Blue Marble 2002_[1] in the wake of another recently-released [iconic photograph of space](https://www.nytimes.com/2019/04/10/science/black-hole-picture.html).
 
-Denis Cosgrove describes NASA's composite satellite images as "simultaneously 'true' representations and virtual spaces."[2] Each hemisphere is stitched together using four months' worth of satellite imagery[3], forming a representation of the earth from a perspective outside the boundaries of human vision.
+Denis Cosgrove describes NASA's composite satellite images as "simultaneously 'true' representations and virtual spaces."[2] Each hemisphere is stitched together using four months' worth of satellite imagery[3], forming a representation of the earth inaccessible to human vision.
 
 Here, each image is traversed, pixel-by-pixel, by a Hilbert curve. The curves are then unraveled, snakelike, revealing the digital strata of each composite.
 
