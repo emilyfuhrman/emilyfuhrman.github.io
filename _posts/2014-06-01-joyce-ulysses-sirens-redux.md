@@ -26,10 +26,13 @@ tags:
   - text
   - digital humanities
 ---
-In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations," and as including the "eight regular parts of a _fuga per canonem_." While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
+In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations,"[1] and as including the "eight regular parts of a _fuga per canonem_."[2] While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
 
 The first 63 lines of the chapter introduce 99 words and syllables that reappear in different forms throughout the rest of the text. The sounds ultimately act as [leitmotifs](http://en.wikipedia.org/wiki/Leitmotif), evoking the sensory presence of different characters at different times.
 
 This visualization is constructed as a line-by-line annotation of each sound that recurs at least four times following its initial introduction. Within each line, each sound is grouped into repetitions, linked to its associated character(s), and sorted into one of three possible tiers based on its distance from the root sound. The lines are represented as columns.
 
 View the full interactive [here](/interactive/Y2014001). Built using Processing and D3.js.
+
+1. Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, _James Joyce: New and Revised Edition_ (Oxford University Press, 1982), p. 459.
+2. Joyce to Harriet Weaver, 6 August 1919, in Ellmann, James Joyce, p. 462.
