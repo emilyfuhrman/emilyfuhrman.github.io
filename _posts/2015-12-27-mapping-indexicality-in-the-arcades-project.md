@@ -10,7 +10,7 @@ images:
     height: 2400
 cred:
   - name:   "Columbia University Group for Experimental Methods in the Humanities"
-    link:   "http://xpmethod.plaintext.in/theory-method/literary-visualization-lab.html"
+    link:   "http://xpmethod.plaintext.in/embodied-space-lab/mapping-indexality.html"
 tags:
   - static
   - text

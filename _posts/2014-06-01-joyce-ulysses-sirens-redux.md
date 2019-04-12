@@ -15,7 +15,7 @@ cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
   - name:   "Columbia University Group for Experimental Methods in the Humanities"
-    link:   "http://xpmethod.plaintext.in/theory-method/visualizing-joyce.html"
+    link:   "http://xpmethod.plaintext.in/lit-mod-viz/visualizing-joyce.html"
 cred_tweets:
   - name:   Lev Manovich
     link:   "https://twitter.com/manovich/status/484048446182424577"
