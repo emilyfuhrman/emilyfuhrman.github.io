@@ -1185,6 +1185,7 @@ $log_padding_default:0.8rem;
 .library.container#main {
 	font-family:"Courier";
 	font-size:0.75rem;
+	line-height:1rem;
 	width:100%;
 	margin:0;
 	padding:0;
@@ -1205,34 +1206,39 @@ $log_padding_default:0.8rem;
 	padding:20px;
 	}
 
-#library .item {
+#library .row {
 	width:100%;
 	}
-#library .item span {
+#library .row span {
 	float:left;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	margin:0;
 	}
-#library .item pre {
+#library .row pre {
 	margin:0;
 	}
-#library .item a {
+#library .row a {
 	color:$color_accent;
 	border-color:$color_accent;
 	}
 
-#library .item span.itemAuth {
+#library .row span.itemAuth {
 	width:25%;
 	width:calc(25vw - 20px - 50px);
 	}
-#library .item span.itemDate {
+#library .row span.itemDate {
 	width:100px;
 	}
-#library .item span.itemName {
+#library .row span.itemName {
 	width:75%;
 	width:calc(75vw - 20px - 50px);
+	}
+
+#library .row.header {
+	font-weight:bold;
+	cursor:cell;
 	}
 
 /* 	------------------------------------

@@ -2,30 +2,50 @@ var lib = function(){
 
 	return {
 
-		getData:function(){
+		data_list:[],
+
+		elem_library:null,
+
+		get_data:function(){
 			var self = this;
 			d3.json('/data/library.json',function(e,d){
-				if(!e){ self.generate(d); }
+				if(!e){ 
+					self.data_list = d;
+					self.generate_chassis();
+					self.generate_list(d); 
+				}
 			});
 		},
 
-		generate:function(_data){
+		generate_chassis:function(){
 			var self = this;
-			var list = _data || [];
+			self.elem_library = d3.select('#library');
+
+			var header_row = self.elem_library.append('div').classed('header row',true);
+			header_row.append('span').classed('itemAuth',true).text("Author(s)");
+			header_row.append('span').classed('itemDate',true).text("Date");
+			header_row.append('span').classed('itemName',true).text("Title");
+		},
+
+		generate_list:function(_data){
+			var self = this;
+			var data = _data || [];
 
 			var items,
 					itemAuth,
 					itemDate,
 					itemName;
 
-			items = d3.select('#library').selectAll('div.item')
-				.data(list);
+			items = self.elem_library.selectAll('div.item')
+				.data(data);
 			items.enter().append('div')
 				.classed('item',true);
+			items
+				.classed('row',true);
 			items.exit().remove();
 
 			itemAuth = items.selectAll('span.itemAuth')
-				.data(list);
+				.data(function(d){ return [d]; });
 			itemAuth.enter().append('span')
 				.classed('itemAuth',true);
 			itemAuth
@@ -38,7 +58,7 @@ var lib = function(){
 			itemAuth.exit().remove();
 			
 			itemDate = items.selectAll('span.itemDate')
-				.data(list);
+				.data(function(d){ return [d]; });
 			itemDate.enter().append('span')
 				.classed('itemDate',true);
 			itemDate
@@ -46,7 +66,7 @@ var lib = function(){
 			itemDate.exit().remove();
 			
 			itemName = items.selectAll('span.itemName')
-				.data(list);
+				.data(function(d){ return [d]; });
 			itemName.enter().append('span')
 				.classed('itemName',true);
 			itemName
@@ -59,4 +79,4 @@ var lib = function(){
 	}
 }
 
-lib().getData();
+lib().get_data();
