@@ -1,0 +1,19 @@
+[
+	{
+		"path":"goodman_languagesOfArt",
+		"date":1968,
+		"name":"Languages of Art",
+		"name_sub":"An Approach to a Theory of Symbols",
+		"authors":[
+			{
+				"ln":"Goodman",
+				"fi":"N."
+			}
+		],
+		"type":"book",
+		"tags":[
+			"aesthetics"
+		],
+		"read":false
+	}
+]
