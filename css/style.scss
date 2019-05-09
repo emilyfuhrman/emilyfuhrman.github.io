@@ -1252,17 +1252,17 @@ $log_padding_default:0.8rem;
 	}
 #library .row.header span:hover::after {
 	color:#ddd;
-	content:'⇣';
+	content:'ꜜ';
 	vertical-align:middle;
 	}
 #library .row.header span.focus.asc::after {
 	color:#999;
-	content:'⇡';
+	content:'ꜛ';
 	vertical-align:middle;
 	}
 #library .row.header span.focus.desc::after {
 	color:#999;
-	content:'⇣';
+	content:'ꜜ';
 	vertical-align:middle;
 	}
 
