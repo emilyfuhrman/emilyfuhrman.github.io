@@ -5,6 +5,8 @@ var lib = function(){
 		focus:"date",
 		order:"desc",
 
+		palette:['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f'],
+
 		data_list:[],
 		data_columns:[
 			{
@@ -28,6 +30,17 @@ var lib = function(){
 				"label":"Title"
 			}
 		],
+		data_tags:{
+			"data visualization": [
+					"graphical perception"
+				],
+			"philosophy": [
+					"aesthetics"
+				]
+		},
+
+		active_cats:[],
+		active_tags:[],
 
 		elem_library:null,
 
@@ -40,7 +53,7 @@ var lib = function(){
 			}
 		},
 
-		util_filterData:function(_data){
+		util_sortData:function(_data){
 			var self = this;
 			_data.sort(function(a,b){
 				var a_comp = self.focus === 'authors' ? a[self.focus][0].ln : a[self.focus],
@@ -55,13 +68,18 @@ var lib = function(){
 			return _data;
 		},
 
+		util_filterData:function(_data){
+
+		},
+
 		get_data:function(){
 			var self = this;
 			d3.json('/data/library.json',function(e,d){
 				if(!e){ 
 					self.data_list = d;
 					self.generate_chassis();
-					self.generate_list(d); 
+					self.generate_tags();
+					self.generate_list(); 
 				}
 			});
 		},
@@ -97,19 +115,111 @@ var lib = function(){
 						return 'item item_' +d.id +(d.id === self.focus ? ' focus ' +self.order : ''); 
 					});
 
-					self.generate_list(self.data_list);
+					self.generate_list();
 				});
 			header_items.exit().remove();
 		},
 
-		generate_list:function(_data){
+		generate_tags:function(){
 			var self = this;
-			var data = self.util_filterData(_data);
+			var tags,
+					tagList = [];
+
+			//create flattened list of tags w/color
+			d3.keys(self.data_tags).forEach(function(d,i){
+				self.data_tags[d].forEach(function(_d,_i){
+					tagList.push({
+						"label":_d,
+						"category":d,
+						"color":self.palette[i]
+					});
+				});
+			});
+
+			//sort alphabetically
+			tagList.sort(function(a,b){
+				if(a.label == b.label)
+					return  0;
+				if(a.label <b.label)
+					return -1;
+				if(a.label >b.label)
+					return  1;
+			});
+
+			var cats,
+					tags;
+
+			function updateTags(){
+				cats.classed('active',function(d){
+					return self.active_cats.indexOf(d) >-1;
+				});
+				tags.classed('active',function(d){
+					return self.active_tags.indexOf(d) >-1;
+				});
+			}
+
+			cats = d3.select('#controls .cats').selectAll('div.library-cat')
+				.data(d3.keys(self.data_tags));
+			cats.enter().append('div')
+				.classed('library-cat',true);
+			cats
+				.text(function(d){ return d; })
+				.style('background',function(d,i){ return self.palette[i]; });
+			cats
+				.on('click',function(d){
+					if(self.active_cats.indexOf(d) <0){
+						self.active_cats.push(d);
+						self.active_tags.push(tagList.filter(function(_d){ return _d.category === d; })[0]);
+					} else{
+						self.active_cats = self.active_cats.filter(function(_d){ return _d !== d; });
+						self.active_tags = self.active_tags.filter(function(_d){ return _d.category !== d; });
+					}
+					updateTags();
+					self.generate_list();
+				});
+			cats.exit().remove();
+
+			tags = d3.select('#controls .tags').selectAll('div.library-tag')
+				.data(tagList);
+			tags.enter().append('div')
+				.classed('library-tag',true);
+			tags
+				.text(function(d){ return d.label; })
+				.style('background',function(d){ return d.color; });
+			tags
+				.on('click',function(d){
+					if(self.active_tags.indexOf(d) <0){
+						self.active_tags.push(d);
+						if(self.active_tags.filter(function(_d){ return _d.category === d.category; }).length === self.data_tags[d.category].length){
+							self.active_cats.push(d.category);
+						}
+					} else{
+						self.active_tags = self.active_tags.filter(function(_d){ return _d !== d; });
+						self.active_cats = self.active_cats.filter(function(_d){ return _d !== d.category; });
+					}
+					updateTags();
+					self.generate_list();
+				});
+			tags.exit().remove();
+		},
+
+		generate_list:function(){
+			var self = this;
+			var data = self.data_list;
+
+			data = self.util_sortData(data);
+			data = data.filter(function(d){
+				var keep = (self.active_tags.length === 0 || self.active_cats.length === 0) ? true : false;
+				d.tags.forEach(function(_d){
+					if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
+				});
+				return keep;
+			});
 
 			var items;
 			items = self.elem_library.selectAll('div.item')
 				.data(data);
-			items.enter().append('div')
+			items.enter().append('div') 
 				.classed('item',true);
 			items
 				.classed('row',true);

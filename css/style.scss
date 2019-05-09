@@ -1198,7 +1198,32 @@ $log_padding_default:0.8rem;
 
 #controls {
 	width:100%;
-	height:60px;
+	padding:20px;
+	}
+#controls .block {
+	width:100%;
+	}
+
+#controls .library-cat,
+#controls .library-tag {
+	font-size:0.6rem;
+	text-transform:uppercase;
+	margin:2px 2px 0 0;
+	padding:4px;
+	cursor:cell;
+	}
+#controls .library-cat {
+	font-weight:bold;
+	}
+#controls .library-cat:hover,
+#controls .library-tag:hover {
+	background:#444 !important;
+	color:white;
+	}
+#controls .library-cat.active,
+#controls .library-tag.active {
+	background:$color_black !important;
+	color:white;
 	}
 
 #library {
