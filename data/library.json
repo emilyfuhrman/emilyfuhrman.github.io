@@ -17,7 +17,7 @@
 		"read":false
 	},
 	{
-		"path":"cleveland-mcgill_1984_graphicalPerceptionTheoryExperimentationAndApplicationToTheDevelopmentOfGraphicalMethods",
+		"path":"cleveland-mcgill_1984_graphicalPerception",
 		"date":1984,
 		"title":"Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
 		"authors":[
@@ -33,6 +33,22 @@
 		"type":"article",
 		"tags":[
 			"graphical perception"
+		],
+		"read":true
+	},
+	{
+		"path":"croxton_1932_graphicComparisonsByBarsSquaresCirclesAndCubes",
+		"date":1932,
+		"title":"Graphic Comparisons by Bars, Squares, Circles, and Cubes",
+		"authors":[
+			{
+				"ln":"Croxton",
+				"fi":"F.E."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical methods"
 		],
 		"read":true
 	}

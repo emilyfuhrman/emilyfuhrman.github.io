@@ -2,7 +2,7 @@ var lib = function(){
 
 	return {
 
-		focus:"date",
+		focus:"read",
 		order:"desc",
 
 		palette:['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f'],
@@ -32,7 +32,8 @@ var lib = function(){
 		],
 		data_tags:{
 			"data visualization": [
-					"graphical perception"
+					"graphical perception",
+					"graphical methods"
 				],
 			"philosophy": [
 					"aesthetics"
@@ -169,7 +170,7 @@ var lib = function(){
 				.on('click',function(d){
 					if(self.active_cats.indexOf(d) <0){
 						self.active_cats.push(d);
-						self.active_tags.push(tagList.filter(function(_d){ return _d.category === d; })[0]);
+						self.active_tags = self.active_tags.concat(tagList.filter(function(_d){ return _d.category === d; }));
 					} else{
 						self.active_cats = self.active_cats.filter(function(_d){ return _d !== d; });
 						self.active_tags = self.active_tags.filter(function(_d){ return _d.category !== d; });
@@ -188,7 +189,7 @@ var lib = function(){
 				.style('background',function(d){ return d.color; });
 			tags
 				.on('click',function(d){
-					if(self.active_tags.indexOf(d) <0){
+					if(self.active_tags.filter(function(_d){ return _d.label === d.label; }).length === 0){
 						self.active_tags.push(d);
 						if(self.active_tags.filter(function(_d){ return _d.category === d.category; }).length === self.data_tags[d.category].length){
 							self.active_cats.push(d.category);
@@ -209,10 +210,14 @@ var lib = function(){
 
 			data = self.util_sortData(data);
 			data = data.filter(function(d){
-				var keep = (self.active_tags.length === 0 || self.active_cats.length === 0) ? true : false;
-				d.tags.forEach(function(_d){
-					if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
-				});
+				var keep = false;
+				if(self.active_tags.length === 0){
+					keep = true;
+				} else{
+					d.tags.forEach(function(_d){
+						if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
+					});
+				}
 				return keep;
 			});
 
