@@ -1252,6 +1252,10 @@ $log_padding_default:0.8rem;
 	color:$color_accent;
 	border-color:$color_accent;
 	}
+#library .row a:hover {
+	color:#003090;
+	border-color:#003090;
+	}
 
 #library .row span.item_read {
 	width:50px;
