@@ -32,8 +32,7 @@ var lib = function(){
 		],
 		data_tags:{
 			"data visualization": [
-					"graphical perception",
-					"graphical methods"
+					"graphical perception"
 				],
 			"philosophy": [
 					"aesthetics"
