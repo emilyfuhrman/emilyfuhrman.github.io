@@ -1224,21 +1224,46 @@ $log_padding_default:0.8rem;
 	border-color:$color_accent;
 	}
 
-#library .row span.itemAuth {
-	width:25%;
-	width:calc(25vw - 20px - 50px);
+#library .row span.item_read {
+	width:50px;
+	display:inline-block;
+	vertical-align:middle;
 	}
-#library .row span.itemDate {
+#library .row span.item_type {
+	width:50px;
+	display:inline-block;
+	vertical-align:middle;
+	}
+#library .row span.item_authors {
+	width:25%;
+	width:calc(30vw - 20px - 100px);
+	}
+#library .row span.item_date {
 	width:100px;
 	}
-#library .row span.itemName {
+#library .row span.item_name {
 	width:75%;
-	width:calc(75vw - 20px - 50px);
+	width:calc(70vw - 20px - 100px);
 	}
 
 #library .row.header {
 	font-weight:bold;
 	cursor:cell;
+	}
+#library .row.header span:hover::after {
+	color:#ddd;
+	content:'⇣';
+	vertical-align:middle;
+	}
+#library .row.header span.focus.asc::after {
+	color:#999;
+	content:'⇡';
+	vertical-align:middle;
+	}
+#library .row.header span.focus.desc::after {
+	color:#999;
+	content:'⇣';
+	vertical-align:middle;
 	}
 
 /* 	------------------------------------

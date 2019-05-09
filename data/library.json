@@ -1,9 +1,9 @@
 [
 	{
-		"path":"goodman_languagesOfArt",
+		"path":"goodman_1968_languagesOfArt",
 		"date":1968,
-		"name":"Languages of Art",
-		"name_sub":"An Approach to a Theory of Symbols",
+		"title":"Languages of Art",
+		"title_sub":"An Approach to a Theory of Symbols",
 		"authors":[
 			{
 				"ln":"Goodman",
@@ -15,5 +15,26 @@
 			"aesthetics"
 		],
 		"read":false
+	},
+	{
+		"path":"cleveland-mcgill_1984_graphicalPerceptionTheoryExperimentationAndApplicationToTheDevelopmentOfGraphicalMethods",
+		"date":1984,
+		"title":"Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+		"authors":[
+			{
+				"ln":"Cleveland",
+				"fi":"W.S."
+			},
+			{
+				"ln":"McGill",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"data visualization",
+			"graphical perception"
+		],
+		"read":true
 	}
 ]
