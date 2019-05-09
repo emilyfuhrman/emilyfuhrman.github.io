@@ -51,5 +51,22 @@
 			"graphical perception"
 		],
 		"read":true
+	},
+	{
+		"path":"anscombe_1973_graphsInStatisticalAnalysis",
+		"date":1973,
+		"title":"Graphs in Statistical Analysis",
+		"authors":[
+			{
+				"ln":"Anscombe",
+				"fi":"F.J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"statistics"
+		],
+		"read":true
 	}
 ]
