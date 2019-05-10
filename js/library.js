@@ -19,7 +19,7 @@ var lib = function(){
 			},
 			{
 				"id":"read",
-				"label":"☑️"
+				"label":"🏁"
 			},
 			{
 				"id":"type",
