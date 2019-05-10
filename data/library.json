@@ -147,5 +147,27 @@
 			"bar charts"
 		],
 		"read":true
+	},
+	{
+		"path":"zacks-tversky_1999_barsAndLinesAStudyOfGraphicCommunication",
+		"date":1999,
+		"title":"Bars and Lines: A Study of Graphic Communication",
+		"authors":[
+			{
+				"ln":"Zacks",
+				"fi":"J."
+			},
+			{
+				"ln":"Tversky",
+				"fi":"B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts",
+			"line charts"
+		],
+		"read":true
 	}
 ]

@@ -10,6 +10,10 @@ var lib = function(){
 		data_list:[],
 		data_columns:[
 			{
+				"id":"cats",
+				"label":"🗂"
+			},
+			{
 				"id":"star",
 				"label":"&#9733;"
 			},
@@ -42,7 +46,8 @@ var lib = function(){
 			"data visualization": [
 					"bar charts",
 					"color",
-					"graphical perception"
+					"graphical perception",
+					"line charts"
 				],
 			"mapping":[
 					"critical cartography"
@@ -105,12 +110,23 @@ var lib = function(){
 			var self = this;
 			d3.json('/data/library.json',function(e,d){
 				if(!e){ 
-					self.data_list = d;
+					self.data_list = self.process_data(d);
 					self.generate_chassis();
 					self.generate_tags();
 					self.generate_list(); 
 				}
 			});
+		},
+
+		process_data:function(_data){
+			var self = this;
+			_data.forEach(function(d){
+				d.cats = {};
+				d3.keys(self.data_tags).forEach(function(_d,_i){
+					d.cats[_d] = d.tags.filter(function(__d){ return self.data_tags[_d].indexOf(__d) >-1; }).length / d.tags.length;
+				});
+			});
+			return _data;
 		},
 
 		generate_chassis:function(){
@@ -280,8 +296,16 @@ var lib = function(){
 				item
 					.html(function(_d){
 						var html;
+						var barW = 33;
 						if(d.id === 'star'){
 							html = _d.star ? "<span class='fill'>&#9733;</span>" : "&#9734;";
+						} else if(d.id === 'cats'){
+							var divConstructor = "<div class='databar'>";
+							d3.keys(self.data_tags).forEach(function(__d,__i){
+								var catW = _d.cats[__d]*barW;
+								divConstructor += "<div style='width:" +catW +"px;background:" +self.palette[__i] +"'></div>"
+							});
+							html = divConstructor +"</div>";
 						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){

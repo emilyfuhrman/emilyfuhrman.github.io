@@ -1309,6 +1309,20 @@ $log_padding_default:0.8rem;
 	color:#888;
 	}
 
+#library .row span.item_cats {
+	width:45px;
+	}
+#library .row span.item_cats .databar {
+	width:35px;
+	height:10px;
+	margin-top:0.5rem;
+	margin-top:calc(0.5rem - 5px);
+	border:1px solid #888;
+	}
+#library .row span.item_cats .databar div {
+	height:100%;
+	}
+
 #library .row span.item_read {
 	width:45px;
 	display:inline-block;
@@ -1321,7 +1335,7 @@ $log_padding_default:0.8rem;
 	}
 #library .row span.item_authors {
 	width:25%;
-	width:calc((100% - 195px - 10px) * 0.25);
+	width:calc((100% - 240px - 10px) * 0.25);
 	margin-right:10px;
 	}
 #library .row span.item_date {
@@ -1329,13 +1343,17 @@ $log_padding_default:0.8rem;
 	}
 #library .row span.item_title {
 	width:75%;
-	width:calc((100% - 195px - 10px) * 0.75);
+	width:calc((100% - 240px - 10px) * 0.75);
 	}
 
 #library .row.header {
 	color:#888;
 	font-weight:bold;
 	cursor:cell;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
 	}
 #library .row.header:hover {
 	background:transparent;
