@@ -36,10 +36,12 @@ var lib = function(){
 		],
 		data_tags:{
 			"biology": [
-					"birds",
-					"animal behavior"
+					"animal behavior",
+					"birds"
 				],
 			"data visualization": [
+					"bar charts",
+					"color",
 					"graphical perception"
 				],
 			"mapping":[

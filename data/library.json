@@ -101,5 +101,51 @@
 			"animal behavior"
 		],
 		"read":false
+	},
+	{
+		"path":"halsey-chapanis_1954_chromaticityConfusionContoursInAComplexViewingSituation",
+		"date":1954,
+		"title":"Chromaticity-Confusion Contours in a Complex Viewing Situation",
+		"authors":[
+			{
+				"ln":"Halsey",
+				"fi":"R.M."
+			},
+			{
+				"ln":"Chapanis",
+				"fi":"A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"color"
+		],
+		"read":false
+	},
+	{
+		"path":"fischer-dewulf-hill_2005_designingBarGraphsOrientationMatters",
+		"date":2005,
+		"title":"Designing Bar Graphs: Orientation Matters",
+		"authors":[
+			{
+				"ln":"Fischer",
+				"fi":"M.H."
+			},
+			{
+				"ln":"Dewulf",
+				"fi":"N."
+			},
+			{
+				"ln":"Hill",
+				"fi":"R.L."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts"
+		],
+		"read":true
 	}
 ]

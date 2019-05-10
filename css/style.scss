@@ -1282,7 +1282,7 @@ $log_padding_default:0.8rem;
 
 #library .row span.item_star {
 	color:#ddd;
-	width:4%;
+	width:45px;
 	display:inline-block;
 	vertical-align:middle;
 	}
@@ -1294,23 +1294,26 @@ $log_padding_default:0.8rem;
 	}
 
 #library .row span.item_read {
-	width:4%;
+	width:45px;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_type {
-	width:4%;
+	width:45px;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_authors {
-	width:20%;
+	width:25%;
+	width:calc((100% - 195px - 10px) * 0.25);
+	margin-right:10px;
 	}
 #library .row span.item_date {
-	width:10%;
+	width:60px;
 	}
 #library .row span.item_title {
-	width:58%;
+	width:75%;
+	width:calc((100% - 195px - 10px) * 0.75);
 	}
 
 #library .row.header {
