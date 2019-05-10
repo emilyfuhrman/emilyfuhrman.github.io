@@ -2,13 +2,17 @@ var lib = function(){
 
 	return {
 
-		focus:"authors",
+		focus:"read",
 		order:"desc",
 
 		palette:['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f'],
 
 		data_list:[],
 		data_columns:[
+			{
+				"id":"star",
+				"label":"&#9734;"
+			},
 			{
 				"id":"read",
 				"label":"☑️"
@@ -31,8 +35,15 @@ var lib = function(){
 			}
 		],
 		data_tags:{
+			"biology": [
+					"birds",
+					"animal behavior"
+				],
 			"data visualization": [
 					"graphical perception"
+				],
+			"mapping":[
+					"critical cartography"
 				],
 			"math": [
 					"statistics"
@@ -59,8 +70,8 @@ var lib = function(){
 		util_sortData:function(_data){
 			var self = this;
 			_data.sort(function(a,b){
-				var a_comp = self.focus === 'authors' ? a[self.focus][0].ln : a[self.focus],
-						b_comp = self.focus === 'authors' ? b[self.focus][0].ln : b[self.focus];
+				var a_comp = self.focus === 'authors' ? a[self.focus][0].ln : (a[self.focus] || null),
+						b_comp = self.focus === 'authors' ? b[self.focus][0].ln : (b[self.focus] || null);
 				if(a_comp == b_comp)
 					return 0;
 				if(a_comp <b_comp)
@@ -72,7 +83,20 @@ var lib = function(){
 		},
 
 		util_filterData:function(_data){
-
+			var self = this,
+					data;
+			data = _data.filter(function(d){
+				var keep = false;
+				if(self.active_tags.length === 0){
+					keep = true;
+				} else{
+					d.tags.forEach(function(_d){
+						if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
+					});
+				}
+				return keep;
+			});
+			return data;
 		},
 
 		get_data:function(){
@@ -211,17 +235,7 @@ var lib = function(){
 			var data = self.data_list;
 
 			data = self.util_sortData(data);
-			data = data.filter(function(d){
-				var keep = false;
-				if(self.active_tags.length === 0){
-					keep = true;
-				} else{
-					d.tags.forEach(function(_d){
-						if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
-					});
-				}
-				return keep;
-			});
+			data = self.util_filterData(data);
 
 			var items;
 			items = self.elem_library.selectAll('div.item')
@@ -243,14 +257,16 @@ var lib = function(){
 				item
 					.html(function(_d){
 						var html;
-						if(d.id === 'read'){
+						if(d.id === 'star'){
+							html = _d.star ? "<span class='fill'>&#9733;</span>" : "&#9734;";
+						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
 							html = _d.type === 'book' ? '📖' : '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
 									str = '';
-							_d.authors.forEach(function(__d,__i){ str +=(__d.ln +', ' +__d.fi +(len >1 && (__i+1) <len ? '; ' : '')); });
+							_d.authors.forEach(function(__d,__i){ str +=(__d.ln +(__d.fi ? (', ' +__d.fi) : '') +(len >1 && (__i+1) <len ? '; ' : '')); });
 							html = str;
 						} else if(d.id === 'date'){
 							html = '<pre>' +_d.date +'</pre>';

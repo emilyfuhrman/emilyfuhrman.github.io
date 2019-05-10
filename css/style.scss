@@ -1238,6 +1238,10 @@ $log_padding_default:0.8rem;
 #library .row {
 	width:100%;
 	}
+#library .row:hover {
+	background:$color_lg;
+	}
+
 #library .row span {
 	float:left;
 	overflow:hidden;
@@ -1257,32 +1261,44 @@ $log_padding_default:0.8rem;
 	border-color:#003090;
 	}
 
+#library .row span.item_star {
+	color:#ddd;
+	width:5%;
+	display:inline-block;
+	vertical-align:middle;
+	}
+#library .row span.item_star .fill {
+	color:$color_black;
+	}
+
 #library .row span.item_read {
-	width:50px;
+	width:5%;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_type {
-	width:50px;
+	width:5%;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_authors {
-	width:40%;
-	width:calc(40vw - 20px - 100px);
+	width:25%;
 	}
 #library .row span.item_date {
-	width:100px;
+	width:10%;
 	}
 #library .row span.item_title {
-	width:60%;
-	width:calc(60vw - 20px - 100px);
+	width:50%;
 	}
 
 #library .row.header {
 	font-weight:bold;
 	cursor:cell;
 	}
+#library .row.header:hover {
+	background:transparent;
+	}
+
 #library .row.header span:hover::after {
 	color:#ddd;
 	content:'⇂';

@@ -17,6 +17,7 @@
 		"read":false
 	},
 	{
+		"star":true,
 		"path":"cleveland-mcgill_1984_graphicalPerception",
 		"date":1984,
 		"title":"Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
@@ -68,5 +69,37 @@
 			"statistics"
 		],
 		"read":true
+	},
+	{
+		"path":"kollektiv_2018_thisIsNotAnAtlas",
+		"date":2018,
+		"title":"This is Not an Atlas",
+		"authors":[
+			{
+				"ln":"Kollektiv"
+			}
+		],
+		"type":"book",
+		"tags":[
+			"critical cartography"
+		],
+		"read":false
+	},
+	{
+		"path":"beecher_2016_birdsongLearningAsASocialProcess",
+		"date":2016,
+		"title":"Birdsong Learning as a Social Process",
+		"authors":[
+			{
+				"ln":"Beecher",
+				"fi":"M.D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"birds",
+			"animal behavior"
+		],
+		"read":false
 	}
 ]
