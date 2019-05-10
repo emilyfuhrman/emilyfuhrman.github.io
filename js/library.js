@@ -174,6 +174,15 @@ var lib = function(){
 				if(a.label >b.label)
 					return  1;
 			});
+			//sort by category
+			tagList.sort(function(a,b){
+				if(a.category == b.category)
+					return  0;
+				if(a.category <b.category)
+					return -1;
+				if(a.category >b.category)
+					return  1;
+			});
 
 			var cats,
 					tags;

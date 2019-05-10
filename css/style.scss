@@ -1242,6 +1242,9 @@ $log_padding_default:0.8rem;
 	font-weight:bold;
 	border:1px solid $color_black;
 	}
+#controls .library-tag {
+	border:1px solid #888;
+	}
 #controls .library-cat:hover,
 #controls .library-tag:hover {
 	background:#444 !important;
@@ -1249,8 +1252,17 @@ $log_padding_default:0.8rem;
 	}
 #controls .library-cat.active,
 #controls .library-tag.active {
+	color:white;
+	}
+#controls .library-cat.active {
 	background:$color_black !important;
 	color:white;
+	border-color:$color_black;
+	}
+#controls .library-tag.active {
+	background:#444 !important;
+	color:white;
+	border-color:#444;
 	}
 
 #library {
