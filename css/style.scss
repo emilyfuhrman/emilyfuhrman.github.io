@@ -1233,6 +1233,10 @@ $log_padding_default:0.8rem;
 	padding:4px;
 	border-radius:2px;
 	cursor:cell;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
 	}
 #controls .library-cat {
 	font-weight:bold;
@@ -1290,7 +1294,7 @@ $log_padding_default:0.8rem;
 	color:$color_black;
 	}
 #library .row.header span.item_star {
-	color:#666;
+	color:#888;
 	}
 
 #library .row span.item_read {
@@ -1317,7 +1321,7 @@ $log_padding_default:0.8rem;
 	}
 
 #library .row.header {
-	color:#666;
+	color:#888;
 	font-weight:bold;
 	cursor:cell;
 	}
@@ -1331,12 +1335,12 @@ $log_padding_default:0.8rem;
 	vertical-align:middle;
 	}
 #library .row.header span.focus.asc::after {
-	color:#666;
+	color:#888;
 	content:'↿';
 	vertical-align:middle;
 	}
 #library .row.header span.focus.desc::after {
-	color:#666;
+	color:#888;
 	content:'⇂';
 	vertical-align:middle;
 	}
