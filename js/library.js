@@ -46,6 +46,7 @@ var lib = function(){
 			"data visualization": [
 					"bar charts",
 					"color",
+					"dot charts",
 					"graphical perception",
 					"line charts"
 				],
@@ -76,16 +77,40 @@ var lib = function(){
 
 		util_sortData:function(_data){
 			var self = this;
-			_data.sort(function(a,b){
-				var a_comp = self.focus === 'authors' ? a[self.focus][0].ln : (a[self.focus] || null),
-						b_comp = self.focus === 'authors' ? b[self.focus][0].ln : (b[self.focus] || null);
-				if(a_comp == b_comp)
-					return 0;
-				if(a_comp <b_comp)
-					return self.order === 'asc' ?  1 : -1;
-				if(a_comp >b_comp)
-					return self.order === 'asc' ? -1 :  1;
-			});
+
+			function sorter(a,b){
+				if(a == b) return 0;
+				if(a <  b) return self.order === 'asc' ?  1 : -1;
+				if(a >  b) return self.order === 'asc' ? -1 :  1;
+			}
+
+			if(self.focus === 'authors'){
+				var iter = d3.max(_data,function(d){ return d[self.focus].length; });
+				var a_comp,
+						b_comp;
+				for(var i=(iter-1); i>-1; i--){
+					_data.sort(function(a,b){
+						a_comp = a[self.focus][i] ? a[self.focus][i].ln : 'A';
+						b_comp = b[self.focus][i] ? b[self.focus][i].ln : 'A';
+						return sorter(a_comp,b_comp);
+					});
+				}
+			} else if(self.focus === 'cats'){
+				for(var i=d3.keys(self.data_tags).length; i>-1; i--){
+					var k = d3.keys(self.data_tags)[i];
+					_data.sort(function(a,b){
+						a_comp = a[self.focus][k] || 0;
+						b_comp = b[self.focus][k] || 0;
+						return sorter(a_comp,b_comp);
+					});
+				};
+			} else{
+				_data.sort(function(a,b){
+					a_comp = a[self.focus] || null;
+					b_comp = b[self.focus] || null;
+					return sorter(a_comp,b_comp);
+				});
+			}
 			return _data;
 		},
 
