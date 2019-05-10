@@ -1205,7 +1205,24 @@ $log_padding_default:0.8rem;
 	}
 
 #controls .block.tags {
-	padding-top:10px;
+	padding:10px 0;
+	}
+
+#controls .block.xout span {
+	opacity:1;
+	visibility:visible;
+	color:$color_accent;
+	font-size:0.6rem;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:cell;
+	}
+#controls .block.xout span:hover {
+	color:#003090;
+	}
+#controls .block.xout span.hidden {
+	opacity:0;
+	visibility:hidden;
 	}
 
 #controls .library-cat,
@@ -1214,10 +1231,12 @@ $log_padding_default:0.8rem;
 	text-transform:uppercase;
 	margin:2px 2px 0 0;
 	padding:4px;
+	border-radius:2px;
 	cursor:cell;
 	}
 #controls .library-cat {
 	font-weight:bold;
+	border:1px solid $color_black;
 	}
 #controls .library-cat:hover,
 #controls .library-tag:hover {
@@ -1263,35 +1282,39 @@ $log_padding_default:0.8rem;
 
 #library .row span.item_star {
 	color:#ddd;
-	width:5%;
+	width:4%;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_star .fill {
 	color:$color_black;
 	}
+#library .row.header span.item_star {
+	color:#666;
+	}
 
 #library .row span.item_read {
-	width:5%;
+	width:4%;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_type {
-	width:5%;
+	width:4%;
 	display:inline-block;
 	vertical-align:middle;
 	}
 #library .row span.item_authors {
-	width:25%;
+	width:20%;
 	}
 #library .row span.item_date {
 	width:10%;
 	}
 #library .row span.item_title {
-	width:50%;
+	width:58%;
 	}
 
 #library .row.header {
+	color:#666;
 	font-weight:bold;
 	cursor:cell;
 	}

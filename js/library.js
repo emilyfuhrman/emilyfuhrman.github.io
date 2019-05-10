@@ -11,7 +11,7 @@ var lib = function(){
 		data_columns:[
 			{
 				"id":"star",
-				"label":"&#9734;"
+				"label":"&#9733;"
 			},
 			{
 				"id":"read",
@@ -177,6 +177,11 @@ var lib = function(){
 					tags;
 
 			function updateTags(){
+				if(self.active_tags.length >0){
+					d3.select('#btn_clear').classed('hidden',false);
+				} else{
+					d3.select('#btn_clear').classed('hidden',true);
+				}
 				cats.classed('active',function(d){
 					return self.active_cats.indexOf(d) >-1;
 				});
@@ -228,6 +233,13 @@ var lib = function(){
 					self.generate_list();
 				});
 			tags.exit().remove();
+
+			d3.select('#btn_clear').on('click',function(){
+				self.active_tags = [];
+				self.active_cats = [];
+				updateTags();
+				self.generate_list();
+			});
 		},
 
 		generate_list:function(){
