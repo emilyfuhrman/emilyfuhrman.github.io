@@ -186,5 +186,25 @@
 			"dot charts"
 		],
 		"read":true
+	},
+	{
+		"path":"cleveland-mcgill_1985_graphicalPerceptionAndGraphicalMethodsForAnalyzingScientificData",
+		"date":1985,
+		"title":"Graphical Perception and Graphical Methods for Analyzing Scientific Data",
+		"authors":[
+			{
+				"ln":"Cleveland",
+				"fi":"W.S."
+			},
+			{
+				"ln":"McGill",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception"
+		],
+		"read":true
 	}
 ]
