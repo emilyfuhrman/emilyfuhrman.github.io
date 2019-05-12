@@ -43,6 +43,9 @@ var lib = function(){
 					"animal behavior",
 					"birds"
 				],
+			"computer science": [
+					"algorithms"
+				],
 			"cybernetics": [
 					"information theory"
 				],
@@ -52,7 +55,8 @@ var lib = function(){
 					"dot charts",
 					"graphical perception",
 					"line charts",
-					"pie charts"
+					"pie charts",
+					"treemaps"
 				],
 			"mapping":[
 					"critical cartography"

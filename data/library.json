@@ -295,5 +295,115 @@
 			"bar charts"
 		],
 		"read":true
+	},
+	{
+		"path":"simkin-hastie_1987_anInformationProcessingAnalysisOfGraphPerception",
+		"date":1987,
+		"title":"An Information-Processing Analysis of Graph Perception",
+		"authors":[
+			{
+				"ln":"Simkin",
+				"fi":"D."
+			},
+			{
+				"ln":"Hastie",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts",
+			"pie charts"
+		],
+		"read":true
+	},
+	{
+		"path":"newman-scholl_2012_barGraphsDepictingAveragesArePerceptuallyMisinterpretedTheWithinTheBarBias",
+		"date":2012,
+		"title":"Bar Graphs Depicting Averages are Perceptually Misinterpreted: The Within-the-Bar Bias",
+		"authors":[
+			{
+				"ln":"Newman",
+				"fi":"G.E."
+			},
+			{
+				"ln":"Scholl",
+				"fi":"B.J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts"
+		],
+		"read":true
+	},
+	{
+		"path":"kong-heer-agrawala_2010_perceptualGuidelinesForCreatingRectangularTreemaps",
+		"date":2010,
+		"title":"Perceptual Guidelines for Creating Rectangular Treemaps",
+		"authors":[
+			{
+				"ln":"Kong",
+				"fi":"N."
+			},
+			{
+				"ln":"Heer",
+				"fi":"J."
+			},
+			{
+				"ln":"Agrawala",
+				"fi":"M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"treemaps"
+		],
+		"read":true
+	},
+	{
+		"path":"mackinlay_1986_automatingTheDesignOfGraphicalPresentationsOfRelationalInformation",
+		"date":1986,
+		"title":"Automating the Design of Graphical Presentations of Relational Information",
+		"authors":[
+			{
+				"ln":"Mackinlay",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"algorithms"
+		],
+		"read":true
+	},
+	{
+		"path":"skau-harrison-kosara_2015_anEvaluationOfTheImpactOfVisualEmbellishmentsInBarCharts",
+		"date":2015,
+		"title":"An Evaluation of the Impact of Visual Embellishments in Bar Charts",
+		"authors":[
+			{
+				"ln":"Skau",
+				"fi":"D."
+			},
+			{
+				"ln":"Harrison",
+				"fi":"L."
+			},
+			{
+				"ln":"Kosara",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts"
+		],
+		"read":true
 	}
 ]
