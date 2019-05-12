@@ -206,5 +206,94 @@
 			"graphical perception"
 		],
 		"read":true
+	},
+	{
+		"path":"miller_1956_theMagicalNumberSevenPlusOrMinusTwo",
+		"date":1956,
+		"title":"The Magical Number Seven, Plus or Minus Two",
+		"authors":[
+			{
+				"ln":"Miller",
+				"fi":"G.A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"information theory",
+			"graphical perception"
+		],
+		"read":false
+	},
+	{
+		"path":"eells_1926_theRelativeMeritsOfCirclesAndBarsForRepresentingComponentParts",
+		"date":1926,
+		"title":"The Relative Merits of Circles and Bars for Representing Component Parts",
+		"authors":[
+			{
+				"ln":"Eells",
+				"fi":"W.C."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts",
+			"pie charts"
+		],
+		"read":true
+	},
+	{
+		"path":"zacks-levy-tversky-schiano_1998_readingBarGraphsEffectsOfExtraneousDepthCuesAndGraphicalContext",
+		"date":1998,
+		"title":"Reading Bar Graphs: Effects of Extraneous Depth Cues and Graphical Context",
+		"authors":[
+			{
+				"ln":"Zacks",
+				"fi":"J."
+			},
+			{
+				"ln":"Tversky",
+				"fi":"B."
+			},
+			{
+				"ln":"Levy",
+				"fi":"E."
+			},
+			{
+				"ln":"Schiano",
+				"fi":"D.J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts"
+		],
+		"read":true
+	},
+	{
+		"path":"talbot-setlur-anand_2014_fourExperimentsOnThePerceptionOfBarCharts",
+		"date":2014,
+		"title":"Four Experiments on the Perception of Bar Charts",
+		"authors":[
+			{
+				"ln":"Talbot",
+				"fi":"J."
+			},
+			{
+				"ln":"Setlur",
+				"fi":"V."
+			},
+			{
+				"ln":"Anand",
+				"fi":"A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"bar charts"
+		],
+		"read":true
 	}
 ]

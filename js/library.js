@@ -43,12 +43,16 @@ var lib = function(){
 					"animal behavior",
 					"birds"
 				],
+			"cybernetics": [
+					"information theory"
+				],
 			"data visualization": [
 					"bar charts",
 					"color",
 					"dot charts",
 					"graphical perception",
-					"line charts"
+					"line charts",
+					"pie charts"
 				],
 			"mapping":[
 					"critical cartography"
