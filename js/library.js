@@ -58,6 +58,9 @@ var lib = function(){
 					"pie charts",
 					"treemaps"
 				],
+			"form": [
+					"isomorphism"
+				],
 			"mapping":[
 					"critical cartography"
 				],
@@ -65,7 +68,8 @@ var lib = function(){
 					"statistics"
 				],
 			"philosophy": [
-					"aesthetics"
+					"aesthetics",
+					"perception"
 				]
 		},
 

@@ -405,5 +405,26 @@
 			"bar charts"
 		],
 		"read":true
+	},
+	{
+		"path":"shepard-chipman_1970_secondOrderIsomorphismOfInternalRepresentations.pdf",
+		"date":1970,
+		"title":"Second-Order Isomorphism of Internal Representations: Shapes of States",
+		"authors":[
+			{
+				"ln":"Shepard",
+				"fi":"R."
+			},
+			{
+				"ln":"Chipman",
+				"fi":"S."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"isomorphism",
+			"bar charts"
+		],
+		"read":true
 	}
 ]
