@@ -69,7 +69,7 @@ var lib = function(){
 				],
 			"philosophy": [
 					"aesthetics",
-					"perception"
+					"intentionality"
 				]
 		},
 
