@@ -466,6 +466,6 @@
 			"god-trick",
 			"panopticon"
 		],
-		"read":false
+		"read":true
 	}
 ]
