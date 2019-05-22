@@ -440,8 +440,27 @@
 		"type":"article",
 		"tags":[
 			"visionary architecture",
-			"architecture and utopia"
+			"utopian architecture",
+			"history of utopia"
 		],
 		"read":true
+	},
+	{
+		"path":"marin_1993_frontiersOfUtopia",
+		"date":1993,
+		"title":"Frontiers of Utopia: Past and Present",
+		"authors":[
+			{
+				"ln":"Marin",
+				"fi":"L."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"visionary architecture",
+			"utopian architecture",
+			"history of utopia"
+		],
+		"read":false
 	}
 ]
