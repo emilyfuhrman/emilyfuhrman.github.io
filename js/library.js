@@ -73,7 +73,7 @@ var lib = function(){
 			"math": [
 					"statistics"
 				],
-			"perspective": [
+			"scopic": [
 					"distance",
 					"god-trick",
 					"panopticon"
