@@ -42,10 +42,9 @@ var lib = function(){
 			"architecture":[
 				"visionary architecture"
 			],
-			"biology": [
-					"animal behavior",
-					"birds"
-				],
+			"birds": [
+				"behavior"
+			],
 			"computer science": [
 					"algorithms"
 				],
