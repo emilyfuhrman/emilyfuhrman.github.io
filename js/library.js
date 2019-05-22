@@ -62,6 +62,7 @@ var lib = function(){
 					"treemaps"
 				],
 			"forms": [
+					"god-trick",
 					"grid",
 					"isomorphism"
 				],
