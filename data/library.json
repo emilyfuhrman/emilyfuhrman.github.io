@@ -446,6 +446,7 @@
 		"read":true
 	},
 	{
+		"star":true,
 		"path":"marin_1993_frontiersOfUtopia",
 		"date":1993,
 		"title":"Frontiers of Utopia: Past and Present",
@@ -458,10 +459,12 @@
 		"type":"article",
 		"tags":[
 			"visionary architecture",
-			"utopian architecture",
 			"history of utopia",
 			"grid",
-			"god-trick"
+			"line",
+			"horizon",
+			"god-trick",
+			"panopticon"
 		],
 		"read":false
 	}

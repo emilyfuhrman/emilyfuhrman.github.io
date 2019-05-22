@@ -62,15 +62,20 @@ var lib = function(){
 					"treemaps"
 				],
 			"forms": [
-					"god-trick",
 					"grid",
-					"isomorphism"
+					"horizon",
+					"isomorphism",
+					"line"
 				],
 			"mapping":[
 					"critical cartography"
 				],
 			"math": [
 					"statistics"
+				],
+			"perspective": [
+					"god-trick",
+					"panopticon"
 				],
 			"philosophy": [
 					"aesthetics",
