@@ -65,7 +65,8 @@ var lib = function(){
 					"grid",
 					"horizon",
 					"isomorphism",
-					"line"
+					"line",
+					"point"
 				],
 			"mapping":[
 					"critical cartography"
@@ -74,6 +75,7 @@ var lib = function(){
 					"statistics"
 				],
 			"perspective": [
+					"distance",
 					"god-trick",
 					"panopticon"
 				],
@@ -360,7 +362,7 @@ var lib = function(){
 						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
-							html = _d.type === 'book' ? '📖' : '📄';
+							html = _d.type === 'book' ? '📖' : _d.type === 'chapter' ? '🔖' : '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
 									str = '';

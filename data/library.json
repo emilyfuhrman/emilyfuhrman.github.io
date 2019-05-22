@@ -466,5 +466,22 @@
 			"panopticon"
 		],
 		"read":true
+	},
+	{
+		"path":"schivelbusch_2014_railroadSpaceAndRailroadTime",
+		"date":2014,
+		"title":"3. Railroad Space and Railroad Time <i>(The Railway Journey: The Industrialization of Time and Space in the Nineteenth Century)</i>",
+		"authors":[
+			{
+				"ln":"Schivelbusch",
+				"fi":"W."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"distance",
+			"point"
+		],
+		"read":true
 	}
 ]
