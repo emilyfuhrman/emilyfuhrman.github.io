@@ -426,5 +426,22 @@
 			"intentionality"
 		],
 		"read":true
+	},
+	{
+		"path":"picon_2013_learningFromUtopia",
+		"date":2013,
+		"title":"Learning From Utopia: Contemporary Architecture and the Quest for Political and Social Relevance",
+		"authors":[
+			{
+				"ln":"Picon",
+				"fi":"A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"visionary architecture",
+			"architecture of utopia"
+		],
+		"read":true
 	}
 ]
