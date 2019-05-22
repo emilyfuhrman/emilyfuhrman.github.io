@@ -1291,11 +1291,10 @@ $log_padding_default:0.8rem;
 	}
 #library .row a {
 	color:$color_accent;
-	border-color:$color_accent;
+	border:none;
 	}
 #library .row a:hover {
 	color:#003090;
-	border-color:#003090;
 	}
 
 #library .row span.item_star {
