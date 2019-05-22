@@ -83,7 +83,6 @@ var lib = function(){
 					"intentionality"
 				],
 				"utopia":[
-					"utopian architecture",
 					"history of utopia"
 				]
 		},
