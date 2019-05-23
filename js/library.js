@@ -367,7 +367,7 @@ var lib = function(){
 							_d.authors.forEach(function(__d,__i){ str +=(__d.ln +(__d.fi ? (', ' +__d.fi) : '') +(len >1 && (__i+1) <len ? '; ' : '')); });
 							html = str;
 						} else if(d.id === 'date'){
-							html = '<pre>' +_d.date +'</pre>';
+							html = _d.date;
 						} else if(d.id === 'title'){
 							html = "<a href='/documents/" +_d.path +".pdf' target='_blank'>" +_d.title +"</a>";
 						} else{
