@@ -1184,10 +1184,12 @@ $log_padding_default:0.8rem;
 		LIBRARY
    	==================================== */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
 .library.container#main {
-	font-family:'Courier';
-	font-size:0.75rem;
-	line-height:1rem;
+	font-family:'Roboto Mono','Courier';
+	font-size:0.6rem;
+	line-height:0.9rem;
 	width:100%;
 	margin:0;
 	padding:0;
@@ -1229,7 +1231,7 @@ $log_padding_default:0.8rem;
 
 #controls .library-cat,
 #controls .library-tag {
-	font-size:0.6rem;
+	font-size:0.45rem;
 	text-transform:uppercase;
 	margin:2px 2px 0 0;
 	padding:4px;
@@ -1242,7 +1244,7 @@ $log_padding_default:0.8rem;
 	}
 #controls .library-cat {
 	font-weight:bold;
-	border:1px solid $color_black;
+	border:2px solid $color_black;
 	}
 #controls .library-tag {
 	border:1px solid #888;
@@ -1302,6 +1304,7 @@ $log_padding_default:0.8rem;
 	width:45px;
 	display:inline-block;
 	vertical-align:middle;
+	margin-top:-1px;
 	}
 #library .row span.item_star .fill {
 	color:$color_black;
@@ -1316,8 +1319,8 @@ $log_padding_default:0.8rem;
 #library .row span.item_cats .databar {
 	width:35px;
 	height:10px;
-	margin-top:0.5rem;
-	margin-top:calc(0.5rem - 5px);
+	margin-top:0.45rem;
+	margin-top:calc(0.45rem - 5px);
 	border:1px solid #888;
 	}
 #library .row span.item_cats .databar div {
