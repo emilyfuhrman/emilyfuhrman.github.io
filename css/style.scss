@@ -1272,6 +1272,7 @@ $log_padding_default:0.8rem;
 #library {
 	width:100%;
 	padding:20px;
+	border-top:1px solid $color_lg;
 	}
 
 #library .row {
@@ -1352,6 +1353,7 @@ $log_padding_default:0.8rem;
 
 #library .row.header {
 	font-weight:bold;
+	padding:20px 0;
 	cursor:cell;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -1365,17 +1367,17 @@ $log_padding_default:0.8rem;
 #library .row.header span:hover::after {
 	color:#ddd;
 	content:'⇂';
-	vertical-align:middle;
+	vertical-align:top;
 	}
 #library .row.header span.focus.asc::after {
 	color:#888;
 	content:'↿';
-	vertical-align:middle;
+	vertical-align:top;
 	}
 #library .row.header span.focus.desc::after {
 	color:#888;
 	content:'⇂';
-	vertical-align:middle;
+	vertical-align:top;
 	}
 
 /* 	------------------------------------
