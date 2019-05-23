@@ -1202,7 +1202,7 @@ $log_padding_default:0.8rem;
 
 #controls {
 	width:100%;
-	padding:40px 20px 0;
+	padding:20px;
 	}
 #controls .block {
 	width:100%;
@@ -1213,10 +1213,11 @@ $log_padding_default:0.8rem;
 	}
 
 #controls .block.xout span {
+	float:left;
 	opacity:1;
 	visibility:visible;
 	color:$color_accent;
-	font-size:0.6rem;
+	font-size:0.45rem;
 	font-weight:bold;
 	text-transform:uppercase;
 	cursor:cell;
