@@ -40,11 +40,13 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
+				"city planning",
 				"urbanism",
 				"visionary architecture"
 			],
 			"art":[
-				"avant-garde"
+				"avant-garde",
+				"modernism"
 			],
 			"birds": [
 				"behavior"
@@ -87,7 +89,8 @@ var lib = function(){
 					"intentionality"
 				],
 				"utopia":[
-					"history of utopia"
+					"history of utopia",
+					"utopianism"
 				]
 		},
 

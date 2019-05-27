@@ -496,10 +496,30 @@
 		"type":"book",
 		"tags":[
 			"urbanism",
+			"city planning",
 			"visionary architecture",
 			"avant-garde",
 			"history of utopia"
 		],
 		"read":false
+	},
+	{
+		"path":"stierli_2013_buildingNoPlace",
+		"date":2013,
+		"title":"Building No Place: Oscar Niemeyer and the Utopias of Brasilia",
+		"authors":[
+			{
+				"ln":"Stierli",
+				"fi":"M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"modernism",
+			"city planning",
+			"utopianism",
+			"visionary architecture"
+		],
+		"read":true
 	}
 ]
