@@ -482,5 +482,22 @@
 			"point"
 		],
 		"read":true
+	},
+	{
+		"path":"tafuri_1976_architectureAndUtopiaDesignAndCapitalistDevelopment",
+		"date":1976,
+		"title":"Architecture and Utopia Design and Capitalist Development",
+		"authors":[
+			{
+				"ln":"Tafuri",
+				"fi":"M."
+			}
+		],
+		"type":"book",
+		"tags":[
+			"urban planning",
+			"avante-garde"
+		],
+		"read":false
 	}
 ]
