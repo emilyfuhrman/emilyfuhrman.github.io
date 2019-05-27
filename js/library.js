@@ -40,7 +40,7 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
-				"urban planning",
+				"urbanism",
 				"visionary architecture"
 			],
 			"art":[
