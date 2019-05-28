@@ -521,5 +521,21 @@
 			"visionary architecture"
 		],
 		"read":true
+	},
+	{
+		"path":"wittman_2010_spaceNetworksAndTheSaintSimonians",
+		"date":2010,
+		"title":"Space, Networks, and the Saint-Simonians",
+		"authors":[
+			{
+				"ln":"Wittman",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"utopianism"
+		],
+		"read":false
 	}
 ]
