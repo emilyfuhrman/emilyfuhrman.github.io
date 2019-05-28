@@ -71,6 +71,7 @@ var lib = function(){
 					"horizon",
 					"isomorphism",
 					"line",
+					"network",
 					"point"
 				],
 			"mapping":[
