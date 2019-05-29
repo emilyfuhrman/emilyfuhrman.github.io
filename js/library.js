@@ -61,6 +61,7 @@ var lib = function(){
 					"bar charts",
 					"color",
 					"dot charts",
+					"dotplot",
 					"graphical perception",
 					"line charts",
 					"pie charts",

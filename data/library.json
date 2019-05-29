@@ -538,5 +538,21 @@
 			"network"
 		],
 		"read":true
+	},
+	{
+		"path":"helfman_1996_dotplotPatternsALiteralLookAtPatternLanguages",
+		"date":1996,
+		"title":"Dotplot Patterns: A Literal Look at Pattern Languages",
+		"authors":[
+			{
+				"ln":"Helfman",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"dotplot"
+		],
+		"read":true
 	}
 ]
