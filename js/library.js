@@ -67,7 +67,7 @@ var lib = function(){
 					"pie charts",
 					"treemaps"
 				],
-			"forms": [
+			"forms": [ 
 					"grid",
 					"horizon",
 					"isomorphism",
