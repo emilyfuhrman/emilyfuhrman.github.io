@@ -378,7 +378,7 @@ var lib = function(){
 						} else if(d.id === 'date'){
 							html = _d.date;
 						} else if(d.id === 'title'){
-							html = "<a href='/documents/" +_d.path +".pdf' target='_blank'>" +_d.title +"</a>";
+							html = "<a href='/library/" +_d.path +".pdf' target='_blank'>" +_d.title +"</a>";
 						} else{
 							html = '';
 						}
