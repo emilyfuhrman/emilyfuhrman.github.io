@@ -588,6 +588,22 @@
 			"grid",
 			"architectural praxis"
 		],
+		"read":true
+	},
+	{
+		"path":"krauss_1979_grids",
+		"date":1979,
+		"title":"Grids",
+		"authors":[
+			{
+				"ln":"Krauss",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"grid"
+		],
 		"read":false
 	}
 ]
