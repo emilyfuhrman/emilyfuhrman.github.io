@@ -49,7 +49,7 @@ var lib = function(){
 				"modernism"
 			],
 			"birds": [
-				"behavior"
+				"bird behavior"
 			],
 			"computer science": [
 					"algorithms"
