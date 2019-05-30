@@ -556,5 +556,21 @@
 			"dotplots"
 		],
 		"read":true
+	},
+	{
+		"path":"latour_1986_visualisationAndCognition",
+		"date":1986,
+		"title":"Visualisation and Cognition: Drawing Things Together",
+		"authors":[
+			{
+				"ln":"Latour",
+				"fi":"B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception"
+		],
+		"read":false
 	}
 ]
