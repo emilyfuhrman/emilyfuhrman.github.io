@@ -609,14 +609,14 @@
 	{
 		"path":"krauss_1996_theGridTheCloudAndTheDetail",
 		"date":1996,
-		"title":"8. The Grid, The /Cloud/, and the Detail <i>(The Presence of Mies)</i>",
+		"title":"The Grid, The /Cloud/, and the Detail",
 		"authors":[
 			{
 				"ln":"Krauss",
 				"fi":"R."
 			}
 		],
-		"type":"chapter",
+		"type":"article",
 		"tags":[
 			"grid"
 		],
