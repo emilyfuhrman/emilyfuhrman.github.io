@@ -605,5 +605,21 @@
 			"grid"
 		],
 		"read":false
+	},
+	{
+		"path":"krauss_1996_theGridTheCloudAndTheDetail",
+		"date":1996,
+		"title":"The Grid, The /Cloud/, and the Detail",
+		"authors":[
+			{
+				"ln":"Krauss",
+				"fi":"R."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"grid"
+		],
+		"read":false
 	}
 ]
