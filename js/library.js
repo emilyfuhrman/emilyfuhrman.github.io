@@ -40,6 +40,7 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
+				"architectural praxis",
 				"city planning",
 				"urbanism",
 				"visionary architecture"

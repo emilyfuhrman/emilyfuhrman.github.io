@@ -572,5 +572,22 @@
 			"graphical perception"
 		],
 		"read":false
+	},
+	{
+		"path":"collins_1962_theOriginsOfGraphPaperAsAnInfluenceOnArchitecturalDesign",
+		"date":1962,
+		"title":"The Origins of Graph Paper as an Influence on Architectural Design",
+		"authors":[
+			{
+				"ln":"Collins",
+				"fi":"P."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"grid",
+			"architectural praxis"
+		],
+		"read":false
 	}
 ]
