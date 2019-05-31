@@ -40,6 +40,7 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
+				"architect: mies van der rohe",
 				"architectural praxis",
 				"city planning",
 				"urbanism",
@@ -47,6 +48,7 @@ var lib = function(){
 			],
 			"art":[
 				"avant-garde",
+				"minimalism",
 				"modernism"
 			],
 			"birds": [
