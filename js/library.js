@@ -3,7 +3,7 @@ var lib = function(){
 	return {
 
 		focus:"cats",
-		order:"desc",
+		order:"asc",
 
 		palette:['#8dd3c7','#fb8072','#bebada','#80b1d3','#fdb462','#ffffb3','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f'],
 
@@ -93,7 +93,7 @@ var lib = function(){
 					"aesthetics",
 					"intentionality"
 				],
-			"-scopic": [
+			"scopic": [
 					"distance",
 					"god-trick",
 					"panopticon",
