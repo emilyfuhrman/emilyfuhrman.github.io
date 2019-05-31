@@ -631,5 +631,21 @@
 			"god-trick"
 		],
 		"read":true
+	},
+	{
+		"path":"siegert_2015_notInPlaceTheGridOrCulturalTechniquesOfRulingSpaces",
+		"date":2015,
+		"title":"6. Not in Place: The Grid, or, Cultural Techniques of Ruling Spaces <i>Cultural Techniques: Grids, Filters, Doors, and Other Articulations of the Real</i>",
+		"authors":[
+			{
+				"ln":"Siegert",
+				"fi":"B."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"grid"
+		],
+		"read":false
 	}
 ]
