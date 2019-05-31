@@ -603,9 +603,12 @@
 		],
 		"type":"article",
 		"tags":[
-			"grid"
+			"grid",
+			"modernism",
+			"✢ agnes martin",
+			"✢ sol lewitt"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"krauss_1996_theGridTheCloudAndTheDetail",

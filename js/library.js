@@ -40,17 +40,18 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
-				"✢ mies van der rohe",
 				"architectural praxis",
 				"city planning",
 				"urbanism",
-				"visionary architecture"
+				"visionary architecture",
+				"✢ mies van der rohe"
 			],
 			"art":[
-				"✢ agnes martin",
 				"avant-garde",
 				"minimalism",
-				"modernism"
+				"modernism",
+				"✢ agnes martin",
+				"✢ sol lewitt"
 			],
 			"birds": [
 				"bird behavior"
