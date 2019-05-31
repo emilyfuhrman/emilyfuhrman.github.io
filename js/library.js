@@ -93,7 +93,7 @@ var lib = function(){
 					"aesthetics",
 					"intentionality"
 				],
-			"scopic": [
+			"-scopic": [
 					"distance",
 					"god-trick",
 					"panopticon",
