@@ -221,7 +221,7 @@
 			"information theory",
 			"graphical perception"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"eells_1926_theRelativeMeritsOfCirclesAndBarsForRepresentingComponentParts",
