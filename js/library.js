@@ -40,13 +40,14 @@ var lib = function(){
 		],
 		data_tags:{
 			"architecture":[
-				"architect: mies van der rohe",
+				"✢ mies van der rohe",
 				"architectural praxis",
 				"city planning",
 				"urbanism",
 				"visionary architecture"
 			],
 			"art":[
+				"✢ agnes martin",
 				"avant-garde",
 				"minimalism",
 				"modernism"
