@@ -440,7 +440,7 @@
 		"type":"article",
 		"tags":[
 			"visionary architecture",
-			"history of utopia"
+			"utopia"
 		],
 		"read":true
 	},
@@ -457,7 +457,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"history of utopia",
+			"utopia",
 			"grid",
 			"line",
 			"distance",
@@ -500,7 +500,7 @@
 			"city planning",
 			"visionary architecture",
 			"avant-garde",
-			"history of utopia"
+			"utopia"
 		],
 		"read":false
 	},
@@ -518,7 +518,7 @@
 		"tags":[
 			"modernism",
 			"city planning",
-			"utopianism",
+			"utopia",
 			"visionary architecture"
 		],
 		"read":true
@@ -535,7 +535,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"utopianism",
+			"utopia",
 			"network",
 			"distance"
 		],
@@ -622,8 +622,11 @@
 			"✢ mies van der rohe",
 			"✢ agnes martin",
 			"minimalism",
-			"grid"
+			"grid",
+			"semiotics",
+			"subject/object",
+			"god-trick"
 		],
-		"read":false
+		"read":true
 	}
 ]

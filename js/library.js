@@ -79,24 +79,25 @@ var lib = function(){
 					"network",
 					"point"
 				],
+				"literary theory":[
+					"semiotics"
+				],
 			"mapping":[
 					"critical cartography"
 				],
 			"math": [
 					"statistics"
 				],
-			"scopic": [
-					"distance",
-					"god-trick",
-					"panopticon"
-				],
 			"philosophy": [
 					"aesthetics",
 					"intentionality"
 				],
-				"utopia":[
-					"history of utopia",
-					"utopianism"
+			"scopic": [
+					"distance",
+					"god-trick",
+					"panopticon",
+					"subject/object",
+					"utopia"
 				]
 		},
 
