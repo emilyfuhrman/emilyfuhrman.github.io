@@ -681,5 +681,22 @@
 			"musicology"
 		],
 		"read":false
+	},
+	{
+		"path":"haines_2008_theOriginsOfTheMusicalStaff",
+		"date":2008,
+		"title":"The Origins of the Musical Staff",
+		"authors":[
+			{
+				"ln":"Haines",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"notation",
+			"musicology"
+		],
+		"read":false
 	}
 ]
