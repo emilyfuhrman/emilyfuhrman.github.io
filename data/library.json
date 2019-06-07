@@ -664,5 +664,22 @@
 			"musicology"
 		],
 		"read":false
+	},
+	{
+		"path":"berger_1988_theOriginAndEarlyHistoryOfProportionSigns",
+		"date":1988,
+		"title":"The Origin and Early History of Proportion Signs",
+		"authors":[
+			{
+				"ln":"Berger",
+				"fi":"A.M.B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"notation",
+			"musicology"
+		],
+		"read":false
 	}
 ]
