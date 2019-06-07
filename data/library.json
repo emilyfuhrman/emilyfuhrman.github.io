@@ -12,7 +12,8 @@
 		],
 		"type":"book",
 		"tags":[
-			"aesthetics"
+			"aesthetics",
+			"notation"
 		],
 		"read":false
 	},
@@ -663,7 +664,7 @@
 			"notation",
 			"musicology"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"berger_1988_theOriginAndEarlyHistoryOfProportionSigns",
