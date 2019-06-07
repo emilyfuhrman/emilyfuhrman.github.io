@@ -67,6 +67,7 @@ var lib = function(){
 					"dotplots",
 					"graphical perception",
 					"line charts",
+					"notation",
 					"pie charts",
 					"treemaps"
 				],
@@ -86,6 +87,9 @@ var lib = function(){
 				],
 			"math": [
 					"statistics"
+				],
+			"music": [
+					"musicology"
 				],
 			"philosophy": [
 					"aesthetics",

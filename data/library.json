@@ -647,5 +647,22 @@
 			"grid"
 		],
 		"read":false
+	},
+	{
+		"path":"bent_1996_theEarlyUseOfTheSignØ",
+		"date":1996,
+		"title":"The Early Use of the Sign Ø",
+		"authors":[
+			{
+				"ln":"Bent",
+				"fi":"M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"notation",
+			"musicology"
+		],
+		"read":false
 	}
 ]
