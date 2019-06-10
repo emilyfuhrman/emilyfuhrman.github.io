@@ -647,7 +647,7 @@
 		"tags":[
 			"grid"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"bent_1996_theEarlyUseOfTheSignØ",
