@@ -84,7 +84,6 @@ var lib = function(){
 				],
 			"mapping":[
 					"critical cartography",
-					"GIS",
 					"projections"
 				],
 			"math": [
