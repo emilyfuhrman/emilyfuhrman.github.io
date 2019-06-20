@@ -1180,6 +1180,21 @@ $log_padding_default:0.8rem;
 	overflow:hidden;
 	}
 
+#profile_img {
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	}
+#profile_img img {
+	display:block;
+	width:50%;
+	width:calc(100% / 2);
+	max-width:800px;
+	height:auto;
+	margin:0 auto;
+	padding:calc(#{$log_padding_default} * 3) 0;
+	}
+
 /* 	====================================
 		LIBRARY
    	==================================== */
