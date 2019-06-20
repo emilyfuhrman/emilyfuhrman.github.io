@@ -66,6 +66,18 @@
 		{% endif %}
 	{% endfor %}
 	</div>
+{% elsif page.tag %}
+	{% assign tag_string = page.tag %}
+	<div class='page_label'><span class='i'>Tagged:</span>&nbsp;<span class='tag_string'>{{ tag_string }}</span></div>
+	<div class='panel_images'>
+	{% for post in site.log reversed %}
+		{% for item in post.metadata %}
+			{% if item.tags contains tag_string %}
+				{% include post_log_swatch.html %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</div>
 {% else %}
 	<div class='page_label'>All Entries</div>
 	<div class='panel_images'>

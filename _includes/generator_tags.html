@@ -3,24 +3,27 @@
     {% for city in data_object.cities %}
       {% if city == "NYC" %}
         {% capture archive_link %}{{ city | downcase | replace: ' ', '-' }}{% endcapture %}
-        <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ city }}</a></span>
+        <span class='album_page_tag'><a href='/log/city/{{ archive_link }}'>{{ city }}</a></span>
       {% endif %}
     {% endfor %}
     {% for region in data_object.regions %}
       {% capture archive_link %}{{ region | downcase | replace: ' ', '-' }}{% endcapture %}
-      <span class='album_page_tag'><a href='/log/archive/{{ archive_link }}'>{{ region }}</a></span>
+      <span class='album_page_tag'><a href='/log/region/{{ archive_link }}'>{{ region }}</a></span>
+    {% endfor %}
+    {% for tag in data_object.tags %}
+      <span class='album_page_tag'><a href='/log/tagged/{{ tag }}'>{{ tag }}</a></span>
     {% endfor %}
   {% endfor %}
   {% if page.metadata[1].type != null %}
     {% assign type = page.metadata[1].type %}
     <span class='album_page_tag'>
-      <a href='/log/{{ type }}s'>{{ type }}</a>
+      <a href='/log/places/{{ type }}s'>{{ type }}</a>
     </span>
   {% endif %}
   {% if page.metadata[1].arts != null %}
     {% assign arts = page.metadata[1].arts %}
     <span class='album_page_tag'>
-      <a href='/log/{{ arts }}'>{{ arts }}</a>
+      <a href='/log/culture/{{ arts }}'>{{ arts }}</a>
     </span>
   {% endif %}
   <span class='album_page_tag'>

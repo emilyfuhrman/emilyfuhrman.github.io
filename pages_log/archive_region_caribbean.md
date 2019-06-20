@@ -3,7 +3,7 @@ layout: page_archive_log
 title: "EF Log"
 category: log
 description: A location-specific personal log.
-permalink: /log/archive/caribbean
+permalink: /log/region/caribbean
 region: Caribbean
 loading_animation: true
 sitemap:
