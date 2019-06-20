@@ -83,9 +83,12 @@ var lib = function(){
 					"semiotics"
 				],
 			"mapping":[
-					"critical cartography"
+					"critical cartography",
+					"GIS",
+					"projections"
 				],
 			"math": [
+					"geometry",
 					"statistics"
 				],
 			"music": [

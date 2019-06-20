@@ -699,5 +699,23 @@
 			"musicology"
 		],
 		"read":false
+	},
+	{
+		"path":"vanWijk_2008_unfoldingTheEarthMyriahedralProjections",
+		"date":2008,
+		"title":"Unfolding the Earth: Myriahedral Projections",
+		"authors":[
+			{
+				"ln":"van Wijk",
+				"fi":"J.J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"GIS",
+			"projections",
+			"geometry"
+		],
+		"read":false
 	}
 ]
