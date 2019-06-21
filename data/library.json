@@ -717,6 +717,6 @@
 			"grid",
 			"point"
 		],
-		"read":false
+		"read":true
 	}
 ]
