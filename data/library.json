@@ -713,7 +713,9 @@
 		"type":"article",
 		"tags":[
 			"projections",
-			"geometry"
+			"geometry",
+			"grid",
+			"point"
 		],
 		"read":false
 	}
