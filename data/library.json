@@ -682,7 +682,7 @@
 			"notation",
 			"musicology"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"vanWijk_2008_unfoldingTheEarthMyriahedralProjections",
