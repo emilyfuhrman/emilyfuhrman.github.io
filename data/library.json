@@ -100,7 +100,7 @@
 		"tags":[
 			"bird behavior"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"halsey-chapanis_1954_chromaticityConfusionContoursInAComplexViewingSituation",
