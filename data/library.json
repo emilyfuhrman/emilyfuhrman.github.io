@@ -718,5 +718,22 @@
 			"index"
 		],
 		"read":false
+	},
+	{
+		"path":"pinto_1976_originsAndDevelopmentOfTheIchnographicCityPlan",
+		"date":1976,
+		"title":"Origins and Development of the Ichnographic City Plan",
+		"authors":[
+			{
+				"ln":"Pinto",
+				"fi":"J.A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"god-trick",
+			"city planning"
+		],
+		"read":false
 	}
 ]
