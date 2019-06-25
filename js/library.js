@@ -50,6 +50,7 @@ var lib = function(){
 				"avant-garde",
 				"minimalism",
 				"modernism",
+				"photography",
 				"✢ agnes martin",
 				"✢ sol lewitt"
 			],
@@ -71,16 +72,25 @@ var lib = function(){
 					"pie charts",
 					"treemaps"
 				],
-			"forms": [ 
+			"lexicon": [
+					"distance",
+					"god-trick",
 					"grid",
 					"horizon",
+					"icon",
 					"index",
 					"isomorphism",
 					"line",
 					"network",
-					"point"
+					"panopticon",
+					"point",
+					"subject/object",
+					"utopia"
 				],
-				"literary theory":[
+			"linguistics":[
+					"deixis"
+				],
+			"literary theory":[
 					"semiotics"
 				],
 			"mapping":[
@@ -97,13 +107,6 @@ var lib = function(){
 			"philosophy": [
 					"aesthetics",
 					"intentionality"
-				],
-			"scopic": [
-					"distance",
-					"god-trick",
-					"panopticon",
-					"subject/object",
-					"utopia"
 				]
 		},
 

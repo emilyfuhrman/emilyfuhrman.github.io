@@ -715,9 +715,13 @@
 		],
 		"type":"article",
 		"tags":[
-			"index"
+			"index",
+			"icon",
+			"deixis",
+			"photography",
+			"semiotics"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"pinto_1976_originsAndDevelopmentOfTheIchnographicCityPlan",
