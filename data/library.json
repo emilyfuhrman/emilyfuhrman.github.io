@@ -736,8 +736,9 @@
 		"type":"article",
 		"tags":[
 			"god-trick",
-			"city planning"
+			"city planning",
+			"cartography"
 		],
-		"read":false
+		"read":true
 	}
 ]
