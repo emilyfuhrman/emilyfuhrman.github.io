@@ -94,6 +94,7 @@ var lib = function(){
 					"semiotics"
 				],
 			"mapping":[
+					"cartography",
 					"critical cartography",
 					"projections"
 				],
@@ -166,6 +167,18 @@ var lib = function(){
 		util_filterData:function(_data){
 			var self = this,
 					data;
+
+			//(CURRENTLY UNUSED)
+			//check whether selected tags are contained within a document's list of tags
+			function checkTagMatch(_arr1, _arr2){
+				for(var i=0; i<_arr1.length; i++){
+					if(_arr2.indexOf(_arr1[i].label) === -1){
+						return false;
+					}
+				}
+				return true;
+			}
+
 			data = _data.filter(function(d){
 				var keep = false;
 				if(self.active_tags.length === 0){
