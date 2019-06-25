@@ -702,5 +702,21 @@
 			"point"
 		],
 		"read":true
+	},
+	{
+		"path":"krauss_1977_notesOnTheIndexSeventiesArtInAmerica",
+		"date":1977,
+		"title":"Notes on the Index: Seventies Art in America",
+		"authors":[
+			{
+				"ln":"Krauss",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"index"
+		],
+		"read":false
 	}
 ]

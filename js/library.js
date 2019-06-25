@@ -74,6 +74,7 @@ var lib = function(){
 			"forms": [ 
 					"grid",
 					"horizon",
+					"index",
 					"isomorphism",
 					"line",
 					"network",
