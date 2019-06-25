@@ -121,7 +121,7 @@
 			"graphical perception",
 			"color"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"fischer-dewulf-hill_2005_designingBarGraphsOrientationMatters",
