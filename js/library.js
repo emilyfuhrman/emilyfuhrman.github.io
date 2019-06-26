@@ -84,7 +84,7 @@ var lib = function(){
 					"network",
 					"panopticon",
 					"point",
-					"subject/object"
+					"subject-object"
 				],
 			"linguistics":[
 					"deixis"
