@@ -2,7 +2,7 @@ var lib = function(){
 
 	return {
 
-		focus:"cats",
+		focus:"catRatios",
 		order:"asc",
 
 		palette:['#8dd3c7','#fb8072','#bebada','#80b1d3','#ffffb3','#fdb462','#b3de69','#fccde5','#d9d9d9','#bc80bd','#ccebc5','#ffed6f'],
@@ -10,7 +10,7 @@ var lib = function(){
 		data_list:[],
 		data_columns:[
 			{
-				"id":"cats",
+				"id":"catRatios",
 				"label":"🗂"
 			},
 			{
@@ -145,7 +145,7 @@ var lib = function(){
 						return sorter(a_comp,b_comp);
 					});
 				}
-			} else if(self.focus === 'cats'){
+			} else if(self.focus === 'catRatios'){
 				for(var i=d3.keys(self.data_tags).length; i>-1; i--){
 					var k = d3.keys(self.data_tags)[i];
 					_data.sort(function(a,b){
@@ -168,9 +168,13 @@ var lib = function(){
 			var self = this,
 					data;
 
-			//(CURRENTLY UNUSED)
-			//check whether selected tags are contained within a document's list of tags
-			function checkTagMatch(_arr1, _arr2){
+			//validate intersection between two lists
+			function check_arrIntersection(_arr1, _arr2){
+				return _arr1.filter(function(d){ return _arr2.indexOf(d) !== -1; }).length >0;
+			}
+
+			//check whether selected tags (_arr1) are contained within a document's list of tags (_arr2)
+			function check_tagMatch(_arr1, _arr2){
 				for(var i=0; i<_arr1.length; i++){
 					if(_arr2.indexOf(_arr1[i].label) === -1){
 						return false;
@@ -179,14 +183,17 @@ var lib = function(){
 				return true;
 			}
 
+			//gather all tags that do not map to a selected category
+			var tags_unique = self.active_tags.filter(function(d){ return self.active_cats.indexOf(d.category) <0; });
+
 			data = _data.filter(function(d){
 				var keep = false;
-				if(self.active_tags.length === 0){
-					keep = true;
+				if(self.active_cats.length >0){
+					keep = tags_unique.length === 0 ? 
+						check_arrIntersection(self.active_cats, d.cats) : 
+						check_arrIntersection(self.active_cats, d.cats) && check_tagMatch(tags_unique, d.tags);
 				} else{
-					d.tags.forEach(function(_d){
-						if(self.active_tags.filter(function(__d){ return __d.label === _d; }).length >0){ keep = true; }
-					});
+					keep = self.active_tags.length === 0 ? true : check_tagMatch(self.active_tags, d.tags);
 				}
 				return keep;
 			});
@@ -208,9 +215,12 @@ var lib = function(){
 		process_data:function(_data){
 			var self = this;
 			_data.forEach(function(d){
-				d.cats = {};
+				d.cats = [];
+				d.catRatios = {};
 				d3.keys(self.data_tags).forEach(function(_d,_i){
-					d.cats[_d] = d.tags.filter(function(__d){ return self.data_tags[_d].indexOf(__d) >-1; }).length / d.tags.length;
+					var catMatch = d.tags.filter(function(__d){ return self.data_tags[_d].indexOf(__d) >-1; });
+					if(catMatch.length >0 && d.cats.indexOf(_d) <0){ d.cats.push(_d); }
+					d.catRatios[_d] = catMatch.length / d.tags.length;
 				});
 			});
 			return _data;
@@ -369,7 +379,9 @@ var lib = function(){
 			items.enter().append('div') 
 				.classed('item',true);
 			items
-				.classed('row',true);
+				.classed('row',true)
+				.classed('null',false)
+				.html('');
 			items.exit().remove();
 
 			self.data_columns.forEach(function(d){
@@ -386,10 +398,10 @@ var lib = function(){
 						var barW = 33;
 						if(d.id === 'star'){
 							html = _d.star ? "<span class='fill'>&#9733;</span>" : "&#9734;";
-						} else if(d.id === 'cats'){
+						} else if(d.id === 'catRatios'){
 							var divConstructor = "<div class='databar'>";
 							d3.keys(self.data_tags).forEach(function(__d,__i){
-								var catW = _d.cats[__d]*barW;
+								var catW = _d.catRatios[__d]*barW;
 								divConstructor += "<div style='width:" +catW +"px;background:" +self.palette[__i] +"'></div>"
 							});
 							html = divConstructor +"</div>";
@@ -413,6 +425,16 @@ var lib = function(){
 					});
 				item.exit().remove();
 			});
+
+			if(data.length === 0){
+
+				//display message
+				self.elem_library.append('div')
+					.classed('item',true)
+					.classed('row',true)
+					.classed('null',true)
+					.html('No results.');
+			}
 		}
 	}
 }
