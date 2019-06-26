@@ -84,8 +84,7 @@ var lib = function(){
 					"network",
 					"panopticon",
 					"point",
-					"subject/object",
-					"utopia"
+					"subject/object"
 				],
 			"linguistics":[
 					"deixis"
@@ -107,7 +106,8 @@ var lib = function(){
 				],
 			"philosophy": [
 					"aesthetics",
-					"intentionality"
+					"intentionality",
+					"utopia"
 				]
 		},
 
