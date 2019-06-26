@@ -9,35 +9,29 @@ var lib = function(){
 
 		data_list:[],
 		data_columns:[
-			{
-				"id":"catRatios",
+			{ "id":"catRatios",
 				"label":"🗂"
 			},
-			{
-				"id":"star",
+			{ "id":"star",
 				"label":"&#9733;"
 			},
-			{
-				"id":"read",
+			{ "id":"read",
 				"label":"🏁"
 			},
-			{
-				"id":"type",
+			{ "id":"type",
 				"label":"📁"
 			},
-			{
-				"id":"authors",
+			{ "id":"authors",
 				"label":"Author(s)"
 			},
-			{
-				"id":"date",
+			{ "id":"date",
 				"label":"Date"
 			},
-			{
-				"id":"title",
+			{ "id":"title",
 				"label":"Title"
 			}
 		],
+		
 		data_tags:{
 			"architecture":[
 				"architectural praxis",
@@ -45,7 +39,7 @@ var lib = function(){
 				"urbanism",
 				"visionary architecture",
 				"✢ mies van der rohe"
-			],
+				],
 			"art":[
 				"avant-garde",
 				"minimalism",
@@ -53,10 +47,10 @@ var lib = function(){
 				"photography",
 				"✢ agnes martin",
 				"✢ sol lewitt"
-			],
+				],
 			"birds": [
 				"bird behavior"
-			],
+				],
 			"computer science": [
 					"algorithms",
 					"cybernetics"
