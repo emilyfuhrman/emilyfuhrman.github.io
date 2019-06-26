@@ -186,6 +186,8 @@ var lib = function(){
 			//gather all tags that do not map to a selected category
 			var tags_unique = self.active_tags.filter(function(d){ return self.active_cats.indexOf(d.category) <0; });
 
+			//if categories are selected, return category-level superset that intersects with unique tags
+			//if no categories are selected, return intersection of tags only
 			data = _data.filter(function(d){
 				var keep = false;
 				if(self.active_cats.length >0){
