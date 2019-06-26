@@ -31,7 +31,7 @@ var lib = function(){
 				"label":"Title"
 			}
 		],
-		
+
 		data_tags:{
 			"architecture":[
 				"architectural praxis",
@@ -225,11 +225,10 @@ var lib = function(){
 		generate_chassis:function(){
 			var self = this;
 			self.elem_library = d3.select('#library');
+			self.elem_headerRow = self.elem_library.append('div').classed('header row',true);
 
-			var header_row,
-					header_items;
-			header_row = self.elem_library.append('div').classed('header row',true);
-			header_items = header_row.selectAll('span.item')
+			var header_items;
+			header_items = self.elem_headerRow.selectAll('span.item')
 				.data(self.data_columns);
 			header_items.enter().append('span')
 				.classed('item',true);
@@ -424,12 +423,19 @@ var lib = function(){
 
 			if(data.length === 0){
 
+				//hide header
+				self.elem_headerRow.classed('hidden',true);
+
 				//display message
 				self.elem_library.append('div')
 					.classed('item',true)
 					.classed('row',true)
 					.classed('null',true)
 					.html('No results.');
+			} else{
+
+				//show header
+				self.elem_headerRow.classed('hidden',false);
 			}
 		}
 	}

@@ -1298,10 +1298,6 @@ $log_padding_default:0.8rem;
 #library .row:hover {
 	background:$color_lg;
 	}
-	
-#library .row.item.null {
-	color:#888;
-	}
 
 #library .row span {
 	float:left;
@@ -1373,6 +1369,8 @@ $log_padding_default:0.8rem;
 	}
 
 #library .row.header {
+	display:block;
+	visibility:visible;
 	font-weight:bold;
 	padding:20px 0 10px;
 	cursor:cell;
@@ -1380,6 +1378,10 @@ $log_padding_default:0.8rem;
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
+	}
+#library .row.header.hidden {
+	display:none;
+	visibility:hidden;
 	}
 #library .row.header:hover {
 	background:transparent;
@@ -1399,6 +1401,11 @@ $log_padding_default:0.8rem;
 	color:#888;
 	content:'⇂';
 	vertical-align:top;
+	}
+	
+#library .row.item.null {
+	color:#888;
+	padding:20px 0 10px;
 	}
 
 /* 	------------------------------------
