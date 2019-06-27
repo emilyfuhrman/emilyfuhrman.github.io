@@ -760,8 +760,9 @@
 		"tags":[
 			"god-trick",
 			"map ⇌ territory",
-			"e-prime"
+			"e-prime",
+			"semantics"
 		],
-		"read":false
+		"read":true
 	}
 ]

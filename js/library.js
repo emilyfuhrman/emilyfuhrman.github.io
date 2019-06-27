@@ -82,7 +82,8 @@ var lib = function(){
 				],
 			"linguistics":[
 					"deixis",
-					"e-prime"
+					"e-prime",
+					"semantics"
 				],
 			"literary theory":[
 					"semiotics"
