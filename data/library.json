@@ -741,5 +741,27 @@
 			"horizon"
 		],
 		"read":true
+	},
+	{
+		"path":"kellogg-bourland_1990_workingWithE-Prime",
+		"date":1990,
+		"title":"Working with E-Prime: Some Practical Notes",
+		"authors":[
+			{
+				"ln":"Kellogg",
+				"fi":"E.W."
+			},
+			{
+				"ln":"Bourland",
+				"fi":"D.D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"god-trick",
+			"map ⇌ territory",
+			"e-prime"
+		],
+		"read":false
 	}
 ]

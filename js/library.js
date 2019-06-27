@@ -81,7 +81,8 @@ var lib = function(){
 					"subject ⇌ object"
 				],
 			"linguistics":[
-					"deixis"
+					"deixis",
+					"e-prime"
 				],
 			"literary theory":[
 					"semiotics"
@@ -89,6 +90,7 @@ var lib = function(){
 			"mapping":[
 					"cartography",
 					"critical cartography",
+					"map ⇌ territory",
 					"projections"
 				],
 			"math": [
