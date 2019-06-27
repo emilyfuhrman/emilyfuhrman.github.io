@@ -49,7 +49,7 @@ var lib = function(){
 				"✢ sol lewitt"
 				],
 			"birds": [
-				"bird behavior"
+				"birdsong"
 				],
 			"computer science": [
 					"algorithms",
@@ -81,8 +81,8 @@ var lib = function(){
 					"subject ⇌ object"
 				],
 			"linguistics":[
+					"controlled natural languages",
 					"deixis",
-					"e-prime",
 					"semantics"
 				],
 			"literary theory":[
