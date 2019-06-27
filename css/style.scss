@@ -519,7 +519,7 @@ $log_padding_default:0.8rem;
 	white-space:nowrap;
 	margin:-0.125rem 0.25rem 0.4rem 0;
 	padding:0.25rem;
-	border:1px dotted #ddd;
+	border:1px solid $color_lg;
 	@include box-sizing(border-box);
 	}
 #proj .sub #post-tags .tag:before,
