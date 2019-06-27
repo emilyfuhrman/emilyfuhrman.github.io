@@ -169,6 +169,16 @@ var lib = function(){
 				return _arr1.filter(function(d){ return _arr2.indexOf(d) !== -1; }).length >0;
 			}
 
+			//check whether selected cats (_arr1) are contained within a document's list of cats (_arr2)
+			function check_catMatch(_arr1, _arr2){
+				for(var i=0; i<_arr1.length; i++){
+					if(_arr2.indexOf(_arr1[i]) === -1){
+						return false;
+					}
+				}
+				return true;
+			}
+
 			//check whether selected tags (_arr1) are contained within a document's list of tags (_arr2)
 			function check_tagMatch(_arr1, _arr2){
 				for(var i=0; i<_arr1.length; i++){
@@ -188,8 +198,8 @@ var lib = function(){
 				var keep = false;
 				if(self.active_cats.length >0){
 					keep = tags_unique.length === 0 ? 
-						check_arrIntersection(self.active_cats, d.cats) : 
-						check_arrIntersection(self.active_cats, d.cats) && check_tagMatch(tags_unique, d.tags);
+						check_catMatch(self.active_cats, d.cats) : 
+						check_catMatch(self.active_cats, d.cats) && check_tagMatch(tags_unique, d.tags);
 				} else{
 					keep = self.active_tags.length === 0 ? true : check_tagMatch(self.active_tags, d.tags);
 				}
