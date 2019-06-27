@@ -1407,6 +1407,9 @@ $log_padding_default:0.8rem;
 	color:#888;
 	padding:20px 0 10px;
 	}
+#library .row.item.null:hover {
+	background:transparent;
+	}
 
 /* 	------------------------------------
 		LOADING ANIMATION
