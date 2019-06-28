@@ -81,7 +81,7 @@ var lib = function(){
 					"subject ⇌ object"
 				],
 			"linguistics":[
-					"controlled natural language",
+					"controlled language",
 					"deixis",
 					"semantics"
 				],
