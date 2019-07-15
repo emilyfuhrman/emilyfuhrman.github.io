@@ -764,5 +764,21 @@
 			"semantics"
 		],
 		"read":true
+	},
+	{
+		"path":"elderfield_1972_grids",
+		"date":1972,
+		"title":"Grids",
+		"authors":[
+			{
+				"ln":"Elderfield",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"grid"
+		],
+		"read":false
 	}
 ]
