@@ -1402,6 +1402,12 @@ $log_padding_default:0.8rem;
 	content:'⇂';
 	vertical-align:top;
 	}
+
+#library .row .item_authors,
+#library .row .item_date,
+#library .row .item_title {
+	margin-top:-1px;
+	}
 	
 #library .row.item.null {
 	color:#888;
