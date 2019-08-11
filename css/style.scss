@@ -1023,12 +1023,9 @@ $log_padding_default:0.8rem;
 	border-right:1px solid $color_lg;
 	}
 .post_body .page_label {
-	margin-bottom:calc(#{$log_padding_default} * 2);
+	margin-bottom:$log_padding_default;
 	border-left:none;
 	border-right:none;
-	}
-.archive .page_label {
-	padding-bottom:calc(#{$log_padding_default} * 3);
 	}
 .archive .page_label .tag_string {
 	font-weight:700;
@@ -1047,10 +1044,11 @@ $log_padding_default:0.8rem;
 
 .panel .panel_images {
 	width:100%;
-	padding:0 calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+	padding:0 calc(#{$log_padding_default} * 3);
 	border-left:1px solid $color_lg;
 	border-right:1px solid $color_lg;
 	}
+
 .panel .panel_images .panel_item {
 	position:relative;
 	background-size:cover;
@@ -1058,7 +1056,7 @@ $log_padding_default:0.8rem;
 	background-position:center center;
 	width:33%;
 	width:calc((100% / 3) - 1px);
-	margin:0.5px;
+	margin:$log_padding_default 0.5px calc(#{$log_padding_default} * 6);
 	padding:0;
 	}
 .panel .panel_images .panel_item:before {
@@ -1078,18 +1076,6 @@ $log_padding_default:0.8rem;
 	width:100%;
 	line-height:$log_padding_default;
 	padding:0;
-	}
-
-.panel.archive {
-	display:block;
-	padding:0;
-	}
-.panel.archive .panel_images {
-	padding-bottom:calc(#{$log_padding_default} * 6) !important;
-	}
-.panel.archive .panel_images .panel_item {
-	margin-top:$log_padding_default;
-	margin-bottom:calc(#{$log_padding_default} * 6);
 	}
 
 .tagblock {
@@ -1683,7 +1669,6 @@ $log_padding_default:0.8rem;
 	.panel .panel_images .panel_item {
 		width:100%;
 		width:calc(100% - 1px);
-		margin:calc(#{$log_padding_default} / 2) 0.5px calc(#{$log_padding_default} * 6);
 		}
 
 	#loading_animation {
@@ -1874,9 +1859,8 @@ $log_padding_default:0.8rem;
 		padding:0 $log_padding_default;
 		}
 	.panel .panel_images .panel_item {
-		width:50%;
-		width:calc((100% / 2) - 1px);
-		margin:calc(#{$log_padding_default} / 2) 0.5px calc(#{$log_padding_default} * 6);
+		width:100%;
+		width:calc(100% - 1px);
 		}
 
 	#loading_animation {
@@ -2059,7 +2043,6 @@ $log_padding_default:0.8rem;
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
-		margin:calc(#{$log_padding_default} / 2) 0.5px calc(#{$log_padding_default} * 6);
 		}
 
 	#loading_animation {
@@ -2262,12 +2245,11 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:0 calc(#{$log_padding_default} * 3);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
-		margin:0.5px;
 		}
 
 	#loading_animation {
@@ -2470,12 +2452,11 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} / 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:0 calc(#{$log_padding_default} * 3);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
-		margin:0.5px;
 		}
 
 	#loading_animation {
@@ -2689,12 +2670,11 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:0 calc(#{$log_padding_default} * 3);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
-		margin:0.5px;
 		}
 
 	#loading_animation {
@@ -2923,12 +2903,11 @@ $log_padding_default:0.8rem;
 		}
 
 	.panel .panel_images {
-		padding:calc(#{$log_padding_default} * 2) calc(#{$log_padding_default} * 3) calc(#{$log_padding_default} * 6);
+		padding:0 calc(#{$log_padding_default} * 3);
 		}
 	.panel .panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
-		margin:0.5px;
 		}
 
 	#loading_animation {
