@@ -1003,14 +1003,15 @@ $log_padding_default:0.8rem;
 	text-align:left;
 	}
 
-.panel {
+.panel,
+.quilt {
 	display:block;
 	width:100%;
 	padding:0;
 	@include transition(opacity 240ms ease);
 	}
 
-.panel .panel_label,
+.panel_label,
 .page_label {
 	@include sans_serif_display;
 	position:relative;
@@ -1032,24 +1033,24 @@ $log_padding_default:0.8rem;
 	font-style:italic;
 	text-transform:uppercase;
 	}
-.panel .panel_label a,
+.panel_label a,
 .page_label a {
 	color:$color_black;
 	border-bottom:none;
 	}
-.panel .panel_label:hover a,
+.panel_label:hover a,
 .page_label:hover a {
 	color:$color_black !important;
 	}
 
-.panel .panel_images {
+.panel_images {
 	width:100%;
 	padding:0 calc(#{$log_padding_default} * 3);
 	border-left:1px solid $color_lg;
 	border-right:1px solid $color_lg;
 	}
 
-.panel .panel_images .panel_item {
+.panel_images .panel_item {
 	position:relative;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -1059,18 +1060,18 @@ $log_padding_default:0.8rem;
 	margin:$log_padding_default 0.5px calc(#{$log_padding_default} * 6);
 	padding:0;
 	}
-.panel .panel_images .panel_item:before {
+.panel_images .panel_item:before {
 	content:"";
 	display:block;
 	padding-top:150%;
 	}
-.panel .panel_images .panel_item .panel_item_detail {
+.panel_images .panel_item .panel_item_detail {
 	position:absolute;
 	width:100%;
 	padding-top:$log_padding_default;
 	}
 
-.panel .panel_images .panel_item .panel_item_label {
+.panel_images .panel_item .panel_item_label {
 	@include sans_serif_body;
 	position:relative;
 	width:100%;
@@ -1663,10 +1664,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 $log_padding_default;
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:100%;
 		width:calc(100% - 1px);
 		}
@@ -1855,10 +1856,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 $log_padding_default;
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:100%;
 		width:calc(100% - 1px);
 		}
@@ -2037,10 +2038,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 $log_padding_default;
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
 		}
@@ -2244,10 +2245,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 calc(#{$log_padding_default} * 3);
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
 		}
@@ -2451,10 +2452,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 calc(#{$log_padding_default} * 3);
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
 		}
@@ -2669,10 +2670,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 calc(#{$log_padding_default} * 3);
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
 		}
@@ -2902,10 +2903,10 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
-	.panel .panel_images {
+	.panel_images {
 		padding:0 calc(#{$log_padding_default} * 3);
 		}
-	.panel .panel_images .panel_item {
+	.panel_images .panel_item {
 		width:33%;
 		width:calc((100% / 3) - 1px);
 		}

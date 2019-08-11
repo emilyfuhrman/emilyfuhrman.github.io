@@ -1,10 +1,15 @@
-{% include header.html %}
+{% assign maxPosts = 24 %}
+{% assign counter = 0 %}
 
-<!-- Latest entries -->
-<div class='panel archive'>
+{% include header.html %}
+<div class='quilt'>
+	<div class='page_label'>Latest Entries</div>
 	<div class='panel_images'>
 		{% for post in site.log reversed %}
-			{% include log_post_swatch.html %}
+			{% if counter < maxPosts %}
+				{% assign counter=counter | plus:1 %}
+				{% include log_post_swatch.html %}
+			{% endif %}
 		{% endfor %}
 	</div>
 </div>
