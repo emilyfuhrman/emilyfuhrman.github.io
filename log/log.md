@@ -1,10 +1,9 @@
 ---
-layout: page_archive_log
+layout: log_page_list
 title: "EF Log"
 category: log
 description: A location-specific personal log.
-permalink: /log/tagged/me
-tag: me
+permalink: /log/
 loading_animation: true
 sitemap:
   priority: 0.9
