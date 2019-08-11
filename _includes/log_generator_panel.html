@@ -11,7 +11,7 @@
 			{% for item in post.metadata %}
 				{% if item[parameter] contains tag_string and counter < maxPosts %}
 					{% assign counter=counter | plus:1 %}
-					{% include post_log_swatch.html %}
+					{% include log_post_swatch.html %}
 				{% endif %}
 			{% endfor %}
 		{% endfor %}
@@ -19,7 +19,7 @@
 		{% for post in site.log reversed %}
 			{% if counter < maxPosts %}
 				{% assign counter=counter | plus:1 %}
-				{% include post_log_swatch.html %}
+				{% include log_post_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endif %}

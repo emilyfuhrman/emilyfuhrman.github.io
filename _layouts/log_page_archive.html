@@ -7,7 +7,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.regions contains tag_string %}
-				{% include post_log_swatch.html %}
+				{% include log_post_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -19,7 +19,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.continents contains tag_string %}
-				{% include post_log_swatch.html %}
+				{% include log_post_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -31,7 +31,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.cities contains tag_string %}
-				{% include post_log_swatch.html %}
+				{% include log_post_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -42,7 +42,7 @@
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[0]["year"] == tag_string %}
-			{% include post_log_swatch.html %}
+			{% include log_post_swatch.html %}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -52,7 +52,7 @@
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["type"] == tag_string %}
-			{% include post_log_swatch.html %}
+			{% include log_post_swatch.html %}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -62,7 +62,7 @@
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
 		{% if post.metadata[1]["arts"] == tag_string %}
-			{% include post_log_swatch.html %}
+			{% include log_post_swatch.html %}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -73,7 +73,7 @@
 	{% for post in site.log reversed %}
 		{% for item in post.metadata %}
 			{% if item.tags contains tag_string %}
-				{% include post_log_swatch.html %}
+				{% include log_post_swatch.html %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -82,7 +82,7 @@
 	<div class='page_label'>All Entries</div>
 	<div class='panel_images'>
 	{% for post in site.log reversed %}
-		{% include post_log_swatch.html %}
+		{% include log_post_swatch.html %}
 	{% endfor %}
 	</div>
 {% endif %}

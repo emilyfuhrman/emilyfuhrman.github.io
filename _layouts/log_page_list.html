@@ -2,19 +2,19 @@
 
 <!-- Latest entries -->
 {% assign tag_string = "Latest Entries" %}
-{% include generator_panel.html %}
+{% include log_generator_panel.html %}
 
 <!-- NYC panel -->
 {% assign tag_string = "NYC" %}
 {% assign parameter = "cities" %}
-{% include generator_panel.html %}
+{% include log_generator_panel.html %}
 
 <!-- Continent panels -->
 {% for region in site.data.log.regions %}
 	{% if region.display == true %}
 		{% assign tag_string = region.name %}
 		{% assign parameter = "regions" %}
-		{% include generator_panel.html %}
+		{% include log_generator_panel.html %}
 	{% endif %}
 {% endfor %}
 
