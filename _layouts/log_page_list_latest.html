@@ -1,9 +1,10 @@
-{% assign maxPosts = 24 %}
+{% assign maxPosts = 18 %}
 {% assign postCount = 0 %}
 {% assign counter = 0 %}
 
 {% include header.html %}
 <div class='quilt'>
+	<div class='page_label'>Latest Entries</div>
 	<div class='panel_images'>
 		{% for post in site.log reversed %}
 			{% if postCount < maxPosts %}
