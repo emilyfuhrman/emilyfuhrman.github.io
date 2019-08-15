@@ -2,7 +2,7 @@
 sitemap:
   exclude: 'yes'
 ---
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap');
 
 $color_black:#111;
 $color_lg:#f2f2f2;
@@ -980,12 +980,10 @@ $log_padding_default:0.8rem;
 .panel_label,
 .page_label {
 	@include sans_serif_display;
-	position:absolute;
-	width:500px;
+	width:100%;
 	text-align:center;
 	line-height:1.6rem;
-	margin-left:-250px;
-	padding:$log_padding_default 0 0;
+	padding:0 0 calc(#{$log_padding_default} * 2);
 	top:0px;
 	left:50%;
 	}
@@ -995,8 +993,6 @@ $log_padding_default:0.8rem;
 	border-right:none;
 	}
 .archive .page_label .tag_string {
-	font-weight:700;
-	font-style:italic;
 	text-transform:uppercase;
 	}
 .panel_label a,
@@ -1642,11 +1638,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel_label,
-	.page_label {
-		margin-top:calc(#{$log_padding_default} * 2.75);
-		}
-
 	.panel_images {
 		padding:0 $log_padding_default;
 		}
@@ -1837,11 +1828,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel_label,
-	.page_label {
-		margin-top:calc(#{$log_padding_default} * 2.75);
-		}
-
 	.panel_images {
 		padding:0 $log_padding_default;
 		}
@@ -2020,11 +2006,6 @@ $log_padding_default:0.8rem;
 		}
 	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
-		}
-
-	.panel_label,
-	.page_label {
-		margin-top:calc(#{$log_padding_default} * 4);
 		}
 
 	.panel_images {
@@ -2233,11 +2214,6 @@ $log_padding_default:0.8rem;
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
-	.panel_label,
-	.page_label {
-		margin-top:0;
-		}
-
 	.panel_images {
 		padding:0 calc(#{$log_padding_default} * 3);
 		}
@@ -2442,11 +2418,6 @@ $log_padding_default:0.8rem;
 		}
 	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 2);
-		}
-
-	.panel_label,
-	.page_label {
-		margin-top:0;
 		}
 
 	.panel_images {
@@ -2664,11 +2635,6 @@ $log_padding_default:0.8rem;
 		}
 	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 4);
-		}
-
-	.panel_label,
-	.page_label {
-		margin-top:0;
 		}
 
 	.panel_images {
@@ -2901,11 +2867,6 @@ $log_padding_default:0.8rem;
 		}
 	#nav_log .btn#about {
 		margin-left:calc(#{$log_padding_default} * 4);
-		}
-
-	.panel_label,
-	.page_label {
-		margin-top:0;
 		}
 
 	.panel_images {
