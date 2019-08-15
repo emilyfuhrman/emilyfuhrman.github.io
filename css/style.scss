@@ -932,8 +932,6 @@ $log_padding_default:0.8rem;
 
 .log.container#main .post_body {
 	width:100%;
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
 	@include transition(opacity 240ms ease);
 	}
 .log.container#main .post_body p {
@@ -973,9 +971,6 @@ $log_padding_default:0.8rem;
 	padding:0;
 	@include transition(opacity 240ms ease);
 	}
-.quilt {
-	margin-bottom:-$log_padding_default;
-	}
 
 .panel_label,
 .page_label {
@@ -983,9 +978,8 @@ $log_padding_default:0.8rem;
 	width:100%;
 	text-align:center;
 	line-height:1.6rem;
-	padding:0 0 calc(#{$log_padding_default} * 2);
-	top:0px;
-	left:50%;
+	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 3);
+	border-top:1px solid $color_black;
 	}
 .post_body .page_label {
 	margin-bottom:$log_padding_default;
@@ -1008,8 +1002,6 @@ $log_padding_default:0.8rem;
 .panel_images {
 	width:100%;
 	padding:0 calc(#{$log_padding_default} * 3);
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
 	}
 
 .panel_images .panel_item {
@@ -1107,19 +1099,19 @@ $log_padding_default:0.8rem;
 .page_date {
 	float:left;
 	font-weight:400;
-	margin:calc(#{$log_padding_default} * 2) 0 0 $log_padding_default;
+	margin:calc(#{$log_padding_default} * 2) 0 0;
 	}
 .page_lat_lon {
 	float:right;
 	font-weight:400;
-	margin:calc(#{$log_padding_default} * 2) $log_padding_default 0 0;
+	margin:calc(#{$log_padding_default} * 2) 0 0;
 	}
 
 .album_page_tags {
 	width:100%;
 	font-weight:400;
 	margin:$log_padding_default 0;
-	padding:$log_padding_default;
+	padding:$log_padding_default 0;
 	border-top:1px solid $color_black;
 	}
 
