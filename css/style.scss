@@ -978,17 +978,10 @@ $log_padding_default:0.8rem;
 	width:100%;
 	text-align:center;
 	line-height:1.6rem;
-	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 3);
+	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
 	border-top:1px solid $color_black;
 	}
-.post_body .page_label {
-	margin-bottom:$log_padding_default;
-	border-left:none;
-	border-right:none;
-	}
-.archive .page_label .tag_string {
-	text-transform:uppercase;
-	}
+	
 .panel_label a,
 .page_label a {
 	color:$color_black;
@@ -997,6 +990,10 @@ $log_padding_default:0.8rem;
 .panel_label:hover a,
 .page_label:hover a {
 	color:$color_black !important;
+	}
+	
+.archive .page_label .tag_string {
+	text-transform:uppercase;
 	}
 
 .panel_images {
@@ -1047,7 +1044,7 @@ $log_padding_default:0.8rem;
 	text-overflow:ellipsis;
 	line-height:24px;
 	white-space:nowrap;
-	padding:calc(#{$log_padding_default} / 4) 0 0;
+	padding:calc(#{$log_padding_default} / 2) 0 0;
 	}
 
 .tagblock {
