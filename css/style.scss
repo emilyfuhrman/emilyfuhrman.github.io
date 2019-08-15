@@ -2,6 +2,7 @@
 sitemap:
   exclude: 'yes'
 ---
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 
 $color_black:#111;
 $color_lg:#f2f2f2;
@@ -793,11 +794,10 @@ $log_padding_default:0.8rem;
 	font-weight:400;
 	}
 @mixin sans_serif_display {
-	@include font_sans_serif;
-	font-size:15px;
-	font-size:calc(#{$log_padding_default} / 1.065);
+	font-family:'DM Serif Display', serif;
+	font-size:40px;
+	font-size:calc(#{$log_padding_default} * 2.5);
 	font-weight:400;
-	font-style:italic;
 	letter-spacing:0.025rem;
 	}
 @mixin sans_serif_body {
@@ -1054,22 +1054,22 @@ $log_padding_default:0.8rem;
 	position:relative;
 	width:33%;
 	width:calc((100% / 3) - 1px);
-	margin:$log_padding_default 0.5px calc(#{$log_padding_default} * 6);
-	padding:0;
+	margin:$log_padding_default 0.5px 0;
+	padding:0 0 calc(#{$log_padding_default} * 6);
 	}
 .panel_images .panel_item._1 {
-	border-left:1px solid $color_lg;
-	border-right:1px solid $color_lg;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	}
 
 .panel_images .panel_item_image {
 	width:100%;
-	width:calc(100% - 40px);
+	width:calc(100% - calc(#{$log_padding_default} * 2));
 	height:100%;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
-	margin:0 20px;
+	margin:0 $log_padding_default;
 	}
 .panel_images .panel_item_image:before {
 	content:"";
@@ -1078,16 +1078,14 @@ $log_padding_default:0.8rem;
 	}
 .panel_images .panel_item .panel_item_detail {
 	width:100%;
-	width:calc(100% - 40px);
-	margin:0 20px;
-	padding-top:$log_padding_default;
+	width:calc(100% - calc(#{$log_padding_default} * 2));
+	margin:calc(#{$log_padding_default} / 2) $log_padding_default;
 	}
 
 .panel_images .panel_item .panel_item_label {
-	@include sans_serif_body;
+	@include sans_serif_display;
 	position:relative;
 	width:100%;
-	line-height:$log_padding_default;
 	padding:0;
 	}
 

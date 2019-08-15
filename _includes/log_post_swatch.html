@@ -1,8 +1,8 @@
 <div class='panel_item _{{ counter }}'  onclick="location.href='{{ post.url }}';" style='cursor:cell;'>
 	<div class='panel_item_image' style='background-image:url(/photos/{{ post.post_path }}/01.jpg);'></div>
 	<div class='panel_item_detail'>
-		<div class='panel_item_label'>{{ post.title }}</div>
 		{% assign page = post %}
 	  {% include log_generator_tags.html %}
+		<div class='panel_item_label'>{{ post.title }}</div>
 	</div>
 </div>
