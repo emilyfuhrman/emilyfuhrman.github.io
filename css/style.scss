@@ -829,7 +829,7 @@ $log_padding_default:0.8rem;
 	width:100%;
 	margin-bottom:calc(#{$log_padding_default} * 2);
 	padding:0 calc(#{$log_padding_default} * 4);
-	border-bottom:1px solid $color_lg;
+	border-bottom:1px solid $color_black;
 	}
 .log.container#main div {
 	float:left;
@@ -847,11 +847,11 @@ $log_padding_default:0.8rem;
 	}
 .log.container#main .border.left {
 	left:calc(#{$log_padding_default} * 3);
-	border-left:1px solid $color_lg;
+	border-left:1px solid $color_black;
 	}
 .log.container#main .border.right {
 	right:calc(#{$log_padding_default} * 3);
-	border-right:1px solid $color_lg;
+	border-right:1px solid $color_black;
 	}
 
 .log.container#main p {
@@ -969,8 +969,8 @@ $log_padding_default:0.8rem;
 
 .log.container#main .post_body {
 	width:100%;
-	border-left:1px solid $color_lg;
-	border-right:1px solid $color_lg;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	@include transition(opacity 240ms ease);
 	}
 .log.container#main .post_body p {
@@ -1010,6 +1010,9 @@ $log_padding_default:0.8rem;
 	padding:0;
 	@include transition(opacity 240ms ease);
 	}
+.quilt {
+	margin-bottom:-$log_padding_default;
+	}
 
 .panel_label,
 .page_label {
@@ -1019,9 +1022,9 @@ $log_padding_default:0.8rem;
 	text-align:center;
 	margin:0;
 	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
-	border-top:1px solid $color_lg;
-	border-left:1px solid $color_lg;
-	border-right:1px solid $color_lg;
+	border-top:1px solid $color_black;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	}
 .post_body .page_label {
 	margin-bottom:$log_padding_default;
@@ -1046,20 +1049,21 @@ $log_padding_default:0.8rem;
 .panel_images {
 	width:100%;
 	padding:0 calc(#{$log_padding_default} * 3);
-	border-left:1px solid $color_lg;
-	border-right:1px solid $color_lg;
+	border-left:1px solid $color_black;
+	border-right:1px solid $color_black;
 	}
 
 .panel_images .panel_item {
 	position:relative;
 	width:33%;
-	width:calc((100% / 3) - 1px);
-	margin:$log_padding_default 0.5px 0;
+	width:calc(100% / 3);
+	margin:0 0 $log_padding_default;
 	padding:0 0 calc(#{$log_padding_default} * 6);
+	border-left:1px solid white;
+	border-right:1px solid white;
 	}
 .panel_images .panel_item._1 {
-	border-left:1px solid $color_black;
-	border-right:1px solid $color_black;
+	border-color:$color_black;
 	}
 
 .panel_images .panel_item_image {
@@ -1086,6 +1090,9 @@ $log_padding_default:0.8rem;
 	@include sans_serif_display;
 	position:relative;
 	width:100%;
+	height:calc(#{$log_padding_default} * 6);
+	overflow:hidden;
+	text-overflow:ellipsis;
 	padding:0;
 	}
 
@@ -1151,7 +1158,7 @@ $log_padding_default:0.8rem;
 	font-weight:400;
 	margin:$log_padding_default 0;
 	padding:$log_padding_default;
-	border-top:1px solid $color_lg;
+	border-top:1px solid $color_black;
 	}
 
 .photo_frame {
@@ -1678,7 +1685,6 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:100%;
-		width:calc(100% - 1px);
 		}
 
 	#loading_animation {
@@ -1870,7 +1876,6 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:100%;
-		width:calc(100% - 1px);
 		}
 
 	#loading_animation {
@@ -2052,7 +2057,7 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1px);
+		width:calc(100% / 3);
 		}
 
 	#loading_animation {
@@ -2259,7 +2264,7 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1px);
+		width:calc(100% / 3);
 		}
 
 	#loading_animation {
@@ -2466,7 +2471,7 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1px);
+		width:calc(100% / 3);
 		}
 
 	#loading_animation {
@@ -2684,7 +2689,7 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1px);
+		width:calc(100% / 3);
 		}
 
 	#loading_animation {
@@ -2917,7 +2922,7 @@ $log_padding_default:0.8rem;
 		}
 	.panel_images .panel_item {
 		width:33%;
-		width:calc((100% / 3) - 1px);
+		width:calc(100% / 3);
 		}
 
 	#loading_animation {
