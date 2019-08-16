@@ -9,9 +9,11 @@ var cutoff_tier1 = 1281,
 
 var setFluid = function(){
 	setFixedHeader();
-	$('.container').addClass(function(){
-		return window.innerWidth <cutoff_tier1 ? 'fluid' : '';
-	});
+	if(window.innerWidth <cutoff_tier1){
+		$('.container').addClass('fluid');
+	} else{
+		$('.container').removeClass('fluid');
+	}
 }
 var setFixedHeader = function(){
 	var scrollTop = $(window).scrollTop();
