@@ -749,6 +749,7 @@ $log_padding_default:1rem;
 	margin-left:0.5rem;
 	}
 #base #footer .link.social#instagram,
+#base #footer .link.social#log,
 #base #footer .link#cv {
 	margin-left:1.5rem;
 	}
@@ -1366,7 +1367,7 @@ $log_padding_default:1rem;
    	------------------------------------ */
 
 #loading_animation {
-	z-index:1000;
+	z-index:10000;
 	display:block;
 	visibility:visible;
 	position:fixed;
@@ -1604,6 +1605,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:0;
 		}
@@ -1794,6 +1796,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:1.5rem;
 		}
@@ -2180,6 +2183,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:1.5rem;
 		}
@@ -2386,6 +2390,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:1.5rem;
 		}
@@ -2603,6 +2608,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:1.5rem;
 		}
@@ -2835,6 +2841,7 @@ $log_padding_default:1rem;
 		}
 	#base #footer .link.social#twitter,
 	#base #footer .link.social#instagram,
+	#base #footer .link.social#log,
 	#base #footer .link#cv {
 		margin-left:1.5rem;
 		}
