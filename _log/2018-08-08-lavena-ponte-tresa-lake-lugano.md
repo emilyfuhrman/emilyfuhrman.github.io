@@ -16,10 +16,10 @@ metadata:
   - regions:
       - Europe
 photos:
-  - ext:    02.jpg
+  - ext:    01.jpg
     class:  horizontal
   - ext:    03.jpg
     class:  horizontal
-  - ext:    01.jpg
+  - ext:    02.jpg
     class:  horizontal
 ---
