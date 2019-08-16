@@ -22,6 +22,4 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  horizontal
-  - ext:    02.jpg
-    class:  horizontal
 ---
