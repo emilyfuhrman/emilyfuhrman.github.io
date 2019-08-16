@@ -79,7 +79,7 @@ span.sub {
 		GENERAL
    	------------------------------------ */
 
-$log_padding_default:0.8rem;
+$log_padding_default:1rem;
 
 .container {
 	background:#fff;
@@ -805,23 +805,23 @@ $log_padding_default:0.8rem;
 	}
 @mixin sans_serif_body {
 	@include font_sans_serif;
-	font-size:14px;
-	font-size:calc(#{$log_padding_default} / 1.15);
+	font-size:15px;
+	font-size:calc(#{$log_padding_default} * 0.75);
 	font-weight:400;
 	text-transform:none;
 	letter-spacing:0.025rem;
 	}
 @mixin sans_serif_small {
-	font-size:12px;
-	font-size:calc(#{$log_padding_default} / (4/3));
+	font-size:14px;
+	font-size:calc(#{$log_padding_default} * 0.70);
 	font-weight:500;
 	text-transform:none;
 	letter-spacing:0.025rem;
 	}
 
 @mixin sans_serif_micro {
-	font-size:11px;
-	font-size:calc(#{$log_padding_default} / 1.5);
+	font-size:13px;
+	font-size:calc(#{$log_padding_default} * 0.65);
 	font-weight:500;
 	text-transform:none;
 	letter-spacing:0.025rem;
@@ -846,8 +846,10 @@ $log_padding_default:0.8rem;
 	}
 
 #nav_log {
+	position:sticky;
 	width:100%;
 	padding:0;
+	top:0;
 	}
 #nav_log a {
 	opacity:0.95;
@@ -871,14 +873,11 @@ $log_padding_default:0.8rem;
 	}
 #nav_log .btn.left {
 	float:left;
+	margin-right:0;
 	}
 #nav_log .btn#archive,
 #nav_log .btn.filter {
 	margin-right:0;
-	}
-#nav_log .btn#contact {
-	margin-left:0;
-	padding-right:calc(#{$log_padding_default} * 6);
 	}
 
 #nav_log .btn .btn_menu {
@@ -981,7 +980,7 @@ $log_padding_default:0.8rem;
 	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
 	border-top:1px solid $color_black;
 	}
-	
+
 .panel_label a,
 .page_label a {
 	color:$color_black;
@@ -1009,6 +1008,7 @@ $log_padding_default:0.8rem;
 	padding:0;
 	border-left:1px solid white;
 	border-right:1px solid white;
+	border-color:rgba(255,255,255,0);
 	}
 .panel_images .panel_item._1 {
 	border-color:$color_black;
@@ -1608,7 +1608,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -1798,7 +1798,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -1978,7 +1978,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2184,7 +2184,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2390,7 +2390,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 2);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 2);
 		}
 
@@ -2607,7 +2607,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
@@ -2839,7 +2839,7 @@ $log_padding_default:0.8rem;
 	#nav_log .btn#archive {
 		margin-right:calc(#{$log_padding_default} * 4);
 		}
-	#nav_log .btn#about {
+	#nav_log .btn#home {
 		margin-left:calc(#{$log_padding_default} * 4);
 		}
 
