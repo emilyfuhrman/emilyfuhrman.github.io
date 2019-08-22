@@ -780,5 +780,21 @@
 			"grid"
 		],
 		"read":true
+	},
+	{
+		"path":"oliveros_1988_pianoPiano",
+		"date":1988,
+		"title":"Piano Piano",
+		"authors":[
+			{
+				"ln":"Oliveros",
+				"fi":"P."
+			}
+		],
+		"type":"score",
+		"tags":[
+			"score"
+		],
+		"read":true
 	}
 ]
