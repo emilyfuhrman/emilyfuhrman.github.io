@@ -26,5 +26,5 @@ photos:
     class:  horizontal
   - ext:    02.jpg
     class:  horizontal
+    text:   "Banff · Yoho · Kootenay · Jasper"
 ---
-Banff, Yoho, Kootenay, Jasper.
