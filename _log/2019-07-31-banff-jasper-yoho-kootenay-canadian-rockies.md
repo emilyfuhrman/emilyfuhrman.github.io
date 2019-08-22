@@ -21,5 +21,5 @@ metadata:
       - Greater North America
 photos:
   - ext:    01.jpg
-    class:  horizontal
+    class:  vertical
 ---
