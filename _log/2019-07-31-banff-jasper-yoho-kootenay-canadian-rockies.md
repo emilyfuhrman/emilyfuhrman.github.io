@@ -22,4 +22,9 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  vertical
+  - ext:    02.jpg
+    class:  horizontal
+  - ext:    03.jpg
+    class:  horizontal
 ---
+Banff, Yoho, Kootenay, Jasper.
