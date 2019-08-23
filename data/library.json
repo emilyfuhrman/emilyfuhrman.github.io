@@ -808,11 +808,11 @@
 			},
 			{
 				"ln":"McGill",
-				"fi":"M."
+				"fi":"R."
 			},
 			{
 				"ln":"McGill",
-				"fi":"R."
+				"fi":"M."
 			}
 		],
 		"type":"article",
@@ -820,6 +820,6 @@
 			"graphical perception",
 			"line charts"
 		],
-		"read":false
+		"read":true
 	}
 ]
