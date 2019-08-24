@@ -780,5 +780,46 @@
 			"grid"
 		],
 		"read":true
+	},
+	{
+		"path":"oliveros_1988_pianoPiano",
+		"date":1988,
+		"title":"Piano Piano",
+		"authors":[
+			{
+				"ln":"Oliveros",
+				"fi":"P."
+			}
+		],
+		"type":"score",
+		"tags":[
+			"score"
+		],
+		"read":true
+	},
+	{
+		"path":"cleveland-mcgill-mcgill_1988_theShapeParameterOfATwoVariableGraph",
+		"date":1988,
+		"title":"The Shape Parameter of a Two-Variable Graph",
+		"authors":[
+			{
+				"ln":"Cleveland",
+				"fi":"W.S."
+			},
+			{
+				"ln":"McGill",
+				"fi":"R."
+			},
+			{
+				"ln":"McGill",
+				"fi":"M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception",
+			"line charts"
+		],
+		"read":true
 	}
 ]

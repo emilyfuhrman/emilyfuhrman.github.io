@@ -99,7 +99,8 @@ var lib = function(){
 					"statistics"
 				],
 			"music": [
-					"musicology"
+					"musicology",
+					"score"
 				],
 			"philosophy": [
 					"aesthetics",
@@ -416,7 +417,7 @@ var lib = function(){
 						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
-							html = _d.type === 'book' ? '📖' : _d.type === 'chapter' ? '🔖' : '📄';
+							html = _d.type === 'book' ? '📖' : _d.type === 'chapter' ? '🔖' : _d.type === 'score' ? '🎹' : '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
 									str = '';
