@@ -30,6 +30,8 @@ photos:
     class:  horizontal
   - ext:    02.jpg
     class:  horizontal
+  - ext:    06.jpg
+    class:  horizontal
     text:   "Banff, Yoho, Kootenay, & Jasper National Parks · Canadian Rockies"
 ---
 One and a half weeks backpacking through B.C. and Alberta.
