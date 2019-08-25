@@ -22,11 +22,14 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  vertical
-  - ext:    02.jpg
+  - ext:    05.jpg
     class:  horizontal
   - ext:    03.jpg
     class:  horizontal
   - ext:    04.jpg
     class:  horizontal
-    text:   "Banff · Yoho · Kootenay · Jasper"
+  - ext:    02.jpg
+    class:  horizontal
+    text:   "Banff, Yoho, Kootenay, & Jasper National Parks · Canadian Rockies"
 ---
+One and a half weeks backpacking through B.C. and Alberta.
