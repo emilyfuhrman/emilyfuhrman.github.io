@@ -22,6 +22,8 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  vertical
+  - ext:    06.jpg
+    class:  horizontal
   - ext:    05.jpg
     class:  horizontal
   - ext:    03.jpg
@@ -29,8 +31,6 @@ photos:
   - ext:    04.jpg
     class:  horizontal
   - ext:    02.jpg
-    class:  horizontal
-  - ext:    06.jpg
     class:  horizontal
     text:   "Banff, Yoho, Kootenay, & Jasper National Parks · Canadian Rockies"
 ---
