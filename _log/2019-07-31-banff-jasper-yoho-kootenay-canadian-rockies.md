@@ -24,6 +24,8 @@ photos:
     class:  vertical
   - ext:    02.jpg
     class:  horizontal
+  - ext:    07.jpg
+    class:  vertical
   - ext:    06.jpg
     class:  horizontal
   - ext:    05.jpg
