@@ -1,4 +1,5 @@
 ---
+published:  false
 title:			"The St. Regis New York"
 post_path:	2018-09-07-the-st-regis-new-york
 date_start:	2018/09/07
