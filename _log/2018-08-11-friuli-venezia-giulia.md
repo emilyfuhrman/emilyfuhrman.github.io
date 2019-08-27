@@ -15,6 +15,8 @@ metadata:
       - Europe
   - regions:
       - Europe
+  - tags:
+      - me
 photos:
   - ext:    01.jpg
     class:  horizontal
