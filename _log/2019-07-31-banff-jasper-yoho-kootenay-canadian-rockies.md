@@ -22,13 +22,13 @@ metadata:
 photos:
   - ext:    01.jpg
     class:  vertical
-  - ext:    03.jpg
-    class:  horizontal
-  - ext:    05.jpg
-    class:  horizontal
   - ext:    02.jpg
     class:  horizontal
+  - ext:    03.jpg
+    class:  horizontal
   - ext:    06.jpg
+    class:  horizontal
+  - ext:    05.jpg
     class:  horizontal
   - ext:    04.jpg
     class:  horizontal
