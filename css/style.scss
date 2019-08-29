@@ -1029,12 +1029,12 @@ $log_padding_default:1rem;
 
 .panel_images .panel_item_image {
 	width:100%;
-	width:calc(100% - calc(#{$log_padding_default} * 2));
+	width:calc(100% - calc(#{$log_padding_default} * 1.5));
 	height:100%;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
-	margin:0 $log_padding_default;
+	margin:0 calc(#{$log_padding_default} * 0.75);
 	}
 .panel_images .panel_item_image:before {
 	content:"";
