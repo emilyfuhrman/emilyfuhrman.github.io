@@ -964,7 +964,7 @@ $log_padding_default:1rem;
 
 .log.container#main #post_body_text {
 	width:100%;
-	margin-top:calc(#{$log_padding_default} * 3);
+	margin-top:calc(#{$log_padding_default} * 2);
 	}
 .log.container#main #post_body_text .text_block {
 	float:none;
@@ -990,7 +990,7 @@ $log_padding_default:1rem;
 	width:100%;
 	text-align:center;
 	line-height:1.6rem;
-	padding:calc(#{$log_padding_default} * 2) 0 calc(#{$log_padding_default} * 4);
+	padding:$log_padding_default 0 calc(#{$log_padding_default} * 2);
 	border-top:1px solid $color_black;
 	}
 
