@@ -56,12 +56,12 @@ var lib = function(){
 					"cybernetics"
 				],
 			"data visualization": [
+					"3D projection",
 					"bar charts",
 					"color",
 					"dot charts",
 					"dotplots",
 					"graphical perception",
-					"graphical projection",
 					"line charts",
 					"notation",
 					"pie charts",
