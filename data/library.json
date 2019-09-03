@@ -838,6 +838,6 @@
 			"god-trick",
 			"axonometric"
 		],
-		"read":false
+		"read":true
 	}
 ]
