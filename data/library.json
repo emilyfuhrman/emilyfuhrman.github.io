@@ -840,5 +840,22 @@
 			"3D projection"
 		],
 		"read":true
+	},
+	{
+		"path":"deBruyn_2006_topologicalPathwaysOfPostMinimalism",
+		"date":2006,
+		"title":"Topological Pathways of Post-Minimalism",
+		"authors":[
+			{
+				"ln":"de Bruyn",
+				"fi":"E."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"aesthetics",
+			"post-minimalism"
+		],
+		"read":false
 	}
 ]

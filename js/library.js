@@ -45,6 +45,7 @@ var lib = function(){
 				"minimalism",
 				"modernism",
 				"photography",
+				"post-minimalism",
 				"✢ agnes martin",
 				"✢ sol lewitt"
 				],
