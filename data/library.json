@@ -821,5 +821,21 @@
 			"line charts"
 		],
 		"read":true
+	},
+	{
+		"path":"bois_1981_metamorphosisOfAxonometry",
+		"date":1981,
+		"title":"Metamorphosis of Axonometry",
+		"authors":[
+			{
+				"ln":"Bois",
+				"fi":"Y.A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"architectural praxis"
+		],
+		"read":false
 	}
 ]
