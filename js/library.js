@@ -67,7 +67,7 @@ var lib = function(){
 					"treemaps"
 				],
 			"lexicon": [
-					"axonometric",
+					"axonometry",
 					"distance",
 					"god-trick",
 					"grid",
