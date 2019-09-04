@@ -857,5 +857,21 @@
 			"post-minimalism"
 		],
 		"read":false
+	},
+	{
+		"path":"gombrich_1975_mirrorAndMapTheoriesOfPictorialRepresentation",
+		"date":1975,
+		"title":"Mirror and Map: Theories of Pictorial Representation",
+		"authors":[
+			{
+				"ln":"Gombrich",
+				"fi":"E."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"graphical perception"
+		],
+		"read":false
 	}
 ]
