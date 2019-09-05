@@ -873,5 +873,21 @@
 			"graphical perception"
 		],
 		"read":false
+	},
+	{
+		"path":"reichlin_1984_theProsAndConsOfTheHorizontalWindowThePerretLeCorbusierControversy",
+		"date":1984,
+		"title":"The Pros and Cons of the Horizontal Window: The Perret - Le Corbusier Controversy",
+		"authors":[
+			{
+				"ln":"Reichlin",
+				"fi":"B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"architectural praxis"
+		],
+		"read":false
 	}
 ]
