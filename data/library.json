@@ -886,8 +886,12 @@
 		],
 		"type":"article",
 		"tags":[
-			"architectural praxis"
+			"architectural praxis",
+			"vertical ⇌ horizontal",
+			"✢ le corbusier",
+			"interior",
+			"panorama"
 		],
-		"read":false
+		"read":true
 	}
 ]

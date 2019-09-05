@@ -36,8 +36,10 @@ var lib = function(){
 			"architecture":[
 				"architectural praxis",
 				"city planning",
+				"interior",
 				"urbanism",
 				"visionary architecture",
+				"✢ le corbusier",
 				"✢ mies van der rohe"
 				],
 			"art":[
@@ -80,8 +82,10 @@ var lib = function(){
 					"line",
 					"network",
 					"panopticon",
+					"panorama",
 					"point",
-					"subject ⇌ object"
+					"subject ⇌ object",
+					"vertical ⇌ horizontal"
 				],
 			"linguistics":[
 					"controlled language",
