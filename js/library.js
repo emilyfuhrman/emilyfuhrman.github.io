@@ -76,6 +76,7 @@ var lib = function(){
 					"god-trick",
 					"grid",
 					"horizon",
+					"horizontal ⇌ vertical",
 					"icon",
 					"index",
 					"isomorphism",
@@ -84,8 +85,7 @@ var lib = function(){
 					"panopticon",
 					"panorama",
 					"point",
-					"subject ⇌ object",
-					"vertical ⇌ horizontal"
+					"subject ⇌ object"
 				],
 			"linguistics":[
 					"controlled language",
