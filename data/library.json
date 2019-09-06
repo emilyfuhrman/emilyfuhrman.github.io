@@ -906,9 +906,11 @@
 		],
 		"type":"article",
 		"tags":[
+			"architectural praxis",
 			"horizon",
+			"horizontal ⇌ vertical",
 			"✢ frank lloyd wright"
 		],
-		"read":false
+		"read":true
 	}
 ]
