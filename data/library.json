@@ -912,5 +912,22 @@
 			"✢ frank lloyd wright"
 		],
 		"read":true
+	},
+	{
+		"path":"tenen_2014_stalinsPowerPoint",
+		"date":2014,
+		"title":"Stalin's PowerPoint",
+		"authors":[
+			{
+				"ln":"Tenen",
+				"fi":"D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"vis crit",
+			"art history"
+		],
+		"read":true
 	}
 ]

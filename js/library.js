@@ -44,6 +44,7 @@ var lib = function(){
 				"✢ mies van der rohe"
 				],
 			"art":[
+				"art history",
 				"avant-garde",
 				"minimalism",
 				"modernism",
@@ -69,7 +70,8 @@ var lib = function(){
 					"line charts",
 					"notation",
 					"pie charts",
-					"treemaps"
+					"treemaps",
+					"vis crit"
 				],
 			"lexicon": [
 					"axonometry",
