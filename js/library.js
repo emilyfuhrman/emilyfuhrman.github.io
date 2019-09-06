@@ -39,6 +39,7 @@ var lib = function(){
 				"interior",
 				"urbanism",
 				"visionary architecture",
+				"✢ frank lloyd wright",
 				"✢ le corbusier",
 				"✢ mies van der rohe"
 				],

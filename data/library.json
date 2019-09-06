@@ -893,5 +893,22 @@
 			"panorama"
 		],
 		"read":true
+	},
+	{
+		"path":"plummer_1991_theHorizonReveriesOfFrankLloydWright",
+		"date":1991,
+		"title":"The Horizon Reveries of Frank Lloyd Wright",
+		"authors":[
+			{
+				"ln":"Plummer",
+				"fi":"H."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"horizon",
+			"✢ frank lloyd wright"
+		],
+		"read":false
 	}
 ]
