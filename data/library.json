@@ -860,7 +860,7 @@
 			"✢ stanley brouwn",
 			"topology"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"gombrich_1975_mirrorAndMapTheoriesOfPictorialRepresentation",
