@@ -1084,6 +1084,7 @@ $log_padding_default:1rem;
 	float:left;
 	}
 .album_page_tags span {
+	@include sans_serif_micro;
 	float:left;
 	}
 
@@ -1145,7 +1146,7 @@ $log_padding_default:1rem;
 	height:auto;
 	}
 .photo_frame .photo_caption {
-	@include sans_serif_small;
+	@include sans_serif_micro;
 	width:100%;
 	text-align:center;
   text-overflow:ellipsis;
