@@ -51,7 +51,8 @@ var lib = function(){
 				"photography",
 				"post-minimalism",
 				"✢ agnes martin",
-				"✢ sol lewitt"
+				"✢ sol lewitt",
+				"✢ stanley brouwn"
 				],
 			"birds": [
 				"birdsong"
@@ -106,7 +107,8 @@ var lib = function(){
 				],
 			"math": [
 					"geometry",
-					"statistics"
+					"statistics",
+					"topology"
 				],
 			"music": [
 					"musicology",
