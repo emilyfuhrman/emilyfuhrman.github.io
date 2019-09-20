@@ -917,5 +917,21 @@
 			"art history"
 		],
 		"read":true
+	},
+	{
+		"path":"krauss_1987_lewittInProgress",
+		"date":1987,
+		"title":"LeWitt in Progress",
+		"authors":[
+			{
+				"ln":"Krauss",
+				"fi":"R."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ sol lewitt"
+		],
+		"read":false
 	}
 ]
