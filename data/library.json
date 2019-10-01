@@ -481,7 +481,8 @@
 		"type":"chapter",
 		"tags":[
 			"distance",
-			"point"
+			"point",
+			"temporality"
 		],
 		"read":true
 	},
