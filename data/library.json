@@ -952,9 +952,10 @@
 		"tags":[
 			"x-axis",
 			"temporality",
-			"deixis"
+			"deixis",
+			"line"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"nunez-cooperrider-doan-wassmann_2011_contoursOfTimeTopographicConstrualsOfPastPresentAndFuture.pdf",
