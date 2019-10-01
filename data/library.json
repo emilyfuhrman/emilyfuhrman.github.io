@@ -933,5 +933,26 @@
 			"✢ sol lewitt"
 		],
 		"read":true
+	},
+	{
+		"path":"nunez-sweetser_2004_withTheFutureBehindThem",
+		"date":2004,
+		"title":"With the Future Behind Them: Convergent Evidence from Aymara Language and Gesture in the Crosslinguistic Comparison of Spatial Construals of Time",
+		"authors":[
+			{
+				"ln":"Nuñez",
+				"fi":"R.E."
+			},
+			{
+				"ln":"Sweetser",
+				"fi":"E."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"x-axis",
+			"temporality"
+		],
+		"read":false
 	}
 ]

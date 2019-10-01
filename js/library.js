@@ -72,7 +72,8 @@ var lib = function(){
 					"notation",
 					"pie charts",
 					"treemaps",
-					"vis crit"
+					"vis crit",
+					"x-axis"
 				],
 			"lexicon": [
 					"axonometry",
@@ -117,6 +118,7 @@ var lib = function(){
 			"philosophy": [
 					"aesthetics",
 					"intentionality",
+					"temporality",
 					"utopia"
 				]
 		},
