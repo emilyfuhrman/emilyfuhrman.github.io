@@ -951,7 +951,38 @@
 		"type":"article",
 		"tags":[
 			"x-axis",
-			"temporality"
+			"temporality",
+			"deixis"
+		],
+		"read":false
+	},
+	{
+		"path":"nunez-cooperrider-doan-wassmann_2011_contoursOfTimeTopographicConstrualsOfPastPresentAndFuture.pdf",
+		"date":2011,
+		"title":"Contours of Time: Topographic Construals of Past, Present, and Future in the Yupno Valley of Papua New Guinea",
+		"authors":[
+			{
+				"ln":"Nuñez",
+				"fi":"R.E."
+			},
+			{
+				"ln":"Cooperrider",
+				"fi":"K."
+			},
+			{
+				"ln":"Doan",
+				"fi":"D."
+			},
+			{
+				"ln":"Wassmann",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"x-axis",
+			"temporality",
+			"deixis"
 		],
 		"read":false
 	}
