@@ -1003,5 +1003,21 @@
 			"critical cartography"
 		],
 		"read":false
+	},
+	{
+		"path":"boelhower_1988_theCultureOfTheMap",
+		"date":1988,
+		"title":"Inventing America: The Culture of the Map",
+		"authors":[
+			{
+				"ln":"Boelhower",
+				"fi":"W."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"critical cartography"
+		],
+		"read":false
 	}
 ]
