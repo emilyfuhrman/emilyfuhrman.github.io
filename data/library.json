@@ -987,5 +987,21 @@
 			"deixis"
 		],
 		"read":true
+	},
+	{
+		"path":"harley_1989_deconstructingTheMap.pdf",
+		"date":1989,
+		"title":"Deconstructing the Map",
+		"authors":[
+			{
+				"ln":"Harley",
+				"fi":"J.B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"critical cartography"
+		],
+		"read":false
 	}
 ]
