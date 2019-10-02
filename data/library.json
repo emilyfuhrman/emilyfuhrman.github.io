@@ -1002,7 +1002,7 @@
 		"tags":[
 			"critical cartography"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"boelhower_1988_theCultureOfTheMap",
