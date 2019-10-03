@@ -1005,6 +1005,7 @@
 		"read":true
 	},
 	{
+		"star":true,
 		"path":"boelhower_1988_theCultureOfTheMap",
 		"date":1988,
 		"title":"Inventing America: The Culture of the Map",
@@ -1016,8 +1017,14 @@
 		],
 		"type":"article",
 		"tags":[
-			"critical cartography"
+			"critical cartography",
+			"map ⇌ territory",
+			"semiotics",
+			"line",
+			"grid",
+			"god-trick",
+			"utopia"
 		],
-		"read":false
+		"read":true
 	}
 ]
