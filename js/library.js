@@ -75,7 +75,7 @@ var lib = function(){
 					"vis crit",
 					"x-axis"
 				],
-			"lexicon": [
+			"form": [
 					"axonometry",
 					"distance",
 					"god-trick",
