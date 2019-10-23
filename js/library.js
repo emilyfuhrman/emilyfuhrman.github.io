@@ -103,6 +103,7 @@ var lib = function(){
 			"mapping":[
 					"cartography",
 					"critical cartography",
+					"longitude",
 					"map ⇌ territory",
 					"projections"
 				],

@@ -1026,5 +1026,29 @@
 			"utopia"
 		],
 		"read":true
+	},
+	{
+		"path":"friendly-valeroMora-ibanezUlargui_2010_theFirstKnownStatisticalGraph",
+		"date":2010,
+		"title":"The First (Known) Statistical Graph: Michael Florent van Langren and the 'Secret' of Longitude",
+		"authors":[
+			{
+				"ln":"Friendly",
+				"fi":"M."
+			},
+			{
+				"ln":"Valero-Mora",
+				"fi":"P."
+			},
+			{
+				"ln":"Ibáñez Ulargui",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"longitude"
+		],
+		"read":false
 	}
 ]
