@@ -8,8 +8,15 @@ images:
     height: 3772
     half:   true
     side:   left
+  - ext:    02.png
+    width:  2029
+    height: 3772
+    half:   true
+    side:   right
 tags:
   - static
   - interior
 ---
-The logo is traversed, pixel-by-pixel, by a Hilbert curve. The curves are then unraveled, snakelike, revealing the digital strata of each composite.
+Proposal for a pixelized moss wall designed to fill the interior space of a new stairwell.
+
+The design is the product of programmatically traversing the Two Sigma logo, pixel-by-pixel, using a Hilbert curve. The curve is then unraveled, snakelike, revealing the hues that comprise the company's brand identity. The array of hues is rendered in cubes of moss, bringing greenery into the space.
