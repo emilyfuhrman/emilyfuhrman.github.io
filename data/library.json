@@ -1051,5 +1051,29 @@
 			"cartography"
 		],
 		"read":false
+	},
+	{
+		"path":"freeman-starks-sandler_2018_aConciseTaxonomyForDescribingDataAsAnArtMaterial",
+		"date":2018,
+		"title":"A Concise Taxonomy for Describing Data as an Art Material",
+		"authors":[
+			{
+				"ln":"Freeman",
+				"fi":"J."
+			},
+			{
+				"ln":"Starks",
+				"fi":"G."
+			},
+			{
+				"ln":"Sandler",
+				"fi":"M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"data art"
+		],
+		"read":false
 	}
 ]
