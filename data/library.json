@@ -1075,5 +1075,22 @@
 			"data art"
 		],
 		"read":true
+	},
+	{
+		"path":"stevens_1946_onTheTheoryOfScalesOfMeasurement",
+		"date":1946,
+		"title":"On the Theory of Scales of Measurement",
+		"authors":[
+			{
+				"ln":"Stevens",
+				"fi":"S.S."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"scale",
+			"unit"
+		],
+		"read":false
 	}
 ]

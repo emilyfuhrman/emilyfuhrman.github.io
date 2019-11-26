@@ -91,7 +91,9 @@ var lib = function(){
 					"panopticon",
 					"panorama",
 					"point",
-					"subject ⇌ object"
+					"scale",
+					"subject ⇌ object",
+					"unit"
 				],
 			"linguistics":[
 					"controlled language",
