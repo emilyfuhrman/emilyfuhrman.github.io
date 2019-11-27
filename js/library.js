@@ -64,16 +64,16 @@ var lib = function(){
 				],
 			"data visualization": [
 					"3D projection",
-					"bar charts",
+					"bar chart",
 					"color",
-					"dot charts",
-					"dotplots",
+					"dot chart",
+					"dotplot",
 					"graphical perception",
-					"line charts",
+					"line chart",
 					"notation",
-					"pie charts",
-					"treemaps",
-					"vis crit",
+					"pie chart",
+					"rose diagram",
+					"treemap",
 					"x-axis"
 				],
 			"form": [
