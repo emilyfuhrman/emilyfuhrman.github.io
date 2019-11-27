@@ -739,7 +739,8 @@
 			"god-trick",
 			"city planning",
 			"cartography",
-			"horizon"
+			"horizon",
+			"ichnography"
 		],
 		"read":true
 	},
@@ -1108,7 +1109,8 @@
 			"morphology",
 			"urbanism",
 			"nolli map",
-			"rose diagram"
+			"rose diagram",
+			"ichnography"
 		],
 		"read":true
 	}
