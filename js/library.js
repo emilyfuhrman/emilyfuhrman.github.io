@@ -109,6 +109,7 @@ var lib = function(){
 					"critical cartography",
 					"longitude",
 					"map ⇌ territory",
+					"nolli map",
 					"projections"
 				],
 			"math": [
