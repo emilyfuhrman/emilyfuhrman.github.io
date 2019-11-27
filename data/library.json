@@ -1051,7 +1051,7 @@
 			"longitude",
 			"cartography"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"freeman-starks-sandler_2018_aConciseTaxonomyForDescribingDataAsAnArtMaterial",
