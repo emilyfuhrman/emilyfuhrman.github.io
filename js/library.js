@@ -158,8 +158,8 @@ var lib = function(){
 						b_comp;
 				for(var i=(iter-1); i>-1; i--){
 					_data.sort(function(a,b){
-						a_comp = a[self.focus][i] ? a[self.focus][i].ln : 'A';
-						b_comp = b[self.focus][i] ? b[self.focus][i].ln : 'A';
+						a_comp = (a[self.focus][i] ? a[self.focus][i].ln : 'A').toLowerCase();
+						b_comp = (b[self.focus][i] ? b[self.focus][i].ln : 'A').toLowerCase();
 						return sorter(a_comp,b_comp);
 					});
 				}
