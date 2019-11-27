@@ -87,6 +87,7 @@ var lib = function(){
 					"index",
 					"isomorphism",
 					"line",
+					"morphology",
 					"network",
 					"panopticon",
 					"panorama",

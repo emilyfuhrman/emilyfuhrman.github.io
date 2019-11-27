@@ -1092,5 +1092,22 @@
 			"unit"
 		],
 		"read":false
+	},
+	{
+		"path":"boeing_2019_bigDataInurbanMorphology",
+		"date":2019,
+		"title":"Spatial Information and the Legibility of Urban Form: Big Data in Urban Morphology",
+		"authors":[
+			{
+				"ln":"Boeing",
+				"fi":"G."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"morphology",
+			"urbanism"
+		],
+		"read":false
 	}
 ]
