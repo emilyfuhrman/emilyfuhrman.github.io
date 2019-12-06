@@ -64,16 +64,16 @@ var lib = function(){
 				],
 			"data visualization": [
 					"3D projection",
-					"bar charts",
+					"bar chart",
 					"color",
-					"dot charts",
-					"dotplots",
+					"dot chart",
+					"dotplot",
 					"graphical perception",
-					"line charts",
+					"line chart",
 					"notation",
-					"pie charts",
-					"treemaps",
-					"vis crit",
+					"pie chart",
+					"rose diagram",
+					"treemap",
 					"x-axis"
 				],
 			"form": [
@@ -87,6 +87,7 @@ var lib = function(){
 					"index",
 					"isomorphism",
 					"line",
+					"morphology",
 					"network",
 					"panopticon",
 					"panorama",
@@ -106,8 +107,10 @@ var lib = function(){
 			"mapping":[
 					"cartography",
 					"critical cartography",
+					"ichnography",
 					"longitude",
 					"map ⇌ territory",
+					"nolli map",
 					"projections"
 				],
 			"math": [
@@ -156,8 +159,8 @@ var lib = function(){
 						b_comp;
 				for(var i=(iter-1); i>-1; i--){
 					_data.sort(function(a,b){
-						a_comp = a[self.focus][i] ? a[self.focus][i].ln : 'A';
-						b_comp = b[self.focus][i] ? b[self.focus][i].ln : 'A';
+						a_comp = (a[self.focus][i] ? a[self.focus][i].ln : 'A').toLowerCase();
+						b_comp = (b[self.focus][i] ? b[self.focus][i].ln : 'A').toLowerCase();
 						return sorter(a_comp,b_comp);
 					});
 				}

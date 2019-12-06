@@ -144,7 +144,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts"
+			"bar chart"
 		],
 		"read":true
 	},
@@ -165,8 +165,8 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts",
-			"line charts"
+			"bar chart",
+			"line chart"
 		],
 		"read":true
 	},
@@ -183,7 +183,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"dot charts"
+			"dot chart"
 		],
 		"read":true
 	},
@@ -237,8 +237,8 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts",
-			"pie charts"
+			"bar chart",
+			"pie chart"
 		],
 		"read":true
 	},
@@ -267,7 +267,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts"
+			"bar chart"
 		],
 		"read":true
 	},
@@ -292,7 +292,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts"
+			"bar chart"
 		],
 		"read":true
 	},
@@ -313,8 +313,8 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts",
-			"pie charts"
+			"bar chart",
+			"pie chart"
 		],
 		"read":true
 	},
@@ -335,7 +335,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts"
+			"bar chart"
 		],
 		"read":true
 	},
@@ -360,7 +360,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"treemaps"
+			"treemap"
 		],
 		"read":true
 	},
@@ -402,7 +402,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"bar charts"
+			"bar chart"
 		],
 		"read":true
 	},
@@ -556,7 +556,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"dotplots"
+			"dotplot"
 		],
 		"read":true
 	},
@@ -739,7 +739,8 @@
 			"god-trick",
 			"city planning",
 			"cartography",
-			"horizon"
+			"horizon",
+			"ichnography"
 		],
 		"read":true
 	},
@@ -819,7 +820,7 @@
 		"type":"article",
 		"tags":[
 			"graphical perception",
-			"line charts"
+			"line chart"
 		],
 		"read":true
 	},
@@ -914,7 +915,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"vis crit",
+			"bar chart",
 			"art history"
 		],
 		"read":true
@@ -1050,7 +1051,7 @@
 			"longitude",
 			"cartography"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"freeman-starks-sandler_2018_aConciseTaxonomyForDescribingDataAsAnArtMaterial",
@@ -1092,5 +1093,25 @@
 			"unit"
 		],
 		"read":false
+	},
+	{
+		"path":"boeing_2019_bigDataInurbanMorphology",
+		"date":2019,
+		"title":"Spatial Information and the Legibility of Urban Form: Big Data in Urban Morphology",
+		"authors":[
+			{
+				"ln":"Boeing",
+				"fi":"G."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"morphology",
+			"urbanism",
+			"nolli map",
+			"rose diagram",
+			"ichnography"
+		],
+		"read":true
 	}
 ]
