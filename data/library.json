@@ -1113,5 +1113,21 @@
 			"ichnography"
 		],
 		"read":true
+	},
+	{
+		"path":"fisher_2003_arabianCoffeeInTheLandOfSweets",
+		"date":2003,
+		"title":"'Arabian Coffee' in the Land of Sweets",
+		"authors":[
+			{
+				"ln":"Fisher",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"choreography"
+		],
+		"read":false
 	}
 ]
