@@ -1128,6 +1128,6 @@
 		"tags":[
 			"choreography"
 		],
-		"read":false
+		"read":true
 	}
 ]
