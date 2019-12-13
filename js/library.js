@@ -167,6 +167,12 @@ var lib = function(){
 						return sorter(a_comp,b_comp);
 					});
 				}
+			} else if(self.focus === 'title'){
+				_data.sort(function(a,b){
+					a_comp = (a[self.focus].replace(/[^\w\s]/gi, '') || null);
+					b_comp = (b[self.focus].replace(/[^\w\s]/gi, '') || null);
+					return sorter(a_comp,b_comp);
+				});
 			} else if(self.focus === 'catRatios'){
 				for(var i=d3.keys(self.data_tags).length; i>-1; i--){
 					var k = d3.keys(self.data_tags)[i];
