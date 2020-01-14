@@ -499,7 +499,6 @@
 		"type":"book",
 		"tags":[
 			"urbanism",
-			"city planning",
 			"visionary architecture",
 			"avant-garde",
 			"utopia"
@@ -519,7 +518,7 @@
 		"type":"article",
 		"tags":[
 			"modernism",
-			"city planning",
+			"urbanism",
 			"utopia",
 			"visionary architecture"
 		],
@@ -737,7 +736,7 @@
 		"type":"article",
 		"tags":[
 			"god-trick",
-			"city planning",
+			"urbanism",
 			"cartography",
 			"horizon",
 			"ichnography"
@@ -1106,7 +1105,6 @@
 		],
 		"type":"article",
 		"tags":[
-			"morphology",
 			"urbanism",
 			"nolli map",
 			"rose diagram",
