@@ -1129,9 +1129,10 @@
 		"read":true
 	},
 	{
+		"star":true,
 		"path":"borges_1946_onExactitudeInScience.pdf",
 		"date":1946,
-		"title":"'On Exactitude in Science",
+		"title":"On Exactitude in Science",
 		"authors":[
 			{
 				"ln":"Borges",
