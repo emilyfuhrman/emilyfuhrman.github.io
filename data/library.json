@@ -1127,5 +1127,21 @@
 			"choreography"
 		],
 		"read":true
+	},
+	{
+		"path":"borges_1946_onExactitudeInScience.pdf",
+		"date":1946,
+		"title":"'On Exactitude in Science",
+		"authors":[
+			{
+				"ln":"Borges",
+				"fi":"J.L."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"map ⇌ territory"
+		],
+		"read":true
 	}
 ]
