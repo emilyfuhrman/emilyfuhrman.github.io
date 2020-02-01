@@ -98,7 +98,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"birdsong"
+			"birds"
 		],
 		"read":true
 	},
@@ -1130,7 +1130,7 @@
 	},
 	{
 		"star":true,
-		"path":"borges_1946_onExactitudeInScience.pdf",
+		"path":"borges_1946_onExactitudeInScience",
 		"date":1946,
 		"title":"On Exactitude in Science",
 		"authors":[
@@ -1144,5 +1144,21 @@
 			"map ⇌ territory"
 		],
 		"read":true
+	},
+	{
+		"path":"helzer_2019_aFieldGuideToRoadsideWildflowersAtFullSpeed",
+		"date":2019,
+		"title":"A Field Guide to Roadside Wildflowers at Full Speed",
+		"authors":[
+			{
+				"ln":"Helzer",
+				"fi":"C."
+			}
+		],
+		"type":"compendium",
+		"tags":[
+			"plants"
+		],
+		"read":false
 	}
 ]

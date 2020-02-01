@@ -5,7 +5,7 @@ var lib = function(){
 		focus:"catRatios",
 		order:"asc",
 
-		palette:['#8dd3c7','#fb8072','#e5d8bd','#bebada','#80b1d3','#ffffb3','#fdb462','#b3de69','#fccde5','#d9d9d9','#ffed6f','#ccebc5','#bc80bd'],
+		palette:['#8dd3c7','#fb8072','#e5d8bd','#bebada','#ffffb3','#80b1d3','#fdb462','#b3de69','#fccde5','#ffed6f','#d9d9d9','#ccebc5','#bc80bd'],
 
 		data_list:[],
 		data_columns:[
@@ -56,9 +56,6 @@ var lib = function(){
 				],
 			"ballet": [
 				"choreography"
-				],
-			"birds": [
-				"birdsong"
 				],
 			"computer science": [
 					"algorithms",
@@ -122,6 +119,10 @@ var lib = function(){
 			"music": [
 					"musicology",
 					"score"
+				],
+			"nature": [
+				"birds",
+				"plants"
 				],
 			"philosophy": [
 					"aesthetics",
@@ -445,7 +446,11 @@ var lib = function(){
 						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
-							html = _d.type === 'book' ? '📖' : _d.type === 'chapter' ? '🔖' : _d.type === 'score' ? '🎹' : '📄';
+							html = _d.type === 'book' ? '📖' 
+								: _d.type === 'chapter' ? '🔖' 
+								: _d.type === 'score' ? '🎹' 
+								: _d.type === 'compendium' ? '🗄'
+								: '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
 									str = '';
