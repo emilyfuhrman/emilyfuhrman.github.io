@@ -1160,5 +1160,22 @@
 			"plants"
 		],
 		"read":false
+	},
+	{
+		"path":"levin_1976_balanchinesFormalism",
+		"date":1976,
+		"title":"Balanchine's Formalism",
+		"authors":[
+			{
+				"ln":"Levin",
+				"fi":"D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"choreography",
+			"✢ george balanchine"
+		],
+		"read":false
 	}
 ]
