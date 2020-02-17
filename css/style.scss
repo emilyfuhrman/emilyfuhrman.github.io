@@ -1279,11 +1279,11 @@ $log_padding_default:1rem;
 	}
 
 #library .row span.item_star {
+	font-family:sans-serif;
 	color:#ddd;
 	width:45px;
 	display:inline-block;
 	vertical-align:middle;
-	margin-top:-1px;
 	}
 #library .row span.item_star .fill {
 	color:$color_black;
