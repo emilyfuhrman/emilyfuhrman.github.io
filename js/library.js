@@ -112,6 +112,7 @@ var lib = function(){
 					"network",
 					"panopticon",
 					"panorama",
+					"plane",
 					"point",
 					"scale",
 					"subject ⇌ object",

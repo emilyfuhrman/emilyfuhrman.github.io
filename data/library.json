@@ -1162,6 +1162,7 @@
 		"read":false
 	},
 	{
+		"star":true,
 		"path":"levin_1976_balanchinesFormalism",
 		"date":1976,
 		"title":"Balanchine's Formalism",
@@ -1174,8 +1175,11 @@
 		"type":"article",
 		"tags":[
 			"choreography",
-			"✢ george balanchine"
+			"✢ george balanchine",
+			"line",
+			"play",
+			"god-trick"
 		],
-		"read":false
+		"read":true
 	}
 ]
