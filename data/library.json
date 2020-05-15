@@ -1182,5 +1182,22 @@
 			"horizontal ⇌ vertical"
 		],
 		"read":true
+	},
+	{
+		"path":"chernoff_1973_theUseOfFacesToRepresentPointsInK-DimensionalSpaceGraphically",
+		"date":1973,
+		"title":"The Use of Faces to Represent Points in K-Dimensional Space Graphically",
+		"authors":[
+			{
+				"ln":"Chernoff",
+				"fi":"H."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"chernoff faces",
+			"grid"
+		],
+		"read":false
 	}
 ]

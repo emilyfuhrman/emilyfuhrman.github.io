@@ -65,6 +65,7 @@ var lib = function(){
 			"data visualization": [
 					"3D projection",
 					"bar chart",
+					"chernoff faces",
 					"color",
 					"dot chart",
 					"dotplot",
