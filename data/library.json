@@ -1198,6 +1198,6 @@
 			"chernoff faces",
 			"grid"
 		],
-		"read":false
+		"read":true
 	}
 ]
