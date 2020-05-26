@@ -14,8 +14,8 @@ images:
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
-  - name:   "Columbia University Group for Experimental Methods in the Humanities"
-    link:   "http://xpmethod.plaintext.in/lit-mod-viz/visualizing-joyce.html"
+  - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
+    link:   "http://xpmethod.plaintext.in/lit-mod-viz/2014-10-22-visualizing-joyce.html"
 cred_tweets:
   - name:   Lev Manovich
     link:   "https://twitter.com/manovich/status/484048446182424577"
@@ -26,7 +26,7 @@ tags:
   - text
   - digital humanities
 ---
-In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations,"[1] and as including the "eight regular parts of a _fuga per canonem_."[2] While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
+In reference to schemas for _Ulysses_, Joyce describes the compositional technique behind the "Sirens" episode as a "_fugue_ with all musical notations,"<sup>[1]</sup> and as including the "eight regular parts of a _fuga per canonem_."<sup>[2]</sup> While the structure of the episode remains unresolved, this project is an attempt to track and classify all of the sounds that comprise it, and depict them as a graphic score.
 
 The first 63 lines of the chapter introduce 99 words and syllables that reappear in different forms throughout the rest of the text. The sounds ultimately act as [leitmotifs](http://en.wikipedia.org/wiki/Leitmotif), evoking the sensory presence of different characters at different times.
 
