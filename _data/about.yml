@@ -13,6 +13,9 @@
   title:        "Interviews"
   fancy:        true
   list:
+    - name:     Zen Maker Lab
+      link:     https://youtu.be/p5H9NVLjI5w?t=2730
+      t_right:  2020
     - name:     Columbia University
       link:     https://gsas.columbia.edu/emily-fuhrman-ma-candidate-english-and-comparative-literature
       t_right:  2017
