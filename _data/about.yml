@@ -1,5 +1,5 @@
 - id:           clients
-  title:        "Select Clients &amp; Collaborators"
+  title:        "Select Clients"
   list:
     - name:     Ace Hotel
     - name:     Discwoman
@@ -10,7 +10,7 @@
   title:        "Events &amp; public speaking"
   fancy:        true
 - id:           interviews
-  title:        "Interviews"
+  title:        "Select Interviews"
   fancy:        true
   list:
     - name:     Design Make Play
