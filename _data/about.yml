@@ -10,7 +10,7 @@
   title:        "Events &amp; public speaking"
   fancy:        true
 - id:           interviews
-  title:        "Select Interviews"
+  title:        "Interviews"
   fancy:        true
   list:
     - name:     Design Make Play
