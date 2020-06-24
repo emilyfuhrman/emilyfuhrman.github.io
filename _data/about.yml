@@ -5,10 +5,6 @@
     - name:     Discwoman
     - name:     Electric Objects
     - name:     Quanta Magazine
-- show:         false
-  id:           talks
-  title:        "Events &amp; public speaking"
-  fancy:        true
 - id:           interviews
   title:        "Interviews"
   fancy:        true
