@@ -1212,8 +1212,10 @@
 		],
 		"type":"article",
 		"tags":[
-			"naming"
+			"semantics",
+			"categorization",
+			"insects"
 		],
-		"read":true
+		"read":false
 	}
 ]

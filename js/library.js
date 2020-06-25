@@ -80,7 +80,6 @@ var lib = function(){
 			"linguistics":[
 					"controlled language",
 					"deixis",
-					"naming",
 					"semantics"
 				],
 			"literary theory":[
@@ -125,11 +124,13 @@ var lib = function(){
 					"score"
 				],
 			"nature": [
-				"birds",
-				"plants"
+					"birds",
+					"insects",
+					"plants"
 				],
 			"philosophy": [
 					"aesthetics",
+					"categorization",
 					"intentionality",
 					"temporality",
 					"utopia"
