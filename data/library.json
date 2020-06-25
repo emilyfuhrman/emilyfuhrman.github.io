@@ -1213,10 +1213,27 @@
 		"type":"article",
 		"tags":[
 			"semantics",
-			"categorization",
 			"nomenclature",
-			"taxonomy",
-			"insects"
+			"insects",
+			"cryptozoology"
+		],
+		"read":false
+	},
+	{
+		"path":"scott_1975_namingTheLochNessMonster",
+		"date":1975,
+		"title":"Naming the Loch Ness Monster",
+		"authors":[
+			{
+				"ln":"Scott",
+				"fi":"P."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"semantics",
+			"nomenclature",
+			"cryptozoology"
 		],
 		"read":false
 	}

@@ -127,6 +127,7 @@ var lib = function(){
 				],
 			"nature": [
 					"birds",
+					"cryptozoology",
 					"insects",
 					"plants"
 				],
