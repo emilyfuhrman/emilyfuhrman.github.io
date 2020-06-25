@@ -1199,5 +1199,21 @@
 			"grid"
 		],
 		"read":true
+	},
+	{
+		"path":"smit_1972_notesOnTwoFictitiousFleasFromNepal",
+		"date":1972,
+		"title":"Notes on Two Fictitious Fleas from Nepal",
+		"authors":[
+			{
+				"ln":"Smit",
+				"fi":"F.G.A.M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"naming"
+		],
+		"read":true
 	}
 ]
