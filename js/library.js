@@ -101,6 +101,7 @@ var lib = function(){
 				],
 			"morphology": [
 					"axonometry",
+					"category",
 					"distance",
 					"god-trick",
 					"grid",
@@ -130,7 +131,7 @@ var lib = function(){
 				],
 			"philosophy": [
 					"aesthetics",
-					"categorization",
+					"epistemology",
 					"intentionality",
 					"temporality",
 					"utopia"
