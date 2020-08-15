@@ -1,8 +1,7 @@
 ---
-published:  true
 post_id:    Y2019004
-title:      "The Alaska Boundary"
-post_path:  the-alaska-boundary
+title:      "Mapping the Alaska Boundary"
+post_path:  mapping-the-alaska-boundary
 images:
   - ext:    01.png
     width:  2400
