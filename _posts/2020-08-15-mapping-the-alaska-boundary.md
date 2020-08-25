@@ -6,6 +6,9 @@ images:
   - ext:    01.png
     width:  2400
     height: 3600
+cred:
+  - name:   "visionscarto"
+    link:   "https://visionscarto.net/carte-textuelle-alaska"
 tags:
   - static
 ---
