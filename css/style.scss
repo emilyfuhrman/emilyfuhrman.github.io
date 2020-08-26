@@ -431,19 +431,38 @@ $log_padding_default:1rem;
 	border-bottom:1px solid $color_black;
 	}
 
-#proj #descrip {
+#proj .descrip {
 	display:block;
 	clear:both;
 	}
-#proj #descrip p:first-child {
+#proj .descrip p:first-child {
 	font-size:0;
 	line-height:0;
 	}
-#proj #descrip ol {
+#proj ol {
   font-size:0.75rem;
   line-height:1.2rem;
 	padding-left:2rem;
 	padding-top:1rem;
+	}
+
+#proj .holder {
+	float:left;
+	display:block;
+	clear:both;
+	width:100%;
+	}
+	
+#proj .langSwitcher {
+	cursor:cell;
+	float:left;
+	line-height:1.2rem;
+	margin:0 1.2rem 1.2rem 0;
+	}
+#proj .langSwitcher:hover {
+	}
+#proj .langSwitcher.active {
+	border-bottom:1px solid $color_black;
 	}
 
 #proj #post-nav {
