@@ -80,6 +80,7 @@ var lib = function(){
 			"linguistics":[
 					"controlled language",
 					"deixis",
+					"etymology",
 					"nomenclature",
 					"semantics"
 				],

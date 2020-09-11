@@ -1236,5 +1236,22 @@
 			"cryptozoology"
 		],
 		"read":false
+	},
+	{
+		"path":"carver_1994_wordHistoriesDeadline",
+		"date":1994,
+		"title":"Word Histories: Deadline",
+		"authors":[
+			{
+				"ln":"Carver",
+				"fi":"C.M."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"etymology",
+			"line"
+		],
+		"read":true
 	}
 ]
