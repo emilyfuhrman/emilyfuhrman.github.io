@@ -1253,5 +1253,22 @@
 			"line"
 		],
 		"read":true
+	},
+	{
+		"path":"henry_1917_printingForSchoolAndShop",
+		"date":1917,
+		"title":"Printing for School and Shop: A Textbook for Printers' Apprentices, Continuation Classes, and for General Use in Schools",
+		"authors":[
+			{
+				"ln":"Henry",
+				"fi":"F.S."
+			}
+		],
+		"type":"snip",
+		"tags":[
+			"etymology",
+			"line"
+		],
+		"read":true
 	}
 ]

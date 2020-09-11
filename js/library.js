@@ -456,9 +456,10 @@ var lib = function(){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
 							html = _d.type === 'book' ? '📖' 
-								: _d.type === 'chapter' ? '🔖' 
-								: _d.type === 'score' ? '🎹' 
+								: _d.type === 'chapter' ? '🔖'
 								: _d.type === 'compendium' ? '🗄'
+								: _d.type === 'score' ? '🎹'
+								: _d.type === 'snip' ? '✂️'
 								: '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
