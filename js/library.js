@@ -79,7 +79,7 @@ var lib = function(){
 				],
 			"linguistics":[
 					"controlled language",
-					"deixis",
+					"deixis", 
 					"etymology",
 					"nomenclature",
 					"semantics"
