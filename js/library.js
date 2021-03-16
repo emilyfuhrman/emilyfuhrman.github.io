@@ -127,7 +127,7 @@ var lib = function(){
 					"musicology",
 					"score"
 				],
-			"nature": [
+			"natural science": [
 					"birds",
 					"cryptozoology",
 					"insects",
