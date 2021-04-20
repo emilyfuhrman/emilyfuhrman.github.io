@@ -1270,5 +1270,22 @@
 			"line"
 		],
 		"read":true
+	},
+	{
+		"path":"tambassi_2018_fromGeographicalLinesToCulturalBoundaries",
+		"date":2018,
+		"title":"From Geographical Lines to Cultural Boundaries: Mapping the Ontological Debate",
+		"authors":[
+			{
+				"ln":"Tambassi",
+				"fi":"T."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"border",
+			"line"
+		],
+		"read":false
 	}
 ]

@@ -103,6 +103,7 @@ var lib = function(){
 				],
 			"morphology": [
 					"axonometry",
+					"border",
 					"category",
 					"distance",
 					"god-trick",
