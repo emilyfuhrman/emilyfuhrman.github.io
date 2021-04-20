@@ -1287,5 +1287,22 @@
 			"line"
 		],
 		"read":false
+	},
+	{
+		"path":"galton_2003_onTheOntologicalStatusOfGeographicalBoundaries",
+		"date":2003,
+		"title":"On the Ontological Status of Geographical Boundaries",
+		"authors":[
+			{
+				"ln":"Galton",
+				"fi":"A."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"border",
+			"line"
+		],
+		"read":false
 	}
 ]
