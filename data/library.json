@@ -1286,7 +1286,7 @@
 			"border",
 			"line"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"galton_2003_onTheOntologicalStatusOfGeographicalBoundaries",
