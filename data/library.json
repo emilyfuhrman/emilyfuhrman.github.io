@@ -1321,5 +1321,43 @@
 			"line"
 		],
 		"read":false
+	},
+	{
+		"path":"smith_2001_fiatObjects",
+		"date":2001,
+		"title":"Fiat Objects",
+		"authors":[
+			{
+				"ln":"Smith",
+				"fi":"B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"border",
+			"line"
+		],
+		"read":false
+	},
+	{
+		"path":"smith-varzi_2000_fiatAndBonaFideBoundaries.pdf",
+		"date":2000,
+		"title":"Fiat and Bona Fide Boundaries",
+		"authors":[
+			{
+				"ln":"Smith",
+				"fi":"B."
+			},
+			{
+				"ln":"Varzi",
+				"fi":"A.C."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"border",
+			"line"
+		],
+		"read":false
 	}
 ]
