@@ -1304,5 +1304,22 @@
 			"line"
 		],
 		"read":false
+	},
+	{
+		"path":"agnew_2008_bordersOnTheMind",
+		"date":2008,
+		"title":"Borders on the Mind: Re-Framing Border Thinking",
+		"authors":[
+			{
+				"ln":"Agnew",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"border",
+			"line"
+		],
+		"read":false
 	}
 ]
