@@ -137,6 +137,7 @@ var lib = function(){
 			"philosophy": [
 					"aesthetics",
 					"intentionality",
+					"mereology",
 					"temporality",
 					"utopia"
 				]
