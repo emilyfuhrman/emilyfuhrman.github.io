@@ -1362,5 +1362,22 @@
 			"topology"
 		],
 		"read":true
+	},
+	{
+		"path":"smith_1995_onDrawingLinesOnAMap",
+		"date":1995,
+		"title":"On Drawing Lines on a Map",
+		"authors":[
+			{
+				"ln":"Smith",
+				"fi":"B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"boundary",
+			"line"
+		],
+		"read":false
 	}
 ]
