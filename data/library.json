@@ -1283,7 +1283,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"border",
+			"boundary",
 			"line"
 		],
 		"read":true
@@ -1301,7 +1301,7 @@
 		],
 		"type":"chapter",
 		"tags":[
-			"border",
+			"boundary",
 			"line"
 		],
 		"read":true
@@ -1318,7 +1318,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"border",
+			"boundary",
 			"line"
 		],
 		"read":false
@@ -1335,7 +1335,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"border",
+			"boundary",
 			"line"
 		],
 		"read":false
@@ -1356,7 +1356,7 @@
 		],
 		"type":"article",
 		"tags":[
-			"border",
+			"boundary",
 			"line"
 		],
 		"read":false
