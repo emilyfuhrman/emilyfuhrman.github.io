@@ -1289,6 +1289,7 @@
 		"read":true
 	},
 	{
+		"star":true,
 		"path":"galton_2003_onTheOntologicalStatusOfGeographicalBoundaries",
 		"date":2003,
 		"title":"On the Ontological Status of Geographical Boundaries",
@@ -1303,7 +1304,7 @@
 			"border",
 			"line"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"agnew_2008_bordersOnTheMind",
@@ -1340,7 +1341,7 @@
 		"read":false
 	},
 	{
-		"path":"smith-varzi_2000_fiatAndBonaFideBoundaries.pdf",
+		"path":"smith-varzi_2000_fiatAndBonaFideBoundaries",
 		"date":2000,
 		"title":"Fiat and Bona Fide Boundaries",
 		"authors":[
