@@ -1378,7 +1378,8 @@
 			"boundary",
 			"horizon",
 			"line",
-			"map ⇌ territory"
+			"map ⇌ territory",
+			"mereology"
 		],
 		"read":true
 	}
