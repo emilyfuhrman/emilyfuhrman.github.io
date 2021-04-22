@@ -1376,8 +1376,10 @@
 		"type":"article",
 		"tags":[
 			"boundary",
-			"line"
+			"horizon",
+			"line",
+			"map ⇌ territory"
 		],
-		"read":false
+		"read":true
 	}
 ]
