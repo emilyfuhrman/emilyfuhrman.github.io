@@ -1321,7 +1321,7 @@
 			"boundary",
 			"line"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"smith_2001_fiatObjects",
