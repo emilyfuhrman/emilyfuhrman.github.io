@@ -1336,9 +1336,12 @@
 		"type":"article",
 		"tags":[
 			"boundary",
-			"line"
+			"line",
+			"horizon",
+			"mereology",
+			"topology"
 		],
-		"read":false
+		"read":true
 	},
 	{
 		"path":"smith-varzi_2000_fiatAndBonaFideBoundaries",
