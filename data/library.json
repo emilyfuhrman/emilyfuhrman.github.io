@@ -1385,5 +1385,22 @@
 			"mereology"
 		],
 		"read":true
+	},
+	{
+		"path":"bragdon_1932_isometricPerspective",
+		"date":1932,
+		"title":"6. Isometric Perspective <i>(The Frozen Fountain: Being Essays on Architecture and the Art of Design in Space)</i>",
+		"authors":[
+			{
+				"ln":"Bragdon",
+				"fi":"C.F."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"axonometry",
+			"architectural praxis"
+		],
+		"read":false
 	}
 ]
