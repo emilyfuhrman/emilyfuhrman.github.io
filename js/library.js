@@ -102,7 +102,7 @@ var lib = function(){
 					"topology"
 				],
 			"morphology": [
-					"axonometry",
+					"axonometric",
 					"boundary",
 					"category",
 					"distance",
@@ -112,6 +112,7 @@ var lib = function(){
 					"horizontal ⇌ vertical",
 					"icon",
 					"index",
+					"isometric",
 					"isomorphism",
 					"line",
 					"network",

@@ -837,7 +837,7 @@
 		"tags":[
 			"architectural praxis",
 			"god-trick",
-			"axonometry",
+			"axonometric",
 			"3D projection"
 		],
 		"read":true
@@ -1398,8 +1398,10 @@
 		],
 		"type":"chapter",
 		"tags":[
-			"axonometry",
-			"architectural praxis"
+			"3D projection",
+			"axonometric",
+			"architectural praxis",
+			"isometric"
 		],
 		"read":false
 	}
