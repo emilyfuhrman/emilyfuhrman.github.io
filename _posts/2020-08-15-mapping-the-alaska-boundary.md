@@ -2,6 +2,7 @@
 post_id:    Y2019004
 title:      "Mapping the Alaska Boundary"
 post_path:  mapping-the-alaska-boundary
+cover:      01.png
 images:
   - ext:    01.png
     width:  2400

@@ -2,6 +2,7 @@
 post_id:    Y2013005
 title:      "Study: Ephemeral Data"
 post_path:  ephemeral-data
+cover:      01.jpg
 images:
   - ext:    01.jpg
     width:  2400

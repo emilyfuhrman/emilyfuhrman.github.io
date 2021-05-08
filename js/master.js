@@ -11,7 +11,7 @@ window.onresize = function(){
 		schema().generate();
 	}
 };
-window.onscroll = setFixedHeader;
+// window.onscroll = setFixedHeader;
 
 
 //for translations

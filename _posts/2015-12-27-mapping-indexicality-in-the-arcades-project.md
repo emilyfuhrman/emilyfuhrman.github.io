@@ -4,6 +4,7 @@ title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
 post_path:  mapping-indexicality-in-the-arcades-project
 github:     true
 paper:      true
+cover:			01.jpg
 images:     
   - ext:    01.jpg
     width:  2400

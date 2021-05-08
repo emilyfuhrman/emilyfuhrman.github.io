@@ -1,7 +1,8 @@
 ---
 post_id:    F2016011
-title:      "Lossless: a solo exhibition in conjunction with Ace Hotel ✕ Discwoman ✕ MoMA PS1"
+title:      "Lossless"
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
+cover:      01_Body_Electric.png
 images:
   - ext:    01_Body_Electric.png
     half:   true

@@ -3,6 +3,7 @@ post_id:    F2015021
 title:      "Electric Objects EO1 Art Club"
 post_path:  electric-objects-eo1-art-club
 perm:       https://www.electricobjects.com/collections/67
+cover:      F2015021_thumb.jpg
 images:
   - ext:    04.mp4
     video:  true
