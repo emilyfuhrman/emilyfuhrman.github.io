@@ -1,5 +1,5 @@
 ---
-layout: page_about
+layout: about
 title: "About"
 sitemap:
   priority: 0.9
