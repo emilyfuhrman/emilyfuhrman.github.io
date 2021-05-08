@@ -2,7 +2,6 @@
 post_id:    Y2013011
 title:      "Series: Giant Gears"
 post_path:  giant-gears
-nonvis:     true
 images:
   - ext:    01.jpg
     width:  2400
@@ -14,6 +13,7 @@ images:
     width:  2400
     height: 1932
 tags:
+  - portfolio
   - static
 ---
 A series of large-scale, hand-inked, gear-like images. Each circle measures about 20 inches across. My original intent was to create an analog rendition of an algorithmic image, which morphed into a few different iterations.

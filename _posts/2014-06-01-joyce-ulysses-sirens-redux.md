@@ -22,9 +22,8 @@ cred_tweets:
   - name:   Georgia Lupi
     link:   "https://twitter.com/giorgialupi/status/484325744961536000"
 tags:
+  - dh
   - interactive
-  - text
-  - digital humanities
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.
   - Joyce to Harriet Weaver, 6 August 1919, in Ellmann, James Joyce, p. 462.

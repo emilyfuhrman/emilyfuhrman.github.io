@@ -20,6 +20,7 @@ images:
     height: 750
     cap:    26.29 mi.
 tags:
+  - portfolio
   - static
 ---
 GPS coordinates translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) along the three indices of each w3w trigram.

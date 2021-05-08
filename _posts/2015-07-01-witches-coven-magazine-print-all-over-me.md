@@ -24,9 +24,9 @@ exhibits:
   - name:   Signal Gallery
     link:   http://ssiiggnnaall.com/
 tags:
-  - static
-  - text
+  - portfolio
   - collaboration
   - commission
+  - static
 ---
 A collaboration with [WITCHES](http://www.witchesofbushwick.com/) to create six data-driven patterns for a collection with [Print All Over Me](http://printallover.me). Each pattern is generated using text and image data scraped from the first three issues of The Coven Magazine. The full collection is available for purchase [here](https://paom.com/collections/witches/).

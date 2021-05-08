@@ -7,6 +7,7 @@ images:
     width:  2400
     height: 1779
 tags:
+  - portfolio
   - static
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.

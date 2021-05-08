@@ -12,7 +12,6 @@ images:
     width:  2400
     height: 1529
 tags:
-  - interactive
   - compendium
 ---
 A compendium of floorplans. The diagram in the bottom right corner reflects your position within the space of the page. Encounter a floorplan in the wild? [Submit](mailto:ef2512@columbia.edu) it for inclusion.

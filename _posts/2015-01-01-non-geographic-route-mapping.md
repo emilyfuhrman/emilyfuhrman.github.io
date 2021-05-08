@@ -17,6 +17,7 @@ images:
     width:  2400
     height: 3106
 tags:
+  - portfolio
   - static
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
