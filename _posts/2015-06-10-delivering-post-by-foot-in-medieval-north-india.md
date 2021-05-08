@@ -15,7 +15,6 @@ team:
   - Prof. Manan Ahmed
   - Jeremiah Trinidad-Christensen
 tags:
-  - portfolio
   - dh
   - collaboration
   - interactive

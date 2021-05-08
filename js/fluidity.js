@@ -8,18 +8,18 @@ var cutoff_tier1 = 1281,
 	cutoff_scroll = 26;
 
 var setFluid = function(){
-	setFixedHeader();
+	// setFixedHeader();
 	if(window.innerWidth <cutoff_tier1){
 		$('.container').addClass('fluid');
 	} else{
 		$('.container').removeClass('fluid');
 	}
 }
-var setFixedHeader = function(){
-	var scrollTop = $(window).scrollTop();
-	if(scrollTop >= cutoff_scroll){
-		$('#nav').addClass('fixed');
-	} else{
-		$('#nav').removeClass('fixed');
-	}
-}
+// var setFixedHeader = function(){
+// 	var scrollTop = $(window).scrollTop();
+// 	if(scrollTop >= cutoff_scroll){
+// 		$('#nav').addClass('fixed');
+// 	} else{
+// 		$('#nav').removeClass('fixed');
+// 	}
+// }

@@ -1,15 +1,17 @@
 {% include header.html %}
 <div id='proj-list'>
 	{% for post in site.posts %}
-	{% assign end = '.html' %}
-	{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
-	<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} {% cycle 'col_odd_01', 'col_odd_02', 'col_odd_03' %} {% cycle 'col_exp_01', 'col_exp_02', 'col_exp_03', 'col_exp_04', 'col_exp_05' %} list-img-link'>
-		<img class='list-img' src='/media/thumbs/{{ post.post_id }}_thumb.jpg'>
-		<div class='metadata'>
-			<p class='list-title'>{{ post.title }}</p>
-			<p class='list-date'>{{ date }}</p>
-		</div>
-	</a>
+		{% if post.tags contains 'portfolio' %}
+			{% assign end = '.html' %}
+			{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
+			<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} {% cycle 'col_odd_01', 'col_odd_02', 'col_odd_03' %} {% cycle 'col_exp_01', 'col_exp_02', 'col_exp_03', 'col_exp_04', 'col_exp_05' %} list-img-link'>
+				<img class='list-img' src='/media/thumbs/{{ post.post_id }}_thumb.jpg'>
+				<div class='metadata'>
+					<p class='list-title'>{{ post.title }}</p>
+					<p class='list-date'>{{ date }}</p>
+				</div>
+			</a>
+		{% endif %}
 	{% endfor %}
 </div>
 {% include footer.html %}

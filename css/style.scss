@@ -38,7 +38,6 @@ html,
 body {
 	width:100%;
 	min-height:100%;
-	background-color:#fff;
 	color:$color_black;
 	font-size:20px;
 	font-family:'Helvetica','Arial',sans-serif;
@@ -79,8 +78,17 @@ span.sub {
 		GENERAL
    	------------------------------------ */
 
+#background {
+	position:fixed;
+	border: 20px solid $color_black;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	}
+
 .container {
-	background:#fff;
 	width:1218px;
 	margin:0 auto;
 	@include box-sizing(border-box);
@@ -109,154 +117,30 @@ span.sub {
    	------------------------------------ */
 
 #nav {
-	position:absolute;
-	width:100%;
-	background:#fff;
-	font-size:1rem;
-	padding:2.5rem 0;
 	z-index:1000;
-	}
-#nav.fixed {
 	position:fixed;
-	display:block;
-	padding:1.2rem 0;
-	@include box-shadow(0 1px 3px rgba(0,0,0,0.02));
-	}
-#nav .container {
-	}
-#nav .container .nav {
-	width:auto;
-	}
-#nav .container .nav.home,
-#nav .container.fluid .nav.home {
-	float:left;
-	margin-left:1rem;
-	}
-#nav .container .nav.abt {
-	float:right;
-	margin-right:1.5rem;
-	}
-#nav .container .nav.proj,
-#nav .container.fluid .nav.proj {
-	float:right;
-	margin-right:1rem;
-	}
-
-#nav .container a.btn:hover {
-	color:$color_black;
-	}
-#nav .container a.btn:hover .nav {
-	border-bottom:none;
-	}
-
-/* 	------------------------------------
-		HOME
-   	------------------------------------ */
-
-#nav.home {
-	position:absolute;
-	background:transparent;
-	}
-
-#main.home {
-	position:absolute;
+	top:50px;
 	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	}
-
-#main.home #vis,
-#main.home #vis svg {
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	}
-
-#main.home #vis svg .origin {
-	opacity:0;
-	fill:transparent;
-  stroke-width:1;
-  stroke:$color_accent;
-  pointer-events:none;
-	}
-#main.home #vis svg .origin rect {
-	stroke:none;
-	}
-
-#main.home #vis svg .vertex path {
-  stroke:$color_black;
-  stroke-width:2;
-  pointer-events:none;
-	}
-#main.home #vis svg .vertex.selected path {
-  stroke:$color_accent;
-	}
-
-#main.home #vis svg .vertex rect {
-	fill:transparent;
-	}
-
-#main.home #vis svg .vertex polygon {
-	fill:$color_black;
-	pointer-events:none;
-	}
-#main.home #vis svg .vertex.selected polygon {
-	fill:$color_accent;
-	}
-
-#main.home #vis svg .vertex .markup {
-	opacity:0;
-  fill:none;
-  stroke:$color_black;
-  stroke-width:1;
-  pointer-events:none;
-	}
-#main.home #vis svg .vertex.selected .markup {
-	opacity:1;
-	stroke:$color_accent;
-	}
-
-#main.home .vis.legend {
-	opacity:0;
-	position:fixed;
-	width:12rem;
-	font-size:0.65rem;
-	text-align:right;
-	text-transform:uppercase;
+	font-size:1rem;
 	line-height:1rem;
-	bottom:4.5rem;
-	right:1.5rem;
+	letter-spacing:1px;
+	padding:2.5rem 0;
 	}
-#main.home .vis.legend .legend-descrip {
-	position:absolute;
-  width:12rem;
-  right:0;
-  bottom:3rem;
-	}
-#main.home .vis.legend .legend-title {
-	position:absolute;
-  color:$color_accent;
-  font-style:italic;
-  right:0;
-  bottom:0;
-	}
-#main.home .vis.legend .unitbar {
-	position:absolute;
-  right:0;
-  border-top:1px solid $color_accent;
-	}
-#main.home .vis.legend .unitbar_end {
-	display:none;
-	background:$color_accent;
-	position:absolute;
-	border:none;
-}
 
-#base.home {
-	display:none;
+#nav .home,
+#nav .proj,
+#nav .abt {
+	position:fixed;
+	top:50px;
+	}
+#nav .home {
+	left:65px;
+	}
+#nav .proj {
+	right:65px;
+	}
+#nav .abt {
+	right:175px;
 	}
 
 /* 	------------------------------------
@@ -265,7 +149,6 @@ span.sub {
 
 .container #proj-list,
 .container.fluid #proj-list {
-	background:#fff;
 	width:100%;
 	overflow:auto;
 	padding:0 1rem;
@@ -531,7 +414,7 @@ span.sub {
 #proj .sub #post-tags .tag {
 	display:inline-block;
 	float:left;
-	background:white;
+	background:#fff;
 	text-align:center;
 	line-height:1;
 	white-space:nowrap;
@@ -657,7 +540,7 @@ span.sub {
 	}
 
 #contain #content_mid .section ul li .t_right {
-	background:white;
+	background:#fff;
 	float:right;
 	text-align:right;
 	border-bottom:none !important;
@@ -738,7 +621,6 @@ span.sub {
 #base {
 	float:left;
 	width:100%;
-	background:#fff;
 	margin-top:2.6rem;
 	padding:2.6rem 0;
 	border-top:1px solid rgba(0,0,0,0.02);
@@ -1113,24 +995,6 @@ span.sub {
 		padding:0;
 		}
 
-	#nav {
-		font-size:1.5rem;
-		line-height:2rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:left;
-		width:100%;
-		margin:0;
-		}
-
 	.container #proj-list,
 	.container.fluid #proj-list {
 		margin-top:1.8rem;
@@ -1235,36 +1099,6 @@ span.sub {
 	.container.fluid #proj {
 		margin-top:0;
 		padding:0;
-		}
-
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		margin:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		margin-right:1.5rem;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
 		}
 
 	.container #proj-list,
@@ -1384,36 +1218,6 @@ span.sub {
 		padding:0;
 		}
 
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		margin:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		margin-right:1.5rem;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
-		}
-
 	.container #proj-list,
 	.container.fluid #proj-list {
 		margin-top:0;
@@ -1524,36 +1328,6 @@ span.sub {
 	.container.fluid #proj {
 		margin-top:0;
 		padding:0;
-		}
-
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		margin:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		margin-right:1.5rem;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
 		}
 
 	.container #proj-list,
@@ -1689,36 +1463,6 @@ span.sub {
 		padding:0;
 		}
 
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		margin:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		margin-right:1.5rem;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
-		}
-
 	.container #proj-list,
 	.container.fluid #proj-list {
 		margin-top:0;
@@ -1840,7 +1584,6 @@ span.sub {
 
 	.container,
 	.container.fluid {
-		background:#fff;
 		margin:0 auto;
 		padding:0;
 		}
@@ -1855,37 +1598,6 @@ span.sub {
 	.container.fluid #proj {
 		margin-top:0;
 		padding:0 1rem;
-		}
-
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		padding:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		margin-left:1rem;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
-		margin-right:1rem;
 		}
 
 	.container #proj-list,
@@ -2014,7 +1726,6 @@ span.sub {
 
 	.container,
 	.container.fluid {
-		background:#fff;
 		margin:0 auto;
 		padding:0 calc(1rem * 2);
 		}
@@ -2029,37 +1740,6 @@ span.sub {
 	.container.fluid #proj {
 		margin-top:0;
 		padding:0 1rem;
-		}
-
-	#nav {
-		font-size:1rem;
-		line-height:1.5rem;
-		}
-
-	#nav .container .nav,
-	#nav .container.fluid .nav,
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home,
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj,
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		width:auto;
-		padding:0;
-		}
-	#nav .container .nav.home,
-	#nav .container.fluid .nav.home {
-		float:left;
-		margin-left:1rem;
-		}
-	#nav .container .nav.abt,
-	#nav .container.fluid .nav.abt {
-		float:right;
-		}
-	#nav .container .nav.proj,
-	#nav .container.fluid .nav.proj {
-		float:right;
-		margin-right:1rem;
 		}
 
 	.container #proj-list,

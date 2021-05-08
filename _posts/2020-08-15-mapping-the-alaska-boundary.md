@@ -10,6 +10,7 @@ cred:
   - name:   "visionscarto"
     link:   "https://visionscarto.net/carte-textuelle-alaska"
 tags:
+  - portfolio
   - static
 citations:
   - Munro, John A., <i>The Alaskan Boundary Dispute</i> (Canada&colon; The Copp Clark Publishing Company, 1970), 9.
