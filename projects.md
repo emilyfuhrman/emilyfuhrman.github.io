@@ -1,7 +1,7 @@
 ---
-layout: page_list
+layout: projects
 title: "Projects"
-description: A portfolio of personal and professional data visualization work. 
+description: All projects. 
 permalink: /projects/
 loading_animation: true
 sitemap:
