@@ -4,6 +4,7 @@ title:      "The Coven Magazine ✕ Print All Over Me"
 post_path:  witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
 cover:      01_02.jpg
+cover_w:    550
 images:
   - ext:    01_02.jpg
     width:  2400

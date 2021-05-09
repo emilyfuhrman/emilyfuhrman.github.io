@@ -103,7 +103,7 @@ span.sub {
 
 .container#main {
 	opacity:0;
-	padding-top:9rem;
+	padding-top:8rem;
 	overflow:visible;
 	@include transition(opacity 240ms ease);
 	}
@@ -161,7 +161,8 @@ span.sub {
 	height:auto;
 	text-align:left;
 	text-decoration:none;
-	margin:0 0 3rem 0;
+	vertical-align:top;
+	margin:0 0 1rem 0;
 	padding:1.5rem;
 	border:none;
 	@include box-sizing(border-box);

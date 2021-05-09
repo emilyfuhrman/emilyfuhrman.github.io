@@ -3,11 +3,11 @@
 	{% for post in site.posts %}
 		{% if post.tags contains 'portfolio' %}
 			{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
-			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link'>
+			{% capture w %}{{ post.cover_w | w: "" }}{% endcapture %}
+			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link' style='width: {{ w }}px'> 
 				<img class='list-img' src='/media/{{ post.post_id }}/{{ post.cover }}'>
 				<div class='metadata'>
 					<p class='list-title'>{{ post.title }}</p>
-					<p class='list-date'>{{ date }}</p>
 				</div>
 			</a>
 		{% endif %}

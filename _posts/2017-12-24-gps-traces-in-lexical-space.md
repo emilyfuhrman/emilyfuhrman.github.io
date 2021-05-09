@@ -2,7 +2,8 @@
 post_id:    Y2017005
 title:      "GPS Traces in Lexical Space"
 post_path:  gps-traces-in-lexical-space
-cover:      02_20171223_00.png
+cover:      01_20171223_01.png
+cover_w:    700
 images:
   - ext:    02_20171223_00.png
     width:  1200
