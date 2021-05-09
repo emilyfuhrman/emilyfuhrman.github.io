@@ -1,10 +1,9 @@
 {% include header.html %}
-<div id='proj-list'>
+<div id='projects-list'>
 	{% for post in site.posts %}
 		{% if post.tags contains 'portfolio' %}
-			{% assign end = '.html' %}
 			{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
-			<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} list-img-link'>
+			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link'>
 				<img class='list-img' src='/media/{{ post.post_id }}/{{ post.cover }}'>
 				<div class='metadata'>
 					<p class='list-title'>{{ post.title }}</p>
