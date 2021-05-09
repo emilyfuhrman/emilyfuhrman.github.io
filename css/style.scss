@@ -103,7 +103,7 @@ span.sub {
 
 .container#main {
 	opacity:0;
-	padding-top:8rem;
+	padding:8rem 0 6rem 0;
 	overflow:visible;
 	@include transition(opacity 240ms ease);
 	}

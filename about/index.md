@@ -1,6 +1,7 @@
 ---
 layout: about
 title: "About"
+contact: true
 sitemap:
   priority: 0.9
 ---
