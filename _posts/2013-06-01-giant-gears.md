@@ -3,7 +3,7 @@ post_id:    Y2013011
 title:      "Series: Giant Gears"
 post_path:  giant-gears
 cover:      03.jpg
-cover_w:    550
+cover_w:    650
 images:
   - ext:    01.jpg
     width:  2400

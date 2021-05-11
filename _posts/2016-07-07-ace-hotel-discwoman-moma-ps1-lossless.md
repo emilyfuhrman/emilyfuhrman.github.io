@@ -2,7 +2,7 @@
 post_id:    F2016011
 title:      "Lossless"
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
-cover:      01_Body_Electric.png
+cover:      EF_a.jpg
 cover_w:    500
 images:
   - ext:    01_Body_Electric.png
