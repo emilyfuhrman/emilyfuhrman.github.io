@@ -126,19 +126,19 @@ span.sub {
 	}
 
 #nav .home,
-#nav .projects,
-#nav .about {
+#nav .about,
+#nav .projects {
 	position:fixed;
 	top:50px;
 	}
 #nav .home {
 	left:65px;
 	}
-#nav .projects {
+#nav .about {
 	right:65px;
 	}
-#nav .about {
-	right:175px;
+#nav .projects {
+	right:150px;
 	}
 
 /* 	------------------------------------
