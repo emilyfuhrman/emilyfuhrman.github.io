@@ -3,7 +3,7 @@ post_id:    Y2013009
 title:      "Study: Self-referential Inkblots"
 post_path:  self-referential-inkblots
 cover:			01.jpg
-cover_w:		550
+cover_w:		500
 images:
   - ext:    01.jpg
     width:  2400
