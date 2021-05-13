@@ -2,51 +2,52 @@
 post_id:    F2016011
 title:      "Lossless"
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
-cover:      EF_a.jpg
-cover_w:    500
+cover:      01_bodyElectric_framed.jpg
+cover_w:    550
 images:
-  - ext:    01_Body_Electric.png
+  - ext:    01_bodyElectric_framed.jpg
     half:   true
     side:   left
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://soundcloud.com/bearcats_mixtapes/chromat-documentary-score-teaser' target='_blank'>BEARCAT</a>
-  - ext:    05_Queen.png
+  - ext:    05_queen_framed.jpg
     half:   true
     side:   right
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://soundcloud.com/tttheartist/queen-ft-mu' target='_blank'>TT</a>
-  - ext:    04_Maluca.png
+  - ext:    04_maluca_framed.jpg
     half:   true
     side:   left
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://www.youtube.com/watch?v=j5cQLrPxupo' target='_blank'>Maluca</a>
-  - ext:    03_Lionsong.png
+  - ext:    03_lionsong_framed.jpg
     half:   true
     side:   right
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://soundcloud.com/bjork/lionsong-juliana-huxtable-remix-1?in=bjork/sets/vulnicura-remix-project-part-3' target='_blank'>Juliana</a>
-  - ext:    06_SADAF.png
+  - ext:    06_SADAF_framed.jpg
     half:   true
     side:   left
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://soundcloud.com/hoss-records/sadaf-stillness' target='_blank'>SADAF</a>
-  - ext:    02_Eartheater.png
+  - ext:    02_eartheater_framed.jpg
     half:   true
     side:   right
     width:  1200
-    height: 1788
+    height: 1453
     border: true
     cap:    <a href='https://www.youtube.com/watch?v=Wimrg1l57nc' target='_blank'>Eartheater</a>
+loading_animation: true
 exhibits:
   - name:   The Gallery at Ace Hotel New York
     link:   http://www.acehotel.com/newyork/gallery
