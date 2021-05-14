@@ -5,7 +5,7 @@ post_path:  mapping-indexicality-in-the-arcades-project
 github:     true
 paper:      true
 cover:			cover.png
-cover_w:		400
+cover_w:		450
 images:     
   - ext:    01.jpg
     width:  2400
