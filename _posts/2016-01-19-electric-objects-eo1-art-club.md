@@ -3,37 +3,29 @@ post_id:    F2015021
 title:      "Electric Objects EO1 Art Club"
 post_path:  electric-objects-eo1-art-club
 perm:       https://www.electricobjects.com/collections/67
-cover:      cover.png
+cover:      02_animation_EO1.gif
 cover_w:    500
 images:
-  - ext:    04.mp4
-    video:  true
-    loop:   true
+  - ext:    04_animation_EO1.gif
     half:   true
     side:   left
-    width:  1080
-    height: 1920
-  - ext:    02.mp4
-    video:  true
-    loop:   true
+    width:  1000
+    height: 1750
+  - ext:    02_animation_EO1.gif
     half:   true
     side:   right
-    width:  1080
-    height: 1920
-  - ext:    01.mp4
-    video:  true
-    loop:   true
+    width:  1000
+    height: 1750
+  - ext:    01_animation_EO1.gif
     half:   true
     side:   left
-    width:  1080
-    height: 1920
-  - ext:    03.mp4
-    video:  true
-    loop:   true
+    width:  1000
+    height: 1750
+  - ext:    03_animation_EO1.gif
     half:   true
     side:   right
-    width:  1080
-    height: 1920
+    width:  1000
+    height: 1750
 exhibits:
   - name:   The Mini Microcinema
     link:   http://www.mini-cinema.org/screenings/object

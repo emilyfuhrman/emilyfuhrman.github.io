@@ -18,25 +18,14 @@
                 {% assign class_border = '' %}
             {% endif %}
             <div class='{{ class_size }} {{ class_side }} {{ class_border }} media'>
-                {% if p.video == true %}
-                    <div class='video-container'>
-                        <div class='video-cover'></div>
-                        <video class='post-video' width='{{ p.width }}px' height= '{{ p.height }}px' {% if p.loop == true %}loop{% endif %}>
-                            <source src='/media/{{ page.post_id }}/{{ p.ext }}' type='video/mp4'>
-                            <p>Alas, your browser does not support the video tag.</p>
-                        </video>
-                    </div>
-                    <p class='caption'>{{ p.cap }}</p>
+                {% if page.perm %}
+                <a href='{{ page.perm }}' target='_blank'>
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+                </a>
                 {% else %}
-                    {% if page.perm %}
-                    <a href='{{ page.perm }}' target='_blank'>
-                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
-                    </a>
-                    {% else %}
-                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
-                    {% endif %}
-                    <p class='caption'>{{ p.cap }}</p>
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
                 {% endif %}
+                <p class='caption'>{{ p.cap }}</p>
             </div>
         {% endfor %}
     </div>

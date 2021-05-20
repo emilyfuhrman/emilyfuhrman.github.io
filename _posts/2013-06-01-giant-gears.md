@@ -1,6 +1,6 @@
 ---
 post_id:    Y2013011
-title:      "Series: Giant Gears"
+title:      "Giant Gears"
 post_path:  giant-gears
 cover:      03.jpg
 cover_w:    650
