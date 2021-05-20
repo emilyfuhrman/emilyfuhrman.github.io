@@ -2,12 +2,12 @@
 post_id:    Y2013009
 title:      "Study: Self-referential Inkblots"
 post_path:  self-referential-inkblots
-cover:			01.jpg
+cover:			01.png
 cover_w:		650
 images:
-  - ext:    01.jpg
-    width:  2400
-    height: 1779
+  - ext:    01.png
+    width:  2000
+    height: 1600
 tags:
   - portfolio
   - static
