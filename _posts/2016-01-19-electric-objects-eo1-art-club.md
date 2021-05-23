@@ -8,16 +8,12 @@ cover_w:    500
 images:
   - ext:    04_animation_EO1.gif
     half:   true
-    side:   left
   - ext:    02_animation_EO1.gif
     half:   true
-    side:   right
   - ext:    01_animation_EO1.gif
     half:   true
-    side:   left
   - ext:    03_animation_EO1.gif
     half:   true
-    side:   right
 exhibits:
   - name:   The Mini Microcinema
     link:   http://www.mini-cinema.org/screenings/object
