@@ -7,12 +7,10 @@
         {% for p in page.images %}
             {% if p.half == true %}
                 {% assign class_size = 'half' %}
-                {% assign class_side = p.side %}
             {% else %}
                 {% assign class_size = 'full' %}
-                {% assign class_side = '' %}
             {% endif %}
-            <div class='{{ class_size }} {{ class_side }} media'>
+            <div class='{{ class_size }} media'>
                 {% if page.perm %}
                 <a href='{{ page.perm }}' target='_blank'>
                 <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />

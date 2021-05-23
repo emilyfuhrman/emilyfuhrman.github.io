@@ -95,13 +95,6 @@ span.sub {
 	clear:both;
 	@include box-sizing(border-box);
 	}
-/*
-.container.fluid {
-	width:100%;
-	margin:0 auto;
-	padding:0 calc(1rem * 2);
-	clear:both;
-	}*/
 
 .container#main {
 	opacity:0;
@@ -212,9 +205,9 @@ span.sub {
 	}
 
 #proj #media {
-	clear:both;
 	max-width:900px;
 	margin:0 auto;
+	clear:both;
 	}
 
 #proj #media .media {
@@ -264,12 +257,12 @@ span.sub {
 	}
 
 #proj .descrip {
-	clear:both;
 	display:block;
 	max-width:900px;
 	margin:0 auto;
 	padding:0 1.5rem;
 	@include box-sizing(border-box);
+	clear:both;
 	}
 #proj .descrip p:first-child {
 	font-size:0;
@@ -302,10 +295,11 @@ span.sub {
 	}
 
 #proj #post-nav {
+	clear:both;
 	display:block;
 	width:100%;
-	padding-top:1.2em;
-	clear:both;
+	padding:1.2rem 50px 0;
+	@include box-sizing(border-box);
 	}
 #proj #post-nav .arrow#previous {
 	float:left;
