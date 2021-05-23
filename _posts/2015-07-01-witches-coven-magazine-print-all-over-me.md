@@ -10,11 +10,9 @@ images:
     cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block top</a>"
   - ext:    02.jpg
     half:   true
-    side:   left
     cap:    "<a href='https://paom.com/products/0000000p-txt-1-backpack/' target='_blank'>TXT-1 Backpack</a>"
   - ext:    03_02.jpg
     half:   true
-    side:   right
     cap:    "<a href='https://paom.com/products/0000000p-txt-3-raincoat/' target='_blank'>TXT-3 Raincoat</a>"
 exhibits:
   - name:   Signal Gallery
