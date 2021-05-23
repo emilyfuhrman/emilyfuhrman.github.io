@@ -358,25 +358,6 @@ span.sub {
 	@include box-sizing(border-box);
 	}
 
-#proj .sub #post-tags {
-	}
-#proj .sub #post-tags .tag {
-	display:inline-block;
-	float:left;
-	background:#fff;
-	text-align:center;
-	line-height:1;
-	white-space:nowrap;
-	margin:-0.125rem 0.25rem 0.4rem 0;
-	padding:0.25rem;
-	border:1px solid $color_lg;
-	@include box-sizing(border-box);
-	}
-#proj .sub #post-tags .tag:before,
-#proj .sub #post-tags .tag:after {
-	@include box-sizing(border-box);
-	}
-
 #proj .sub .label {
 	float:left;
 	width:0.75rem;
@@ -404,9 +385,6 @@ span.sub {
 	}
 #proj .sub #post-team .label {
 	background:url(/media/assets/icon_black_team.svg) no-repeat 0 0;
-	}
-#proj .sub #post-tags .label {
-	background:url(/media/assets/icon_black_tag.svg) no-repeat 0 0;
 	}
 
 /* 	------------------------------------
