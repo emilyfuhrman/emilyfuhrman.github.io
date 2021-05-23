@@ -6,11 +6,7 @@ perm:       /interactive/Y2014002
 github:     true
 images:     
   - ext:    01.jpg
-    width:  2400
-    height: 1529
   - ext:    02.jpg
-    width:  2400
-    height: 1529
 tags:
   - compendium
 ---

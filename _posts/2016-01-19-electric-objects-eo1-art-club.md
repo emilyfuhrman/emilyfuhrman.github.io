@@ -9,23 +9,15 @@ images:
   - ext:    04_animation_EO1.gif
     half:   true
     side:   left
-    width:  1000
-    height: 1750
   - ext:    02_animation_EO1.gif
     half:   true
     side:   right
-    width:  1000
-    height: 1750
   - ext:    01_animation_EO1.gif
     half:   true
     side:   left
-    width:  1000
-    height: 1750
   - ext:    03_animation_EO1.gif
     half:   true
     side:   right
-    width:  1000
-    height: 1750
 exhibits:
   - name:   The Mini Microcinema
     link:   http://www.mini-cinema.org/screenings/object

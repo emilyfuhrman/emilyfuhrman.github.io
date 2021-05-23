@@ -6,18 +6,12 @@ cover:      03.jpg
 cover_w:    500
 images:
   - ext:    02.jpg
-    width:  2400
-    height: 1842
   - ext:    01.jpg
     half:   true
     side:   left
-    width:  2400
-    height: 3106
   - ext:    03.jpg
     half:   true
     side:   right
-    width:  2400
-    height: 3106
 tags:
   - portfolio
   - static

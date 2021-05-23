@@ -6,11 +6,7 @@ perm:       /interactive/Y2014001
 github:     true
 images:
   - ext:    01.jpg
-    width:  2400
-    height: 1529
   - ext:    02.jpg
-    width:  2400
-    height: 1529
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"

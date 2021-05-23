@@ -6,11 +6,7 @@ perm:       /interactive/F2015002
 github:     true
 images:
   - ext:    01.jpg
-    width:  2400
-    height: 1529
   - ext:    02.jpg
-    width:  2400
-    height: 1529
 team:
   - Prof. Manan Ahmed
   - Jeremiah Trinidad-Christensen

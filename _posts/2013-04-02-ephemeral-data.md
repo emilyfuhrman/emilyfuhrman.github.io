@@ -6,8 +6,6 @@ cover:      cover.jpg
 cover_w:		500
 images:
   - ext:    cover.jpg
-    width:  2400
-    height: 3271
 tags:
   - portfolio
   - static

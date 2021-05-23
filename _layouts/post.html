@@ -12,18 +12,13 @@
                 {% assign class_size = 'full' %}
                 {% assign class_side = '' %}
             {% endif %}
-            {% if p.border == true %}
-                {% assign class_border = 'border' %}
-            {% else %}
-                {% assign class_border = '' %}
-            {% endif %}
             <div class='{{ class_size }} {{ class_side }} {{ class_border }} media'>
                 {% if page.perm %}
                 <a href='{{ page.perm }}' target='_blank'>
-                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
                 </a>
                 {% else %}
-                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
                 {% endif %}
                 <p class='caption'>{{ p.cap }}</p>
             </div>

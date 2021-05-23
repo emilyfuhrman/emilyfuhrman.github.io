@@ -6,8 +6,6 @@ cover:      01.png
 cover_w:    450
 images:
   - ext:    01.png
-    width:  2400
-    height: 3600
 cred:
   - name:   "visionscarto"
     link:   "https://visionscarto.net/carte-textuelle-alaska"
