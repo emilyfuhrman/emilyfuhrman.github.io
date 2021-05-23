@@ -7,11 +7,7 @@ cover_w:    500
 images:
   - ext:    02.jpg
   - ext:    01.jpg
-    half:   true
-    side:   left
   - ext:    03.jpg
-    half:   true
-    side:   right
 tags:
   - portfolio
   - static
