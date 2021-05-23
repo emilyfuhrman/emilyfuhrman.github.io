@@ -180,8 +180,13 @@ span.sub {
 	}
 
 #projects-list a.list-img-link .metadata p {
+	float:left;
 	line-height:1.2rem;
 	padding:0.2rem 0 0;
+	}
+#projects-list a.list-img-link:hover .metadata p span {
+	padding-bottom:1px;
+	border-bottom:1px solid black;
 	}
 
 /* 	------------------------------------
@@ -189,8 +194,6 @@ span.sub {
    	------------------------------------ */
 
 .container #proj {
-	font-size:0.8rem !important;
-	line-height:1.2rem;
 	margin-top:0;
 	padding:0 1rem;
 	}
@@ -259,12 +262,19 @@ span.sub {
 	border-bottom:1px solid $color_black;
 	}
 
+#proj #media,
+#proj .descrip,
+#proj .langSwitcher {
+	font-size:0.9rem !important;
+	line-height:1.4rem;
+	}
+
 #proj .descrip {
 	clear:both;
 	display:block;
 	max-width:900px;
 	margin:0 auto;
-	padding:1.5rem;
+	padding:0 1.5rem;
 	@include box-sizing(border-box);
 	}
 #proj .descrip p:first-child {
@@ -279,17 +289,17 @@ span.sub {
 	}
 
 #proj .holder {
-	float:left;
 	display:block;
 	clear:both;
 	width:100%;
+	max-width:900px;
+	margin:0 auto;
 	}
 	
 #proj .langSwitcher {
 	cursor:cell;
 	float:left;
-	line-height:1.2rem;
-	margin:0 1.2rem 1.2rem 0;
+	margin:1rem 0 1rem 1.5rem;
 	}
 #proj .langSwitcher:hover {
 	}
