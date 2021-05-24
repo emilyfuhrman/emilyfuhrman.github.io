@@ -57,7 +57,7 @@
             <div id='post-exhibits' class='sub-section'>
                 <span class='meta-header'>Exhibits</span>
                 <div class='info'>
-                    <ol>
+                    <ul>
                     {% for e in page.exhibits %}
                         <li>
                         {% if e.link %}
@@ -67,7 +67,7 @@
                         {% endif %}
                         </li>
                     {% endfor %}
-                    </ol>
+                    </ul>
                 </div>
             </div>
         {% endif %}
@@ -75,7 +75,7 @@
             <div id='post-cred' class='sub-section'>
                 <span class='meta-header'>Features</span>
                 <div class='info'>
-                    <ol>
+                    <ul>
                     {% for c in page.cred %}
                         <li>
                         {% if c.link %}
@@ -85,7 +85,7 @@
                         {% endif %}
                         </li>
                     {% endfor %}
-                    </ol>
+                    </ul>
                 </div>
             </div>
         {% endif %}
@@ -93,7 +93,7 @@
             <div id='post-cred-tweets' class='sub-section'>
                 <span class='meta-header'>Mentions</span>
                 <div class='info'>
-                    <ol>
+                    <ul>
                     {% for c in page.cred_tweets %}
                         <li>
                         {% if c.link %}
@@ -103,7 +103,7 @@
                         {% endif %}
                         </li>
                     {% endfor %}
-                    </ol>
+                    </ul>
                 </div>
             </div>
         {% endif %}
