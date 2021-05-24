@@ -284,6 +284,10 @@ span.sub {
 	@include box-sizing(border-box);
 	clear:both;
 	}
+#proj .meta div {
+	float:left;
+	width:100%;
+	}
 #proj .meta > div:first-child {
 	border-top:1px solid $color_lg;
 	}
@@ -322,9 +326,10 @@ span.sub {
 
 #proj #post-nav {
 	clear:both;
+	float:left;
 	display:block;
 	width:100%;
-	padding:1.2rem 50px 0;
+  padding: 4rem 50px 2rem;
 	@include box-sizing(border-box);
 	}
 #proj #post-nav .arrow#previous {
