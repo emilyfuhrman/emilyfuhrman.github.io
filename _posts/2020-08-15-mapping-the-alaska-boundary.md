@@ -9,9 +9,6 @@ images:
 cred:
   - name:   "visionscarto"
     link:   "https://visionscarto.net/carte-textuelle-alaska"
-tags:
-  - portfolio
-  - static
 citations:
   - Munro, John A., <i>The Alaskan Boundary Dispute</i> (Canada&colon; The Copp Clark Publishing Company, 1970), 9.
   - Brown, John W., <i>An Abridged History of Alaska</i> (1909), 67. 
@@ -32,6 +29,9 @@ translations:
       Notre carte adopte le support textuel jusqu’aux extrêmes de l’illisibilité et de la précision. Utilisant un langage généré par ordinateur pour restituer en phrases l’actuelle frontière de l’Alaska avec une minutieuse véracité, elle retrace le bord de l’Alaska, nœud par nœud, depuis le coin montagneux du sud-est de l’État jusqu’à son intersection nord avec l’océan Arctique. Le poids du texte en fait un terrain inaccessible en soi, frustrant la lectrice ou le lecteur dans son parcours à travers sa topo-typo-graphie. La carte présente le médium linguistique comme une barrière à la compréhension, qui se délite dans un effort d’épuisement de la signification.<br><br/>
 
       <i>(Translated by Philippe Rivière)</i>
+tags:
+  - portfolio
+  - static
 ---
 A map is a symbolic representation of a physical territory. While a cartographic map holds an iconographic relationship to the territory it represents, a purely linguistic map does not. This piece examines the linguistic representation of a territory at the orthogonal extremes of accuracy and illegibility.
 

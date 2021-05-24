@@ -23,10 +23,10 @@
         {% endfor %}
     </div>
     {% if page.translations %}
-        <div class='holder'>
-            <div id='en' class='langSwitcher active'>English</div>
+        <div class='controls'>
+            <div id='en' class='lang-switcher active'>English</div>
             {% for t in page.translations %}
-                <div id={{ t.lang }} class='langSwitcher'>{{ t.label }}</div>
+                <div id={{ t.lang }} class='lang-switcher'>{{ t.label }}</div>
             {% endfor %}
         </div>
     {% endif %}
@@ -41,11 +41,14 @@
         {% endfor %}
     {% endif %}
     {% if page.citations %}
+    <div class='meta'>
+        <span class='meta-header'>Notes</span>
         <ol id='citations'>
             {% for c in page.citations %}
                 <li>{{ c }}</li>
             {% endfor %}
         </ol>
+    </div>
     {% endif %}
     <div class='sub'>
         {% if page.exhibits %}

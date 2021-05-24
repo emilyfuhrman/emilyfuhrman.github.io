@@ -251,7 +251,7 @@ span.sub {
 
 #proj #media,
 #proj .descrip,
-#proj .langSwitcher {
+#proj .lang-switcher {
 	font-size:0.9rem !important;
 	line-height:1.4rem;
 	}
@@ -268,29 +268,45 @@ span.sub {
 	font-size:0;
 	line-height:0;
 	}
-#proj ol {
-  font-size:0.75rem;
-  line-height:1.2rem;
-	padding-left:2rem;
-	padding-top:1rem;
-	}
 
-#proj .holder {
+#proj .controls {
 	display:block;
 	clear:both;
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
 	}
+
+#proj .meta-header {
+	float:left;
+	width:100%;
+	max-width:900px;
+	font-size:0.9rem;
+	padding:0.5rem 1.5rem;
+	@include box-sizing(border-box);
+	}
+#proj .meta {
+	width:100%;
+	max-width:900px;
+	margin:0 auto;
+	@include box-sizing(border-box);
+	clear:both;
+	}
+
+#proj ol {
+  font-size:0.75rem;
+  line-height:1.2rem;
+	padding-left:1.5rem;
+	}
 	
-#proj .langSwitcher {
+#proj .lang-switcher {
 	cursor:cell;
 	float:left;
 	margin:1rem 0 1rem 1.5rem;
 	}
-#proj .langSwitcher:hover {
+#proj .lang-switcher:hover {
 	}
-#proj .langSwitcher.active {
+#proj .lang-switcher.active {
 	border-bottom:1px solid $color_black;
 	}
 
