@@ -2,12 +2,12 @@
 post_id:    Y2013009
 title:      "Study: Self-referential Inkblots"
 post_path:  self-referential-inkblots
+category:   portfolio
 cover:			01.png
 cover_w:		650
 images:
   - ext:    01.png
 tags:
-  - portfolio
   - static
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.

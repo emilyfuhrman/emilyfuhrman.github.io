@@ -2,6 +2,7 @@
 post_id:    Y2017005
 title:      "GPS Traces in Lexical Space"
 post_path:  gps-traces-in-lexical-space
+category:   portfolio
 cover:      01_20171223_01.png
 cover_w:    750
 images:
@@ -14,7 +15,6 @@ images:
   - ext:    01_20171223_01.png
     cap:    26.29 mi.
 tags:
-  - portfolio
   - static
 ---
 GPS coordinates translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) along the three indices of each w3w trigram.

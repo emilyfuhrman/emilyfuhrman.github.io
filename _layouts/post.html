@@ -140,13 +140,13 @@
     </div>
     <div id='post-nav'>
         <div id='previous' class='arrow'>
-            {% if page.previous.id %}
-                <a href='{{ page.previous.url }}'>&larr;&nbsp;Previous</a>
+            {% if page.previous_in_category.id %}
+                <a href='{{ page.previous_in_category.url }}'>&larr;&nbsp;Previous</a>
             {% endif %}
         </div>
         <div id='next' class='arrow'>
-            {% if page.next.id %}
-                <a href='{{ page.next.url }}'>Next&nbsp;&rarr;</a>
+            {% if page.next_in_category.id %}
+                <a href='{{ page.next_in_category.url }}'>Next&nbsp;&rarr;</a>
             {% endif %}
         </div>
     </div>

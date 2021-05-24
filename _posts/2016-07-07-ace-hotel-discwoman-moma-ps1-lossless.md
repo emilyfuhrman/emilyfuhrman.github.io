@@ -2,6 +2,7 @@
 post_id:    F2016011
 title:      "Lossless"
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
+category:   portfolio
 cover:      01_bodyElectric_framed.jpg
 cover_w:    550
 images:
@@ -22,7 +23,6 @@ exhibits:
   - name:   The Gallery at Ace Hotel New York
     link:   http://www.acehotel.com/newyork/gallery
 tags:
-  - portfolio
   - commission
   - static
 ---

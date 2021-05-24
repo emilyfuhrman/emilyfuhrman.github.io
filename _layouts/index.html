@@ -1,7 +1,7 @@
 {% include header.html %}
 <div id='projects-list'>
 	{% for post in site.posts %}
-		{% if post.tags contains 'portfolio' %}
+		{% if post.category == 'portfolio' %}
 			{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
 			{% capture w %}{{ post.cover_w | w: "" }}{% endcapture %}
 			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link' style='width: {{ w }}px'> 

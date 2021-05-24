@@ -2,6 +2,7 @@
 post_id:    Y2019004
 title:      "Mapping the Alaska Boundary"
 post_path:  mapping-the-alaska-boundary
+category:   portfolio
 cover:      01.png
 cover_w:    450
 images:
@@ -30,7 +31,6 @@ translations:
 
       <i>(Translated by Philippe Rivière)</i>
 tags:
-  - portfolio
   - static
 ---
 A map is a symbolic representation of a physical territory. While a cartographic map holds an iconographic relationship to the territory it represents, a purely linguistic map does not. This piece examines the linguistic representation of a territory at the orthogonal extremes of accuracy and illegibility.

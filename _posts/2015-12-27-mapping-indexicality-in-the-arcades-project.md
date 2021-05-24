@@ -4,6 +4,7 @@ title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
 post_path:  mapping-indexicality-in-the-arcades-project
 github:     true
 paper:      true
+category:   portfolio
 cover:			01.png
 cover_w:		450
 images:     
@@ -14,7 +15,6 @@ cred:
 citations:
   - Walter Benjamin, <i>The Arcades Project</i>, trans. Howard Eiland and Kevin McLaughlin (Belknap Press, 2002), Third Printing edition.
 tags:
-  - portfolio
   - dh
   - static
 ---

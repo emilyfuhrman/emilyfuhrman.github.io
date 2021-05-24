@@ -3,6 +3,7 @@ post_id:    F2015004
 title:      "The Coven Magazine ✕ Print All Over Me"
 post_path:  witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
+category:   portfolio
 cover:      cover.jpg
 cover_w:    750
 images:
@@ -18,7 +19,6 @@ exhibits:
   - name:   Signal Gallery
     link:   http://ssiiggnnaall.com/
 tags:
-  - portfolio
   - collaboration
   - commission
   - static

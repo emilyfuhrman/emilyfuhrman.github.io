@@ -3,6 +3,7 @@ post_id:    F2015021
 title:      "Electric Objects EO1 Art Club"
 post_path:  electric-objects-eo1-art-club
 perm:       https://www.electricobjects.com/collections/67
+category:   portfolio
 cover:      02_animation_EO1.gif
 cover_w:    500
 images:
@@ -18,7 +19,6 @@ exhibits:
   - name:   The Mini Microcinema
     link:   http://www.mini-cinema.org/screenings/object
 tags:
-  - portfolio
   - commission
   - digital
 ---
