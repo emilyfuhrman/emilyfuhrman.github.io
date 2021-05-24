@@ -277,14 +277,6 @@ span.sub {
 	margin:0 auto;
 	}
 
-#proj .meta-header {
-	float:left;
-	width:100%;
-	max-width:900px;
-	font-size:0.9rem;
-	padding:0.5rem 1.5rem;
-	@include box-sizing(border-box);
-	}
 #proj .meta {
 	width:100%;
 	max-width:900px;
@@ -292,13 +284,31 @@ span.sub {
 	@include box-sizing(border-box);
 	clear:both;
 	}
+#proj .meta > div:first-child {
+	border-top:1px solid $color_lg;
+	}
+#proj .meta .meta-header {
+	float:left;
+	width:100%;
+	max-width:900px;
+	font-size:0.9rem;
+	padding:2rem 1.5rem 0;
+	@include box-sizing(border-box);
+	}
 
+#proj ul,
 #proj ol {
+	float:left;
   font-size:0.75rem;
   line-height:1.2rem;
-	padding-left:1.5rem;
+  margin:0;
+	padding:0 1.5rem;
+	@include box-sizing(border-box);
 	}
-	
+#proj ul {
+	list-style-type:none;
+	}
+
 #proj .lang-switcher {
 	cursor:cell;
 	float:left;
@@ -329,78 +339,6 @@ span.sub {
 	}
 #proj #post-nav .arrow a:hover {
 	color:$color_black;
-	}
-
-#proj .sub {
-	display:block;
-	float:left;
-	width:100%;
-	color:$color_black;
-	font-size:0.5rem;
-	text-transform:uppercase;
-	line-height:0.75rem;
-	vertical-align:baseline;
-	padding:1.2rem 0 0.6rem;
-	clear:both;
-	}
-#proj .sub .sub-section {
-	display:block;
-	float:left;
-	width:100%;
-	padding:0.325rem 0 0 0;
-	}
-#proj .sub .info,
-#proj .sub .link {
-	@include box-sizing(border-box);
-	}
-#proj .sub .holder {
-	padding-top:0.05rem;
-	}
-#proj .sub .link a {
-	display:block;
-	float:left;
-	color:$color_accent;
-	padding-bottom:0;
-	border-bottom:none;
-	}
-#proj .sub .link a:hover {
-	color:$color_accent;
-	text-decoration:none;
-	border-bottom:none;
-	}
-
-#proj .sub span {
-	float:left;
-	@include box-sizing(border-box);
-	}
-
-#proj .sub .label {
-	float:left;
-	width:0.75rem;
-	height:0.75rem;
-	margin-top:0;
-	padding-right:0.5rem;
-	}
-#proj .sub #post-cred .label {
-	background:url(/media/assets/icon_black_cred.svg) no-repeat 0 0;
-	}
-#proj .sub #post-cred-tweets .label {
-	background:url(/media/assets/icon_black_cred_tweets.svg) no-repeat 0 0;
-	}
-#proj .sub #post-exhibits .label {
-	background:url(/media/assets/icon_black_cred.svg) no-repeat 0 0;
-	}
-#proj .sub #post-permalink .label {
-	background:url(/media/assets/icon_black_link.svg) no-repeat 0 0;
-	}
-#proj .sub #post-github .label {
-	background:url(/media/assets/icon_black_github.svg) no-repeat 0 0;
-	}
-#proj .sub #post-paper .label {
-	background:url(/media/assets/icon_black_paper.svg) no-repeat 0 0;
-	}
-#proj .sub #post-team .label {
-	background:url(/media/assets/icon_black_team.svg) no-repeat 0 0;
 	}
 
 /* 	------------------------------------
