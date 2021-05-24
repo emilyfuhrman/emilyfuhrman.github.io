@@ -119,14 +119,17 @@
                 </div>
             </div>
         {% endif %}
-        {% if page.paper %}
+        {% if page.paper or page.github %}
             <div id='post-paper' class='sub-section'>
-                <span class='meta-header'><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></span>
-            </div>
-        {% endif %}
-        {% if page.github %}
-            <div id='post-github' class='sub-section'>
-                <span class='meta-header'><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></span>
+                <span class='meta-header'>Documentation</span>
+                <ul>
+                {% if page.paper %}
+                    <li><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></li>
+                {% endif %}
+                {% if page.github %}
+                    <li><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></li>
+                {% endif %}
+                </ul>
             </div>
         {% endif %}
         {% if page.perm %}
