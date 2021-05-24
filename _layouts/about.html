@@ -1,57 +1,51 @@
 {% include header.html %}
-<div id='contain'>
-	<div id='content_top'>
-	{{ content }}
-	</div>
+<div id='generic-content-wrapper'>
+	<div id='content_top'>{{ content }}</div>
 	<div id='content_mid'>
-	{% for d in site.data.about %}
-	{% if d.show != false %}
-	{% capture i %}{% cycle 'left', 'right' %}{% endcapture %}
-	{% if i == 'left' %}
-	<div class='clear'></div>
-	{% endif %}
-	<div id='{{ d.id }}' class='section half {{ i }}'>
-		<div class='label'>{{ d.title }}</div>
-		{% if d.fancy == true %}
-		<ul class='fancy'>
-			{% for item in d.list %}
-			{% if item.t_left %}{% capture c %}t_left{% endcapture %}{% endif %}
-			<li class='{{ c }}'>
-			<div class='t_info collapse'>
-				{% if item.t_left %}<span>{{ item.t_left }},&nbsp;</span>{% endif %}
-				{% if item.link %}
-				<span><a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
-					{% if item.type %}({{ item.type }}){% endif %}
-				</span>
-				{% else %}
-				<span>{{ item.name }}</span>
+		{% for d in site.data.about %}
+		{% if d.show != false %}
+		<div id='{{ d.id }}' class='section'>
+			<div class='label'>{{ d.title }}</div>
+			{% if d.fancy == true %}
+			<ul class='fancy'>
+				{% for item in d.list %}
+				{% if item.t_left %}{% capture c %}t_left{% endcapture %}{% endif %}
+				<li class='{{ c }}'>
+				<div class='t_info collapse'>
+					{% if item.t_left %}<span>{{ item.t_left }},&nbsp;</span>{% endif %}
+					{% if item.link %}
+					<span><a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+						{% if item.type %}({{ item.type }}){% endif %}
+					</span>
+					{% else %}
+					<span>{{ item.name }}</span>
+					{% endif %}
+				</div>
+				{% if item.t_right %}
+				<div class='t_right'>{{ item.t_right }}</span>
+				</div>
 				{% endif %}
-			</div>
-			{% if item.t_right %}
-			<div class='t_right'>{{ item.t_right }}</span>
-			</div>
+				</li>
+				{% endfor %}
+			</ul>
+			{% else %}
+			<ul>
+				{% for item in d.list %}
+				<li>
+				<div class='t_info'>
+					{% if item.link %}
+					<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
+					{% else %}
+					{{ item.name }}
+					{% endif %}
+				</div>
+				</li>
+				{% endfor %}
+			</ul>
 			{% endif %}
-			</li>
-			{% endfor %}
-		</ul>
-		{% else %}
-		<ul>
-			{% for item in d.list %}
-			<li>
-			<div class='t_info'>
-				{% if item.link %}
-				<a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
-				{% else %}
-				{{ item.name }}
-				{% endif %}
-			</div>
-			</li>
-			{% endfor %}
-		</ul>
+		</div>
 		{% endif %}
-	</div>
-	{% endif %}
-	{% endfor %}
+		{% endfor %}
 	</div>
 </div>
 {% include footer.html %}

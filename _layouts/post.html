@@ -119,7 +119,7 @@
                 </div>
             </div>
         {% endif %}
-        {% if page.paper or page.github %}
+        {% if page.paper or page.github or page.perm %}
             <div id='post-paper' class='sub-section'>
                 <span class='meta-header'>Documentation</span>
                 <ul>
@@ -129,24 +129,22 @@
                 {% if page.github %}
                     <li><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></li>
                 {% endif %}
+                {% if page.perm %}
+                    <li><a href='{{ page.perm }}' target='_blank'>Permalink</a></li>
+                {% endif %}
                 </ul>
-            </div>
-        {% endif %}
-        {% if page.perm %}
-            <div id='post-permalink' class='sub-section'>
-                <span class='meta-header'><a href='{{ page.perm }}' target='_blank'>Permalink</a></span>
             </div>
         {% endif %}
     </div>
     <div id='post-nav'>
         <div id='previous' class='arrow'>
             {% if page.previous_in_category.id %}
-                <a href='{{ page.previous_in_category.url }}'>&larr;&nbsp;Previous</a>
+                <a href='{{ page.previous_in_category.url }}'>&#11104;</a>
             {% endif %}
         </div>
         <div id='next' class='arrow'>
             {% if page.next_in_category.id %}
-                <a href='{{ page.next_in_category.url }}'>Next&nbsp;&rarr;</a>
+                <a href='{{ page.next_in_category.url }}'>&#11106;</a>
             {% endif %}
         </div>
     </div>
