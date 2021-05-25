@@ -1,7 +1,7 @@
 {% include header.html %}
-<div id='generic-content-wrapper'>
+<div class='generic-content-wrapper'>
 	<div id='content_top'>{{ content }}</div>
-	<div id='content_mid'>
+	<div id='content_bot'>
 		{% for d in site.data.about %}
 		{% if d.show != false %}
 		<div id='{{ d.id }}' class='section'>
@@ -11,7 +11,7 @@
 				{% for item in d.list %}
 				{% if item.t_left %}{% capture c %}t_left{% endcapture %}{% endif %}
 				<li class='{{ c }}'>
-				<div class='t_info collapse'>
+				<div class='t_info'>
 					{% if item.t_left %}<span>{{ item.t_left }},&nbsp;</span>{% endif %}
 					{% if item.link %}
 					<span><a href='{{ item.link }}' target='_blank'>{{ item.name }}</a>
@@ -22,8 +22,7 @@
 					{% endif %}
 				</div>
 				{% if item.t_right %}
-				<div class='t_right'>{{ item.t_right }}</span>
-				</div>
+				<div class='t_right'>{{ item.t_right }}</span></div>
 				{% endif %}
 				</li>
 				{% endfor %}

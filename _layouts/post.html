@@ -40,102 +40,8 @@
             </div>
         {% endfor %}
     {% endif %}
-    <div class='meta'>
-        {% if page.citations %}
-            <div id='post-citations' class='sub-section'>
-                <span class='meta-header'>Notes</span>
-                <div class='info'>
-                    <ol>
-                        {% for c in page.citations %}
-                            <li>{{ c }}</li>
-                        {% endfor %}
-                    </ol>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.exhibits %}
-            <div id='post-exhibits' class='sub-section'>
-                <span class='meta-header'>Exhibits</span>
-                <div class='info'>
-                    <ul>
-                    {% for e in page.exhibits %}
-                        <li>
-                        {% if e.link %}
-                        <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
-                        {% else %}
-                        <span>{{ e }}</span>
-                        {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.cred %}
-            <div id='post-cred' class='sub-section'>
-                <span class='meta-header'>Features</span>
-                <div class='info'>
-                    <ul>
-                    {% for c in page.cred %}
-                        <li>
-                        {% if c.link %}
-                        <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                        {% else %}
-                        <span>{{ c }}</span>
-                        {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.cred_tweets %}
-            <div id='post-cred-tweets' class='sub-section'>
-                <span class='meta-header'>Mentions</span>
-                <div class='info'>
-                    <ul>
-                    {% for c in page.cred_tweets %}
-                        <li>
-                        {% if c.link %}
-                        <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                        {% else %}
-                        <span>{{ c }}</span>
-                        {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.team %}
-            <div id='post-team' class='sub-section'>
-                <span class='meta-header'>Team</span>
-                <div class='info'>
-                <ul>
-                    {% for t in page.team %}
-                        <li><span>{{ t }}</span></li>
-                    {% endfor %}
-                </ul>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.paper or page.github or page.perm %}
-            <div id='post-paper' class='sub-section'>
-                <span class='meta-header'>Documentation</span>
-                <ul>
-                {% if page.paper %}
-                    <li><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></li>
-                {% endif %}
-                {% if page.github %}
-                    <li><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></li>
-                {% endif %}
-                {% if page.perm %}
-                    <li><a href='{{ page.perm }}' target='_blank'>Permalink</a></li>
-                {% endif %}
-                </ul>
-            </div>
-        {% endif %}
-    </div>
+    {% include post_meta.html %}
+    {% if page.category == 'portfolio' %}
     <div id='post-nav'>
         <div id='previous' class='arrow'>
             {% if page.previous_in_category.id %}
@@ -148,5 +54,6 @@
             {% endif %}
         </div>
     </div>
+    {% endif %}
 </div>
 {% include footer.html %}

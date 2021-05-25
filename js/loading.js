@@ -2,6 +2,6 @@
 var $content = $('.container#main');
 
 $content.imagesLoaded().always(function(){
-	$('#loading_animation').addClass('hide');
+	$('#loading-animation').addClass('hide');
 	$content.addClass('show');
 });

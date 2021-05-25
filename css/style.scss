@@ -96,7 +96,6 @@ span.sub {
 	clear:both;
 	@include box-sizing(border-box);
 	}
-
 .container#main {
 	opacity:0;
 	padding:8rem 0 6rem 0;
@@ -105,7 +104,49 @@ span.sub {
 	}
 .container.show#main {
 	opacity:1;
-}
+	}
+
+.generic-content-wrapper {
+	width:100%;
+	max-width:1030px;
+	margin:0 auto;
+	padding:0 65px;
+	@include box-sizing(border-box);
+	}
+
+.generic-content-wrapper .section {
+	float:left;
+	width:100%;
+	}
+.generic-content-wrapper .section .label {
+	font-size:0.9rem;
+	padding:2rem 1.5rem 0;
+	}
+.generic-content-wrapper .section ul {
+	float:left;
+	width:100%;
+	font-size:0.75rem;
+	line-height:1.2rem;
+	list-style-type:none;
+	margin:0;
+	padding:0 1.5rem;
+	border:none;
+	@include box-sizing(border-box);
+	}
+
+.generic-content-wrapper #content_top {
+	padding:0 1.5rem;
+	}
+
+.generic-content-wrapper #content_bot {
+	border-top:1px solid $color_lg;
+	}
+.generic-content-wrapper #content_bot .section ul li {
+	white-space:nowrap;
+	padding-top:0;
+	border:none;
+	overflow:auto;
+	}
 
 /* 	------------------------------------
 		NAVIGATION
@@ -139,7 +180,7 @@ span.sub {
 		GALLERY PAGE
    	------------------------------------ */
 
-.container #projects-list {
+.container #gallery {
 	width:100%;
 	overflow:auto;
 	text-align:center;
@@ -147,7 +188,7 @@ span.sub {
 	@include box-sizing(border-box);
 	}
 
-#projects-list a.list-img-link {
+#gallery a.list-img-link {
 	position:relative;
 	display:inline-block;
 	width:48%;
@@ -161,25 +202,66 @@ span.sub {
 	@include box-sizing(border-box);
 	}
 
-#projects-list a.list-img-link .list-img {
+#gallery a.list-img-link .list-img {
 	display:block;
 	width:100%;
 	height:100%;
   @include box-shadow(2px 2px 12px 1px rgba(0,0,0,0.1));
 	}
 
-#projects-list a.list-img-link .metadata {
+#gallery a.list-img-link .metadata {
 	font-size:0.8rem;
 	}
 
-#projects-list a.list-img-link .metadata p {
+#gallery a.list-img-link .metadata p {
 	float:left;
 	line-height:1.2rem;
 	padding:0.2rem 0 0;
 	}
-#projects-list a.list-img-link:hover .metadata p span {
+#gallery a.list-img-link:hover .metadata p span {
 	padding-bottom:1px;
 	border-bottom:1px solid black;
+	}
+
+/* 	------------------------------------
+		PROJECTS PAGE
+   	------------------------------------ */
+
+.project-row,
+.project-link {
+	float:left;
+	width:100%;
+	@include box-sizing(border-box);
+	}
+
+ul.project-list {
+	list-style-type:"\2013\00a0\00a0" !important;
+	}
+ul.project-list li.project-row {
+  display:list-item;
+	overflow:visible !important;
+	}
+ul.project-list li.project-row a {
+	border-bottom:1px dotted $color_lg;
+	}
+ul.project-list li.project-row a:hover #project-title {
+	margin-left:0.5rem;
+	}
+
+ul.project-list li.project-row #project-title {
+	float:left;
+	@include transition(margin 120ms ease);
+	}
+
+ul.project-list li.project-row #project-date {
+	float:right;
+	}
+
+ul.project-list li.project-row p#project-tagline {
+	float:left;
+	white-space:normal;
+  width:100%;
+  margin:0;
 	}
 
 /* 	------------------------------------
@@ -345,75 +427,23 @@ span.sub {
 		ABOUT PAGE
    	------------------------------------ */
 
-#generic-content-wrapper {
-	width:100%;
-	max-width:1030px;
-	margin:0 auto;
-	padding:0 65px;
-	@include box-sizing(border-box);
-	}
-
-#generic-content-wrapper #content_top {
-	padding:0 1.5rem;
-	}
-
-#generic-content-wrapper #content_mid {
-	border-top:1px solid $color_lg;
-	}
-#generic-content-wrapper #content_mid .section {
-	float:left;
-	width:100%;
-	}
-#generic-content-wrapper #content_mid .section .label {
-	font-size:0.9rem;
-	padding:2rem 1.5rem 0;
-	}
-#generic-content-wrapper #content_mid .section ul {
-	float:left;
-	width:100%;
-	font-size:0.75rem;
-	line-height:1.2rem;
-	list-style-type:none;
-	margin:0;
-	padding:0 1.5rem;
-	border:none;
-	@include box-sizing(border-box);
-	}
-#generic-content-wrapper #content_mid .section ul.fancy {
-	}
-#generic-content-wrapper #content_mid .section ul li {
-	white-space:nowrap;
-	padding-top:0;
-	border:none;
-	overflow:auto;
-	}
-
-#generic-content-wrapper #content_mid .section ul.fancy li,
-#generic-content-wrapper #content_mid .section ul.fancy li.t_left:first-child {
+.generic-content-wrapper #content_bot .section ul.fancy li,
+.generic-content-wrapper #content_bot .section ul.fancy li.t_left:first-child {
 	padding-top:0;
 	}
-#generic-content-wrapper #content_mid .section ul.fancy li.t_left {
-	}
 
-#generic-content-wrapper #content_mid .section ul li .collapse {
-	width:100%;
-	max-width:75%;
-	max-width:calc(100% - 6rem);
-	}
-#generic-content-wrapper #content_mid .section ul li .t_info {
+.generic-content-wrapper #content_bot .section ul li .t_info {
 	float:left;
-	width:100%;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	}
-#generic-content-wrapper #content_mid .section ul li .t_info span {
+.generic-content-wrapper #content_bot .section ul li .t_info span {
 	float:left;
 	width:auto;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	}
-
-#generic-content-wrapper #content_mid .section ul li .t_right {
+.generic-content-wrapper #content_bot .section ul li .t_right {
 	float:right;
 	text-align:right;
 	border-bottom:none !important;
@@ -673,7 +703,7 @@ span.sub {
 		LOADING ANIMATION
    	------------------------------------ */
 
-#loading_animation {
+#loading-animation {
 	z-index:10000;
 	display:block;
 	visibility:visible;
@@ -683,7 +713,7 @@ span.sub {
   left:50%;
   left:calc(50% - 20px);
 }
-#loading_animation.hide {
+#loading-animation.hide {
 	display:none;
 	visibility:hidden;
 }
@@ -787,7 +817,7 @@ span.sub {
 		top:100px;
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 3);
 		}
 	}
@@ -799,7 +829,7 @@ span.sub {
 		top:100px;
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 3);
 		}
 	}
@@ -811,7 +841,7 @@ span.sub {
 		top:100px;
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 4);
 		}
 	}
@@ -824,7 +854,7 @@ span.sub {
 		top:calc(50px - 0.1rem);
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 4);
 		}
 	}
@@ -837,7 +867,7 @@ span.sub {
 		top:calc(50px - 0.1rem);
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 4);
 		}
 	}
@@ -850,7 +880,7 @@ span.sub {
 		top:calc(50px - 0.1rem);
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 4);
 		}
 	}
@@ -863,7 +893,7 @@ span.sub {
 		top:calc(50px - 0.1rem);
 	}
 
-	#loading_animation {
+	#loading-animation {
 	  top:calc(100vh / 4);
 		}
 	}

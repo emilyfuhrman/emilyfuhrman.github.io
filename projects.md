@@ -7,3 +7,4 @@ loading_animation: true
 sitemap:
   priority: 0.9
 ---
+Digital projects, client work, and academic collaborations.

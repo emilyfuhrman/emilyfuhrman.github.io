@@ -1,5 +1,5 @@
 {% include header.html %}
-<div id='projects-list'>
+<div id='gallery'>
 	{% for post in site.posts %}
 		{% if post.category == 'portfolio' %}
 			{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
