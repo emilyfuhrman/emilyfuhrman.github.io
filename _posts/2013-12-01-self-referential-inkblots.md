@@ -10,7 +10,6 @@ images:
   - ext:    01.png
 tags:
   - static
-  - crit vis
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.
 

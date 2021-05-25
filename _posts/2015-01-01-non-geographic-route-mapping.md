@@ -12,7 +12,6 @@ images:
   - ext:    03.jpg
 tags:
   - static
-  - unconventional map
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 
