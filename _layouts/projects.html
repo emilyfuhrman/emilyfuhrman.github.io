@@ -6,11 +6,10 @@
 			<div class='label' id='dh'>Digital Humanities</div>
 			{% for post in site.posts %}
 				{% if post.tags contains 'dh' %}
-				{% assign end = '.html' %}
 				{% capture date %}{{ post.date | date: "%Y" }}{% endcapture %}
 				<ul class='project-list'>
 					<li class='project-row'>
-						<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='project-link' target='_blank'>
+						<a href='/{{ post.category }}/{{ post.post_path }}.html?source=list' class='project-link' target='_blank'>
 							<span id='project-title'>{{ post.title }}</span>
 							<span id='project-date'>{{ date }}</span>
 						</a>

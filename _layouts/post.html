@@ -42,18 +42,18 @@
     {% endif %}
     {% include post_meta.html %}
     {% if page.category == 'portfolio' %}
-    <div id='post-nav'>
-        <div id='previous' class='arrow'>
-            {% if page.previous_in_category.id %}
-                <a href='{{ page.previous_in_category.url }}'>&#11104;</a>
-            {% endif %}
+        <div id='post-nav'>
+            <div id='previous' class='arrow'>
+                {% if page.previous_in_category.id %}
+                    <a href='{{ page.previous_in_category.url }}'>&#11104;</a>
+                {% endif %}
+            </div>
+            <div id='next' class='arrow'>
+                {% if page.next_in_category.id %}
+                    <a href='{{ page.next_in_category.url }}'>&#11106;</a>
+                {% endif %}
+            </div>
         </div>
-        <div id='next' class='arrow'>
-            {% if page.next_in_category.id %}
-                <a href='{{ page.next_in_category.url }}'>&#11106;</a>
-            {% endif %}
-        </div>
-    </div>
     {% endif %}
 </div>
 {% include footer.html %}
