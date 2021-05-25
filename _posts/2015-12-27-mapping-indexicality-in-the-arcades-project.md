@@ -1,8 +1,8 @@
 ---
 post_id:    Y2015003
 title:      "Mapping Indexicality in Benjamin's &quot;The Arcades Project&quot;"
-post_path:  mapping-indexicality-in-the-arcades-project
 tagline:	  "Linguistic deixis in <i>The Arcades Project</i> rendered as wandering paths."
+post_path:  mapping-indexicality-in-the-arcades-project
 github:     true
 paper:      true
 category:   portfolio

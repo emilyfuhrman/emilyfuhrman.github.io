@@ -1,6 +1,7 @@
 ---
 post_id:    Y2013009
 title:      "Study: Self-referential Inkblots"
+tagline:    "Symbols that visualize their own constraints."
 post_path:  self-referential-inkblots
 category:   portfolio
 cover:			01.png
@@ -9,6 +10,7 @@ images:
   - ext:    01.png
 tags:
   - static
+  - crit vis
 ---
 V's, rather. Basically what you get when you cross an echo chamber of constraints with sumi ink.
 

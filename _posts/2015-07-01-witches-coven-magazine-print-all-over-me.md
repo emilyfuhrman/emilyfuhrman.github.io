@@ -1,6 +1,7 @@
 ---
 post_id:    F2015004
 title:      "The Coven Magazine ✕ Print All Over Me"
+tagline:    "Six data-driven patterns for a virtual fashion show celebrating Issue No. 4 of The Coven Magazine."
 post_path:  witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
 category:   portfolio

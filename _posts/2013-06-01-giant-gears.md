@@ -1,6 +1,7 @@
 ---
 post_id:    Y2013011
 title:      "Giant Gears"
+tagline:    "Analog renditions of an algorithmic image."
 post_path:  giant-gears
 category:   portfolio
 cover:      03.jpg

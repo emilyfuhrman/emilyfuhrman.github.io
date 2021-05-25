@@ -1,6 +1,7 @@
 ---
 post_id:    Y2015001
 title:      "Study: Non-geographic Route Mapping"
+tagline:    "An experiment in mapping daily routes without using geographic coordinates."
 post_path:  non-geographic-route-mapping
 category:   portfolio
 cover:      03.jpg
@@ -11,6 +12,7 @@ images:
   - ext:    03.jpg
 tags:
   - static
+  - unconventional map
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 

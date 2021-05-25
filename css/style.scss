@@ -250,8 +250,10 @@ ul.project-list li.project-row a:hover #project-title {
 	border-bottom:1px solid $color_black;
 	}
 
-ul.project-list li.project-row #project-title {
+ul.project-list li.project-row p#project-title {
 	float:left;
+	white-space:normal;
+  margin:0;
 	border-bottom:1px dotted $color_black;
 	}
 
@@ -262,7 +264,7 @@ ul.project-list li.project-row #project-date {
 ul.project-list li.project-row p#project-tagline {
 	float:left;
 	white-space:normal;
-  width:100%;
+  width:90%;
   margin:0;
 	}
 

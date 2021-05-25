@@ -1,6 +1,7 @@
 ---
 post_id:    F2016011
 title:      "Lossless"
+tagline:    "A collection of data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York, presented by Discwoman in conjunction with Warm Up at MoMA PS1."
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
 category:   portfolio
 cover:      01_bodyElectric_framed.jpg

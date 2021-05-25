@@ -1,0 +1,24 @@
+<div class='label' id='{{ tag }}'>{{ title }}</div>
+{% for post in site.posts %}
+	{% if post.external == true %}
+		{% capture url %}{{ post.perm }}{% endcapture %}
+		{% capture target %}_blank{% endcapture %}
+	{% else %}
+		{% capture url %}/{{ post.category }}/{{ post.post_path }}.html?source=list{% endcapture %}
+		{% capture target %}_self{% endcapture %}
+	{% endif %}
+	{% capture date %}{{ post.date | date: "%Y" }}{% endcapture %}
+	{% if post.tags contains tag %}
+		<ul class='project-list'>
+			<li class='project-row'>
+				<a href='{{ url }}' class='project-link' target='{{ target }}'>
+					<p id='project-title'>{{ post.title }}</p>{% if post.external == true %}<span class='ext-arrow'>&nbsp;&#x2197;</span>{% endif %}
+					<span id='project-date'>{{ date }}</span>
+				</a>
+				{% if post.tagline %}
+					<p id='project-tagline'>{{ post.tagline }}</p>
+				{% endif %}
+			</li>
+		</ul>
+	{% endif %}
+{% endfor %}
