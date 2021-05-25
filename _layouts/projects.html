@@ -10,7 +10,7 @@
 				{% capture date %}{{ post.date | date: "%Y" }}{% endcapture %}
 				<ul class='project-list'>
 					<li class='project-row'>
-						<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='project-link'>
+						<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='project-link' target='_blank'>
 							<span id='project-title'>{{ post.title }}</span>
 							<span id='project-date'>{{ date }}</span>
 						</a>

@@ -235,22 +235,24 @@ span.sub {
 	}
 
 ul.project-list {
+	line-height:1rem !important;
 	list-style-type:"\2013\00a0\00a0" !important;
 	}
 ul.project-list li.project-row {
   display:list-item;
 	overflow:visible !important;
+	margin:0.5rem 0 0;
 	}
 ul.project-list li.project-row a {
-	border-bottom:1px dotted $color_lg;
+	border:none;
 	}
 ul.project-list li.project-row a:hover #project-title {
-	margin-left:0.5rem;
+	border-bottom:1px solid $color_black;
 	}
 
 ul.project-list li.project-row #project-title {
 	float:left;
-	@include transition(margin 120ms ease);
+	border-bottom:1px dotted $color_black;
 	}
 
 ul.project-list li.project-row #project-date {
