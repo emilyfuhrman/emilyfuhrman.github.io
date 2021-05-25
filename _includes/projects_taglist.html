@@ -12,8 +12,12 @@
 		<ul class='project-list'>
 			<li class='project-row'>
 				<a href='{{ url }}' class='project-link' target='{{ target }}'>
-					<p id='project-title'>{{ post.title }}</p>{% if post.external == true %}<span class='ext-arrow'>&nbsp;&#x2197;</span>{% endif %}
-					<span id='project-date'>{{ date }}</span>
+					<div class='col_left'>
+						<span id='project-title'>{{ post.title }}</span>{% if post.external == true %}<span class='ext-arrow'>&nbsp;&#x2197;</span>{% endif %}
+					</div>
+					<div class='col_right'>
+						<span id='project-date'>{{ date }}</span>
+					</div>
 				</a>
 				{% if post.tagline %}
 					<p id='project-tagline'>{{ post.tagline }}</p>

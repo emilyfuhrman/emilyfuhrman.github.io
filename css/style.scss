@@ -250,15 +250,23 @@ ul.project-list li.project-row a:hover #project-title {
 	border-bottom:1px solid $color_black;
 	}
 
-ul.project-list li.project-row p#project-title {
+ul.project-list li.project-row a div.col_left {
 	float:left;
+	max-width:90%;
+	margin:0;
+	padding-right:1rem;
+	@include box-sizing(border-box);
+	}
+ul.project-list li.project-row a div.col_right {
+	float:right;
+	max-width:10%;
+	margin:0;
+	}
+
+ul.project-list li.project-row #project-title {
 	white-space:normal;
   margin:0;
 	border-bottom:1px dotted $color_black;
-	}
-
-ul.project-list li.project-row #project-date {
-	float:right;
 	}
 
 ul.project-list li.project-row p#project-tagline {
