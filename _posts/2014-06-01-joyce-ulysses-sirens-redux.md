@@ -3,6 +3,7 @@ post_id:    Y2014001
 title:      "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
 post_path:  joyce-ulysses-sirens-redux
 perm:       /interactive/Y2014001
+tagline:    "An interactive visualization of all of the sounds that comprise the &quot;Sirens&quot; episode of <i>Ulysses</i>."
 github:     true
 images:
   - ext:    01.jpg
