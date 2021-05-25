@@ -1,20 +1,52 @@
 {% include header.html %}
-<div id='proj-list'>
-	{% for post in site.posts %}
-	{% assign end = '.html' %}
-	{% capture date %}{{ post.date | date: "%m %Y" }}{% endcapture %}
-	{% if post.nonvis == true %}
-		{% assign marker = '&dagger;&nbsp;' %}
-	{% else %}
-		{% assign marker = '' %}
-	{% endif %}
-	<a href='/{{ post.category }}/{{ post.post_path }}{{ end }}' class='{% cycle '_01', '_02', '_03', '_04' %} {% cycle 'col_odd_01', 'col_odd_02', 'col_odd_03' %} {% cycle 'col_exp_01', 'col_exp_02', 'col_exp_03', 'col_exp_04', 'col_exp_05' %} list-img-link'>
-		<img class='list-img' src='/media/thumbs/{{ post.post_id }}_thumb.jpg'>
-		<div class='metadata'>
-			<p class='list-title'>{{ marker }}{{ post.title }}</p>
-			<p class='list-date'>{{ date }}</p>
+<div class='generic-content-wrapper'>
+	<div id='content_top'>{{ content }}</div>
+	<div id='content_bot'>
+		<div class='section'>
+			{% assign tag = "dh" %}
+			{% assign title = "Digital Humanities" %}
+			{% include projects_taglist.html %}
 		</div>
-	</a>
-	{% endfor %}
+		<div class='section'>
+			{% assign tag = "commission" %}
+			{% assign title = "Commissions" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "static" %}
+			{% assign title = "Static Works" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "dynamic" %}
+			{% assign title = "Dynamic Works" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "compendium" %}
+			{% assign title = "Compendiums" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "unconventional map" %}
+			{% assign title = "Unconventional Maps" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "crit vis" %}
+			{% assign title = "Critical Visualizations" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "score" %}
+			{% assign title = "Graphic Notation" %}
+			{% include projects_taglist.html %}
+		</div>
+		<div class='section'>
+			{% assign tag = "client" %}
+			{% assign title = "Client Work" %}
+			{% include projects_taglist.html %}
+		</div>
+	</div>
 </div>
 {% include footer.html %}

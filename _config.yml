@@ -14,12 +14,6 @@ defaults:
       category:    projects
       layout:      post
       is_post:     true
-  - scope:
-      path:        ''
-      type:        log
-    values:
-      category:    log
-      layout:      log_post
 
 # formatting
 kramdown:
@@ -27,9 +21,3 @@ kramdown:
 
 sass:
   style:           compressed
-
-# collections
-collections:
-  log:
-    output:        true
-    permalink:     /:collection/:year/:month/:title.html

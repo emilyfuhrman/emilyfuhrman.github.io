@@ -7,44 +7,26 @@
         {% for p in page.images %}
             {% if p.half == true %}
                 {% assign class_size = 'half' %}
-                {% assign class_side = p.side %}
             {% else %}
                 {% assign class_size = 'full' %}
-                {% assign class_side = '' %}
             {% endif %}
-            {% if p.border == true %}
-                {% assign class_border = 'border' %}
-            {% else %}
-                {% assign class_border = '' %}
-            {% endif %}
-            <div class='{{ class_size }} {{ class_side }} {{ class_border }} media'>
-                {% if p.video == true %}
-                    <div class='video-container'>
-                        <div class='video-cover'></div>
-                        <video class='post-video' width='{{ p.width }}px' height= '{{ p.height }}px' {% if p.loop == true %}loop{% endif %}>
-                            <source src='/media/{{ page.post_id }}/{{ p.ext }}' type='video/mp4'>
-                            <p>Alas, your browser does not support the video tag.</p>
-                        </video>
-                    </div>
-                    <p class='caption'>{{ p.cap }}</p>
+            <div class='{{ class_size }} media'>
+                {% if page.perm %}
+                <a href='{{ page.perm }}' target='_blank'>
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
+                </a>
                 {% else %}
-                    {% if page.perm %}
-                    <a href='{{ page.perm }}' target='_blank'>
-                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
-                    </a>
-                    {% else %}
-                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' width='{{ p.width }}px' height= '{{ p.height }}px' />
-                    {% endif %}
-                    <p class='caption'>{{ p.cap }}</p>
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
                 {% endif %}
+                <p class='caption'>{{ p.cap }}</p>
             </div>
         {% endfor %}
     </div>
     {% if page.translations %}
-        <div class='holder'>
-            <div id='en' class='langSwitcher active'>English</div>
+        <div class='controls'>
+            <div id='en' class='lang-switcher active'>English</div>
             {% for t in page.translations %}
-                <div id={{ t.lang }} class='langSwitcher'>{{ t.label }}</div>
+                <div id={{ t.lang }} class='lang-switcher'>{{ t.label }}</div>
             {% endfor %}
         </div>
     {% endif %}
@@ -58,134 +40,20 @@
             </div>
         {% endfor %}
     {% endif %}
-    {% if page.citations %}
-        <ol id='citations'>
-            {% for c in page.citations %}
-                <li>{{ c }}</li>
-            {% endfor %}
-        </ol>
+    {% include post_meta.html %}
+    {% if page.category == 'portfolio' %}
+        <div id='post-nav'>
+            <div id='previous' class='arrow'>
+                {% if page.previous_in_category.id %}
+                    <a href='{{ page.previous_in_category.url }}'>&#11104;</a>
+                {% endif %}
+            </div>
+            <div id='next' class='arrow'>
+                {% if page.next_in_category.id %}
+                    <a href='{{ page.next_in_category.url }}'>&#11106;</a>
+                {% endif %}
+            </div>
+        </div>
     {% endif %}
-    <div class='sub'>
-        {% if page.exhibits %}
-            <div id='post-exhibits' class='sub-section'>
-                <div class='label'></div>
-                <div class='info'>
-                <span>Exhibited:&nbsp;</span>
-                {% for e in page.exhibits %}
-                    {% if forloop.last %}
-                        {% if e.link %}
-                        <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
-                        {% else %}
-                        <span>{{ e }}</span>
-                        {% endif %}
-                    {% else %}
-                        {% if e.link %}
-                        <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a>&#44;&nbsp;</span>
-                        {% else %}
-                        <span>{{ e }}&#44;&nbsp;</span>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                </div>
-            </div>
-        {% endif %}
-        {% if page.cred %}
-            <div id='post-cred' class='sub-section'>
-                <div class='label'></div>
-                <div class='info'>
-                <span>Featured:&nbsp;</span>
-                {% for c in page.cred %}
-                    {% if forloop.last %}
-                        {% if c.link %}
-                        <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                        {% else %}
-                        <span>{{ c }}</span>
-                        {% endif %}
-                    {% else %}
-                        {% if c.link %}
-                        <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a>&#44;&nbsp;</span>
-                        {% else %}
-                        <span>{{ c }}&#44;&nbsp;</span>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                </div>
-            </div>
-        {% endif %}
-        {% if page.cred_tweets %}
-            <div id='post-cred-tweets' class='sub-section'>
-                <div class='label'></div>
-                <div class='info'>
-                <span>Mentioned:&nbsp;</span>
-                {% for c in page.cred_tweets %}
-                {% if forloop.last %}
-                    {% if c.link %}
-                    <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                    {% else %}
-                    <span>{{ c }}</span>
-                    {% endif %}
-                {% else %}
-                    {% if c.link %}
-                    <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a>&#44;&nbsp;</span>
-                    {% else %}
-                    <span>{{ c }}&#44;&nbsp;</span>
-                    {% endif %}
-                {% endif %}
-                {% endfor %}
-                </div>
-            </div>
-        {% endif %}
-        {% if page.perm %}
-            <div id='post-permalink' class='sub-section'>
-                <div class='label'></div>
-                <div class='link'><a href='{{ page.perm }}' target='_blank'>Permalink</a></div>
-            </div>
-        {% endif %}
-        {% if page.github %}
-            <div id='post-github' class='sub-section'>
-                <div class='label'></div>
-                <div class='link'><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></div>
-            </div>
-        {% endif %}
-        {% if page.paper %}
-            <div id='post-paper' class='sub-section'>
-                <div class='label'></div>
-                <div class='link'><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></div>
-            </div>
-        {% endif %}
-        {% if page.team %}
-            <div id='post-team' class='sub-section'>
-                <div class='label'></div>
-                <div class='info'>
-                <span>Team:&nbsp;</span>
-                {% for t in page.team %}
-                {% if forloop.last %}
-                <span>{{ t }}</span>
-                {% else %}
-                <span>{{ t }}&#44;&nbsp;</span>
-                {% endif %}
-                {% endfor %}
-                </div>
-            </div>
-        {% endif %}
-        <div id='post-tags' class='sub-section'>
-            <div class='label'></div>
-            {% for t in page.tags %}
-            <div class='tag'><span>{{ t }}</span></div>
-            {% endfor %}
-        </div>
-    </div>
-    <div id='post-nav'>
-        <div id='previous' class='arrow'>
-            {% if page.previous.id %}
-                <a href='{{ page.previous.url }}'>&larr;&nbsp;Previous</a>
-            {% endif %}
-        </div>
-        <div id='next' class='arrow'>
-            {% if page.next.id %}
-                <a href='{{ page.next.url }}'>Next&nbsp;&rarr;</a>
-            {% endif %}
-        </div>
-    </div>
 </div>
 {% include footer.html %}

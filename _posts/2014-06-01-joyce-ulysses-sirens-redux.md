@@ -1,16 +1,13 @@
 ---
 post_id:    Y2014001
 title:      "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
+tagline:    "An interactive visualization of all of the sounds that comprise the &quot;Sirens&quot; episode of <i>Ulysses</i>."
 post_path:  joyce-ulysses-sirens-redux
 perm:       /interactive/Y2014001
 github:     true
 images:
   - ext:    01.jpg
-    width:  2400
-    height: 1529
   - ext:    02.jpg
-    width:  2400
-    height: 1529
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
@@ -22,9 +19,9 @@ cred_tweets:
   - name:   Georgia Lupi
     link:   "https://twitter.com/giorgialupi/status/484325744961536000"
 tags:
+  - dh
   - interactive
-  - text
-  - digital humanities
+  - score
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.
   - Joyce to Harriet Weaver, 6 August 1919, in Ellmann, James Joyce, p. 462.

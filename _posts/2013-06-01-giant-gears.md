@@ -1,18 +1,15 @@
 ---
 post_id:    Y2013011
-title:      "Series: Giant Gears"
+title:      "Giant Gears"
+tagline:    "Analog renditions of an algorithmic image."
 post_path:  giant-gears
-nonvis:     true
+category:   portfolio
+cover:      03.jpg
+cover_w:    650
 images:
   - ext:    01.jpg
-    width:  2400
-    height: 1932
   - ext:    02.jpg
-    width:  2400
-    height: 1932
   - ext:    03.jpg
-    width:  2400
-    height: 1932
 tags:
   - static
 ---

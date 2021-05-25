@@ -1,16 +1,16 @@
 ---
 post_id:    Y2019004
 title:      "Mapping the Alaska Boundary"
+tagline:    "A textual map of the present day Alaskan border."
 post_path:  mapping-the-alaska-boundary
+category:   portfolio
+cover:      01.png
+cover_w:    450
 images:
   - ext:    01.png
-    width:  2400
-    height: 3600
 cred:
   - name:   "visionscarto"
     link:   "https://visionscarto.net/carte-textuelle-alaska"
-tags:
-  - static
 citations:
   - Munro, John A., <i>The Alaskan Boundary Dispute</i> (Canada&colon; The Copp Clark Publishing Company, 1970), 9.
   - Brown, John W., <i>An Abridged History of Alaska</i> (1909), 67. 
@@ -31,6 +31,9 @@ translations:
       Notre carte adopte le support textuel jusqu’aux extrêmes de l’illisibilité et de la précision. Utilisant un langage généré par ordinateur pour restituer en phrases l’actuelle frontière de l’Alaska avec une minutieuse véracité, elle retrace le bord de l’Alaska, nœud par nœud, depuis le coin montagneux du sud-est de l’État jusqu’à son intersection nord avec l’océan Arctique. Le poids du texte en fait un terrain inaccessible en soi, frustrant la lectrice ou le lecteur dans son parcours à travers sa topo-typo-graphie. La carte présente le médium linguistique comme une barrière à la compréhension, qui se délite dans un effort d’épuisement de la signification.<br><br/>
 
       <i>(Translated by Philippe Rivière)</i>
+tags:
+  - static
+  - unconventional map
 ---
 A map is a symbolic representation of a physical territory. While a cartographic map holds an iconographic relationship to the territory it represents, a purely linguistic map does not. This piece examines the linguistic representation of a territory at the orthogonal extremes of accuracy and illegibility.
 
@@ -38,6 +41,6 @@ Conventional ways of assessing referential artifacts are grounded in usability. 
 
 For a number of decades, the official boundary dividing Alaska from Canada was legible but inaccurate. The Treaty of Saint Petersburg of 1825, composed to demarcate Russian and British territorial possessions, traverses in language an imagined geography too treacherous to survey directly. Its "mountains which extend in a direction parallel to the coast"[1] appear continuous only when viewing Alaska from the ocean; in actuality, the peaks are "broken up in groups known in Southeastern Alaska as the Cascades, St. Elias, Wrangell, Chugach, and Kenai Ranges, and in Western Alaska as Aleutian Range."[2] The "sinuosities" of the coast it describes are complicated by the volcanic Aleutian Islands, which each year cause the continent to "[encroach] a little more on the sea." In fact, no major surveys of the treacherous, remote, and sparsely-populated peaks and inlets of the border were conducted until after the United States acquired Alaska in 1867.[3] During the Klondike gold rush, when Canada’s desire for direct access to the sea made imperative the specific demarcation of potentially gold-rich territory, a tribunal converged to attach the words of the treaty to the territory they purported to signify.
 
-Borges describes a map at the furthest extreme of illegibility and the highest extreme of accuracy, coinciding "point for point" with the empire it represents.[4] Its meticulous detail, so precise as to be unusable, foregrounds the fraying medium that comprises it. The map is a forgotten artifact, the residue of near-perfect cartographic practice that renders the landscape so faithfully it becomes one with it, losing all utility.
+Borges describes a map at the furthest extreme of illegibility and the highest extreme of accuracy, coinciding "point for point" with the empire it represents.[4] Its meticulous detail, so precise as to be unusable, foregrounds the threadbare medium that comprises it. The map is a forgotten artifact, the residue of near-perfect cartographic practice that renders the landscape so faithfully it becomes one with it, losing all utility.
 
-This piece adopts the textual medium to the extremes of illegibility and accuracy. Employing computer-assisted language to textually re-render the present day Alaskan border with minute veracity, it traces the edge of Alaska, vertex by vertex, from the mountainous southeast corner of the state to its northern intersection with the Arctic Ocean. The heft of the text becomes an inaccessible terrain unto itself, frustrating the reader’s traversal through its lettered topography. It foregrounds the linguistic medium as a barrier to understanding that starts to fray through the effort of exhaustive signification.
+This piece adopts the textual medium to the extremes of illegibility and accuracy. Employing computer-assisted language to textually re-render the present day Alaskan border, it traces the edge of Alaska, vertex by vertex, from the mountainous southeast corner of the state to its northern intersection with the Arctic Ocean. The heft of the text becomes an inaccessible terrain unto itself, frustrating the reader’s traversal through its lettered topography. It foregrounds the linguistic medium as a barrier to understanding, stretched thin by exhaustive signification.

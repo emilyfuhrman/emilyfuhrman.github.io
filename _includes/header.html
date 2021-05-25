@@ -8,7 +8,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<title>
-		{% if page.category == 'log' or page.category == 'library' %}
+		{% if page.category == 'library' %}
 			{{ page.title }}
 		{% else %}
 			{{ site.name }}
@@ -35,13 +35,9 @@
 	</script>
 </head>
 <body>
-	{% if page.category == 'log' %}
-		{% include log_nav.html %}
-		<div id='main' class='container {{ page.category }}'>
-	{% elsif page.category == 'library' %}
-		<div id='main' class='container {{ page.category }}'>
-	{% else %}
+	{% if page.category != 'library' %}
 		{% include nav.html %}
-		<div id='main' class='container {{ page.category }}'>
+		<div id='background'></div>
 	{% endif %}
+	<div id='main' class='container {{ page.category }}'>
 		

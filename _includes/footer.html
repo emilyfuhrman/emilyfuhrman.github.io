@@ -1,21 +1,9 @@
 	</div>
-	{% if page.category != 'log' and page.category != 'library' %}
-		<div id='base' class='{{ page.category }}'>
-			<div id='footer' class='resize container'>
-				<div class='social link' id='email'><a href='mailto:ef2512@columbia.edu'>Email</a></div>
-				<div class='social link' id='twitter'><a href='https://twitter.com/_E__F' target='_blank'>Twitter</a></div>
-				<div class='social link' id='instagram'><a href='https://www.instagram.com/_lllll__llllll/' target='_blank'>Instagram</a></div>
-				<!-- <div class='social link' id='log'><a href='/log' target='_blank'>Log</a></div> -->
-				<div class='link' id='cv'><a href='/about/EF_CV.pdf' target='_blank'>CV</a></div>
-			</div>
-		</div>
-		<script type='text/javascript' src='/js/vid.js'></script>
-		<script type='text/javascript' src='/js/fluidity.js'></script>
+	{% if page.category != 'library' %}
+		{% if page.contact == true %}{% include social.html %}{% endif %}
 		<script type='text/javascript' src='/js/master.js'></script>
-	{% elsif page.category == 'log' %}
-		<script type='text/javascript' src='/js/log_scroll.js'></script>
 	{% endif %}
-	{% include loading_animation.html %}
+	{% include loading-animation.html %}
 	<script src='/js/loading.js'></script>
 </body>
 </html>
