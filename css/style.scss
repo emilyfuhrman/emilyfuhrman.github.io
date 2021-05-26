@@ -277,7 +277,8 @@ ul.project-list li.project-row p#project-tagline {
   margin:0;
 	}
 
-ul.project-list li.project-row span.ext-arrow {
+ul.project-list li.project-row span.ext-arrow::after {
+	content:"\2197 \FE0E";
 	}
 
 /* 	------------------------------------
@@ -862,7 +863,7 @@ ul.project-list li.project-row span.ext-arrow {
 
 @media (min-width:641px) { 
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-	
+
 	#nav .projects {
 		right:150px;
 		margin-top:0;
