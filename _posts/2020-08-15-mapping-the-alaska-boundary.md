@@ -5,7 +5,7 @@ tagline:    "A textual map of the present day Alaskan border."
 post_path:  mapping-the-alaska-boundary
 category:   portfolio
 cover:      01.png
-cover_w:    500
+cover_w:    450
 images:
   - ext:    01.png
 cred:
