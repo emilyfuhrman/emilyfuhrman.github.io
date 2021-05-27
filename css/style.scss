@@ -380,6 +380,7 @@ ul.project-list li.project-row span.ext-arrow::after {
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
+	padding-bottom:4rem;
 	@include box-sizing(border-box);
 	clear:both;
 	}
