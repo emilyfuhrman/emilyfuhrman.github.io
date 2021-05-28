@@ -380,7 +380,6 @@ ul.project-list li.project-row span.ext-arrow::after {
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
-	padding-bottom:4rem;
 	@include box-sizing(border-box);
 	clear:both;
 	}
@@ -390,6 +389,9 @@ ul.project-list li.project-row span.ext-arrow::after {
 	}
 #proj .meta > div:first-child {
 	border-top:1px solid $color_lg;
+	}
+#proj .meta > div:last-child {
+	padding-bottom:4rem;
 	}
 #proj .meta .meta-header {
 	float:left;
