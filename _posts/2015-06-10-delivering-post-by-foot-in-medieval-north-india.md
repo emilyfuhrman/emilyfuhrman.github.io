@@ -8,6 +8,8 @@ github:     true
 images:
   - ext:    01.jpg
   - ext:    02.jpg
+role:
+  - Visualization Design &amp; Development
 team:
   - Prof. Manan Ahmed
   - Jeremiah Trinidad-Christensen

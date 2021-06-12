@@ -65,6 +65,22 @@
             </div>
         </div>
     {% endif %}
+    {% if page.client %}
+        <div id='post-client' class='sub-section'>
+            <span class='meta-header'>Client</span>
+            <div class='info'>
+                <ul><li><span>{{ page.client }}</span></li></ul>
+            </div>
+        </div>
+    {% endif %}
+    {% if page.role %}
+        <div id='post-role' class='sub-section'>
+            <span class='meta-header'>Role</span>
+            <div class='info'>
+                <ul><li><span>{{ page.role }}</span></li></ul>
+            </div>
+        </div>
+    {% endif %}
     {% if page.team %}
         <div id='post-team' class='sub-section'>
             <span class='meta-header'>Team</span>
