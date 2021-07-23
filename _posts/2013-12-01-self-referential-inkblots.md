@@ -5,7 +5,7 @@ tagline:    "Symbols that visualize their own constraints."
 post_path:  self-referential-inkblots
 category:   portfolio
 cover:			01.png
-cover_w:		650
+cover_w:		600
 images:
   - ext:    01.png
 tags:

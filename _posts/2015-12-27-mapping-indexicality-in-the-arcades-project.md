@@ -7,7 +7,7 @@ github:     true
 paper:      true
 category:   portfolio
 cover:			01.png
-cover_w:		450
+cover_w:		500
 images:     
   - ext:    01.png
 cred:
