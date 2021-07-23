@@ -303,7 +303,7 @@ ul.project-list li.project-row span.ext-arrow::after {
 	}
 
 #proj #media {
-	max-width:1000px;
+	max-width:900px;
 	margin:0 auto;
 	clear:both;
 	}
@@ -357,7 +357,7 @@ ul.project-list li.project-row span.ext-arrow::after {
 
 #proj .descrip {
 	display:block;
-	max-width:1000px;
+	max-width:900px;
 	margin:0 auto;
 	padding:0 1.5rem;
 	@include box-sizing(border-box);
@@ -372,13 +372,13 @@ ul.project-list li.project-row span.ext-arrow::after {
 	display:block;
 	clear:both;
 	width:100%;
-	max-width:1000px;
+	max-width:900px;
 	margin:0 auto;
 	}
 
 #proj .meta {
 	width:100%;
-	max-width:1000px;
+	max-width:900px;
 	margin:0 auto;
 	@include box-sizing(border-box);
 	clear:both;
@@ -396,7 +396,7 @@ ul.project-list li.project-row span.ext-arrow::after {
 #proj .meta .meta-header {
 	float:left;
 	width:100%;
-	max-width:1000px;
+	max-width:900px;
 	font-size:0.9rem;
 	padding:2rem 1.5rem 0;
 	@include box-sizing(border-box);
