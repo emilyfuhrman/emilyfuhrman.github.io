@@ -5,7 +5,7 @@ tagline:    "Visualizing the distance between GPS coordinates read as what3words
 post_path:  gps-traces-in-lexical-space
 category:   portfolio
 cover:      01_20171223_01.png
-cover_w:    700
+cover_w:    750
 images:
   - ext:    02_20171223_00.png
     cap:    7.04 mi.
