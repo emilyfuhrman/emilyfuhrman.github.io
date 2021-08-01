@@ -274,7 +274,7 @@ ul.project-list li.project-row p#project-tagline {
   margin:0;
 	}
 
-ul.project-list li.project-row span.ext-arrow::after {
+ul.project-list li.project-row span.ext-arrow {
 	}
 
 /* 	------------------------------------
@@ -410,6 +410,9 @@ ul.project-list li.project-row span.ext-arrow::after {
 	}
 #proj ul {
 	list-style-type:"\2013\00a0\00a0";
+	}
+#proj ul.no-list {
+	list-style-type:none;
 	}
 
 #proj .lang-switcher {
@@ -937,13 +940,3 @@ span.sub {
 	  top:calc(100vh / 4);
 		}
 	}
-
-/* 	------------------------------------
-		FIREFOX HACKS
-   	------------------------------------ */
-
-@-moz-document url-prefix() { 
-  #proj .sub #post-tags .tag {
-     padding:0.3rem 0.25rem 0.2rem;
-  }
-}

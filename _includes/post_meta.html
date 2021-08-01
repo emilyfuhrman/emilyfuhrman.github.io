@@ -11,6 +11,22 @@
             </div>
         </div>
     {% endif %}
+    {% if page.medium %}
+        <div id='post-edition' class='sub-section'>
+            <span class='meta-header'>Medium</span>
+            <div class='info'>
+                <ul class='no-list'><li><span>{{ page.medium }}</span></li></ul>
+            </div>
+        </div>
+    {% endif %}
+    {% if page.dimensions %}
+        <div id='post-edition' class='sub-section'>
+            <span class='meta-header'>Dimensions</span>
+            <div class='info'>
+                <ul class='no-list'><li><span>{{ page.dimensions }}</span></li></ul>
+            </div>
+        </div>
+    {% endif %}
     {% if page.exhibits %}
         <div id='post-exhibits' class='sub-section'>
             <span class='meta-header'>Exhibits</span>
