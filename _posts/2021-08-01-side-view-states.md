@@ -1,5 +1,4 @@
 ---
-published:  false
 post_id:    Y2021001
 title:      "Side-view States"
 tagline:    "Each of the 50 U.S. states, viewed from the side."
@@ -17,19 +16,14 @@ epigraph:
     source: "Antony Galton, &quot;On the Ontological Status of Geographical Boundaries,&quot; 2003"
 citations:
   - Smith, Barry, "On Drawing Lines on a Map," (1995), 479.
+  - Galton, Antony, "On the Ontological Status of Geographical Boundaries," (2003), 163.
 medium:     "Edition of 5 books, +1 AP"
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 tags:
   - static
 ---
-_Side-view States_ is an atlas visualizing every U.S. state from the side. 
+_Side-view States_ is an atlas visualizing all 50 U.S. states from the side. Each state boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
 
-Viewed from above, U.S. state boundaries enclose flat polygons, which differently approximate gridlines, follow natural barriers, or abut the ocean in a jagged edge. "[I]nfinitely thin"[1], geopolotical boundaries represent the legal and subsequent cultural definitions of where one territory ends and another begins.
+Viewed from above, U.S. state boundaries enclose flat polygons, which differently approximate gridlines, follow natural barriers, or abut the ocean in a jagged edge. "[I]nfinitely thin"[1], they represent and inform the legal and cultural partitions between one state and the next, between what is the U.S. and what is not. 
 
-The traveler between U.S. states tends to experience state borders in a pointed, embodied way — such as hearing a programmed welcome announcement through a personal GPS system when crossing from New York to New Jersey, or looking across the Ohio River to Kentucky.
-
-On each page, a different state is programmatically lifted from the physical terrain, then tilted to collapse the space its boundaries enclose. 
-
-Floating as such, visually disconnected, the border becomes the fragile trace of the land underneath it, ineffectual at containing, by human fiat, the multitudinous complexity of its topography, culture, population.
-
-A border is and is not more than a line.
+A boundary, of course,  is and is not more than a line. At a high level, "a line can be conceived in two ways: from the point of view of possible motion _along_ it, and from the point of view of possible motion _across_ it."[2] A geopolitical boundary governs both kinds of movement, and in manifesting the power of its inscriber, points inward.

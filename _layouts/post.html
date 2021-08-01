@@ -31,10 +31,12 @@
         </div>
     {% endif %}
     {% if page.epigraph %}
-        <div class='epigraph'>
-            <p>{{ page.epigraph[0].text }}</p>
-            <p>&mdash;{{ page.epigraph[0].source }}</p>
-        </div>
+        {% for e in page.epigraph %}
+            <div class='epigraph'>
+                <p>{{ e.text }}</p>
+                <p>&mdash;{{ e.source }}</p>
+            </div>
+        {% endfor %}
     {% endif %}
     <div class='descrip' lang='en'>
         <p>{{ content }}</p>
