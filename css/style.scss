@@ -346,13 +346,15 @@ ul.project-list li.project-row span.ext-arrow {
 	}
 
 #proj #media,
+#proj .epigraph,
 #proj .descrip,
 #proj .lang-switcher {
 	font-size:0.9rem !important;
 	line-height:1.4rem;
 	}
 
-#proj .descrip {
+#proj .descrip,
+#proj .epigraph {
 	display:block;
 	max-width:900px;
 	margin:0 auto;
@@ -363,6 +365,28 @@ ul.project-list li.project-row span.ext-arrow {
 #proj .descrip p:first-child {
 	font-size:0;
 	line-height:0;
+	}
+
+#proj .epigraph p {
+	width:100%;
+	float:left;
+	font-size:0.75rem;
+  line-height:1.2rem;
+  margin:0 0 1.5rem 0;
+	padding:0 1.5rem;
+	border-left:1px solid $color_lg;
+	@include box-sizing(border-box);
+	}
+#proj .epigraph p:first-child {
+	font-style:italic;
+	margin-bottom:0;
+	padding-top:1.5rem;
+	}
+#proj .epigraph p:last-child {
+	text-align:right;
+	margin-top:0;
+	padding-top:0.5rem;
+	padding-bottom:1.5rem;
 	}
 
 #proj .controls {
@@ -499,6 +523,7 @@ span.sub {
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
 .library.container#main {
+	opacity:1 !important;
 	font-family:'Roboto Mono','Courier';
 	font-size:0.6rem;
 	line-height:0.9rem;
