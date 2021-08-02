@@ -22,7 +22,7 @@ dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 tags:
   - static
 ---
-_Side-view States_ is an atlas visualizing all 50 U.S. states from the side. Each state boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
+_Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the side. Each boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
 
 Viewed from above, U.S. state boundaries enclose flat polygons, which differently approximate gridlines, follow natural barriers, or abut the ocean in a jagged edge. "[I]nfinitely thin"[1], they represent and inform the legal and cultural partitions between one state and the next, between what is the U.S. and what is not. 
 
