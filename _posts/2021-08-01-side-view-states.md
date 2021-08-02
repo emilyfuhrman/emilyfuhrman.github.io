@@ -26,4 +26,4 @@ _Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the
 
 Viewed from above, U.S. state boundaries enclose flat polygons, which differently approximate gridlines, follow natural barriers, or abut the ocean in a jagged edge. "[I]nfinitely thin"[1], they represent and inform the legal and cultural partitions between one state and the next, between what is the U.S. and what is not. 
 
-A boundary, of course,  is and is not more than a line. At a high level, "a line can be conceived in two ways: from the point of view of possible motion _along_ it, and from the point of view of possible motion _across_ it."[2] A geopolitical boundary governs both kinds of movement, and in manifesting the power of its inscriber, points ever inward.
+A boundary, of course,  is and is not more than a line. At a high level, "a line can be conceived in two ways: from the point of view of possible motion _along_ it, and from the point of view of possible motion _across_ it."[2] A geopolitical boundary governs both kinds of movement, and as a manifestation of power, points inward.
