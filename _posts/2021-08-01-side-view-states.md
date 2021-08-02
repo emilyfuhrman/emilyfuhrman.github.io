@@ -1,7 +1,7 @@
 ---
 post_id:    Y2021001
 title:      "Side-view States"
-tagline:    "Each of the 50 U.S. states, viewed from the side."
+tagline:    "An atlas of each of the 50 U.S. states, viewed from the side."
 post_path:  side-view-states
 category:   portfolio
 cover:      01.jpg
