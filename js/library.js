@@ -131,6 +131,7 @@ var lib = function(){
 				],
 			"natural science": [
 					"birds",
+					"cryosphere",
 					"cryptozoology",
 					"insects",
 					"plants"
