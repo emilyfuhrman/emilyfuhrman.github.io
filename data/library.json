@@ -1412,14 +1412,15 @@
 		"authors":[
 			{
 				"ln":"Loomis",
-				"fi":"C."
+				"fi":"C.C."
 			}
 		],
 		"type":"article",
 		"tags":[
 			"aesthetics",
-			"cryosphere"
+			"cryosphere",
+			"sublime"
 		],
-		"read":false
+		"read":true
 	}
 ]
