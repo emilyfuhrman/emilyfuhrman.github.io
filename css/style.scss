@@ -74,7 +74,8 @@ span.i {
 
 #background {
 	position:fixed;
-	/*border: 20px solid $color_black;*/
+	border-left:20px solid $color_black;
+	border-right:20px solid $color_black;
 	left:0;
 	right:0;
 	top:0;
@@ -104,7 +105,7 @@ span.i {
 	width:100%;
 	max-width:1000px;
 	margin:0 auto;
-	padding:2rem 15px;
+	padding:2rem 30px;
 	@include box-sizing(border-box);
 	}
 
@@ -177,13 +178,13 @@ span.i {
 	top:30px;
 	}
 #nav .home {
-	left:45px;
+	left:65px;
 	}
 #nav .about {
-	right:45px;
+	right:65px;
 	}
 #nav .projects {
-	right:130px;
+	right:170px;
 	margin-top:0;
 	}
 
@@ -456,10 +457,10 @@ ul.project-list li.project-row span.ext-arrow {
   bottom:2rem;
 	}
 #proj #post-nav .arrow#previous {
-	left:45px;
+	left:65px;
 	}
 #proj #post-nav .arrow#next {
-	right:45px;
+	right:65px;
 	}
 #proj #post-nav .arrow a {
 	text-decoration:none;
@@ -489,7 +490,7 @@ span.sub {
 	float:left;
 	width:auto;
 	margin:0;
-	padding:0 30px 1rem;
+	padding:0 50px 1rem;
 	clear:both;
 	}
 #base #social {
@@ -847,7 +848,7 @@ span.sub {
 	/* smartphones, iPhone, portrait 480x320 phones */
 
 	#nav .projects {
-		right:45px;
+		right:65px;
 		margin-top:1.5rem;
 	}
 
@@ -864,7 +865,7 @@ span.sub {
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
 	#nav .projects {
-		right:45px;
+		right:65px;
 		margin-top:1.5rem;
 	}
 
@@ -881,7 +882,7 @@ span.sub {
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
 	#nav .projects {
-		right:130px;
+		right:150px;
 		margin-top:0;
 	}
 
@@ -898,7 +899,7 @@ span.sub {
 	/* tablet, landscape iPad, lo-res laptops and desktops */ 
 	
 	#nav .projects {
-		right:130px;
+		right:150px;
 		margin-top:0;
 	}
 
@@ -916,7 +917,7 @@ span.sub {
 	/* big landscape tablets, laptops, and desktops */ 
 	
 	#nav .projects {
-		right:130px;
+		right:150px;
 		margin-top:0;
 	}
 
@@ -934,7 +935,7 @@ span.sub {
 	/* hi-res laptops and desktops */
 	
 	#nav .projects {
-		right:130px;
+		right:150px;
 		margin-top:0;
 	}
 
@@ -952,7 +953,7 @@ span.sub {
 	/* large monitors */
 	
 	#nav .projects {
-		right:130px;
+		right:150px;
 		margin-top:0;
 	}
 
