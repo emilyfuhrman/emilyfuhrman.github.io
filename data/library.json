@@ -1404,5 +1404,21 @@
 			"isometric"
 		],
 		"read":true
+	},
+	{
+		"path":"loomis_1977_theArcticSublime",
+		"date":1977,
+		"title":"The Arctic Sublime",
+		"authors":[
+			{
+				"ln":"Loomis",
+				"fi":"C."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"aesthetics"
+		],
+		"read":false
 	}
 ]
