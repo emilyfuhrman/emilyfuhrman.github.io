@@ -43,6 +43,7 @@ body {
 	letter-spacing:0.05rem;
 	margin:0;
 	cursor:crosshair !important;
+	overscroll-behavior: none;
 	-webkit-text-size-adjust:100%;
 	}
 
