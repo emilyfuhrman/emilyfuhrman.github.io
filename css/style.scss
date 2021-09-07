@@ -198,6 +198,7 @@ span.i {
 	overflow:auto;
 	text-align:center;
 	padding:1rem;
+	-webkit-transform: translate3d(0, 0, 0);
 	@include box-sizing(border-box);
 	}
 
