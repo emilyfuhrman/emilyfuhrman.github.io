@@ -138,7 +138,7 @@ var lib = function(){
 				],
 			"perfumery": [
 			    "perfume history",
-				  "✢ jicky"
+				  "✢ guerlain"
 				],
 			"philosophy": [
 					"aesthetics",
