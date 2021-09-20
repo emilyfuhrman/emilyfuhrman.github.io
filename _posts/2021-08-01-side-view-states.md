@@ -3,6 +3,7 @@ post_id:    Y2021001
 title:      "Side-view States"
 tagline:    "An atlas of the 50 U.S. state boundaries, viewed from the side."
 post_path:  side-view-states
+perm:       /interactive/Y2021001
 category:   portfolio
 cover:      01.jpg
 cover_w:    550
@@ -20,6 +21,7 @@ medium:     "Edition of 5 books, +1 AP"
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 tags:
   - static
+  - interactive
 ---
 _Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the side. Each boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
 
