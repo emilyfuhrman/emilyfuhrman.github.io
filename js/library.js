@@ -5,7 +5,7 @@ var lib = function(){
 		focus:"catRatios",
 		order:"asc",
 
-		palette:['#8dd3c7','#fb8072','#e5d8bd','#bebada','#ffffb3','#80b1d3','#fdb462','#b3de69','#fccde5','#ffed6f','#d9d9d9','#ccebc5','#bc80bd'],
+		palette:['#8DD3C7','#FB8072','#E5d8BD','#BEBADA','#FFFFB3','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#FFED6F','#D9D9D9','#CCEBC5','#FFE0B2','#BC80BD'],
 
 		data_list:[],
 		data_columns:[
@@ -135,6 +135,10 @@ var lib = function(){
 					"cryptozoology",
 					"insects",
 					"plants"
+				],
+			"perfumery": [
+			    "perfume history",
+				  "✢ jicky"
 				],
 			"philosophy": [
 					"aesthetics",

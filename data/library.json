@@ -1422,5 +1422,39 @@
 			"sublime"
 		],
 		"read":true
+	},
+	{
+		"path":"nicolai_2008_aSmellingTripIntoThePast",
+		"date":2008,
+		"title":"A Smelling Trip Into the Past: The Influence of Synthetic Materials on the History of Perfumery",
+		"authors":[
+			{
+				"ln":"Nicolaï",
+				"fi":"P.d."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"perfume history",
+			"✢ jicky"
+		],
+		"read":false
+	},
+	{
+		"path":"brozzo_2020_areSomePerfumesWorksOfArt",
+		"date":2020,
+		"title":"Are Some Perfumes Works of Art?",
+		"authors":[
+			{
+				"ln":"Brozzo",
+				"fi":"C."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ jicky",
+			"aesthetics"
+		],
+		"read":false
 	}
 ]
