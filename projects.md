@@ -7,4 +7,4 @@ loading_animation: true
 sitemap:
   priority: 0.9
 ---
-Digital projects, client work, and academic collaborations.
+A full list of digital projects, client work, and academic collaborations.
