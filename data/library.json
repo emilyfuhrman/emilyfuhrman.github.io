@@ -1456,5 +1456,24 @@
 			"✢ guerlain"
 		],
 		"read":true
+	},
+	{
+		"path":"brown_1975_beautyAndHealthTheCreativeArtOfPerfume",
+		"date":1975,
+		"title":"Beauty and Health: The Creative Art of Perfume",
+		"authors":[
+			{
+				"ln":"Brown",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"perfume history",
+			"✢ guerlain",
+			"✢ george balanchine",
+			"✢ NYCB"
+		],
+		"read":true
 	}
 ]
