@@ -57,7 +57,7 @@ var lib = function(){
 			"ballet": [
 				"choreography",
 				"✢ george balanchine",
-				"✢ NYCB"
+				"✢ nycb"
 				],
 			"computer science": [
 					"algorithms",
