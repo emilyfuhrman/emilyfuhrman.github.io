@@ -1475,5 +1475,22 @@
 			"✢ nycb" 
 		],
 		"read":true
+	},
+	{
+		"path":"flanner_1930_perfumeAndPolitics",
+		"date":1930,
+		"title":"Perfume and Politics",
+		"authors":[
+			{
+				"ln":"Flanner",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"perfume history",
+			"✢ coty" 
+		],
+		"read":false
 	}
 ]
