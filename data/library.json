@@ -1494,5 +1494,22 @@
 			"✢ coty" 
 		],
 		"read":true
+	},
+	{
+		"path":"garafola_2011_legaciesOfTheBalletsRusses",
+		"date":2011,
+		"title":"Legacies of the Ballets Russes",
+		"authors":[
+			{
+				"ln":"Garafola",
+				"fi":"L."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"ballet history",
+			"✢ ballets russes"
+		],
+		"read":false
 	}
 ]

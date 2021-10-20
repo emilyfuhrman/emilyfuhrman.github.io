@@ -55,7 +55,9 @@ var lib = function(){
 				"✢ stanley brouwn"
 				],
 			"ballet": [
+				"ballet history",
 				"choreography",
+				"✢ ballets russes",
 				"✢ george balanchine",
 				"✢ nycb"
 				],
