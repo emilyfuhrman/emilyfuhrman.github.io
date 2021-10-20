@@ -1459,7 +1459,7 @@
 		"read":true
 	},
 	{
-		"path":"brown_1975_beautyAndHealthTheCreativeArtOfPerfume",
+		"path":"vogue_1975_beautyAndHealthTheCreativeArtOfPerfume",
 		"date":1975,
 		"title":"Beauty and Health: The Creative Art of Perfume",
 		"authors":[
@@ -1527,6 +1527,23 @@
 			"✢ coty",
 			"✢ guerlain",
 			"✢ nycb"
+		],
+		"read":true
+	},
+	{
+		"path":"wsj_1979_aPotpourriOfNonTutMetExhibits",
+		"date":1979,
+		"title":"A Potpourri of (Non-Tut) Met Exhibits",
+		"authors":[
+			{
+				"ln":"Wall Street Journal"
+			}
+		],
+		"type":"magazine",
+		"tags":[
+			"ballet history",
+			"perfume history",
+			"✢ guerlain"
 		],
 		"read":true
 	}
