@@ -1524,8 +1524,10 @@
 		"type":"magazine",
 		"tags":[
 			"✢ george balanchine",
-			"✢ nycb" 
+			"✢ coty",
+			"✢ guerlain",
+			"✢ nycb"
 		],
-		"read":false
+		"read":true
 	}
 ]
