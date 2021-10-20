@@ -1464,11 +1464,10 @@
 		"title":"Beauty and Health: The Creative Art of Perfume",
 		"authors":[
 			{
-				"ln":"Brown",
-				"fi":"J."
+				"ln":"Vogue"
 			}
 		],
-		"type":"article",
+		"type":"magazine",
 		"tags":[
 			"perfume history",
 			"✢ coty",
@@ -1510,6 +1509,22 @@
 			"ballet history",
 			"✢ ballets russes",
 			"✢ guerlain" 
+		],
+		"read":false
+	},
+	{
+		"path":"seventeen_1979_onTheirToes",
+		"date":1979,
+		"title":"On Their Toes",
+		"authors":[
+			{
+				"ln":"Seventeen"
+			}
+		],
+		"type":"magazine",
+		"tags":[
+			"✢ george balanchine",
+			"✢ nycb" 
 		],
 		"read":false
 	}

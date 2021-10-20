@@ -471,6 +471,7 @@ var lib = function(){
 							html = _d.type === 'book' ? '📖' 
 								: _d.type === 'chapter' ? '🔖'
 								: _d.type === 'compendium' ? '🗄'
+								: _d.type === 'magazine' ? '📰'
 								: _d.type === 'score' ? '🎹'
 								: _d.type === 'snip' ? '✂️'
 								: '📄';
