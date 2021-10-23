@@ -472,6 +472,7 @@ var lib = function(){
 								: _d.type === 'chapter' ? '🔖'
 								: _d.type === 'compendium' ? '🗄'
 								: _d.type === 'magazine' ? '📰'
+								: _d.type === 'poem' ? '📃'
 								: _d.type === 'score' ? '🎹'
 								: _d.type === 'snip' ? '✂️'
 								: '📄';

@@ -1546,5 +1546,21 @@
 			"✢ guerlain"
 		],
 		"read":true
+	},
+	{
+		"path":"o'hara_1960_odeToTanaquilLeClercq",
+		"date":1960,
+		"title":"Ode to Tanaquil LeClercq",
+		"authors":[
+			{
+				"ln":"O'Hara",
+				"fi":"F."
+			}
+		],
+		"type":"poem",
+		"tags":[
+			"ballet history"
+		],
+		"read":true
 	}
 ]
