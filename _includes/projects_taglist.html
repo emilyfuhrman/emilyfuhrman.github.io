@@ -20,7 +20,7 @@
 					</div>
 				</a>
 				{% if post.tagline %}
-					<p id='project-tagline'>{% if post.role %}({{ post.role }})&nbsp;{% endif %}{{ post.tagline }}</p>
+					<p id='project-tagline'>{% if post.role %}<span id='project-role'>({{ post.role }})</span>&nbsp;{% endif %}{{ post.tagline }}</p>
 				{% endif %}
 			</li>
 		</ul>
