@@ -94,9 +94,9 @@ span.i {
 	}
 .container#main {
 	opacity:0;
-	padding:6rem 0;
+	padding:3rem 0;
 	overflow:visible;
-	@include transition(opacity 240ms ease);
+	@include transition(opacity 360ms ease);
 	}
 .container.show#main {
 	opacity:1;
@@ -106,7 +106,7 @@ span.i {
 	width:100%;
 	max-width:1000px;
 	margin:0 auto;
-	padding:2rem 35px;
+	padding:4rem 35px;
 	@include box-sizing(border-box);
 	}
 
