@@ -94,7 +94,7 @@ span.i {
 	}
 .container#main {
 	opacity:0;
-	padding:3rem 0;
+	padding:4rem 0;
 	overflow:visible;
 	@include transition(opacity 360ms ease);
 	}
@@ -106,7 +106,7 @@ span.i {
 	width:100%;
 	max-width:1000px;
 	margin:0 auto;
-	padding:4rem 35px;
+	padding:2rem 35px;
 	@include box-sizing(border-box);
 	}
 
@@ -295,7 +295,7 @@ ul.project-list li.project-row span.ext-arrow {
 
 .container #proj {
 	margin-top:0;
-	padding:4rem 1rem;
+	padding:2rem 1rem;
 	}
 
 #proj #info .title {
@@ -307,7 +307,7 @@ ul.project-list li.project-row span.ext-arrow {
 	left:50%;
 	text-align:center;
 	line-height:1.2rem;
-	/*margin-left:-300px;*/
+	/*margin-left:-195px;*/
 	transform:translateX(-50%);
 	}
 
