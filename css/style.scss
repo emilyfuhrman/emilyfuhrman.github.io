@@ -245,6 +245,7 @@ span.i {
 #projects .content_top {
 	float:none;
 	text-align:center;
+	-webkit-transform: translateZ(0);
 	}
 #projects .content_bot {
 	border-top:none;
