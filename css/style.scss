@@ -262,7 +262,7 @@ span.i {
 	position:fixed;
 	background:#fff;
 	top:0;
-	border-top-width:53px; /* ugly; used in JS */
+	border-top-width:64px; /* used in JS */
 	border-top-color:#fff;
 	border-top-style:solid;
   @include box-shadow(0 8px 4px -4px rgba(0,0,0,0.05));

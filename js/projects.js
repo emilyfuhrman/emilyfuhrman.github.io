@@ -165,8 +165,8 @@ $(document).ready(function() {
 			current_h = content_sticky.height();
 
 	//UI-specific variables
-	var threshold = 64,
-			border_top = 53,
+	var threshold = 54,
+			border_top = 64,
 			rem_w = 20;
 
 	function calc_current(){
@@ -177,7 +177,7 @@ $(document).ready(function() {
 	function updateLayout(){
 		if(stuck && $(window).width() >=641){
 			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
-			content_padded.css('padding-top',(current_h +border_top -(rem_w*1.5)));
+			content_padded.css('padding-top',(current_h +border_top -(rem_w*2.25)));
 		} else{
 			content_sticky.removeClass('sticky').width('auto');
 			content_padded.css('padding-top',0);
