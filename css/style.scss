@@ -289,17 +289,17 @@ ul.project-list li.project-row {
 ul.project-list li.project-row a {
 	border:none;
 	}
-ul.project-list li.project-row a:hover #project-title {
+ul.project-list li.project-row a:hover .project-title {
 	border-bottom:1px solid $color_black;
 	}
 
-ul.project-list li.project-row #project-title {
+ul.project-list li.project-row .project-title {
 	white-space:normal;
   margin:0;
 	border-bottom:1px dotted $color_black;
 	}
 
-ul.project-list li.project-row p#project-tagline {
+ul.project-list li.project-row p.project-tagline {
 	float:left;
 	white-space:normal;
   width:90%;
