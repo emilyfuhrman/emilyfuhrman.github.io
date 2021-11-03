@@ -267,7 +267,7 @@ span.i {
 	border-top-color:#fff;
 	border-top-style:solid;
   @include box-shadow(0 12px 6px -6px rgba(0,0,0,0.05));
-	@include transition(box-shadow 120ms ease);
+	@include transition(box-shadow 360ms ease);
 	}
 #projects .content_top.sticky #project-tags {
 	padding-bottom:1rem;
