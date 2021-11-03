@@ -130,13 +130,15 @@ span.i {
 	@include box-sizing(border-box);
 	}
 
-.generic-content-wrapper #content_top {
+.generic-content-wrapper .content_top {
 	float:left;
+	width:100%;
 	padding:0 1.5rem;
 	}
 
-.generic-content-wrapper #content_bot {
+.generic-content-wrapper .content_bot {
 	float:left;
+	width:100%;
 	padding-bottom:4rem;
 	border-top:1px solid $color_lg;
 	}
@@ -240,6 +242,28 @@ span.i {
 /* 	------------------------------------
 		PROJECTS PAGE
    	------------------------------------ */
+
+.content_bot#projects .tags {
+	padding:1rem 0;
+	}
+.content_bot#projects .tags .project-tag {
+	float:left;
+	background:$color_lg;
+	font-size:0.75rem;
+	text-transform:uppercase;
+	margin:2px 2px 0 0;
+	padding:4px;
+	cursor:cell;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	}
+.content_bot#projects .tags .project-tag:hover {
+	background:$color_accent;
+	color:#fff;
+	}
+
 
 .project-row,
 .project-link {
@@ -549,19 +573,19 @@ span.sub {
 	box-sizing:border-box;
 	}
 
-#controls {
+#lib-controls {
 	width:100%;
 	padding:20px 20px 4px;
 	}
-#controls .block {
+#lib-controls .block {
 	width:100%;
 	}
 
-#controls .block.tags {
+#lib-controls .block.tags {
 	padding:10px 0;
 	}
 
-#controls .block.xout span {
+#lib-controls .block.xout span {
 	float:left;
 	opacity:1;
 	visibility:visible;
@@ -572,16 +596,16 @@ span.sub {
 	height:20px;
 	cursor:cell;
 	}
-#controls .block.xout span:hover {
+#lib-controls .block.xout span:hover {
 	color:#003090;
 	}
-#controls .block.xout span.hidden {
+#lib-controls .block.xout span.hidden {
 	opacity:0;
 	visibility:hidden;
 	}
 
-#controls .library-cat,
-#controls .library-tag {
+#lib-controls .library-cat,
+#lib-controls .library-tag {
 	font-size:0.45rem;
 	text-transform:uppercase;
 	margin:2px 2px 0 0;
@@ -593,28 +617,28 @@ span.sub {
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 	}
-#controls .library-cat {
+#lib-controls .library-cat {
 	font-weight:bold;
 	border:2px solid $color_black;
 	}
-#controls .library-tag {
+#lib-controls .library-tag {
 	border:1px solid #888;
 	}
-#controls .library-cat:hover,
-#controls .library-tag:hover {
+#lib-controls .library-cat:hover,
+#lib-controls .library-tag:hover {
 	background:#444 !important;
 	color:white;
 	}
-#controls .library-cat.active,
-#controls .library-tag.active {
+#lib-controls .library-cat.active,
+#lib-controls .library-tag.active {
 	color:white;
 	}
-#controls .library-cat.active {
+#lib-controls .library-cat.active {
 	background:$color_black !important;
 	color:white;
 	border-color:$color_black;
 	}
-#controls .library-tag.active {
+#lib-controls .library-tag.active {
 	background:#444 !important;
 	color:white;
 	border-color:#444;

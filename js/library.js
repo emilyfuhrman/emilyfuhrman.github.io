@@ -374,7 +374,7 @@ var lib = function(){
 				});
 			}
 
-			cats = d3.select('#controls .cats').selectAll('div.library-cat')
+			cats = d3.select('#lib-controls .cats').selectAll('div.library-cat')
 				.data(d3.keys(self.data_tags));
 			cats.enter().append('div')
 				.classed('library-cat',true);
@@ -395,7 +395,7 @@ var lib = function(){
 				});
 			cats.exit().remove();
 
-			tags = d3.select('#controls .tags').selectAll('div.library-tag')
+			tags = d3.select('#lib-controls .tags').selectAll('div.library-tag')
 				.data(tagList);
 			tags.enter().append('div')
 				.classed('library-tag',true);

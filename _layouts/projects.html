@@ -1,37 +1,30 @@
 {% include header.html %}
 <div class='generic-content-wrapper'>
-	<div id='content_top'>{{ content }}</div>
-	<div id='content_bot'>
-		<div class='section'>
-			{% assign tag = "dh" %}
-			{% assign title = "Digital Humanities" %}
-			{% include projects_taglist.html %}
-		</div>
-		<div class='section'>
-			{% assign tag = "commission" %}
-			{% assign title = "Commissions" %}
-			{% include projects_taglist.html %}
-		</div>
-		<div class='section'>
-			{% assign tag = "static" %}
-			{% assign title = "Static Works" %}
-			{% include projects_taglist.html %}
-		</div>
-		<div class='section'>
-			{% assign tag = "dynamic" %}
-			{% assign title = "Dynamic Works" %}
-			{% include projects_taglist.html %}
-		</div>
-		<div class='section'>
-			{% assign tag = "compendium" %}
-			{% assign title = "Compendiums" %}
-			{% include projects_taglist.html %}
-		</div>
-		<div class='section'>
-			{% assign tag = "client" %}
-			{% assign title = "Client Work" %}
-			{% include projects_taglist.html %}
-		</div>
+	<div class='content_top'>{{ content }}</div>
+	<div class='content_bot' id='projects'>
+		<div class='tags'></div>
 	</div>
+	<script>
+		var JEKYLL_POSTS = [];
+		{% for post in site.posts %}
+			{% if post.external == true %}
+				{% capture url %}{{ post.perm }}{% endcapture %}
+				{% capture target %}_blank{% endcapture %}
+			{% else %}
+				{% capture url %}/{{ post.category }}/{{ post.post_path }}.html?source=list{% endcapture %}
+				{% capture target %}_self{% endcapture %}
+			{% endif %}
+			JEKYLL_POSTS.push({
+				url:        "{{ url }}",
+				url_target: "{{ target }}",
+				title:      "{{ post.title }}",
+				tagline:    "{{ post.tagline }}",
+				year:       {{ post.date | date: "%Y" }},
+				tags:       {{ post.tags | split: ", " | join: "," }},
+				external:   "{{ post.external }}"
+			});
+		{% endfor %}
+	</script>
+	<script type='text/javascript' src='/js/projects.js'></script>
 </div>
 {% include footer.html %}
