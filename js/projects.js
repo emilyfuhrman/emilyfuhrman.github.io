@@ -167,6 +167,7 @@ $(document).ready(function() {
 	//UI-specific variables
 	var threshold = 54,
 			border_top = 64,
+			box_shadow_w = 6,
 			rem_w = 20;
 
 	function calc_current(){
@@ -177,7 +178,7 @@ $(document).ready(function() {
 	function updateLayout(){
 		if(stuck && $(window).width() >=641){
 			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
-			content_padded.css('padding-top',(current_h +border_top -(rem_w*2.25)));
+			content_padded.css('padding-top',(current_h +border_top -(rem_w*2) -box_shadow_w));
 		} else{
 			content_sticky.removeClass('sticky').width('auto');
 			content_padded.css('padding-top',0);

@@ -265,7 +265,7 @@ span.i {
 	border-top-width:64px; /* used in JS */
 	border-top-color:#fff;
 	border-top-style:solid;
-  @include box-shadow(0 8px 4px -4px rgba(0,0,0,0.05));
+  @include box-shadow(0 12px 6px -6px rgba(0,0,0,0.05));
 	@include transition(box-shadow 120ms ease);
 	}
 #projects .content_top.sticky #project-tags {
