@@ -155,23 +155,42 @@ projects().get_data();
 $(document).ready(function() {
 	var stuck = false;
 	var content_sticky = $(".generic-content-wrapper#projects .content_top, .generic-content-wrapper#projects .content_bot .tags"),
-			content_padded = $(".generic-content-wrapper#projects .content_bot .project-list");
+			content_padded = $(".generic-content-wrapper#projects .content_bot .project-list"),
+			content_top = $(".generic-content-wrapper#projects .content_top"),
+			content_bot = $(".generic-content-wrapper#projects .content_bot .tags");
 	var content_widthRef = $(".generic-content-wrapper#projects .content_bot");
+	var content_top_h = content_top.height(),
+			content_bot_h = content_bot.height();
 	var current_w = content_widthRef.width();
+			current_h = 0;
 
 	//UI-specific variables
 	var threshold = 64,
-			padding_h = 30;
+			padding_h = 30,
+			padding_top_h = 40;
 
-	function updateLayout(_current_w){
+	function calc_currentH(){
+		// current_h = 0;
+		// content_sticky.each(function(){ current_h+=$(this).height(); });
+
+		content_top_h = $(".generic-content-wrapper#projects .content_top").height() +padding_top_h;
+		content_bot_h = $(".generic-content-wrapper#projects .content_bot .tags").height();
+		current_h = content_top_h +content_bot_h;
+	}
+
+	function updateLayout(_current_w, _current_h, _content_top_h, _content_bot_h){
 		if(stuck){
-			content_sticky.addClass('sticky')
-				.width(_current_w -(padding_h*2));
+			content_sticky.addClass('sticky').width(_current_w -(padding_h*2));
+			content_bot.css('margin-top',_content_top_h);
+			content_padded.css('padding-top',_current_h);
 		} else{
-			content_sticky.removeClass('sticky')
-				.width('auto');
+			content_sticky.removeClass('sticky').width('auto');
+			content_bot.css('margin-top',0);
+			content_padded.css('padding-top',0);
 		}
 	}
+
+	calc_currentH();
 
 	$(window).scroll(function(){
 		current_w = content_widthRef.width();
@@ -180,10 +199,11 @@ $(document).ready(function() {
 		} else{
 			stuck = false;
 		}
-		updateLayout(current_w);
+		updateLayout(current_w, current_h, content_top_h, content_bot_h);
 	});
 	$(window).resize(function(){
 		current_w = content_widthRef.width();
-		updateLayout(current_w);
+		calc_currentH();
+		updateLayout(current_w, current_h, content_top_h, content_bot_h);
 	});
 });

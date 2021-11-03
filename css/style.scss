@@ -246,10 +246,14 @@ span.i {
 	float:none;
 	text-align:center;
 	}
+#projects .content_bot {
+	border-top:none;
+	}
 #projects .content_bot .tags {
 	display:block;
 	text-align:center;
 	padding:1rem 1.5rem 3rem;
+	border-top:1px solid $color_lg;
 	}
 
 #projects .content_top.sticky {
@@ -322,6 +326,7 @@ ul.project-list li.project-row p.project-tagline {
 	}
 ul.project-list li.null {
 	color:#bbb;
+	text-align:center;
 	list-style-type:none;
 	}
 
