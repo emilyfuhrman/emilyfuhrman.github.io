@@ -256,12 +256,20 @@ span.i {
 	padding:1rem 1.5rem 3rem;
 	border-top:1px solid $color_lg;
 	}
+
 #projects .content_top.sticky {
 	z-index:99;
 	position:fixed;
 	background:#fff;
-	/*left:20px;*/
-}
+	top:0;
+	border-top-width:53px; /* ugly; used in JS */
+	border-top-color:#fff;
+	border-top-style:solid;
+  @include box-shadow(0 8px 4px -4px rgba(0,0,0,0.05));
+	}
+#projects .content_top.sticky #project-tags {
+	padding-bottom:1rem;
+	}
 
 #projects .content_top #project-tags .project-tag {
 	display:inline-block;
@@ -298,6 +306,7 @@ ul#project-list {
 	line-height:1rem !important;
 	list-style-type:"\2013\00a0\00a0" !important;
 	}
+
 ul#project-list li.project-row {
   display:list-item;
 	overflow:visible !important;
