@@ -161,7 +161,7 @@ $(document).ready(function() {
 	var content_sticky = $("#projects-page-content"),
 			content_padded = $("#project-list");
 	var content_widthRef = $(".generic-content-wrapper#projects .content_bot");
-	var current_w = content_widthRef.width();
+	var current_w = content_widthRef.width(),
 			current_h = content_sticky.height();
 
 	//UI-specific variables
@@ -175,7 +175,7 @@ $(document).ready(function() {
 	}
 
 	function updateLayout(){
-		if(stuck){
+		if(stuck && $(window).width() >=641){
 			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
 			content_padded.css('padding-top',(current_h +border_top +1 -(rem_w*2)));
 		} else{
