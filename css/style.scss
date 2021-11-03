@@ -249,10 +249,10 @@ span.i {
 .content_bot#projects .tags .project-tag {
 	float:left;
 	background:$color_lg;
-	font-size:0.75rem;
+	font-size:0.6rem;
 	text-transform:uppercase;
 	margin:2px 2px 0 0;
-	padding:4px;
+	padding:4px 8px;
 	cursor:cell;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -261,6 +261,10 @@ span.i {
 	}
 .content_bot#projects .tags .project-tag:hover {
 	background:$color_accent;
+	color:#fff;
+	}
+.content_bot#projects .tags .project-tag.active {
+	background:$color_black;
 	color:#fff;
 	}
 

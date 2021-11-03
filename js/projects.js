@@ -5,7 +5,9 @@ var projects = function(){
 		data:[],
 		data_list:[],
 		data_tags:[],
-		
+
+		active_tags:[],
+
 		// focus:"catRatios",
 		// order:"asc",
 
@@ -32,8 +34,6 @@ var projects = function(){
 		// 		"label":"Title"
 		// 	}
 		// ],
-
-		// active_tags:[],
 
 		// elem_library:null,
 
@@ -153,13 +153,12 @@ var projects = function(){
 				});
 			});
 
-			// self.generate_chassis();
 			self.generate_tags();
 			self.generate_list();
 		},
 
-		generate_chassis:function(){
-			var self = this;
+		// generate_chassis:function(){
+		// 	var self = this;
 			// self.elem_library = d3.select('#library');
 			// self.elem_headerRow = self.elem_library.append('div').classed('header row',true);
 
@@ -191,7 +190,7 @@ var projects = function(){
 			// 		self.generate_list();
 			// 	});
 			// header_items.exit().remove();
-		},
+		// },
 
 		generate_tags:function(){
 			var self = this;
@@ -199,37 +198,37 @@ var projects = function(){
 
 			self.data_tags.sort();
 
-			// function updateTags(){
-			// 	if(self.active_tags.length >0){
-			// 		d3.select('#btn_clear').classed('hidden',false);
-			// 	} else{
-			// 		d3.select('#btn_clear').classed('hidden',true);
-			// 	}
-			// 	cats.classed('active',function(d){
-			// 		return self.active_cats.indexOf(d) >-1;
-			// 	});
-			// 	tags.classed('active',function(d){
-			// 		return self.active_tags.indexOf(d) >-1;
-			// 	});
-			// }
+			function updateTags(){
+				// if(self.active_tags.length >0){
+				// 	d3.select('#btn_clear').classed('hidden',false);
+				// } else{
+				// 	d3.select('#btn_clear').classed('hidden',true);
+				// }
+				tags.classed('active',function(d){debugger;
+					return self.active_tags.indexOf(d) >-1;
+				});
+			}
 
 			tags = d3.select('.content_bot#projects .tags').selectAll('div.project-tag')
 				.data(self.data_tags);
 			tags.enter().append('div')
 				.classed('project-tag',true);
-			tags.text(function(d){ return d; });
+			tags
+				.text(function(d){ 
+					var label = 
+						d === 'dh' ? 'digital humanities'
+					: d === 'client' ? 'client work'
+					: d; 
+					return label;
+				});
 			tags
 				.on('click',function(d){
-					// if(self.active_tags.filter(function(_d){ return _d.label === d.label; }).length === 0){
-					// 	self.active_tags.push(d);
-					// 	if(self.active_tags.filter(function(_d){ return _d.category === d.category; }).length === self.data_tags[d.category].length){
-					// 		self.active_cats.push(d.category);
-					// 	}
-					// } else{
-					// 	self.active_tags = self.active_tags.filter(function(_d){ return _d !== d; });
-					// 	self.active_cats = self.active_cats.filter(function(_d){ return _d !== d.category; });
-					// }
-					// updateTags();
+					if(self.active_tags.indexOf(d) <0){
+						self.active_tags.push(d);
+					} else{
+						self.active_tags = self.active_tags.filter(function(_d){ return _d !== d; });
+					}
+					updateTags();
 					// self.generate_list();
 				});
 			tags.exit().remove();
