@@ -177,7 +177,7 @@ $(document).ready(function() {
 	function updateLayout(){
 		if(stuck && $(window).width() >=641){
 			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
-			content_padded.css('padding-top',(current_h +border_top +1 -(rem_w*2)));
+			content_padded.css('padding-top',(current_h +border_top -(rem_w*1.5)));
 		} else{
 			content_sticky.removeClass('sticky').width('auto');
 			content_padded.css('padding-top',0);
