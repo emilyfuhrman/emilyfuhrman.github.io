@@ -249,23 +249,21 @@ span.i {
 #projects .content_bot {
 	border-top:none;
 	}
-#projects .content_bot .tags {
+
+#projects .content_top #project-tags {
 	display:block;
 	text-align:center;
 	padding:1rem 1.5rem 3rem;
 	border-top:1px solid $color_lg;
 	}
-
 #projects .content_top.sticky {
+	z-index:99;
 	position:fixed;
-	/*left:1.5rem;*/
-}
-#projects .content_bot .tags.sticky {
-	position:fixed;
-	/*left:1.5rem;*/
+	background:#fff;
+	/*left:20px;*/
 }
 
-#projects .content_bot .tags .project-tag {
+#projects .content_top #project-tags .project-tag {
 	display:inline-block;
 	background:$color_lg;
 	font-size:0.5rem;
@@ -278,11 +276,11 @@ span.i {
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 	}
-#projects .content_bot .tags .project-tag:hover {
+#projects .content_top #project-tags .project-tag:hover {
 	background:$color_accent;
 	color:#fff;
 	}
-#projects .content_bot .tags .project-tag.active {
+#projects .content_top #project-tags .project-tag.active {
 	background:$color_black;
 	color:#fff;
 	}
@@ -294,37 +292,37 @@ span.i {
 	@include box-sizing(border-box);
 	}
 
-ul.project-list {
+ul#project-list {
 	float:left;
 	width:100%;
 	line-height:1rem !important;
 	list-style-type:"\2013\00a0\00a0" !important;
 	}
-ul.project-list li.project-row {
+ul#project-list li.project-row {
   display:list-item;
 	overflow:visible !important;
 	margin:0.5rem 0 0;
 	}
-ul.project-list li.project-row a {
+ul#project-list li.project-row a {
 	border:none;
 	}
-ul.project-list li.project-row a:hover .project-title {
+ul#project-list li.project-row a:hover .project-title {
 	border-bottom:1px solid $color_black;
 	}
 
-ul.project-list li.project-row .project-title {
+ul#project-list li.project-row .project-title {
 	white-space:normal;
   margin:0;
 	border-bottom:1px dotted $color_black;
 	}
 
-ul.project-list li.project-row p.project-tagline {
+ul#project-list li.project-row p.project-tagline {
 	float:left;
 	white-space:normal;
   width:90%;
   margin:0;
 	}
-ul.project-list li.null {
+ul#project-list li.null {
 	color:#bbb;
 	text-align:center;
 	list-style-type:none;

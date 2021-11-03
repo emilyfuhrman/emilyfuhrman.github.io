@@ -58,7 +58,7 @@ var projects = function(){
 				});
 			}
 
-			tags = d3.select('#projects .content_bot .tags').selectAll('div.project-tag')
+			tags = d3.select('#projects .content_top #project-tags').selectAll('div.project-tag')
 				.data(self.data_tags);
 			tags.enter().append('div')
 				.classed('project-tag',true);
@@ -67,6 +67,9 @@ var projects = function(){
 					var label = 
 						d === 'cartography' ? 'cartographies'
 					: d === 'client' ? 'client work'
+					: d === 'collaboration' ? 'collaborations'
+					: d === 'commission' ? 'commissions'
+					: d === 'compendium' ? 'compendiums'
 					: d === 'dh' ? 'digital humanities'
 					: d === 'notation' ? 'graphic notation'
 					: d; 
@@ -88,7 +91,7 @@ var projects = function(){
 		generate_list:function(){
 			var self = this;
 
-			var container = d3.select('#projects .content_bot .project-list');
+			var container = d3.select('#project-list');
 			var data, item, link;
 			var col_l,
 					col_r,
@@ -152,58 +155,46 @@ var projects = function(){
 
 projects().get_data();
 
+//sticky tag logic
 $(document).ready(function() {
 	var stuck = false;
-	var content_sticky = $(".generic-content-wrapper#projects .content_top, .generic-content-wrapper#projects .content_bot .tags"),
-			content_padded = $(".generic-content-wrapper#projects .content_bot .project-list"),
-			content_top = $(".generic-content-wrapper#projects .content_top"),
-			content_bot = $(".generic-content-wrapper#projects .content_bot .tags");
+	var content_sticky = $("#projects-page-content"),
+			content_padded = $("#project-list");
 	var content_widthRef = $(".generic-content-wrapper#projects .content_bot");
-	var content_top_h = content_top.height(),
-			content_bot_h = content_bot.height();
 	var current_w = content_widthRef.width();
-			current_h = 0;
+			current_h = content_sticky.height();
 
 	//UI-specific variables
 	var threshold = 64,
-			padding_h = 30,
-			padding_top_h = 40;
+			rem_w = 20;
 
-	function calc_currentH(){
-		// current_h = 0;
-		// content_sticky.each(function(){ current_h+=$(this).height(); });
-
-		content_top_h = $(".generic-content-wrapper#projects .content_top").height() +padding_top_h;
-		content_bot_h = $(".generic-content-wrapper#projects .content_bot .tags").height();
-		current_h = content_top_h +content_bot_h;
+	function calc_current(){
+		current_h = content_sticky.height();
+		current_w = content_widthRef.width();
 	}
 
-	function updateLayout(_current_w, _current_h, _content_top_h, _content_bot_h){
+	function updateLayout(){
 		if(stuck){
-			content_sticky.addClass('sticky').width(_current_w -(padding_h*2));
-			content_bot.css('margin-top',_content_top_h);
-			content_padded.css('padding-top',_current_h);
+			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
+			// content_padded.css('padding-top',current_h);
 		} else{
 			content_sticky.removeClass('sticky').width('auto');
-			content_bot.css('margin-top',0);
-			content_padded.css('padding-top',0);
+			// content_padded.css('padding-top',0);
 		}
 	}
 
-	calc_currentH();
+	calc_current();
 
 	$(window).scroll(function(){
-		current_w = content_widthRef.width();
 		if($(window).scrollTop() >=threshold){
 			stuck = true;
 		} else{
 			stuck = false;
 		}
-		updateLayout(current_w, current_h, content_top_h, content_bot_h);
+		updateLayout();
 	});
 	$(window).resize(function(){
-		current_w = content_widthRef.width();
-		calc_currentH();
-		updateLayout(current_w, current_h, content_top_h, content_bot_h);
+		calc_current();
+		updateLayout();
 	});
 });

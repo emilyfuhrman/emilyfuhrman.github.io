@@ -1,9 +1,11 @@
 {% include header.html %}
-<div class='generic-content-wrapper' id='projects'>
-	<div class='content_top'>{{ content }}</div>
+<div id='projects' class='generic-content-wrapper'>
+	<div id='projects-page-content' class='content_top'>
+		<div>{{ content }}</div>
+		<div id='project-tags' class='tags' ></div>
+	</div>
 	<div class='content_bot'>
-		<div class='tags'></div>
-		<ul class='project-list'></ul>
+		<ul id='project-list'></ul>
 	</div>
 	<script>
 		var JEKYLL_POSTS = [];
