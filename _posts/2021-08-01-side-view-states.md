@@ -25,6 +25,7 @@ exhibits:
 tags:
   - static
   - interactive
+  - cartography
 ---
 _Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the side. Each boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
 

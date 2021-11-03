@@ -10,5 +10,6 @@ images:
   - ext:    01.jpg
 tags:
   - static
+  - notation
 ---
 Car horns in Greenpoint from 6:44PM &ndash; 7:29PM on Sunday, April 14th, 2013. Experimenting with notation and vertical time.

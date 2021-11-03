@@ -58,15 +58,17 @@ var projects = function(){
 				});
 			}
 
-			tags = d3.select('.content_bot#projects .tags').selectAll('div.project-tag')
+			tags = d3.select('#projects .content_bot .tags').selectAll('div.project-tag')
 				.data(self.data_tags);
 			tags.enter().append('div')
 				.classed('project-tag',true);
 			tags
 				.text(function(d){ 
 					var label = 
-						d === 'dh' ? 'digital humanities'
+						d === 'cartography' ? 'cartographies'
 					: d === 'client' ? 'client work'
+					: d === 'dh' ? 'digital humanities'
+					: d === 'notation' ? 'graphic notation'
 					: d; 
 					return label;
 				});
@@ -86,7 +88,7 @@ var projects = function(){
 		generate_list:function(){
 			var self = this;
 
-			var container = d3.select('.content_bot#projects .project-list');
+			var container = d3.select('#projects .content_bot .project-list');
 			var data, item, link;
 			var col_l,
 					col_r,
@@ -149,3 +151,37 @@ var projects = function(){
 }
 
 projects().get_data();
+
+$(document).ready(function() {
+	var stuck = false;
+	var content_sticky = $(".generic-content-wrapper#projects .content_top, .generic-content-wrapper#projects .content_bot .tags");
+	var content_widthGuide = $(".generic-content-wrapper#projects .content_bot");
+	var current_w = content_widthGuide.width();
+	var threshold = 64;
+
+	function updateLayout(_stuck, _content_sticky, _current_w){
+		if(_stuck){
+			_content_sticky.addClass('sticky')
+				.width(_current_w)
+				.css('left',0);
+		} else{
+			_content_sticky.removeClass('sticky')
+				.width('auto')
+				.css('left','auto');
+		}
+	}
+
+	$(window).scroll(function(){
+		current_w = content_widthGuide.width();
+		if($(window).scrollTop() >=threshold){
+			stuck = true;
+		} else{
+			stuck = false;
+		}
+		updateLayout(stuck, content_sticky, current_w);
+	});
+	$(window).resize(function(){
+		current_w = content_widthGuide.width();
+		updateLayout(stuck, content_sticky, current_w);
+	});
+});

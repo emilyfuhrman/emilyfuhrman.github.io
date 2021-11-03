@@ -242,18 +242,24 @@ span.i {
 		PROJECTS PAGE
    	------------------------------------ */
 
-.content_top#projects {
+#projects .content_top {
 	float:none;
 	text-align:center;
 	}
-
-.content_bot#projects .tags {
+#projects .content_bot .tags {
 	display:block;
 	text-align:center;
 	padding:1rem 1.5rem 3rem;
 	}
 
-.content_bot#projects .tags .project-tag {
+#projects .content_top.sticky {
+	position:fixed;
+}
+#projects .content_bot .tags.sticky {
+	position:fixed;
+}
+
+#projects .content_bot .tags .project-tag {
 	display:inline-block;
 	background:$color_lg;
 	font-size:0.5rem;
@@ -266,11 +272,11 @@ span.i {
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 	}
-.content_bot#projects .tags .project-tag:hover {
+#projects .content_bot .tags .project-tag:hover {
 	background:$color_accent;
 	color:#fff;
 	}
-.content_bot#projects .tags .project-tag.active {
+#projects .content_bot .tags .project-tag.active {
 	background:$color_black;
 	color:#fff;
 	}

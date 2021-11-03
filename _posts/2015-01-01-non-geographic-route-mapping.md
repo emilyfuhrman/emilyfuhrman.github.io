@@ -12,6 +12,7 @@ images:
   - ext:    03.jpg
 tags:
   - static
+  - cartography
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 
