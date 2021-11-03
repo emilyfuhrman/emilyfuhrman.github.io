@@ -3,6 +3,7 @@
 	<div class='content_top'>{{ content }}</div>
 	<div class='content_bot' id='projects'>
 		<div class='tags'></div>
+		<ul class='project-list'></ul>
 	</div>
 	<script>
 		var JEKYLL_POSTS = [];
@@ -19,6 +20,7 @@
 				url_target: "{{ target }}",
 				title:      "{{ post.title }}",
 				tagline:    "{{ post.tagline }}",
+				role:       "{{ post.role }}",
 				year:       {{ post.date | date: "%Y" }},
 				tags:       {{ post.tags | split: ", " | join: "," }},
 				external:   "{{ post.external }}"

@@ -118,7 +118,7 @@ span.i {
 	font-size:0.9rem;
 	padding:2rem 1.5rem 0;
 	}
-.generic-content-wrapper .section ul {
+.generic-content-wrapper ul {
 	float:left;
 	width:100%;
 	font-size:0.75rem;
@@ -132,7 +132,6 @@ span.i {
 
 .generic-content-wrapper .content_top {
 	float:left;
-	width:100%;
 	padding:0 1.5rem;
 	}
 
@@ -142,21 +141,21 @@ span.i {
 	padding-bottom:4rem;
 	border-top:1px solid $color_lg;
 	}
-.generic-content-wrapper #content_bot .section ul li {
+.generic-content-wrapper .content_bot ul li {
 	float:left;
 	width:100%;
 	padding-top:0;
 	border:none;
 	}
 
-.generic-content-wrapper #content_bot .section ul li .col_left {
+.generic-content-wrapper .content_bot ul li .col_left {
 	float:left;
 	max-width:90%;
 	margin:0;
 	padding-right:1rem;
 	@include box-sizing(border-box);
 	}
-.generic-content-wrapper #content_bot .section ul li .col_right {
+.generic-content-wrapper .content_bot ul li .col_right {
 	float:right;
 	max-width:10%;
 	margin:0;	
@@ -244,10 +243,11 @@ span.i {
    	------------------------------------ */
 
 .content_bot#projects .tags {
-	padding:1rem 0;
+	text-align:center;
+	padding:1rem 0 1.5rem;
 	}
 .content_bot#projects .tags .project-tag {
-	float:left;
+	display:inline-block;
 	background:$color_lg;
 	font-size:0.6rem;
 	text-transform:uppercase;
@@ -268,7 +268,6 @@ span.i {
 	color:#fff;
 	}
 
-
 .project-row,
 .project-link {
 	float:left;
@@ -277,6 +276,8 @@ span.i {
 	}
 
 ul.project-list {
+	float:left;
+	width:100%;
 	line-height:1rem !important;
 	list-style-type:"\2013\00a0\00a0" !important;
 	}
@@ -304,17 +305,9 @@ ul.project-list li.project-row p#project-tagline {
   width:90%;
   margin:0;
 	}
-/*ul.project-list li.project-row p#project-tagline span#project-role {
-	background:$color_lg;
-	color:$color_black;
-	font-size:0.4rem;
-	text-transform:uppercase;
-	margin-right:0.4rem;
-	padding:0.3rem 0.2rem 0.2rem;
-	border-radius:2px;
-	}*/
-
-ul.project-list li.project-row span.ext-arrow {
+ul.project-list li.null {
+	color:#bbb;
+	list-style-type:none;
 	}
 
 /* 	------------------------------------
