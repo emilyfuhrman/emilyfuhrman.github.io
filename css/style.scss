@@ -266,6 +266,7 @@ span.i {
 	border-top-color:#fff;
 	border-top-style:solid;
   @include box-shadow(0 8px 4px -4px rgba(0,0,0,0.05));
+	@include transition(box-shadow 120ms ease);
 	}
 #projects .content_top.sticky #project-tags {
 	padding-bottom:1rem;
@@ -910,14 +911,14 @@ span.sub {
 	#nav .projects {
 		right:65px;
 		margin-top:1.5rem;
-	}
+		}
 
 	.container #proj {
 		padding:3rem 1rem;
 		}
 	#proj #info .title {
-		top:80px;
-	}
+		top:88px;
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 3);
@@ -930,14 +931,14 @@ span.sub {
 	#nav .projects {
 		right:65px;
 		margin-top:1.5rem;
-	}
+		}
 
 	.container #proj {
 		padding:3rem 1rem;
 		}
 	#proj #info .title {
-		top:80px;
-	}
+		top:88px;
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 3);
@@ -950,14 +951,14 @@ span.sub {
 	#nav .projects {
 		right:150px;
 		margin-top:0;
-	}
+		}
 
 	.container #proj {
 		padding:3rem 1rem;
 		}
 	#proj #info .title {
-		top:80px;
-	}
+		top:88px;
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 4);
@@ -970,7 +971,7 @@ span.sub {
 	#nav .projects {
 		right:150px;
 		margin-top:0;
-	}
+		}
 
 	.container #proj {
 		padding:1.25rem 1rem;
@@ -978,7 +979,7 @@ span.sub {
 	#proj #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
-	}
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 4);
@@ -991,7 +992,7 @@ span.sub {
 	#nav .projects {
 		right:150px;
 		margin-top:0;
-	}
+		}
 
 	.container #proj {
 		padding:1.25rem 1rem;
@@ -999,7 +1000,7 @@ span.sub {
 	#proj #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
-	}
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 4);
@@ -1012,7 +1013,7 @@ span.sub {
 	#nav .projects {
 		right:150px;
 		margin-top:0;
-	}
+		}
 
 	.container #proj {
 		padding:1.25rem 1rem;
@@ -1020,7 +1021,7 @@ span.sub {
 	#proj #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
-	}
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 4);
@@ -1033,7 +1034,7 @@ span.sub {
 	#nav .projects {
 		right:150px;
 		margin-top:0;
-	}
+		}
 
 	.container #proj {
 		padding:1.25rem 1rem;
@@ -1041,7 +1042,7 @@ span.sub {
 	#proj #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
-	}
+		}
 
 	#loading-animation {
 	  top:calc(100vh / 4);
