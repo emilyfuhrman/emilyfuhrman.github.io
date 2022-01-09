@@ -203,7 +203,7 @@ span.i {
 	@include box-sizing(border-box);
 	}
 
-#gallery a.list-img-link {
+#gallery .list-img-container {
 	position:relative;
 	display:inline-block;
 	width:100%;
@@ -215,6 +215,8 @@ span.i {
 	padding:1.75rem;
 	border:none;
 	@include box-sizing(border-box);
+}
+#gallery a.list-img-link {
 	}
 
 #gallery a.list-img-link .list-img {
