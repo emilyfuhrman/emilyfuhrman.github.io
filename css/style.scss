@@ -550,10 +550,11 @@ span.sub {
    	------------------------------------ */
 
 #base {
-	float:left;
+	position:fixed;
 	width:auto;
 	margin:0;
 	padding:0 50px 1rem;
+	bottom:0;
 	clear:both;
 	}
 #base #social {
