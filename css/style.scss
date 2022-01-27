@@ -282,6 +282,7 @@ span.i {
 #projects .generic-list ul#project-list {
 	line-height:1rem !important;
 	list-style-type:"\2013\00a0\00a0" !important;
+	padding:0 3rem;
 	}
 
 #projects .generic-list ul#project-list li.project-row {
@@ -321,12 +322,12 @@ span.i {
 		POST
    	------------------------------------ */
 
-.container #proj {
+.container #project {
 	margin-top:0;
 	padding:1.25rem 1rem;
 	}
 
-#proj #info .title {
+#project #info .title {
 	z-index:999;
 	position:fixed;
 	max-width:600px;
@@ -339,13 +340,13 @@ span.i {
 	transform:translateX(-50%);
 	}
 
-#proj #media {
+#project #media {
 	max-width:900px;
 	margin:0 auto;
 	clear:both;
 	}
 
-#proj #media .media {
+#project #media .media {
 	display:block;
 	float:left;
 	width:100%;
@@ -354,18 +355,18 @@ span.i {
 	padding:1.5rem;
 	@include box-sizing(border-box);
 	}
-#proj #media .media.center {
+#project #media .media.center {
 	clear:both;
 	}
-#proj #media .media.half {
+#project #media .media.half {
 	display:block;
 	width:50%;
 	height:auto;
 	}
-#proj #media .media a {
+#project #media .media a {
 	border:none;
 	}
-#proj #media .media img {
+#project #media .media img {
 	position:relative;
 	display:block;
 	width:100%;
@@ -377,24 +378,24 @@ span.i {
   /*@include box-shadow(2px 2px 12px 1px rgba(0,0,0,0.1));*/
 	}
 
-#proj #media .media .caption {
+#project #media .media .caption {
 	font-size:0.8rem;
 	margin-top:1.2em;
 	}
-#proj #media .media .caption a {
+#project #media .media .caption a {
 	border-bottom:1px solid $color_black;
 	}
 
-#proj #media,
-#proj .epigraph,
-#proj .description,
-#proj .lang-switcher {
+#project #media,
+#project .epigraph,
+#project .description,
+#project .lang-switcher {
 	font-size:0.9rem !important;
 	line-height:1.4rem;
 	}
 
-#proj .description,
-#proj .epigraph {
+#project .description,
+#project .epigraph {
 	display:block;
 	max-width:900px;
 	margin:0 auto;
@@ -402,12 +403,12 @@ span.i {
 	@include box-sizing(border-box);
 	clear:both;
 	}
-#proj .description p:first-child {
+#project .description p:first-child {
 	font-size:0;
 	line-height:0;
 	}
 
-#proj .epigraph p {
+#project .epigraph p {
 	width:100%;
 	float:left;
 	font-size:0.75rem;
@@ -417,19 +418,19 @@ span.i {
 	border-left:1px solid $color_lg;
 	@include box-sizing(border-box);
 	}
-#proj .epigraph p:first-child {
+#project .epigraph p:first-child {
 	font-style:italic;
 	margin-bottom:0;
 	padding-top:1.5rem;
 	}
-#proj .epigraph p:last-child {
+#project .epigraph p:last-child {
 	text-align:right;
 	margin-top:0;
 	padding-top:0.5rem;
 	padding-bottom:1.5rem;
 	}
 
-#proj .controls {
+#project .controls {
 	display:block;
 	clear:both;
 	width:100%;
@@ -437,24 +438,28 @@ span.i {
 	margin:0 auto;
 	}
 
-#proj .meta {
+#project .meta {
 	width:100%;
 	max-width:900px;
 	margin:0 auto;
 	@include box-sizing(border-box);
 	clear:both;
 	}
-#proj .meta div {
-	float:left;
+#project .meta div#meta-border {
 	width:100%;
-	}
-#proj .meta > div:first-child {
+	height:0;
+	margin:0;
 	border-top:1px solid $color_lg;
 	}
-#proj .meta > div:last-child {
+#project .meta div {
+	float:left;
+	}
+#project .meta > div:first-child {
+	}
+#project .meta > div:last-child {
 	padding-bottom:4rem;
 	}
-#proj .meta .meta-header {
+#project .meta .meta-header {
 	float:left;
 	width:100%;
 	max-width:900px;
@@ -463,8 +468,8 @@ span.i {
 	@include box-sizing(border-box);
 	}
 
-#proj ul,
-#proj ol {
+#project ul,
+#project ol {
 	float:left;
   font-size:0.75rem;
   line-height:1.2rem;
@@ -472,36 +477,36 @@ span.i {
 	padding:0 1.5rem;
 	@include box-sizing(border-box);
 	}
-#proj ul {
+#project ul {
 	list-style-type:"\2013\00a0\00a0";
 	}
-#proj ul.no-list {
+#project ul.no-list {
 	list-style-type:none;
 	}
 
-#proj .lang-switcher {
+#project .lang-switcher {
 	cursor:cell;
 	float:left;
 	margin:1rem 0 1rem 1.5rem;
 	}
-#proj .lang-switcher:hover {
+#project .lang-switcher:hover {
 	}
-#proj .lang-switcher.active {
+#project .lang-switcher.active {
 	border-bottom:1px solid $color_black;
 	}
 
-#proj #post-nav .arrow {
+#project #post-nav .arrow {
 	position:fixed;
 	font-size:1.5rem;
   bottom:2rem;
 	}
-#proj #post-nav .arrow#previous {
+#project #post-nav .arrow#previous {
 	left:65px;
 	}
-#proj #post-nav .arrow#next {
+#project #post-nav .arrow#next {
 	right:65px;
 	}
-#proj #post-nav .arrow a {
+#project #post-nav .arrow a {
 	text-decoration:none;
 	border:none;
 	}
@@ -887,11 +892,19 @@ span.i {
 		margin-top:1.5rem;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:3rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:88px;
+		}
+	.container #project .meta div#meta-border {
+		width:calc(100% - 3rem);
+		margin:0 1.5rem;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 1.5rem;
 		}
 
 	#loading-animation {
@@ -907,11 +920,19 @@ span.i {
 		margin-top:1.5rem;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:3rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:88px;
+		}
+	.container #project .meta div#meta-border {
+		width:calc(100% - 3rem);
+		margin:0 1.5rem;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 1.5rem;
 		}
 
 	#loading-animation {
@@ -927,11 +948,19 @@ span.i {
 		margin-top:0;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:3rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:88px;
+		}
+	.container #project .meta div#meta-border {
+		width:calc(100% - 3rem);
+		margin:0 1.5rem;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 1.5rem;
 		}
 
 	#loading-animation {
@@ -947,12 +976,20 @@ span.i {
 		margin-top:0;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:1.25rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
+		}
+	.container #project .meta div#meta-border {
+		width:100%;
+		margin:0;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 3rem;
 		}
 
 	#loading-animation {
@@ -968,12 +1005,20 @@ span.i {
 		margin-top:0;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:1.25rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
+		}
+	.container #project .meta div#meta-border {
+		width:100%;
+		margin:0;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 3rem;
 		}
 
 	#loading-animation {
@@ -989,12 +1034,20 @@ span.i {
 		margin-top:0;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:1.25rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
+		}
+	.container #project .meta div#meta-border {
+		width:100%;
+		margin:0;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 3rem;
 		}
 
 	#loading-animation {
@@ -1010,12 +1063,20 @@ span.i {
 		margin-top:0;
 		}
 
-	.container #proj {
+	.container #project {
 		padding:1.25rem 1rem;
 		}
-	#proj #info .title {
+	.container #project #info .title {
 		top:30px;
 		top:calc(30px - 0.1rem);
+		}
+	.container #project .meta div#meta-border {
+		width:100%;
+		margin:0;
+		}
+
+	#projects .generic-list ul#project-list {
+		padding:0 3rem;
 		}
 
 	#loading-animation {
