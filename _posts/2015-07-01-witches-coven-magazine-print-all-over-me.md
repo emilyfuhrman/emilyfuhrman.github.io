@@ -10,6 +10,7 @@ cover_w:    700
 images:
   - ext:    01.jpg
     cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block top</a>"
+meta:       true
 exhibits:
   - name:   Signal Gallery
     link:   http://ssiiggnnaall.com/

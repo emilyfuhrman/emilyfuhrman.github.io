@@ -10,6 +10,7 @@ cover:			01.png
 cover_w:		500
 images:     
   - ext:    01.png
+meta:       true
 cred:
   - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
     link:   "http://xpmethod.plaintext.in/embodied-space-lab/2015-04-10-mapping-indexality.html"

@@ -16,6 +16,7 @@ images:
     half:   true
   - ext:    03_animation_EO1.gif
     half:   true
+meta:       true
 exhibits:
   - name:   The Mini Microcinema
     link:   http://www.mini-cinema.org/screenings/object

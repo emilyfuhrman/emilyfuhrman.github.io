@@ -8,6 +8,7 @@ github:     true
 images:
   - ext:    01.jpg
   - ext:    02.jpg
+meta:       true
 role:
   - Visualization Design &amp; Development
 team:
