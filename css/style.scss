@@ -317,6 +317,14 @@ span.i {
 	text-align:center;
 	list-style-type:none;
 	}
+#projects .generic-list  ul#project-list li.null #reset-project-filters {
+	color:$color_accent;
+	margin-left:4px;
+	}
+#projects .generic-list  ul#project-list li.null #reset-project-filters:hover {
+	cursor:cell;
+	border-bottom:1px solid $color_accent;
+	}
 
 /* 	------------------------------------
 		POST

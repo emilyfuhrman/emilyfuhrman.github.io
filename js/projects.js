@@ -34,6 +34,7 @@ var projects = function(){
 			self.data = JEKYLL_POSTS;
 			self.process_data(self.data);
 		},
+
 		process_data:function(_data){
 			var self = this;
 
@@ -51,12 +52,6 @@ var projects = function(){
 		generate_tags:function(){
 			var self = this;
 			var tags;
-
-			function updateTags(){
-				tags.classed('active',function(d){
-					return self.active_tags.indexOf(d) >-1;
-				});
-			}
 
 			tags = d3.select('#projects .masthead #project-tags').selectAll('div.project-tag')
 				.data(self.data_tags);
@@ -82,15 +77,29 @@ var projects = function(){
 					} else{
 						self.active_tags = self.active_tags.filter(function(_d){ return _d !== d; });
 					}
-					updateTags();
+					self.update_tags(tags);
 					self.generate_list();
 				});
 			tags.exit().remove();
 		},
 
+		update_tags:function(_handle){
+			var self = this;
+			var tags = _handle || d3.selectAll('div.project-tag');
+			tags.classed('active',function(d){
+				return self.active_tags.indexOf(d) >-1;
+			});
+		},
+
+		reset_tags:function(){
+			var self = this;
+			self.active_tags = [];
+			self.update_tags();
+			self.generate_list();
+		},
+
 		generate_list:function(){
 			var self = this;
-
 			var container = d3.select('#project-list');
 			var data, item, link;
 			var col_l,
@@ -147,7 +156,13 @@ var projects = function(){
 				container.append('li')
 					.classed('project-row',true)
 					.classed('null',true)
-					.html('No results.');
+					.html('No results.')
+					.append('span')
+						.attr('id','reset-project-filters')
+						.html('Clear')
+						.on('click',function(){
+							self.reset_tags();
+						});
 			}
 		}
 	}
