@@ -153,6 +153,7 @@ span.i {
 .content-wrapper .generic-list ul li .col_right {
 	float:right;
 	width:10%;
+	text-align:right;
 	margin:0;	
 	}
 
@@ -309,7 +310,7 @@ span.i {
   width:90%;
   margin:0;
 	}
-	
+
 #projects .generic-list  ul#project-list li.null {
 	color:#bbb;
 	text-align:center;
@@ -386,13 +387,13 @@ span.i {
 
 #proj #media,
 #proj .epigraph,
-#proj .descrip,
+#proj .description,
 #proj .lang-switcher {
 	font-size:0.9rem !important;
 	line-height:1.4rem;
 	}
 
-#proj .descrip,
+#proj .description,
 #proj .epigraph {
 	display:block;
 	max-width:900px;
@@ -401,7 +402,7 @@ span.i {
 	@include box-sizing(border-box);
 	clear:both;
 	}
-#proj .descrip p:first-child {
+#proj .description p:first-child {
 	font-size:0;
 	line-height:0;
 	}
@@ -547,8 +548,7 @@ span.i {
 	}
 #base #social .link.social#email,
 #base #social .link.social#twitter,
-#base #social .link.social#instagram,
-#base #social .link#log {
+#base #social .link.social#instagram {
 	margin-right:1.75rem;
 	}
 

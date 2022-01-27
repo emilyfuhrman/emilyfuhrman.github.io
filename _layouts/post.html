@@ -38,12 +38,12 @@
             </div>
         {% endfor %}
     {% endif %}
-    <div class='descrip' lang='en'>
+    <div class='description' lang='en'>
         <p>{{ content }}</p>
     </div>
     {% if page.translations %}
         {% for t in page.translations %}
-            <div class='descrip' lang={{ t.lang }}>
+            <div class='description' lang={{ t.lang }}>
                 <p><p>{{ t.text }}</p></p>
             </div>
         {% endfor %}
