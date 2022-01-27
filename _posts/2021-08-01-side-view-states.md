@@ -22,7 +22,7 @@ medium:     "Edition of 5 books, +1 AP"
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 exhibits:
   - name:   IEEE VISAP'21
-    link:   https://visap.net/2020/
+    link:   https://visap.net/
 tags:
   - static
   - interactive
