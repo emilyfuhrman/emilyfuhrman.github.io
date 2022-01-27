@@ -58,7 +58,7 @@ var projects = function(){
 				});
 			}
 
-			tags = d3.select('#projects .content_top #project-tags').selectAll('div.project-tag')
+			tags = d3.select('#projects .masthead #project-tags').selectAll('div.project-tag')
 				.data(self.data_tags);
 			tags.enter().append('div')
 				.classed('project-tag',true);
@@ -154,49 +154,3 @@ var projects = function(){
 }
 
 projects().get_data();
-
-//sticky tag logic
-$(document).ready(function() {
-	var stuck = false;
-	var content_sticky = $("#projects-page-content"),
-			content_padded = $("#project-list");
-	var content_widthRef = $(".generic-content-wrapper#projects .content_bot");
-	var current_w = content_widthRef.width(),
-			current_h = content_sticky.height();
-
-	//UI-specific variables
-	var threshold = 54,
-			border_top = 64,
-			box_shadow_w = 6,
-			rem_w = 20;
-
-	function calc_current(){
-		current_h = content_sticky.height();
-		current_w = content_widthRef.width();
-	}
-
-	function updateLayout(){
-		if(stuck && $(window).width() >=641){
-			content_sticky.addClass('sticky').width(current_w -(rem_w*3));
-			content_padded.css('padding-top',(current_h +border_top -(rem_w*2) -box_shadow_w));
-		} else{
-			content_sticky.removeClass('sticky').width('auto');
-			content_padded.css('padding-top',0);
-		}
-	}
-
-	calc_current();
-
-	$(window).scroll(function(){
-		if($(window).scrollTop() >=threshold){
-			stuck = true;
-		} else{
-			stuck = false;
-		}
-		updateLayout();
-	});
-	$(window).resize(function(){
-		calc_current();
-		updateLayout();
-	});
-});
