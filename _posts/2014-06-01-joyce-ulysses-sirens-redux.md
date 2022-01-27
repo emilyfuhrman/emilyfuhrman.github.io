@@ -8,6 +8,7 @@ github:     true
 images:
   - ext:    01.jpg
   - ext:    02.jpg
+meta:       true
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
