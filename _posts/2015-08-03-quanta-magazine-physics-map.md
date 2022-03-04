@@ -16,6 +16,23 @@ role:
 team:
   - Natalie Wolchover
   - Olena Shmahalo
+cred_tweets:
+  - name:   Argonne National Laboratory
+    link:   "https://twitter.com/argonne/status/632231701540962304"
+  - name:   Fermilab
+    link:   "https://twitter.com/Fermilab/status/633255117232427008"
+  - name:   Los Alamos National Laboratory
+    link:   "https://twitter.com/LosAlamosNatLab/status/629364288495460352"
+  - name:   Nature Physics
+    link:   "https://twitter.com/NaturePhysics/status/629363051742003200"
+  - name:   WIRED Science
+    link:   "https://twitter.com/WIREDScience/status/632228551190802432"
+  - name:   Carlo Rovelli
+    link:   "https://twitter.com/carlorovelli/status/629307761352921088"
+  - name:   Cliff Kuang
+    link:   "https://twitter.com/cliffkuang/status/628560211368931328"
+  - name:   Steven Strogatz
+    link:   "https://twitter.com/stevenstrogatz/status/636179310680907776"
 tags:
   - client
 ---
