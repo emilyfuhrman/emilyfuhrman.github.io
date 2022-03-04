@@ -19,7 +19,7 @@ team:
 cred_tweets:
   - name:   Argonne National Laboratory
     link:   "https://twitter.com/argonne/status/632231701540962304"
-  - name:   Fermilab
+  - name:   Fermi National Accelerator Laboratory
     link:   "https://twitter.com/Fermilab/status/633255117232427008"
   - name:   Los Alamos National Laboratory
     link:   "https://twitter.com/LosAlamosNatLab/status/629364288495460352"
