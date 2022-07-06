@@ -4,8 +4,6 @@ title:      "Giant Gears"
 tagline:    "Analog renditions of an algorithmic image."
 post_path:  giant-gears
 category:   portfolio
-cover:      03.jpg
-cover_w:    700
 images:
   - ext:    01.jpg
   - ext:    02.jpg

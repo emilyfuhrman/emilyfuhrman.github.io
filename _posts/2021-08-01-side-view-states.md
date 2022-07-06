@@ -5,8 +5,6 @@ tagline:    "An atlas of the 50 U.S. state boundaries, viewed from the side."
 post_path:  side-view-states
 perm:       /interactive/Y2021001
 category:   portfolio
-cover:      01.jpg
-cover_w:    550
 images:
   - ext:    01.jpg
   - ext:    04.jpg

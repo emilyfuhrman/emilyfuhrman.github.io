@@ -4,8 +4,6 @@ title:      "Study: Ephemeral Data"
 tagline:    "Notating ephemeral sounds."
 post_path:  ephemeral-data
 category:   portfolio
-cover:      01.jpg
-cover_w:		500
 images:
   - ext:    01.jpg
 tags:

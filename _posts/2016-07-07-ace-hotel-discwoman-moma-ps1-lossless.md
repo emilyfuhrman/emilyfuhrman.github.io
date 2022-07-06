@@ -4,8 +4,6 @@ title:      "Lossless"
 tagline:    "A collection of data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York, presented by Discwoman in conjunction with Warm Up at MoMA PS1."
 post_path:  ace-hotel-discwoman-moma-ps1-lossless
 category:   portfolio
-cover:      01_bodyElectric_framed.jpg
-cover_w:    600
 images:
   - ext:    01_bodyElectric_framed.jpg
     cap:    <a href='https://soundcloud.com/bearcats_mixtapes/chromat-documentary-score-teaser' target='_blank'>BEARCAT</a>

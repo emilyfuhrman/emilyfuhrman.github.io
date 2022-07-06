@@ -4,8 +4,6 @@ title:      "Study: Non-geographic Route Mapping"
 tagline:    "An experiment in mapping daily routes without using geographic coordinates."
 post_path:  non-geographic-route-mapping
 category:   portfolio
-cover:      03.jpg
-cover_w:    500
 images:
   - ext:    02.jpg
   - ext:    01.jpg

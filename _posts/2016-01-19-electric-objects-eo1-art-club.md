@@ -5,8 +5,7 @@ tagline:    "A series of four data-driven animations for the EO1 prototype."
 post_path:  electric-objects-eo1-art-club
 perm:       https://www.electricobjects.com/collections/67
 category:   portfolio
-cover:      02_animation_EO1.gif
-cover_w:    500
+cover_xt:   gif
 images:
   - ext:    04_animation_EO1.gif
     half:   true

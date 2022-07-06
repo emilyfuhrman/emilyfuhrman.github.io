@@ -4,8 +4,6 @@ title:      "Mapping the Alaska Boundary"
 tagline:    "A textual map of the present day Alaskan border."
 post_path:  mapping-the-alaska-boundary
 category:   portfolio
-cover:      01.png
-cover_w:    550
 images:
   - ext:    01.png
 meta:       true
