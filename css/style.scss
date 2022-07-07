@@ -196,7 +196,7 @@ span.i {
 	overflow:auto;
 	text-align:center;
 	margin:0 60px;
-	padding:3rem 0 0;
+	padding:65px 0 0;
 	-webkit-transform:translate3d(0, 0, 0);
 	@include box-sizing(border-box);
 	}
@@ -362,8 +362,8 @@ span.i {
 	float:left;
 	width:100%;
 	height:auto;
-	margin:0;
-	padding:3rem;
+	margin:3rem 0 0;
+	padding:1.5rem;
 	@include box-sizing(border-box);
 	}
 #project #media .media.center {
