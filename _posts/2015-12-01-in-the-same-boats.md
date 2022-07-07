@@ -9,6 +9,9 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
 meta:       true
+cred:
+  - name: "Columbia University Group for Experimental Methods in Humanistic Research"
+    link: "https://xpmethod.columbia.edu/embodied-space-lab/2020-05-01-same-boats.html"
 role:
   - Visualization &amp; Project Design
 team:

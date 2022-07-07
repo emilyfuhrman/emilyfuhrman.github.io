@@ -11,7 +11,7 @@ images:
 meta:       true
 cred:
   - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
-    link:   "http://xpmethod.plaintext.in/embodied-space-lab/2015-04-10-mapping-indexality.html"
+    link:   "https://xpmethod.columbia.edu/embodied-space-lab/2015-04-10-mapping-indexality.html"
 citations:
   - Walter Benjamin, <i>The Arcades Project</i>, trans. Howard Eiland and Kevin McLaughlin (Belknap Press, 2002), Third Printing edition.
 tags:

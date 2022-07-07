@@ -13,7 +13,7 @@ cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
   - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
-    link:   "http://xpmethod.plaintext.in/lit-mod-viz/2014-10-22-visualizing-joyce.html"
+    link:   "https://xpmethod.columbia.edu/lit-mod-viz/2014-10-22-visualizing-joyce.html"
 cred_tweets:
   - name:   Georgia Lupi
     link:   "https://twitter.com/giorgialupi/status/484325744961536000"

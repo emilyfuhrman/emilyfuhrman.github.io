@@ -9,6 +9,11 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
 meta:       true
+cred:
+  - name:   "Columbia University Digital Humanities"
+    link:   "https://digitalhumanities.columbia.edu/projects/postbyfoot.html"
+  - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
+    link:   "https://xpmethod.columbia.edu/embodied-space-lab/2014-10-31-medieval-mapping.html"
 role:
   - Visualization Design &amp; Development
 team:
