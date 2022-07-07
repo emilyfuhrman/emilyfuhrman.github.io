@@ -1,7 +1,7 @@
 ---
 post_id:    Y2013011
 title:      "Giant Gears"
-tagline:    "Analog renditions of an algorithmic image."
+tagline:    "Analog renditions of a programmatically generated image."
 post_path:  giant-gears
 category:   portfolio
 images:
@@ -11,4 +11,4 @@ images:
 tags:
   - static
 ---
-A series of large-scale, hand-inked, gear-like images. Each circle measures about 20 inches across. My original intent was to create an analog rendition of an algorithmic image, which morphed into a few different iterations.
+A series of large-scale, hand-inked renditions of a programmatically generated image.
