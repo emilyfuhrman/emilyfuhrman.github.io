@@ -8,6 +8,7 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
   - ext:    03.jpg
+medium:     "Edition of 3"
 tags:
   - static
 ---
