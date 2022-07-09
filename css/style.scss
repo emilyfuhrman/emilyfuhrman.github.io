@@ -295,18 +295,16 @@ span.i {
 	overflow:visible !important;
 	margin:0;
 	padding:0;
-	border-bottom:1px solid #ccc;
-	@include box-sizing(border-box);
-	}
-#projects .generic-list ul#project-list li.project-row:hover {
 	border-bottom:1px solid $color_black;
+	@include box-sizing(border-box);
 	}
 
 #projects .generic-list ul#project-list li.project-row a {
 	display:inline-block;
 	width:100%;
 	height:100%;
-	padding:0.5rem 0 0.25rem;
+	margin-bottom:-0.25rem;
+	padding:0.5rem 0;
 	border:none;
 	}
 
