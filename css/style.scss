@@ -298,6 +298,9 @@ span.i {
 	border-bottom:1px solid #ccc;
 	@include box-sizing(border-box);
 	}
+#projects .generic-list ul#project-list li.project-row:hover {
+	border-bottom:1px solid $color_black;
+	}
 
 #projects .generic-list ul#project-list li.project-row a {
 	border:none;
@@ -317,9 +320,6 @@ span.i {
   margin:0;
   margin-right:0.25rem;
 	}
-#projects .generic-list ul#project-list li.project-row a:hover .project-title {
-	color:$color_accent;
-	}
 
 #projects .generic-list ul#project-list li.project-row .ext-arrow {
 	float:left;
@@ -336,7 +336,6 @@ span.i {
 	text-transform:uppercase;
   margin-right:0.25rem;
   padding:0 0.5rem;
-  /*border-radius:1rem;*/
 	}
 
 #projects .generic-list  ul#project-list li.null {
