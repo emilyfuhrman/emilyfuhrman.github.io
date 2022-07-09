@@ -133,7 +133,7 @@ var projects = function(){
 						var title = "<span class='project-title'>" +d.title +"</span>",
 								ext = d.external === "true" ? "<span class='ext-arrow'>&nbsp;&#x2197;&#xFE0E;</span>" : "",
 								role = d.role ? "<span class='project-role'>" +d.role +"</span>" : "",
-								body = "<span>" +d.tagline +"</span>";
+								body = "<span class='project-tagline'>" +d.tagline +"</span>";
 						return "<p>" +title +ext +role +body +"</p>"; 
 					});
 			col_l.exit().remove();
