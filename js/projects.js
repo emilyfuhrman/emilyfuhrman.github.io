@@ -103,8 +103,7 @@ var projects = function(){
 			var container = d3.select('#project-list');
 			var data, item, link;
 			var col_l,
-					col_r,
-					tagline_p;
+					col_r;
 
 			data = self.util_filterData(self.data);
 
@@ -130,7 +129,13 @@ var projects = function(){
 			col_l.enter().append('div')
 				.classed('col_left',true);
 			col_l
-					.html(function(d){ return "<span class='project-title'>" +d.title +"</span>" +(d.external === "true" ? "<span class='ext-arrow'>&nbsp;&#x2197;&#xFE0E;</span>" : ""); });
+					.html(function(d){ 
+						var title = "<span class='project-title'>" +d.title +"</span>",
+								ext = d.external === "true" ? "<span class='ext-arrow'>&nbsp;&#x2197;&#xFE0E;</span>" : "",
+								role = d.role ? "<span class='project-role'>" +d.role +"</span>" : "",
+								body = d.tagline;
+						return "<p>" +title +ext +role +body +"</p>"; 
+					});
 			col_l.exit().remove();
 
 			col_r = link.selectAll('div.col_right')
@@ -139,17 +144,6 @@ var projects = function(){
 				.classed('col_right',true);
 			col_r
 					.html(function(d){ return "<span class='project-date'>" +d.year +"</span>" });
-			col_r.exit().remove();
-
-			tagline_p = link.selectAll('p.project-tagline')
-				.data(function(d){ return [d]; });
-			col_r.enter().append('p')
-				.classed('project-tagline',true);
-			col_r
-					.html(function(d){ 
-						var str = (d.role ? "<span class='project-role'>(" +d.role +")</span>&nbsp;" : "") +d.tagline;
-						return str;
-					});
 			col_r.exit().remove();
 
 			if(data.length === 0){

@@ -285,14 +285,17 @@ span.i {
 
 #projects .generic-list ul#project-list {
 	line-height:1rem !important;
-	list-style-type:"\2013\00a0\00a0" !important;
+	list-style-type:none !important;
+	/*list-style-type:"\2013\00a0\00a0" !important;*/
 	padding:0 3rem;
 	}
 
 #projects .generic-list ul#project-list li.project-row {
   display:list-item;
 	overflow:visible !important;
-	margin:0.5rem 0 0;
+	margin:0;
+	padding:0.5rem 0;
+	border-bottom:1px solid #ccc;
 	@include box-sizing(border-box);
 	}
 
@@ -300,26 +303,47 @@ span.i {
 	border:none;
 	}
 
-#projects .generic-list ul#project-list li.project-row .project-title {
+#projects .generic-list  ul#project-list li.project-row a p {
+	color:#ccc;
+	display:inline;
 	white-space:normal;
   margin:0;
-	border-bottom:1px dotted $color_black;
-	}
-#projects .generic-list ul#project-list li.project-row a:hover .project-title {
-	border-bottom:1px solid $color_black;
 	}
 
-#projects .generic-list  ul#project-list li.project-row p.project-tagline {
+#projects .generic-list ul#project-list li.project-row .project-title {
 	float:left;
+	color:$color_black;
 	white-space:normal;
-  width:90%;
   margin:0;
+  margin-right:0.25rem;
+	}
+#projects .generic-list ul#project-list li.project-row a:hover .project-title {
+	color:$color_accent;
+	}
+
+#projects .generic-list ul#project-list li.project-row .ext-arrow {
+	float:left;
+	color:$color_black;
+	margin-left:-0.25rem;
+  margin-right:0.25rem;
+  border-radius:2px;
+	}
+
+#projects .generic-list ul#project-list li.project-row .project-role {
+	float:left;
+	background:$color_lg;
+	font-size:0.5rem;
+	text-transform:uppercase;
+  margin-right:0.25rem;
+  padding:0 0.25rem;
+  border-radius:2px;
 	}
 
 #projects .generic-list  ul#project-list li.null {
 	color:#bbb;
 	text-align:center;
 	list-style-type:none;
+	border:none;
 	}
 #projects .generic-list  ul#project-list li.null #reset-project-filters {
 	color:$color_accent;
