@@ -310,17 +310,17 @@ span.i {
 	border:none;
 	}
 
-#projects .generic-list  ul#project-list li.project-row a p {
-	color:#ccc;
+#projects .generic-list  ul#project-list li.project-row a div {
+	float:left;
 	display:inline;
 	white-space:normal;
+	color:#ccc;
   margin:0;
 	}
 
 #projects .generic-list ul#project-list li.project-row .project-title,
 #projects .generic-list ul#project-list li.project-row .ext-arrow,
-#projects .generic-list ul#project-list li.project-row .project-role,
-#projects .generic-list ul#project-list li.project-row .project-tagline {
+#projects .generic-list ul#project-list li.project-row .project-role {
 	float:left;
   margin-right:0.25rem;
 	}
@@ -338,6 +338,9 @@ span.i {
 	text-transform:uppercase;
   padding:0 0.5rem;
   border-radius:1rem;
+	}
+#projects .generic-list ul#project-list li.project-row .project-date {
+	color:$color_black;
 	}
 
 #projects .generic-list  ul#project-list li.null {
