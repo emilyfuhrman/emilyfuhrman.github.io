@@ -317,28 +317,25 @@ span.i {
   margin:0;
 	}
 
-#projects .generic-list ul#project-list li.project-row .project-title {
+#projects .generic-list ul#project-list li.project-row .project-title,
+#projects .generic-list ul#project-list li.project-row .ext-arrow,
+#projects .generic-list ul#project-list li.project-row .project-role,
+#projects .generic-list ul#project-list li.project-row .project-tagline {
 	float:left;
+  margin-right:0.25rem;
+	}
+#projects .generic-list ul#project-list li.project-row .project-title {
 	color:$color_black;
 	white-space:normal;
-  margin:0;
-  margin-right:0.25rem;
 	}
-
 #projects .generic-list ul#project-list li.project-row .ext-arrow {
-	float:left;
 	color:$color_black;
-	margin-left:-0.25rem;
-  margin-right:0.25rem;
-  border-radius:2px;
+  margin-left:-0.25rem;
 	}
-
 #projects .generic-list ul#project-list li.project-row .project-role {
-	float:left;
 	background:$color_lg;
 	font-size:0.5rem;
 	text-transform:uppercase;
-  margin-right:0.25rem;
   padding:0 0.5rem;
   border-radius:1rem;
 	}
