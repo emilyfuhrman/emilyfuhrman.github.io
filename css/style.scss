@@ -320,6 +320,7 @@ span.i {
 	display:inline;
 	white-space:normal;
 	color:#ccc;
+	max-width:100%;
   margin:0;
 	}
 
@@ -339,8 +340,13 @@ span.i {
 	}
 #projects .generic-list ul#project-list li.project-row .project-role {
 	background:$color_lg;
+	overflow:hidden;
+	white-space:nowrap;
 	font-size:0.5rem;
 	text-transform:uppercase;
+	text-overflow:ellipsis;
+	max-width:100%;
+	max-height:1rem;
   padding:0 0.5rem;
   border-radius:1rem;
 	}
