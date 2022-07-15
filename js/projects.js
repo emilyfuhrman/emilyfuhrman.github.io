@@ -7,6 +7,23 @@ var projects = function(){
 
 		active_tags:[],
 
+		tag_dictionary:{
+			'cartography':'cartographies',
+			'client':'client work',
+			'collaboration':'collaborations',
+			'commission':'commissions',
+			'compendium':'compendiums',
+			'dh':'digital humanities',
+			'dynamic':'dynamic',
+			'interactive':'interactive',
+			'notation':'graphic notation',
+			'static':'static'
+		},
+		tag_reverseLookup:function(_tag){
+			var self = this;
+			return d3.entries(self.tag_dictionary).filter(function(d){ return d.value === _tag; })[0].key;
+		},
+
 		util_filterData:function(_data){
 			var self = this,
 					data;
@@ -43,7 +60,12 @@ var projects = function(){
 					if(self.data_tags.indexOf(_d) <0){ self.data_tags.push(_d); }
 				});
 			});
+			self.data_tags = self.data_tags.map(d => self.tag_dictionary[d]);
 			self.data_tags.sort();
+
+			//check if there are any tags specified in the URL
+			var hashList = window.location.hash.split('&').map(d => d.replace('#',''));
+			self.active_tags = hashList.length >0 && d3.keys(self.tag_dictionary).indexOf(hashList[0]) >-1 ? hashList : [];
 
 			self.generate_tags();
 			self.generate_list();
@@ -56,46 +78,57 @@ var projects = function(){
 			tags = d3.select('#projects .masthead #project-tags').selectAll('div.project-tag')
 				.data(self.data_tags);
 			tags.enter().append('div')
-				.classed('project-tag',true);
-			tags
-				.text(function(d){ 
-					var label = 
-						d === 'cartography' ? 'cartographies'
-					: d === 'client' ? 'client work'
-					: d === 'collaboration' ? 'collaborations'
-					: d === 'commission' ? 'commissions'
-					: d === 'compendium' ? 'compendiums'
-					: d === 'dh' ? 'digital humanities'
-					: d === 'notation' ? 'graphic notation'
-					: d; 
-					return label;
+				.classed('project-tag',true)
+				.classed('active',function(d){
+					var t = self.tag_reverseLookup(d);
+					return self.active_tags.indexOf(t) >-1;
 				});
 			tags
+				.text(function(d){ return d; });
+			tags
 				.on('click',function(d){
-					if(self.active_tags.indexOf(d) <0){
-						self.active_tags.push(d);
-					} else{
-						self.active_tags = self.active_tags.filter(function(_d){ return _d !== d; });
-					}
-					self.update_tags(tags);
+					self.update_tags(d);
+					self.update_tagDisplay(tags);
+					self.update_hash();
 					self.generate_list();
 				});
 			tags.exit().remove();
 		},
 
-		update_tags:function(_handle){
+		update_tagDisplay:function(_handle){
 			var self = this;
 			var tags = _handle || d3.selectAll('div.project-tag');
 			tags.classed('active',function(d){
-				return self.active_tags.indexOf(d) >-1;
+				var t = self.tag_reverseLookup(d);
+				return self.active_tags.indexOf(t) >-1;
 			});
 		},
 
-		reset_tags:function(){
+		update_tags:function(_newTag){
+			var self = this;
+			var t = _newTag ? self.tag_reverseLookup(_newTag) : null;
+			if(self.active_tags.indexOf(t) <0){
+				self.active_tags.push(t);
+			} else{
+				self.active_tags = self.active_tags.filter(function(_d){ return _d !== t; });
+			}
+		},
+
+		reset_tagsAndTagDisplay:function(){
 			var self = this;
 			self.active_tags = [];
-			self.update_tags();
+			self.update_tagDisplay();
+			self.update_hash();
 			self.generate_list();
+		},
+
+		update_hash:function(){
+			var self = this,
+					hash = '';
+			if(self.active_tags.length > 0){
+				hash = self.active_tags.join('&');
+			}
+			window.location.hash = hash;
 		},
 
 		generate_list:function(){
@@ -155,7 +188,7 @@ var projects = function(){
 						.attr('id','reset-project-filters')
 						.html('Clear')
 						.on('click',function(){
-							self.reset_tags();
+							self.reset_tagsAndTagDisplay();
 						});
 			}
 		}

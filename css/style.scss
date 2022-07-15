@@ -305,6 +305,9 @@ span.i {
 	margin-top:9px; 
 	content:"\2013\00a0\00a0" !important;
 	}
+#projects .generic-list ul#project-list li.project-row.null:hover::before {
+	content:"" !important;
+	}
 
 #projects .generic-list ul#project-list li.project-row a {
 	display:inline-block;
