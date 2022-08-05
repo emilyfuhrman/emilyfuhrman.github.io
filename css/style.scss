@@ -468,20 +468,17 @@ span.i {
 	font-size:0.75rem;
   line-height:1.2rem;
   margin:0 0 1.5rem 0;
-	padding:0 1.5rem;
-	border-left:1px solid $color_lg;
+	padding:0 3rem;
+	border-left:2px solid $color_lg;
 	@include box-sizing(border-box);
 	}
 #project .epigraph p:first-child {
 	font-style:italic;
 	margin-bottom:0;
-	padding-top:1.5rem;
 	}
 #project .epigraph p:last-child {
 	text-align:right;
 	margin-top:0;
-	padding-top:0.5rem;
-	padding-bottom:1.5rem;
 	}
 
 #project .controls {
