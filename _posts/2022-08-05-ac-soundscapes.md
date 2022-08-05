@@ -6,10 +6,17 @@ post_path:  ac-soundscapes
 category:   portfolio
 images:
   - ext:    
+    cap:    2022/07/20, 09:50-09:54
+  - ext:    
+    cap:    2022/07/20, 10:27-10:29
+  - ext:    
+    cap:    2022/07/20, 10:31-10:36
 meta:       true
 medium:     "TBD"
 dimensions: "TBD 7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 tags:
   - static
 ---
-_Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the side. Each boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.
+Summer mundaneity in a suite of three prints. Audio visualizations of a humming air conditioning unit.
+
+Rendered using Python and Processing. 
