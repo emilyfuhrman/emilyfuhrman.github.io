@@ -18,7 +18,7 @@ images:
 meta:       true
 exhibits:
   - name:   The Mini Microcinema
-    link:   http://www.mini-cinema.org/screenings/object
+    link:   https://web.archive.org/web/20220806174911/https://www.mini-cinema.org/screenings/object
 tags:
   - commission
   - dynamic

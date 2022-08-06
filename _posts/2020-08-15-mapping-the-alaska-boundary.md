@@ -9,7 +9,7 @@ images:
 meta:       true
 cred:
   - name:   "visionscarto"
-    link:   "https://visionscarto.net/carte-textuelle-alaska"
+    link:   "https://web.archive.org/web/20210731224510/https://visionscarto.net/carte-textuelle-alaska"
 citations:
   - Munro, John A., <i>The Alaskan Boundary Dispute</i> (Canada&colon; The Copp Clark Publishing Company, 1970), 9.
   - Brown, John W., <i>An Abridged History of Alaska</i> (1909), 67. 
