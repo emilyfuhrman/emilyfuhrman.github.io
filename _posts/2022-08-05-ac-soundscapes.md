@@ -26,4 +26,4 @@ dimensions: "11 3/4&quot; &times; 16 1/2&quot;"
 tags:
   - static
 ---
-Audio visualizations of a humming air conditioning unit. Summer mundaneity in a series of three prints.
+Audio visualizations of a humming air conditioning unit. Summer mundanity in a series of three prints.
