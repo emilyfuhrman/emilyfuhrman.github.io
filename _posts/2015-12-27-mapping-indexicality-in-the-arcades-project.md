@@ -14,10 +14,11 @@ cred:
     link:   "https://xpmethod.columbia.edu/embodied-space-lab/2015-04-10-mapping-indexality.html"
 citations:
   - Walter Benjamin, <i>The Arcades Project</i>, trans. Howard Eiland and Kevin McLaughlin (Belknap Press, 2002), Third Printing edition.
+tools:
+  - Python
+  - Processing
 tags:
   - dh
   - static
 ---
-This project interprets the text of Walter Benjamin's _The Arcades Project_[1] as a collection of gestures, reading instances of linguistic deixis as concretized moments of textual interiority. Each path represents the mutable indexicality of a given convolute by tracking the spatial and temporal context of the word "this." The resultant traces capture the wandering, associative nature of work in a seemingly sporadic blueprint of its textual volition. 
-
-Built using Python and Processing. 
+This project interprets the text of Walter Benjamin's _The Arcades Project_[1] as a collection of gestures, reading instances of linguistic deixis as concretized moments of textual interiority. Each path represents the mutable indexicality of a given convolute by tracking the spatial and temporal context of the word "this." The resultant traces capture the wandering, associative nature of work in a seemingly sporadic blueprint of its textual volition.

@@ -12,6 +12,18 @@
             </div>
         </div>
     {% endif %}
+    {% if page.tools %}
+        <div id='post-edition' class='sub-section'>
+            <span class='meta-header'>Tools</span>
+            <div class='info'>
+                <ul>
+                    {% for t in page.tools %}
+                        <li><span>{{ t }}</span></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
     {% if page.medium %}
         <div id='post-edition' class='sub-section'>
             <span class='meta-header'>Medium</span>
@@ -25,6 +37,14 @@
             <span class='meta-header'>Dimensions</span>
             <div class='info'>
                 <ul class='no-list'><li><span>{{ page.dimensions }}</span></li></ul>
+            </div>
+        </div>
+    {% endif %}
+    {% if page.edition %}
+        <div id='post-edition' class='sub-section'>
+            <span class='meta-header'>Edition</span>
+            <div class='info'>
+                <ul class='no-list'><li><span>{{ page.edition }}</span></li></ul>
             </div>
         </div>
     {% endif %}
@@ -58,7 +78,7 @@
     {% endif %}
     {% if page.exhibits %}
         <div id='post-exhibits' class='sub-section'>
-            <span class='meta-header'>Exhibits</span>
+            <span class='meta-header'>Exhibition History</span>
             <div class='info'>
                 <ul>
                 {% for e in page.exhibits %}

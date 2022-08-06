@@ -1,7 +1,7 @@
 ---
 post_id:    Y2022002
 title:      "Study: A/C Soundscapes"
-tagline:    "An atlas of the 50 U.S. state boundaries, viewed from the side."
+tagline:    "Audio visualizations of a humming air conditioning unit."
 post_path:  ac-soundscapes
 category:   portfolio
 images:
@@ -12,11 +12,12 @@ images:
   - ext:    
     cap:    2022/07/20, 10:31-10:36
 meta:       true
-medium:     "TBD"
-dimensions: "TBD 7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
+tools:
+  - Python
+  - Processing
+medium:     "Giclée print"
+dimensions: "11 3/4&quot; &times; 16 1/2&quot;"
 tags:
   - static
 ---
-Summer mundaneity in a suite of three prints. Audio visualizations of a humming air conditioning unit.
-
-Rendered using Python and Processing. 
+Audio visualizations of a humming air conditioning unit. Summer mundaneity in a series of three prints.

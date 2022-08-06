@@ -16,8 +16,8 @@ epigraph:
 meta:       true
 citations:
   - Smith, Barry, "On Drawing Lines on a Map," (1995), 479.
-medium:     "Edition of 5 books, +1 AP"
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
+edition:    "Edition of 5, +1 AP"
 exhibits:
   - name:   IEEE VISAP'21
     link:   https://visap.net/2021/
