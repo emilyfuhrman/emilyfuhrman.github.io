@@ -5,7 +5,7 @@ var lib = function(){
 		focus:"catRatios",
 		order:"asc",
 
-		palette:['#8DD3C7','#FB8072','#E5d8BD','#BEBADA','#FFFFB3','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#FFED6F','#D9D9D9','#CCEBC5','#FFE0B2','#BC80BD'],
+		palette:['#8DD3C7','#FB8072','#E5D8BD','#BEBADA','#FFFFB3','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#FFED6F','#D9D9D9','#CCEBC5','#FFE0B2','#BC80BD'],
 
 		data_list:[],
 		data_columns:[

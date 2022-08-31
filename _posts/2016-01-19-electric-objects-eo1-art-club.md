@@ -20,8 +20,8 @@ exhibits:
   - name:   The Mini Microcinema
     link:   https://web.archive.org/web/20220806174911/https://www.mini-cinema.org/screenings/object
 tags:
+  - animated
   - commission
-  - dynamic
 ---
 A series of [four data-driven animations](https://www.electricobjects.com/collections/67) commissioned by [Electric Objects](https://www.electricobjects.com/). Each piece incorporates data related to the common blackbird: habitat classification, wing feather distribution, global occurrence, and call frequency. The series, entitled _Merula_, is specially composed for display on the [Electric Objects EO1](http://shop.electricobjects.com/).
 

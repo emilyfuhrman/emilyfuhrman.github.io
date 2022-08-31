@@ -7,14 +7,16 @@ var projects = function(){
 
 		active_tags:[],
 
+		palette:['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#BC80BD','#CCEBC5','#FFED6F'],
+
 		tag_dictionary:{
+			'animated':'animated',
 			'cartography':'cartographies',
 			'client':'client work',
 			'collaboration':'collaborations',
 			'commission':'commissions',
 			'compendium':'compendiums',
 			'dh':'digital humanities',
-			'dynamic':'dynamic',
 			'interactive':'interactive',
 			'notation':'graphic notation',
 			'static':'static'
@@ -84,7 +86,10 @@ var projects = function(){
 					return self.active_tags.indexOf(t) >-1;
 				});
 			tags
-				.text(function(d){ return d; });
+				.text(function(d){ return d; })
+				.style('background',function(d,i){
+					return self.palette[i];
+				});
 			tags
 				.on('click',function(d){
 					self.update_tags(d);
@@ -176,7 +181,17 @@ var projects = function(){
 			col_r.enter().append('div')
 				.classed('col_right',true);
 			col_r
-					.html(function(d){ return "<span class='project-date'>" +d.year +"</span>" });
+					.html(function(d){ 
+						var html_c = "";
+								html_y = "<span class='project-date'>" +d.year +"</span>";
+						var tagL = d.tags.length,
+								pixW = 1/tagL*32;
+						d.tags.forEach(function(_d,_i){
+							var c = self.palette[self.data_tags.indexOf(self.tag_dictionary[_d])];
+							html_c +="<div class='pix-tile' style='background:" +c +";width:" +pixW +"px;'></div>"
+						});
+						return html_y +"<div id='pix-tile-container'>" +html_c +"</div>";
+					});
 			col_r.exit().remove();
 
 			if(data.length === 0){

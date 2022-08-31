@@ -259,11 +259,13 @@ span.i {
 
 #projects .masthead #project-tags .project-tag {
 	display:inline-block;
-	background:$color_lg;
+	/*background:$color_lg;*/
 	font-size:0.5rem;
 	text-transform:uppercase;
-	margin:0 1px 1px 0;
+	margin:0 2px 2px 0;
 	padding:4px 8px;
+	border:1px solid $color_black;
+	border-radius:2px;
 	cursor:cell;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -271,11 +273,11 @@ span.i {
 	user-select: none; /* Standard */
 	}
 #projects .masthead #project-tags .project-tag:hover {
-	background:$color_accent;
+	background:#444 !important;
 	color:#fff;
 	}
 #projects .masthead #project-tags .project-tag.active {
-	background:$color_black;
+	background:$color_black !important;
 	color:#fff;
 	}
 
@@ -327,6 +329,13 @@ span.i {
   margin:0;
 	}
 
+#projects .generic-list  ul#project-list li.project-row a .col_left {
+	width:calc(100% - 125px);
+	}
+#projects .generic-list  ul#project-list li.project-row a .col_right {
+	width:125px;
+	}
+
 #projects .generic-list ul#project-list li.project-row .project-title,
 #projects .generic-list ul#project-list li.project-row .ext-arrow,
 #projects .generic-list ul#project-list li.project-row .project-role {
@@ -356,6 +365,19 @@ span.i {
 #projects .generic-list ul#project-list li.project-row .project-date {
 	float:right;
 	color:$color_black;
+	}
+
+#projects .generic-list ul#project-list li.project-row #pix-tile-container {
+	float:right;
+	margin-top:5px;
+	margin-right:1rem;
+	width:32px;
+	border:1px solid $color_black;
+	}
+#projects .generic-list ul#project-list li.project-row #pix-tile-container .pix-tile {
+	width:8px;
+	height:8px;
+	float:left;
 	}
 
 #projects .generic-list  ul#project-list li.null {
