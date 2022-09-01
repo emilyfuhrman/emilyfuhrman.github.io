@@ -7,7 +7,7 @@ var projects = function(){
 
 		active_tags:[],
 
-		palette:['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#BC80BD','#CCEBC5','#FFED6F'],
+		palette:['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#FFED6F','#CCEBC5','#BC80BD'],
 
 		tag_dictionary:{
 			'animated':'animated',
