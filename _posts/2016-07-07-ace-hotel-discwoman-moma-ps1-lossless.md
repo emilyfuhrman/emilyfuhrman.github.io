@@ -19,7 +19,7 @@ images:
     cap:    <a href='https://www.youtube.com/watch?v=Wimrg1l57nc' target='_blank'>Eartheater</a>
 meta:       true
 medium:     "Giclée print"
-dimensions: "24&quot; &times; 36&quot;"
+dimensions: "36&quot; &times; 24&quot;"
 exhibits:
   - name:   The Gallery at Ace Hotel New York
     link:   http://www.acehotel.com/newyork/gallery

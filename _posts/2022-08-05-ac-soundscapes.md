@@ -22,7 +22,7 @@ tools:
   - Python
   - Processing
 medium:     "Giclée print"
-dimensions: "11 3/4&quot; &times; 16 1/2&quot;"
+dimensions: "16 1/2&quot; &times; 11 3/4&quot;"
 tags:
   - static
 ---
