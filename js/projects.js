@@ -21,9 +21,42 @@ var projects = function(){
 			'notation':'graphic notation',
 			'static':'static'
 		},
+
 		tag_reverseLookup:function(_tag){
 			var self = this;
 			return d3.entries(self.tag_dictionary).filter(function(d){ return d.value === _tag; })[0].key;
+		},
+
+		util_sortData:function(_data){
+			var self = this;
+			var order = 'asc';
+			var t_flat = d3.keys(self.tag_dictionary);
+			var max_l = d3.max(_data,function(d){ return d.tags.length; });
+
+			function sorter(a,b){
+				if(a == b) return 0;
+				if(a <  b) return order === 'asc' ? -1 :  1;
+				if(a >  b) return order === 'asc' ?  1 : -1;
+			}
+
+			//first, sort by length of tag array
+			_data.sort(function(a,b){
+				var l_a = a.tags.length,
+						l_b = b.tags.length;
+				return l_a -l_b;
+			});
+
+			//next, sort by indices of tags in array
+			for(var i = t_flat.length; i>-1; i--){
+				var k = t_flat[i];
+				_data.sort(function(a,b){
+					a_comp = a.tags.indexOf(k) || 0;
+					b_comp = b.tags.indexOf(k) || 0;
+					return sorter(a_comp, b_comp);
+				});
+			}
+
+			return _data;
 		},
 
 		util_filterData:function(_data){
@@ -57,13 +90,24 @@ var projects = function(){
 		process_data:function(_data){
 			var self = this;
 
-			_data.forEach(function(d){
-				d.tags.forEach(function(_d){
+			_data.forEach(function(d,i){
+				d.tags.forEach(function(_d,_i){
 					if(self.data_tags.indexOf(_d) <0){ self.data_tags.push(_d); }
 				});
 			});
 			self.data_tags = self.data_tags.map(d => self.tag_dictionary[d]);
 			self.data_tags.sort();
+
+			//compute and store tag style data
+			_data.forEach(function(d,i){
+				d.tags_meta = [];
+				d.tags.forEach(function(_d,_i){
+					var style_obj = {};
+					style_obj.c = self.palette[self.data_tags.indexOf(self.tag_dictionary[_d])];
+					style_obj.w = 1/d.tags.length*32;
+					d.tags_meta.push(style_obj);
+				});
+			});
 
 			//check if there are any tags specified in the URL
 			var hashList = window.location.hash.split('&').map(d => d.replace('#',''));
@@ -139,11 +183,13 @@ var projects = function(){
 		generate_list:function(){
 			var self = this;
 			var container = d3.select('#project-list');
-			var data, item, link;
+			var data = self.data;
+			var item, link;
 			var col_l,
 					col_r;
 
-			data = self.util_filterData(self.data);
+			data = self.util_sortData(data);
+			data = self.util_filterData(data);
 
 			item = container.selectAll('li.project-row')
 				.data(data);
@@ -184,11 +230,8 @@ var projects = function(){
 					.html(function(d){ 
 						var html_c = "";
 								html_y = "<span class='project-date'>" +d.year +"</span>";
-						var tagL = d.tags.length,
-								pixW = 1/tagL*32;
 						d.tags.forEach(function(_d,_i){
-							var c = self.palette[self.data_tags.indexOf(self.tag_dictionary[_d])];
-							html_c +="<div class='pix-tile' style='background:" +c +";width:" +pixW +"px;'></div>"
+							html_c +="<div class='pix-tile' style='background:" +d.tags_meta[_i].c +";width:" +d.tags_meta[_i].w +"px;'></div>"
 						});
 						return html_y +"<div id='pix-tile-container'>" +html_c +"</div>";
 					});
