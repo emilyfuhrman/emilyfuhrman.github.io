@@ -4,8 +4,10 @@ var projects = function(){
 
 		data:[],
 		data_tags:[],
-
 		active_tags:[],
+
+		sort_col:'tag',
+		sort_dir:'asc',
 
 		palette:['#E77F6C','#F28394','#E992BD','#CBA8DF','#9DBFF2','#68D4F0','#48E3DB','#66EEB8','#9DF491','#DAF472'],
 
@@ -32,13 +34,24 @@ var projects = function(){
 			var self = this;
 			var max_l = d3.max(_data,function(d){ return d.tags.length; });
 
-			//sort posts by tag
-			for(var i=(max_l-1); i>-1; i--){
-				_data.sort(function(a,b){
-					var a_comp = a.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[a.tags[i]]) : -1;
-					var b_comp = b.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[b.tags[i]]) : -1;
-					return  a_comp -b_comp;
+			if(self.sort_col === 'title'){
+				_data.sort(function(a,b){ 
+					return self.sort_dir === 'asc' ? (a.title <b.title ? -1 : 1) : (a.title <b.title ? 1 : -1); 
 				});
+			} else if(self.sort_col === 'year'){
+				_data.sort(function(a,b){  
+					return self.sort_dir === 'asc' ? a.year -b.year : b.year -a.year; 
+				});
+			} else{
+
+				//default; sort posts by tag
+				for(var i=(max_l-1); i>-1; i--){
+					_data.sort(function(a,b){
+						var a_comp = a.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[a.tags[i]]) : -1;
+						var b_comp = b.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[b.tags[i]]) : -1;
+						return self.sort_dir === 'asc' ? a_comp -b_comp : b_comp -a_comp;
+					});
+				}
 			}
 
 			return _data;
