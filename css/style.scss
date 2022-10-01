@@ -317,6 +317,10 @@ span.i {
 	content:'↿';
 	vertical-align:top;
 	}
+#projects .generic-list ul li.null .sorter::after,
+#projects .generic-list ul li.null .sorter:hover::after {
+	content:"" !important;
+	}
 
 #projects .generic-list ul li .col_left {
 	width:calc(100% - 125px);

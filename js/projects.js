@@ -116,9 +116,20 @@ var projects = function(){
 				});
 			});
 
-			//check if there are any tags specified in the URL
-			var hashList = window.location.hash.split('&').map(d => d.replace('#',''));
-			self.active_tags = hashList.length >0 && d3.keys(self.tag_dictionary).indexOf(hashList[0]) >-1 ? hashList : [];
+			//check for state-specific parameters in the URL
+			var hashArr = window.location.hash.split('&').filter(function(d){ return d !=='#'; }),
+					hashStr;
+			hashArr.forEach(function(d){
+				hashStr = d.split('=');
+				if(hashStr[0] === 'tags'){
+					var tagList = hashStr[1].split('+');
+					self.active_tags = tagList.length >0 && d3.keys(self.tag_dictionary).indexOf(tagList[0]) >-1 ? tagList : [];
+				}
+				if(hashStr[0] === 'sort'){
+					self.sort_col = hashStr[1].split(',')[0];
+					self.sort_dir = hashStr[1].split(',')[1];
+				}
+			});
 
 			self.generate_tags();
 			self.generate_list();
@@ -180,10 +191,14 @@ var projects = function(){
 
 		update_hash:function(){
 			var self = this,
-					hash = '';
+					hash = '',
+					sort = '&sort=' +self.sort_col +',' +self.sort_dir;
 			if(self.active_tags.length > 0){
-				hash = self.active_tags.join('&');
+				hash = '&tags='
+				hash = hash.concat(self.active_tags.join('+'))
 			}
+			hash = hash.concat(sort);
+
 			window.location.hash = hash;
 		},
 
@@ -199,6 +214,9 @@ var projects = function(){
 			data = self.util_sortData(data);
 			data = self.util_filterData(data);
 
+			d3.select('.header').classed('null',false);
+
+			//set up column sortability
 			var class_str = 'focus ' +self.sort_dir;
 			sorters
 				.classed(class_str,function(){
@@ -217,13 +235,15 @@ var projects = function(){
 						var old_dir = elem.classed('asc') ? 'asc' : 'desc',
 								new_dir = old_dir === 'asc' ? 'desc' : 'asc';
 						elem
-							.classed(old_dir, false)
-							.classed(new_dir, true);
+							.classed(old_dir,false)
+							.classed(new_dir,true);
 						self.sort_dir = new_dir;
 					}
+					self.update_hash();
 					self.generate_list();
 				});
 
+			//generate list of projects
 			item = container.selectAll('li.project-row')
 				.data(data);
 			item.enter().append('li')
@@ -282,6 +302,7 @@ var projects = function(){
 						.on('click',function(){
 							self.reset_tagsAndTagDisplay();
 						});
+				d3.select('li.header').classed('null',true);
 			}
 		}
 	}
