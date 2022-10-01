@@ -7,7 +7,7 @@ var projects = function(){
 
 		active_tags:[],
 
-		palette:['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#FFED6F','#CCEBC5','#BC80BD'],
+		palette:['#E77F6C','#F28394','#E992BD','#CBA8DF','#9DBFF2','#68D4F0','#48E3DB','#66EEB8','#9DF491','#DAF472'],
 
 		tag_dictionary:{
 			'animated':'animated',
@@ -38,7 +38,7 @@ var projects = function(){
 					var a_comp = a.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[a.tags[i]]) : -1;
 					var b_comp = b.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[b.tags[i]]) : -1;
 					return  a_comp -b_comp;
-				}).reverse();
+				});
 			}
 
 			return _data;
@@ -88,7 +88,7 @@ var projects = function(){
 				d.tags.sort(function(a,b){ 
 					var a_comp = self.data_tags.indexOf(self.tag_dictionary[a]);
 					var b_comp = self.data_tags.indexOf(self.tag_dictionary[b]);
-					return b_comp -a_comp;
+					return a_comp -b_comp;
 				});
 			});
 
