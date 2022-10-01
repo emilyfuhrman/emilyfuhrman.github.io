@@ -190,6 +190,7 @@ var projects = function(){
 		generate_list:function(){
 			var self = this;
 			var container = d3.select('#project-list');
+			var sorters = d3.selectAll('.sorter');
 			var data = self.data;
 			var item, link;
 			var col_l,
@@ -197,6 +198,31 @@ var projects = function(){
 
 			data = self.util_sortData(data);
 			data = self.util_filterData(data);
+
+			var class_str = 'focus ' +self.sort_dir;
+			sorters
+				.classed(class_str,function(){
+					var elem_id = d3.select(this).attr('id'),
+							elem_col = elem_id.split('_')[1];
+					return elem_col === self.sort_col;
+				})
+				.on('click',function(){
+					var elem = d3.select(this);
+					var elem_id = elem.attr('id'),
+							elem_col = elem_id.split('_')[1];
+					if(elem_col !== self.sort_col){
+						self.sort_dir = 'asc';
+						self.sort_col = elem_col;
+					} else{
+						var old_dir = elem.classed('asc') ? 'asc' : 'desc',
+								new_dir = old_dir === 'asc' ? 'desc' : 'asc';
+						elem
+							.classed(old_dir, false)
+							.classed(new_dir, true);
+						self.sort_dir = new_dir;
+					}
+					self.generate_list();
+				});
 
 			item = container.selectAll('li.project-row')
 				.data(data);

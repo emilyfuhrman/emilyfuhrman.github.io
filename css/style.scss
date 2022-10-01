@@ -139,6 +139,7 @@ span.i {
 .content-wrapper .generic-list ul li {
 	float:left;
 	width:100%;
+	height:100%;
 	padding-top:0;
 	border:none;
 	}
@@ -284,15 +285,58 @@ span.i {
 	border-top:none;
 	}
 
-#projects .generic-list ul#project-list {
+#projects .generic-list  #project-headers {
+	height:1rem;
+	}
+
+#projects .generic-list ul {
 	line-height:1rem !important;
 	list-style-type:none !important;
-	/*list-style-type:"\2013\00a0\00a0" !important;*/
 	margin-top:-1px;
 	padding:0 3rem;
 	}
 
-#projects .generic-list ul#project-list li.project-row {
+#projects .generic-list ul li .sorter {
+	height:100%;
+	}
+#projects .generic-list ul li .sorter:hover {
+	cursor:cell;
+	}
+#projects .generic-list ul li .sorter:hover::after {
+	color:#ccc;
+	content:'⇂';
+	vertical-align:top;
+	}
+#projects .generic-list ul li .sorter.focus.asc::after {
+	color:$color_black;
+	content:'⇂';
+	vertical-align:top;
+	}
+#projects .generic-list ul li .sorter.focus.desc::after {
+	color:$color_black;
+	content:'↿';
+	vertical-align:top;
+	}
+
+#projects .generic-list ul li .col_left {
+	width:calc(100% - 125px);
+	}
+#projects .generic-list ul li .col_right {
+	width:125px;
+	height:100%;
+	}
+
+#projects .generic-list ul li.header .col_right #col_tag {
+	float:right;
+	width:32px;
+	margin-right:1rem;
+	}
+#projects .generic-list ul li.header .col_right #col_year {
+	float:right;
+	width:38px;
+	}
+
+#projects .generic-list ul li.project-row {
   display:list-item;
 	overflow:visible !important;
 	margin:0;
@@ -300,17 +344,17 @@ span.i {
 	border-bottom:1px solid $color_black;
 	@include box-sizing(border-box);
 	}
-#projects .generic-list ul#project-list li.project-row:hover::before {
+#projects .generic-list ul li.project-row:hover::before {
 	position:absolute;
 	margin-left:-20px;
 	margin-top:9px; 
 	content:"\2013\00a0\00a0" !important;
 	}
-#projects .generic-list ul#project-list li.project-row.null:hover::before {
+#projects .generic-list ul li.project-row.null:hover::before {
 	content:"" !important;
 	}
 
-#projects .generic-list ul#project-list li.project-row a {
+#projects .generic-list ul li.project-row a {
 	display:inline-block;
 	width:100%;
 	height:100%;
@@ -319,7 +363,7 @@ span.i {
 	border:none;
 	}
 
-#projects .generic-list  ul#project-list li.project-row a div {
+#projects .generic-list  ul li.project-row a div {
 	float:left;
 	display:inline;
 	white-space:normal;
@@ -328,28 +372,21 @@ span.i {
   margin:0;
 	}
 
-#projects .generic-list  ul#project-list li.project-row a .col_left {
-	width:calc(100% - 125px);
-	}
-#projects .generic-list  ul#project-list li.project-row a .col_right {
-	width:125px;
-	}
-
-#projects .generic-list ul#project-list li.project-row .project-title,
-#projects .generic-list ul#project-list li.project-row .ext-arrow,
-#projects .generic-list ul#project-list li.project-row .project-role {
+#projects .generic-list ul li.project-row .project-title,
+#projects .generic-list ul li.project-row .ext-arrow,
+#projects .generic-list ul li.project-row .project-role {
 	float:left;
   margin-right:0.25rem;
 	}
-#projects .generic-list ul#project-list li.project-row .project-title {
+#projects .generic-list ul li.project-row .project-title {
 	color:$color_black;
 	white-space:normal;
 	}
-#projects .generic-list ul#project-list li.project-row .ext-arrow {
+#projects .generic-list ul li.project-row .ext-arrow {
 	color:$color_black;
   margin-left:-0.25rem;
 	}
-#projects .generic-list ul#project-list li.project-row .project-role {
+#projects .generic-list ul li.project-row .project-role {
 	background:$color_lg;
 	overflow:hidden;
 	white-space:nowrap;
@@ -361,35 +398,35 @@ span.i {
   padding:0 0.5rem;
   border-radius:1rem;
 	}
-#projects .generic-list ul#project-list li.project-row .project-date {
+#projects .generic-list ul li.project-row .project-date {
 	float:right;
 	color:$color_black;
 	}
 
-#projects .generic-list ul#project-list li.project-row #pix-tile-container {
+#projects .generic-list ul li.project-row #pix-tile-container {
 	float:right;
 	margin-top:5px;
 	margin-right:1rem;
 	width:32px;
 	border:1px solid $color_black;
 	}
-#projects .generic-list ul#project-list li.project-row #pix-tile-container .pix-tile {
+#projects .generic-list ul li.project-row #pix-tile-container .pix-tile {
 	width:8px;
 	height:8px;
 	float:left;
 	}
 
-#projects .generic-list  ul#project-list li.null {
+#projects .generic-list ul li.null {
 	color:#bbb;
 	text-align:center;
 	list-style-type:none;
 	border:none;
 	}
-#projects .generic-list  ul#project-list li.null #reset-project-filters {
+#projects .generic-list ul li.null #reset-project-filters {
 	color:$color_accent;
 	margin-left:4px;
 	}
-#projects .generic-list  ul#project-list li.null #reset-project-filters:hover {
+#projects .generic-list ul li.null #reset-project-filters:hover {
 	cursor:cell;
 	border-bottom:1px solid $color_accent;
 	}
@@ -689,7 +726,7 @@ span.i {
 	padding:4px;
 	border-radius:2px;
 	cursor:cell;
-	-webkit-user-select: none; /* Safari */        
+	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
@@ -809,7 +846,7 @@ span.i {
 	font-weight:bold;
 	padding:20px 0 10px;
 	cursor:cell;
-	-webkit-user-select: none; /* Safari */        
+	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
@@ -976,7 +1013,7 @@ span.i {
 		margin:0 1.5rem;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 1.5rem;
 		}
 
@@ -1009,7 +1046,7 @@ span.i {
 		margin:0 1.5rem;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 1.5rem;
 		}
 
@@ -1042,7 +1079,7 @@ span.i {
 		margin:0 1.5rem;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 1.5rem;
 		}
 
@@ -1076,7 +1113,7 @@ span.i {
 		margin:0;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 3rem;
 		}
 
@@ -1110,7 +1147,7 @@ span.i {
 		margin:0;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 3rem;
 		}
 
@@ -1144,7 +1181,7 @@ span.i {
 		margin:0;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 3rem;
 		}
 
@@ -1178,7 +1215,7 @@ span.i {
 		margin:0;
 		}
 
-	#projects .generic-list ul#project-list {
+	#projects .generic-list ul {
 		padding:0 3rem;
 		}
 
