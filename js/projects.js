@@ -22,6 +22,7 @@ var projects = function(){
 			'static':'static'
 		},
 
+		//get original tag based on display label
 		tag_reverseLookup:function(_tag){
 			var self = this;
 			return d3.entries(self.tag_dictionary).filter(function(d){ return d.value === _tag; })[0].key;
@@ -29,31 +30,15 @@ var projects = function(){
 
 		util_sortData:function(_data){
 			var self = this;
-			var order = 'asc';
-			var t_flat = d3.keys(self.tag_dictionary);
 			var max_l = d3.max(_data,function(d){ return d.tags.length; });
 
-			function sorter(a,b){
-				if(a == b) return 0;
-				if(a <  b) return order === 'asc' ? -1 :  1;
-				if(a >  b) return order === 'asc' ?  1 : -1;
-			}
-
-			//first, sort by length of tag array
-			_data.sort(function(a,b){
-				var l_a = a.tags.length,
-						l_b = b.tags.length;
-				return l_a -l_b;
-			});
-
-			//next, sort by indices of tags in array
-			for(var i = t_flat.length; i>-1; i--){
-				var k = t_flat[i];
+			//sort posts by tag
+			for(var i=(max_l-1); i>-1; i--){
 				_data.sort(function(a,b){
-					a_comp = a.tags.indexOf(k) || 0;
-					b_comp = b.tags.indexOf(k) || 0;
-					return sorter(a_comp, b_comp);
-				});
+					var a_comp = a.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[a.tags[i]]) : -1;
+					var b_comp = b.tags.length >=i ? self.data_tags.indexOf(self.tag_dictionary[b.tags[i]]) : -1;
+					return  a_comp -b_comp;
+				}).reverse();
 			}
 
 			return _data;
@@ -97,6 +82,15 @@ var projects = function(){
 			});
 			self.data_tags = self.data_tags.map(d => self.tag_dictionary[d]);
 			self.data_tags.sort();
+
+			//sort individual post tags, too
+			_data.forEach(function(d){
+				d.tags.sort(function(a,b){ 
+					var a_comp = self.data_tags.indexOf(self.tag_dictionary[a]);
+					var b_comp = self.data_tags.indexOf(self.tag_dictionary[b]);
+					return b_comp -a_comp;
+				});
+			});
 
 			//compute and store tag style data
 			_data.forEach(function(d,i){
@@ -230,6 +224,7 @@ var projects = function(){
 					.html(function(d){ 
 						var html_c = "";
 								html_y = "<span class='project-date'>" +d.year +"</span>";
+
 						d.tags.forEach(function(_d,_i){
 							html_c +="<div class='pix-tile' style='background:" +d.tags_meta[_i].c +";width:" +d.tags_meta[_i].w +"px;'></div>"
 						});
