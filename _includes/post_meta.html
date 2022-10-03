@@ -1,149 +1,166 @@
 <div class='meta'>
-    {% if page.meta %}<div id='meta-border'></div>{% endif %}
-    {% if page.citations %}
-        <div id='post-citations' class='sub-section'>
-            <span class='meta-header'>Notes</span>
-            <div class='info'>
-                <ol>
-                    {% for c in page.citations %}
-                        <li>{{ c }}</li>
-                    {% endfor %}
-                </ol>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.tools %}
-        <div id='post-edition' class='sub-section'>
-            <span class='meta-header'>Tools</span>
-            <div class='info'>
-                <ul>
-                    {% for t in page.tools %}
-                        <li><span>{{ t }}</span></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.medium %}
-        <div id='post-edition' class='sub-section'>
-            <span class='meta-header'>Medium</span>
-            <div class='info'>
-                <ul class='no-list'><li><span>{{ page.medium }}</span></li></ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.dimensions %}
-        <div id='post-edition' class='sub-section'>
-            <span class='meta-header'>Dimensions</span>
-            <div class='info'>
-                <ul class='no-list'><li><span>{{ page.dimensions }}</span></li></ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.edition %}
-        <div id='post-edition' class='sub-section'>
-            <span class='meta-header'>Edition</span>
-            <div class='info'>
-                <ul class='no-list'><li><span>{{ page.edition }}</span></li></ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.client %}
-        <div id='post-client' class='sub-section'>
-            <span class='meta-header'>Client</span>
-            <div class='info'>
-                <ul><li><span>{{ page.client }}</span></li></ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.role %}
-        <div id='post-role' class='sub-section'>
-            <span class='meta-header'>Role</span>
-            <div class='info'>
-                <ul><li><span>{{ page.role }}</span></li></ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.team %}
-        <div id='post-team' class='sub-section'>
-            <span class='meta-header'>Team</span>
-            <div class='info'>
-            <ul>
-                {% for t in page.team %}
-                    <li><span>{{ t }}</span></li>
-                {% endfor %}
-            </ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.exhibits %}
-        <div id='post-exhibits' class='sub-section'>
-            <span class='meta-header'>Exhibition History</span>
-            <div class='info'>
-                <ul>
-                {% for e in page.exhibits %}
-                    <li>
-                    {% if e.link %}
-                    <span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
-                    {% else %}
-                    <span>{{ e }}</span>
-                    {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.cred %}
-        <div id='post-cred' class='sub-section'>
-            <span class='meta-header'>Features</span>
-            <div class='info'>
-                <ul>
-                {% for c in page.cred %}
-                    <li>
-                    {% if c.link %}
-                    <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                    {% else %}
-                    <span>{{ c }}</span>
-                    {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.cred_tweets %}
-        <div id='post-cred-tweets' class='sub-section'>
-            <span class='meta-header'>Mentions</span>
-            <div class='info'>
-                <ul>
-                {% for c in page.cred_tweets %}
-                    <li>
-                    {% if c.link %}
-                    <span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
-                    {% else %}
-                    <span>{{ c }}</span>
-                    {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
-    {% if page.paper or page.github or page.perm %}
-        <div id='post-paper' class='sub-section'>
-            <span class='meta-header'>Documentation</span>
-            <ul>
-            {% if page.paper %}
-                <li><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></li>
-            {% endif %}
-            {% if page.github %}
-                <li><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></li>
-            {% endif %}
-            {% if page.perm %}
-                <li><a href='{{ page.perm }}' target='_blank'>Permalink</a></li>
-            {% endif %}
-            </ul>
-        </div>
-    {% endif %}
+	{% if page.meta %}<div id='meta-border'></div>{% endif %}
+	{% if page.citations %}
+		<div id='post-citations' class='sub-section'>
+			<span class='meta-header'>Notes</span>
+			<div class='info'>
+				<ol>
+					{% for c in page.citations %}
+						<li>{{ c }}</li>
+					{% endfor %}
+				</ol>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.tools %}
+		<div id='post-edition' class='sub-section'>
+			<span class='meta-header'>Tools</span>
+			<div class='info'>
+				<ul>
+					{% for t in page.tools %}
+						<li><span>{{ t }}</span></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.medium %}
+		<div id='post-edition' class='sub-section'>
+			<span class='meta-header'>Medium</span>
+			<div class='info'>
+				<ul class='no-list'><li><span>{{ page.medium }}</span></li></ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.dimensions %}
+		<div id='post-edition' class='sub-section'>
+			<span class='meta-header'>Dimensions</span>
+			<div class='info'>
+				<ul class='no-list'><li><span>{{ page.dimensions }}</span></li></ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.edition %}
+		<div id='post-edition' class='sub-section'>
+			<span class='meta-header'>Edition</span>
+			<div class='info'>
+				<ul class='no-list'><li><span>{{ page.edition }}</span></li></ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.client %}
+		<div id='post-client' class='sub-section'>
+			<span class='meta-header'>Client</span>
+			<div class='info'>
+				<ul><li><span>{{ page.client }}</span></li></ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.role %}
+		<div id='post-role' class='sub-section'>
+			<span class='meta-header'>Role</span>
+			<div class='info'>
+				<ul><li><span>{{ page.role }}</span></li></ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.team %}
+		<div id='post-team' class='sub-section'>
+			<span class='meta-header'>Team</span>
+			<div class='info'>
+			<ul>
+				{% for t in page.team %}
+					<li><span>{{ t }}</span></li>
+				{% endfor %}
+			</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.exhibits %}
+		<div id='post-exhibits' class='sub-section'>
+			<span class='meta-header'>Exhibition History</span>
+			<div class='info'>
+				<ul>
+				{% for e in page.exhibits %}
+					<li>
+					{% if e.link %}
+					<span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
+					{% else %}
+					<span>{{ e }}</span>
+					{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.cred %}
+		<div id='post-cred' class='sub-section'>
+			<span class='meta-header'>Features</span>
+			<div class='info'>
+				<ul>
+				{% for c in page.cred %}
+					<li>
+					{% if c.link %}
+					<span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
+					{% else %}
+					<span>{{ c }}</span>
+					{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.cred_tweets %}
+		<div id='post-cred-tweets' class='sub-section'>
+			<span class='meta-header'>Mentions</span>
+			<div class='info'>
+				<ul>
+				{% for c in page.cred_tweets %}
+					<li>
+					{% if c.link %}
+					<span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>
+					{% else %}
+					<span>{{ c }}</span>
+					{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.paper or page.github or page.perm %}
+		<div id='post-paper' class='sub-section'>
+			<span class='meta-header'>Documentation</span>
+			<ul>
+			{% if page.paper %}
+				<li><a href='/papers/{{ page.post_id }}.pdf' target='_blank'>Paper</a></li>
+			{% endif %}
+			{% if page.github %}
+				<li><a href='https://github.com/emilyfuhrman/{{ page.post_id }}' target='_blank'>GitHub</a></li>
+			{% endif %}
+			{% if page.perm %}
+				<li><a href='{{ page.perm }}' target='_blank'>Permalink</a></li>
+			{% endif %}
+			</ul>
+		</div>
+	{% endif %}
+	{% if page.tags %}
+		<div id='post-tags' class='sub-section'>
+			<span class='meta-header'>Tags</span>
+			<ul>
+				{% for t in page.tags %}
+					<li><a href="/projects/#&amp;tags={{ t }}">{{ t }}</a></li>
+				{% endfor %}
+			</ul>
+			<script>
+				d3.selectAll('#post-tags a')
+					.html(function(){
+						var cur = d3.select(this).html();
+						return JEKYLL_TAG_DICTIONARY[cur];
+					});
+			</script>
+		</div>
+	{% endif %}
 </div>

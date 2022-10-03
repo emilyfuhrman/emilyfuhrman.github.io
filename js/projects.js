@@ -11,18 +11,7 @@ var projects = function(){
 
 		palette:['#E77F6C','#F28394','#E992BD','#CBA8DF','#9DBFF2','#68D4F0','#48E3DB','#66EEB8','#9DF491','#DAF472'],
 
-		tag_dictionary:{
-			'animated':'animated',
-			'cartography':'cartographies',
-			'client':'client work',
-			'collaboration':'collaborations',
-			'commission':'commissions',
-			'compendium':'compendiums',
-			'dh':'digital humanities',
-			'interactive':'interactive',
-			'notation':'graphic notation',
-			'static':'static'
-		},
+		tag_dictionary:JEKYLL_TAG_DICTIONARY,
 
 		//get original tag based on display label
 		tag_reverseLookup:function(_tag){
