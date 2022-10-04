@@ -1,7 +1,7 @@
 ---
 post_id:    Y2017005
 title:      "GPS Traces in Lexical Space"
-tagline:    "Visualizing the distance between GPS coordinates read as what3words trigrams."
+tagline:    "Visualizing the distance between GPS coordinates mapped to what3words trigrams."
 post_path:  gps-traces-in-lexical-space
 category:   portfolio
 images:
