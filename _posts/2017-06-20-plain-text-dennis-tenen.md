@@ -11,8 +11,6 @@ images:
 meta:       true
 client:
   - Dennis Tenen
-role:
-  - Illustration
 tags:
   - collaboration
   - commission
