@@ -9,6 +9,6 @@ images:
   - ext:    02.jpg
   - ext:    03.jpg
 tags:
-  - static
+  - print
 ---
 A series of large-scale, hand-inked renditions of a programmatically generated image.

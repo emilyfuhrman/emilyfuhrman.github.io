@@ -22,7 +22,7 @@ exhibits:
   - name:   IEEE VISAP'21
     link:   https://visap.net/2021/
 tags:
-  - static
+  - print
   - interactive
   - cartography
 ---

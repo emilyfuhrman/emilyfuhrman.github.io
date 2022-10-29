@@ -9,6 +9,10 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
 meta:       true
+tools:
+  - D3.js
+  - Python
+  - Processing
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"

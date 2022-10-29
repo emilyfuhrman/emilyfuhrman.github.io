@@ -9,6 +9,8 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
 meta:       true
+tools:
+  - D3.js
 cred:
   - name: "Columbia University Group for Experimental Methods in Humanistic Research"
     link: "https://xpmethod.columbia.edu/embodied-space-lab/2020-05-01-same-boats.html"
@@ -22,5 +24,6 @@ tags:
   - dh
   - collaboration
   - cartography
+  - interactive
 ---
 A work of multimodal scholarship designed to encourage the collaborative production of humanistic knowledge within scholarly communities, comprising two interactive visualizations that trace the movements of significant cultural actors from the Caribbean and wider Americas, Africa, and Europe within the 20th century Afro-Atlantic world. Built in collaboration with Barnard College and Columbia University.

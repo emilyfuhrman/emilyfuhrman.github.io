@@ -9,6 +9,8 @@ images:
   - ext:    01.jpg
   - ext:    02.jpg
 meta:       true
+tools:
+  - D3.js
 client:
   - Quanta Magazine
 role:
@@ -34,6 +36,7 @@ cred_tweets:
   - name:   Steven Strogatz
     link:   "https://twitter.com/stevenstrogatz/status/636179310680907776"
 tags:
-  - client
+  - commission
+  - interactive
 ---
 An interactive visualization of the deepest mysteries at the frontier of fundamental physics, and the most promising ideas put forth to solve them. 

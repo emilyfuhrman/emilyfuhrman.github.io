@@ -14,7 +14,6 @@ images:
   - ext:    01_20171223_01.png
     cap:    26.29 mi.
 tags:
-  - static
   - cartography
 ---
 GPS coordinates translated into [what3words](https://what3words.com/) addresses, rendered to accrue the calculated [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) along the three indices of each w3w trigram.

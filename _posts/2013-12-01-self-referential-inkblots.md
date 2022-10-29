@@ -7,7 +7,7 @@ category:   portfolio
 images:
   - ext:    01.png
 tags:
-  - static
+  - print
 ---
 V's, rather. An echo chamber of constraints rendered in sumi ink.
 

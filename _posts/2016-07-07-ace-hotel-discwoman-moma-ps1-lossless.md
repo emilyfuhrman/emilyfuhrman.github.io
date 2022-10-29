@@ -25,7 +25,7 @@ exhibits:
     link:   http://www.acehotel.com/newyork/gallery
 tags:
   - commission
-  - static
+  - print
 ---
 A collection of six data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York. Each piece is a snapshot taken from a broader landscape of visualized audio data. The parts cropped from each frame remain unseen. 
 
