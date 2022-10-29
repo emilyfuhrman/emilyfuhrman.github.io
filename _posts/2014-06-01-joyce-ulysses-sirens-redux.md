@@ -11,7 +11,6 @@ images:
 meta:       true
 tools:
   - D3.js
-  - Python
   - Processing
 cred:
   - name:   "2014 Kantar IIB Awards: Longlist"
