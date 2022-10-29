@@ -36,4 +36,4 @@ The first 63 lines of the chapter introduce 99 words and syllables that reappear
 
 This visualization is constructed as a line-by-line annotation of each sound that recurs at least four times following its initial introduction. Within each line, each sound is grouped into repetitions, linked to its associated character(s), and sorted into one of three possible tiers based on its distance from the root sound. The lines are represented as columns.
 
-View the full interactive [here](/interactive/Y2014001). Built using Processing and D3.js.
+View the full interactive [here](/interactive/Y2014001).
