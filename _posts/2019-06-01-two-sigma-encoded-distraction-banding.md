@@ -14,7 +14,7 @@ client:
   - Two Sigma
 tags:
   - commission
-  - material
+  - pattern
 ---
 A gridded encoding system to render a Turing quotation, semitransparent, on glass. Can you read the hidden message?
 
