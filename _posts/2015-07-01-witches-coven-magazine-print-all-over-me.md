@@ -5,6 +5,7 @@ tagline:    "Six data-driven patterns for a virtual fashion show celebrating Iss
 post_path:  witches-coven-magazine-print-all-over-me
 perm:       https://paom.com/collections/witches/
 category:   portfolio
+cover_pos:  left
 images:
   - ext:    01.jpg
     cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block top</a>"
