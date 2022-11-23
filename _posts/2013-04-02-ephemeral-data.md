@@ -1,7 +1,7 @@
 ---
 post_id:    Y2013005
 title:      "Study: Ephemeral Data"
-tagline:    "Notating ephemeral sounds."
+tagline:    "Notated ephemeral sounds."
 post_path:  ephemeral-data
 category:   portfolio
 images:
