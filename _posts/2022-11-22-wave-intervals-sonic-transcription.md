@@ -3,6 +3,7 @@ post_id:    Y2022005
 title:      "Study: Wave Intervals"
 tagline:    "Sonic transcriptions of waves breaking against the shore in La Sagesse Bay, Grenada."
 post_path:  wave-intervals-sonic-transcription
+category:   portfolio
 images:
   - ext:    00.jpg
     cap:    2022/11/06, 12:24-12:32, La Sagesse Bay, Grenada
