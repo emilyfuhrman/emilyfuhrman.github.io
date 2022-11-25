@@ -1,7 +1,7 @@
 ---
 post_id:    Y2022005
 title:      "Study: Wave Intervals"
-tagline:    "Sonic transcriptions of waves breaking against the shore in La Sagesse Bay, Grenada."
+tagline:    "Sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada."
 post_path:  wave-intervals-sonic-transcription
 category:   portfolio
 images:
@@ -20,4 +20,4 @@ tags:
 ---
 A series of fixed-interval, sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada.
 
-Each line represents 10 seconds of sound, read from left to right. Line thickness corresponds roughly to audible volume. Thick weight corresponds to louder periods (i.e. waves crashing), while thin weight corresponds to quieter periods (i.e. calm water). The breaks between lines are un-transcribed periods, the set value of which varies from piece to piece.
+Each line represents 10 seconds of sound, read from left to right. Line thickness corresponds roughly to audible volume. Thick weight corresponds to louder periods (i.e. waves crashing), and thin weight corresponds to quieter periods (i.e. calm water). The breaks between lines are un-transcribed periods, the set value of which varies from piece to piece.
