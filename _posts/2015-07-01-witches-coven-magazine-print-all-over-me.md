@@ -8,7 +8,7 @@ category:   portfolio
 cover_pos:  left
 images:
   - ext:    01.jpg
-    cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block top</a>"
+    cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block Top</a>"
 meta:       true
 exhibits:
   - name:   Signal Gallery
