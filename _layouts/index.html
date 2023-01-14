@@ -6,7 +6,7 @@
 		{% capture pos %}{% if post.cover_pos %}{{ post.cover_pos }}{% else %}center{% endif %}{% endcapture %}
 		<div class='list-img-container'>
 			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link'> 
-				<img class='list-img' src='/media/covers/{{ post.post_id }}.{{ xt }}' style='object-position:{{ pos }}'>
+				<img class='list-img' src='/media/covers/{{ post.post_id }}.{{ xt }}' style='object-position:{{ pos }}' alt='{{ post.tagline }}'>
 				<div class='metadata'>
 					<p class='list-title'><span>{{ post.title }}</span></p>
 				</div>
