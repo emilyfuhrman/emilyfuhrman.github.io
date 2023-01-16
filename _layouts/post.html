@@ -15,10 +15,10 @@
             <div class='{{ class_size }} media'>
                 {% if page.perm %}
                 <a href='{{ page.perm }}' target='_blank'>
-                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
+                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' alt='{{ page.tagline }}'/>
                 </a>
                 {% else %}
-                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' />
+                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' alt='{{ page.tagline }}'/>
                 {% endif %}
                 <p class='caption'>{{ p.cap }}</p>
             </div>
