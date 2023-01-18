@@ -17,6 +17,6 @@ Dominant forms of geographic representation make public space legible: the patte
 
 The interior of any building, including the personal space of the home, is not strictly private. Smartphones, vacuum cleaners, and security devices&mdash;to name a few&mdash;take notes on the arrangement of furniture, the floorplan, the movements of the inhabitants of the home. 
 
-This piece mobilizes and makes visible the memory of a personal object in the lived interior, capturing the corners of a room as 'seen' by the print positioned in the frame.
+This piece mobilizes and makes visible the memory of an object in the lived interior, capturing the edges of a room as 'seen' by a print positioned in a frame. The vertical lines mark the top and bottom corners of the edges of the surrounding walls, scaled according to their actual distance from the framed print.
 
-Thanks to Nic Flood for measurement methodology and insight.
+Thanks to Nic Flood for insight and measurement methodology.
