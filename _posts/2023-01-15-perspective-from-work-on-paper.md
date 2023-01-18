@@ -19,4 +19,4 @@ The interior of any building, including the personal space of the home, is not s
 
 This piece mobilizes and makes visible the memory of a personal object in the lived interior, capturing the corners of a room as 'seen' by the print positioned in the frame.
 
-Special thanks to Nic Flood for measurement methodology and additional insight.
+Thanks to Nic Flood for measurement methodology and insight.
