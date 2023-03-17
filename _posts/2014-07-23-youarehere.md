@@ -8,7 +8,6 @@ github:     true
 images:     
   - ext:    01.jpg
   - ext:    02.jpg
-meta:       true
 tags:
   - compendium
 ---

@@ -17,7 +17,6 @@ images:
     cap:    <a href='https://soundcloud.com/hoss-records/sadaf-stillness' target='_blank'>SADAF</a>
   - ext:    02_eartheater_framed.jpg
     cap:    <a href='https://www.youtube.com/watch?v=Wimrg1l57nc' target='_blank'>Eartheater</a>
-meta:       true
 medium:     "Giclée print"
 dimensions: "36&quot; &times; 24&quot;"
 exhibits:

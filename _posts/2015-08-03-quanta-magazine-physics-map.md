@@ -8,7 +8,6 @@ external:   true
 images:
   - ext:    01.jpg
   - ext:    02.jpg
-meta:       true
 tools:
   - D3.js
 client:

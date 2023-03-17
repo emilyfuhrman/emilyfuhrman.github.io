@@ -7,7 +7,6 @@ category:   portfolio
 cover_pos:  left
 images:
   - ext:    00.png
-meta:       true
 medium:     "Giclée print"
 dimensions: "11&quot; &times; 7.2&quot;"
 tags:

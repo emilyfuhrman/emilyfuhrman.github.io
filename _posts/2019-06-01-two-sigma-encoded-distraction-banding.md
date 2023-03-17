@@ -7,7 +7,6 @@ images:
   - ext:    03.jpg
   - ext:    02.jpg
   - ext:    01.jpg
-meta:       true
 tools:
   - Processing
 client:

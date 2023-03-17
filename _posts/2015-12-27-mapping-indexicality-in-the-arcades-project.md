@@ -8,7 +8,6 @@ paper:      true
 category:   portfolio
 images:     
   - ext:    01.png
-meta:       true
 cred:
   - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
     link:   "https://xpmethod.columbia.edu/embodied-space-lab/2015-04-10-mapping-indexality.html"

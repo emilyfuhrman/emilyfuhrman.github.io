@@ -6,7 +6,6 @@ post_path:  mapping-the-alaska-boundary
 category:   portfolio
 images:
   - ext:    01.png
-meta:       true
 cred:
   - name:   "visionscarto"
     link:   "https://web.archive.org/web/20210731224510/https://visionscarto.net/carte-textuelle-alaska"

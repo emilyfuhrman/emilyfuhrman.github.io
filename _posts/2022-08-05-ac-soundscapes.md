@@ -17,7 +17,6 @@ images:
     cap:    2022/07/20, 10:31-10:36
   - ext:    02_zoom.jpg
     cap:    (Detail)
-meta:       true
 tools:
   - Python
   - Processing

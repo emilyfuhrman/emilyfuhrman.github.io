@@ -8,7 +8,6 @@ images:
     cap:    "Source: <a href='https://www.sup.org/books/title/?id=26821'>Stanford University Press</a>"
   - ext:    03.jpg
   - ext:    02.jpg
-meta:       true
 client:
   - Dennis Tenen
 tags:
