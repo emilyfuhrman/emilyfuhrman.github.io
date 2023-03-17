@@ -199,7 +199,7 @@ span.st {
 	max-width:100vw;
 	overflow:auto;
 	text-align:center;
-	margin:0 60px;
+	margin:0 65px;
 	padding:3rem 0 0;
 	-webkit-transform:translate3d(0, 0, 0);
 	@include box-sizing(border-box);
@@ -208,12 +208,12 @@ span.st {
 #gallery .list-img-container {
 	float:left;
 	width:calc(100% / 3);
-	height:calc((((100vw - (60px * 2)) / 3) * 3) / 2);
+	height:calc((((100vw - (65px * 2)) / 3) * 3) / 2);
 	text-align:left;
 	text-decoration:none;
 	vertical-align:top;
 	margin:0 0 130px;
-	padding:5px; /* makes 60px the multiplier for width calculations on this page, instead of 65px */
+	padding:10px; /* makes 65px the multiplier for width calculations on this page (5px = 60px) */
 	border:none;
 	@include box-sizing(border-box);
 }
@@ -232,6 +232,7 @@ span.st {
 
 #gallery a.list-img-link .metadata {
 	font-size:0.8rem;
+	padding-top:0.25rem;
 	}
 
 #gallery a.list-img-link .metadata p {
@@ -471,7 +472,7 @@ span.st {
 	float:left;
 	width:100%;
 	height:auto;
-	margin:0.5rem 0 0;
+	margin:2.5rem 0 0;
 	padding:1.5rem;
 	@include box-sizing(border-box);
 	}
@@ -1029,7 +1030,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (60px * 2)) * 3) / 2);
+		height:calc(((100vw - (65px * 2)) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1062,7 +1063,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (60px * 2)) * 3) / 2);
+		height:calc(((100vw - (65px * 2)) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1095,7 +1096,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (60px * 2)) * 3) / 2);
+		height:calc(((100vw - (65px * 2)) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1129,7 +1130,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 2);
-		height:calc((((100vw - (60px * 2)) / 2) * 3) / 2);
+		height:calc((((100vw - (65px * 2)) / 2) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1163,7 +1164,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 2);
-		height:calc((((100vw - (60px * 2)) / 2) * 3) / 2);
+		height:calc((((100vw - (65px * 2)) / 2) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1197,7 +1198,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 3);
-		height:calc((((100vw - (60px * 2)) / 3) * 3) / 2);
+		height:calc((((100vw - (65px * 2)) / 3) * 3) / 2);
 		}
 
 	#loading-animation {
@@ -1231,7 +1232,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 3);
-		height:calc((((100vw - (60px * 2)) / 3) * 3) / 2);
+		height:calc((((100vw - (65px * 2)) / 3) * 3) / 2);
 		}
 
 	#loading-animation {
