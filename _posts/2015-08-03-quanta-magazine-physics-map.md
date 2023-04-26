@@ -17,7 +17,7 @@ role:
 team:
   - Natalie Wolchover
   - Olena Shmahalo
-cred_tweets:
+cred_social:
   - name:   Argonne National Laboratory
     link:   "https://twitter.com/argonne/status/632231701540962304"
   - name:   Fermi National Accelerator Laboratory

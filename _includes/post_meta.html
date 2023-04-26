@@ -112,12 +112,12 @@
 			</div>
 		</div>
 	{% endif %}
-	{% if page.cred_tweets %}
-		<div id='post-cred-tweets' class='sub-section'>
+	{% if page.cred_social %}
+		<div id='post-cred-social' class='sub-section'>
 			<span class='meta-header'>Mentions</span>
 			<div class='info'>
 				<ul>
-				{% for c in page.cred_tweets %}
+				{% for c in page.cred_social %}
 					<li>
 					{% if c.link %}
 					<span class='link'><a href='{{ c.link }}' target='_blank'>{{ c.name }}</a></span>

@@ -8,6 +8,9 @@ external:   true
 images:
   - ext:    01.jpg
   - ext:    02.jpg
+cred_social:
+  - name:   Data is Plural
+    link:   "https://mastodon.social/@dataisplural/110198398058440942"
 tags:
   - compendium
 ---

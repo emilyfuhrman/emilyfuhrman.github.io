@@ -16,7 +16,7 @@ cred:
     link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
   - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
     link:   "https://xpmethod.columbia.edu/lit-mod-viz/2014-10-22-visualizing-joyce.html"
-cred_tweets:
+cred_social:
   - name:   Georgia Lupi
     link:   "https://twitter.com/giorgialupi/status/484325744961536000"
   - name:   Lev Manovich
