@@ -84,11 +84,13 @@ var lib = function(){
 					"controlled language",
 					"deixis", 
 					"etymology",
+					"lists & lexicography",
 					"nomenclature",
 					"semantics"
 				],
-			"literary theory":[
-					"semiotics"
+			"literary study":[
+					"semiotics",
+					"✢ joyce"
 				],
 			"mapping":[
 					"cartography",
@@ -101,6 +103,7 @@ var lib = function(){
 				],
 			"math": [
 					"geometry",
+					"set theory",
 					"statistics",
 					"topology"
 				],

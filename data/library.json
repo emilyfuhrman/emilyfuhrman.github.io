@@ -1563,5 +1563,23 @@
 			"✢ nycb"
 		],
 		"read":true
+	},
+	{
+		"path":"kenner_1962_artInAClosedField",
+		"date":1962,
+		"title":"Art in a Closed Field",
+		"authors":[
+			{
+				"ln":"Kenner",
+				"fi":"H."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"lists & lexicography",
+			"set theory",
+			"✢ joyce"
+		],
+		"read":true
 	}
 ]
