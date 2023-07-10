@@ -1581,5 +1581,24 @@
 			"✢ joyce"
 		],
 		"read":true
+	},
+	{
+		"path":"buchloh_1990_conceptualArt1962-1969",
+		"date":1990,
+		"title":"Conceptual Art 1962-1969: From the Aesthetic of Administration to the Critique of Institutions",
+		"authors":[
+			{
+				"ln":"Buchloh",
+				"fi":"B.H.D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"minimalism",
+			"post-minimalism",
+			"✢ donald judd",
+			"✢ sol lewitt"
+		],
+		"read":false
 	}
 ]
