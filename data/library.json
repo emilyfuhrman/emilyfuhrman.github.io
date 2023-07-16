@@ -1600,5 +1600,21 @@
 			"✢ sol lewitt"
 		],
 		"read":true
+	},
+	{
+		"path":"o'hara_1993_theWillowPatternThatWeKnew",
+		"date":1993,
+		"title":"'The Willow Pattern That We Knew': The Victorian Literature of Blue Willow",
+		"authors":[
+			{
+				"ln":"O'Hara",
+				"fi":"P."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"blue willow"
+		],
+		"read":false
 	}
 ]
