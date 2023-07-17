@@ -1616,5 +1616,21 @@
 			"blue willow"
 		],
 		"read":true
+	},
+	{
+		"path":"mcClary_1982_theStoryOfTheStoryTheWillowPatternPlate",
+		"date":1982,
+		"title":"The Story of the Story: The Willow Pattern Plate",
+		"authors":[
+			{
+				"ln":"McClary",
+				"fi":"B.H."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"blue willow"
+		],
+		"read":false
 	}
 ]
