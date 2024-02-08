@@ -52,6 +52,7 @@ var lib = function(){
 				"post-minimalism",
 				"✢ agnes martin",
 				"✢ donald judd",
+				"✢ on kawara",
 				"✢ sol lewitt",
 				"✢ stanley brouwn"
 				],

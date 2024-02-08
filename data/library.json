@@ -1632,5 +1632,21 @@
 			"blue willow"
 		],
 		"read":true
+	},
+	{
+		"path":"rorimer_1991_theDatePaintingsOfOnKawara",
+		"date":1991,
+		"title":"The Date Paintings of On Kawara",
+		"authors":[
+			{
+				"ln":"Rorimer",
+				"fi":"A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ on kawara"
+		],
+		"read":false
 	}
 ]
