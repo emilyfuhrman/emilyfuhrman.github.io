@@ -1649,5 +1649,21 @@
 			"temporality"
 		],
 		"read":true
+	},
+	{
+		"path":"melvin_2022_theAestheticsOfSilenceWithdrawalAndNegationInConceptualArt",
+		"date":2022,
+		"title":"The Aesthetics of Silence, Withdrawal, and Negation in Conceptual Art",
+		"authors":[
+			{
+				"ln":"Melvin",
+				"fi":"J."
+			}
+		],
+		"type":"chapter",
+		"tags":[
+			"minimalism"
+		],
+		"read":false
 	}
 ]
