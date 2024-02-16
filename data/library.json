@@ -1667,6 +1667,6 @@
 			"negation",
 			"score"
 		],
-		"read":false
+		"read":true
 	}
 ]
