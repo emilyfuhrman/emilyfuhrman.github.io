@@ -51,6 +51,7 @@ var lib = function(){
 				"photography",
 				"post-minimalism",
 				"✢ agnes martin",
+				"✢ christine kozlov",
 				"✢ donald judd",
 				"✢ on kawara",
 				"✢ sol lewitt",
@@ -156,6 +157,7 @@ var lib = function(){
 					"aesthetics",
 					"intentionality",
 					"mereology",
+					"negation",
 					"sublime",
 					"temporality",
 					"utopia"
