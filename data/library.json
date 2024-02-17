@@ -1668,5 +1668,21 @@
 			"score"
 		],
 		"read":true
+	},
+	{
+		"path":"papastergiadis_2016_spaceTimeMatterAndMotionInOnKawara",
+		"date":2016,
+		"title":"11. The aesthetics of silence, withdrawal and negation in conceptual art",
+		"authors":[
+			{
+				"ln":"Papastergiadis",
+				"fi":"N."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ on kawara"
+		],
+		"read":false
 	}
 ]
