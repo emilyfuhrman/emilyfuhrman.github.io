@@ -1684,5 +1684,35 @@
 			"✢ on kawara"
 		],
 		"read":true
+	},
+	{
+		"path":"1988_saadCook_touchingTheSkyArtworks",
+		"date":1988,
+		"title":"Touching the Sky: Artworks Using Natural Phenomena, Earth, Sky and Connections to Astronomy",
+		"authors":[
+			{
+				"ln":"Saad-Cook",
+				"fi":"J."
+			}, 
+			{
+				"ln":"Ross",
+				"fi":"C."
+			}, 
+			{
+				"ln":"Holt",
+				"fi":"N."
+			}, 
+			{
+				"ln":"Turrell",
+				"fi":"J."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ charles ross",
+			"✢ james turrell",
+			"land art"
+		],
+		"read":false
 	}
 ]
