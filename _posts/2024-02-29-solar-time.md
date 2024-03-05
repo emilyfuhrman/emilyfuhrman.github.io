@@ -52,7 +52,7 @@ A durational cyanotype exposure of sunbeams through the window of my London flat
 
 This work continues to explore the methodic recording of sensory phenomena to portray incidental aspects of lived experience. Leaning on defined constraints and site-specific conditions, it aims to remove the artist from the process of composition and index the self in abstentia.
 
-I prepared the papers with light-sensitive cyanotype solution, then arranged them on a west-facing wall in a 6 &times; 3 grid. I exposed the papers to thirty minutes of sunlight on 2024/02/01, from 12:46 to 13:16, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
+I prepared the papers with light-sensitive cyanotype solution, and arranged them on a west-facing wall in a 6 &times; 3 grid. I exposed the papers to thirty minutes of sunlight on 2024/02/01, from 12:46 to 13:16, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
 
-The work represents the passage of time as a visible duration, ambivalent to human operational abstractions (e.g. longitude, clock time). Fixing the interior on the surface of the earth, in relation to the sun, the visual effect is both intimate and celestial.
+The work represents the passage of time as a visible duration, ambivalent to human operational abstractions (i.e. longitude, clock time). Fixing the interior on the surface of the earth, in relation to the sun, the visual effect is both intimate and celestial.
 
