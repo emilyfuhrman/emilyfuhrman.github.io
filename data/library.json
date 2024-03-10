@@ -1686,7 +1686,7 @@
 		"read":true
 	},
 	{
-		"path":"1988_saadCook_touchingTheSkyArtworks",
+		"path":"saadCook_1988_touchingTheSkyArtworks",
 		"date":1988,
 		"title":"Touching the Sky: Artworks Using Natural Phenomena, Earth, Sky and Connections to Astronomy",
 		"authors":[
@@ -1712,6 +1712,22 @@
 			"✢ charles ross",
 			"✢ james turrell",
 			"land art"
+		],
+		"read":true
+	},
+	{
+		"path":"ross_1978_coevolutionQuarterly_solarBurn",
+		"date":1978,
+		"title":"Sunlight Convergence/Solar Burn",
+		"authors":[
+			{
+				"ln":"Ross",
+				"fi":"C."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ charles ross"
 		],
 		"read":true
 	}
