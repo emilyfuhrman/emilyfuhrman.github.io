@@ -45,6 +45,7 @@ var lib = function(){
 			"art":[
 				"art history",
 				"avant-garde",
+				"computer art",
 				"data art",
 				"land art",
 				"minimalism",

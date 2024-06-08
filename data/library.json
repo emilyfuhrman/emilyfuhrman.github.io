@@ -1730,5 +1730,21 @@
 			"✢ charles ross"
 		],
 		"read":true
+	},
+	{
+		"path":"noll_1967_theDigitalComputerAsACreativeMedium",
+		"date":1967,
+		"title":"The Digital Computer as a Creative Medium",
+		"authors":[
+			{
+				"ln":"Noll",
+				"fi":"M.A."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"computer art"
+		],
+		"read":true
 	}
 ]
