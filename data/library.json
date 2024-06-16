@@ -1777,6 +1777,6 @@
 		"tags":[
 			"longitude"
 		],
-		"read":false
+		"read":true
 	}
 ]
