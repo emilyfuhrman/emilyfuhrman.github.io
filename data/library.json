@@ -1746,5 +1746,37 @@
 			"computer art"
 		],
 		"read":true
+	},
+	{
+		"path":"malys-seago-pavlis_2015_whyTheGreenwichMeridianMoved",
+		"date":2015,
+		"title":"Why the Greenwich Meridian Moved",
+		"authors":[
+			{
+				"ln":"Malys",
+				"fi":"S."
+			},
+			{
+				"ln":"Seago",
+				"fi":"J.H."
+			},
+			{
+				"ln":"Pavlis",
+				"fi":"N.K."
+			},
+			{
+				"ln":"Seidelmann",
+				"fi":"P.K."
+			},
+			{
+				"ln":"Kaplan",
+				"fi":"G.H."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"longitude"
+		],
+		"read":false
 	}
 ]
