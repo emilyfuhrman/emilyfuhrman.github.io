@@ -1778,5 +1778,22 @@
 			"longitude"
 		],
 		"read":true
+	},
+	{
+		"path":"lewitt_1969_sentencesOnConceptualArt",
+		"date":1969,
+		"title":"Sentences on Conceptual Art",
+		"authors":[
+			{
+				"ln":"LeWitt",
+				"fi":"S."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"minimalism",
+			"✢ sol lewitt"
+		],
+		"read":true
 	}
 ]
