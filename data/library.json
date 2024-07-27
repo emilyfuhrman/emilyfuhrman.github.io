@@ -1794,5 +1794,25 @@
 			"✢ sol lewitt"
 		],
 		"read":true
+	},
+	{
+		"path":"leCorbusier_1926_lesCinqPointsDUneArchitectureNouvelle",
+		"date":1926,
+		"title":"Les 5 points d'une architecture nouvelle",
+		"authors":[
+			{
+				"ln":"Le Corbusier",
+				"fi":""
+			},
+			{
+				"ln":"Jeanneret",
+				"fi":"P."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ le corbusier"
+		],
+		"read":true
 	}
 ]
