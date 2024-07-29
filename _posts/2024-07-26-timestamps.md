@@ -1,6 +1,6 @@
 ---
 post_id:    Y2024001
-title:      "Timestamps"
+title:      "Study: Timestamps"
 tagline:    "Date stamp compositions for six days in July."
 post_path:  timestamps
 images:
