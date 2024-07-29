@@ -3,7 +3,6 @@ post_id:    Y2024001
 title:      "Timestamps"
 tagline:    "Date stamp compositions for six days in July."
 post_path:  timestamps
-category:   portfolio
 images:
   - ext:    20240722.jpg
     half:   true
