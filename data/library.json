@@ -1814,5 +1814,21 @@
 			"✢ le corbusier"
 		],
 		"read":true
+	},
+	{
+		"path":"haraway_1988_situatedKnowledges",
+		"date":1988,
+		"title":"Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+		"authors":[
+			{
+				"ln":"Haraway",
+				"fi":"D."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"god-trick"
+		],
+		"read":true
 	}
 ]
