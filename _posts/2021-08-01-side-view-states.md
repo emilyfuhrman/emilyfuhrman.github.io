@@ -10,9 +10,6 @@ images:
   - ext:    04.jpg
   - ext:    03.jpg
   - ext:    02.jpg
-epigraph:   
-  - text:   "...in ordinary speech there is a slippage between ‘within this region/area/territory’ and ‘within these boundaries/limits/borders’, pointing to the ease with which we can pass between thinking in terms of regions and thinking in terms of boundaries."
-    source: "Antony Galton, &quot;On the Ontological Status of Geographical Boundaries,&quot; 2003"
 citations:
   - Smith, Barry, "On Drawing Lines on a Map," (1995), 479.
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
