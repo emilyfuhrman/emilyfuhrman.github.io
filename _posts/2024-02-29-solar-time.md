@@ -48,7 +48,7 @@ dimensions: "8.3&quot; &times; 11.7&quot;"
 tags:
   - print
 ---
-A durational cyanotype exposure of sunbeams through the window of my London flat. Combining pre-defined constraints with site-specific conditions, the work aims to both elide artistic intervention and index the artist in abstentia.
+A durational cyanotype exposure of sunbeams through the window of my London flat. Combining pre-defined constraints with site-specific conditions, it aims to both elide artistic intervention and index the artist in abstentia.
 
 I prepared the papers with light-sensitive cyanotype solution, then arranged them on a west-facing wall in a 6 &times; 3 grid. I exposed the papers to thirty minutes of sunlight on 2024/02/01, from 12:46 to 13:16, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
 
