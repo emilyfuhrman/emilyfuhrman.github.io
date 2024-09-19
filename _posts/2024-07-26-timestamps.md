@@ -16,5 +16,5 @@ dimensions: "5.5&quot; &times; 7.6&quot;"
 tags:
   - print
 ---
-Date stamp compositions for six days in July.
+Date stamp compositions for five days in July.
 
