@@ -5,9 +5,6 @@ tagline:    "Date stamp compositions for six days in July."
 post_path:  timestamps
 images:
   - ext:    20240722.jpg
-    half:   true
-  - ext:    20240721.jpg
-    half:   true
   - ext:    20240723.jpg
   - ext:    20240725.jpg
   - ext:    20240724.jpg
