@@ -1,7 +1,7 @@
 ---
 post_id:    Y2024001
 title:      "Study: Timestamps"
-tagline:    "Date stamp compositions for six days in July."
+tagline:    "Date stamp compositions for five days in July."
 post_path:  timestamps
 images:
   - ext:    20240722.jpg
