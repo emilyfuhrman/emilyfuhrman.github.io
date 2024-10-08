@@ -1044,11 +1044,11 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		}
 
 	.container #gallery {
-		margin:0 calc(#{$gallery_margin} / 2);
+		margin:0 calc(#{$gallery_margin} / 8);
 		}
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (#{$gallery_margin} * 1)) * 3) / 2);
+		height:calc(((100vw - (#{$gallery_margin} / 4)) * 3) / 2);
 		margin: 1.5rem 0 40px 0;
 		}
 
@@ -1072,6 +1072,15 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#nav .projects {
 		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
+		}
+
+	.container #gallery {
+		margin:0 calc(#{$gallery_margin} / 2);
+		}
+	#gallery .list-img-container {
+		width:100%;
+		height:calc(((100vw - (#{$gallery_margin})) * 3) / 2);
+		margin: 1.5rem 0 40px 0;
 		}
 
 	#loading-animation {
