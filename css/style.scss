@@ -1035,6 +1035,13 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		margin-top:1.5rem;
 		}
 
+	#project #post-nav .arrow#previous {
+		left:calc(#{$nav_pos} / 2);
+		}
+	#project #post-nav .arrow#next {
+		right:calc(#{$nav_pos} / 2);
+		}
+
 	#base {
 		padding:0 calc(#{$nav_pos} / 2) 1rem;
 		}
@@ -1095,7 +1102,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 	#background {
 		border-color:$color_black;
-	}
+		}
 
 	#nav .home {
 		left:$nav_pos;
@@ -1106,6 +1113,13 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#nav .projects {
 		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
+		}
+		
+	#project #post-nav .arrow#previous {
+		left:$nav_pos;
+		}
+	#project #post-nav .arrow#next {
+		right:$nav_pos;
 		}
 
 	#base {
