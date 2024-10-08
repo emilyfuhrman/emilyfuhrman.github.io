@@ -31,8 +31,8 @@ $color_accent:#0055FF;
 						transform:$transform;
 }
 
-$nav_pos_left:85px;
-$nav_pos_right:85px;
+$border_size:40px;
+$nav_pos:85px;
 
 html,
 body { 
@@ -81,8 +81,8 @@ span.st {
 
 #background {
 	position:fixed;
-	border-left:40px solid $color_black;
-	border-right:40px solid $color_black;
+	border-left:$border_size solid $color_black;
+	border-right:$border_size solid $color_black;
 	left:0;
 	right:0;
 	top:0;
@@ -111,7 +111,7 @@ span.st {
 .content-wrapper {
 	width:100%;
 	margin:0 auto;
-	padding:3rem 1.75rem;
+	padding:4rem $border_size;
 	@include box-sizing(border-box);
 	}
 .content-wrapper.generic-content-wrapper {
@@ -183,13 +183,13 @@ span.st {
 	top:85px;
 	}
 #nav .home {
-	left:$nav_pos_left;
+	left:$nav_pos;
 	}
 #nav .about {
-	right:$nav_pos_right;
+	right:$nav_pos;
 	}
 #nav .projects {
-	right:calc(#{$nav_pos_right} + 85px);
+	right:calc(#{$nav_pos} + 85px);
 	margin-top:0;
 	}
 
@@ -624,10 +624,10 @@ span.st {
   bottom:2rem;
 	}
 #project #post-nav .arrow#previous {
-	left:$nav_pos_left;
+	left:$nav_pos;
 	}
 #project #post-nav .arrow#next {
-	right:$nav_pos_right;
+	right:$nav_pos;
 	}
 #project #post-nav .arrow a {
 	text-decoration:none;
@@ -1013,7 +1013,7 @@ span.st {
 	/* smartphones, iPhone, portrait 480x320 phones */
 
 	#nav .projects {
-		right:$nav_pos_right;
+		right:$nav_pos;
 		margin-top:1.5rem;
 		}
 
@@ -1047,7 +1047,7 @@ span.st {
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
 	#nav .projects {
-		right:$nav_pos_right;
+		right:$nav_pos;
 		margin-top:1.5rem;
 		}
 
@@ -1081,7 +1081,7 @@ span.st {
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
 	#nav .projects {
-		right:calc(#{$nav_pos_right} + 85px);
+		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
 		}
 
@@ -1115,7 +1115,7 @@ span.st {
 	/* tablet, landscape iPad, lo-res laptops and desktops */ 
 	
 	#nav .projects {
-		right:calc(#{$nav_pos_right} + 85px);
+		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
 		}
 
@@ -1149,7 +1149,7 @@ span.st {
 	/* big landscape tablets, laptops, and desktops */ 
 	
 	#nav .projects {
-		right:calc(#{$nav_pos_right} + 85px);
+		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
 		}
 
@@ -1183,7 +1183,7 @@ span.st {
 	/* hi-res laptops and desktops */
 	
 	#nav .projects {
-		right:calc(#{$nav_pos_right} + 85px);
+		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
 		}
 
@@ -1217,7 +1217,7 @@ span.st {
 	/* large monitors */
 	
 	#nav .projects {
-		right:calc(#{$nav_pos_right} + 85px);
+		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
 		}
 
