@@ -1052,8 +1052,11 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:100%
 		}
 
+	#projects .masthead #project-tags {
+		padding:0.5rem 0 4rem;
+		}
 	#projects .generic-list ul {
-		padding:0 1.5rem;
+		padding:0;
 		}
 
 	.container #gallery {
@@ -1062,7 +1065,14 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#gallery .list-img-container {
 		width:100%;
 		height:calc(((100vw - (#{$gallery_margin} / 4)) * 3) / 2);
-		margin: 1.5rem 0 40px 0;
+		margin:1.5rem 0 40px 0;
+		}
+
+	.content-wrapper {
+		padding:4rem 1.5rem;
+		}
+	.content-wrapper .masthead {
+		padding:0;
 		}
 
 	#loading-animation {
@@ -1100,6 +1110,9 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#project #media .media {
 		padding:1.5rem;
 	}
+	#projects .generic-list ul {
+		padding:0 1.5rem;
+		}
 
 	.container #gallery {
 		margin:0 calc(#{$gallery_margin} / 2);
@@ -1108,6 +1121,13 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:100%;
 		height:calc(((100vw - (#{$gallery_margin})) * 3) / 2);
 		margin: 1.5rem 0 40px 0;
+		}
+
+	.content-wrapper {
+		padding:4rem $border_size;
+		}
+	.content-wrapper .masthead {
+		padding:0 1.5rem;
 		}
 
 	#loading-animation {
@@ -1129,6 +1149,9 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:50%
 		}
 
+	#projects .masthead #project-tags {
+		padding:0.5rem 1.5rem 4rem;
+		}
 	#projects .generic-list ul {
 		padding:0 3rem;
 		}
