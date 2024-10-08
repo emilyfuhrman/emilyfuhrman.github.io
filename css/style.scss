@@ -197,12 +197,14 @@ span.st {
 		GALLERY PAGE
    	------------------------------------ */
 
+$gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anchoring on nav position */
+
 .container #gallery {
 	width:auto;
 	max-width:100vw;
 	overflow:auto;
 	text-align:center;
-	margin:0 90px;
+	margin:0 $gallery_margin;
 	padding:3.75rem 0 0;
 	-webkit-transform:translate3d(0, 0, 0);
 	@include box-sizing(border-box);
@@ -211,7 +213,7 @@ span.st {
 #gallery .list-img-container {
 	float:left;
 	width:calc(100% / 3);
-	height:calc((((100vw - (90px * 2)) / 3) * 3) / 2); /* get multiplier from #gallery margin */
+	height:calc((((100vw - (#{$gallery_margin} * 2)) / 3) * 3) / 2);
 	text-align:left;
 	text-decoration:none;
 	vertical-align:top;
@@ -1034,7 +1036,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (90px * 2)) * 3) / 2);
+		height:calc(((100vw - (#{$gallery_margin} * 2)) * 3) / 2);
 		margin: 1.5rem 0 40px 0;
 		}
 
@@ -1068,7 +1070,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (90px * 2)) * 3) / 2);
+		height:calc(((100vw - (#{$gallery_margin} * 2)) * 3) / 2);
 		margin: 1.5rem 0 40px 0;
 		}
 
@@ -1102,7 +1104,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:100%;
-		height:calc(((100vw - (90px * 2)) * 3) / 2);
+		height:calc(((100vw - (#{$gallery_margin} * 2)) * 3) / 2);
 		margin:0 0 100px;
 		}
 
@@ -1136,7 +1138,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 2);
-		height:calc((((100vw - (90px * 2)) / 2) * 3) / 2);
+		height:calc((((100vw - (#{$gallery_margin} * 2)) / 2) * 3) / 2);
 		margin:0 0 100px;
 		}
 
@@ -1170,7 +1172,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 2);
-		height:calc((((100vw - (90px * 2)) / 2) * 3) / 2);
+		height:calc((((100vw - (#{$gallery_margin} * 2)) / 2) * 3) / 2);
 		margin:0 0 100px;
 		}
 
@@ -1204,7 +1206,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 3);
-		height:calc((((100vw - (90px * 2)) / 3) * 3) / 2);
+		height:calc((((100vw - (#{$gallery_margin} * 2)) / 3) * 3) / 2);
 		margin:0 0 100px;
 		}
 
@@ -1238,7 +1240,7 @@ span.st {
 
 	#gallery .list-img-container {
 		width:calc(100% / 3);
-		height:calc((((100vw - (90px * 2)) / 3) * 3) / 2);
+		height:calc((((100vw - (#{$gallery_margin} * 2)) / 3) * 3) / 2);
 		margin:0 0 100px;
 		}
 
