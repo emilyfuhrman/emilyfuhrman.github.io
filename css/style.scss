@@ -1029,7 +1029,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		}
 
 	.container #project {
-		padding:4rem 1rem 6rem;
+		padding:6rem 0;
 		}
 	.container #project #info .title {
 		top:143px;
@@ -1037,6 +1037,13 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	.container #project .meta div#meta-border {
 		width:calc(100% - 3rem);
 		margin:0 1.5rem;
+		}
+
+	#project #media .media {
+		padding:calc(#{$gallery_margin} / 8);
+		}
+	#project #media .media.half {
+		width:100%
 		}
 
 	#projects .generic-list ul {
@@ -1074,6 +1081,14 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		margin-top:0;
 		}
 
+	.container #project {
+		padding:4rem 2rem 6rem;
+		}
+
+	#project #media .media {
+		padding:1.5rem;
+	}
+
 	.container #gallery {
 		margin:0 calc(#{$gallery_margin} / 2);
 		}
@@ -1092,14 +1107,14 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	/* tablet, landscape iPad, lo-res laptops and desktops */ 
 
 	.container #project {
-		padding:2rem 1rem 6rem;
+		padding:2rem 2rem 6rem;
 		}
 	.container #project #info .title {
 		top:83px;
 		}
-	.container #project .meta div#meta-border {
-		width:100%;
-		margin:0;
+
+	#project #media .media.half {
+		width:50%
 		}
 
 	#projects .generic-list ul {
@@ -1118,6 +1133,11 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */ 
+	
+	.container #project .meta div#meta-border {
+		width:100%;
+		margin:0;
+		}
 
 	}
 
