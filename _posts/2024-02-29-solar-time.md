@@ -7,18 +7,6 @@ category:   portfolio
 cover_pos:  left
 images:
   - ext:    composite_framed_01.15_ext_3272x2000.jpg
-  - ext:    0-0_framed.png
-    half:   true
-  - ext:    1-0_framed.png
-    half:   true
-  - ext:    0-2_framed.png
-    half:   true
-  - ext:    1-2_framed.png
-    half:   true
-  - ext:    4-0_framed.png
-    half:   true
-  - ext:    5-0_framed.png
-    half:   true
 medium:     "Light-sensitive cyanotype solution on watercolor paper, sunlight"
 dimensions: "8.3&quot; &times; 11.7&quot;" 
 tags:
