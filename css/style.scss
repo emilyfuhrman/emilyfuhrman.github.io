@@ -656,14 +656,14 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	position:fixed;
 	width:auto;
 	margin:0;
-	padding:0 50px 1rem;
+	padding:0 $nav_pos 1rem;
 	bottom:0;
 	clear:both;
 	}
 #base #social {
 	float:left;
 	width:100%;
-	margin:0 15px;
+	margin:0;
 	@include box-sizing(border-box);
 	}
 
@@ -1021,7 +1021,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 	#background {
 		border-color:transparent;
-	}
+		}
 
 	#nav .home {
 		left:calc(#{$nav_pos} / 2);
@@ -1032,6 +1032,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#nav .projects {
 		right:calc(#{$nav_pos} / 2);
 		margin-top:1.5rem;
+		}
+
+	#base {
+		padding:0 calc(#{$nav_pos} / 2) 1rem;
 		}
 
 	.container #project {
@@ -1101,6 +1105,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#nav .projects {
 		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
+		}
+
+	#base {
+		padding:0 $nav_pos 1rem;
 		}
 
 	.container #project {
