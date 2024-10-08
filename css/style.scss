@@ -1009,7 +1009,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 }
 
 /* 	------------------------------------
-		FLUIDITY
+		MEDIA BREAKPOINTS FOR FLUIDITY
    	------------------------------------ */
 
 /*  NOTE: 	Browser will always look "down" from current width to get correct value -- 
@@ -1023,8 +1023,14 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		border-color:transparent;
 	}
 
+	#nav .home {
+		left:calc(#{$nav_pos} / 2);
+		}
+	#nav .about {
+		right:calc(#{$nav_pos} / 2);
+		}
 	#nav .projects {
-		right:$nav_pos;
+		right:calc(#{$nav_pos} / 2);
 		margin-top:1.5rem;
 		}
 
@@ -1076,6 +1082,12 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		border-color:$color_black;
 	}
 
+	#nav .home {
+		left:$nav_pos;
+		}
+	#nav .about {
+		right:$nav_pos;
+		}
 	#nav .projects {
 		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
@@ -1133,7 +1145,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */ 
-	
+
 	.container #project .meta div#meta-border {
 		width:100%;
 		margin:0;
