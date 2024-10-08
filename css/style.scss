@@ -179,7 +179,7 @@ span.st {
 #nav .home,
 #nav .about,
 #nav .projects {
-	z-index:1000;
+	z-index:1001;
 	position:fixed;
 	top:85px;
 	}
@@ -190,6 +190,7 @@ span.st {
 	right:$nav_pos;
 	}
 #nav .projects {
+	z-index:1000;
 	right:calc(#{$nav_pos} + 85px);
 	margin-top:0;
 	}
