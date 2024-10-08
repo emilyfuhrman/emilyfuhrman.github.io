@@ -83,6 +83,7 @@ span.st {
 	position:fixed;
 	border-left:$border_size solid $color_black;
 	border-right:$border_size solid $color_black;
+	border-color:$color_black;
 	left:0;
 	right:0;
 	top:0;
@@ -1011,8 +1012,16 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		FLUIDITY
    	------------------------------------ */
 
+/*  NOTE: 	Browser will always look "down" from current width to get correct value -- 
+						So, no need to enter values multiple times; just at the smallest width they take effect
+*/
+
 @media (min-width:320px) { 
 	/* smartphones, iPhone, portrait 480x320 phones */
+
+	#background {
+		border-color:transparent;
+	}
 
 	#nav .projects {
 		right:$nav_pos;
@@ -1051,70 +1060,18 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 @media (min-width:481px) { 
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
 
-	#nav .projects {
-		right:$nav_pos;
-		margin-top:1.5rem;
-		}
-
-	.container #project {
-		padding:4rem 1rem 6rem;
-		}
-	.container #project #info .title {
-		top:143px;
-		}
-	.container #project .meta div#meta-border {
-		width:calc(100% - 3rem);
-		margin:0 1.5rem;
-		}
-
-	#projects .generic-list ul {
-		padding:0 1.5rem;
-		}
-
-	.container #gallery {
-		margin:0 calc(#{$gallery_margin} / 2);
-		}
-	#gallery .list-img-container {
-		width:100%;
-		height:calc(((100vw - (#{$gallery_margin} * 1)) * 3) / 2);
-		margin: 1.5rem 0 40px 0;
-		}
-
-	#loading-animation {
-	  top:calc(100vh / 3);
-		}
 	}
 
 @media (min-width:641px) { 
 	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
+	#background {
+		border-color:$color_black;
+	}
+
 	#nav .projects {
 		right:calc(#{$nav_pos} + 85px);
 		margin-top:0;
-		}
-
-	.container #project {
-		padding:4rem 1rem 6rem;
-		}
-	.container #project #info .title {
-		top:143px;
-		}
-	.container #project .meta div#meta-border {
-		width:calc(100% - 3rem);
-		margin:0 1.5rem;
-		}
-
-	#projects .generic-list ul {
-		padding:0 1.5rem;
-		}
-
-	.container #gallery {
-		margin:0 $gallery_margin;
-		}
-	#gallery .list-img-container {
-		width:100%;
-		height:calc(((100vw - (#{$gallery_margin} * 2)) * 3) / 2);
-		margin:0 0 100px;
 		}
 
 	#loading-animation {
@@ -1124,11 +1081,6 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 @media (min-width:961px) { 
 	/* tablet, landscape iPad, lo-res laptops and desktops */ 
-	
-	#nav .projects {
-		right:calc(#{$nav_pos} + 85px);
-		margin-top:0;
-		}
 
 	.container #project {
 		padding:2rem 1rem 6rem;
@@ -1152,72 +1104,16 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:calc(100% / 2);
 		height:calc((((100vw - (#{$gallery_margin} * 2)) / 2) * 3) / 2);
 		margin:0 0 100px;
-		}
-
-	#loading-animation {
-	  top:calc(100vh / 4);
 		}
 	}
 
 @media (min-width:1025px) { 
 	/* big landscape tablets, laptops, and desktops */ 
-	
-	#nav .projects {
-		right:calc(#{$nav_pos} + 85px);
-		margin-top:0;
-		}
 
-	.container #project {
-		padding:2rem 1rem 6rem;
-		}
-	.container #project #info .title {
-		top:83px;
-		}
-	.container #project .meta div#meta-border {
-		width:100%;
-		margin:0;
-		}
-
-	#projects .generic-list ul {
-		padding:0 3rem;
-		}
-
-	.container #gallery {
-		margin:0 $gallery_margin;
-		}
-	#gallery .list-img-container {
-		width:calc(100% / 2);
-		height:calc((((100vw - (#{$gallery_margin} * 2)) / 2) * 3) / 2);
-		margin:0 0 100px;
-		}
-
-	#loading-animation {
-	  top:calc(100vh / 4);
-		}
 	}
 
 @media (min-width:1281px) { 
 	/* hi-res laptops and desktops */
-	
-	#nav .projects {
-		right:calc(#{$nav_pos} + 85px);
-		margin-top:0;
-		}
-
-	.container #project {
-		padding:2rem 1rem 6rem;
-		}
-	.container #project #info .title {
-		top:83px;
-		}
-	.container #project .meta div#meta-border {
-		width:100%;
-		margin:0;
-		}
-
-	#projects .generic-list ul {
-		padding:0 3rem;
-		}
 
 	.container #gallery {
 		margin:0 $gallery_margin;
@@ -1226,46 +1122,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:calc(100% / 3);
 		height:calc((((100vw - (#{$gallery_margin} * 2)) / 3) * 3) / 2);
 		margin:0 0 100px;
-		}
-
-	#loading-animation {
-	  top:calc(100vh / 4);
 		}
 	}
 
 @media (min-width:1920px) { 
 	/* large monitors */
-	
-	#nav .projects {
-		right:calc(#{$nav_pos} + 85px);
-		margin-top:0;
-		}
 
-	.container #project {
-		padding:2rem 1rem 6rem;
-		}
-	.container #project #info .title {
-		top:83px;
-		}
-	.container #project .meta div#meta-border {
-		width:100%;
-		margin:0;
-		}
-
-	#projects .generic-list ul {
-		padding:0 3rem;
-		}
-
-	.container #gallery {
-		margin:0 $gallery_margin;
-		}
-	#gallery .list-img-container {
-		width:calc(100% / 3);
-		height:calc((((100vw - (#{$gallery_margin} * 2)) / 3) * 3) / 2);
-		margin:0 0 100px;
-		}
-
-	#loading-animation {
-	  top:calc(100vh / 4);
-		}
 	}
