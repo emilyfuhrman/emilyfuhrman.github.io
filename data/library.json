@@ -1830,5 +1830,22 @@
 			"god-trick"
 		],
 		"read":true
+	},
+	{
+		"path":"safran_1983_theThinkingReed",
+		"date":1983,
+		"title":"'The Thinking Reed': Arnold Schoenberg and Adolf Loos",
+		"authors":[
+			{
+				"ln":"Safran",
+				"fi":"Y."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"✢ adolf loos",
+			"✢ schönberg"
+		],
+		"read":true
 	}
 ]

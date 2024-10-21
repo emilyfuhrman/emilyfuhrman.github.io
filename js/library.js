@@ -38,6 +38,7 @@ var lib = function(){
 				"interior",
 				"urbanism",
 				"visionary architecture",
+				"✢ adolf loos",
 				"✢ frank lloyd wright",
 				"✢ le corbusier",
 				"✢ mies van der rohe"
@@ -72,99 +73,100 @@ var lib = function(){
 				"blue willow"
 				],
 			"computer science": [
-					"algorithms",
-					"cybernetics"
+				"algorithms",
+				"cybernetics"
 				],
 			"data visualization": [
-					"3D projection",
-					"bar chart",
-					"chernoff faces",
-					"color",
-					"dot chart",
-					"dotplot",
-					"graphical perception",
-					"line chart",
-					"notation",
-					"pie chart",
-					"rose diagram",
-					"treemap",
-					"x-axis"
+				"3D projection",
+				"bar chart",
+				"chernoff faces",
+				"color",
+				"dot chart",
+				"dotplot",
+				"graphical perception",
+				"line chart",
+				"notation",
+				"pie chart",
+				"rose diagram",
+				"treemap",
+				"x-axis"
 				],
 			"linguistics":[
-					"controlled language",
-					"deixis", 
-					"etymology",
-					"lists & lexicography",
-					"nomenclature",
-					"semantics"
+				"controlled language",
+				"deixis", 
+				"etymology",
+				"lists & lexicography",
+				"nomenclature",
+				"semantics"
 				],
 			"literary study":[
-					"semiotics",
-					"✢ joyce"
+				"semiotics",
+				"✢ joyce"
 				],
 			"mapping":[
-					"cartography",
-					"critical cartography",
-					"ichnography",
-					"longitude",
-					"map ⇌ territory",
-					"nolli map",
-					"projections"
+				"cartography",
+				"critical cartography",
+				"ichnography",
+				"longitude",
+				"map ⇌ territory",
+				"nolli map",
+				"projections"
 				],
 			"math": [
-					"geometry",
-					"set theory",
-					"statistics",
-					"topology"
+				"geometry",
+				"set theory",
+				"statistics",
+				"topology"
 				],
 			"morphology": [
-					"axonometric",
-					"boundary",
-					"category",
-					"distance",
-					"god-trick",
-					"grid",
-					"horizon",
-					"horizontal ⇌ vertical",
-					"icon",
-					"index",
-					"isometric",
-					"isomorphism",
-					"line",
-					"network",
-					"panopticon",
-					"panorama",
-					"plane",
-					"point",
-					"scale",
-					"subject ⇌ object",
-					"taxonomy",
-					"unit"
+				"axonometric",
+				"boundary",
+				"category",
+				"distance",
+				"god-trick",
+				"grid",
+				"horizon",
+				"horizontal ⇌ vertical",
+				"icon",
+				"index",
+				"isometric",
+				"isomorphism",
+				"line",
+				"network",
+				"panopticon",
+				"panorama",
+				"plane",
+				"point",
+				"scale",
+				"subject ⇌ object",
+				"taxonomy",
+				"unit"
 				],
 			"music": [
-					"musicology",
-					"score"
+				"musicology",
+				"score",
+				"✢ schönberg"
 				],
 			"natural science": [
-					"birds",
-					"cryosphere",
-					"cryptozoology",
-					"insects",
-					"plants"
+				"birds",
+				"cryosphere",
+				"cryptozoology",
+				"insects",
+				"plants"
 				],
 			"perfumery": [
-			    "perfume history",
-			    "✢ coty",
-				  "✢ guerlain"
+		    	"perfume history",
+		    	"✢ coty",
+				"✢ guerlain"
 				],
 			"philosophy": [
-					"aesthetics",
-					"intentionality",
-					"mereology",
-					"negation",
-					"sublime",
-					"temporality",
-					"utopia"
+				"aesthetics",
+				"intentionality",
+				"mereology",
+				"negation",
+				"sublime",
+				"temporality",
+				"utopia"
 				]
 		},
 
