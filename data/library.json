@@ -1847,5 +1847,21 @@
 			"✢ schönberg"
 		],
 		"read":true
+	},
+	{
+		"path":"borges_1952_theAnalyticalLanguageOfJohnWilkins",
+		"date":1952,
+		"title":"The Analytical Language of John Wilkins",
+		"authors":[
+			{
+				"ln":"Borges",
+				"fi":"J.L."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"category"
+		],
+		"read":true
 	}
 ]
