@@ -1139,7 +1139,7 @@
 				"fi":"J.L."
 			}
 		],
-		"type":"article",
+		"type":"story",
 		"tags":[
 			"map ⇌ territory"
 		],
@@ -1858,7 +1858,23 @@
 				"fi":"J.L."
 			}
 		],
-		"type":"article",
+		"type":"story",
+		"tags":[
+			"category"
+		],
+		"read":true
+	},
+	{
+		"path":"borges_1941_theLibraryOfBabel",
+		"date":1952,
+		"title":"The Library of Babel",
+		"authors":[
+			{
+				"ln":"Borges",
+				"fi":"J.L."
+			}
+		],
+		"type":"story",
 		"tags":[
 			"category"
 		],

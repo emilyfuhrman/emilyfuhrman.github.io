@@ -484,13 +484,14 @@ var lib = function(){
 						} else if(d.id === 'read'){
 							html = _d.read ? '☑️' : '⬜️';
 						} else if(d.id === 'type'){
-							html = _d.type === 'book' ? '📖' 
+							html = _d.type === 'book' ? '📚' 
 								: _d.type === 'chapter' ? '🔖'
 								: _d.type === 'compendium' ? '🗄'
 								: _d.type === 'magazine' ? '📰'
 								: _d.type === 'poem' ? '📃'
 								: _d.type === 'score' ? '🎹'
 								: _d.type === 'snip' ? '✂️'
+								: _d.type === 'story' ? '📖'
 								: '📄';
 						} else if(d.id === 'authors'){
 							var len = _d.authors.length,
