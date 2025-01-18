@@ -15,7 +15,7 @@ tags:
 ---
 Human operational abstractions derived from the position of the sun &mdash; longitude, clock time &mdash; enable the measurement of time. Can the sun itself mark the passage of time as a visible duration, ambivalent to these abstractions?
 
-This piece is a durational cyanotype exposure of sunbeams through the window of my London flat. I prepared a set of papers with light-sensitive cyanotype solution and arranged them on a west-facing wall. I exposed the papers to a period of sunlight, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
+This piece is a durational cyanotype exposure of sunbeams through the window of my London flat. I prepared a set of papers with light-sensitive cyanotype solution and arranged them as a grid on a west-facing wall. I exposed the papers to a period of sunlight, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
 
 Fixing the interior on the surface of the earth, in relation to the sun, the visual effect is both intimate and celestial.
 
