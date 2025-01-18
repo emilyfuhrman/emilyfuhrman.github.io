@@ -13,9 +13,9 @@ dimensions: "8.3&quot; &times; 11.7&quot;"
 tags:
   - print
 ---
-A durational cyanotype exposure of sunbeams through the window of my London flat.
+The measurement of time is enabled by human operational abstractions &mdash; longitude, clock time &mdash; derived from the position of the sun. How can the sun mark the passage of time as a visible duration, ambivalent to these abstractions?
 
-To produce this piece, I prepared a set of papers with light-sensitive cyanotype solution and arranged them on a west-facing wall. I exposed the papers to a period of sunlight, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
+This piece is a durational cyanotype exposure of sunbeams through the window of my London flat. I prepared a set of papers with light-sensitive cyanotype solution and arranged them on a west-facing wall. I exposed the papers to a period of sunlight, during which the beams visibly progressed &mdash; due, of course, to the apparent movement of the sun, which impressed upon the paper directly.
 
-The work represents the passage of time as a visible duration, ambivalent to human operational abstractions (i.e. longitude, clock time). Fixing the interior on the surface of the earth, in relation to the sun, the visual effect is both intimate and celestial.
+Fixing the interior on the surface of the earth, in relation to the sun, the visual effect is both intimate and celestial.
 
