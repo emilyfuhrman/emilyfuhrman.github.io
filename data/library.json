@@ -1879,5 +1879,45 @@
 			"category"
 		],
 		"read":true
+	},
+	{
+		"path":"yaden-iwry-slack-eichstaedt-zhao-vaillant-newberg_2016_theOverviewEffect",
+		"date":2016,
+		"title":"The Overview Effect: Awe and Self-Transcendent Experience in Space Flight",
+		"authors":[
+			{
+				"ln":"Yaden",
+				"fi":"D.B."
+			},
+			{
+				"ln":"Iwry",
+				"fi":"J."
+			},
+			{
+				"ln":"Slack",
+				"fi":"K.J."
+			},
+			{
+				"ln":"Eichstaedt",
+				"fi":"J.C."
+			},
+			{
+				"ln":"Zhao",
+				"fi":"Y."
+			},
+			{
+				"ln":"Vaillant",
+				"fi":"G.E."
+			},
+			{
+				"ln":"Newberg",
+				"fi":"A.B."
+			}
+		],
+		"type":"article",
+		"tags":[
+			"god-trick"
+		],
+		"read":true
 	}
 ]
