@@ -122,6 +122,7 @@ var lib = function(){
 				"axonometric",
 				"boundary",
 				"category",
+				"centrality",
 				"distance",
 				"god-trick",
 				"grid",

@@ -1919,5 +1919,20 @@
 			"god-trick"
 		],
 		"read":true
+	},
+	{
+		"path":"kaniewska_2018_remarksAboutCentralEuropeInPolishContemporaryProse",
+		"date":2018,
+		"title":"Remarks about Central Europe in Polish Contemporary Prose",
+		"authors":[
+			{
+				"ln":"Kaniewska",
+				"fi":"B."
+			}		],
+		"type":"article",
+		"tags":[
+			"centrality"
+		],
+		"read":true
 	}
 ]
