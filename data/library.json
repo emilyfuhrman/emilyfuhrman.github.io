@@ -1934,5 +1934,20 @@
 			"centrality"
 		],
 		"read":true
+	},
+	{
+		"path":"sanders_1990_theQuestForCentralEurope",
+		"date":1990,
+		"title":"The Quest for Central Europe",
+		"authors":[
+			{
+				"ln":"Sanders",
+				"fi":"I."
+			}		],
+		"type":"article",
+		"tags":[
+			"centrality"
+		],
+		"read":true
 	}
 ]
