@@ -107,6 +107,7 @@ var lib = function(){
 				"cartography",
 				"critical cartography",
 				"ichnography",
+				"landscape",
 				"longitude",
 				"map ⇌ territory",
 				"nolli map",

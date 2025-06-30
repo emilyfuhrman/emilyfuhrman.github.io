@@ -1949,5 +1949,20 @@
 			"centrality"
 		],
 		"read":true
+	},
+	{
+		"path":"cosgrove_1985_prospectPerspectiveAndTheEvolutionOfTheLandscapeIdea",
+		"date":1985,
+		"title":"Prospect, Perspective, and the Evolution of the Landscape Idea",
+		"authors":[
+			{
+				"ln":"Cosgrove",
+				"fi":"D."
+			}		],
+		"type":"article",
+		"tags":[
+			"landscape"
+		],
+		"read":true
 	}
 ]
