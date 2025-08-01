@@ -15,10 +15,18 @@
             <div class='{{ class_size }} media'>
                 {% if page.perm %}
                 <a href='{{ page.perm }}' target='_blank'>
-                    <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' alt='{{ page.tagline }}'/>
+                    <img class='post-img' 
+                         src='/media/{{ page.post_id }}/{{ p.ext }}' 
+                         alt='{{ page.tagline }}'
+                         {% if forloop.index <= 1 %}loading='eager'{% else %}loading='lazy'{% endif %}
+                         decoding='async'/>
                 </a>
                 {% else %}
-                <img class='post-img' src='/media/{{ page.post_id }}/{{ p.ext }}' alt='{{ page.tagline }}'/>
+                <img class='post-img' 
+                     src='/media/{{ page.post_id }}/{{ p.ext }}' 
+                     alt='{{ page.tagline }}'
+                     {% if forloop.index <= 1 %}loading='eager'{% else %}loading='lazy'{% endif %}
+                     decoding='async'/>
                 {% endif %}
                 <p class='caption'>{{ p.cap }}</p>
             </div>
