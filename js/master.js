@@ -14,3 +14,16 @@ const URL_params = new URLSearchParams(window.location.search);
 if(URL_params.get('source') === 'list'){
 	$("#post-nav").hide();
 }
+
+//progressive image loading
+document.addEventListener('DOMContentLoaded', function() {
+    const blurImgs = document.querySelectorAll('.blur-load');
+    blurImgs.forEach(img => {
+        const fullImg = new Image();
+        fullImg.onload = () => {
+            img.src = fullImg.src;
+            img.classList.add('loaded');
+        };
+        fullImg.src = img.dataset.large;
+    });
+});

@@ -6,8 +6,9 @@
 		{% capture pos %}{% if post.cover_pos %}{{ post.cover_pos }}{% else %}center{% endif %}{% endcapture %}
 		<div class='list-img-container'>
 			<a href='/{{ post.category }}/{{ post.post_path }}.html' class='list-img-link'> 
-				<img class='list-img' 
-					 src='/media/covers/{{ post.post_id }}.{{ xt }}' 
+				<img class='list-img blur-load' 
+					 src='/media/covers/blurred/{{ post.post_id }}.{{ xt }}' 
+					 data-large='/media/covers/{{ post.post_id }}.{{ xt }}'
 					 style='object-position:{{ pos }}' 
 					 alt='{{ post.tagline }}'
 					 {% if forloop.index <= 3 %}loading='eager'{% else %}loading='lazy'{% endif %}
