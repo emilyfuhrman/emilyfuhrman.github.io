@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     blurImgs.forEach(img => {
         const fullImg = new Image();
         fullImg.onload = () => {
+            // Swap immediately without opacity animation to prevent flicker
             img.src = fullImg.src;
             img.classList.add('loaded');
         };
