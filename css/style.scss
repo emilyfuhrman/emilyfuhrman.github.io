@@ -219,8 +219,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	text-align:left;
 	text-decoration:none;
 	vertical-align:top;
-	margin:0 0 120px;
-	padding:12px;
+	margin:0 0 100px;
+	padding:16px;
 	border:none;
 	@include box-sizing(border-box);
 }
@@ -239,9 +239,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 
 #gallery a.list-img-link .metadata {
-	font-size:0.85rem;
-	line-height:1.3rem;
-	padding-top:0.4rem;
+	font-size:0.875rem;
+	line-height:1.4rem;
+	letter-spacing:1px;
+	padding-top:0.5rem;
 	}
 
 #gallery a.list-img-link .metadata p {
@@ -463,10 +464,12 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	z-index:999;
 	position:fixed;
 	max-width:600px;
-	top:83px;
+	top:85px;
 	left:50%;
 	text-align:center;
-	line-height:1.2rem;
+	font-size:1rem;
+	line-height:1rem;
+	letter-spacing:1px;
 	transform:translateX(-50%);
 	}
 
@@ -509,7 +512,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 
 #project #media .media .caption {
-	font-size:0.8rem;
+	font-size:0.75rem;
+	line-height:1.2rem;
 	margin-top:1.2em;
 	}
 #project #media .media .caption a {
@@ -520,7 +524,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 #project .epigraph,
 #project .description,
 #project .lang-switcher {
-	font-size:0.9rem !important;
+	font-size:0.85rem !important;
 	line-height:1.4rem;
 	}
 
@@ -592,6 +596,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	width:100%;
 	max-width:900px;
 	font-size:0.9rem;
+	line-height:1.2rem;
+	letter-spacing:1px;
 	padding:2rem 1.5rem 0;
 	@include box-sizing(border-box);
 	}
@@ -601,6 +607,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	float:left;
   font-size:0.75rem;
   line-height:1.2rem;
+  letter-spacing:0.05rem;
   margin:0;
 	padding:0 1.5rem;
 	@include box-sizing(border-box);
@@ -1051,7 +1058,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		padding:6rem 0;
 		}
 	.container #project #info .title {
-		top:143px;
+		top:140px;
+		line-height:1.5rem;
 		}
 	.container #project .meta div#meta-border {
 		width:calc(100% - 3rem);
@@ -1078,7 +1086,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#gallery .list-img-container {
 		width:100%;
 		height:calc(((100vw - (#{$gallery_margin} / 4)) * 3) / 2);
-		margin:1.5rem 0 40px 0;
+		margin:1.5rem 0 60px 0;
+		padding:14px;
 		}
 
 	.content-wrapper {
@@ -1144,7 +1153,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#gallery .list-img-container {
 		width:100%;
 		height:calc(((100vw - (#{$gallery_margin})) * 3) / 2);
-		margin: 1.5rem 0 40px 0;
+		margin: 1.5rem 0 70px 0;
+		padding:14px;
 		}
 
 	.content-wrapper {
@@ -1166,7 +1176,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		padding:2rem 2rem 6rem;
 		}
 	.container #project #info .title {
-		top:83px;
+		top:85px;
+		line-height:1rem;
 		}
 
 	#project #media .media.half {
