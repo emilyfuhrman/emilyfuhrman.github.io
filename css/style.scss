@@ -239,17 +239,17 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 
 #gallery a.list-img-link .metadata {
-	font-size:0.875rem;
-	line-height:1.4rem;
+	font-size:0.85rem;
+	line-height:1.35rem;
 	letter-spacing:1px;
-	padding-top:0.5rem;
+	padding-top:0.75rem;
 	}
 
 #gallery a.list-img-link .metadata p {
 	float:left;
 	margin:0;
 	padding:0;
-	padding-top:0.3rem;
+	padding-top:0.25rem;
 	}
 #gallery a.list-img-link:hover .metadata p span {
 	padding-bottom:1px;
