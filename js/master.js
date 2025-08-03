@@ -15,8 +15,38 @@ if(URL_params.get('source') === 'list'){
 	$("#post-nav").hide();
 }
 
-//progressive image loading
+//show content after eager images load
 document.addEventListener('DOMContentLoaded', function() {
+    // Handle loading animation for eager images
+    const eagerImages = document.querySelectorAll('img[loading="eager"]');
+    let loadedCount = 0;
+    
+    function showContent() {
+        document.getElementById('loading-animation').classList.add('hide');
+        document.querySelector('.container#main').classList.add('show');
+    }
+    
+    if (eagerImages.length > 0) {
+        eagerImages.forEach(img => {
+            if (img.complete) {
+                loadedCount++;
+            } else {
+                img.addEventListener('load', () => {
+                    loadedCount++;
+                    if (loadedCount === eagerImages.length) {
+                        showContent();
+                    }
+                });
+            }
+        });
+        if (loadedCount === eagerImages.length) {
+            showContent();
+        }
+    } else {
+        showContent();
+    }
+    
+    //progressive image loading
     const blurImgs = document.querySelectorAll('.blur-load');
     
     // Create intersection observer for lazy loading
@@ -30,10 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { rootMargin: '50px' });
     
     function loadHighResImage(img) {
-        // Set blurred image as background
+        // Set blurred image as background with blur filter
         img.style.backgroundImage = `url(${img.src})`;
         img.style.backgroundSize = 'cover';
         img.style.backgroundPosition = img.style.objectPosition;
+        img.style.filter = 'blur(5px)';
         
         // Load high-res image
         const fullImg = new Image();
@@ -41,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.opacity = '0';
             img.src = fullImg.src;
             img.classList.remove('blur-load');
+            img.style.filter = '';
             img.style.opacity = '1';
             
             // Clean up background after transition
