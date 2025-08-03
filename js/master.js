@@ -18,7 +18,18 @@ if(URL_params.get('source') === 'list'){
 //progressive image loading
 document.addEventListener('DOMContentLoaded', function() {
     const blurImgs = document.querySelectorAll('.blur-load');
-    blurImgs.forEach(img => {
+    
+    // Create intersection observer for lazy loading
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadHighResImage(entry.target);
+                imageObserver.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: '50px' });
+    
+    function loadHighResImage(img) {
         // Set blurred image as background
         img.style.backgroundImage = `url(${img.src})`;
         img.style.backgroundSize = 'cover';
@@ -31,7 +42,22 @@ document.addEventListener('DOMContentLoaded', function() {
             img.src = fullImg.src;
             img.classList.remove('blur-load');
             img.style.opacity = '1';
+            
+            // Clean up background after transition
+            setTimeout(() => {
+                img.style.backgroundImage = '';
+            }, 300);
         };
         fullImg.src = img.dataset.large;
+    }
+    
+    blurImgs.forEach((img, index) => {
+        // Load first 3 images immediately (above the fold)
+        if (index < 3) {
+            loadHighResImage(img);
+        } else {
+            // Lazy load the rest
+            imageObserver.observe(img);
+        }
     });
 });
