@@ -238,6 +238,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 
 #gallery a.list-img-link .list-img.blur-load {
+	image-rendering:smooth;
 	transition:opacity 0.3s ease;
 	}
 
