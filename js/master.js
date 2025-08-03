@@ -19,28 +19,18 @@ if(URL_params.get('source') === 'list'){
 document.addEventListener('DOMContentLoaded', function() {
     const blurImgs = document.querySelectorAll('.blur-load');
     blurImgs.forEach(img => {
-        // Set blurred image as background, clear the src
+        // Set blurred image as background
         img.style.backgroundImage = `url(${img.src})`;
         img.style.backgroundSize = 'cover';
-        // Use the cover_pos metadata (via object-position) for perfect alignment
         img.style.backgroundPosition = img.style.objectPosition;
-        img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // transparent pixel
         
         // Load high-res image
         const fullImg = new Image();
         fullImg.onload = () => {
-            // Set opacity to 0 for fade-in effect
             img.style.opacity = '0';
-            img.style.transition = 'opacity 0.3s ease';
-            
-            // Change src and remove blur class
             img.src = fullImg.src;
             img.classList.remove('blur-load');
-            
-            // Fade in the high-res image
-            setTimeout(() => {
-                img.style.opacity = '1';
-            }, 10);
+            img.style.opacity = '1';
         };
         fullImg.src = img.dataset.large;
     });
