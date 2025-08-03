@@ -29,8 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         // Load high-res image
         const fullImg = new Image();
         fullImg.onload = () => {
+            // Set opacity to 0 for fade-in effect
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s ease';
+            
+            // Change src and remove blur class
             img.src = fullImg.src;
             img.classList.remove('blur-load');
+            
+            // Fade in the high-res image
+            setTimeout(() => {
+                img.style.opacity = '1';
+            }, 10);
         };
         fullImg.src = img.dataset.large;
     });
