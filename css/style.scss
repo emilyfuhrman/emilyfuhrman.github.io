@@ -235,11 +235,16 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	border-radius:1px;
 	box-shadow:none;
 	outline:none;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	will-change: transform, filter;
 	}
 
 #gallery a.list-img-link .list-img.blur-load {
-	image-rendering:auto;
-	transition:opacity 0.3s ease;
+	image-rendering: auto;
+	transition: opacity 0.3s ease;
 	}
 
 #gallery a.list-img-link:hover .list-img {
