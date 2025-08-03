@@ -19,6 +19,13 @@ if(URL_params.get('source') === 'list'){
 document.addEventListener('DOMContentLoaded', function() {
     const blurImgs = document.querySelectorAll('.blur-load');
     blurImgs.forEach(img => {
+        // Set blurred image as background, clear the src
+        img.style.backgroundImage = `url(${img.src})`;
+        img.style.backgroundSize = 'cover';
+        img.style.backgroundPosition = img.style.objectPosition || 'center';
+        img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // transparent pixel
+        
+        // Load high-res image
         const fullImg = new Image();
         fullImg.onload = () => {
             img.src = fullImg.src;
