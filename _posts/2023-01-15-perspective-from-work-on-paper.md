@@ -6,7 +6,7 @@ post_path:  perspective-from-work-on-paper
 category:   portfolio
 cover_pos:  left
 images:
-  - ext:    00.png
+  - ext:    00.jpg
 medium:     "Giclée print"
 dimensions: "11&quot; &times; 7.2&quot;"
 tags:

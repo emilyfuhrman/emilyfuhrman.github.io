@@ -19,12 +19,8 @@
 	<link rel='stylesheet' type='text/css' href='/css/style.css' />
 	<link rel='preconnect' href='//www.google-analytics.com'>
 
-	{% unless page.category == 'library' %}
-		<script type='text/javascript' src='/js/libs/jquery-3.6.0.slim.min.js'></script>
-		{% if page.layout == 'projects' or page.layout == 'index' %}
-			<script type='text/javascript' src='/js/libs/d3.min.js'></script>
-		{% endif %}
-	{% endunless %}
+	<script type='text/javascript' src='/js/libs/jquery-3.6.0.slim.min.js'></script>
+	<script type='text/javascript' src='/js/libs/d3.min.js'></script>
 
 	<!-- Google Analytics -->
 	<script>
