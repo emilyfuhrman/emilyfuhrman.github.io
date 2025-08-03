@@ -60,11 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { rootMargin: '50px' });
     
     function loadHighResImage(img) {
-        // Set blurred image as background with blur filter
+        // Set blurred image as background
         img.style.backgroundImage = `url(${img.src})`;
         img.style.backgroundSize = 'cover';
         img.style.backgroundPosition = img.style.objectPosition;
-        img.style.filter = 'blur(5px)';
         
         // Load high-res image
         const fullImg = new Image();
@@ -72,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.opacity = '0';
             img.src = fullImg.src;
             img.classList.remove('blur-load');
-            img.style.filter = '';
             img.style.opacity = '1';
             
             // Clean up background after transition
