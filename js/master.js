@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set blurred image as background, clear the src
         img.style.backgroundImage = `url(${img.src})`;
         img.style.backgroundSize = 'cover';
-        img.style.backgroundPosition = img.style.objectPosition || 'center';
+        // Use the cover_pos metadata (via object-position) for perfect alignment
+        img.style.backgroundPosition = img.style.objectPosition;
         img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // transparent pixel
         
         // Load high-res image
