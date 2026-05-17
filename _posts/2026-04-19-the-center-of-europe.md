@@ -5,14 +5,10 @@ tagline:    "Composite maps reconciling different claimants to the center of Eur
 post_path:  the-center-of-europe
 category:   portfolio
 images:
-  - ext:    CompositeMap_0.1_Union.jpg
-    cap:    "The contiguous area formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
-  - ext:    CompositeMap_0.1_Union_Detail.jpg
-    cap:    (Detail)
   - ext:    CompositeMap_0.1_Intersection.jpg
     cap:    "The intersection formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
-  - ext:    CompositeMap_0.1_Intersection_Detail.jpg
-    cap:    (Detail)
+  - ext:    CompositeMap_0.1_Union.jpg
+    cap:    "The contiguous area formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
 tools:
   - QGIS
   - D3.js
