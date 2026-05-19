@@ -1,7 +1,7 @@
 ---
 post_id:    P2025001
 title:      "Sideways Elevation Contours"
-tagline:    "TBA"
+tagline:    "A site-specific design for the Two Sigma London office, which visualizes the elevation contours of the City of London from the side."
 post_path:  two-sigma-sideways-elevation-contours-wall-design
 images:
   - ext:    L1070739.jpg
