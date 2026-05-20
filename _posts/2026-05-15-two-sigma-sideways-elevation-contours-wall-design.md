@@ -11,6 +11,7 @@ tools:
   - QGIS
   - Claude Code
 medium:     "Vinyl adhesive"
+dimensions: "25&apos;4&quot; &times; 3&apos;4&quot;"
 client:
   - Two Sigma
 tags:
