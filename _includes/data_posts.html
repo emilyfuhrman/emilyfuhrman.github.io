@@ -16,6 +16,7 @@
 			role:       "{{ post.role }}",
 			year:       {{ post.date | date: "%Y" }},
 			tags:       {{ post.tags | split: ", " | join: "," }},
+			subject:    "{{ post.subject }}",
 			external:   "{{ post.external }}"
 		});
 	{% endfor %}

@@ -281,6 +281,29 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	-webkit-transform: translateZ(0);
 	}
 
+#project-view-nav {
+	font-size:0.9rem;
+	line-height:1.5rem;
+	text-align:left;
+	padding:2rem 0 1.5rem;
+	margin-left:1.5rem;
+	}
+
+#project-view-nav .view-label {
+	display:inline-block;
+	}
+
+#project-view-nav .view-option {
+	display:inline-block;
+	cursor:cell;
+	padding-bottom:2px;
+	margin-right:0.125rem;
+	}
+
+#project-view-nav .view-option.active {
+	border-bottom:1px solid $color_black;
+	}
+
 #projects .masthead #project-tags {
 	display:block;
 	text-align:center;
@@ -449,6 +472,12 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	width:8px;
 	height:8px;
 	float:left;
+	}
+
+#projects .generic-list ul li.subject-header {
+	padding:1.5rem 0 0.35rem;
+	border-bottom:1px solid $color_black;
+	cursor:default;
 	}
 
 #projects .generic-list ul li.null {
@@ -1103,6 +1132,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		width:100%
 		}
 
+	#project-view-nav {
+		margin-left:0;
+		}
+
 	#projects .masthead #project-tags {
 		padding:0.5rem 0 4rem;
 		}
@@ -1132,8 +1165,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		}
 	}
 
-@media (min-width:481px) { 
-	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (min-width:481px) {
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
 	}
 
@@ -1173,6 +1206,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#project #media .media {
 		padding:1.5rem;
 	}
+	#project-view-nav {
+		margin-left:0;
+		}
+
 	#projects .generic-list ul {
 		padding:0 1.5rem;
 		}
@@ -1212,6 +1249,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 
 	#project #media .media.half {
 		width:50%
+		}
+
+	#project-view-nav {
+		margin-left:1.5rem;
 		}
 
 	#projects .masthead #project-tags {

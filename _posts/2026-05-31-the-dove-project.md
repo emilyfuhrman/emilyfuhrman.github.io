@@ -10,6 +10,7 @@ tools:
 medium:     "Performance (live reading and synchronized images)"
 events:
   - "<i>breaking the (g)loom</i>, APT Gallery, 30 May 2026"
+subject:    time
 tags:
   - performance
   - compendium

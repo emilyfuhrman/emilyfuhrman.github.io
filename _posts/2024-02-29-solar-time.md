@@ -10,6 +10,7 @@ images:
     cap:    "2024/02/01, 12:46&ndash;13:16"
 medium:     "Light-sensitive cyanotype solution on watercolor paper, sunlight"
 dimensions: "8.3&quot; &times; 11.7&quot;" 
+subject:    time
 tags:
   - print
 ---
