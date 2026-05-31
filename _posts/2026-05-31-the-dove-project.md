@@ -7,7 +7,7 @@ images:
   - ext:    composite.png
 tools:
   - Quicktime Player
-medium:     "Performance (live reading)"
+medium:     "Performance (live reading and synchronized images)"
 events:
   - "<i>breaking the (g)loom</i>, APT Gallery, 30 May 2026"
 tags:
