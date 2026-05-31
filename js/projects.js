@@ -9,7 +9,7 @@ var projects = function(){
 		sort_col:'tag',
 		sort_dir:'desc',
 
-		palette:['#E77F6C','#F28394','#E992BD','#CBA8DF','#9DBFF2','#68D4F0','#48E3DB','#66EEB8','#9DF491','#DAF472'],
+		palette:['#E77F6C','#F28394','#E992BD','#CBA8DF','#9DBFF2','#68D4F0','#48E3DB','#66EEB8','#9DF491','#DAF472','#F5EC72'],
 
 		tag_dictionary:JEKYLL_TAG_DICTIONARY,
 

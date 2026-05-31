@@ -20,8 +20,7 @@ images:
 medium:     "Giclée print"
 dimensions: "36&quot; &times; 24&quot;"
 exhibits:
-  - name:   The Gallery at Ace Hotel New York
-    link:   http://www.acehotel.com/newyork/gallery
+  - <i>Lossless</i>, The Gallery at Ace Hotel New York, 7–31 Jul. 2016
 tags:
   - commission
   - print

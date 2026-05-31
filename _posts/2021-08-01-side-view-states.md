@@ -15,7 +15,7 @@ citations:
 dimensions: "7&quot; &times; 8 9/16&quot; &times; 1/2&quot;H"
 edition:    "Edition of 5, +1 AP"
 exhibits:
-  - name:   IEEE VISAP'21
+  - name:   <i>DIS/CONNECTED</i>, IEEE VISAP'21, 24–29 Oct. 2021
     link:   https://visap.net/2021/
 tags:
   - print

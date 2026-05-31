@@ -78,10 +78,28 @@
 	{% endif %}
 	{% if page.exhibits %}
 		<div id='post-exhibits' class='sub-section'>
-			<span class='meta-header'>Exhibition History</span>
+			<span class='meta-header'>Exhibition history</span>
 			<div class='info'>
 				<ul>
 				{% for e in page.exhibits %}
+					<li>
+					{% if e.link %}
+					<span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>
+					{% else %}
+					<span>{{ e }}</span>
+					{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.events %}
+		<div id='post-events' class='sub-section'>
+			<span class='meta-header'>Performance history</span>
+			<div class='info'>
+				<ul>
+				{% for e in page.events %}
 					<li>
 					{% if e.link %}
 					<span class='link'><a href='{{ e.link }}' target='_blank'>{{ e.name }}</a></span>

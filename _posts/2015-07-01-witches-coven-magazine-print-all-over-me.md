@@ -10,8 +10,7 @@ images:
   - ext:    01.jpg
     cap:    "<a href='https://paom.com/products/0000000p-rgb-3-block-top/' target='_blank'>RGB-3 Block Top</a>"
 exhibits:
-  - name:   Signal Gallery
-    link:   http://ssiiggnnaall.com/
+  - "<i>The Coven Magazine Issue No. 4 + PAOM Virtual Fashion Show / Release Party</i>, Signal Gallery, 6 July 2015"
 tags:
   - collaboration
   - commission
