@@ -68,14 +68,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Load high-res image
         const fullImg = new Image();
         fullImg.onload = () => {
+            img.style.imageRendering = 'auto';
             img.style.opacity = '0';
             img.src = fullImg.src;
             img.classList.remove('blur-load');
             img.style.opacity = '1';
-            
-            // Clean up background after transition
+
+            // Clean up background after transition; restore crisp rendering for final image
             setTimeout(() => {
                 img.style.backgroundImage = '';
+                img.style.imageRendering = '';
             }, 300);
         };
         fullImg.src = img.dataset.large;
