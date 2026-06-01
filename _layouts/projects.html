@@ -15,7 +15,7 @@
 			{% for year_group in posts_by_year %}
 				<li class='subject-header'>{{ year_group.name }}</li>
 				{% for post in year_group.items %}
-					{% include project-row.html post=post %}
+					{% include project-row.html post=post hide_year=true %}
 				{% endfor %}
 			{% endfor %}
 		</ul>
@@ -48,7 +48,7 @@
 			{% assign empty_subject = site.posts | where: "subject", "" %}
 			{% assign uncategorized = no_subject | concat: empty_subject %}
 			{% if uncategorized.size > 0 %}
-				<li class='subject-header'>Uncategorized</li>
+				<li class='subject-header'>Other</li>
 				{% for post in uncategorized %}
 					{% include project-row.html post=post %}
 				{% endfor %}
