@@ -15,9 +15,6 @@ medium: "Ink on paper"
 dimensions: "12&quot; &times; 9&quot;"
 subject: ephemeral
 format: work on paper
-tags:
-  - print
-  - notation
 ---
 A series of fixed-interval, sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada.
 

@@ -25,7 +25,6 @@ subject: text
 format: interactive
 tags:
   - dh
-  - notation
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.
   - Joyce to Harriet Weaver, 6 August 1919, in Ellmann, James Joyce, p. 462.
