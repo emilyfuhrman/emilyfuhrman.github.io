@@ -376,7 +376,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	max-width:100%;
 	max-height:1rem;
   padding:0 0.5rem;
-  border-radius:1rem;
+  border-radius:1px;
 	}
 #projects .generic-list ul li.project-row .project-date {
 	float:right;
