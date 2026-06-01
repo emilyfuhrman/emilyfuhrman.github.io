@@ -9,7 +9,7 @@ tools:
   - Quicktime Player
 medium: "Performance (live reading and synchronized images)"
 events:
-  - "<i>breaking the (g)loom</i>, APT Gallery, 30 May 2026"
+  - "<i>breaking the (g)loom: this is beautiful, actually</i>, APT Gallery, 30 May 2026"
 subject: time
 format: performance
 ---
