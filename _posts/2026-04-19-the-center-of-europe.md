@@ -1,23 +1,22 @@
 ---
-post_id:    Y2025002
-title:      "The Center of Europe"
-tagline:    "Composite maps reconciling different claimants to the center of Europe."
-post_path:  the-center-of-europe
-category:   portfolio
+post_id: Y2025002
+title: "The Center of Europe"
+tagline: "Composite maps reconciling different claimants to the center of Europe."
+post_path: the-center-of-europe
+category: portfolio
 images:
-  - ext:    CompositeMap_0.1_Intersection.jpg
-    cap:    "The intersection formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
-  - ext:    CompositeMap_0.1_Union.jpg
-    cap:    "The contiguous area formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
+  - ext: CompositeMap_0.1_Intersection.jpg
+    cap: "The intersection formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
+  - ext: CompositeMap_0.1_Union.jpg
+    cap: "The contiguous area formed by aligning the coordinates of all claimants to the center of Europe and the surrounding Europe each implies: Suchowola, Poland (1775); Kremnické Bane, Slovakia (1815); Dilove, Ukraine (1887); Tillenberg (Dyleň), Czech Republic (1865); Landskrona, Sweden (1988); Girija, Lithuania (1989); Polotsk, Belarus (2000); and Saaremaa, Estonia (2008)."
 tools:
   - QGIS
   - D3.js
   - Claude Code
-medium:     "Giclée print"
+medium: "Giclée print"
 dimensions: "10&quot; &times; 8&quot;"
-tags:
-  - print
-  - cartography
+subject: cartography
+format: work on paper
 citations:
   - As <a href="https://pubs.usgs.gov/publication/70039437">this</a> U.S. Geological Survey publication on geographic centers of the United States puts it, "[t]here is no generally accepted definition of geographic center, and no completely satisfactory method for determining it."
 ---

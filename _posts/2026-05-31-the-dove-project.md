@@ -1,18 +1,16 @@
 ---
-post_id:    Y2019005
-title:      "The Dove Project"
-tagline:    "Synchronous occurences of birds at identical timestamps across different days."
-post_path:  the-dove-project
+post_id: Y2019005
+title: "The Dove Project"
+tagline: "Synchronous occurences of birds at identical timestamps across different days."
+post_path: the-dove-project
 images:
-  - ext:    composite.png
+  - ext: composite.png
 tools:
   - Quicktime Player
-medium:     "Performance (live reading and synchronized images)"
+medium: "Performance (live reading and synchronized images)"
 events:
   - "<i>breaking the (g)loom</i>, APT Gallery, 30 May 2026"
-subject:    time
-tags:
-  - performance
-  - compendium
+subject: time
+format: performance
 ---
 Synchronous occurrences of birds at identical timestamps across different days.

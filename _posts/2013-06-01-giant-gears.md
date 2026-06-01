@@ -1,14 +1,13 @@
 ---
-post_id:    Y2013011
-title:      "Giant Gears"
-tagline:    "Analog renditions of a programmatically generated image."
-post_path:  giant-gears
-category:   portfolio
+post_id: Y2013011
+title: "Giant Gears"
+tagline: "Analog renditions of a programmatically generated image."
+post_path: giant-gears
+category: portfolio
 images:
-  - ext:    01.jpg
-  - ext:    02.jpg
-  - ext:    03.jpg
-tags:
-  - print
+  - ext: 01.jpg
+  - ext: 02.jpg
+  - ext: 03.jpg
+format: work on paper
 ---
 A series of large-scale, hand-inked renditions of a programmatically generated image.

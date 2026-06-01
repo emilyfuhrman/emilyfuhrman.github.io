@@ -1,18 +1,20 @@
 ---
-post_id:    Y2022005
-title:      "Study: Wave Intervals"
-tagline:    "Sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada."
-post_path:  wave-intervals-sonic-transcription
-category:   portfolio
+post_id: Y2022005
+title: "Study: Wave Intervals"
+tagline: "Sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada."
+post_path: wave-intervals-sonic-transcription
+category: portfolio
 images:
-  - ext:    00.jpg
-    cap:    2022/11/06, 12:24-12:32, La Sagesse Bay, Grenada
-  - ext:    01.jpg
-    cap:    2022/11/06, 11:54-12:06, La Sagesse Bay, Grenada
-  - ext:    02.jpg
-    cap:    2022/11/06, 13:55-14:11, La Sagesse Bay, Grenada
-medium:     "Ink on paper"
+  - ext: 00.jpg
+    cap: 2022/11/06, 12:24-12:32, La Sagesse Bay, Grenada
+  - ext: 01.jpg
+    cap: 2022/11/06, 11:54-12:06, La Sagesse Bay, Grenada
+  - ext: 02.jpg
+    cap: 2022/11/06, 13:55-14:11, La Sagesse Bay, Grenada
+medium: "Ink on paper"
 dimensions: "12&quot; &times; 9&quot;"
+subject: ephemeral
+format: work on paper
 tags:
   - print
   - notation

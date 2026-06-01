@@ -1,15 +1,15 @@
 ---
-post_id:    Y2015001
-title:      "Study: Non-geographic Route Mapping"
-tagline:    "An experiment in mapping daily routes without using geographic coordinates."
-post_path:  non-geographic-route-mapping
-category:   portfolio
+post_id: Y2015001
+title: "Study: Non-geographic Route Mapping"
+tagline: "An experiment in mapping daily routes without using geographic coordinates."
+post_path: non-geographic-route-mapping
+category: portfolio
 images:
-  - ext:    02.jpg
-  - ext:    01.jpg
-  - ext:    03.jpg
-tags:
-  - cartography
+  - ext: 02.jpg
+  - ext: 01.jpg
+  - ext: 03.jpg
+subject: cartography
+format: digital
 ---
 An experiment in mapping daily routes without using geographic coordinates. 
 

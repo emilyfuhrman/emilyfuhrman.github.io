@@ -273,14 +273,6 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		PROJECTS PAGE
    	------------------------------------ */
 
-#projects .masthead {
-	float:none;
-	text-align:center;
-	font-size:0.9rem;
-	line-height:1.5rem;
-	-webkit-transform: translateZ(0);
-	}
-
 #project-view-nav {
 	font-size:0.9rem;
 	line-height:1.5rem;
@@ -304,42 +296,8 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	border-bottom:1px solid $color_black;
 	}
 
-#projects .masthead #project-tags {
-	display:block;
-	text-align:center;
-	padding:1rem 1.5rem 4rem;
-	border-top:1px solid $color_lg;
-	}
-
-#projects .masthead #project-tags .project-tag {
-	display:inline-block;
-	font-size:0.55rem;
-	text-transform:uppercase;
-	margin:0 2px 2px 0;
-	padding:2px 8px;
-	border:1px solid $color_black;
-	border-radius:2px;
-	cursor:cell;
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
-	}
-#projects .masthead #project-tags .project-tag:hover {
-	background:#444 !important;
-	color:#fff;
-	}
-#projects .masthead #project-tags .project-tag.active {
-	background:$color_black !important;
-	color:#fff;
-	}
-
 #projects .generic-list {
 	border-top:none;
-	}
-
-#projects .generic-list  #project-headers {
-	height:1rem;
 	}
 
 #projects .generic-list ul {
@@ -349,48 +307,12 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	padding:0 3rem;
 	}
 
-#projects .generic-list ul li .sorter {
-	height:100%;
-	}
-#projects .generic-list ul li .sorter:hover {
-	cursor:cell;
-	}
-#projects .generic-list ul li .sorter:hover::after {
-	color:#ccc;
-	content:'⇂';
-	vertical-align:top;
-	}
-#projects .generic-list ul li .sorter.focus.asc::after {
-	color:$color_black;
-	content:'⇂';
-	vertical-align:top;
-	}
-#projects .generic-list ul li .sorter.focus.desc::after {
-	color:$color_black;
-	content:'↿';
-	vertical-align:top;
-	}
-#projects .generic-list ul li.null .sorter::after,
-#projects .generic-list ul li.null .sorter:hover::after {
-	content:"" !important;
-	}
-
 #projects .generic-list ul li .col_left {
 	width:calc(100% - 125px);
 	}
 #projects .generic-list ul li .col_right {
 	width:125px;
 	height:100%;
-	}
-
-#projects .generic-list ul li.header .col_right #col_tag {
-	float:right;
-	width:32px;
-	margin-right:1rem;
-	}
-#projects .generic-list ul li.header .col_right #col_year {
-	float:right;
-	width:38px;
 	}
 
 #projects .generic-list ul li.project-row {
@@ -461,38 +383,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	color:$color_black;
 	}
 
-#projects .generic-list ul li.project-row #pix-tile-container {
-	float:right;
-	margin-top:5px;
-	margin-right:1rem;
-	width:32px;
-	border:1px solid $color_black;
-	}
-#projects .generic-list ul li.project-row #pix-tile-container .pix-tile {
-	width:8px;
-	height:8px;
-	float:left;
-	}
-
 #projects .generic-list ul li.subject-header {
 	padding:1.5rem 0 0.35rem;
 	border-bottom:1px solid $color_black;
 	cursor:default;
-	}
-
-#projects .generic-list ul li.null {
-	color:#bbb;
-	text-align:center;
-	list-style-type:none;
-	border:none;
-	}
-#projects .generic-list ul li.null #reset-project-filters {
-	color:$color_accent;
-	margin-left:4px;
-	}
-#projects .generic-list ul li.null #reset-project-filters:hover {
-	cursor:cell;
-	border-bottom:1px solid $color_accent;
 	}
 
 /* 	------------------------------------
@@ -1136,9 +1030,6 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		margin-left:0;
 		}
 
-	#projects .masthead #project-tags {
-		padding:0.5rem 0 4rem;
-		}
 	#projects .generic-list ul {
 		padding:0;
 		}
@@ -1255,9 +1146,6 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		margin-left:1.5rem;
 		}
 
-	#projects .masthead #project-tags {
-		padding:0.5rem 1.5rem 4rem;
-		}
 	#projects .generic-list ul {
 		padding:0 3rem;
 		}

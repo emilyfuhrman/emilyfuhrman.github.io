@@ -1,7 +1,4 @@
 {% include header.html %}
-{% include data_posts.html %}
-{% include data_tag-dictionary.html %}
-{% include data_subject-dictionary.html %}
 <div id='projects' class='content-wrapper full-width-content-wrapper'>
 	<div id='projects-page-content' class='masthead'>
 		<div id='project-view-nav'>
@@ -9,22 +6,91 @@
 			<span class='view-option' data-view='year'>Year</span>
 			<span class='view-option' data-view='subject'>Subject</span>
 			<span class='view-option' data-view='format'>Format</span>
-			<span class='view-option' data-view='tag'>Tag</span>
 		</div>
-		<div id='project-tags' class='tags' ></div>
 	</div>
-	<div class='generic-list'>
-		<ul id='project-headers'>
-			<li class='header'>
-				<div class='col_left sorter' id='col_title'></div>
-				<div class='col_right'>
-					<div class='sorter' id='col_year'></div>
-					<div class='sorter' id='col_tag'></div>
-				</div>
-			</li>
+
+	<div id='view-year' class='generic-list'>
+		<ul>
+			{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+			{% for year_group in posts_by_year %}
+				<li class='subject-header'>{{ year_group.name }}</li>
+				{% for post in year_group.items %}
+					{% include project-row.html post=post %}
+				{% endfor %}
+			{% endfor %}
 		</ul>
-		<ul id='project-list'></ul>
 	</div>
+
+	<div id='view-subject' class='generic-list'>
+		<ul>
+			{% for subject_entry in site.data.subjects %}
+				{% assign subject_key = subject_entry[0] %}
+				{% assign subject_label = subject_entry[1] %}
+				{% assign subject_posts = site.posts | where: "subject", subject_key %}
+				{% if subject_posts.size > 0 %}
+					<li class='subject-header'>{{ subject_label }}</li>
+					{% for post in subject_posts %}
+						{% include project-row.html post=post %}
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+			{% assign all_subject_keys = site.posts | map: "subject" | compact | uniq %}
+			{% for subject_key in all_subject_keys %}
+				{% unless site.data.subjects[subject_key] %}
+					{% assign subject_posts = site.posts | where: "subject", subject_key %}
+					<li class='subject-header'>{{ subject_key }}</li>
+					{% for post in subject_posts %}
+						{% include project-row.html post=post %}
+					{% endfor %}
+				{% endunless %}
+			{% endfor %}
+			{% assign no_subject = site.posts | where_exp: "item", "item.subject == nil" %}
+			{% assign empty_subject = site.posts | where: "subject", "" %}
+			{% assign uncategorized = no_subject | concat: empty_subject %}
+			{% if uncategorized.size > 0 %}
+				<li class='subject-header'>Uncategorized</li>
+				{% for post in uncategorized %}
+					{% include project-row.html post=post %}
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
+
+	<div id='view-format' class='generic-list'>
+		<ul>
+			{% for format_entry in site.data.formats %}
+				{% assign format_key = format_entry[0] %}
+				{% assign format_label = format_entry[1] %}
+				{% assign format_posts = site.posts | where: "format", format_key %}
+				{% if format_posts.size > 0 %}
+					<li class='subject-header'>{{ format_label }}</li>
+					{% for post in format_posts %}
+						{% include project-row.html post=post %}
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+			{% assign all_format_keys = site.posts | map: "format" | compact | uniq %}
+			{% for format_key in all_format_keys %}
+				{% unless site.data.formats[format_key] %}
+					{% assign format_posts = site.posts | where: "format", format_key %}
+					<li class='subject-header'>{{ format_key }}</li>
+					{% for post in format_posts %}
+						{% include project-row.html post=post %}
+					{% endfor %}
+				{% endunless %}
+			{% endfor %}
+			{% assign no_format = site.posts | where_exp: "item", "item.format == nil" %}
+			{% assign empty_format = site.posts | where: "format", "" %}
+			{% assign uncategorized = no_format | concat: empty_format %}
+			{% if uncategorized.size > 0 %}
+				<li class='subject-header'>Uncategorized</li>
+				{% for post in uncategorized %}
+					{% include project-row.html post=post %}
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
+
 	<script type='text/javascript' src='/js/projects.js'></script>
 </div>
 {% include footer.html %}

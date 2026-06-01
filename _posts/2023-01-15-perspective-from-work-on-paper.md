@@ -1,16 +1,16 @@
 ---
-post_id:    Y2022006
-title:      "Perspective from Work on Paper"
-tagline:    "A framed print that makes visible its perspective of the surrounding walls."
-post_path:  perspective-from-work-on-paper
-category:   portfolio
-cover_pos:  left
+post_id: Y2022006
+title: "Perspective from Work on Paper"
+tagline: "A framed print that makes visible its perspective of the surrounding walls."
+post_path: perspective-from-work-on-paper
+category: portfolio
+cover_pos: left
 images:
-  - ext:    00.jpg
-medium:     "Giclée print"
+  - ext: 00.jpg
+medium: "Giclée print"
 dimensions: "11&quot; &times; 7.2&quot;"
-tags:
-  - print
+subject: perspective
+format: work on paper
 ---
 Dominant forms of geographic representation make public space legible: the patterns of commuters through transit systems; the networks of roads between towns; the footprints of buildings in a city grid. Interior spaces seem comparatively <i>un</i>-mapped, even insulated from the forces that operationalize the world visible by satellite or Google Street View. 
 

@@ -1,18 +1,17 @@
 ---
-post_id:    Y2023003
-title:      "Solar Time"
-tagline:    "Durational cyanotype exposure of sunbeams through the window."
-post_path:  solar-time
-category:   portfolio
-cover_pos:  left
+post_id: Y2023003
+title: "Solar Time"
+tagline: "Durational cyanotype exposure of sunbeams through the window."
+post_path: solar-time
+category: portfolio
+cover_pos: left
 images:
-  - ext:    composite_framed_01.15_ext_3272x2000.jpg
-    cap:    "2024/02/01, 12:46&ndash;13:16"
-medium:     "Light-sensitive cyanotype solution on watercolor paper, sunlight"
+  - ext: composite_framed_01.15_ext_3272x2000.jpg
+    cap: "2024/02/01, 12:46&ndash;13:16"
+medium: "Light-sensitive cyanotype solution on watercolor paper, sunlight"
 dimensions: "8.3&quot; &times; 11.7&quot;" 
-subject:    time
-tags:
-  - print
+subject: time
+format: work on paper
 ---
 Human operational abstractions, which are derived from the position of the sun &mdash; longitude, clock time &mdash; enable the measurement of time. Can the sun itself mark the passage of time as a visible duration, ambivalent to these abstractions?
 

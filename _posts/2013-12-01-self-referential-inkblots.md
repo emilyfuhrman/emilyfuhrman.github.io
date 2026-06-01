@@ -1,13 +1,13 @@
 ---
-post_id:    Y2013009
-title:      "Study: Self-referential Inkblots"
-tagline:    "Symbols that visualize their own constraints."
-post_path:  self-referential-inkblots
-category:   portfolio
+post_id: Y2013009
+title: "Study: Self-referential Inkblots"
+tagline: "Symbols that visualize their own constraints."
+post_path: self-referential-inkblots
+category: portfolio
 images:
-  - ext:    01.png
-tags:
-  - print
+  - ext: 01.png
+subject: visualization
+format: work on paper
 ---
 V's, rather. An echo chamber of constraints rendered in sumi ink.
 

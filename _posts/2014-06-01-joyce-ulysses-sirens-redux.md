@@ -1,29 +1,30 @@
 ---
-post_id:    Y2014001
-title:      "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
-tagline:    "An interactive visualization of all of the sounds that comprise the &quot;Sirens&quot; episode of <i>Ulysses</i> by James Joyce."
-post_path:  joyce-ulysses-sirens-redux
-perm:       /interactive/Y2014001
-github:     true
+post_id: Y2014001
+title: "Visualizing Joyce's <span class='i'>Ulysses</span>: &quot;Sirens&quot; as a Graphic Score"
+tagline: "An interactive visualization of all of the sounds that comprise the &quot;Sirens&quot; episode of <i>Ulysses</i> by James Joyce."
+post_path: joyce-ulysses-sirens-redux
+perm: /interactive/Y2014001
+github: true
 images:
-  - ext:    01.jpg
-  - ext:    02.jpg
+  - ext: 01.jpg
+  - ext: 02.jpg
 tools:
   - D3.js
   - Processing
 cred:
-  - name:   "2014 Kantar IIB Awards: Longlist"
-    link:   "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
-  - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
-    link:   "https://xpmethod.columbia.edu/lit-mod-viz/2014-10-22-visualizing-joyce.html"
+  - name: "2014 Kantar IIB Awards: Longlist"
+    link: "http://www.informationisbeautifulawards.com/showcase?acategory=interactive&award=2014&pcategory=long-list"
+  - name: "Columbia University Group for Experimental Methods in Humanistic Research"
+    link: "https://xpmethod.columbia.edu/lit-mod-viz/2014-10-22-visualizing-joyce.html"
 cred_social:
-  - name:   Georgia Lupi
-    link:   "https://twitter.com/giorgialupi/status/484325744961536000"
-  - name:   Lev Manovich
-    link:   "https://twitter.com/manovich/status/484048446182424577"
+  - name: Georgia Lupi
+    link: "https://twitter.com/giorgialupi/status/484325744961536000"
+  - name: Lev Manovich
+    link: "https://twitter.com/manovich/status/484048446182424577"
+subject: text
+format: interactive
 tags:
   - dh
-  - interactive
   - notation
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.

@@ -1,23 +1,23 @@
 ---
-post_id:    Y2019004
-title:      "Mapping the Alaska Boundary"
-tagline:    "A textual map of the present day Alaskan border."
-post_path:  mapping-the-alaska-boundary
-category:   portfolio
+post_id: Y2019004
+title: "Mapping the Alaska Boundary"
+tagline: "A textual map of the present day Alaskan border."
+post_path: mapping-the-alaska-boundary
+category: portfolio
 images:
-  - ext:    01.png
+  - ext: 01.png
 cred:
-  - name:   "visionscarto"
-    link:   "https://web.archive.org/web/20210731224510/https://visionscarto.net/carte-textuelle-alaska"
+  - name: "visionscarto"
+    link: "https://web.archive.org/web/20210731224510/https://visionscarto.net/carte-textuelle-alaska"
 citations:
   - Munro, John A., <i>The Alaskan Boundary Dispute</i> (Canada&colon; The Copp Clark Publishing Company, 1970), 9.
   - Brown, John W., <i>An Abridged History of Alaska</i> (1909), 67. 
   - Lundberg, Murray, "The Alaska-Canada Boundary Dispute," <i>ExploreNorth</i>, accessed March 2020, <a href="http://www.explorenorth.com/library/history/alaska-canada-boundary_dispute.html" target="_blank">http://www.explorenorth.com/library/history/alaska-canada-boundary_dispute.html</a>.
   - Borges, Jorge L., "On Exactitude in Science," in <i>Collected Fictions</i>, trans. Andrew Hurley (1999).
 translations:
-  - lang:   fr
-    label:  Français
-    text:   |
+  - lang: fr
+    label: Français
+    text: |
       Une carte est une représentation symbolique d’un territoire physique. Si la « carte cartographique » représente un territoire au moyen d’une relation iconographique, ce n’est pas le cas d’une carte comme celle présentée ci-dessus. Purement textuelle, cette carte interroge la représentation linguistique d’un territoire aux extrêmes orthogonaux de la précision et de l’illisibilité.<br/><br/>
 
       L’évaluation de la qualité des artefacts de référence est, conventionnellement, fondée sur la facilité d’utilisation. La personne qui va employer une carte s’attend à ce qu’elle corresponde à la réalité, et à ce qu’elle transmette cette réalité avec un minimum de friction et un maximum de vérité. Ces modes de jugement forment deux axes orthogonaux : le premier, imprécis ↔ précis, mesure la proximité d’une carte avec son territoire ; le second, illisible ↔ lisible, mesure la lisibilité de la représentation.<br/><br/>
@@ -29,8 +29,8 @@ translations:
       Notre carte adopte le support textuel jusqu’aux extrêmes de l’illisibilité et de la précision. Utilisant un langage généré par ordinateur pour restituer en phrases l’actuelle frontière de l’Alaska avec une minutieuse véracité, elle retrace le bord de l’Alaska, nœud par nœud, depuis le coin montagneux du sud-est de l’État jusqu’à son intersection nord avec l’océan Arctique. Le poids du texte en fait un terrain inaccessible en soi, frustrant la lectrice ou le lecteur dans son parcours à travers sa topo-typo-graphie. La carte présente le médium linguistique comme une barrière à la compréhension, qui se délite dans un effort d’épuisement de la signification.<br><br/>
 
       <i>(Translated by Philippe Rivière)</i>
-tags:
-  - cartography
+subject: cartography
+format: digital
 ---
 A map is a symbolic representation of a physical territory. While a cartographic map holds an iconographic relationship to the territory it represents, a purely linguistic map does not. This piece examines the linguistic representation of a territory at the orthogonal extremes of accuracy and illegibility.
 

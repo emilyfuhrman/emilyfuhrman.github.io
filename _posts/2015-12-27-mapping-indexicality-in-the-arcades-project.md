@@ -1,21 +1,23 @@
 ---
-post_id:    Y2015003
-title:      "Mapping Indexicality in &quot;The Arcades Project&quot;"
+post_id: Y2015003
+title: "Mapping Indexicality in &quot;The Arcades Project&quot;"
 tagline:	  "Linguistic deixis in <i>The Arcades Project</i> rendered as wandering paths."
-post_path:  mapping-indexicality-in-the-arcades-project
-github:     true
-paper:      true
-category:   portfolio
-images:     
-  - ext:    01.png
+post_path: mapping-indexicality-in-the-arcades-project
+github: true
+paper: true
+category: portfolio
+images: 
+  - ext: 01.png
 cred:
-  - name:   "Columbia University Group for Experimental Methods in Humanistic Research"
-    link:   "https://xpmethod.columbia.edu/embodied-space-lab/2015-04-10-mapping-indexality.html"
+  - name: "Columbia University Group for Experimental Methods in Humanistic Research"
+    link: "https://xpmethod.columbia.edu/embodied-space-lab/2015-04-10-mapping-indexality.html"
 citations:
   - Walter Benjamin, <i>The Arcades Project</i>, trans. Howard Eiland and Kevin McLaughlin (Belknap Press, 2002), Third Printing edition.
 tools:
   - Python
   - Processing
+subject: text
+format: digital
 tags:
   - dh
 ---
