@@ -611,6 +611,26 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 
 /* 	------------------------------------
+		PAGE (404, etc.)
+   	------------------------------------ */
+
+#page .page-body {
+	float:left;
+	padding:0 1.5rem;
+	font-size:0.9rem;
+	line-height:1.5rem;
+	max-width:740px;
+	}
+
+#page .page-body p {
+	margin-bottom:2rem;
+	}
+
+#page .page-body p:last-child {
+	margin-bottom:0;
+	}
+
+/* 	------------------------------------
 		FOOTER
    	------------------------------------ */
 

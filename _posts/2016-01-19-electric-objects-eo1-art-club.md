@@ -18,6 +18,7 @@ images:
 exhibits:
   - name: "<i>Object in Time: Selections from Electric Objects Art Club</i>, The Mini Microcinema, 16 Nov. 2017"
     link: https://web.archive.org/web/20220806174911/https://www.mini-cinema.org/screenings/object
+subject: art
 format: animation
 tags:
   - commission
