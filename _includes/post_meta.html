@@ -52,7 +52,7 @@
 		<div id='post-client' class='sub-section'>
 			<span class='meta-header'>Client</span>
 			<div class='info'>
-				<ul><li><span>{{ page.client }}</span></li></ul>
+				<ul class='no-list'><li><span>{{ page.client }}</span></li></ul>
 			</div>
 		</div>
 	{% endif %}
@@ -166,18 +166,18 @@
 	{% endif %}
 	<div id='post-year' class='sub-section'>
 		<span class='meta-header'>Year</span>
-		<ul><li><a href="/projects/#view=year">{{ page.date | date: "%Y" }}</a></li></ul>
+		<ul class='no-list'><li><a href="/projects/#view=year">{{ page.date | date: "%Y" }}</a></li></ul>
 	</div>
 	{% if page.subject %}
 		<div id='post-subject' class='sub-section'>
 			<span class='meta-header'>Subject</span>
-			<ul><li><a href="/projects/#view=subject">{{ site.data.subjects[page.subject] | default: page.subject }}</a></li></ul>
+			<ul class='no-list'><li><a href="/projects/#view=subject">{{ site.data.subjects[page.subject] | default: page.subject }}</a></li></ul>
 		</div>
 	{% endif %}
 	{% if page.format %}
 		<div id='post-format' class='sub-section'>
 			<span class='meta-header'>Format</span>
-			<ul><li><a href="/projects/#view=format">{{ site.data.formats[page.format] | default: page.format }}</a></li></ul>
+			<ul class='no-list'><li><a href="/projects/#view=format">{{ site.data.formats[page.format] | default: page.format }}</a></li></ul>
 		</div>
 	{% endif %}
 </div>
