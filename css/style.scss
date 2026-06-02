@@ -366,17 +366,12 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
   margin-left:-0.25rem;
 	}
 #projects .generic-list ul li.project-row .project-role {
-	background:$color_lg;
 	overflow:hidden;
 	white-space:nowrap;
-	font-size:0.5rem;
-	line-height:1.075rem;
-	text-transform:uppercase;
+	font-style:italic;
 	text-overflow:ellipsis;
 	max-width:100%;
-	max-height:1rem;
-  padding:0 0;
-  border-radius:1px;
+	margin-right:0;
 	}
 #projects .generic-list ul li.project-row .project-date {
 	float:right;
