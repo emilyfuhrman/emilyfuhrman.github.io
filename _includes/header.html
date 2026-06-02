@@ -8,8 +8,8 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<title>
-		{% if page.category == 'library' %}
-			{{ page.title }}
+		{% if page.title %}
+			{{ site.name }} &middot; {{ page.title }}
 		{% else %}
 			{{ site.name }}
 		{% endif %}
