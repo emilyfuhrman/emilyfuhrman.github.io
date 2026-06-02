@@ -381,7 +381,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 #projects .generic-list ul li.subject-header {
 	padding:1.5rem 0 0.35rem;
 	border-bottom:1px solid $color_black;
-	cursor:default;
+	cursor:crosshair !important;
 	}
 
 /* 	------------------------------------

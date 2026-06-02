@@ -8,7 +8,7 @@
 <li class='project-row'>
   <a href='{{ _row_url }}' target='{{ _row_target }}'>
     <div class='col_left'>
-      <div><span class='project-title'>{{ include.post.title }}</span>{% if include.post.external %}<span class='ext-arrow'>&nbsp;&#x2197;&#xFE0E;</span>{% endif %}{% if include.post.role %}<span class='project-role'>{{ include.post.role }}</span>&nbsp;&middot;&nbsp;{% endif %}</div>
+      <div><span class='project-title'>{{ include.post.title }}</span>{% if include.post.external %}<span class='ext-arrow'>&nbsp;&#x2197;&#xFE0E;</span>{% endif %}{% if include.post.role %}<span class='project-role'>{{ include.post.role }}</span>&nbsp;&nbsp;{% endif %}</div>
       {{ include.post.tagline }}
     </div>
     {% unless include.hide_year %}<div class='col_right'>
