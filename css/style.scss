@@ -421,6 +421,9 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	padding:1.5rem;
 	@include box-sizing(border-box);
 	}
+#project.tight #media .media + .media {
+	margin-top:0;
+	}
 #project #media .media.center {
 	clear:both;
 	}
