@@ -355,7 +355,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 #projects .generic-list ul li.project-row .ext-arrow,
 #projects .generic-list ul li.project-row .project-role {
 	float:left;
-  margin-right:0.25rem;
+  margin-right:0.5rem;
 	}
 #projects .generic-list ul li.project-row .project-title {
 	color:$color_black;
@@ -363,7 +363,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	}
 #projects .generic-list ul li.project-row .ext-arrow {
 	color:$color_black;
-  margin-left:-0.25rem;
+  margin-left:-0.5rem;
 	}
 #projects .generic-list ul li.project-row .project-role {
 	overflow:hidden;
