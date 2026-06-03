@@ -21,7 +21,7 @@ tools:
   - Python
   - Processing
 medium: "Giclée print"
-dimensions: "16 1/2&quot; &times; 11 3/4&quot;"
+dimensions: "16 1/2&quot; &times; 11 3/4&quot; each (series of three)"
 gesture: trace
 format: work on paper
 ---

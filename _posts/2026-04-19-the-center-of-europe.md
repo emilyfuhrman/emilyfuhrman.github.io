@@ -14,7 +14,7 @@ tools:
   - D3.js
   - Claude Code
 medium: "Giclée print"
-dimensions: "10&quot; &times; 8&quot;"
+dimensions: "10&quot; &times; 8&quot; each (series of two)"
 gesture: vantage
 format: work on paper
 citations:

@@ -12,7 +12,7 @@ images:
     half: true
   - ext: 20240725.jpg
 medium: "Ink on paper"
-dimensions: "5.5&quot; &times; 7.6&quot;" 
+dimensions: "5.5&quot; &times; 7.6&quot; each (series of five)"
 gesture: trace
 format: work on paper
 ---

@@ -12,7 +12,7 @@ images:
   - ext: 02.jpg
     cap: 2022/11/06, 13:55-14:11, La Sagesse Bay, Grenada
 medium: "Ink on paper"
-dimensions: "12&quot; &times; 9&quot;"
+dimensions: "12&quot; &times; 9&quot; each (series of three)"
 gesture: trace
 format: work on paper
 ---
