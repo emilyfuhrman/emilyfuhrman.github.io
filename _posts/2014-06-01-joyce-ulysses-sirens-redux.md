@@ -21,7 +21,7 @@ cred_social:
     link: "https://twitter.com/giorgialupi/status/484325744961536000"
   - name: Lev Manovich
     link: "https://twitter.com/manovich/status/484048446182424577"
-gesture: notation
+gesture: encoding
 format: interactive
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.

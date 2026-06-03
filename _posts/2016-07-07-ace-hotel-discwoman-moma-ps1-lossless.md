@@ -21,7 +21,7 @@ medium: "Giclée print"
 dimensions: "36&quot; &times; 24&quot;"
 exhibits:
   - <i>Lossless</i>, The Gallery at Ace Hotel New York, 7–31 Jul. 2016
-gesture: notation
+gesture: encoding
 format: work on paper
 ---
 A collection of six data-driven pieces prepared for a solo exhibition at the Ace Hotel Gallery in New York. Each piece is a snapshot taken from a broader landscape of visualized audio data. The parts cropped from each frame remain unseen. 
