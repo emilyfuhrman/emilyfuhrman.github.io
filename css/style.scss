@@ -1044,6 +1044,18 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#projects .generic-list ul {
 		padding:0;
 		}
+	#projects .generic-list ul li.project-row a .col_left:only-child {
+		width:100%;
+		padding-right:0;
+		}
+	#projects #view-subject ul li .col_left,
+	#projects #view-format ul li .col_left {
+		width:calc(100% - 60px);
+		}
+	#projects #view-subject ul li .col_right,
+	#projects #view-format ul li .col_right {
+		width:60px;
+		}
 
 	.container #gallery {
 		margin:0 calc(#{$gallery_margin} / 8);
