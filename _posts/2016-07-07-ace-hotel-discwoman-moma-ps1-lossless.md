@@ -18,7 +18,7 @@ images:
   - ext: 02_eartheater_framed.jpg
     cap: <a href='https://www.youtube.com/watch?v=Wimrg1l57nc' target='_blank'>Eartheater</a>
 medium: "Giclée print"
-dimensions: "36&quot; &times; 24&quot;"
+dimensions: "36&quot; &times; 24&quot; each (series of six)"
 exhibits:
   - <i>Lossless</i>, The Gallery at Ace Hotel New York, 7–31 Jul. 2016
 gesture: encoding

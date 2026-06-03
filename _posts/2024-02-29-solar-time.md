@@ -9,7 +9,7 @@ images:
   - ext: composite_framed_01.15_ext_3272x2000.jpg
     cap: "2024/02/01, 12:46&ndash;13:16"
 medium: "Light-sensitive cyanotype solution on watercolor paper, sunlight"
-dimensions: "8.3&quot; &times; 11.7&quot;" 
+dimensions: "59.6&quot; &times; 43&quot; overall (6 &times; 3 grid), each sheet 8.3&quot; &times; 11.7&quot;"
 gesture: trace
 format: work on paper
 ---
