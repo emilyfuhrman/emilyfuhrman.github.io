@@ -18,10 +18,7 @@ role:
 team:
   - Prof. Manan Ahmed
   - Jeremiah Trinidad-Christensen
-subject: cartography
+gesture: commission
 format: interactive
-tags:
-  - dh
-  - collaboration
 ---
 An interactive map representing a medieval postal route extrapolated from the text of _Arabic Classical Accounts of India and China_. Built in collaboration with the Columbia University Department of History. View the full map [here](/interactive/F2015002).

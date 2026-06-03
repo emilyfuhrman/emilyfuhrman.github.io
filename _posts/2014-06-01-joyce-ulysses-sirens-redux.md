@@ -21,10 +21,8 @@ cred_social:
     link: "https://twitter.com/giorgialupi/status/484325744961536000"
   - name: Lev Manovich
     link: "https://twitter.com/manovich/status/484048446182424577"
-subject: text
+gesture: notation
 format: interactive
-tags:
-  - dh
 citations:
   - Joyce to Georges Borach, 18 June 1919, in Richard Ellmann, <i>James Joyce&colon; New and Revised Edition</i> (Oxford University Press, 1982), p. 459.
   - Joyce to Harriet Weaver, 6 August 1919, in Ellmann, James Joyce, p. 462.

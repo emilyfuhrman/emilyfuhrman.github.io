@@ -168,10 +168,10 @@
 		<span class='meta-header'>Year</span>
 		<ul class='no-list'><li><a href="/projects/#view=year">{{ page.date | date: "%Y" }}</a></li></ul>
 	</div>
-	{% if page.subject %}
-		<div id='post-subject' class='sub-section'>
-			<span class='meta-header'>Subject</span>
-			<ul class='no-list'><li><a href="/projects/#view=subject">{{ site.data.subjects[page.subject] | default: page.subject }}</a></li></ul>
+	{% if page.gesture %}
+		<div id='post-gesture' class='sub-section'>
+			<span class='meta-header'>Gesture</span>
+			<ul class='no-list'><li><a href="/projects/#view=gesture">{{ site.data.gestures[page.gesture] | default: page.gesture }}</a></li></ul>
 		</div>
 	{% endif %}
 	{% if page.format %}

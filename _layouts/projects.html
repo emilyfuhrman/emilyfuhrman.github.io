@@ -4,7 +4,7 @@
 		<div id='project-view-nav'>
 			<span class='view-label'>by:</span>
 			<span class='view-option' data-view='year'>Year</span>
-			<span class='view-option' data-view='subject'>Subject</span>
+			<span class='view-option' data-view='gesture'>Gesture</span>
 			<span class='view-option' data-view='format'>Format</span>
 		</div>
 	</div>
@@ -21,32 +21,32 @@
 		</ul>
 	</div>
 
-	<div id='view-subject' class='generic-list'>
+	<div id='view-gesture' class='generic-list'>
 		<ul>
-			{% for subject_entry in site.data.subjects %}
-				{% assign subject_key = subject_entry[0] %}
-				{% assign subject_label = subject_entry[1] %}
-				{% assign subject_posts = site.posts | where: "subject", subject_key %}
-				{% if subject_posts.size > 0 %}
-					<li class='subject-header'>{{ subject_label }}</li>
-					{% for post in subject_posts %}
+			{% for gesture_entry in site.data.gestures %}
+				{% assign gesture_key = gesture_entry[0] %}
+				{% assign gesture_label = gesture_entry[1] %}
+				{% assign gesture_posts = site.posts | where: "gesture", gesture_key %}
+				{% if gesture_posts.size > 0 %}
+					<li class='subject-header'>{{ gesture_label }}</li>
+					{% for post in gesture_posts %}
 						{% include project-row.html post=post %}
 					{% endfor %}
 				{% endif %}
 			{% endfor %}
-			{% assign all_subject_keys = site.posts | map: "subject" | compact | uniq %}
-			{% for subject_key in all_subject_keys %}
-				{% unless site.data.subjects[subject_key] %}
-					{% assign subject_posts = site.posts | where: "subject", subject_key %}
-					<li class='subject-header'>{{ subject_key }}</li>
-					{% for post in subject_posts %}
+			{% assign all_gesture_keys = site.posts | map: "gesture" | compact | uniq %}
+			{% for gesture_key in all_gesture_keys %}
+				{% unless site.data.gestures[gesture_key] %}
+					{% assign gesture_posts = site.posts | where: "gesture", gesture_key %}
+					<li class='subject-header'>{{ gesture_key }}</li>
+					{% for post in gesture_posts %}
 						{% include project-row.html post=post %}
 					{% endfor %}
 				{% endunless %}
 			{% endfor %}
-			{% assign no_subject = site.posts | where_exp: "item", "item.subject == nil" %}
-			{% assign empty_subject = site.posts | where: "subject", "" %}
-			{% assign uncategorized = no_subject | concat: empty_subject %}
+			{% assign no_gesture = site.posts | where_exp: "item", "item.gesture == nil" %}
+			{% assign empty_gesture = site.posts | where: "gesture", "" %}
+			{% assign uncategorized = no_gesture | concat: empty_gesture %}
 			{% if uncategorized.size > 0 %}
 				<li class='subject-header'>Other</li>
 				{% for post in uncategorized %}

@@ -8,7 +8,7 @@ github: true
 images: 
   - ext: 01.jpg
   - ext: 02.jpg
-subject: self-indexicality
+gesture: self-indexicality
 format: compendium
 ---
 A compendium of floorplans. The diagram in the bottom right corner reflects your position within the space of the page. 

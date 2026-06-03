@@ -11,10 +11,7 @@ images:
 client:
   - Dennis Tenen
 format: other
-tags:
-  - collaboration
-  - commission
-  - dh
+gesture: commission
 ---
 Conceptual illustration of how format changes with medium. The same data, a collection of dots, shifts in arrangement across the brain, a page, and a disk. 
 

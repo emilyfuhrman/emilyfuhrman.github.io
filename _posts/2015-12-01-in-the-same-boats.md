@@ -19,10 +19,7 @@ team:
   - Kaiama L. Glover
   - Alex Gil
   - Alyssa Van
-subject: cartography
+gesture: commission
 format: interactive
-tags:
-  - dh
-  - collaboration
 ---
 A work of multimodal scholarship designed to encourage the collaborative production of humanistic knowledge within scholarly communities, comprising two interactive visualizations that trace the movements of significant cultural actors from the Caribbean and wider Americas, Africa, and Europe within the 20th century Afro-Atlantic world. Built in collaboration with Barnard College and Columbia University.

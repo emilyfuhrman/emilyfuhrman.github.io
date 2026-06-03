@@ -17,7 +17,7 @@ edition: "Edition of 5, +1 AP"
 exhibits:
   - name: <i>DIS/CONNECTED</i>, IEEE VISAP'21, 24–29 Oct. 2021
     link: https://visap.net/2021/
-subject: perspective
+gesture: vantage
 format: work on paper
 ---
 _Side-view States_ is an atlas visualizing the 50 U.S. state boundaries from the side. Each boundary is programmatically lifted from the physical terrain, then tilted to collapse its area, leaving a trace of its topographic contingencies.

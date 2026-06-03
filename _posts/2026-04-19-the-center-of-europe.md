@@ -15,7 +15,7 @@ tools:
   - Claude Code
 medium: "Giclée print"
 dimensions: "10&quot; &times; 8&quot;"
-subject: cartography
+gesture: vantage
 format: work on paper
 citations:
   - As <a href="https://pubs.usgs.gov/publication/70039437">this</a> U.S. Geological Survey publication on geographic centers of the United States puts it, "[t]here is no generally accepted definition of geographic center, and no completely satisfactory method for determining it."

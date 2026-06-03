@@ -8,7 +8,7 @@ images:
   - ext: 02.jpg
   - ext: 01.jpg
   - ext: 03.jpg
-subject: cartography
+gesture: notation
 format: digital
 ---
 An experiment in mapping daily routes without using geographic coordinates. 

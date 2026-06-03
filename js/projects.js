@@ -1,5 +1,5 @@
 (function() {
-	var views = ['year', 'subject', 'format'];
+	var views = ['year', 'gesture', 'format'];
 	var defaultView = 'year';
 
 	function getActiveView() {

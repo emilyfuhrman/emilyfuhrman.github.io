@@ -14,10 +14,8 @@ medium: "Vinyl adhesive"
 dimensions: "25&apos;4&quot; &times; 3&apos;4&quot;"
 client:
   - Two Sigma
-subject: perspective
+gesture: vantage
 format: other
-tags:
-  - commission
 ---
 A site-specific design for the Two Sigma London office, which visualizes the elevation contours of the neighborhood as though they were visible _through_ the wall upon which the graphic is mounted. (The variation in terrain is, of course, exaggerated.)
 

@@ -13,7 +13,7 @@ images:
     cap: 2022/11/06, 13:55-14:11, La Sagesse Bay, Grenada
 medium: "Ink on paper"
 dimensions: "12&quot; &times; 9&quot;"
-subject: ephemeral
+gesture: trace
 format: work on paper
 ---
 A series of fixed-interval, sonic transcriptions of waves breaking against the shore of La Sagesse Bay, Grenada.

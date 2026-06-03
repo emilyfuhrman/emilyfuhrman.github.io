@@ -6,7 +6,7 @@ post_path: self-referential-inkblots
 category: portfolio
 images:
   - ext: 01.png
-subject: self-indexicality
+gesture: self-indexicality
 format: work on paper
 ---
 V's, rather. An echo chamber of constraints rendered in sumi ink.

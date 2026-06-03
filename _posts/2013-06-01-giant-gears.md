@@ -8,7 +8,7 @@ images:
   - ext: 01.jpg
   - ext: 02.jpg
   - ext: 03.jpg
-subject: ephemeral
+gesture: trace
 format: work on paper
 ---
 A series of large-scale, hand-inked renditions of various states of a particle system. 

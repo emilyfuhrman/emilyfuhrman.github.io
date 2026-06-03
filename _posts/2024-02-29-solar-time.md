@@ -10,7 +10,7 @@ images:
     cap: "2024/02/01, 12:46&ndash;13:16"
 medium: "Light-sensitive cyanotype solution on watercolor paper, sunlight"
 dimensions: "8.3&quot; &times; 11.7&quot;" 
-subject: time
+gesture: trace
 format: work on paper
 ---
 Human operational abstractions, which are derived from the position of the sun &mdash; longitude, clock time &mdash; enable the measurement of time. Can the sun itself mark the passage of time as a visible duration, ambivalent to these abstractions?

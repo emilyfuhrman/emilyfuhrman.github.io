@@ -11,11 +11,8 @@ tools:
   - Processing
 client:
   - Two Sigma
-subject: pattern
+gesture: commission
 format: other
-tags:
-  - commission
-  - pattern
 ---
 A gridded encoding system to render a Turing quotation, semitransparent, on glass. Can you read the hidden message?
 

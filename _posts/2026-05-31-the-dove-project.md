@@ -30,7 +30,7 @@ tools:
 medium: "Performance (live reading and synchronized images)"
 events:
   - "<i>breaking the (g)loom: this is beautiful, actually</i>, APT Gallery, 30 May 2026"
-subject: time
+gesture: trace
 format: performance
 ---
 Synchronous occurrences of birds at identical timestamps across different days.

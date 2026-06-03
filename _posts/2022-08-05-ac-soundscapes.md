@@ -22,7 +22,7 @@ tools:
   - Processing
 medium: "Giclée print"
 dimensions: "16 1/2&quot; &times; 11 3/4&quot;"
-subject: ephemeral
+gesture: trace
 format: work on paper
 ---
 Audio visualizations of a humming air conditioning unit. Summer mundanity in a series of three prints.

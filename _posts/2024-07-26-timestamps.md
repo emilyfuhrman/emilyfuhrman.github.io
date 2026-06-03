@@ -13,7 +13,7 @@ images:
   - ext: 20240725.jpg
 medium: "Ink on paper"
 dimensions: "5.5&quot; &times; 7.6&quot;" 
-subject: time
+gesture: trace
 format: work on paper
 ---
 Date stamp compositions for five days in July.

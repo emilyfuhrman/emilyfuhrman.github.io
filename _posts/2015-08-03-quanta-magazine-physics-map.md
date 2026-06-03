@@ -35,7 +35,6 @@ cred_social:
   - name: Steven Strogatz
     link: "https://twitter.com/stevenstrogatz/status/636179310680907776"
 format: interactive
-tags:
-  - collaboration
+gesture: commission
 ---
 An interactive visualization of the deepest mysteries at the frontier of fundamental physics, and the most promising ideas put forth to solve them. 

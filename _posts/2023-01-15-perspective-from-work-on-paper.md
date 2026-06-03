@@ -9,7 +9,7 @@ images:
   - ext: 00.jpg
 medium: "Giclée print"
 dimensions: "11&quot; &times; 7.2&quot;"
-subject: perspective
+gesture: self-indexicality
 format: work on paper
 ---
 Dominant forms of geographic representation make public space legible: the patterns of commuters through transit systems; the networks of roads between towns; the footprints of buildings in a city grid. Interior spaces seem comparatively <i>un</i>-mapped, even insulated from the forces that operationalize the world visible by satellite or Google Street View. 
