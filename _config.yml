@@ -15,6 +15,18 @@ defaults:
       layout:      post
       is_post:     true
 
+# Jekyll 3.x replaces (does not append to) the default exclude list,
+# so the defaults are repeated here alongside our own additions.
+exclude:
+  - notes            # private working notes, never published
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 # formatting
 kramdown:
   auto_ids:        false
