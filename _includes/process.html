@@ -1,0 +1,5 @@
+{% assign src = '/media/' | append: page.post_id | append: '/' | append: include.file %}
+<div class='process'>
+{% if include.file contains '.mp4' %}<video src='{{ src }}' autoplay muted loop playsinline preload='metadata'></video>{% else %}<img src='{{ src }}' alt='{{ include.cap | strip_html }}' loading='lazy' decoding='async'/>{% endif %}
+{% if include.cap %}<p class='caption'>{{ include.cap }}</p>{% endif %}
+</div>

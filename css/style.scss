@@ -475,6 +475,22 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	line-height:0;
 	}
 
+/* process material placed inside the description; full width, less space than works */
+#project .description .process {
+	margin:1.5rem 0;
+	}
+#project .description .process img,
+#project .description .process video {
+	display:block;
+	width:100%;
+	height:auto;
+	}
+#project .description .process .caption {
+	font-size:0.75rem;
+	line-height:1.2rem;
+	margin:1.2em 0 0;
+	}
+
 #project .epigraph p {
 	width:100%;
 	float:left;
@@ -1031,6 +1047,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#project #media .media {
 		padding:calc(#{$gallery_margin} / 8);
 		}
+	#project .description .process {
+		margin-left:calc(#{$gallery_margin} / 8 - 1.5rem); /* match the work images' edges */
+		margin-right:calc(#{$gallery_margin} / 8 - 1.5rem);
+		}
 	#project #media .media.half {
 		width:100%
 		}
@@ -1118,6 +1138,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#project #media .media {
 		padding:1.5rem;
 	}
+	#project .description .process {
+		margin-left:0;
+		margin-right:0;
+		}
 	#project-view-nav {
 		margin-left:0;
 		}

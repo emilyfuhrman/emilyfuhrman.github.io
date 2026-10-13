@@ -26,6 +26,8 @@ The decisions involved in a center calculation are diverse. You can compute the 
 
 These maps represent two imagined geographies that use the methodology and coordinates of previous center definitions to form the composite Europe of which the center is a single point. The resultant territories are the union and intersection of the "implied" Europes derived differently from eight center claimants&mdash;located in Poland, Slovakia, Ukraine, the Czech Republic, Sweden, Lithuania, Belarus, and Estonia&mdash;their corresponding center coordinates aligned on a single location. 
 
+{% include process.html file="CompositeMap_Process.mp4" cap="The eight implied Europes, their centers aligned on a single point." %}
+
 The territory that enables each claimant to be possible is, as a result, a non-place, formed of concession, modification, inclusion, and omission.
 
 
