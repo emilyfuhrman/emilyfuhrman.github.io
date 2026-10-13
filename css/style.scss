@@ -543,6 +543,7 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
   letter-spacing:0.05rem;
   margin:0;
 	padding:0 1.5rem;
+	overflow-wrap:anywhere;
 	@include box-sizing(border-box);
 	}
 #project ul {
