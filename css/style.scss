@@ -1146,6 +1146,27 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#loading-animation {
 	  top:calc(100vh / 4);
 		}
+
+	/* metadata as label / value rows */
+	#project .meta div.sub-section {
+		display:grid;
+		grid-template-columns:11rem 1fr;
+		align-items:baseline;
+		padding:0.125rem 0;
+		}
+	#project .meta div#meta-border + div.sub-section {
+		padding-top:calc(2rem - 1px); /* smaller label sits 1px lower in its line; keeps the original gap */
+		}
+	#project .meta div.sub-section .info,
+	#project .meta div.sub-section ul,
+	#project .meta div.sub-section ol {
+		float:none;
+		width:auto;
+		}
+	#project .meta .meta-header {
+		font-size:0.75rem;
+		padding:0 1.5rem;
+		}
 	}
 
 @media (min-width:961px) { 

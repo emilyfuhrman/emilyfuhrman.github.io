@@ -1,29 +1,9 @@
 <div class='meta'>
 	<div id='meta-border'></div>
-	{% if page.citations %}
-		<div id='post-citations' class='sub-section'>
-			<span class='meta-header'>Notes</span>
-			<div class='info'>
-				<ol>
-					{% for c in page.citations %}
-						<li>{{ c }}</li>
-					{% endfor %}
-				</ol>
-			</div>
-		</div>
-	{% endif %}
-	{% if page.tools %}
-		<div id='post-edition' class='sub-section'>
-			<span class='meta-header'>Tools</span>
-			<div class='info'>
-				<ul>
-					{% for t in page.tools %}
-						<li><span>{{ t }}</span></li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-	{% endif %}
+	<div id='post-year' class='sub-section'>
+		<span class='meta-header'>Year</span>
+		<ul class='no-list'><li><a href="/projects/#view=year">{{ page.date | date: "%Y" }}</a></li></ul>
+	</div>
 	{% if page.medium %}
 		<div id='post-edition' class='sub-section'>
 			<span class='meta-header'>Medium</span>
@@ -48,6 +28,18 @@
 			</div>
 		</div>
 	{% endif %}
+	{% if page.format %}
+		<div id='post-format' class='sub-section'>
+			<span class='meta-header'>Format</span>
+			<ul class='no-list'><li><a href="/projects/#view=format">{{ site.data.formats[page.format] | default: page.format }}</a></li></ul>
+		</div>
+	{% endif %}
+	{% if page.gesture %}
+		<div id='post-gesture' class='sub-section'>
+			<span class='meta-header'>Gesture</span>
+			<ul class='no-list'><li><a href="/projects/#view=gesture">{{ site.data.gestures[page.gesture] | default: page.gesture }}</a></li></ul>
+		</div>
+	{% endif %}
 	{% if page.client %}
 		<div id='post-client' class='sub-section'>
 			<span class='meta-header'>Client</span>
@@ -60,7 +52,7 @@
 		<div id='post-role' class='sub-section'>
 			<span class='meta-header'>Role</span>
 			<div class='info'>
-				<ul><li><span>{{ page.role }}</span></li></ul>
+				<ul class='no-list'><li><span>{{ page.role }}</span></li></ul>
 			</div>
 		</div>
 	{% endif %}
@@ -73,6 +65,18 @@
 					<li><span>{{ t }}</span></li>
 				{% endfor %}
 			</ul>
+			</div>
+		</div>
+	{% endif %}
+	{% if page.tools %}
+		<div id='post-edition' class='sub-section'>
+			<span class='meta-header'>Tools</span>
+			<div class='info'>
+				<ul>
+					{% for t in page.tools %}
+						<li><span>{{ t }}</span></li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 	{% endif %}
@@ -164,20 +168,16 @@
 			</ul>
 		</div>
 	{% endif %}
-	<div id='post-year' class='sub-section'>
-		<span class='meta-header'>Year</span>
-		<ul class='no-list'><li><a href="/projects/#view=year">{{ page.date | date: "%Y" }}</a></li></ul>
-	</div>
-	{% if page.gesture %}
-		<div id='post-gesture' class='sub-section'>
-			<span class='meta-header'>Gesture</span>
-			<ul class='no-list'><li><a href="/projects/#view=gesture">{{ site.data.gestures[page.gesture] | default: page.gesture }}</a></li></ul>
-		</div>
-	{% endif %}
-	{% if page.format %}
-		<div id='post-format' class='sub-section'>
-			<span class='meta-header'>Format</span>
-			<ul class='no-list'><li><a href="/projects/#view=format">{{ site.data.formats[page.format] | default: page.format }}</a></li></ul>
+	{% if page.citations %}
+		<div id='post-citations' class='sub-section'>
+			<span class='meta-header'>Notes</span>
+			<div class='info'>
+				<ol>
+					{% for c in page.citations %}
+						<li>{{ c }}</li>
+					{% endfor %}
+				</ol>
+			</div>
 		</div>
 	{% endif %}
 </div>
