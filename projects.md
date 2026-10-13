@@ -1,7 +1,7 @@
 ---
 layout: projects
-title: "Projects"
-description: All projects. 
+title: "Work"
+description: All work.
 permalink: /projects/
 loading_animation: true
 sitemap:
