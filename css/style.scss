@@ -1051,6 +1051,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 		margin-left:calc(#{$gallery_margin} / 8 - 1.5rem); /* match the work images' edges */
 		margin-right:calc(#{$gallery_margin} / 8 - 1.5rem);
 		}
+	#project #media .media .caption,
+	#project .description .process .caption {
+		padding:0 calc(1.5rem - #{$gallery_margin} / 8); /* captions follow the text margins, not the image edges */
+		}
 	#project #media .media.half {
 		width:100%
 		}
@@ -1141,6 +1145,10 @@ $gallery_margin:calc(#{$nav_pos}); /* set left and right margins; currently anch
 	#project .description .process {
 		margin-left:0;
 		margin-right:0;
+		}
+	#project #media .media .caption,
+	#project .description .process .caption {
+		padding:0;
 		}
 	#project-view-nav {
 		margin-left:0;
