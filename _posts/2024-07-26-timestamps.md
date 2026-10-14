@@ -7,9 +7,7 @@ images:
   - ext: 20240722.jpg
   - ext: 20240723.jpg
   - ext: 20240724.jpg
-    half: true
   - ext: 20240726.jpg
-    half: true
   - ext: 20240725.jpg
 medium: "Ink on paper"
 dimensions: "5.5&quot; &times; 7.6&quot; each (series of five)"
